@@ -1,0 +1,168 @@
+{
+  "authority": "Operations",
+  "schema_version": "1.0",
+  "services": [
+    {
+      "id": "DE-SVC-001",
+      "implementation_count": 5,
+      "implementations": [
+        {
+          "implementation": "ade/kernel/bootstrap_loader/artifacts.py",
+          "kind": "ClassDef",
+          "language": "python",
+          "service": "bootstrap",
+          "status": "existing",
+          "symbol": "BootstrapArtifacts"
+        },
+        {
+          "implementation": "ade/kernel/bootstrap_loader/bootstrap.py",
+          "kind": "FunctionDef",
+          "language": "python",
+          "service": "bootstrap",
+          "status": "existing",
+          "symbol": "load_bootstrap"
+        },
+        {
+          "implementation": "ade/kernel/bootstrap_loader/context.py",
+          "kind": "ClassDef",
+          "language": "python",
+          "service": "bootstrap",
+          "status": "existing",
+          "symbol": "BootstrapContext"
+        },
+        {
+          "implementation": "ade/kernel/bootstrap_loader/errors.py",
+          "kind": "ClassDef",
+          "language": "python",
+          "service": "bootstrap",
+          "status": "existing",
+          "symbol": "BootstrapError"
+        },
+        {
+          "implementation": "ade/kernel/bootstrap_loader/result.py",
+          "kind": "ClassDef",
+          "language": "python",
+          "service": "bootstrap",
+          "status": "existing",
+          "symbol": "BootstrapResult"
+        }
+      ],
+      "name": "bootstrap",
+      "state": "implemented"
+    },
+    {
+      "id": "DE-SVC-002",
+      "implementation_count": 0,
+      "implementations": [],
+      "name": "status",
+      "state": "missing"
+    },
+    {
+      "id": "DE-SVC-003",
+      "implementation_count": 0,
+      "implementations": [],
+      "name": "session",
+      "state": "missing"
+    },
+    {
+      "id": "DE-SVC-004",
+      "implementation_count": 0,
+      "implementations": [],
+      "name": "ingest",
+      "state": "missing"
+    },
+    {
+      "id": "DE-SVC-005",
+      "implementation_count": 1,
+      "implementations": [
+        {
+          "implementation": "scripts/reconciliation/reconcile.sh",
+          "kind": "script",
+          "language": "shell",
+          "service": "reconcile",
+          "status": "existing",
+          "symbol": null
+        }
+      ],
+      "name": "reconcile",
+      "state": "implemented"
+    },
+    {
+      "id": "DE-SVC-006",
+      "implementation_count": 1,
+      "implementations": [
+        {
+          "implementation": "ade/kernel/bootstrap_loader/validators.py",
+          "kind": "FunctionDef",
+          "language": "python",
+          "service": "validate",
+          "status": "existing",
+          "symbol": "validate"
+        }
+      ],
+      "name": "validate",
+      "state": "implemented"
+    },
+    {
+      "id": "DE-SVC-007",
+      "implementation_count": 0,
+      "implementations": [],
+      "name": "snapshot",
+      "state": "missing"
+    },
+    {
+      "id": "DE-SVC-008",
+      "implementation_count": 0,
+      "implementations": [],
+      "name": "inventory",
+      "state": "missing"
+    },
+    {
+      "id": "DE-SVC-009",
+      "implementation_count": 3,
+      "implementations": [
+        {
+          "implementation": "ade/kernel/bootstrap_loader/queue.py",
+          "kind": "ClassDef",
+          "language": "python",
+          "service": "queue",
+          "status": "existing",
+          "symbol": "QueueEntry"
+        },
+        {
+          "implementation": "ade/kernel/bootstrap_loader/queue.py",
+          "kind": "ClassDef",
+          "language": "python",
+          "service": "queue",
+          "status": "existing",
+          "symbol": "QueueState"
+        },
+        {
+          "implementation": "ade/kernel/bootstrap_loader/queue.py",
+          "kind": "FunctionDef",
+          "language": "python",
+          "service": "queue",
+          "status": "existing",
+          "symbol": "recover_queues"
+        }
+      ],
+      "name": "queue",
+      "state": "implemented"
+    },
+    {
+      "id": "DE-SVC-010",
+      "implementation_count": 0,
+      "implementations": [],
+      "name": "search",
+      "state": "missing"
+    },
+    {
+      "id": "DE-SVC-011",
+      "implementation_count": 0,
+      "implementations": [],
+      "name": "audit",
+      "state": "missing"
+    }
+  ],
+  "status": "candidate"
+}

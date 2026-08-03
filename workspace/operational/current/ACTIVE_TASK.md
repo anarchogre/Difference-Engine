@@ -1,22 +1,24 @@
 # Active Task
 
-File Library Governance
+Drift Detection Expansion
 
 ## Task Block
 
-1. Inventory declared File Library artifacts.
-2. Normalize artifact names.
-3. Assign stable artifact identifiers.
-4. Classify lifecycle state.
-5. Establish canonical index.
-6. Establish upload standard.
-7. Establish artifact lifecycle.
-8. Validate the library manifest.
-9. Integrate library governance into recovery verification.
+1. Define cross-domain drift contracts.
+2. inventory comparison sources;
+3. implement governance drift checks;
+4. implement bootstrap drift checks;
+5. implement active-state drift checks;
+6. implement queue drift checks;
+7. implement File Library index drift checks;
+8. implement specification-to-code drift checks;
+9. implement Git-state drift checks;
+10. emit deterministic drift reports;
+11. integrate findings into readiness verification.
 
 ## Current Phase
 
-Phase 3 — File Library
+Phase 4 — Drift Detection
 
 ## Status
 

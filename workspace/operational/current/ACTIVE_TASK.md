@@ -1,24 +1,21 @@
 # Active Task
 
-Drift Detection Expansion
+Repository Service Formalization
 
 ## Task Block
 
-1. Define cross-domain drift contracts.
-2. inventory comparison sources;
-3. implement governance drift checks;
-4. implement bootstrap drift checks;
-5. implement active-state drift checks;
-6. implement queue drift checks;
-7. implement File Library index drift checks;
-8. implement specification-to-code drift checks;
-9. implement Git-state drift checks;
-10. emit deterministic drift reports;
-11. integrate findings into readiness verification.
+1. Inventory existing operational functions.
+2. Recover surviving service primitives.
+3. Separate operations from interfaces.
+4. Define the canonical service contract.
+5. Build the service catalog.
+6. Map existing implementations to services.
+7. Identify missing implementations.
+8. Preserve experimental components as candidates.
 
 ## Current Phase
 
-Phase 4 — Drift Detection
+Phase 5 — Repository Services
 
 ## Status
 

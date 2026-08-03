@@ -227,12 +227,111 @@ def verify(
                 "DEGRADED: external_verification_status_invalid"
             )
 
+    library_index_path = (
+        repository_root
+        / "workspace/operational/library/"
+        "CANONICAL_LIBRARY_INDEX.json"
+    )
+
+    library_governance_path = (
+        repository_root
+        / "workspace/operational/library/"
+        "LIBRARY_GOVERNANCE.md"
+    )
+
+    upload_standard_path = (
+        repository_root
+        / "workspace/operational/library/"
+        "UPLOAD_STANDARD.md"
+    )
+
+    artifact_lifecycle_path = (
+        repository_root
+        / "workspace/operational/library/"
+        "ARTIFACT_LIFECYCLE.md"
+    )
+
+    library_governance_ok = False
+    library_governance_status = {}
+
+    try:
+        if all(
+            path.is_file()
+            and path.stat().st_size > 0
+            for path in (
+                library_index_path,
+                library_governance_path,
+                upload_standard_path,
+                artifact_lifecycle_path,
+            )
+        ):
+            library_index = json.loads(
+                library_index_path.read_text(
+                    encoding="utf-8",
+                )
+            )
+
+            artifacts = library_index.get(
+                "artifacts",
+                [],
+            )
+
+            identifiers = [
+                artifact.get("id")
+                for artifact in artifacts
+            ]
+
+            names = [
+                artifact.get("canonical_name")
+                for artifact in artifacts
+            ]
+
+            library_governance_ok = (
+                bool(artifacts)
+                and len(identifiers)
+                == len(set(identifiers))
+                and len(names)
+                == len(set(names))
+                and all(
+                    artifact.get("verified") is True
+                    for artifact in artifacts
+                )
+            )
+
+            library_governance_status = {
+                "artifacts": len(artifacts),
+                "unique_identifiers": (
+                    len(identifiers)
+                    == len(set(identifiers))
+                ),
+                "unique_names": (
+                    len(names)
+                    == len(set(names))
+                ),
+                "verified": library_governance_ok,
+            }
+
+    except Exception as error:
+        warnings.append(
+            "DEGRADED: library_governance_invalid"
+        )
+
+        library_governance_status = {
+            "verified": False,
+            "error": (
+                f"{type(error).__name__}: {error}"
+            ),
+        }
+
     degraded = {
         "file_library_verification": (
             file_library_verification_ok
         ),
         "project_configuration_verification": (
             project_configuration_verification_ok
+        ),
+        "library_governance": (
+            library_governance_ok
         ),
         "queue_recovery": queue_recovery_ok,
         "git_baseline": has_commit,
@@ -288,6 +387,9 @@ def verify(
         "missing_artifacts": missing_artifacts,
         "external_verification_status": (
             external_verification_status
+        ),
+        "library_governance_status": (
+            library_governance_status
         ),
         "queue_state": {
             "suggested": len(

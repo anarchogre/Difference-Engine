@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "status": "candidate",
+  "authority": "Operations",
+  "project": "The Difference Engine",
+  "artifacts": [
+    {
+      "id": "DE-FL-001",
+      "canonical_name": "Babbage_GPT_Initialization.md.txt",
+      "classification": "bootstrap",
+      "lifecycle": "canonical",
+      "required": true,
+      "verified": true
+    },
+    {
+      "id": "DE-FL-002",
+      "canonical_name": "The_Difference_Engine(7).md",
+      "classification": "project",
+      "lifecycle": "canonical",
+      "required": true,
+      "verified": true
+    },
+    {
+      "id": "DE-FL-003",
+      "canonical_name": "Universal_Branch_Steward_Protocol_Constitutional_Amendment_v_1.1_Ratification Draft.md",
+      "source_upload_name": "Universal_Branch_Steward_Protocol_Constitutional_Amendment_v_1.1_Ratification Draft(12).md",
+      "classification": "governance",
+      "lifecycle": "candidate",
+      "required": true,
+      "verified": true
+    },
+    {
+      "id": "DE-FL-004",
+      "canonical_name": "Operational Doctrine.txt",
+      "classification": "doctrine",
+      "lifecycle": "canonical",
+      "required": true,
+      "verified": true
+    },
+    {
+      "id": "DE-FL-005",
+      "canonical_name": "Operational Reality.txt",
+      "source_upload_name": "Operational Reality(1).txt",
+      "classification": "operational-reality",
+      "lifecycle": "canonical",
+      "required": true,
+      "verified": true
+    },
+    {
+      "id": "DE-FL-006",
+      "canonical_name": "Operator Profile.md",
+      "classification": "operator-context",
+      "lifecycle": "canonical",
+      "required": true,
+      "verified": true
+    },
+    {
+      "id": "DE-FL-007",
+      "canonical_name": "FRAMEWORK_LOCK_7_31_26.md",
+      "classification": "framework-lock",
+      "lifecycle": "canonical",
+      "required": true,
+      "verified": true
+    },
+    {
+      "id": "DE-FL-008",
+      "canonical_name": "REPOSITORY_TREE.txt",
+      "classification": "inventory",
+      "lifecycle": "snapshot",
+      "required": true,
+      "verified": true
+    },
+    {
+      "id": "DE-FL-009",
+      "canonical_name": "REPOSITORY_FILES.txt",
+      "classification": "inventory",
+      "lifecycle": "snapshot",
+      "required": true,
+      "verified": true
+    },
+    {
+      "id": "DE-FL-010",
+      "canonical_name": "REPOSITORY_TREE_FULL.txt",
+      "classification": "inventory",
+      "lifecycle": "snapshot",
+      "required": true,
+      "verified": true
+    },
+    {
+      "id": "DE-FL-011",
+      "canonical_name": "SIQ Suggested Implementation Queue.md",
+      "classification": "queue",
+      "lifecycle": "active",
+      "required": true,
+      "verified": true
+    },
+    {
+      "id": "DE-FL-012",
+      "canonical_name": "Project Space Queued Items 8_1_26.md",
+      "classification": "queue",
+      "lifecycle": "historical",
+      "required": true,
+      "verified": true
+    }
+  ]
+}

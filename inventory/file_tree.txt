@@ -1,0 +1,2 @@
+./inventory/directory_tree.txt
+./inventory/file_tree.txt

@@ -1,0 +1,29 @@
+Termux Variables:
+TERMUX_EXEC__PROC_SELF_EXE=/data/data/com.termux/files/usr/bin/termux-info
+TERMUX_VERSION=googleplay.2026.06.21
+TERMUX__USER_ID=0
+Packages CPU architecture:
+aarch64
+Subscribed repositories:
+URIs: https://termux.net
+Updatable packages:
+coreutils/stable 9.11-1 aarch64 [upgradable from: 9.11]
+curl/stable 8.21.0 aarch64 [upgradable from: 8.20.0]
+less/stable 704 aarch64 [upgradable from: 702]
+libcurl/stable 8.21.0 aarch64 [upgradable from: 8.20.0]
+libsmartcols/stable 2.42.1-2 aarch64 [upgradable from: 2.42.1]
+nano/stable 9.1 aarch64 [upgradable from: 9.0]
+util-linux/stable 2.42.1-2 aarch64 [upgradable from: 2.42.1]
+termux-tools version:
+3.0.9
+Android version:
+11
+Kernel build information:
+Linux localhost 4.19.157-perf+ #1 SMP PREEMPT Wed Feb 1 12:41:12 CST 2023 aarch64 Android
+Device manufacturer:
+motorola
+Device model:
+moto g power (2021)
+LD Variables:
+LD_LIBRARY_PATH=
+LD_PRELOAD=/data/data/com.termux/files/usr/lib/libtermux-exec.so

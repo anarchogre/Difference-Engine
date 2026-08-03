@@ -1,0 +1,8 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+echo
+echo "DifferenceEngine pre-push"
+
+git status --short
+
+exit 0

@@ -1,0 +1,79 @@
+/storage/emulated/0/DifferenceEngine
+	/storage/emulated/0/FILE_LIBRARY_UPLOADS
+	10_Governance
+	99_UTILITIES
+	99_UTILITIES/Conventions
+	99_UTILITIES/Ingestion
+	99_UTILITIES/Naming
+	99_UTILITIES/Scripts
+	99_UTILITIES/Templates
+MemoryPalace
+Phylactery
+	Rebuild.md
+Repository
+Repository/Entities
+Repository/Governance
+Repository/Observations
+Repository/Patterns
+Repository/Preservation
+Repository/Publications
+Repository/Relationships
+Repository/Specifications
+Repository/Validation
+ade
+ade/cli
+ade/distribution
+ade/ingestion
+ade/kernel
+ade/kernel/bootstrap_loader
+ade/kernel/bootstrap_loader/__pycache__
+ade/kernel/tests
+ade/kernel/tests/__pycache__
+ade/objects
+ade/publication
+ade/schema
+ade/services
+ade/tests
+ade/validation
+ade/workflows
+architecture
+architecture/artifacterator
+architecture/bootstrap_loader
+architecture/formatter
+architecture/parser
+archives
+docs
+evidence
+inventory
+inventory/reconciliation
+inventory/reports
+queue
+queue/active
+queue/archive
+queue/blocked
+queue/completed
+queue/discussion
+queue/implementation
+queue/ingestion
+queue/research
+queue/review
+queue/roadmap
+queue/someday
+scripts
+specifications
+specifications/artifacts
+specifications/parser
+specifications/repository
+standards
+standards/v1
+standards/v1/supporting
+standards/vi
+stewards
+tools
+workspace
+workspace/operational
+workspace/operational/bootstrap
+workspace/operational/current
+workspace/operational/history
+workspace/operational/preservation
+{

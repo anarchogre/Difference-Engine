@@ -1,0 +1,287 @@
+diff -ruN /storage/emulated/0/DifferenceEngine/10_Governance/ARC-0001_Information_Architecture.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/10_Governance/ARC-0001_Information_Architecture.md
+diff -ruN /storage/emulated/0/DifferenceEngine/10_Governance/GOV-0001_Repository_Principles.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/10_Governance/GOV-0001_Repository_Principles.md
+diff -ruN /storage/emulated/0/DifferenceEngine/10_Governance/GOV-0002_Document_Lifecycle.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/10_Governance/GOV-0002_Document_Lifecycle.md
+diff -ruN "/storage/emulated/0/DifferenceEngine/10_Governance/ICD-001 — Constitutional Architecture.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/10_Governance/ICD-001 — Constitutional Architecture.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/10_Governance/ICD-002 — Governance Philosophy.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/10_Governance/ICD-002 — Governance Philosophy.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/10_Governance/ICD-003 — Artifact Lifecycle.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/10_Governance/ICD-003 — Artifact Lifecycle.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/10_Governance/ICD-004 — Repository Topology.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/10_Governance/ICD-004 — Repository Topology.md"
+diff -ruN /storage/emulated/0/DifferenceEngine/10_Governance/README.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/10_Governance/README.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Conventions/DOCUMENT_METADATA.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Conventions/DOCUMENT_METADATA.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Conventions/MARKDOWN_STYLE.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Conventions/MARKDOWN_STYLE.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Conventions/WRITING_GUIDELINES.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Conventions/WRITING_GUIDELINES.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/AIS_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/AIS_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Architecture_Decision_Record_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Architecture_Decision_Record_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Artifact_Lifecycle_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Artifact_Lifecycle_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Artifact_Schema_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Artifact_Schema_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Asset_Schema_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Asset_Schema_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Canonical_Promotion_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Canonical_Promotion_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Configuration_Management_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Configuration_Management_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Conversation_Schema_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Conversation_Schema_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Developer_Guide_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Developer_Guide_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Event_Catalog_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Event_Catalog_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Event_Model_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Event_Model_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Event_Processing_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Event_Processing_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Event_Routing_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Event_Routing_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Event_Schema_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Event_Schema_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Implementation_Backlog_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Implementation_Backlog_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Implementation_Checklist_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Implementation_Checklist_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Implementation_Milestones_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Implementation_Milestones_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Implementation_Roadmap_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Implementation_Roadmap_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Ingestion_Glossary_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Ingestion_Glossary_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Ingestion_Pipeline_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Ingestion_Pipeline_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Ingestion_Report_Schema_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Ingestion_Report_Schema_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Observability_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Observability_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Operational_Readiness_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Operational_Readiness_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Output_Package_Specificatiom_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Output_Package_Specificatiom_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Parser_Behavior_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Parser_Behavior_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Parser_Development_Guide_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Parser_Development_Guide_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Provenance_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Provenance_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Publication_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Publication_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Quality_Assurance_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Quality_Assurance_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Queue_Candidate_Schema_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Queue_Candidate_Schema_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Queue_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Queue_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Reference_Schema_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Reference_Schema_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Repository_Constitution_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Repository_Constitution_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Repository_Index_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Repository_Index_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Repository_Mapping_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Repository_Mapping_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Repository_Maturity_Model_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Repository_Maturity_Model_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Repository_Relationship_Schema_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Repository_Relationship_Schema_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Repository_Standards_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Repository_Standards_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Schema_Governance_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Schema_Governance_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Security_and_Integrity_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Security_and_Integrity_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Service_Contracts_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Service_Contracts_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Service_Development_Guide_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Service_Development_Guide_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Testing_Strategy_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Testing_Strategy_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Validation_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Validation_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_API_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_API_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Audit_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Audit_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Checkpointing_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Checkpointing_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Context_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Context_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Definition_Schema_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Definition_Schema_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Execution_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Execution_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Governance_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Governance_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Metrics_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Metrics_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Orchestration_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Orchestration_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Recovery_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Recovery_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Replay_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Replay_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Reporting_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Reporting_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Service_Capability_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Capability_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Service_Communication_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Communication_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Service_Composition_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Composition_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Service_Configuration_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Configuration_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Service_Contract_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Contract_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Service_Coordination_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Coordination_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Service_Dependency_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Dependency_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Service_Discovery_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Discovery_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Service_Dispatch_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Dispatch_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Service_Health_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Health_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Service_Lifecycle_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Lifecycle_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Service_Load_Balancing_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Load_Balancing_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Service_Messaging_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Messaging_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Service_Registry_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Registry_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Service_Resilience_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Resilience_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Service_Routing_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Routing_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Service_Scaling_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Scaling_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Service_Scheduling_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Scheduling_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_State_Machine_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_State_Machine_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Ingestion/Workflow_Versioning_Specification_v0.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Versioning_Specification_v0.1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Naming/FILE_NAMING.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Naming/FILE_NAMING.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/README.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/README.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Scripts/README.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Scripts/README.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Scripts/ids.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Scripts/ids.py
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Scripts/new_document.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Scripts/new_document.py
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Scripts/templates.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Scripts/templates.py
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Templates/ADR.template.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Templates/ADR.template.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Templates/ARC.template.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Templates/ARC.template.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Templates/GOV.template.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Templates/GOV.template.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Templates/PUB.template.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Templates/PUB.template.md
+diff -ruN /storage/emulated/0/DifferenceEngine/99_UTILITIES/Templates/SPEC.template.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Templates/SPEC.template.md
+diff -ruN /storage/emulated/0/DifferenceEngine/ADE_ACTIVE_STATE_RESEARCH_BOOTSTRAP_v2.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/ADE_ACTIVE_STATE_RESEARCH_BOOTSTRAP_v2.md
+diff -ruN /storage/emulated/0/DifferenceEngine/ADE_REPOSITORY_FILES.txt /storage/emulated/0/FILE_LIBRARY_UPLOADS/ADE_REPOSITORY_FILES.txt
+diff -ruN "/storage/emulated/0/DifferenceEngine/ADE_REPOSITORY_TREE (1).txt" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/ADE_REPOSITORY_TREE (1).txt"
+diff -ruN /storage/emulated/0/DifferenceEngine/ADE_REPOSITORY_TREE.txt /storage/emulated/0/FILE_LIBRARY_UPLOADS/ADE_REPOSITORY_TREE.txt
+diff -ruN /storage/emulated/0/DifferenceEngine/ADE_REPOSITORY_TREE_FULL.txt /storage/emulated/0/FILE_LIBRARY_UPLOADS/ADE_REPOSITORY_TREE_FULL.txt
+diff -ruN "/storage/emulated/0/DifferenceEngine/Accountability Authority Graph.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Accountability Authority Graph.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Artifact Header.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Artifact Header.md"
+diff -ruN /storage/emulated/0/DifferenceEngine/BOOTSTRAP-Difference-Engine-Branch-IV-Operations-ADE-Execution.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/BOOTSTRAP-Difference-Engine-Branch-IV-Operations-ADE-Execution.md
+diff -ruN /storage/emulated/0/DifferenceEngine/BOOTSTRAP_ACTIVE_STATE_SNAPSHOT.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/BOOTSTRAP_ACTIVE_STATE_SNAPSHOT.md
+diff -ruN /storage/emulated/0/DifferenceEngine/BOOTSTRAP_CONTEXT_SNAPSHOT_Part_02.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/BOOTSTRAP_CONTEXT_SNAPSHOT_Part_02.md
+diff -ruN /storage/emulated/0/DifferenceEngine/Bootstrap-RC2.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/Bootstrap-RC2.md
+diff -ruN "/storage/emulated/0/DifferenceEngine/Branch_V_ Human_Interface.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Branch_V_ Human_Interface.md"
+diff -ruN /storage/emulated/0/DifferenceEngine/CA_Execution_Chunking_Standard.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/CA_Execution_Chunking_Standard.md
+diff -ruN "/storage/emulated/0/DifferenceEngine/Canonical Evaluation Function.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Canonical Evaluation Function.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Complete Epistemic Persona.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Complete Epistemic Persona.md"
+diff -ruN /storage/emulated/0/DifferenceEngine/Conservation_First_Archaeology.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/Conservation_First_Archaeology.md
+diff -ruN /storage/emulated/0/DifferenceEngine/Constitutional_Convergence_Report.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/Constitutional_Convergence_Report.md
+diff -ruN "/storage/emulated/0/DifferenceEngine/Difference Engine Branch IV Operations Bootstrap-RC1.0.0.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Difference Engine Branch IV Operations Bootstrap-RC1.0.0.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/DifferenceEngine Gubmint Cheese.txt" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/DifferenceEngine Gubmint Cheese.txt"
+diff -ruN /storage/emulated/0/DifferenceEngine/Difference_Engine_Constitutional_Amendment_Universal_Branch_Steward_Protocol_v1.0.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/Difference_Engine_Constitutional_Amendment_Universal_Branch_Steward_Protocol_v1.0.md
+diff -ruN /storage/emulated/0/DifferenceEngine/Difference_Engine_Steward_Governance_Master.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/Difference_Engine_Steward_Governance_Master.md
+diff -ruN /storage/emulated/0/DifferenceEngine/FRAMEWORK_LOCK_7_31_26.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/FRAMEWORK_LOCK_7_31_26.md
+diff -ruN "/storage/emulated/0/DifferenceEngine/Facet Conversation.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Facet Conversation.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Files on the Motorola G Power 21.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Files on the Motorola G Power 21.md"
+diff -ruN /storage/emulated/0/DifferenceEngine/Foundation_Summit_001.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/Foundation_Summit_001.md
+diff -ruN /storage/emulated/0/DifferenceEngine/Head_Steward_v0.9.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/Head_Steward_v0.9.md
+diff -ruN "/storage/emulated/0/DifferenceEngine/Instituonal Knowledge Graph.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Instituonal Knowledge Graph.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Instituonal Memory.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Instituonal Memory.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Institutional Governance Corpus.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Institutional Governance Corpus.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Institutional Optimization Function.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Institutional Optimization Function.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Life Companion Constitution.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Life Companion Constitution.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Life Companion Constitution.txt" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Life Companion Constitution.txt"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Mock Up Queue File From Operations.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Mock Up Queue File From Operations.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Operational Reality.txt" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Operational Reality.txt"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Operator Profile.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Operator Profile.md"
+diff -ruN /storage/emulated/0/DifferenceEngine/Phase_tramsition_briefing_branch_proposals_and_addendums_v1.1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/Phase_tramsition_briefing_branch_proposals_and_addendums_v1.1.md
+diff -ruN "/storage/emulated/0/DifferenceEngine/Primitive Promotion Pipeline.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Primitive Promotion Pipeline.md"
+diff -ruN /storage/emulated/0/DifferenceEngine/Rebuild.md/BABBAGE-001.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/BABBAGE-001.md
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/BOOTSTRAP III BABBAGE ACTIVATION.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/BOOTSTRAP III BABBAGE ACTIVATION.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/BOOTSTRAP IV  - WP-001 CONTINUATION.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/BOOTSTRAP IV  - WP-001 CONTINUATION.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/Bootstrap Consistency Audit.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Bootstrap Consistency Audit.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/Completed Queue.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Completed Queue.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/Concepts Queue.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Concepts Queue.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - BABBAGE - Babbage v1.0 Acceptance Test.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Babbage v1.0 Acceptance Test.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - BABBAGE - Babbage v1.0 Activation.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Babbage v1.0 Activation.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - BABBAGE - Babbage v1.0 Certification.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Babbage v1.0 Certification.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - BABBAGE - Babbage v1.0 Completion Record.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Babbage v1.0 Completion Record.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - BABBAGE - Babbage v1.0 Declaration of Service.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Babbage v1.0 Declaration of Service.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - BABBAGE - Babbage v1.0 Operational Commission.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Babbage v1.0 Operational Commission.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - BABBAGE - DOD - Definition Of Done.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - DOD - Definition Of Done.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - BABBAGE - Execution Law - Repository Feed.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Execution Law - Repository Feed.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - BABBAGE - Handoff Protocol.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Handoff Protocol.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - BABBAGE - Mission Protocol.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Mission Protocol.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - BABBAGE - Preservation Protocol.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Preservation Protocol.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - BABBAGE - Versioning.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Versioning.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - Bootstrap Initialization Contract.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - Bootstrap Initialization Contract.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - Constitutional Amendment - Execution Law.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - Constitutional Amendment - Execution Law.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - Discussion Mode.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - Discussion Mode.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - Execution Mode.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - Execution Mode.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - Mode Transition Protocol.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - Mode Transition Protocol.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - Operational Readiness.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - Operational Readiness.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - Preservation Mode.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - Preservation Mode.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - Recovery Mode.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - Recovery Mode.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE - Repository Map 8-1-26.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - Repository Map 8-1-26.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE Difference Report.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE Difference Report.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE Repository File Tree Structure 8-1-26.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE Repository File Tree Structure 8-1-26.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/DE Repository Structure 8-1-26 v1.0.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE Repository Structure 8-1-26 v1.0.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/Mission Queue.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Mission Queue.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/PP-001 SMELTING BOOTSTRAP.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/PP-001 SMELTING BOOTSTRAP.md"
+diff -ruN /storage/emulated/0/DifferenceEngine/Rebuild.md/PP-001.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/PP-001.md
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/Primitive Queue.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Primitive Queue.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/Project Space BABBAGE.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Project Space BABBAGE.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/Project Space Instructions.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Project Space Instructions.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/Project Space Personalization Instructions.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Project Space Personalization Instructions.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/Project Space Queued Items 8_1_26.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Project Space Queued Items 8_1_26.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/Project Space Session 3 Summary.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Project Space Session 3 Summary.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/Promotion Queue.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Promotion Queue.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/QUEUE - Review Repository Naming Convention.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/QUEUE - Review Repository Naming Convention.md"
+diff -ruN /storage/emulated/0/DifferenceEngine/Rebuild.md/QUEUE_Constitution_Reduction.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/QUEUE_Constitution_Reduction.md
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/Queue Architecture.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Queue Architecture.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/Rebuild Bootstrap 2 Constraints.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Rebuild Bootstrap 2 Constraints.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/Reckless Ideator.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Reckless Ideator.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/Repository Notation Standard v1.0.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Repository Notation Standard v1.0.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/Review Queue.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Review Queue.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/SIQ Suggested Implementation Queue.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/SIQ Suggested Implementation Queue.md"
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/Session Queue.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Session Queue.md"
+diff -ruN /storage/emulated/0/DifferenceEngine/Rebuild.md/Temp.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Temp.md
+diff -ruN "/storage/emulated/0/DifferenceEngine/Rebuild.md/Tool Queue.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Tool Queue.md"
+diff -ruN /storage/emulated/0/DifferenceEngine/Rebuild.md/temp2.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/temp2.md
+diff -ruN /storage/emulated/0/DifferenceEngine/Repository/Governance/amendments.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/Repository/Governance/amendments.md
+diff -ruN /storage/emulated/0/DifferenceEngine/Repository/Governance/bootstrap.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/Repository/Governance/bootstrap.md
+diff -ruN /storage/emulated/0/DifferenceEngine/Repository/Governance/constitution.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/Repository/Governance/constitution.md
+diff -ruN "/storage/emulated/0/DifferenceEngine/Repository Design Objective.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Repository Design Objective.md"
+diff -ruN /storage/emulated/0/DifferenceEngine/Repository_Synchronization_Request.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/Repository_Synchronization_Request.md
+diff -ruN /storage/emulated/0/DifferenceEngine/SESSION-STATE.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/SESSION-STATE.md
+diff -ruN /storage/emulated/0/DifferenceEngine/The_Difference_Engine.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/The_Difference_Engine.md
+diff -ruN "/storage/emulated/0/DifferenceEngine/Universal_Branch_Steward_Protocol_Constitutional_Amendment_v_1.1_Ratification Draft.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/Universal_Branch_Steward_Protocol_Constitutional_Amendment_v_1.1_Ratification Draft.md"
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/__init__.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/__init__.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/__main__.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/__main__.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/artifacts.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/artifacts.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/bootstrap.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/bootstrap.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/config.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/config.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/constants.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/constants.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/context.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/context.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/contracts.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/contracts.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/discover.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/discover.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/errors.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/errors.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/execution.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/execution.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/filesystem.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/filesystem.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/governance.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/governance.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/health.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/health.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/loader.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/loader.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/logging.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/logging.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/main.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/main.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/mission.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/mission.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/models.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/models.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/modes.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/modes.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/paths.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/paths.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/queue.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/queue.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/readiness.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/readiness.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/recovery.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/recovery.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/result.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/result.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/specifications.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/specifications.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/state.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/state.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/task.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/task.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/validators.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/validators.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/version.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/version.py
+diff -ruN /storage/emulated/0/DifferenceEngine/ade/kernel/tests/test_bootstrap_loader.py /storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/tests/test_bootstrap_loader.py
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/PROCESSING_PIPELINE_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/PROCESSING_PIPELINE_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_API_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_API_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONFIGURATION_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONFIGURATION_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONTRACT_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONTRACT_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_DEPENDENCIES_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_DEPENDENCIES_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_DISCOVERY_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_DISCOVERY_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_ERRORS_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_ERRORS_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_FILE_LAYOUT_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_FILE_LAYOUT_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_GLOSSARY_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_GLOSSARY_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_IMPLEMENTATION_PLAN_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_IMPLEMENTATION_PLAN_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_INTERFACE_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_INTERFACE_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_LIFECYCLE_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_LIFECYCLE_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_MODULES_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_MODULES_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_OUTPUT_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_OUTPUT_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_PSEUDOCODE_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_PSEUDOCODE_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_PYTHON_MAPPING_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_PYTHON_MAPPING_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_SEQUENCE_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_SEQUENCE_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_SPECIFICATION_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_SPECIFICATION_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_STATE_MACHINE_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_STATE_MACHINE_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_TEST_PLAN_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_TEST_PLAN_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/BOOTSTRAP_LOADER_WORKFLOW_v1.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_WORKFLOW_v1.md
+diff -ruN /storage/emulated/0/DifferenceEngine/architecture/bootstrap_loader/README.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/README.md
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/directory_tree.txt /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/directory_tree.txt
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/directory_tree_pretty.txt /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/directory_tree_pretty.txt
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/file_tree.txt /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/file_tree.txt
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/reconciliation/DE.dirs /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/DE.dirs
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/reconciliation/DE.relative /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/DE.relative
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/reconciliation/DE.relative.dirs /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/DE.relative.dirs
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/reconciliation/DE_only.files /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/DE_only.files
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/reconciliation/DIRECTORY_DRIFT.dirs /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/DIRECTORY_DRIFT.dirs
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/reconciliation/DifferenceEngine.files /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/DifferenceEngine.files
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/reconciliation/FILE_LIBRARY_UPLOADS.files /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/FILE_LIBRARY_UPLOADS.files
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/reconciliation/FLU.dirs /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/FLU.dirs
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/reconciliation/FLU.relative /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/FLU.relative
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/reconciliation/FLU.relative.dirs /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/FLU.relative.dirs
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/reconciliation/FLU_only.files /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/FLU_only.files
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/reconciliation/LOCATION_DRIFT.files /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/LOCATION_DRIFT.files
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/reconciliation/REPOSITORY.diff /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/REPOSITORY.diff
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/reports/MISSING_DIRECTORY_RECONCILIATION.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reports/MISSING_DIRECTORY_RECONCILIATION.md
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/reports/MISSION_001A_REPOSITORY_RECONCILIATION_REPORT.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reports/MISSION_001A_REPOSITORY_RECONCILIATION_REPORT.md
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/reports/ade_dirs.lst /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reports/ade_dirs.lst
+diff -ruN /storage/emulated/0/DifferenceEngine/inventory/repository_tree_pretty.txt /storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/repository_tree_pretty.txt
+diff -ruN /storage/emulated/0/DifferenceEngine/queue/completed/Q-001A-REPOSITORY-RECONCILIATION.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/queue/completed/Q-001A-REPOSITORY-RECONCILIATION.md
+diff -ruN /storage/emulated/0/DifferenceEngine/round_2.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/round_2.md
+diff -ruN /storage/emulated/0/DifferenceEngine/standards/v1/REPOSITORY_STANDARD_v1.0.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/standards/v1/REPOSITORY_STANDARD_v1.0.md
+diff -ruN /storage/emulated/0/DifferenceEngine/standards/v1/supporting/STANDARDS_HANDOFF.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/standards/v1/supporting/STANDARDS_HANDOFF.md
+diff -ruN /storage/emulated/0/DifferenceEngine/stewardship_proposed_amendments.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/stewardship_proposed_amendments.md
+diff -ruN /storage/emulated/0/DifferenceEngine/temp.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/temp.md
+diff -ruN "/storage/emulated/0/DifferenceEngine/workspace/operational/Continue DifferenceEngine.md" "/storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/Continue DifferenceEngine.md"
+diff -ruN /storage/emulated/0/DifferenceEngine/workspace/operational/bootstrap/BOOTSTRAP.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/bootstrap/BOOTSTRAP.md
+diff -ruN /storage/emulated/0/DifferenceEngine/workspace/operational/bootstrap/INITIALIZATION_ORDER.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/bootstrap/INITIALIZATION_ORDER.md
+diff -ruN /storage/emulated/0/DifferenceEngine/workspace/operational/current/COMPLETED_TASK_BLOCK.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/current/COMPLETED_TASK_BLOCK.md
+diff -ruN /storage/emulated/0/DifferenceEngine/workspace/operational/current/MISSION.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/current/MISSION.md
+diff -ruN /storage/emulated/0/DifferenceEngine/workspace/operational/current/NEXT_COMMAND_BLOCK.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/current/NEXT_COMMAND_BLOCK.md
+diff -ruN /storage/emulated/0/DifferenceEngine/workspace/operational/current/NEXT_MISSION.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/current/NEXT_MISSION.md
+diff -ruN /storage/emulated/0/DifferenceEngine/workspace/operational/current/OPERATIONAL_LAWS.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/current/OPERATIONAL_LAWS.md
+diff -ruN /storage/emulated/0/DifferenceEngine/workspace/operational/current/QUEUE.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/current/QUEUE.md
+diff -ruN /storage/emulated/0/DifferenceEngine/workspace/operational/current/REPOSITORY_STATE.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/current/REPOSITORY_STATE.md
+diff -ruN /storage/emulated/0/DifferenceEngine/workspace/operational/current/RESUME.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/current/RESUME.md
+diff -ruN /storage/emulated/0/DifferenceEngine/workspace/operational/current/WORKFLOW.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/current/WORKFLOW.md
+diff -ruN /storage/emulated/0/DifferenceEngine/workspace/operational/preservation/PP-0001.md /storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/preservation/PP-0001.md

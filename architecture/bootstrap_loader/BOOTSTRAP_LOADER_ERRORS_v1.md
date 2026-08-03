@@ -1,0 +1,21 @@
+# Bootstrap Loader Errors
+
+Status: Draft
+
+REPOSITORY_NOT_FOUND
+
+CONSTITUTION_NOT_FOUND
+
+BOOTSTRAP_NOT_FOUND
+
+SPECIFICATION_NOT_FOUND
+
+READINESS_FAILED
+
+MISSION_NOT_FOUND
+
+QUEUE_NOT_FOUND
+
+RECOVERY_FAILED
+
+All errors SHALL terminate initialization and invoke Recovery Mode.

@@ -1,0 +1,455 @@
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/10_Governance/ARC-0001_Information_Architecture.md	2026-07-28 00:00:07.053634458 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/10_Governance/GOV-0001_Repository_Principles.md	2026-07-27 16:52:05.487534790 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/10_Governance/GOV-0002_Document_Lifecycle.md	2026-07-27 17:00:16.010916988 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/10_Governance/ICD-001 — Constitutional Architecture.md"	2026-07-28 18:07:46.315731226 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/10_Governance/ICD-002 — Governance Philosophy.md"	2026-07-28 18:08:43.589070265 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/10_Governance/ICD-003 — Artifact Lifecycle.md"	2026-07-28 18:09:33.205741874 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/10_Governance/ICD-004 — Repository Topology.md"	2026-07-28 18:11:07.839084635 -0500
++        Intake
++        Authority
++        Design
++        Institutional Operations
++        Source Material
++        Durable Knowledge
++        Executable Systems
++        Released Packages
++        Institutional History
++        Validation
++        Experimentation
++        Conventions
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/10_Governance/README.md	2026-07-28 18:55:55.482685707 -0500
++  - governance
++  - repository
++  - constitution
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Conventions/DOCUMENT_METADATA.md	2026-07-27 15:31:33.340386748 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Conventions/MARKDOWN_STYLE.md	2026-07-27 15:43:06.167122434 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Conventions/WRITING_GUIDELINES.md	2026-07-27 15:43:34.123791886 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/AIS_v0.1.md	2026-07-28 01:28:39.950830393 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Architecture_Decision_Record_Specification_v0.1.md	2026-07-28 02:23:10.034489495 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Artifact_Lifecycle_Specification_v0.1.md	2026-07-28 02:08:50.754403894 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Artifact_Schema_v0.1.md	2026-07-28 01:35:52.887540190 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Asset_Schema_v0.1.md	2026-07-28 02:05:45.307718753 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Canonical_Promotion_Specification_v0.1.md	2026-07-28 01:55:34.000000000 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Configuration_Management_Specification_v0.1.md	2026-07-28 02:27:54.994517883 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Conversation_Schema_v0.1.md	2026-07-28 01:33:05.347523499 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Developer_Guide_v0.1.md	2026-07-28 02:18:52.554463845 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Event_Catalog_Specification_v0.1.md	2026-07-28 02:30:20.277865689 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Event_Model_Specification_v0.1.md	2026-07-28 02:29:17.604526112 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Event_Processing_Specification_v0.1.md	2026-07-28 02:36:45.857904100 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Event_Routing_Specification_v0.1.md	2026-07-28 02:35:34.174563626 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Event_Schema_Specification_v0.1.md	2026-07-31 13:54:27.461430943 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Implementation_Backlog_v0.1.md	2026-07-28 02:16:29.071116218 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Implementation_Checklist_v0.1.md	2026-07-28 02:17:25.044455127 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Implementation_Milestones_v0.1.md	2026-07-28 02:18:08.841126157 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Implementation_Roadmap_v0.1.md	2026-07-28 02:15:15.874442259 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Ingestion_Glossary_v0.1.md	2026-07-28 02:13:52.957767333 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Ingestion_Pipeline_Specification_v0.1.md	2026-07-28 02:09:48.957743025 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Ingestion_Report_Schema_v0.1.md	2026-07-28 02:07:45.247730701 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Observability_Specification_v0.1.md	2026-07-28 02:28:38.194522186 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Operational_Readiness_Specification_v0.1.md	2026-07-28 02:26:22.257841977 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Output_Package_Specificatiom_v0.1.md	2026-07-28 01:44:42.717592972 -0500
++    └── ingestion_report.md
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Parser_Behavior_Specification_v0.1.md	2026-07-28 02:02:37.364366696 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Parser_Development_Guide_v0.1.md	2026-07-28 02:19:51.794469746 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Provenance_Specification_v0.1.md	2026-07-28 01:41:04.540904570 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Publication_Specification_v0.1.md	2026-07-28 02:01:05.221024184 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Quality_Assurance_Specification_v0.1.md	2026-07-28 02:22:20.941151271 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Queue_Candidate_Schema_v0.1.md	2026-07-28 02:03:47.671040367 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Queue_Specification_v0.1.md	2026-07-28 01:31:40.550848385 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Reference_Schema_v0.1.md	2026-07-28 02:06:49.024391767 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Repository_Constitution_v0.1.md	2026-07-28 02:23:52.804493756 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Repository_Index_Specification_v0.1.md	2026-07-28 02:11:05.071083941 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Repository_Mapping_Specification_v0.1.md	2026-07-28 01:50:23.940960298 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Repository_Maturity_Model_v0.1.md	2026-07-28 02:25:32.574503695 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Repository_Relationship_Schema_v0.1.md	2026-07-28 02:04:49.474379857 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Repository_Standards_v0.1.md	2026-07-28 02:24:43.951165517 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Schema_Governance_Specification_v0.1.md	2026-07-28 02:12:04.044423149 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Security_and_Integrity_Specification_v0.1.md	2026-07-28 02:27:12.397846972 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Service_Contracts_v0.1.md	2026-07-28 01:38:17.640887943 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Service_Development_Guide_v0.1.md	2026-07-28 02:20:33.227807207 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Testing_Strategy_Specification_v0.1.md	2026-07-28 02:21:18.571145058 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Validation_Specification_v0.1.md	2026-07-28 01:47:56.684278962 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_API_Specification_v0.1.md	2026-07-28 02:57:25.884694298 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Audit_Specification_v0.1.md	2026-07-28 02:53:56.504673439 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Checkpointing_Specification_v0.1.md	2026-07-28 02:45:05.291287187 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Context_Specification_v0.1.md	2026-07-28 02:42:41.237939503 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Definition_Schema_v0.1.md	2026-07-28 02:38:26.144580757 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Execution_Specification_v0.1.md	2026-07-28 02:39:13.811252173 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Governance_Specification_v0.1.md	2026-07-28 02:52:37.354665554 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Metrics_Specification_v0.1.md	2026-07-28 02:55:04.488013545 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Orchestration_Specification_v0.1.md	2026-07-28 02:37:27.351241567 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Recovery_Specification_v0.1.md	2026-07-28 02:50:00.987983311 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Replay_Specification_v0.1.md	2026-07-28 02:50:58.811322404 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Reporting_Specification_v0.1.md	2026-07-28 02:56:35.001355895 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Capability_Specification_v0.1.md	2026-07-28 03:01:10.354716659 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Communication_Specification_v0.1.md	2026-07-28 03:14:45.878131235 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Composition_Specification_v0.1.md	2026-07-28 03:03:58.824733442 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Configuration_Specification_v0.1.md	2026-07-28 03:06:21.991414371 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Contract_Specification_v0.1.md	2026-07-28 02:58:32.798034297 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Coordination_Specification_v0.1.md	2026-07-28 03:13:11.941455210 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Dependency_Specification_v0.1.md	2026-07-28 03:03:01.811394429 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Discovery_Specification_v0.1.md	2026-07-28 03:00:10.624710709 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Dispatch_Specification_v0.1.md	2026-07-28 03:17:21.121480033 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Health_Specification_v0.1.md	2026-07-28 03:08:23.788093171 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Lifecycle_Specification_v0.1.md	2026-07-28 03:02:06.998055635 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Load_Balancing_Specification_v0.1.md	2026-07-28 03:11:19.008110626 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Messaging_Specification_v0.1.md	2026-07-28 03:15:39.621469922 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Registry_Specification_v0.1.md	2026-07-28 02:59:22.341372566 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Resilience_Specification_v0.1.md	2026-07-28 03:09:28.831432984 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Routing_Specification_v0.1.md	2026-07-28 03:16:31.451475085 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Scaling_Specification_v0.1.md	2026-07-28 03:10:20.401438121 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Scheduling_Specification_v0.1.md	2026-07-28 03:12:10.051449045 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_State_Machine_Specification_v0.1.md	2026-07-28 02:42:00.097935405 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Versioning_Specification_v0.1.md	2026-07-28 02:51:57.444661579 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Naming/FILE_NAMING.md	2026-07-27 15:34:51.747073180 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/README.md	2026-07-27 15:24:06.973675614 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Scripts/README.md	2026-07-27 17:19:16.481030600 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Scripts/ids.py	2026-07-27 17:25:41.087735581 -0500
++    """
++    Extract document type and numeric ID from a filename.
++    Returns:
++        (document_type, number)
++    Raises:
++        ValueError if no valid ID exists.
++    """
++    match = ID_PATTERN.search(filename)
++    if not match:
++        raise ValueError(f"No document ID found: {filename}")
++    return match.group(1), int(match.group(2))
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Scripts/new_document.py	2026-07-27 17:45:27.014520386 -0500
++    Create a new repository document from a standard template.
++    1. Select document type.
++    2. Determine next available document ID.
++    3. Prompt for document title.
++    4. Select the correct template.
++    5. Generate filename.
++    6. Create the document.
++    7. Populate standard metadata.
++    8. Report success.
++    - Automatic dates
++    - Metadata validation
++    - Repository index updates
++    - Git integration
++    """Main entry point."""
++    print("ADE Document Creator")
++    print("--------------------")
++    VALID_TYPES = ("GOV", "ARC", "ADR", "SPEC", "PUB")
++    document_type = input(
++        f"Document type {VALID_TYPES}: "
++    ).strip().upper()
++    if document_type in VALID_TYPES:
++        break
++    print("Invalid document type.\n")
++    title = input("Document title: ")
++    print()
++    print("Summary")
++    print(f"Type : {document_type}")
++    print(f"Title: {title}")
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Scripts/templates.py	2026-07-27 17:20:31.734371430 -0500
++    "GOV": "GOV.template.md",
++    "ARC": "ARC.template.md",
++    "ADR": "ADR.template.md",
++    "SPEC": "SPEC.template.md",
++    "PUB": "PUB.template.md",
++    """
++    Return the template path for a document type.
++    Raises:
++        KeyError if the document type is unknown.
++    """
++    filename = TEMPLATES[document_type.upper()]
++    return TEMPLATE_DIRECTORY / filename
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Templates/ADR.template.md	2026-07-27 16:39:13.890791258 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Templates/ARC.template.md	2026-07-27 16:22:52.240693467 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Templates/GOV.template.md	2026-07-27 16:17:13.240659696 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Templates/PUB.template.md	2026-07-27 16:36:51.410777064 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Templates/SPEC.template.md	2026-07-27 16:28:02.634057721 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ADE_ACTIVE_STATE_RESEARCH_BOOTSTRAP_v2.md	2026-07-27 22:12:15.549656439 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ADE_REPOSITORY_FILES.txt	2026-07-30 12:41:26.518395526 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/ADE_REPOSITORY_TREE (1).txt"	2026-07-30 12:41:48.041731003 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ADE_REPOSITORY_TREE.txt	2026-07-30 12:38:40.591712329 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ADE_REPOSITORY_TREE_FULL.txt	2026-07-30 12:41:38.058396675 -0500
++    ├── README.md
++    └── Repository documentation.
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Accountability Authority Graph.md"	2026-07-31 08:11:33.730357222 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Artifact Header.md"	2026-07-31 08:12:26.393695801 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/BOOTSTRAP-Difference-Engine-Branch-IV-Operations-ADE-Execution.md	2026-07-30 06:23:12.623549810 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/BOOTSTRAP_ACTIVE_STATE_SNAPSHOT.md	2026-07-27 22:09:55.729642511 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/BOOTSTRAP_CONTEXT_SNAPSHOT_Part_02.md	2026-07-28 19:09:43.516101527 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/Bootstrap-RC2.md	2026-07-30 14:00:54.715537186 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Branch_V_ Human_Interface.md"	2026-07-29 19:20:16.173518621 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/CA_Execution_Chunking_Standard.md	2026-08-02 22:24:13.445891622 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Canonical Evaluation Function.md"	2026-07-31 08:16:56.253722684 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Complete Epistemic Persona.md"	2026-07-30 18:53:38.510005550 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/Conservation_First_Archaeology.md	2026-07-28 18:57:16.902693818 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/Constitutional_Convergence_Report.md	2026-07-29 06:15:04.077548362 -0500
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Difference Engine Branch IV Operations Bootstrap-RC1.0.0.md"	2026-07-30 06:37:49.583637172 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/DifferenceEngine Gubmint Cheese.txt"	2026-07-30 23:20:36.182276895 -0500
++ Pre-defining behavioral meaning and constraints before generation rather than reacting after output.
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/Difference_Engine_Constitutional_Amendment_Universal_Branch_Steward_Protocol_v1.0.md	2026-07-28 23:09:45.968029211 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/Difference_Engine_Steward_Governance_Master.md	2026-07-30 20:10:30.719665515 -0500
++    Collaborative Reasoning and Implementation Assistant
++    • Repository Steward
++    • Technical Writer
++    • Systems Analyst
++    • Research Assistant
++    • Documentation Support
++    Task-adaptive (currently: technical, non-anthropomorphic)
++    Platform Constraints
++        ↓
++    Repository Constitution
++        ↓
++    Operator Direction
++        ↓
++    Task Requirements
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/FRAMEWORK_LOCK_7_31_26.md	2026-07-31 13:07:27.386628851 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Facet Conversation.md"	2026-07-28 00:54:56.557295485 -0500
++                    │
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Files on the Motorola G Power 21.md"	2026-07-29 02:33:54.372682010 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/Foundation_Summit_001.md	2026-07-30 03:33:54.729204542 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/Head_Steward_v0.9.md	2026-07-29 19:21:22.080191854 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Instituonal Knowledge Graph.md"	2026-07-31 08:08:13.515430569 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Instituonal Memory.md"	2026-07-31 08:07:07.902090700 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Institutional Governance Corpus.md"	2026-07-31 08:05:46.068749214 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Institutional Optimization Function.md"	2026-07-31 08:18:16.420397337 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Life Companion Constitution.md"	2026-07-28 13:59:38.266813752 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Life Companion Constitution.txt"	2026-07-28 14:01:24.443490997 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Mock Up Queue File From Operations.md"	2026-07-30 12:03:04.511499535 -0500
++  Constitution: CONSTITUTION.md
++  Repository Standards: Repository_Standards.md
++  Operator: <Operator>
++  - Branch IV Bootstrap
++  - Repository bootstrap session (2026-07-30)
++  - None
++  - None
++  - None
++  - None
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Operational Reality.txt"	2026-07-30 08:50:22.148934993 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Operator Profile.md"	2026-07-30 19:53:39.232898084 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/Phase_tramsition_briefing_branch_proposals_and_addendums_v1.1.md	2026-07-29 06:04:42.714153129 -0500
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
++    ↓
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Primitive Promotion Pipeline.md"	2026-07-31 08:14:49.293710037 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/BABBAGE-001.md	2026-07-31 21:30:16.936061921 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/BOOTSTRAP III BABBAGE ACTIVATION.md"	2026-08-01 00:05:04.343941539 -0500
++   Constitution
++   Bootstrap
++   Governance Brief
++   Session State
++   Operational Doctrine
++   Missing initialization
++   Drift
++   Blockers
++   Repository inconsistencies
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/BOOTSTRAP IV  - WP-001 CONTINUATION.md"	2026-08-02 02:35:12.138493962 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Bootstrap Consistency Audit.md"	2026-08-02 13:35:41.502727879 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Completed Queue.md"	2026-07-31 18:30:04.656411707 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Concepts Queue.md"	2026-07-31 18:28:42.533070192 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Babbage v1.0 Acceptance Test.md"	2026-08-02 13:38:35.436078539 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Babbage v1.0 Activation.md"	2026-08-02 13:47:18.489463978 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Babbage v1.0 Certification.md"	2026-08-02 13:40:45.012758114 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Babbage v1.0 Completion Record.md"	2026-08-02 13:56:51.689521079 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Babbage v1.0 Declaration of Service.md"	2026-08-02 13:53:41.869502170 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Babbage v1.0 Operational Commission.md"	2026-08-02 13:42:45.606103461 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - DOD - Definition Of Done.md"	2026-08-02 12:41:50.235739317 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Execution Law - Repository Feed.md"	2026-08-02 12:46:34.372434289 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Handoff Protocol.md"	2026-08-02 12:39:42.232393232 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Mission Protocol.md"	2026-08-02 12:36:54.029043142 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Preservation Protocol.md"	2026-08-02 12:38:50.492388077 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - BABBAGE - Versioning.md"	2026-08-02 12:40:36.605731982 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - Bootstrap Initialization Contract.md"	2026-08-02 13:15:26.419273501 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - Constitutional Amendment - Execution Law.md"	2026-08-02 12:48:44.365780572 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - Discussion Mode.md"	2026-08-02 12:52:24.762469195 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - Execution Mode.md"	2026-08-02 12:51:10.919128505 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - Mode Transition Protocol.md"	2026-08-02 13:09:49.725906626 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - Operational Readiness.md"	2026-08-02 13:17:07.045950192 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - Preservation Mode.md"	2026-08-02 13:13:00.929259007 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - Recovery Mode.md"	2026-08-02 13:11:24.245916042 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE - Repository Map 8-1-26.md"	2026-08-01 14:20:29.708154901 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE Difference Report.md"	2026-08-02 02:29:57.875129322 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE Repository File Tree Structure 8-1-26.md"	2026-08-01 20:44:05.019705364 -0500
++    ├── Authority Registry
++    ├── Canonical Registry
++    ├── Artifact Registry
++    ├── Naming Registry
++    ├── Dependency Registry
++    ├── Promotion Registry
++    └── Lifecycle Registry
++    
++    Incoming_ZIPs/
++    Phone_Uploads/
++    External_Repositories/
++    Staging/
++    Unclassified/
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/DE Repository Structure 8-1-26 v1.0.md"	2026-08-01 14:04:48.681394490 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Mission Queue.md"	2026-07-31 18:25:22.823050297 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/PP-001 SMELTING BOOTSTRAP.md"	2026-07-31 14:51:31.448438705 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/PP-001.md	2026-07-31 13:55:23.844769893 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Primitive Queue.md"	2026-07-31 18:27:59.746399263 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Project Space BABBAGE.md"	2026-08-01 00:25:26.900729994 -0500
++   Constitution
++   Bootstrap
++   Governance Brief
++   Session State
++   Operational Doctrine
++   Missing initialization
++   Drift
++   Blockers
++   Repository inconsistencies
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Project Space Instructions.md"	2026-08-01 00:50:56.974215750 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Project Space Personalization Instructions.md"	2026-08-01 00:53:02.434228248 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Project Space Queued Items 8_1_26.md"	2026-08-01 00:09:06.910632369 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Project Space Session 3 Summary.md"	2026-08-01 00:10:42.053975181 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Promotion Queue.md"	2026-07-31 18:26:47.043058687 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/QUEUE - Review Repository Naming Convention.md"	2026-08-02 13:28:55.612687445 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/QUEUE_Constitution_Reduction.md	2026-08-02 13:24:15.429326200 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Queue Architecture.md"	2026-07-31 18:22:48.363034910 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Rebuild Bootstrap 2 Constraints.md"	2026-07-31 18:35:01.026441231 -0500
++   - Constitution
++   - Bootstrap
++   - Governance Brief
++   - Session State
++   - Operational Doctrine
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Reckless Ideator.md"	2026-08-01 22:50:41.511503322 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Repository Notation Standard v1.0.md"	2026-08-01 20:56:33.463113260 -0500
++    ├── Incoming/
++    ├── Phone_Uploads/
++    ├── Zip_Archives/
++    └── Legacy_Repositories/
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Review Queue.md"	2026-07-31 18:27:22.553062225 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/SIQ Suggested Implementation Queue.md"	2026-07-31 18:23:58.183041865 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Session Queue.md"	2026-07-31 18:25:59.966387331 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Temp.md	2026-08-01 20:54:07.379765373 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/Tool Queue.md"	2026-07-31 18:29:21.396407397 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/Rebuild.md/temp2.md	2026-08-01 22:49:53.754831897 -0500
++    Institutional_Ancestry/
++    Memory_Palace/
++    Offices/
++    Identity/
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/Repository/Governance/amendments.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/Repository/Governance/bootstrap.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/Repository/Governance/constitution.md	1969-12-31 18:00:00.000000000 -0600
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Repository Design Objective.md"	2026-07-31 08:15:52.007049618 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/Repository_Synchronization_Request.md	2026-07-31 13:54:27.444764275 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/SESSION-STATE.md	2026-07-31 13:54:27.438097607 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/The_Difference_Engine.md	2026-07-29 19:26:03.146886520 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/Universal_Branch_Steward_Protocol_Constitutional_Amendment_v_1.1_Ratification Draft.md"	2026-07-29 00:03:28.785016931 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/__init__.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/__main__.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/artifacts.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/bootstrap.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/config.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/constants.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/context.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/contracts.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/discover.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/errors.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/execution.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/filesystem.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/governance.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/health.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/loader.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/logging.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/main.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/mission.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/models.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/modes.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/paths.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/queue.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/readiness.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/recovery.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/result.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/specifications.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/state.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/task.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/validators.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/bootstrap_loader/version.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/ade/kernel/tests/test_bootstrap_loader.py	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/PROCESSING_PIPELINE_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_API_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONFIGURATION_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONTRACT_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_DEPENDENCIES_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_DISCOVERY_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_ERRORS_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_FILE_LAYOUT_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_GLOSSARY_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_IMPLEMENTATION_PLAN_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_INTERFACE_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_LIFECYCLE_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_MODULES_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_OUTPUT_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_PSEUDOCODE_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_PYTHON_MAPPING_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_SEQUENCE_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_SPECIFICATION_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_STATE_MACHINE_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_TEST_PLAN_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/BOOTSTRAP_LOADER_WORKFLOW_v1.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/architecture/bootstrap_loader/README.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/directory_tree.txt	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/directory_tree_pretty.txt	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/file_tree.txt	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/DE.dirs	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/DE.relative	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/DE.relative.dirs	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/DE_only.files	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/DIRECTORY_DRIFT.dirs	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/DifferenceEngine.files	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/FILE_LIBRARY_UPLOADS.files	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/FLU.dirs	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/FLU.relative	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/FLU.relative.dirs	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/FLU_only.files	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/LOCATION_DRIFT.files	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reconciliation/REPOSITORY.diff	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reports/MISSING_DIRECTORY_RECONCILIATION.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reports/MISSION_001A_REPOSITORY_RECONCILIATION_REPORT.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/reports/ade_dirs.lst	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/inventory/repository_tree_pretty.txt	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/queue/completed/Q-001A-REPOSITORY-RECONCILIATION.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/round_2.md	2026-07-31 13:54:27.454764276 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/standards/v1/REPOSITORY_STANDARD_v1.0.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/standards/v1/supporting/STANDARDS_HANDOFF.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/stewardship_proposed_amendments.md	2026-07-28 23:39:37.998207732 -0500
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/temp.md	2026-07-30 06:19:19.116859881 -0500
+"/storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/Continue DifferenceEngine.md"	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/bootstrap/BOOTSTRAP.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/bootstrap/INITIALIZATION_ORDER.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/current/COMPLETED_TASK_BLOCK.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/current/MISSION.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/current/NEXT_COMMAND_BLOCK.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/current/NEXT_MISSION.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/current/OPERATIONAL_LAWS.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/current/QUEUE.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/current/REPOSITORY_STATE.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/current/RESUME.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/current/WORKFLOW.md	1969-12-31 18:00:00.000000000 -0600
+/storage/emulated/0/FILE_LIBRARY_UPLOADS/workspace/operational/preservation/PP-0001.md	1969-12-31 18:00:00.000000000 -0600

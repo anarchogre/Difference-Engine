@@ -1,0 +1,52 @@
+.
+├── MemoryPalace
+├── Phylactery
+├── Repository
+│   ├── Entities
+│   ├── Governance
+│   ├── Observations
+│   ├── Patterns
+│   ├── Preservation
+│   ├── Publications
+│   ├── Relationships
+│   ├── Specifications
+│   └── Validation
+├── ade
+│   ├── cli
+│   ├── distribution
+│   ├── ingestion
+│   ├── kernel
+│   ├── objects
+│   ├── publication
+│   ├── schema
+│   ├── services
+│   ├── tests
+│   ├── validation
+│   └── workflows
+├── archives
+├── docs
+├── evidence
+├── inventory
+│   ├── directory_tree.txt
+│   ├── file_tree.txt
+│   └── repository_tree_pretty.txt
+├── queue
+│   ├── active
+│   ├── archive
+│   ├── blocked
+│   ├── completed
+│   ├── discussion
+│   ├── implementation
+│   ├── ingestion
+│   ├── research
+│   ├── review
+│   ├── roadmap
+│   └── someday
+├── scripts
+├── specifications
+├── stewards
+├── tools
+├── workspace
+└── {
+
+47 directories, 3 files

@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Runtime output
+workspace/operational/recovery/runtime/
+workspace/operational/recovery/gpt-plus-integration/
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*~
+
+# Editor and system artifacts
+.DS_Store
+Thumbs.db
+
+# Local logs
+logs/*.log

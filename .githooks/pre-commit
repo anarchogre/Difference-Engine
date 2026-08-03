@@ -1,0 +1,8 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+echo
+echo "DifferenceEngine pre-commit"
+
+git diff --cached --name-only
+
+exit 0

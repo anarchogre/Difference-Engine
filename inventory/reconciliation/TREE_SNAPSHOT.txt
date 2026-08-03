@@ -1,0 +1,264 @@
+/storage/emulated/0/DifferenceEngine
+├── MemoryPalace
+├── Phylactery
+├── Repository
+│   ├── Entities
+│   ├── Governance
+│   │   ├── amendments.md
+│   │   ├── bootstrap.md
+│   │   └── constitution.md
+│   ├── Observations
+│   ├── Patterns
+│   ├── Preservation
+│   ├── Publications
+│   ├── Relationships
+│   ├── Specifications
+│   └── Validation
+├── ade
+│   ├── cli
+│   ├── distribution
+│   ├── ingestion
+│   ├── kernel
+│   │   ├── bootstrap_loader
+│   │   │   ├── __init__.py
+│   │   │   ├── __main__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-313.pyc
+│   │   │   │   ├── __main__.cpython-313.pyc
+│   │   │   │   ├── artifacts.cpython-313.pyc
+│   │   │   │   ├── bootstrap.cpython-313.pyc
+│   │   │   │   ├── config.cpython-313.pyc
+│   │   │   │   ├── constants.cpython-313.pyc
+│   │   │   │   ├── context.cpython-313.pyc
+│   │   │   │   ├── contracts.cpython-313.pyc
+│   │   │   │   ├── discover.cpython-313.pyc
+│   │   │   │   ├── errors.cpython-313.pyc
+│   │   │   │   ├── execution.cpython-313.pyc
+│   │   │   │   ├── filesystem.cpython-313.pyc
+│   │   │   │   ├── governance.cpython-313.pyc
+│   │   │   │   ├── health.cpython-313.pyc
+│   │   │   │   ├── loader.cpython-313.pyc
+│   │   │   │   ├── logging.cpython-313.pyc
+│   │   │   │   ├── main.cpython-313.pyc
+│   │   │   │   ├── mission.cpython-313.pyc
+│   │   │   │   ├── models.cpython-313.pyc
+│   │   │   │   ├── modes.cpython-313.pyc
+│   │   │   │   ├── paths.cpython-313.pyc
+│   │   │   │   ├── queue.cpython-313.pyc
+│   │   │   │   ├── readiness.cpython-313.pyc
+│   │   │   │   ├── recovery.cpython-313.pyc
+│   │   │   │   ├── result.cpython-313.pyc
+│   │   │   │   ├── specifications.cpython-313.pyc
+│   │   │   │   ├── state.cpython-313.pyc
+│   │   │   │   ├── task.cpython-313.pyc
+│   │   │   │   ├── validators.cpython-313.pyc
+│   │   │   │   └── version.cpython-313.pyc
+│   │   │   ├── artifacts.py
+│   │   │   ├── bootstrap.py
+│   │   │   ├── config.py
+│   │   │   ├── constants.py
+│   │   │   ├── context.py
+│   │   │   ├── contracts.py
+│   │   │   ├── discover.py
+│   │   │   ├── errors.py
+│   │   │   ├── execution.py
+│   │   │   ├── filesystem.py
+│   │   │   ├── governance.py
+│   │   │   ├── health.py
+│   │   │   ├── loader.py
+│   │   │   ├── logging.py
+│   │   │   ├── main.py
+│   │   │   ├── mission.py
+│   │   │   ├── models.py
+│   │   │   ├── modes.py
+│   │   │   ├── paths.py
+│   │   │   ├── queue.py
+│   │   │   ├── readiness.py
+│   │   │   ├── recovery.py
+│   │   │   ├── result.py
+│   │   │   ├── specifications.py
+│   │   │   ├── state.py
+│   │   │   ├── task.py
+│   │   │   ├── validators.py
+│   │   │   └── version.py
+│   │   └── tests
+│   │       ├── __pycache__
+│   │       │   └── test_bootstrap_loader.cpython-313.pyc
+│   │       └── test_bootstrap_loader.py
+│   ├── objects
+│   ├── publication
+│   ├── schema
+│   ├── services
+│   ├── tests
+│   ├── validation
+│   └── workflows
+├── architecture
+│   ├── PROCESSING_PIPELINE_v1.md
+│   ├── artifacterator
+│   │   └── UNIVERSAL_ARTIFACTERATOR_ARCHITECTURE_v1.md
+│   ├── bootstrap_loader
+│   │   ├── BOOTSTRAP_LOADER_API_v1.md
+│   │   ├── BOOTSTRAP_LOADER_CONFIGURATION_v1.md
+│   │   ├── BOOTSTRAP_LOADER_CONTRACT_v1.md
+│   │   ├── BOOTSTRAP_LOADER_DEPENDENCIES_v1.md
+│   │   ├── BOOTSTRAP_LOADER_DISCOVERY_v1.md
+│   │   ├── BOOTSTRAP_LOADER_ERRORS_v1.md
+│   │   ├── BOOTSTRAP_LOADER_FILE_LAYOUT_v1.md
+│   │   ├── BOOTSTRAP_LOADER_GLOSSARY_v1.md
+│   │   ├── BOOTSTRAP_LOADER_IMPLEMENTATION_PLAN_v1.md
+│   │   ├── BOOTSTRAP_LOADER_INTERFACE_v1.md
+│   │   ├── BOOTSTRAP_LOADER_LIFECYCLE_v1.md
+│   │   ├── BOOTSTRAP_LOADER_MODULES_v1.md
+│   │   ├── BOOTSTRAP_LOADER_OUTPUT_v1.md
+│   │   ├── BOOTSTRAP_LOADER_PSEUDOCODE_v1.md
+│   │   ├── BOOTSTRAP_LOADER_PYTHON_MAPPING_v1.md
+│   │   ├── BOOTSTRAP_LOADER_SEQUENCE_v1.md
+│   │   ├── BOOTSTRAP_LOADER_SPECIFICATION_v1.md
+│   │   ├── BOOTSTRAP_LOADER_STATE_MACHINE_v1.md
+│   │   ├── BOOTSTRAP_LOADER_TEST_PLAN_v1.md
+│   │   ├── BOOTSTRAP_LOADER_WORKFLOW_v1.md
+│   │   └── README.md
+│   ├── formatter
+│   │   └── UNIVERSAL_FORMATTER_ARCHITECTURE_v1.md
+│   └── parser
+│       └── PARSER_ARCHITECTURE_v1.md
+├── archives
+├── docs
+├── evidence
+├── inventory
+│   ├── directory_tree.txt
+│   ├── directory_tree_pretty.txt
+│   ├── file_tree.txt
+│   ├── history
+│   │   ├── TREE_HASH_20260802_231202.sha256
+│   │   ├── TREE_HASH_20260802_231526.sha256
+│   │   └── TREE_HASH_20260802_231731.sha256
+│   ├── reconciliation
+│   │   ├── CANONICAL_RECONCILIATION_STATUS.md
+│   │   ├── COMMON.hashes
+│   │   ├── DE.dirs
+│   │   ├── DE.hashes
+│   │   ├── DE.paths
+│   │   ├── DE.relative
+│   │   ├── DE.relative.dirs
+│   │   ├── DE.sha256
+│   │   ├── DE_ONLY.hashes
+│   │   ├── DE_only.files
+│   │   ├── DIFFERING_FILES.report
+│   │   ├── DIRECTORY_DRIFT.dirs
+│   │   ├── DIRECTORY_MANIFEST.lst
+│   │   ├── DRIFT_POLICY.md
+│   │   ├── DifferenceEngine.files
+│   │   ├── EMPTY_OBJECTS.lst
+│   │   ├── FILE_LIBRARY_UPLOADS.files
+│   │   ├── FILE_MANIFEST.tsv
+│   │   ├── FILE_PAIR_INDEX.report
+│   │   ├── FLU.dirs
+│   │   ├── FLU.hashes
+│   │   ├── FLU.paths
+│   │   ├── FLU.relative
+│   │   ├── FLU.relative.dirs
+│   │   ├── FLU.sha256
+│   │   ├── FLU_ONLY.hashes
+│   │   ├── FLU_only.files
+│   │   ├── FULL_HASH_MANIFEST.sha256
+│   │   ├── LEFT_FILES.report
+│   │   ├── LOCATION_DRIFT.files
+│   │   ├── MATCHING_HASHES.report
+│   │   ├── MISSION.md
+│   │   ├── ONLY_DE.report
+│   │   ├── ONLY_FLU.report
+│   │   ├── ONLY_IN.report
+│   │   ├── PATH_DRIFT.diff
+│   │   ├── RECONCILIATION_NEXT_ACTIONS.md
+│   │   ├── REPOSITORY.diff
+│   │   ├── REPOSITORY_SNAPSHOT.md
+│   │   ├── REPOSITORY_STATISTICS.md
+│   │   ├── RIGHT_FILES.report
+│   │   ├── RUN_METADATA.md
+│   │   ├── TREE_HASH.sha256
+│   │   ├── TREE_HISTORY.lst
+│   │   ├── TREE_SNAPSHOT.txt
+│   │   ├── common.files
+│   │   ├── directories.lst
+│   │   └── files.lst
+│   ├── reports
+│   │   ├── MISSING_DIRECTORY_RECONCILIATION.md
+│   │   ├── MISSION_001A_REPOSITORY_RECONCILIATION_REPORT.md
+│   │   ├── ade_de_dirs.lst
+│   │   └── ade_dirs.lst
+│   └── repository_tree_pretty.txt
+├── logs
+│   ├── operations
+│   ├── reconciliation
+│   └── sessions
+├── queue
+│   ├── active
+│   ├── archive
+│   ├── blocked
+│   ├── completed
+│   │   └── Q-001A-REPOSITORY-RECONCILIATION.md
+│   ├── discussion
+│   ├── implementation
+│   ├── ingestion
+│   ├── research
+│   ├── review
+│   ├── roadmap
+│   └── someday
+├── scripts
+│   ├── lib
+│   └── reconciliation
+│       ├── DIFFERING_FILES.report
+│       ├── FILE_PAIR_INDEX.report
+│       ├── LEFT_FILES.report
+│       ├── MATCHING_HASHES.report
+│       ├── ONLY_DE.report
+│       ├── ONLY_FLU.report
+│       ├── ONLY_IN.report
+│       ├── PATH_DRIFT.diff
+│       ├── README.md
+│       ├── REPOSITORY.diff
+│       ├── RIGHT_FILES.report
+│       └── reconcile.sh
+├── specifications
+│   ├── artifacts
+│   ├── parser
+│   └── repository
+├── standards
+│   ├── v1
+│   │   ├── ARTIFACT_STANDARD_v1.0.md
+│   │   ├── HEADER_STANDARD_v1.0.md
+│   │   ├── IDENTIFIER_STANDARD_v1.0.md
+│   │   ├── MARKDOWN_STANDARD_v1.0.md
+│   │   ├── QUEUE_STANDARD_v1.0.md
+│   │   ├── REPOSITORY_LAYOUT_STANDARD_v1.0.md
+│   │   ├── REPOSITORY_STANDARD_v1.0.md
+│   │   ├── ROUTING_STANDARD_v1.0.md
+│   │   ├── TERMUX_OPERATOR_STANDARD_v1.0.md
+│   │   └── supporting
+│   │       └── STANDARDS_HANDOFF.md
+│   └── vi
+├── stewards
+├── tools
+├── workspace
+│   └── operational
+│       ├── Continue DifferenceEngine.md
+│       ├── bootstrap
+│       │   ├── BOOTSTRAP.md
+│       │   └── INITIALIZATION_ORDER.md
+│       ├── current
+│       │   ├── COMPLETED_TASK_BLOCK.md
+│       │   ├── MISSION.md
+│       │   ├── NEXT_COMMAND_BLOCK.md
+│       │   ├── NEXT_MISSION.md
+│       │   ├── OPERATIONAL_LAWS.md
+│       │   ├── QUEUE.md
+│       │   ├── REPOSITORY_STATE.md
+│       │   ├── RESUME.md
+│       │   └── WORKFLOW.md
+│       ├── history
+│       └── preservation
+│           └── PP-0001.md
+└── {
+
+77 directories, 185 files

@@ -18,3 +18,4 @@ Thumbs.db
 
 # Local logs
 logs/*.log
+workspace/operational/drift/runtime/

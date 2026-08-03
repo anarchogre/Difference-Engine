@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "status": "candidate",
+  "authority": "Operations",
+  "purpose": "Define the canonical File Library recovery set.",
+  "project": "The Difference Engine",
+  "canonical_artifacts": [
+    {
+      "name": "Babbage_GPT_Initialization.md.txt",
+      "required": true,
+      "classification": "bootstrap"
+    },
+    {
+      "name": "The_Difference_Engine(7).md",
+      "required": true,
+      "classification": "project"
+    },
+    {
+      "name": "Universal_Branch_Steward_Protocol_Constitutional_Amendment_v_1.1_Ratification Draft(12).md",
+      "required": true,
+      "classification": "governance"
+    },
+    {
+      "name": "Operational Doctrine.txt",
+      "required": true,
+      "classification": "doctrine"
+    },
+    {
+      "name": "Operational Reality(1).txt",
+      "required": true,
+      "classification": "operational-reality"
+    },
+    {
+      "name": "Operator Profile.md",
+      "required": true,
+      "classification": "operator-context"
+    },
+    {
+      "name": "FRAMEWORK_LOCK_7_31_26.md",
+      "required": true,
+      "classification": "framework-lock"
+    },
+    {
+      "name": "REPOSITORY_TREE.txt",
+      "required": true,
+      "classification": "inventory"
+    },
+    {
+      "name": "REPOSITORY_FILES.txt",
+      "required": true,
+      "classification": "inventory"
+    },
+    {
+      "name": "REPOSITORY_TREE_FULL.txt",
+      "required": true,
+      "classification": "inventory"
+    },
+    {
+      "name": "SIQ Suggested Implementation Queue.md",
+      "required": true,
+      "classification": "queue"
+    },
+    {
+      "name": "Project Space Queued Items 8_1_26.md",
+      "required": true,
+      "classification": "queue"
+    }
+  ]
+}

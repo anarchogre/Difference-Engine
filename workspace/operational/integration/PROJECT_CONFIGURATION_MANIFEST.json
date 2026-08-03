@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "status": "candidate",
+  "authority": "Operations",
+  "project": "The Difference Engine",
+  "required_configuration": {
+    "repository_canonical": true,
+    "bootstrap_executable_state": true,
+    "recovery_before_execution": true,
+    "evidence_before_interpretation": true,
+    "promotion_after_validation": true,
+    "branches_experimental_until_integrated": true,
+    "phone_first": true,
+    "termux": true,
+    "resumable_execution": true,
+    "durable_outputs": true,
+    "minimal_repetitive_typing": true,
+    "externalized_memory": true
+  },
+  "execution_roles": [
+    "Head Steward",
+    "Operations",
+    "Integration",
+    "Research",
+    "Origins",
+    "Human Interface"
+  ],
+  "active_execution_partner": "Babbage",
+  "active_mission": "GPT Plus Integration",
+  "active_task": "Recovery Standardization"
+}

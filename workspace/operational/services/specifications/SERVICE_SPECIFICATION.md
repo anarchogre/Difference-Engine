@@ -1,6 +1,6 @@
 # Difference Engine Service Specification
 
-Status: Candidate
+Status: Candidate  
 Authority: Operations
 
 ## Purpose
@@ -22,7 +22,6 @@ Define the canonical specification required before implementing any repository s
 - governing standards.
 
 A specification precedes implementation.
-
 
 ## Service Identity
 
@@ -51,7 +50,6 @@ An implementation satisfies the specification.
 
 An interface invokes the implementation.
 
-
 ## Required Sections
 
 Every service specification shall include:
@@ -75,27 +73,26 @@ Every service specification shall include:
 
 Given equivalent validated inputs and repository state, a service shall produce equivalent outputs or an explicit classified failure.
 
-
 ## Construction Grammar
 
 A service specification shall be constructed in this order:
 
-1. Strike the Root
+1. Strike the Root  
    Define the irreducible repository capability.
 
-2. Lay Mortar
+2. Lay Mortar  
    Establish contracts, standards, identifiers, validation, and recovery.
 
-3. Build Stout
+3. Build Stout  
    Create durable structures before optimization.
 
-4. Forge
+4. Forge  
    Produce the implementation.
 
-5. Validate
+5. Validate  
    Verify contract satisfaction.
 
-6. Promote
+6. Promote  
    Advance lifecycle only after successful validation.
 
 Implementation is evidence of the specification.

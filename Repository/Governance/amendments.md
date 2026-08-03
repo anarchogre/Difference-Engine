@@ -1,17 +1,54 @@
-# Ratified Amendments
+# Constitutional Amendment — Execution Law
 
-Status: Placeholder
+Status: CANONICAL
 
-Execution Law
+Execution Law SHALL govern all implementation missions.
 
-Execution Mode
+During active execution:
 
-Recovery Mode
+- Emit repository-ready artifacts only.
+- No summaries.
+- No commentary.
+- No examples.
+- No rationale unless explicitly requested.
+- No redesign.
+- No unsolicited suggestions.
+- No discussion.
 
-Preservation Mode
+Output SHALL consist only of:
 
-Discussion Mode
+- canonical artifacts
+- approved queue tokens
+- review tokens
+- blocking notifications
 
-Mode Transition Protocol
+Permitted execution tokens:
 
-Additional ratified amendments SHALL be appended here.
+- FLAG:
+- QUEUE:
+- TODO:
+- REVIEW:
+- CANDIDATE:
+- CANONICAL:
+- DEPRECATED:
+
+Mission execution SHALL continue until:
+
+- Definition of Done,
+- constitutional interruption,
+- or verified external blocker.
+
+Discussion mode is entered only after mission completion or explicit operator instruction.
+
+This law applies to:
+
+- Babbage
+- Branch Stewards
+- Repository operations
+- Bootstrap execution
+- Tool generation
+- Governance implementation
+- Parser execution
+- Repository maintenance
+
+Violation constitutes execution drift and SHALL invoke the Recovery Protocol.

@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "services": [
+    {
+      "implementation_count": 5,
+      "implementations": [
+        {
+          "implementation": "ade/kernel/bootstrap_loader/artifacts.py",
+          "kind": "ClassDef",
+          "language": "python",
+          "service": "bootstrap",
+          "status": "existing",
+          "symbol": "BootstrapArtifacts"
+        },
+        {
+          "implementation": "ade/kernel/bootstrap_loader/bootstrap.py",
+          "kind": "FunctionDef",
+          "language": "python",
+          "service": "bootstrap",
+          "status": "existing",
+          "symbol": "load_bootstrap"
+        },
+        {
+          "implementation": "ade/kernel/bootstrap_loader/context.py",
+          "kind": "ClassDef",
+          "language": "python",
+          "service": "bootstrap",
+          "status": "existing",
+          "symbol": "BootstrapContext"
+        },
+        {
+          "implementation": "ade/kernel/bootstrap_loader/errors.py",
+          "kind": "ClassDef",
+          "language": "python",
+          "service": "bootstrap",
+          "status": "existing",
+          "symbol": "BootstrapError"
+        },
+        {
+          "implementation": "ade/kernel/bootstrap_loader/result.py",
+          "kind": "ClassDef",
+          "language": "python",
+          "service": "bootstrap",
+          "status": "existing",
+          "symbol": "BootstrapResult"
+        }
+      ],
+      "name": "bootstrap",
+      "state": "implemented"
+    },
+    {
+      "implementation_count": 0,
+      "implementations": [],
+      "name": "status",
+      "state": "missing"
+    },
+    {
+      "implementation_count": 0,
+      "implementations": [],
+      "name": "session",
+      "state": "missing"
+    },
+    {
+      "implementation_count": 0,
+      "implementations": [],
+      "name": "ingest",
+      "state": "missing"
+    },
+    {
+      "implementation_count": 1,
+      "implementations": [
+        {
+          "implementation": "scripts/reconciliation/reconcile.sh",
+          "kind": "script",
+          "language": "shell",
+          "service": "reconcile",
+          "status": "existing",
+          "symbol": null
+        }
+      ],
+      "name": "reconcile",
+      "state": "implemented"
+    },
+    {
+      "implementation_count": 1,
+      "implementations": [
+        {
+          "implementation": "ade/kernel/bootstrap_loader/validators.py",
+          "kind": "FunctionDef",
+          "language": "python",
+          "service": "validate",
+          "status": "existing",
+          "symbol": "validate"
+        }
+      ],
+      "name": "validate",
+      "state": "implemented"
+    },
+    {
+      "implementation_count": 0,
+      "implementations": [],
+      "name": "snapshot",
+      "state": "missing"
+    },
+    {
+      "implementation_count": 0,
+      "implementations": [],
+      "name": "inventory",
+      "state": "missing"
+    },
+    {
+      "implementation_count": 3,
+      "implementations": [
+        {
+          "implementation": "ade/kernel/bootstrap_loader/queue.py",
+          "kind": "ClassDef",
+          "language": "python",
+          "service": "queue",
+          "status": "existing",
+          "symbol": "QueueEntry"
+        },
+        {
+          "implementation": "ade/kernel/bootstrap_loader/queue.py",
+          "kind": "ClassDef",
+          "language": "python",
+          "service": "queue",
+          "status": "existing",
+          "symbol": "QueueState"
+        },
+        {
+          "implementation": "ade/kernel/bootstrap_loader/queue.py",
+          "kind": "FunctionDef",
+          "language": "python",
+          "service": "queue",
+          "status": "existing",
+          "symbol": "recover_queues"
+        }
+      ],
+      "name": "queue",
+      "state": "implemented"
+    },
+    {
+      "implementation_count": 0,
+      "implementations": [],
+      "name": "search",
+      "state": "missing"
+    },
+    {
+      "implementation_count": 0,
+      "implementations": [],
+      "name": "audit",
+      "state": "missing"
+    }
+  ],
+  "status": "recovered"
+}

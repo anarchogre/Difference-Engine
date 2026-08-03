@@ -271,35 +271,35 @@ def verify(
                 )
             )
 
-            artifacts = library_index.get(
+            library_artifacts = library_index.get(
                 "artifacts",
                 [],
             )
 
             identifiers = [
                 artifact.get("id")
-                for artifact in artifacts
+                for artifact in library_artifacts
             ]
 
             names = [
                 artifact.get("canonical_name")
-                for artifact in artifacts
+                for artifact in library_artifacts
             ]
 
             library_governance_ok = (
-                bool(artifacts)
+                bool(library_artifacts)
                 and len(identifiers)
                 == len(set(identifiers))
                 and len(names)
                 == len(set(names))
                 and all(
                     artifact.get("verified") is True
-                    for artifact in artifacts
+                    for artifact in library_artifacts
                 )
             )
 
             library_governance_status = {
-                "artifacts": len(artifacts),
+                "artifacts": len(library_artifacts),
                 "unique_identifiers": (
                     len(identifiers)
                     == len(set(identifiers))

@@ -1,0 +1,16 @@
+sha256	aliases	line	text
+5e673334aa003f7d5cb0d187a03d86ee4279118ba100449a6e8f9e28b602173c	BOOTSTRAP/BOOTSTRAP - CONTINUE - INGESTER EPOCH v1.0 - 8-4-26-1300.md	155	- zero canonical promotion before review
+440813109662fb54f8fe01e40eef59bd6745101377bc59a2d11f23f8b27841c1	BOOTSTRAP/BOOTSTRAP - Load the Difference Engine project.md	23	- Repository artifacts synchronized into the Project.
+33593015c71b4943f924d849952632d1c0b99f9d80f2e63c3d42bcdb87844358	BOOTSTRAP/BOOTSTRAP — Foundational Reduction Continuation.md	76	Repository synchronized with GitHub.
+1e30ef899f1e3d3de26d78db3668ad2459e3e9c87babd8037d4da8b12b40675d	BOOTSTRAP/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md | governance/kernel/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md	281	Branch synchronization SHALL be deliberate, not constant.
+b392e310bbba832ca2757fba815f4b5e3a9fc2b8b7a348ecf732376ddae2007a	workspace/operational/integration/EXTERNAL_VERIFICATION_STATUS.json	9	"    ""status"": ""verified"""
+b392e310bbba832ca2757fba815f4b5e3a9fc2b8b7a348ecf732376ddae2007a	workspace/operational/integration/EXTERNAL_VERIFICATION_STATUS.json	21	"    ""status"": ""verified"""
+5f55925976446211b2e3cc2678c98b787fb167e63c3b1a435239d8e3d7575301	workspace/operational/integration/FILE_LIBRARY_MANIFEST.json	3	"  ""status"": ""verified"","
+5f55925976446211b2e3cc2678c98b787fb167e63c3b1a435239d8e3d7575301	workspace/operational/integration/FILE_LIBRARY_MANIFEST.json	4	"  ""authority"": ""Operations"","
+54dc0a913accc03d6b5d4e3e5afa4dd4338638299d1bafdf64e5319df85834f3	workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json	3	"  ""status"": ""candidate"","
+54dc0a913accc03d6b5d4e3e5afa4dd4338638299d1bafdf64e5319df85834f3	workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json	4	"  ""authority"": ""Operations"","
+54dc0a913accc03d6b5d4e3e5afa4dd4338638299d1bafdf64e5319df85834f3	workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json	20	"  ""execution_roles"": ["
+54dc0a913accc03d6b5d4e3e5afa4dd4338638299d1bafdf64e5319df85834f3	workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json	21	"    ""Head Steward"","
+54dc0a913accc03d6b5d4e3e5afa4dd4338638299d1bafdf64e5319df85834f3	workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json	28	"  ""active_execution_partner"": ""Babbage"","
+54dc0a913accc03d6b5d4e3e5afa4dd4338638299d1bafdf64e5319df85834f3	workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json	29	"  ""active_mission"": ""GPT Plus Integration"","
+54dc0a913accc03d6b5d4e3e5afa4dd4338638299d1bafdf64e5319df85834f3	workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json	30	"  ""active_task"": ""Recovery Standardization"""

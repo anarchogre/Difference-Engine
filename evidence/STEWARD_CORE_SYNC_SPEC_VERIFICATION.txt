@@ -1,0 +1,23 @@
+STEWARD CORE SYNCHRONIZATION SPECIFICATION VERIFICATION
+source=specifications/STEWARD-CORE-SYNCHRONIZATION-SPEC-v0.1.0.md
+sha256=372ee1f4a97e2ff27298c82624112ebe9f77d7310cf655f96f1fd33d1d1f4d6a
+lines=131
+required_checks=16
+result=PASS
+
+PASS	count=1	# Steward Core Synchronization Specification v0.1.0
+PASS	count=1	Status: CANDIDATE
+PASS	count=1	Authority: NONE
+PASS	count=1	Canonical status: NOT PROMOTED
+PASS	count=1	## Purpose
+PASS	count=1	## Authority Boundaries
+PASS	count=1	## State Objects
+PASS	count=1	## Synchronization Triggers
+PASS	count=1	## Transition Protocol
+PASS	count=1	## Invariants
+PASS	count=1	## Failure Handling
+PASS	count=1	## Recovery
+PASS	count=1	## Acceptance Gate
+PASS	count=1	## Promotion
+PASS	count=1	Synchronization SHALL be deliberate, not constant.
+PASS	count=1	This document does not promote itself.

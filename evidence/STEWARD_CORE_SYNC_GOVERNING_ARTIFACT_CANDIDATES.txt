@@ -1,0 +1,19 @@
+./BOOTSTRAP/BST-CBD-OPS_Operational_Bedrock_and_Ingester_Execution_v0.1.0.md
+./BOOTSTRAP/Bootstrap - Epoch II — Post Milestone 002 - Constitutional Kernel - Operational Bootstrap.md
+./BOOTSTRAP/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md
+./BOOTSTRAP/Load The Constitutional Kernel.md
+./evidence/STEWARD_CORE_SYNC_HEAD_STEWARD_PROCESS_REVIEW.md
+./evidence/STEWARD_CORE_SYNC_HEAD_STEWARD_REVIEW_REQUEST.md
+./governance/kernel/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md
+./inventory/initialization/20260804_075615_ingester_recovery/reports/BOOTSTRAP__BST-CBD-OPS_Operational_Bedrock_and_Ingester_Execution_v0.1.0.md.structure.txt
+./inventory/initialization/20260804_075615_ingester_recovery/source/BOOTSTRAP__BST-CBD-OPS_Operational_Bedrock_and_Ingester_Execution_v0.1.0.md
+./workspace/operational/corpus/chatgpt/Difference_Engine_Constitutional_Amendment_Universal_Branch_Steward_Protocol_v1.0.md
+./workspace/operational/corpus/chatgpt/Head_Steward_v0.9.md
+./workspace/operational/corpus/chatgpt/Universal_Branch_Steward_Protocol_Constitutional_Amendment_v_1.1_Ratification Draft.md
+./workspace/operational/ingestion/locks/20260804_SEMANTIC_RECOVERY_ROADMAP.lock
+./workspace/operational/ingestion/output/ING-20260804-0020/source/Implementation_Roadmap_v0.1.md
+./workspace/operational/ingestion/output/ING-20260804-0094/source/Constitutional_Kernel_Initialization.md.txt
+./workspace/operational/ingestion/output/ING-20260804-0095/source/Constitutional_Kernel_Load.md.txt
+./workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt
+./workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt
+./workspace/operational/ingestion/roadmap/SEMANTIC_RECOVERY_ROADMAP_v0.1.md

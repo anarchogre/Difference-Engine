@@ -1,0 +1,452 @@
+## PP-0001
+
+Preservation Point
+
+Mission
+
+Executable Infrastructure
+
+Completed Task Block
+
+Bootstrap Loader
+
+Status
+
+Functional
+
+Result
+
+Executable bootstrap loader established.
+
+Next Mission
+
+Repository Index
+## Preservation-Point References
+
+BOOTSTRAP/Branches/BST-B0-ORG_Origins_v0.1.0.md:216:- preservation packages;
+workspace/operational/census/ADE/DUPLICATES.json:124:    "Archive/Snapshots/PP/PP-0008_Bundle_Manifest.json",
+workspace/operational/census/ADE/DUPLICATES.json:125:    "CLAUDE START HERE/PP-0008_Bundle_Manifest.json"
+workspace/operational/census/ADE/DUPLICATES.json:285:    "Archive/Snapshots/PP/PP-0058-Principles.json",
+workspace/operational/census/ADE/DUPLICATES.json:286:    "CLAUDE START HERE/PP-0058-Principles.json"
+workspace/operational/census/ADE/DUPLICATES.json:293:    "Archive/Snapshots/PP/PP-0058-Manifest.json",
+workspace/operational/census/ADE/DUPLICATES.json:294:    "CLAUDE START HERE/PP-0058-Manifest.json"
+workspace/operational/census/ADE/DUPLICATES.json:313:    "Archive/Snapshots/PP/PP-0054_Phase_Shift_Living_Repository_v1.0.json",
+workspace/operational/census/ADE/DUPLICATES.json:314:    "CLAUDE START HERE/PP-0054_Phase_Shift_Living_Repository_v1.0.json"
+workspace/operational/census/ADE/DUPLICATES.json:430:    "Archive/Snapshots/PP/PP-0008.json",
+workspace/operational/census/ADE/DUPLICATES.json:431:    "CLAUDE START HERE/PP-0008.json"
+workspace/operational/census/ADE/DUPLICATES.json:450:    "Archive/Snapshots/PP/PP-0004.json",
+workspace/operational/census/ADE/DUPLICATES.json:451:    "CLAUDE START HERE/PP-0004.json"
+workspace/operational/census/ADE/DUPLICATES.json:496:    "Archive/Snapshots/PP/PP-0058-MAJOR.json",
+workspace/operational/census/ADE/DUPLICATES.json:497:    "CLAUDE START HERE/PP-0058-MAJOR.json"
+workspace/operational/census/ADE/DUPLICATES.json:4:    "Archive/Snapshots/PP/PP-0007_Bundle_Manifest.json"
+workspace/operational/census/ADE/FILE_INDEX.json:3211:    "path": "Archive/Snapshots/PP/PP-0004.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3218:    "path": "Archive/Snapshots/PP/PP-0005.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3225:    "path": "Archive/Snapshots/PP/PP-0005_Bundle_Manifest.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3232:    "path": "Archive/Snapshots/PP/PP-0006.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3239:    "path": "Archive/Snapshots/PP/PP-0006_Bundle_Manifest.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3246:    "path": "Archive/Snapshots/PP/PP-0007.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3253:    "path": "Archive/Snapshots/PP/PP-0007_Bundle_Manifest.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3260:    "path": "Archive/Snapshots/PP/PP-0008.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3267:    "path": "Archive/Snapshots/PP/PP-0008_Bundle_Manifest.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3274:    "path": "Archive/Snapshots/PP/PP-0044_Provenance_Before_Path.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3281:    "path": "Archive/Snapshots/PP/PP-0045_Fingerprints_Endure.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3288:    "path": "Archive/Snapshots/PP/PP-0046_Repository_Architecture.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3295:    "path": "Archive/Snapshots/PP/PP-0047_Epistemic_Engineering.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3302:    "path": "Archive/Snapshots/PP/PP-0048_Conservative_Synthesis.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3309:    "path": "Archive/Snapshots/PP/PP-0049_Developmental_Framework_Foundation.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3316:    "path": "Archive/Snapshots/PP/PP-0050_Communication_Architecture.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3323:    "path": "Archive/Snapshots/PP/PP-0051_Constitutional_Epistemics_v1.1.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3330:    "path": "Archive/Snapshots/PP/PP-0052_Human_Centered_Stewardship_v1.0.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3337:    "path": "Archive/Snapshots/PP/PP-0052_Minor.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3344:    "path": "Archive/Snapshots/PP/PP-0052_Recovery_Manifest.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3351:    "path": "Archive/Snapshots/PP/PP-0053_Minor.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3358:    "path": "Archive/Snapshots/PP/PP-0053_Policy_Manifest.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3365:    "path": "Archive/Snapshots/PP/PP-0053_Repository_Voice_and_Stewardship_v1.0.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3372:    "path": "Archive/Snapshots/PP/PP-0054A_manifest.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3379:    "path": "Archive/Snapshots/PP/PP-0054_Governance_Manifest.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3386:    "path": "Archive/Snapshots/PP/PP-0054_Minor.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3393:    "path": "Archive/Snapshots/PP/PP-0054_Phase_Shift_Living_Repository_v1.0.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3400:    "path": "Archive/Snapshots/PP/PP-0054_Summary.xlsx",
+workspace/operational/census/ADE/FILE_INDEX.json:3407:    "path": "Archive/Snapshots/PP/PP-0054_Synthesis.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3414:    "path": "Archive/Snapshots/PP/PP-0055_Intervention_Failures.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3421:    "path": "Archive/Snapshots/PP/PP-0055_Intervention_Failures.xlsx",
+workspace/operational/census/ADE/FILE_INDEX.json:3428:    "path": "Archive/Snapshots/PP/PP-0055_Interventions.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3435:    "path": "Archive/Snapshots/PP/PP-0055_Knowledge_Model.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3442:    "path": "Archive/Snapshots/PP/PP-0055_Manifest.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3449:    "path": "Archive/Snapshots/PP/PP-0055_Repository_Corpus_Ingestion.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3456:    "path": "Archive/Snapshots/PP/PP-0056_Minor.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3463:    "path": "Archive/Snapshots/PP/PP-0056_Minor_Execution_Transition.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3470:    "path": "Archive/Snapshots/PP/PP-0057_Major.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3477:    "path": "Archive/Snapshots/PP/PP-0058-MAJOR.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3484:    "path": "Archive/Snapshots/PP/PP-0058-Manifest.json",
+workspace/operational/census/ADE/FILE_INDEX.json:3491:    "path": "Archive/Snapshots/PP/PP-0058-Principles.json",
+workspace/operational/census/ADE/FILE_INDEX.json:4107:    "path": "CLAUDE START HERE/PP-0004.json",
+workspace/operational/census/ADE/FILE_INDEX.json:4114:    "path": "CLAUDE START HERE/PP-0008.json",
+workspace/operational/census/ADE/FILE_INDEX.json:4121:    "path": "CLAUDE START HERE/PP-0008_Bundle_Manifest.json",
+workspace/operational/census/ADE/FILE_INDEX.json:4128:    "path": "CLAUDE START HERE/PP-0054_Phase_Shift_Living_Repository_v1.0.json",
+workspace/operational/census/ADE/FILE_INDEX.json:4135:    "path": "CLAUDE START HERE/PP-0058-MAJOR.json",
+workspace/operational/census/ADE/FILE_INDEX.json:4142:    "path": "CLAUDE START HERE/PP-0058-Manifest.json",
+workspace/operational/census/ADE/FILE_INDEX.json:4149:    "path": "CLAUDE START HERE/PP-0058-Principles.json",
+workspace/operational/census/ADE/HASH_INDEX.json:1023:    "Archive/Snapshots/PP/PP-0058-Principles.json",
+workspace/operational/census/ADE/HASH_INDEX.json:1024:    "CLAUDE START HERE/PP-0058-Principles.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1058:    "Archive/Snapshots/PP/PP-0058-Manifest.json",
+workspace/operational/census/ADE/HASH_INDEX.json:1059:    "CLAUDE START HERE/PP-0058-Manifest.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1084:    "Archive/Snapshots/PP/PP-0057_Major.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1093:    "Archive/Snapshots/PP/PP-0055_Manifest.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1099:    "Archive/Snapshots/PP/PP-0005_Bundle_Manifest.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1108:    "Archive/Snapshots/PP/PP-0054_Governance_Manifest.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1182:    "Archive/Snapshots/PP/PP-0045_Fingerprints_Endure.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1192:    "Archive/Snapshots/PP/PP-0054_Phase_Shift_Living_Repository_v1.0.json",
+workspace/operational/census/ADE/HASH_INDEX.json:1193:    "CLAUDE START HERE/PP-0054_Phase_Shift_Living_Repository_v1.0.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1234:    "Archive/Snapshots/PP/PP-0056_Minor.json"
+workspace/operational/census/ADE/HASH_INDEX.json:123:    "Archive/Snapshots/PP/PP-0052_Human_Centered_Stewardship_v1.0.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1322:    "Archive/Snapshots/PP/PP-0055_Intervention_Failures.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1423:    "Archive/Snapshots/PP/PP-0044_Provenance_Before_Path.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1440:    "Archive/Snapshots/PP/PP-0056_Minor_Execution_Transition.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1455:    "Archive/Snapshots/PP/PP-0007.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1517:    "Archive/Snapshots/PP/PP-0051_Constitutional_Epistemics_v1.1.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1538:    "Archive/Snapshots/PP/PP-0006_Bundle_Manifest.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1630:    "Archive/Snapshots/PP/PP-0055_Interventions.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1654:    "Archive/Snapshots/PP/PP-0055_Intervention_Failures.xlsx"
+workspace/operational/census/ADE/HASH_INDEX.json:1686:    "Archive/Snapshots/PP/PP-0049_Developmental_Framework_Foundation.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1753:    "Archive/Snapshots/PP/PP-0008.json",
+workspace/operational/census/ADE/HASH_INDEX.json:1754:    "CLAUDE START HERE/PP-0008.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1764:    "Archive/Snapshots/PP/PP-0053_Minor.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1809:    "Archive/Snapshots/PP/PP-0004.json",
+workspace/operational/census/ADE/HASH_INDEX.json:1810:    "CLAUDE START HERE/PP-0004.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1827:    "Archive/Snapshots/PP/PP-0052_Minor.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1946:    "Archive/Snapshots/PP/PP-0053_Policy_Manifest.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1960:    "Archive/Snapshots/PP/PP-0054_Summary.xlsx"
+workspace/operational/census/ADE/HASH_INDEX.json:1966:    "Archive/Snapshots/PP/PP-0050_Communication_Architecture.json"
+workspace/operational/census/ADE/HASH_INDEX.json:1969:    "Archive/Snapshots/PP/PP-0058-MAJOR.json",
+workspace/operational/census/ADE/HASH_INDEX.json:1970:    "CLAUDE START HERE/PP-0058-MAJOR.json"
+workspace/operational/census/ADE/HASH_INDEX.json:19:    "Archive/Snapshots/PP/PP-0007_Bundle_Manifest.json"
+workspace/operational/census/ADE/HASH_INDEX.json:250:    "Archive/Snapshots/PP/PP-0054_Minor.json"
+workspace/operational/census/ADE/HASH_INDEX.json:293:    "Archive/Snapshots/PP/PP-0053_Repository_Voice_and_Stewardship_v1.0.json"
+workspace/operational/census/ADE/HASH_INDEX.json:334:    "Archive/Snapshots/PP/PP-0008_Bundle_Manifest.json",
+workspace/operational/census/ADE/HASH_INDEX.json:335:    "CLAUDE START HERE/PP-0008_Bundle_Manifest.json"
+workspace/operational/census/ADE/HASH_INDEX.json:426:    "Archive/Snapshots/PP/PP-0005.json"
+workspace/operational/census/ADE/HASH_INDEX.json:466:    "Archive/Snapshots/PP/PP-0048_Conservative_Synthesis.json"
+workspace/operational/census/ADE/HASH_INDEX.json:479:    "Archive/Snapshots/PP/PP-0006.json"
+workspace/operational/census/ADE/HASH_INDEX.json:498:    "Archive/Snapshots/PP/PP-0055_Knowledge_Model.json"
+workspace/operational/census/ADE/HASH_INDEX.json:724:    "Archive/Snapshots/PP/PP-0054_Synthesis.json"
+workspace/operational/census/ADE/HASH_INDEX.json:837:    "Archive/Snapshots/PP/PP-0046_Repository_Architecture.json"
+workspace/operational/census/ADE/HASH_INDEX.json:872:    "Archive/Snapshots/PP/PP-0052_Recovery_Manifest.json"
+workspace/operational/census/ADE/HASH_INDEX.json:886:    "Archive/Snapshots/PP/PP-0047_Epistemic_Engineering.json"
+workspace/operational/census/ADE/HASH_INDEX.json:95:    "Archive/Snapshots/PP/PP-0054A_manifest.json"
+workspace/operational/census/ADE/HASH_INDEX.json:976:    "Archive/Snapshots/PP/PP-0055_Repository_Corpus_Ingestion.json"
+workspace/operational/census/DE/FILE_INDEX.json:12710:    "path": "workspace/operational/preservation/PP-0001.md",
+workspace/operational/census/DE/HASH_INDEX.json:5311:    "workspace/operational/preservation/PP-0001.md"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1023:    "Archive/Snapshots/PP/PP-0058-Principles.json",
+workspace/operational/census/comparison/UNIQUE_ADE.json:1024:    "CLAUDE START HERE/PP-0058-Principles.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1058:    "Archive/Snapshots/PP/PP-0058-Manifest.json",
+workspace/operational/census/comparison/UNIQUE_ADE.json:1059:    "CLAUDE START HERE/PP-0058-Manifest.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1084:    "Archive/Snapshots/PP/PP-0057_Major.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1093:    "Archive/Snapshots/PP/PP-0055_Manifest.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1099:    "Archive/Snapshots/PP/PP-0005_Bundle_Manifest.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1108:    "Archive/Snapshots/PP/PP-0054_Governance_Manifest.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1182:    "Archive/Snapshots/PP/PP-0045_Fingerprints_Endure.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1192:    "Archive/Snapshots/PP/PP-0054_Phase_Shift_Living_Repository_v1.0.json",
+workspace/operational/census/comparison/UNIQUE_ADE.json:1193:    "CLAUDE START HERE/PP-0054_Phase_Shift_Living_Repository_v1.0.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1234:    "Archive/Snapshots/PP/PP-0056_Minor.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:123:    "Archive/Snapshots/PP/PP-0052_Human_Centered_Stewardship_v1.0.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1322:    "Archive/Snapshots/PP/PP-0055_Intervention_Failures.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1423:    "Archive/Snapshots/PP/PP-0044_Provenance_Before_Path.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1440:    "Archive/Snapshots/PP/PP-0056_Minor_Execution_Transition.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1455:    "Archive/Snapshots/PP/PP-0007.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1517:    "Archive/Snapshots/PP/PP-0051_Constitutional_Epistemics_v1.1.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1538:    "Archive/Snapshots/PP/PP-0006_Bundle_Manifest.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1630:    "Archive/Snapshots/PP/PP-0055_Interventions.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1654:    "Archive/Snapshots/PP/PP-0055_Intervention_Failures.xlsx"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1686:    "Archive/Snapshots/PP/PP-0049_Developmental_Framework_Foundation.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1753:    "Archive/Snapshots/PP/PP-0008.json",
+workspace/operational/census/comparison/UNIQUE_ADE.json:1754:    "CLAUDE START HERE/PP-0008.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1764:    "Archive/Snapshots/PP/PP-0053_Minor.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1805:    "Archive/Snapshots/PP/PP-0004.json",
+workspace/operational/census/comparison/UNIQUE_ADE.json:1806:    "CLAUDE START HERE/PP-0004.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1823:    "Archive/Snapshots/PP/PP-0052_Minor.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1942:    "Archive/Snapshots/PP/PP-0053_Policy_Manifest.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1956:    "Archive/Snapshots/PP/PP-0054_Summary.xlsx"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1962:    "Archive/Snapshots/PP/PP-0050_Communication_Architecture.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:1965:    "Archive/Snapshots/PP/PP-0058-MAJOR.json",
+workspace/operational/census/comparison/UNIQUE_ADE.json:1966:    "CLAUDE START HERE/PP-0058-MAJOR.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:19:    "Archive/Snapshots/PP/PP-0007_Bundle_Manifest.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:250:    "Archive/Snapshots/PP/PP-0054_Minor.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:293:    "Archive/Snapshots/PP/PP-0053_Repository_Voice_and_Stewardship_v1.0.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:334:    "Archive/Snapshots/PP/PP-0008_Bundle_Manifest.json",
+workspace/operational/census/comparison/UNIQUE_ADE.json:335:    "CLAUDE START HERE/PP-0008_Bundle_Manifest.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:426:    "Archive/Snapshots/PP/PP-0005.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:466:    "Archive/Snapshots/PP/PP-0048_Conservative_Synthesis.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:479:    "Archive/Snapshots/PP/PP-0006.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:498:    "Archive/Snapshots/PP/PP-0055_Knowledge_Model.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:724:    "Archive/Snapshots/PP/PP-0054_Synthesis.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:837:    "Archive/Snapshots/PP/PP-0046_Repository_Architecture.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:872:    "Archive/Snapshots/PP/PP-0052_Recovery_Manifest.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:886:    "Archive/Snapshots/PP/PP-0047_Epistemic_Engineering.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:95:    "Archive/Snapshots/PP/PP-0054A_manifest.json"
+workspace/operational/census/comparison/UNIQUE_ADE.json:976:    "Archive/Snapshots/PP/PP-0055_Repository_Corpus_Ingestion.json"
+workspace/operational/census/comparison/UNIQUE_DE.json:5250:    "workspace/operational/preservation/PP-0001.md"
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:480:./Archive/Snapshots/PP/PP-0004.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:481:./Archive/Snapshots/PP/PP-0005.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:482:./Archive/Snapshots/PP/PP-0005_Bundle_Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:483:./Archive/Snapshots/PP/PP-0006.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:484:./Archive/Snapshots/PP/PP-0006_Bundle_Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:485:./Archive/Snapshots/PP/PP-0007.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:486:./Archive/Snapshots/PP/PP-0007_Bundle_Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:487:./Archive/Snapshots/PP/PP-0008.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:488:./Archive/Snapshots/PP/PP-0008_Bundle_Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:489:./Archive/Snapshots/PP/PP-0044_Provenance_Before_Path.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:490:./Archive/Snapshots/PP/PP-0045_Fingerprints_Endure.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:491:./Archive/Snapshots/PP/PP-0046_Repository_Architecture.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:492:./Archive/Snapshots/PP/PP-0047_Epistemic_Engineering.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:493:./Archive/Snapshots/PP/PP-0048_Conservative_Synthesis.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:494:./Archive/Snapshots/PP/PP-0049_Developmental_Framework_Foundation.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:495:./Archive/Snapshots/PP/PP-0050_Communication_Architecture.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:496:./Archive/Snapshots/PP/PP-0051_Constitutional_Epistemics_v1.1.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:497:./Archive/Snapshots/PP/PP-0052_Human_Centered_Stewardship_v1.0.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:498:./Archive/Snapshots/PP/PP-0052_Minor.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:499:./Archive/Snapshots/PP/PP-0052_Recovery_Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:500:./Archive/Snapshots/PP/PP-0053_Minor.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:501:./Archive/Snapshots/PP/PP-0053_Policy_Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:502:./Archive/Snapshots/PP/PP-0053_Repository_Voice_and_Stewardship_v1.0.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:503:./Archive/Snapshots/PP/PP-0054A_manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:504:./Archive/Snapshots/PP/PP-0054_Governance_Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:505:./Archive/Snapshots/PP/PP-0054_Minor.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:506:./Archive/Snapshots/PP/PP-0054_Phase_Shift_Living_Repository_v1.0.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:507:./Archive/Snapshots/PP/PP-0054_Summary.xlsx
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:508:./Archive/Snapshots/PP/PP-0054_Synthesis.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:509:./Archive/Snapshots/PP/PP-0055_Intervention_Failures.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:510:./Archive/Snapshots/PP/PP-0055_Intervention_Failures.xlsx
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:511:./Archive/Snapshots/PP/PP-0055_Interventions.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:512:./Archive/Snapshots/PP/PP-0055_Knowledge_Model.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:513:./Archive/Snapshots/PP/PP-0055_Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:514:./Archive/Snapshots/PP/PP-0055_Repository_Corpus_Ingestion.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:515:./Archive/Snapshots/PP/PP-0056_Minor.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:516:./Archive/Snapshots/PP/PP-0056_Minor_Execution_Transition.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:517:./Archive/Snapshots/PP/PP-0057_Major.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:518:./Archive/Snapshots/PP/PP-0058-MAJOR.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:519:./Archive/Snapshots/PP/PP-0058-Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:520:./Archive/Snapshots/PP/PP-0058-Principles.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:608:./CLAUDE START HERE/PP-0004.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:609:./CLAUDE START HERE/PP-0008.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:610:./CLAUDE START HERE/PP-0008_Bundle_Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:611:./CLAUDE START HERE/PP-0054_Phase_Shift_Living_Repository_v1.0.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:612:./CLAUDE START HERE/PP-0058-MAJOR.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:613:./CLAUDE START HERE/PP-0058-Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt:614:./CLAUDE START HERE/PP-0058-Principles.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:549:│   │       ├── PP-0004.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:550:│   │       ├── PP-0005.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:551:│   │       ├── PP-0005_Bundle_Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:552:│   │       ├── PP-0006.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:553:│   │       ├── PP-0006_Bundle_Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:554:│   │       ├── PP-0007.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:555:│   │       ├── PP-0007_Bundle_Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:556:│   │       ├── PP-0008.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:557:│   │       ├── PP-0008_Bundle_Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:558:│   │       ├── PP-0044_Provenance_Before_Path.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:559:│   │       ├── PP-0045_Fingerprints_Endure.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:560:│   │       ├── PP-0046_Repository_Architecture.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:561:│   │       ├── PP-0047_Epistemic_Engineering.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:562:│   │       ├── PP-0048_Conservative_Synthesis.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:563:│   │       ├── PP-0049_Developmental_Framework_Foundation.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:564:│   │       ├── PP-0050_Communication_Architecture.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:565:│   │       ├── PP-0051_Constitutional_Epistemics_v1.1.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:566:│   │       ├── PP-0052_Human_Centered_Stewardship_v1.0.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:567:│   │       ├── PP-0052_Minor.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:568:│   │       ├── PP-0052_Recovery_Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:569:│   │       ├── PP-0053_Minor.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:570:│   │       ├── PP-0053_Policy_Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:571:│   │       ├── PP-0053_Repository_Voice_and_Stewardship_v1.0.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:572:│   │       ├── PP-0054A_manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:573:│   │       ├── PP-0054_Governance_Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:574:│   │       ├── PP-0054_Minor.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:575:│   │       ├── PP-0054_Phase_Shift_Living_Repository_v1.0.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:576:│   │       ├── PP-0054_Summary.xlsx
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:577:│   │       ├── PP-0054_Synthesis.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:578:│   │       ├── PP-0055_Intervention_Failures.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:579:│   │       ├── PP-0055_Intervention_Failures.xlsx
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:580:│   │       ├── PP-0055_Interventions.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:581:│   │       ├── PP-0055_Knowledge_Model.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:582:│   │       ├── PP-0055_Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:583:│   │       ├── PP-0055_Repository_Corpus_Ingestion.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:584:│   │       ├── PP-0056_Minor.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:585:│   │       ├── PP-0056_Minor_Execution_Transition.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:586:│   │       ├── PP-0057_Major.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:587:│   │       ├── PP-0058-MAJOR.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:588:│   │       ├── PP-0058-Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:589:│   │       ├── PP-0058-Principles.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:678:│   ├── PP-0004.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:679:│   ├── PP-0008.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:680:│   ├── PP-0008_Bundle_Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:681:│   ├── PP-0054_Phase_Shift_Living_Repository_v1.0.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:682:│   ├── PP-0058-MAJOR.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:683:│   ├── PP-0058-Manifest.json
+workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt:684:│   ├── PP-0058-Principles.json
+workspace/operational/corpus/chatgpt/Constitutional_Convergence_Report.md:111:Repository engineering, governance, AIS, preservation points, stewardship, inventories, manifests, and machine-readable artifacts all emerged because human reasoning alone eventually became insufficient under scale.
+workspace/operational/corpus/chatgpt/Phase_tramsition_briefing_branch_proposals_and_addendums_v1.1.md:109:Repository engineering, governance, AIS, preservation points, stewardship, inventories, manifests, and machine-readable artifacts all emerged because human reasoning alone eventually became insufficient under scale.
+workspace/operational/ingestion/output/DE-CONV-20260804-0006/source/Epistemic_Engine_Development.md:1025:- PP-0058-MAJOR.json
+workspace/operational/ingestion/output/DE-CONV-20260804-0006/source/Epistemic_Engine_Development.md:1026:- PP-0058-Manifest.json
+workspace/operational/ingestion/output/DE-CONV-20260804-0006/source/Epistemic_Engine_Development.md:1071:- PP-0058 Manifest
+workspace/operational/ingestion/output/DE-CONV-20260804-0006/source/Epistemic_Engine_Development.md:1072:- PP-0058 MAJOR
+workspace/operational/ingestion/output/DE-CONV-20260804-0006/source/Epistemic_Engine_Development.md:1753:It produced preservation points.
+workspace/operational/ingestion/output/DE-CONV-20260804-0006/source/Epistemic_Engine_Development.md:2090:For example, there's a repository full of constitutional governance, epistemology, provenance, preservation points...
+workspace/operational/ingestion/output/DE-CONV-20260804-0006/source/Epistemic_Engine_Development.md:564:- **The "preservation point" origin.** I suspect this was born directly out of repeated losses.
+workspace/operational/ingestion/output/ING-20260804-0087/source/Migration_Map_Creation.md.txt:1028:│           └── PP-0001.md
+workspace/operational/ingestion/output/ING-20260804-0087/source/Migration_Map_Creation.md.txt:2081:- Automatic preservation point generation.
+workspace/operational/ingestion/output/ING-20260804-0087/source/Migration_Map_Creation.md.txt:2425:- Automatic preservation point after tagged milestones.
+workspace/operational/ingestion/output/ING-20260804-0087/source/Migration_Map_Creation.md.txt:2561:- Automatic end-of-session preservation point.
+workspace/operational/ingestion/output/ING-20260804-0087/source/Migration_Map_Creation.md.txt:2725:- Automatic preservation point before every push
+workspace/operational/ingestion/output/ING-20260804-0087/source/Migration_Map_Creation.md.txt:3953:        └── PP-0001.md
+workspace/operational/ingestion/output/ING-20260804-0087/source/Migration_Map_Creation.md.txt:3968:- `PP-0001.md` (or PP-0002 if you roll a new preservation point)
+workspace/operational/ingestion/output/ING-20260804-0088/source/Difference_Engine____Branch_II____Research.md(1).txt:3180:The preservation points exist because the constitution alone doesn't stop entropy.
+workspace/operational/ingestion/output/ING-20260804-0088/source/Difference_Engine____Branch_II____Research.md(1).txt:3365:The engine became "bigger" because each time you encountered a limitation, you chose to preserve the lesson instead of working around it informally. You didn't just solve today's problem—you tried to encode the solution so it would remain available tomorrow. That's how the project accumulated constitutions, preservation points, governance, and repository engineering.
+workspace/operational/ingestion/output/ING-20260804-0089/source/File_Library_Access_Details.md.txt:4298:- preservation points
+workspace/operational/ingestion/output/ING-20260804-0089/source/File_Library_Access_Details.md.txt:4989:Do you want to take a snapshot here? A preservation point. Whatever we land on for vocab.
+workspace/operational/ingestion/output/ING-20260804-0090/source/Summaries_for_the_steward.md.txt:1131:The preservation points exist because the constitution alone doesn't stop entropy.
+workspace/operational/ingestion/output/ING-20260804-0090/source/Summaries_for_the_steward.md.txt:1263:The preservation points exist because the constitution alone doesn't stop entropy.
+workspace/operational/ingestion/output/ING-20260804-0090/source/Summaries_for_the_steward.md.txt:1905:The engine became "bigger" because each time you encountered a limitation, you chose to preserve the lesson instead of working around it informally. You didn't just solve today's problem—you tried to encode the solution so it would remain available tomorrow. That's how the project accumulated constitutions, preservation points, governance, and repository engineering.
+workspace/operational/ingestion/output/ING-20260804-0090/source/Summaries_for_the_steward.md.txt:2724:Repository engineering, governance, AIS, preservation points, stewardship, inventories, manifests, and machine-readable artifacts all emerged because human reasoning alone eventually became insufficient under scale.
+workspace/operational/ingestion/output/ING-20260804-0091/source/Epistemic_Engine_Development.md:1025:- PP-0058-MAJOR.json
+workspace/operational/ingestion/output/ING-20260804-0091/source/Epistemic_Engine_Development.md:1026:- PP-0058-Manifest.json
+workspace/operational/ingestion/output/ING-20260804-0091/source/Epistemic_Engine_Development.md:1071:- PP-0058 Manifest
+workspace/operational/ingestion/output/ING-20260804-0091/source/Epistemic_Engine_Development.md:1072:- PP-0058 MAJOR
+workspace/operational/ingestion/output/ING-20260804-0091/source/Epistemic_Engine_Development.md:1753:It produced preservation points.
+workspace/operational/ingestion/output/ING-20260804-0091/source/Epistemic_Engine_Development.md:2090:For example, there's a repository full of constitutional governance, epistemology, provenance, preservation points...
+workspace/operational/ingestion/output/ING-20260804-0091/source/Epistemic_Engine_Development.md:564:- **The "preservation point" origin.** I suspect this was born directly out of repeated losses.
+workspace/operational/ingestion/output/ING-20260804-0092/source/Workflow_and_Evidence_Consolidation.md.txt:1270:7ceac0fd2062fee02d8df5c7d2882e0e2335ea0bd18a9070f8935e278ab4a8b9  ./PP-0058-Manifest(1).json
+workspace/operational/ingestion/output/ING-20260804-0092/source/Workflow_and_Evidence_Consolidation.md.txt:1271:7ceac0fd2062fee02d8df5c7d2882e0e2335ea0bd18a9070f8935e278ab4a8b9  ./PP-0058-Manifest-1.json
+workspace/operational/ingestion/output/ING-20260804-0092/source/Workflow_and_Evidence_Consolidation.md.txt:1272:7ceac0fd2062fee02d8df5c7d2882e0e2335ea0bd18a9070f8935e278ab4a8b9  ./PP-0058-Manifest.json
+workspace/operational/ingestion/output/ING-20260804-0092/source/Workflow_and_Evidence_Consolidation.md.txt:1301:fc4d8cd0604c57d6d781c90f816ca833541f6b97288ba439c80df8cfcb2a0072  ./PP-0058-MAJOR-1.json
+workspace/operational/ingestion/output/ING-20260804-0092/source/Workflow_and_Evidence_Consolidation.md.txt:1302:fc4d8cd0604c57d6d781c90f816ca833541f6b97288ba439c80df8cfcb2a0072  ./PP-0058-MAJOR.json
+workspace/operational/ingestion/output/ING-20260804-0092/source/Workflow_and_Evidence_Consolidation.md.txt:868:-rw-rw----. 1 root everybody  879 Jul 29 21:17  PP-0058-MAJOR-1.json
+workspace/operational/ingestion/output/ING-20260804-0092/source/Workflow_and_Evidence_Consolidation.md.txt:869:-rw-rw----. 1 root everybody  879 Jul 29 08:44  PP-0058-MAJOR.json
+workspace/operational/ingestion/output/ING-20260804-0092/source/Workflow_and_Evidence_Consolidation.md.txt:870:-rw-rw----. 1 root everybody  157 Jul 29 21:17 'PP-0058-Manifest(1).json'
+workspace/operational/ingestion/output/ING-20260804-0092/source/Workflow_and_Evidence_Consolidation.md.txt:871:-rw-rw----. 1 root everybody  157 Jul 29 21:17  PP-0058-Manifest-1.json
+workspace/operational/ingestion/output/ING-20260804-0092/source/Workflow_and_Evidence_Consolidation.md.txt:872:-rw-rw----. 1 root everybody  157 Jul 29 08:44  PP-0058-Manifest.json
+workspace/operational/ingestion/output/ING-20260804-0092/source/Workflow_and_Evidence_Consolidation.md.txt:873:-rw-rw----. 1 root everybody  490 Jul 29 21:17  PP-0058-Principles.json
+workspace/operational/ingestion/output/ING-20260804-0096/source/Difference_Engine____Branch_III____Integration.md.txt:1012:A preservation point is another.
+workspace/operational/ingestion/output/ING-20260804-0096/source/Difference_Engine____Branch_III____Integration.md.txt:497:- **Natural preservation points emerge.** The boundary between clusters is exactly where snapshots and canonical updates are most valuable.
+workspace/operational/ingestion/output/ING-20260804-0096/source/Difference_Engine____Branch_III____Integration.md.txt:58:- preservation points
+workspace/operational/ingestion/output/ING-20260804-0097/source/Governance_Improvements_Implementation.md.txt:14638:The earliest strong evidence I found is from the preservation points and repository planning, where the next phase is explicitly defined as:
+workspace/operational/ingestion/output/ING-20260804-0098/source/Governance_Improvements_Implementation.md(1).txt:14638:The earliest strong evidence I found is from the preservation points and repository planning, where the next phase is explicitly defined as:
+workspace/operational/ingestion/output/ING-20260804-0099/source/Difference_Engine____Branch_0____Origins.txt:21606:Repository engineering, governance, AIS, preservation points, stewardship, inventories, manifests, and machine-readable artifacts all emerged because human reasoning alone eventually became insufficient under scale.
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:10687:add 'workspace/operational/current/WORKFLOW.md'    add 'workspace/operational/preservation/PP-0001.md'
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:3057:./workspace/operational/preservation/PP-0001.md:7:Completed Task Block
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:10687:add 'workspace/operational/current/WORKFLOW.md'    add 'workspace/operational/preservation/PP-0001.md'
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:3057:./workspace/operational/preservation/PP-0001.md:7:Completed Task Block
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:35485:Looking back over the Difference Engine's evolution, that's exactly what it has been optimizing for from the beginning. The repository wasn't created because conversations were inconvenient; it was created because transient failures were repeatedly becoming permanent losses. Every major architectural feature you've recovered—bootstraps, forensic parsing, repository-first operation, preservation points, governance, canonical artifacts, and recoverable state—is a mechanism for breaking that causal chain.
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/reports/bootstrap-content-files.lst:56:./workspace/operational/preservation/PP-0001.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/reports/text-source-files.lst:114:./workspace/operational/preservation/PP-0001.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-and-test-runner/reports/git-add-dry-run.txt:195:add 'workspace/operational/preservation/PP-0001.md'
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-preflight/reports/baseline-files-by-size.txt:122:216	./workspace/operational/preservation/PP-0001.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-preflight/reports/baseline-files.lst:195:./workspace/operational/preservation/PP-0001.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-preflight/reports/git-add-dry-run.txt:195:add 'workspace/operational/preservation/PP-0001.md'
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline/reports/git-commit.txt:202: create mode 100644 workspace/operational/preservation/PP-0001.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline/reports/staged-files.txt:198:A	workspace/operational/preservation/PP-0001.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline/reports/staged-stat.txt:198: workspace/operational/preservation/PP-0001.md      |    21 +
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/hashes/repository-sha256.txt:216:f957820dba3277ea9283c0a57d5279730f5a0e3fe12b008389e79594248cfb03  ./workspace/operational/preservation/PP-0001.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/logs/batch-20-summary.txt:114:add 'workspace/operational/preservation/PP-0001.md'
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/logs/batch-24-summary.txt:211: create mode 100644 workspace/operational/preservation/PP-0001.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/logs/batch-8-summary.txt:33:./workspace/operational/preservation/PP-0001.md:7:Completed Task Block
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/manifests/repository-files.lst:216:./workspace/operational/preservation/PP-0001.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/manifests/repository-tree.lst:316:./workspace/operational/preservation/PP-0001.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/mission-task-recovery/reports/mission-task-hits.txt:21:./workspace/operational/preservation/PP-0001.md:7:Completed Task Block
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/mission-task-recovery/reports/search-corpus.lst:114:./workspace/operational/preservation/PP-0001.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/repository-service-inventory/reports/service-source-files.lst:93:workspace/operational/preservation/PP-0001.md
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:459:e5baecc04ee8f4482e514ef718ae77ffff2e7f933550f3c606c7baa11471d4ee  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0004.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:460:2baa11b24cd97b9c59cb39abd4084f741006d6f4554bbc4aaa099f32f4880f94  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0005.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:461:80c7e9bc4752356ddf102043aab5580f6413eba93b45c4c7233da354236170d1  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0005_Bundle_Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:462:30911ef82ccbbb7ee51be0eb49d15680c4f1ba655a0a208b94f976de625c516e  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0006.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:463:c378dd71fe0ca3507144807208ab73aa876108a80762f8ce53b5c2ef9d4e8f04  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0006_Bundle_Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:464:b49179342442912938d95b7f52b6d71ad1dae8b331a7afa4d4ec296ddb2eef83  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0007.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:465:0114c907c61cba7df38e6bb8cbf5b40a80aae5da9bee023a496589fd6cf07142  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0007_Bundle_Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:466:df893df3f33f7509b6cd267eab09548224ed57ab27a7058fbc3638a027051b71  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0008.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:467:222df17a80cdd8a947f9d4334efc0ad88bfe2b61cb6b5f5c9f55bdab3c2c49d3  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0008_Bundle_Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:468:b03529bec17f6bd405def9f6653e2a53080ba3462b15d75d7835340e4434b2ca  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0044_Provenance_Before_Path.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:469:8dc90cb5f1f4d9a0096d1ff654f999c4a427bd2a6c4ba5e61c1a8583bb73e048  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0045_Fingerprints_Endure.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:470:605686ff5854907e2af5b913db1eeeb0e74fbb8c14841318a626641539dfa8b2  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0046_Repository_Architecture.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:471:69004cd428014393d979fa3330d1a03e86cdfb2314cd7f6f222b1dcb7838e3e7  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0047_Epistemic_Engineering.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:472:2f8c938ef27af5ee4752da6c7515cf3558a65ef8ffb8c3b3898409a83d6c61a4  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0048_Conservative_Synthesis.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:473:d4efbd9a7498725267eacd7d650d57b9699c1945a2cc40fbbef80d3b80f96852  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0049_Developmental_Framework_Foundation.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:474:fc2cd43f2ebae0ae619fbfa17b9a7f2b91b1e81fea7822176e41b52c898d1ac9  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0050_Communication_Architecture.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:475:c0706e0882c0b220de4f73bae2a4a8eba866efbd13b4700c5131a3b8db26f12a  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0051_Constitutional_Epistemics_v1.1.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:476:07effbafb13d63c7226b30cf527370c2b812d646d2f6030f5ce4b69bb0362da2  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0052_Human_Centered_Stewardship_v1.0.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:477:e7bd6e6e29ee2cbe1cf310ce853d7cc8bb46418e81b9742fb69d069b14692856  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0052_Minor.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:478:66d94f9b4416af5601f5a137e9f27b0be916f6d4851e5e54a05e67884797f4e4  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0052_Recovery_Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:479:e189e2dd09e405ddcd4e753b04da0f687fcee2b89905fef4b16e41a582101bc9  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0053_Minor.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:480:faa35e62ad5a7326b8c0499c05654c80e53754de6c7bb2d950eccc0ab47eb4b8  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0053_Policy_Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:481:1a4376ddeb472b13867fda86fb302e0320d00ae3c672698d9a311faef5bd070d  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0053_Repository_Voice_and_Stewardship_v1.0.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:482:04ce4c92d986b0827a015d96c067b94650de5db5b0432d852f01177dcef675bd  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054A_manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:483:81809534a096cc9187e10a48f1a03b816900ddd66d9127627d5c794a22731413  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Governance_Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:484:157bdb6b46d71e193e760cdce7dd643b9e7c701ea023e707357db7390f92c646  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Minor.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:485:8f8cb33ba711a1d9bb9cb445586cafbfbf3461d9ebdd0b26a609c0eb85d682c5  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Phase_Shift_Living_Repository_v1.0.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:486:fb89879077289507760aba01b2587a37f7c9cdf7ee2ab5c912d6cc489aa49602  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Summary.xlsx
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:487:5441e713a475f0a4e8bc87d77f592ad9f8604e64102b6cd4357375d677d215f2  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Synthesis.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:488:a2b96adb26f87be1d3bc396560cc267df85df76ed051efc784c176b82161f551  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Intervention_Failures.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:489:cf5b82b7c8a0ac6ce7b3b4f64e82d2f0d4117eb46481d04a9f0b8ef92c37e795  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Intervention_Failures.xlsx
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:490:cc4ff2ab7bb26ee215a103d66051598ad2c20a6de76ba91c7c6d62da26ef24f5  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Interventions.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:491:335cafe8c6784e0d8bc65be5e0228a85bf99c116fb282c2f254bcd59d2e4d7da  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Knowledge_Model.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:492:807f7cfb31d15ad90905bfc564044e060ce7f7e0a90204df77b9868bcffa3ac3  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:493:740d0c99df052479af704009f58813395e88fa9dd0c9c05d3619957a86f7a44e  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Repository_Corpus_Ingestion.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:494:940576e81fc40ce9a490d6ebd4e94769c9e7a4c57b73a4d204a590c9880532a6  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0056_Minor.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:495:b29bdc7950e3492a5368a857e67cb9673819b49242088eae36c37626ed2076f7  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0056_Minor_Execution_Transition.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:496:7f50253b6275e264a0e658c1c41499321e781806b96713830b6d0405f2a05932  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0057_Major.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:497:fc4d8cd0604c57d6d781c90f816ca833541f6b97288ba439c80df8cfcb2a0072  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0058-MAJOR.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:498:7ceac0fd2062fee02d8df5c7d2882e0e2335ea0bd18a9070f8935e278ab4a8b9  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0058-Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:499:79db27459cf1e2c1c1fa8eb7eaa2a9ba53c76eb93550e1d6d8c8613b69f35352  /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0058-Principles.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:587:e5baecc04ee8f4482e514ef718ae77ffff2e7f933550f3c606c7baa11471d4ee  /storage/emulated/0/ADE/ADE-Working-Repository-/CLAUDE START HERE/PP-0004.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:588:df893df3f33f7509b6cd267eab09548224ed57ab27a7058fbc3638a027051b71  /storage/emulated/0/ADE/ADE-Working-Repository-/CLAUDE START HERE/PP-0008.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:589:222df17a80cdd8a947f9d4334efc0ad88bfe2b61cb6b5f5c9f55bdab3c2c49d3  /storage/emulated/0/ADE/ADE-Working-Repository-/CLAUDE START HERE/PP-0008_Bundle_Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:590:8f8cb33ba711a1d9bb9cb445586cafbfbf3461d9ebdd0b26a609c0eb85d682c5  /storage/emulated/0/ADE/ADE-Working-Repository-/CLAUDE START HERE/PP-0054_Phase_Shift_Living_Repository_v1.0.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:591:fc4d8cd0604c57d6d781c90f816ca833541f6b97288ba439c80df8cfcb2a0072  /storage/emulated/0/ADE/ADE-Working-Repository-/CLAUDE START HERE/PP-0058-MAJOR.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:592:7ceac0fd2062fee02d8df5c7d2882e0e2335ea0bd18a9070f8935e278ab4a8b9  /storage/emulated/0/ADE/ADE-Working-Repository-/CLAUDE START HERE/PP-0058-Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt:593:79db27459cf1e2c1c1fa8eb7eaa2a9ba53c76eb93550e1d6d8c8613b69f35352  /storage/emulated/0/ADE/ADE-Working-Repository-/CLAUDE START HERE/PP-0058-Principles.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:519:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0004.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:520:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0005.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:521:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0005_Bundle_Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:522:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0006.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:523:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0006_Bundle_Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:524:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0007.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:525:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0007_Bundle_Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:526:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0008.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:527:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0008_Bundle_Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:528:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0044_Provenance_Before_Path.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:529:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0045_Fingerprints_Endure.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:530:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0046_Repository_Architecture.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:531:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0047_Epistemic_Engineering.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:532:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0048_Conservative_Synthesis.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:533:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0049_Developmental_Framework_Foundation.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:534:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0050_Communication_Architecture.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:535:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0051_Constitutional_Epistemics_v1.1.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:536:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0052_Human_Centered_Stewardship_v1.0.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:537:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0052_Minor.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:538:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0052_Recovery_Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:539:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0053_Minor.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:540:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0053_Policy_Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:541:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0053_Repository_Voice_and_Stewardship_v1.0.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:542:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054A_manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:543:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Governance_Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:544:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Minor.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:545:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Phase_Shift_Living_Repository_v1.0.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:546:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Summary.xlsx
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:547:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Synthesis.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:548:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Intervention_Failures.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:549:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Intervention_Failures.xlsx
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:550:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Interventions.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:551:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Knowledge_Model.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:552:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:553:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Repository_Corpus_Ingestion.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:554:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0056_Minor.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:555:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0056_Minor_Execution_Transition.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:556:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0057_Major.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:557:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0058-MAJOR.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:558:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0058-Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:559:f /storage/emulated/0/ADE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0058-Principles.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:647:f /storage/emulated/0/ADE/ADE-Working-Repository-/CLAUDE START HERE/PP-0004.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:648:f /storage/emulated/0/ADE/ADE-Working-Repository-/CLAUDE START HERE/PP-0008.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:649:f /storage/emulated/0/ADE/ADE-Working-Repository-/CLAUDE START HERE/PP-0008_Bundle_Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:650:f /storage/emulated/0/ADE/ADE-Working-Repository-/CLAUDE START HERE/PP-0054_Phase_Shift_Living_Repository_v1.0.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:651:f /storage/emulated/0/ADE/ADE-Working-Repository-/CLAUDE START HERE/PP-0058-MAJOR.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:652:f /storage/emulated/0/ADE/ADE-Working-Repository-/CLAUDE START HERE/PP-0058-Manifest.json
+workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt:653:f /storage/emulated/0/ADE/ADE-Working-Repository-/CLAUDE START HERE/PP-0058-Principles.json
+workspace/operational/repository_state/REPOSITORY_TREE_FULL_2026-08-04.txt:2945:f ./workspace/operational/preservation/PP-0001.md

@@ -1,0 +1,36 @@
+total	sayings	figurative	vernacular	inference	presentation	census_hits	copies	sha256	representative
+146	73	22	0	17	34	96	1	0a2619397bc7687c57fd8e08765062ea5b4eae141fd8902d71536a443fa5f657	./workspace/operational/ingestion/output/ING-20260804-0099/source/Difference_Engine____Branch_0____Origins.txt
+89	30	37	0	12	10	69	1	5b0e93774638f5f0ade186de3769c6bf9fd440971965b101fe45b42b0eb80e83	./workspace/operational/ingestion/output/ING-20260804-0097/source/Governance_Improvements_Implementation.md.txt
+89	30	37	0	12	10	69	1	f0d08cbc34270a52c9502851ce02873832ee40f151cc91b4d6babcfe8200dfd0	./workspace/operational/ingestion/output/ING-20260804-0098/source/Governance_Improvements_Implementation.md(1).txt
+37	11	12	1	3	10	28	1	a053bdf9d1710ff9973c940058990e1383806a68a0a0f6ddfe2aa8a9c5b5a566	./workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt
+37	4	3	6	8	16	13	2	64263a35738281b8c4288b32577feb928f45c47331c7fa2ab94027c4e50b36ec	./workspace/operational/ingestion/output/ING-20260804-0091/source/Epistemic_Engine_Development.md
+36	11	12	1	3	9	28	1	c3897397c4b8b9e1653ad977ad0249da1334595a5223913e7140e5191371ae10	./workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt
+35	8	16	0	4	7	25	1	e6ade85893a0e1c71e38ee13e681f9fd44823ba5b783262fc5ac4c92e29d51e8	./workspace/operational/ingestion/output/ING-20260804-0089/source/File_Library_Access_Details.md.txt
+31	12	7	2	7	3	22	1	fa0eeb17972874f3a991b0f767fbdc0d5dceceae5bfbeed4303782d601e376ea	./workspace/operational/ingestion/output/ING-20260804-0095/source/Constitutional_Kernel_Load.md.txt
+27	1	2	0	7	17	3	1	9a43ae30cb3d58bd59f243cc41bb28fa8ddd02e6c1a1620c92e71b9557b237c7	./workspace/operational/ingestion/output/ING-20260804-0096/source/Difference_Engine____Branch_III____Integration.md.txt
+26	3	9	0	5	9	13	1	3765fbf5380a3006353f07da2ea82f06b37f200e09ce327c29deff99f5351c1f	./workspace/operational/ingestion/output/ING-20260804-0094/source/Constitutional_Kernel_Initialization.md.txt
+19	6	1	0	3	9	7	1	dba3f90ff24cd051dd3dec204a7d6c3cf3f8232ed3c2a8fa6fb8bb7b224c4e0d	./workspace/operational/ingestion/output/ING-20260804-0090/source/Summaries_for_the_steward.md.txt
+18	4	1	0	10	3	2	1	734a6d8fde65b6c40eb9fe58a439f0f977babea6a950720c7016782cf2643b81	./workspace/operational/ingestion/output/ING-20260804-0088/source/Difference_Engine____Branch_II____Research.md(1).txt
+18	0	0	1	2	15	1	1	4d2a06e6ee96e44ce1be5aa5948eaf0c8cdcc89f5529b8b5145f56add970b949	./BOOTSTRAP/Branches/BST-B5-HUI_Human_Interface_v0.1.0.md
+15	0	3	0	9	3	4	1	66c819d2a969c4e161ae6b64f02951534385908813e86703c8c5a77c548c11af	./workspace/operational/ingestion/output/ING-20260804-0093/source/Babbage_Initialization_and_Parsing.md.txt
+12	1	0	0	5	6	3	1	41f9205e9dc88751d416f9884ef7c1c34f463dc3f622b94d95699f634beaa8cb	./workspace/operational/ingestion/output/ING-20260804-0086/source/Categorization_of_Governance_Elements.md(1).txt
+10	6	0	0	0	4	8	1	36fc8ef76a3da7288867385368969cdea0f3c9a0afe21146837664cf23f66aab	./workspace/operational/recovery/mortar/20260803T153259/evidence/repository-mortar-hits.txt
+8	2	1	0	4	1	3	1	71176b39c2ad2ac55bf71cb7b56460756f73c8d2821c62bfe0f4f2093f817805	./workspace/operational/ingestion/output/ING-20260804-0092/source/Workflow_and_Evidence_Consolidation.md.txt
+8	1	0	0	0	7	2	3	e6260a8c5fbb44af9e6c95c05ba2cbe518b31d79029dc6982ebad14e4f6dda77	./workspace/operational/corpus/chatgpt/DifferenceEngine Gubmint Cheese.txt
+8	0	0	1	1	6	1	1	6ac085605670b4c132448947521cabe179642f973ce39f8013768170665f027f	./evidence/Branch V - Human Interface - Computational Bedrock.md
+7	4	3	0	0	0	7	1	73073c0ee20fdd4a72fef5cd8d586646db53b8023a033f953d100f5f61ecb453	./workspace/operational/corpus/chatgpt/Facet Conversation.md
+7	1	0	0	2	4	1	1	6ea1103958a3b5e513fafde16b80c107f2ef55c3b481065a5961d00f9baa37cc	./workspace/operational/ingestion/output/ING-20260804-0085/source/Difference_Engine____Branch_0____Origins.md.txt
+5	0	3	0	0	2	3	1	fc69f6d95b4704b0c86012aa3916e19823d727de21842970039a219634c8c8d6	./BOOTSTRAP/Branches/BST-B2-RES_Research_v0.1.0.md
+4	1	0	0	3	0	1	1	527a847937076c95eabf45794579286f83ea273587b7c1453845abe723f1719d	./workspace/operational/census/ADE/FILE_INDEX.json
+4	1	0	0	3	0	1	1	0e35222f09df4cb807fee08aee59033aaf70fe809001dc84b47258871a6ff6bc	./workspace/operational/census/ADE/HASH_INDEX.json
+4	1	0	0	3	0	1	1	a61f0df20875b60c579325f42d2602b9a09afd50f050d548213bacd0598e19dd	./workspace/operational/census/comparison/UNIQUE_ADE.json
+4	1	0	0	3	0	1	1	9cf3af631478588e5990e34437d547a60d5ff3363eb174df89cf57399b826892	./workspace/operational/corpus/chatgpt/ADE_REPOSITORY_FILES.txt
+4	1	0	0	3	0	1	1	758c6899a59c25d6d602c658e3738d24b0d711e61c482cf667f4d2073c53637d	./workspace/operational/corpus/chatgpt/ADE_REPOSITORY_TREE_FULL.txt
+4	1	0	0	3	0	1	1	668671fd6783748294d0f03fac14070dd995cc12140bbad9458f1363b61fd42e	./workspace/operational/repository_state/LEGACY_REPOSITORY_SHA256.txt
+4	1	0	0	3	0	1	1	36a70137ab8628ab900864f298c63786f13f3014893ffdebf77ee227ff569050	./workspace/operational/repository_state/LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt
+2	0	0	2	0	0	2	1	ff976445f55b32c13441e1fac0a8d24d9ad44c6c8c54f978edc7bd42f1d38806	./workspace/operational/ingestion/output/ING-20260804-0081/source/Bootstrap_BABBAGE_Initialization.md.txt
+2	0	0	1	1	0	1	2	1e30ef899f1e3d3de26d78db3668ad2459e3e9c87babd8037d4da8b12b40675d	./BOOTSTRAP/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md
+2	1	0	0	1	0	1	1	a48dcc6e2768ac9f9c23f4d4439fbd010c0fc427ece4b8de8f2d07cd6b80a6c1	./workspace/operational/ingestion/output/ING-20260804-0083/source/Bootstrap_Initialization_and_Rules.md.txt
+2	1	0	0	0	1	1	1	e54a100d601a877e0f96cd1ba14677bc123f8a6bd4b1b30ccc6f9810ca0f68ac	./workspace/operational/ingestion/output/ING-20260804-0087/source/Migration_Map_Creation.md.txt
+1	0	1	0	0	0	1	1	89ce631320e3363ea78a89878892866df85483dcf734e78f8463a93d33762f64	./BOOTSTRAP/Bootstrap - Difference Engine - Session Continuation Bootstrap - Epoch II - Repository Archaeology - Into - Constitutional Synthesis.md
+1	1	0	0	0	0	1	1	eb1f470022194ca92bf253e61eda01b9c633be7f3f56d08804f8daad86002f94	./workspace/operational/corpus/chatgpt/Files on the Motorola G Power 21.md

@@ -1,0 +1,82 @@
+specification	line	level	heading	path
+Artifact_Lifecycle_Specification_v0.1.md	1	1	Contents	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	3	1	Artifact Lifecycle Specification	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	11	1	Purpose	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	21	1	Design Principles	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	31	1	Lifecycle States	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	33	2	Imported	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	41	2	Parsed	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	49	2	Validated	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	57	2	Queued	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	65	2	Mapped	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	73	2	Under Review	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	81	2	Promoted	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	89	2	Published	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	97	2	Superseded	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	105	2	Archived	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	113	1	State Transitions	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	156	1	Lifecycle Events	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	170	1	Validation	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	180	1	Failure Handling	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	191	1	Relationship to Provenance	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Lifecycle_Specification_v0.1.md	199	1	Design Philosophy	workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Schema_v0.1.md	1	1	Artifact Schema	workspace/operational/ingestion/output/ING-20260804-0006/source/Artifact_Schema_v0.1.md
+Artifact_Schema_v0.1.md	9	1	Purpose	workspace/operational/ingestion/output/ING-20260804-0006/source/Artifact_Schema_v0.1.md
+Artifact_Schema_v0.1.md	19	1	Artifact Hierarchy	workspace/operational/ingestion/output/ING-20260804-0006/source/Artifact_Schema_v0.1.md
+Artifact_Schema_v0.1.md	43	1	Metadata	workspace/operational/ingestion/output/ING-20260804-0006/source/Artifact_Schema_v0.1.md
+Artifact_Schema_v0.1.md	65	1	Provenance	workspace/operational/ingestion/output/ING-20260804-0006/source/Artifact_Schema_v0.1.md
+Artifact_Schema_v0.1.md	80	1	Content	workspace/operational/ingestion/output/ING-20260804-0006/source/Artifact_Schema_v0.1.md
+Artifact_Schema_v0.1.md	95	1	Structure	workspace/operational/ingestion/output/ING-20260804-0006/source/Artifact_Schema_v0.1.md
+Artifact_Schema_v0.1.md	114	1	Assets	workspace/operational/ingestion/output/ING-20260804-0006/source/Artifact_Schema_v0.1.md
+Artifact_Schema_v0.1.md	137	1	References	workspace/operational/ingestion/output/ING-20260804-0006/source/Artifact_Schema_v0.1.md
+Artifact_Schema_v0.1.md	153	1	Queue Candidates	workspace/operational/ingestion/output/ING-20260804-0006/source/Artifact_Schema_v0.1.md
+Artifact_Schema_v0.1.md	163	1	Validation	workspace/operational/ingestion/output/ING-20260804-0006/source/Artifact_Schema_v0.1.md
+Artifact_Schema_v0.1.md	183	1	Lifecycle	workspace/operational/ingestion/output/ING-20260804-0006/source/Artifact_Schema_v0.1.md
+Artifact_Schema_v0.1.md	201	1	Extension Model	workspace/operational/ingestion/output/ING-20260804-0006/source/Artifact_Schema_v0.1.md
+Artifact_Schema_v0.1.md	218	1	Design Principles	workspace/operational/ingestion/output/ING-20260804-0006/source/Artifact_Schema_v0.1.md
+Asset_Schema_v0.1.md	1	1	Asset Schema	workspace/operational/ingestion/output/ING-20260804-0007/source/Asset_Schema_v0.1.md
+Asset_Schema_v0.1.md	9	1	Purpose	workspace/operational/ingestion/output/ING-20260804-0007/source/Asset_Schema_v0.1.md
+Asset_Schema_v0.1.md	21	1	Design Principles	workspace/operational/ingestion/output/ING-20260804-0007/source/Asset_Schema_v0.1.md
+Asset_Schema_v0.1.md	31	1	Required Fields	workspace/operational/ingestion/output/ING-20260804-0007/source/Asset_Schema_v0.1.md
+Asset_Schema_v0.1.md	46	1	Optional Fields	workspace/operational/ingestion/output/ING-20260804-0007/source/Asset_Schema_v0.1.md
+Asset_Schema_v0.1.md	60	1	Supported Asset Types	workspace/operational/ingestion/output/ING-20260804-0007/source/Asset_Schema_v0.1.md
+Asset_Schema_v0.1.md	91	1	Asset Content	workspace/operational/ingestion/output/ING-20260804-0007/source/Asset_Schema_v0.1.md
+Asset_Schema_v0.1.md	101	1	Provenance	workspace/operational/ingestion/output/ING-20260804-0007/source/Asset_Schema_v0.1.md
+Asset_Schema_v0.1.md	115	1	Validation	workspace/operational/ingestion/output/ING-20260804-0007/source/Asset_Schema_v0.1.md
+Asset_Schema_v0.1.md	126	1	Lifecycle	workspace/operational/ingestion/output/ING-20260804-0007/source/Asset_Schema_v0.1.md
+Asset_Schema_v0.1.md	140	1	Relationship to Artifacts	workspace/operational/ingestion/output/ING-20260804-0007/source/Asset_Schema_v0.1.md
+Asset_Schema_v0.1.md	150	1	Design Philosophy	workspace/operational/ingestion/output/ING-20260804-0007/source/Asset_Schema_v0.1.md
+Output_Package_Specificatiom_v0.1.md	1	1	Output Package Specification	workspace/operational/ingestion/output/ING-20260804-0026/source/Output_Package_Specificatiom_v0.1.md
+Output_Package_Specificatiom_v0.1.md	9	1	Purpose	workspace/operational/ingestion/output/ING-20260804-0026/source/Output_Package_Specificatiom_v0.1.md
+Output_Package_Specificatiom_v0.1.md	17	1	Design Principles	workspace/operational/ingestion/output/ING-20260804-0026/source/Output_Package_Specificatiom_v0.1.md
+Output_Package_Specificatiom_v0.1.md	27	1	Standard Output Package	workspace/operational/ingestion/output/ING-20260804-0026/source/Output_Package_Specificatiom_v0.1.md
+Output_Package_Specificatiom_v0.1.md	95	1	Required Components	workspace/operational/ingestion/output/ING-20260804-0026/source/Output_Package_Specificatiom_v0.1.md
+Output_Package_Specificatiom_v0.1.md	97	2	source/	workspace/operational/ingestion/output/ING-20260804-0026/source/Output_Package_Specificatiom_v0.1.md
+Output_Package_Specificatiom_v0.1.md	103	2	metadata/	workspace/operational/ingestion/output/ING-20260804-0026/source/Output_Package_Specificatiom_v0.1.md
+Output_Package_Specificatiom_v0.1.md	109	2	structure/	workspace/operational/ingestion/output/ING-20260804-0026/source/Output_Package_Specificatiom_v0.1.md
+Output_Package_Specificatiom_v0.1.md	115	2	queues/	workspace/operational/ingestion/output/ING-20260804-0026/source/Output_Package_Specificatiom_v0.1.md
+Output_Package_Specificatiom_v0.1.md	121	2	provenance/	workspace/operational/ingestion/output/ING-20260804-0026/source/Output_Package_Specificatiom_v0.1.md
+Output_Package_Specificatiom_v0.1.md	127	2	reports/	workspace/operational/ingestion/output/ING-20260804-0026/source/Output_Package_Specificatiom_v0.1.md
+Output_Package_Specificatiom_v0.1.md	133	1	Naming Rules	workspace/operational/ingestion/output/ING-20260804-0026/source/Output_Package_Specificatiom_v0.1.md
+Output_Package_Specificatiom_v0.1.md	143	1	Extensibility	workspace/operational/ingestion/output/ING-20260804-0026/source/Output_Package_Specificatiom_v0.1.md
+Output_Package_Specificatiom_v0.1.md	151	1	Design Philosophy	workspace/operational/ingestion/output/ING-20260804-0026/source/Output_Package_Specificatiom_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	1	1	Workflow Service Capability Specification	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	9	1	Purpose	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	17	1	Design Principles	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	28	1	Scope	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	42	1	Capability Definition	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	50	1	Capability Objectives	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	63	1	Canonical Capability Schema	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	85	1	Capability Identifier	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	100	1	Capability Categories	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	122	1	Capability Declaration	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	137	1	Capability Composition	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	152	1	Capability Compatibility	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	167	1	Capability Discovery	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	183	1	Capability Validation	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	198	1	Capability Evolution	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	212	1	Capability Lifecycle	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	246	1	Capability Metrics	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	261	1	Audit Requirements	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	277	1	Repository Integration	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md	294	1	Design Philosophy	workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md

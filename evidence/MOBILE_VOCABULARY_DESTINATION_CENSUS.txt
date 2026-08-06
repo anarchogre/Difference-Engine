@@ -1,0 +1,51 @@
+## FILE MATCHES
+./BOOTSTRAP/Branches/BST-B5-HUI_Human_Interface_v0.1.0.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_INTERFACE_v1.md
+./evidence/Branch V - Human Interface - Computational Bedrock.md
+./evidence/MOBILE_VOCABULARY_DESTINATION_CENSUS.txt
+./workspace/operational/corpus/chatgpt/Branch_V_ Human_Interface.md
+./workspace/operational/corpus/chatgpt/From Human Interface.md
+
+## DIRECTORY CANDIDATES
+Repository/Entities
+Repository/Governance
+Repository/Observations
+Repository/Patterns
+Repository/Preservation
+Repository/Publications
+Repository/Relationships
+Repository/Specifications
+Repository/Validation
+architecture/artifacterator
+architecture/bootstrap_loader
+architecture/formatter
+architecture/parser
+architecture/services
+evidence/ingestion
+evidence/ingestion/acceptance
+scripts/lib
+scripts/reconciliation
+standards/v1
+standards/v1/supporting
+standards/vi
+workspace/operational
+workspace/operational/bootstrap
+workspace/operational/census
+workspace/operational/contracts
+workspace/operational/corpus
+workspace/operational/current
+workspace/operational/doctrine
+workspace/operational/drift
+workspace/operational/history
+workspace/operational/identity
+workspace/operational/ingestion
+workspace/operational/integration
+workspace/operational/library
+workspace/operational/preservation
+workspace/operational/recovery
+workspace/operational/repository_state
+workspace/operational/services
+workspace/operational/standards
+
+## STRAY BRACE DIRECTORY
+./{

@@ -1,0 +1,16 @@
+Mobile Vocabulary Artifact-Class Census
+
+Result: ZERO MATCHES
+
+No existing repository artifact-class declaration was found for:
+external adapter
+interface adapter
+mobile adapter
+keyboard dictionary
+Gboard dictionary
+configuration package
+experimental package
+binary distribution
+
+Interpretation: physical placement remains unresolved.
+Canonical promotion: not attempted.

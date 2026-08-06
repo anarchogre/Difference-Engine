@@ -1,0 +1,83 @@
+workspace/operational/library/LIBRARY_GOVERNANCE.md:1: # Difference Engine File Library Governance
+workspace/operational/library/LIBRARY_GOVERNANCE.md:3: Status: Candidate
+workspace/operational/library/LIBRARY_GOVERNANCE.md:6: ## Purpose
+workspace/operational/library/LIBRARY_GOVERNANCE.md:10: ## Authority
+workspace/operational/library/LIBRARY_GOVERNANCE.md:12: The repository remains canonical.
+workspace/operational/library/LIBRARY_GOVERNANCE.md:16: A File Library artifact does not become canonical knowledge solely because it is uploaded.
+workspace/operational/library/LIBRARY_GOVERNANCE.md:18: ## Required Metadata
+workspace/operational/library/LIBRARY_GOVERNANCE.md:20: Every governed artifact must have:
+workspace/operational/library/LIBRARY_GOVERNANCE.md:23: - canonical name;
+workspace/operational/library/LIBRARY_GOVERNANCE.md:24: - source upload name when different;
+workspace/operational/library/LIBRARY_GOVERNANCE.md:27: - required status;
+workspace/operational/library/LIBRARY_GOVERNANCE.md:31: ## Lifecycle States
+workspace/operational/library/LIBRARY_GOVERNANCE.md:33: - `candidate`
+workspace/operational/library/LIBRARY_GOVERNANCE.md:34: - `canonical`
+workspace/operational/library/LIBRARY_GOVERNANCE.md:43: ## Promotion
+workspace/operational/library/LIBRARY_GOVERNANCE.md:45: Promotion requires:
+workspace/operational/library/LIBRARY_GOVERNANCE.md:51: 5. canonical destination;
+workspace/operational/library/LIBRARY_GOVERNANCE.md:54: ## Replacement
+workspace/operational/library/LIBRARY_GOVERNANCE.md:56: A replacement artifact must identify:
+workspace/operational/library/LIBRARY_GOVERNANCE.md:66: ## Duplication
+workspace/operational/library/LIBRARY_GOVERNANCE.md:74: ## Recovery
+workspace/operational/library/LIBRARY_GOVERNANCE.md:76: Recovery uses the Canonical Library Index.
+workspace/operational/library/LIBRARY_GOVERNANCE.md:78: Unindexed files are not silently treated as canonical.
+workspace/operational/library/LIBRARY_GOVERNANCE.md:80: Missing required artifacts must be reported.
+workspace/operational/library/LIBRARY_GOVERNANCE.md:82: ## Repository Synchronization
+workspace/operational/library/LIBRARY_GOVERNANCE.md:84: Canonical repository artifacts supersede File Library copies when conflict exists.
+workspace/operational/library/LIBRARY_GOVERNANCE.md:86: Conflicts must be recorded as drift.
+workspace/operational/library/UPLOAD_STANDARD.md:1: # Difference Engine File Library Upload Standard
+workspace/operational/library/UPLOAD_STANDARD.md:3: Status: Candidate
+workspace/operational/library/UPLOAD_STANDARD.md:6: ## Filename
+workspace/operational/library/UPLOAD_STANDARD.md:17: - duplicate canonical names;
+workspace/operational/library/UPLOAD_STANDARD.md:20: ## Required Upload Record
+workspace/operational/library/UPLOAD_STANDARD.md:25: - canonical filename;
+workspace/operational/library/UPLOAD_STANDARD.md:34: ## Upload Procedure
+workspace/operational/library/UPLOAD_STANDARD.md:40: 5. upload artifact;
+workspace/operational/library/UPLOAD_STANDARD.md:42: 7. update Canonical Library Index;
+workspace/operational/library/UPLOAD_STANDARD.md:47: ## Replacement Uploads
+workspace/operational/library/UPLOAD_STANDARD.md:54: - updating the index.
+workspace/operational/library/UPLOAD_STANDARD.md:56: ## Prohibited Behavior
+workspace/operational/library/UPLOAD_STANDARD.md:58: - silent canonical promotion;
+workspace/operational/library/UPLOAD_STANDARD.md:62: - treating upload order as authority.
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:1: # Difference Engine File Library Artifact Lifecycle
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:3: ## States
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:5: ### Candidate
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:9: ### Canonical
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:13: ### Active
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:17: ### Snapshot
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:21: ### Historical
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:25: ### Superseded
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:29: ### Experimental
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:33: ### Queued
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:35: Awaiting review, implementation, or promotion.
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:37: ### Retired
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:39: No longer operationally required but preserved where provenance requires.
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:41: ## Transitions
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:43: `candidate → canonical`
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:45: Requires validation and explicit promotion.
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:47: `candidate → experimental`
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:51: `canonical → superseded`
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:65: Requires accepted execution scope.
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:67: `experimental → canonical`
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:71: ## Invariants
+workspace/operational/library/ARTIFACT_LIFECYCLE.md:75: - canonical identity is unique;
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:3: "status": "candidate",
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:11: "lifecycle": "canonical",
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:12: "required": true,
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:19: "lifecycle": "canonical",
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:20: "required": true,
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:28: "lifecycle": "candidate",
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:29: "required": true,
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:36: "lifecycle": "canonical",
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:37: "required": true,
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:45: "lifecycle": "canonical",
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:46: "required": true,
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:53: "lifecycle": "canonical",
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:54: "required": true,
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:61: "lifecycle": "canonical",
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:62: "required": true,
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:70: "required": true,
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:78: "required": true,
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:86: "required": true,
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:94: "required": true,
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:102: "required": true,

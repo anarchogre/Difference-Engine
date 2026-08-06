@@ -1,0 +1,525 @@
+
+## BOOTSTRAP/Branches/BST-B5-HUI_Human_Interface_v0.1.0.md
+18-3. Current Human Interface branch governance.
+19-4. Current audience and use case.
+20:5. Canonical source artifacts.
+21-6. Relevant operator constraints.
+22-7. Existing translations and interface patterns.
+--
+50-- accessibility;
+51-- audience adaptation;
+52:- lawful panes over shared objects.
+53-
+54:Human Interface does not own the repository’s meaning.
+55-
+56-It preserves meaning while changing form.
+--
+78-- Which language preserves the meaning?
+79-- Which interface fits operational reality?
+80:- Which projection is lawful?
+81-- What causes unnecessary cognitive load?
+82-- Where does simplification become distortion?
+--
+92-- summarize;
+93-- restructure presentation;
+94:- adapt vocabulary;
+95-- design workflows;
+96-- define audience layers;
+97:- propose panes;
+98-- design navigation;
+99-- identify cognitive friction;
+--
+109-- infer identity from preferences;
+110-- manipulate the operator;
+111:- replace source artifacts;
+112-- promote doctrine;
+113-- create independent duplicate truth.
+--
+151-# Meaning Preservation Test
+152-
+153:Before releasing a translated artifact, verify:
+154-
+155-1. Does it preserve the original claim?
+--
+166----
+167-
+168:# Panes
+169-
+170:A pane is a lawful projection over shared repository objects.
+171-
+172:A pane is not merely a screen.
+173-
+174:A pane selects, organizes, and presents information according to a defined purpose and authority.
+175-
+176:Candidate panes may include:
+177-
+178:- Evidence Pane
+179:- Decision Pane
+180:- Relationship Pane
+181:- Operator Pane
+182:- Behavior Pane
+183:- Time Pane
+184:- Risk Pane
+185:- Governance Pane
+186:- Operations Pane
+187:- Recovery Pane
+188-
+189:Every pane SHALL define:
+190-
+191-- purpose;
+--
+200-- provenance access.
+201-
+202:A pane does not duplicate or own underlying reality.
+203-
+204----
+--
+206-# Operator Model
+207-
+208:The operator model is a lawful projection used to reduce friction.
+209-
+210-It may include validated information about:
+--
+217-- routines;
+218-- environment;
+219:- tools;
+220-- constraints;
+221-- goals;
+--
+282-Memory Palace is a navigation and orientation layer.
+283-
+284:It is not a duplicate repository.
+285-
+286-It may provide conceptual spaces such as:
+--
+292-- Observatory.
+293-
+294:These are semantic interfaces over shared repository objects and relationships.
+295-
+296-Memory Palace SHALL preserve:
+--
+351-- Frequently asked questions
+352-- Operator workflows
+353:- Pane contracts
+354-- Navigation models
+355-- Accessibility reviews
+--
+388-Priority work:
+389-
+390:- define pane contracts;
+391-- define operator-model boundaries;
+392:- distinguish Memory Palace navigation from repository storage;
+393:- reduce mobile operational burden;
+394-- produce lay explanations for household and public audiences;
+395-- preserve technical and constitutional fidelity across abstraction levels.
+--
+402-
+403-- accepted concepts from Integration or Stewardship;
+404:- implementation constraints from Operations;
+405-- candidate interface concepts from Research;
+406-- historical context from Origins.
+
+## evidence/Branch V - Human Interface - Computational Bedrock.md
+17-1. KRN-0001 Common Constitutional Kernel.
+18-2. Current Computational Bedrock mission state.
+19:3. Current repository evidence.
+20:4. Current implementation evidence.
+21-5. Relevant Research handoff.
+22-6. Relevant Origins handoff.
+23:7. Existing repository-object, relationship, projection, pane, and operator-model work.
+24-8. Active operational constraints.
+25-9. Current stopping condition.
+--
+37-- canonical architecture;
+38-- ratified doctrine;
+39:- repository truth;
+40-- proof of primitive status;
+41:- implementation readiness.
+42-
+43-Report before claiming readiness:
+--
+45-- initialized components;
+46-- missing initialization;
+47:- repository evidence inspected;
+48-- missing evidence;
+49-- drift;
+--
+56-Reality remains final authority.
+57-
+58:The repository is canonical only where canonical status has been demonstrated.
+59-
+60-Conversation is evidence.
+--
+93-> How far must the project be reduced before a lawful machine can be built?
+94-
+95:Stop when the model is sufficient for implementation and testing.
+96-
+97-Then build.
+--
+121-- conversations disappeared;
+122-- context degraded;
+123:- artifacts became detached from their origin;
+124-- versions multiplied;
+125-- names drifted;
+--
+127-- operating state existed only in chat;
+128-- recovery required reconstruction from memory;
+129:- implementation repeatedly lagged behind conceptual development.
+130-
+131-The system expanded because each failure exposed a deeper requirement.
+--
+138-→ living knowledge base  
+139-→ preservation problem  
+140:→ repository  
+141-→ provenance  
+142-→ governance  
+--
+145-→ ingestion architecture  
+146-→ object and relationship models  
+147:→ projections and panes  
+148-→ operator modeling  
+149-→ recoverability  
+--
+208-- resumable incremental work;
+209-- low tolerance for retyping;
+210:- minimal paid tooling;
+211:- repository-first preservation.
+212-
+213-These constraints are not interface trivia.
+--
+224-- a failure leaves ambiguous partial completion;
+225-- recovery depends on conversational recollection;
+226:- mobile execution is treated as an afterthought.
+227-
+228-Required consequences include:
+--
+337-A context in which a lower-level object or relation is used.
+338-
+339:## Projection
+340-
+341-A lawful derivation over underlying state.
+--
+343-## Interface construct
+344-
+345:A human- or machine-facing adapter.
+346-
+347-## Named composition
+--
+366-→ Relationship  
+367-→ Transformation  
+368:→ Projection  
+369-→ Governed Operation  
+370-→ Action  
+--
+388-- events preserve change;
+389-- constraints govern admissible transitions;
+390:- projections expose lawful views;
+391-- operations create governed state transitions;
+392-- actions alter or engage reality;
+--
+394-- revision preserves the difference.
+395-
+396:This cycle must be tested against implementation.
+397-
+398-Do not promote it because it reads well.
+--
+463-# OBJECTS, EVENTS, AND STATE
+464-
+465:The repository encourages object-thinking.
+466-
+467-That is necessary but insufficient.
+--
+477-How state came to differ.
+478-
+479:A repository containing only current objects loses:
+480-
+481-- sequence;
+--
+507-- transition events;
+508-- constraints over transitions;
+509:- projections over resulting state.
+510-
+511-The inquiry must determine whether an object is:
+--
+514-- a record contract;
+515-- a materialized state;
+516:- or a projection over event history.
+517-
+518-Do not choose event sourcing, mutable objects, relational storage, document storage, graph storage, or filesystem layout at bedrock unless the required semantics force the choice.
+519-
+520:Implementation is not primitive.
+521-
+522----
+--
+559-- sources;
+560-- observations;
+561:- artifacts;
+562-- operations;
+563-- actors;
+--
+567-- validation events.
+568-
+569:Likely implementation candidate:
+570-
+571-- minimal provenance envelope;
+--
+603-- human-reported;
+604-- instrument-generated;
+605:- extracted from an artifact;
+606-- incomplete;
+607-- contradictory;
+--
+763-- candidate doctrine may not become canonical without explicit promotion;
+764-- a branch result may not silently acquire project-wide authority;
+765:- a superseded artifact may not be overwritten where continuity matters;
+766-- an inferred operator preference may not become explicit preference without evidence;
+767:- a pane may not mutate source state except through permitted operations;
+768-- a destructive operation may require validation and authority;
+769-- uncertainty may not be silently discarded.
+--
+867----
+868-
+869:# PROJECTIONS
+870-
+871-Candidate definition:
+872-
+873:> A projection is a reproducible, governed derivation over preserved state.
+874-
+875:A projection may:
+876-
+877-- select;
+--
+887-- expose relationships.
+888-
+889:A projection must preserve:
+890-
+891-- source references;
+--
+899-- permitted downstream use.
+900-
+901:A projection does not own its sources.
+902-
+903:A projection does not become reality.
+904-
+905:A projection may be materialized for performance, but materialization must not create independent truth.
+906-
+907-Key test:
+908-
+909:Can the projection be regenerated from authoritative state and declared transformation?
+910-
+911:If not, it may be a new object or interpretation rather than a projection.
+912-
+913----
+914-
+915:# PANES
+916-
+917-Candidate definition:
+918-
+919:> A pane is a governed, purpose-specific interface over one or more projections.
+920-
+921:A pane should define:
+922-
+923-- purpose;
+924-- audience;
+925:- source projections;
+926-- included fields;
+927-- excluded fields;
+--
+937-
+938-Preserved state  
+939:→ projection  
+940:→ pane  
+941-→ interface interaction  
+942-→ governed operation  
+943-→ state transition
+944-
+945:A pane is not merely a screen.
+946-
+947:A pane is not a database.
+948-
+949:A pane is not an object owner.
+950-
+951:The inquiry must test whether Pane belongs in bedrock.
+952-
+953-Likely result:
+954-
+955:- projection is computational;
+956:- pane is an interface contract composed from projections, policies, and operations.
+957-
+958:Do not preserve Pane as a primitive merely because it is central to the human vision.
+959-
+960:Preserve the capability to generate lawful panes.
+961-
+962----
+--
+970-- aspect of an object;
+971-- query lens;
+972:- projection;
+973-- classification;
+974-- relationship;
+--
+1007-- explicit preferences;
+1008-- constraints;
+1009:- tools;
+1010-- environment;
+1011-- language;
+--
+1079-- branch traversal;
+1080-- steward lineage;
+1081:- tool discovery;
+1082:- repository health;
+1083-- knowledge discovery;
+1084-- relationship exploration.
+--
+1094-should be treated as human-facing semantic interfaces over shared state.
+1095-
+1096:The Memory Palace should not duplicate repository truth.
+1097-
+1098-Bedrock requirement:
+--
+1104-- relationships;
+1105-- queries;
+1106:- projections;
+1107-- summaries;
+1108-- indexes;
+1109:- pane contracts;
+1110-- navigation state.
+1111-
+--
+1131-- invariants;
+1132-- core contracts;
+1133:- repository pointers;
+1134-- integrity checks;
+1135-- validation state;
+--
+1146-Likely computational status:
+1147-
+1148:- deterministic recovery projection;
+1149-- signed or integrity-checked state package;
+1150-- named composition of lower-level records and relationships.
+--
+1154-> The engine must support deterministic recovery from durable state without inventing missing history.
+1155-
+1156:Test recovery by destroying the active process and reinstantiating from preserved artifacts.
+1157-
+1158-If successful recovery depends on the operator remembering what happened, recovery has failed.
+--
+1193-- a workspace composition;
+1194-- a governance scope;
+1195:- a projection;
+1196-- or an interface convention.
+1197-
+--
+1217-- initialization verification;
+1218-- drift detection;
+1219:- artifact preservation;
+1220-- handoff generation;
+1221-- queue continuity;
+--
+1243-- observation;
+1244-- claim;
+1245:- artifact;
+1246-- decision;
+1247-- constraint;
+1248-- operator-model assertion;
+1249-- validation result;
+1250:- projection definition.
+1251-
+1252-## 2. Relation
+--
+1262-An identified rule governing admissible state, relationships, operations, or transitions.
+1263-
+1264:## 5. Projection
+1265-
+1266-A reproducible governed derivation over records, relations, and events.
+--
+1269-
+1270-- Evidence = observation admitted in relation to an inquiry.
+1271:- Repository object = record satisfying repository invariants.
+1272-- Operation = constrained event-producing transition.
+1273:- Pane = projection plus audience, presentation, and permitted operations.
+1274-- Operator model = bounded collection of records and relations concerning operational fit.
+1275-- Validation = event and relation connecting model expectation with test or consequence.
+1276:- Phylactery = recovery projection and package.
+1277:- Memory Palace = navigation system composed from projections and panes.
+1278-- Branch = scoped experimental workspace and authority boundary.
+1279-- Steward = role performing lifecycle and governance operations.
+--
+1287-`Event` may be sufficient to derive state.
+1288-
+1289:`Projection` may be an operation rather than a primitive.
+1290-
+1291-Test aggressively.
+--
+1339-Destroy active state and recover from durable state.
+1340-
+1341:## Mobile Reality Test
+1342-
+1343-Determine whether the model supports interruption-safe phone-first execution.
+--
+1351-Determine whether the candidate legitimately supports multiple capabilities without concealing incompatible meanings.
+1352-
+1353:## Implementation Leakage Test
+1354-
+1355-Determine whether the candidate is actually:
+--
+1390-9. An interpretation is generated without altering the source observation.
+1391-10. A governed operation acts on preserved state.
+1392:11. A projection is generated.
+1393:12. A pane exposes the projection for a defined audience.
+1394-13. A bounded operator model adjusts presentation or workflow.
+1395-14. A human authorizes or rejects an action.
+--
+1420-- constraint contract;
+1421-- operation contract;
+1422:- projection contract;
+1423-- validation contract;
+1424-- recovery contract;
+1425-- operator-model boundary;
+1426:- pane composition rules;
+1427-- authority and status model;
+1428-- supersession behavior;
+--
+1459-- whether Object and Event must remain distinct;
+1460-- whether Constraint is first-class;
+1461:- whether Projection is primitive or operation;
+1462:- whether Pane belongs at bedrock;
+1463-- whether Branch and Steward survive as machine objects;
+1464:- whether repository state should be mutable, append-only, or event-derived;
+1465-- whether relationships require independent identity and versioning;
+1466-- whether validation is operation, event, relation, or composite;
+--
+1471-Preserve these as open questions.
+1472-
+1473:Do not silently resolve them in implementation.
+1474-
+1475----
+--
+1485-- relationships;
+1486-- governed transitions;
+1487:- lawful projections;
+1488:- pane composition;
+1489-- operator-model boundaries;
+1490-- action authorization;
+--
+1494-- supersession;
+1495-- deterministic recovery;
+1496:- mobile-first execution and testing.
+1497-
+1498-At that point:
+1499-
+1500:- freeze the candidate for implementation;
+1501-- produce explicit test contracts;
+1502-- send implementable contracts to Operations;
+--
+1506-- send promotion candidates to the appropriate integration authority.
+1507-
+1508:Queue deeper inquiry unless implementation proves it necessary.
+1509-
+1510-Construction precedes optimization.
+--
+1537-- preserve human agency.
+1538-
+1539:Its purpose is not to place reality inside a repository.
+1540-
+1541-Reality will not fit.

@@ -1,0 +1,95 @@
+## Manifest
+
+{
+  "schema_version": "1.0",
+  "status": "candidate",
+  "authority": "Operations",
+  "project": "The Difference Engine",
+  "required_configuration": {
+    "repository_canonical": true,
+    "bootstrap_executable_state": true,
+    "recovery_before_execution": true,
+    "evidence_before_interpretation": true,
+    "promotion_after_validation": true,
+    "branches_experimental_until_integrated": true,
+    "phone_first": true,
+    "termux": true,
+    "resumable_execution": true,
+    "durable_outputs": true,
+    "minimal_repetitive_typing": true,
+    "externalized_memory": true
+  },
+  "execution_roles": [
+    "Head Steward",
+    "Operations",
+    "Integration",
+    "Research",
+    "Origins",
+    "Human Interface"
+  ],
+  "active_execution_partner": "Babbage",
+  "active_mission": "GPT Plus Integration",
+  "active_task": "Recovery Standardization"
+}
+
+## Integration Directory
+
+f	workspace/operational/integration/EXTERNAL_VERIFICATION_STATUS.json
+f	workspace/operational/integration/FILE_LIBRARY_MANIFEST.json
+f	workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json
+
+## Repository References
+
+workspace/operational/census/DE/FILE_INDEX.json:12675:    "path": "workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json",
+workspace/operational/census/DE/HASH_INDEX.json:1807:    "workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json"
+workspace/operational/census/comparison/UNIQUE_DE.json:1807:    "workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json"
+workspace/operational/current/PHASE_2_COMPLETION_REPORT.md:23:- ChatGPT Project configuration manifest;
+workspace/operational/current/PHASE_2_TASK_BLOCK.md:18:6. Define ChatGPT Project configuration manifest.
+workspace/operational/current/state-references.out:1347:workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json:8:    "bootstrap_executable_state": true,
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:12371:cat > workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json <<'EOF'
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:12435:    root / "PROJECT_CONFIGURATION_MANIFEST.json"
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:12623:cat > workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json <<'EOF'
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:12683:    root / "PROJECT_CONFIGURATION_MANIFEST.json"
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:12784: create mode 100644 workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:13858:- ChatGPT Project configuration manifest;
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:14104:- ChatGPT Project configuration manifest;
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:18269:        "PROJECT_CONFIGURATION_MANIFEST.json"
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:18646:        "PROJECT_CONFIGURATION_MANIFEST.json"
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:19367:        "PROJECT_CONFIGURATION_MANIFEST.json"
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:19558:        "PROJECT_CONFIGURATION_MANIFEST.json"
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:5469:- Project configuration manifest;
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:5901:- Project configuration manifest;
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:7308:6. Define ChatGPT Project configuration manifest.
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:7408:6. Define ChatGPT Project configuration manifest.
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:7620:6. Define ChatGPT Project configuration manifest.
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:7720:6. Define ChatGPT Project configuration manifest.
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:12371:cat > workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json <<'EOF'
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:12435:    root / "PROJECT_CONFIGURATION_MANIFEST.json"
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:12623:cat > workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json <<'EOF'
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:12683:    root / "PROJECT_CONFIGURATION_MANIFEST.json"
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:12784: create mode 100644 workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:13858:- ChatGPT Project configuration manifest;
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:14104:- ChatGPT Project configuration manifest;
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:18269:        "PROJECT_CONFIGURATION_MANIFEST.json"
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:18646:        "PROJECT_CONFIGURATION_MANIFEST.json"
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:19367:        "PROJECT_CONFIGURATION_MANIFEST.json"
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:19558:        "PROJECT_CONFIGURATION_MANIFEST.json"
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:5469:- Project configuration manifest;
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:5901:- Project configuration manifest;
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:7308:6. Define ChatGPT Project configuration manifest.
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:7408:6. Define ChatGPT Project configuration manifest.
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:7620:6. Define ChatGPT Project configuration manifest.
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:7720:6. Define ChatGPT Project configuration manifest.
+workspace/operational/recovery/RECOVERY_VERIFIER_SPECIFICATION.md:25:- Project configuration manifest;
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/cross-domain-drift-detector/reports/drift.py.diff:116:+        "PROJECT_CONFIGURATION_MANIFEST.json"
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/cross-domain-drift-detector/reports/drift.py.diff:545:+        "PROJECT_CONFIGURATION_MANIFEST.json"
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verification-manifests/reports/external-manifests-sha256.txt:3:54dc0a913accc03d6b5d4e3e5afa4dd4338638299d1bafdf64e5319df85834f3  workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verification-manifests/reports/git-commit.txt:7: create mode 100644 workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verification/reports/external-verification-sha256.txt:3:54dc0a913accc03d6b5d4e3e5afa4dd4338638299d1bafdf64e5319df85834f3  workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/logs/batch-25-summary.txt:21: create mode 100644 workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-1-closeout/artifacts/PHASE_2_TASK_BLOCK.md:18:6. Define ChatGPT Project configuration manifest.
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-2-closeout/artifacts/PHASE_2_COMPLETION_REPORT.md:23:- ChatGPT Project configuration manifest;
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-specification/artifacts/RECOVERY_VERIFIER_SPECIFICATION.md:25:- Project configuration manifest;
+workspace/operational/recovery/mortar/20260803T153259/evidence/repository-mortar-hits.txt:159:workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json:11:    "promotion_after_validation": true,
+workspace/operational/recovery/mortar/20260803T153259/logs/recovery-summary.txt:162:workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json:11:    "promotion_after_validation": true,
+workspace/operational/repository_state/REPOSITORY_TREE_FULL_2026-08-04.txt:2940:f ./workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json

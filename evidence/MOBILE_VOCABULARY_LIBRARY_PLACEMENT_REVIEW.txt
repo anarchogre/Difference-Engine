@@ -1,0 +1,278 @@
+
+## workspace/operational/library/LIBRARY_GOVERNANCE.md
+1-# Difference Engine File Library Governance
+2-
+3:Status: Candidate  
+4-Authority: Operations
+5-
+6:## Purpose
+7-
+8:Govern File Library artifacts used for recovery, coordination, and repository reconstruction.
+9-
+10-## Authority
+11-
+12:The repository remains canonical.
+13-
+14-The File Library is governed recovery infrastructure.
+15-
+16:A File Library artifact does not become canonical knowledge solely because it is uploaded.
+17-
+18-## Required Metadata
+19-
+20:Every governed artifact must have:
+21-
+22-- stable identifier;
+23:- canonical name;
+24:- source upload name when different;
+25-- classification;
+26-- lifecycle state;
+--
+31-## Lifecycle States
+32-
+33:- `candidate`
+34:- `canonical`
+35-- `active`
+36-- `snapshot`
+--
+41-- `retired`
+42-
+43:## Promotion
+44-
+45:Promotion requires:
+46-
+47-1. provenance;
+--
+49-3. validation;
+50-4. conflict review;
+51:5. canonical destination;
+52-6. explicit status change.
+53-
+54-## Replacement
+55-
+56:A replacement artifact must identify:
+57-
+58:- artifact replaced;
+59:- replacement artifact;
+60-- effective date;
+61-- reason;
+62-- preserved history.
+63-
+64:No artifact is silently overwritten.
+65-
+66-## Duplication
+--
+74-## Recovery
+75-
+76:Recovery uses the Canonical Library Index.
+77-
+78:Unindexed files are not silently treated as canonical.
+79-
+80:Missing required artifacts must be reported.
+81-
+82-## Repository Synchronization
+83-
+84:Canonical repository artifacts supersede File Library copies when conflict exists.
+85-
+86-Conflicts must be recorded as drift.
+
+## workspace/operational/library/UPLOAD_STANDARD.md
+1:# Difference Engine File Library Upload Standard
+2-
+3:Status: Candidate  
+4-Authority: Operations
+5-
+--
+15-- ambiguous spaces;
+16-- unexplained abbreviations;
+17:- duplicate canonical names;
+18-- filenames containing status without metadata.
+19-
+20:## Required Upload Record
+21-
+22-Record:
+23-
+24:- stable artifact identifier;
+25:- canonical filename;
+26-- source filename;
+27-- repository destination;
+--
+32-- verification status.
+33-
+34:## Upload Procedure
+35-
+36:1. identify artifact;
+37:2. classify artifact;
+38-3. determine repository destination;
+39-4. assign lifecycle state;
+40:5. upload artifact;
+41-6. verify availability;
+42:7. update Canonical Library Index;
+43-8. record aliases;
+44-9. detect duplicates;
+45-10. commit repository metadata.
+46-
+47:## Replacement Uploads
+48-
+49:Do not delete the prior artifact before:
+50-
+51-- verifying the replacement;
+--
+56-## Prohibited Behavior
+57-
+58:- silent canonical promotion;
+59-- silent overwrite;
+60-- untracked renaming;
+61-- deletion without replacement evidence;
+62:- treating upload order as authority.
+
+## workspace/operational/library/ARTIFACT_LIFECYCLE.md
+1:# Difference Engine File Library Artifact Lifecycle
+2-
+3-## States
+4-
+5:### Candidate
+6-
+7:Uploaded or recovered but not validated.
+8-
+9:### Canonical
+10-
+11-Validated and designated as the authoritative recovery copy.
+--
+13-### Active
+14-
+15:Operational artifact currently receiving updates.
+16-
+17-### Snapshot
+--
+29-### Experimental
+30-
+31:Branch or exploratory artifact not integrated.
+32-
+33-### Queued
+34-
+35:Awaiting review, implementation, or promotion.
+36-
+37-### Retired
+--
+41-## Transitions
+42-
+43:`candidate → canonical`
+44-
+45:Requires validation and explicit promotion.
+46-
+47:`candidate → experimental`
+48-
+49-Used when evidence or authority is incomplete.
+50-
+51:`canonical → superseded`
+52-
+53-Requires a named replacement.
+--
+63-`queued → active`
+64-
+65:Requires accepted execution scope.
+66-
+67:`experimental → canonical`
+68-
+69-Requires integration and validation.
+--
+73-- history is preserved;
+74-- provenance is preserved;
+75:- canonical identity is unique;
+76-- supersession is explicit;
+77-- deletion is exceptional;
+
+## workspace/operational/library/CANONICAL_LIBRARY_INDEX.json
+1-{
+2-  "schema_version": "1.0",
+3:  "status": "candidate",
+4-  "authority": "Operations",
+5-  "project": "The Difference Engine",
+6:  "artifacts": [
+7-    {
+8-      "id": "DE-FL-001",
+9:      "canonical_name": "Babbage_GPT_Initialization.md.txt",
+10-      "classification": "bootstrap",
+11:      "lifecycle": "canonical",
+12-      "required": true,
+13-      "verified": true
+--
+15-    {
+16-      "id": "DE-FL-002",
+17:      "canonical_name": "The_Difference_Engine(7).md",
+18-      "classification": "project",
+19:      "lifecycle": "canonical",
+20-      "required": true,
+21-      "verified": true
+--
+23-    {
+24-      "id": "DE-FL-003",
+25:      "canonical_name": "Universal_Branch_Steward_Protocol_Constitutional_Amendment_v_1.1_Ratification Draft.md",
+26:      "source_upload_name": "Universal_Branch_Steward_Protocol_Constitutional_Amendment_v_1.1_Ratification Draft(12).md",
+27-      "classification": "governance",
+28:      "lifecycle": "candidate",
+29-      "required": true,
+30-      "verified": true
+--
+32-    {
+33-      "id": "DE-FL-004",
+34:      "canonical_name": "Operational Doctrine.txt",
+35-      "classification": "doctrine",
+36:      "lifecycle": "canonical",
+37-      "required": true,
+38-      "verified": true
+--
+40-    {
+41-      "id": "DE-FL-005",
+42:      "canonical_name": "Operational Reality.txt",
+43:      "source_upload_name": "Operational Reality(1).txt",
+44-      "classification": "operational-reality",
+45:      "lifecycle": "canonical",
+46-      "required": true,
+47-      "verified": true
+--
+49-    {
+50-      "id": "DE-FL-006",
+51:      "canonical_name": "Operator Profile.md",
+52-      "classification": "operator-context",
+53:      "lifecycle": "canonical",
+54-      "required": true,
+55-      "verified": true
+--
+57-    {
+58-      "id": "DE-FL-007",
+59:      "canonical_name": "FRAMEWORK_LOCK_7_31_26.md",
+60-      "classification": "framework-lock",
+61:      "lifecycle": "canonical",
+62-      "required": true,
+63-      "verified": true
+--
+65-    {
+66-      "id": "DE-FL-008",
+67:      "canonical_name": "REPOSITORY_TREE.txt",
+68-      "classification": "inventory",
+69-      "lifecycle": "snapshot",
+--
+73-    {
+74-      "id": "DE-FL-009",
+75:      "canonical_name": "REPOSITORY_FILES.txt",
+76-      "classification": "inventory",
+77-      "lifecycle": "snapshot",
+--
+81-    {
+82-      "id": "DE-FL-010",
+83:      "canonical_name": "REPOSITORY_TREE_FULL.txt",
+84-      "classification": "inventory",
+85-      "lifecycle": "snapshot",
+--
+89-    {
+90-      "id": "DE-FL-011",
+91:      "canonical_name": "SIQ Suggested Implementation Queue.md",
+92-      "classification": "queue",
+93-      "lifecycle": "active",
+--
+97-    {
+98-      "id": "DE-FL-012",
+99:      "canonical_name": "Project Space Queued Items 8_1_26.md",
+100-      "classification": "queue",
+101-      "lifecycle": "historical",

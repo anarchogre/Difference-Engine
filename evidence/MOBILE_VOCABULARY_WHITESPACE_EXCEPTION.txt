@@ -1,0 +1,10 @@
+file	warnings	reason
+evidence/MOBILE_VOCABULARY_SCHEMA_TARGETED_SECTIONS.md	63	Recovered source excerpts preserve source whitespace.
+evidence/HUMAN_INTERFACE_LANGUAGE_FORMS_CENSUS.txt	21	Recovered evidence preserves source formatting.
+evidence/HUMAN_INTERFACE_LANGUAGE_FORMS_CONTEXT_REQUIRED_EVIDENCE.md	112	Recovered evidence preserves source formatting.
+evidence/HUMAN_INTERFACE_LANGUAGE_FORMS_DIRECT_EVIDENCE.md	588	Recovered evidence preserves source formatting.
+evidence/HUMAN_INTERFACE_LANGUAGE_FORMS_HIGH_SIGNAL_EVIDENCE.md	53	Recovered evidence preserves source formatting.
+evidence/MOBILE_VOCABULARY_BRANCH_V_RELEVANCE.txt	456	Recovered evidence preserves source formatting.
+evidence/MOBILE_VOCABULARY_LIBRARY_PLACEMENT_REVIEW.txt	2	Recovered evidence preserves source formatting.
+evidence/MOBILE_VOCABULARY_PRESERVATION_CONVENTION_REVIEW.txt	25	Recovered evidence preserves source formatting.
+evidence/MOBILE_VOCABULARY_SCHEMA_DECISION_EXTRACT.md	349	Recovered evidence preserves source formatting.

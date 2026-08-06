@@ -1,0 +1,18 @@
+## GROUP 1
+sha256=1e30ef899f1e3d3de26d78db3668ad2459e3e9c87babd8037d4da8b12b40675d
+copies=2
+hits=1	./BOOTSTRAP/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md
+hits=1	./governance/kernel/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md
+
+## GROUP 2
+sha256=64263a35738281b8c4288b32577feb928f45c47331c7fa2ab94027c4e50b36ec
+copies=2
+hits=13	./workspace/operational/ingestion/output/DE-CONV-20260804-0006/source/Epistemic_Engine_Development.md
+hits=13	./workspace/operational/ingestion/output/ING-20260804-0091/source/Epistemic_Engine_Development.md
+
+## GROUP 3
+sha256=e6260a8c5fbb44af9e6c95c05ba2cbe518b31d79029dc6982ebad14e4f6dda77
+copies=3
+hits=2	./workspace/operational/corpus/chatgpt/DifferenceEngine Gubmint Cheese.txt
+hits=2	./workspace/operational/ingestion/output/DE-CONV-20260804-0004/source/DifferenceEngine Gubmint Cheese.txt
+hits=2	./workspace/operational/ingestion/output/DE-CONV-20260804-0005/source/DifferenceEngine Gubmint Cheese.txt

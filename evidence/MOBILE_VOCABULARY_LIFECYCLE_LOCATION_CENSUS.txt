@@ -1,0 +1,26 @@
+## Lifecycle Directories
+
+## Lifecycle-Declarations and Paths
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:12302:  "status": "candidate",
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:12374:  "status": "candidate",
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:12554:  "status": "candidate",
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:12626:  "status": "candidate",
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:14701:  "status": "candidate",
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:14726:      "lifecycle": "candidate",
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:15190:  "status": "candidate",
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:15215:      "lifecycle": "candidate",
+workspace/operational/ingestion/output/ING-20260804-0100/source/GPT_Plus_Integration_Roadmap.md.txt:22998:    "status": "candidate",
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:12302:  "status": "candidate",
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:12374:  "status": "candidate",
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:12554:  "status": "candidate",
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:12626:  "status": "candidate",
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:14701:  "status": "candidate",
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:14726:      "lifecycle": "candidate",
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:15190:  "status": "candidate",
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:15215:      "lifecycle": "candidate",
+workspace/operational/ingestion/output/ING-20260804-0101/source/GPT_Plus_Integration_Roadmap.md(1).txt:22998:    "status": "candidate",
+workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json:3:  "status": "candidate",
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:28:      "lifecycle": "candidate",
+workspace/operational/library/CANONICAL_LIBRARY_INDEX.json:3:  "status": "candidate",
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verification/backups/FILE_LIBRARY_MANIFEST.json.before:3:  "status": "candidate",
+workspace/operational/services/SERVICE_CATALOG.json:167:  "status": "candidate"

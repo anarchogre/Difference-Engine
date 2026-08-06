@@ -1,0 +1,9 @@
+./evidence/HUMAN_INTERFACE_LANGUAGE_FORMS_TERM_DISTRIBUTION.tsv
+./inventory/initialization/20260804_075615_ingester_recovery/reports/ARTIFACT_SCHEMA_ANALYSIS.txt
+./inventory/initialization/20260804_075615_ingester_recovery/reports/ASSET_SCHEMA_ANALYSIS.txt
+./inventory/initialization/20260804_075615_ingester_recovery/reports/OUTPUT_PACKAGE_INSPECTION.txt
+./workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+./workspace/operational/ingestion/output/ING-20260804-0006/source/Artifact_Schema_v0.1.md
+./workspace/operational/ingestion/output/ING-20260804-0007/source/Asset_Schema_v0.1.md
+./workspace/operational/ingestion/output/ING-20260804-0026/source/Output_Package_Specificatiom_v0.1.md
+./workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md

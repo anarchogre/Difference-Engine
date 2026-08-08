@@ -1,0 +1,551 @@
+#!/usr/bin/env python3
+
+import argparse
+import hashlib
+import os
+import subprocess
+import sys
+import time
+from pathlib import Path
+
+import gi
+
+gi.require_version("Atspi", "2.0")
+from gi.repository import Atspi
+
+
+HOME = Path.home()
+BIN = HOME / ".local/bin"
+
+HANDLER = BIN / "de-bridge-onclip"
+RETURNER = BIN / "de-chatgpt-return-text"
+
+POLL = 0.05
+EDGE_TIMEOUT = 120.0
+COMPOSER_TIMEOUT = 30.0
+
+RUNTIME = Path(
+    os.environ.get(
+        "XDG_RUNTIME_DIR",
+        f"/run/user/{os.getuid()}",
+    )
+)
+
+STATE_FILE = RUNTIME / "de-bridge-watch.lastsha256"
+
+
+class BridgeError(RuntimeError):
+    pass
+
+
+def emit(message):
+    print(message, flush=True)
+
+
+def focused(obj):
+    try:
+        return obj.get_state_set().contains(
+            Atspi.StateType.FOCUSED
+        )
+    except Exception:
+        return False
+
+
+def discover_handles():
+    desktop = Atspi.get_desktop(0)
+
+    terminal = None
+    composer = None
+
+    for i in range(desktop.get_child_count()):
+        app = desktop.get_child_at_index(i)
+
+        try:
+            appname = (app.get_name() or "").lower()
+        except Exception:
+            continue
+
+        if (
+            "ptyxis" not in appname
+            and "firefox" not in appname
+        ):
+            continue
+
+        stack = [app]
+
+        while stack:
+            obj = stack.pop()
+
+            try:
+                role = obj.get_role_name()
+                name = obj.get_name() or ""
+
+                if (
+                    terminal is None
+                    and "ptyxis" in appname
+                    and role == "terminal"
+                    and name == "Terminal"
+                ):
+                    terminal = obj
+
+                if (
+                    composer is None
+                    and "firefox" in appname
+                    and role == "entry"
+                    and name == "Chat with ChatGPT"
+                ):
+                    composer = obj
+            except Exception:
+                pass
+
+            if terminal is not None and composer is not None:
+                break
+
+            try:
+                for j in range(
+                    obj.get_child_count() - 1,
+                    -1,
+                    -1,
+                ):
+                    child = obj.get_child_at_index(j)
+
+                    if child is not None:
+                        stack.append(child)
+            except Exception:
+                pass
+
+        if terminal is not None and composer is not None:
+            break
+
+    if terminal is None:
+        raise BridgeError("TERMINAL_DISCOVERY=FAIL")
+
+    if composer is None:
+        raise BridgeError("COMPOSER_DISCOVERY=FAIL")
+
+    return terminal, composer
+
+
+def read_clipboard():
+    run = subprocess.run(
+        [
+            "wl-paste",
+            "--no-newline",
+            "--type",
+            "text",
+        ],
+        capture_output=True,
+    )
+
+    if run.returncode != 0:
+        raise BridgeError(
+            f"CLIPBOARD_READ=FAIL:{run.returncode}"
+        )
+
+    return run.stdout
+
+
+def authorized(payload):
+    first = payload.split(b"\n", 1)[0]
+
+    return first == b"# DE-RUN"
+
+
+def payload_sha(payload):
+    return hashlib.sha256(payload).hexdigest()
+
+
+def load_last_consumed():
+    try:
+        value = STATE_FILE.read_text().strip()
+
+        if len(value) == 64:
+            return value
+    except FileNotFoundError:
+        pass
+    except Exception as exc:
+        emit(
+            "STATE_READ_WARNING="
+            + type(exc).__name__
+        )
+
+    return None
+
+
+def save_last_consumed(digest):
+    try:
+        STATE_FILE.write_text(digest + "\n")
+        STATE_FILE.chmod(0o600)
+    except Exception as exc:
+        raise BridgeError(
+            "STATE_WRITE=FAIL:"
+            + type(exc).__name__
+        ) from exc
+
+
+def verify_bridge_result(output):
+    if not output:
+        raise BridgeError("HANDLER_OUTPUT=EMPTY")
+
+    if not output.startswith(
+        b"=== DE BRIDGE EXECUTION ===\n"
+    ):
+        raise BridgeError(
+            "RESULT_SIGNATURE_GATE=FAIL"
+        )
+
+    if b"\n--- RESULT ---\nEXIT=" not in output:
+        raise BridgeError(
+            "RESULT_EXIT_SIGNATURE_GATE=FAIL"
+        )
+
+
+def execute_payload(payload):
+    run = subprocess.run(
+        [str(HANDLER)],
+        input=payload,
+        capture_output=True,
+    )
+
+    output = run.stdout
+
+    emit(f"HANDLER_EXIT={run.returncode}")
+    emit(f"OUTPUT_BYTES={len(output)}")
+    emit(
+        "OUTPUT_SHA256="
+        + hashlib.sha256(output).hexdigest()
+    )
+
+    if run.stderr:
+        emit(
+            "HANDLER_STDERR="
+            + repr(
+                run.stderr.decode(
+                    "utf-8",
+                    errors="replace",
+                )
+            )
+        )
+
+    verify_bridge_result(output)
+
+    emit("RESULT_SIGNATURE_GATE=PASS")
+
+    sys.stdout.buffer.write(output)
+    sys.stdout.buffer.flush()
+
+    if output and not output.endswith(b"\n"):
+        print()
+
+    clipboard = read_clipboard()
+
+    if clipboard != output:
+        raise BridgeError(
+            "DECOPYOUT_CLIPBOARD_MATCH=FAIL"
+        )
+
+    emit("DECOPYOUT_CLIPBOARD_MATCH=PASS")
+
+    return run.returncode
+
+
+def focus_composer(composer):
+    deadline = time.monotonic() + COMPOSER_TIMEOUT
+
+    while time.monotonic() < deadline:
+        try:
+            Atspi.Component.grab_focus(composer)
+        except Exception:
+            pass
+
+        if focused(composer):
+            emit("CACHED_COMPOSER_FOCUS=PASS")
+            return
+
+        time.sleep(POLL)
+
+    raise BridgeError(
+        "CACHED_COMPOSER_FOCUS=TIMEOUT"
+    )
+
+
+def return_to_chatgpt(composer):
+    focus_composer(composer)
+
+    run = subprocess.run(
+        [str(RETURNER)],
+        capture_output=True,
+        text=True,
+    )
+
+    if run.stdout:
+        print(run.stdout, end="", flush=True)
+
+    if run.stderr:
+        emit(
+            "RETURNER_STDERR="
+            + repr(run.stderr)
+        )
+
+    emit(f"RETURNER_EXIT={run.returncode}")
+
+    if run.returncode != 0:
+        raise BridgeError(
+            "CHATGPT_RETURN=FAIL"
+        )
+
+    if "CHATGPT_RETURN_TEXT=PASS" not in run.stdout:
+        raise BridgeError(
+            "CHATGPT_RETURN_SIGNATURE=FAIL"
+        )
+
+    emit("CHATGPT_RETURN=PASS")
+
+
+def wait_focus_loss(terminal):
+    deadline = time.monotonic() + EDGE_TIMEOUT
+
+    while focused(terminal):
+        if time.monotonic() >= deadline:
+            raise BridgeError(
+                "FOCUS_LOSS=TIMEOUT"
+            )
+
+        time.sleep(POLL)
+
+    emit("FOCUS_LOSS=PASS")
+
+
+def wait_focus_return(terminal):
+    deadline = time.monotonic() + EDGE_TIMEOUT
+
+    while not focused(terminal):
+        if time.monotonic() >= deadline:
+            raise BridgeError(
+                "FOCUS_RETURN=TIMEOUT"
+            )
+
+        time.sleep(POLL)
+
+    emit("FOCUS_RETURN=PASS")
+
+
+def consume_terminal_edge(last_consumed):
+    payload = read_clipboard()
+
+    emit("CLIPBOARD_READ=PASS")
+    emit(f"INPUT_BYTES={len(payload)}")
+
+    digest = payload_sha(payload)
+
+    emit(f"INPUT_SHA256={digest}")
+
+    if not authorized(payload):
+        raise BridgeError(
+            "AUTHORIZATION_GATE=FAIL"
+        )
+
+    emit("AUTHORIZATION_GATE=PASS")
+
+    if digest == last_consumed:
+        raise BridgeError(
+            "DUPLICATE_PAYLOAD_GATE=FAIL"
+        )
+
+    save_last_consumed(digest)
+
+    emit("DUPLICATE_PAYLOAD_GATE=PASS")
+    emit("EXECUTING_ON_TERMINAL_EDGE")
+
+    command_rc = execute_payload(payload)
+
+    emit(f"COMMAND_EXIT={command_rc}")
+    emit("EXECUTION_TRANSPORT=PASS")
+
+    return digest
+
+
+def run_once():
+    if not HANDLER.exists():
+        raise BridgeError(
+            f"HANDLER=ABSENT:{HANDLER}"
+        )
+
+    if not RETURNER.exists():
+        raise BridgeError(
+            f"RETURNER=ABSENT:{RETURNER}"
+        )
+
+    terminal, composer = discover_handles()
+
+    emit("TERMINAL_DISCOVERY=PASS")
+    emit("COMPOSER_DISCOVERY=PASS")
+
+    if not focused(terminal):
+        raise BridgeError(
+            "INITIAL_TERMINAL_FOCUS=FAIL"
+        )
+
+    emit("INITIAL_TERMINAL_FOCUS=PASS")
+
+    last_consumed = load_last_consumed()
+
+    emit(
+        "SWITCH_TO_FIREFOX_COPY_COMMAND_"
+        "AND_RETURN",
+    )
+
+    wait_focus_loss(terminal)
+    wait_focus_return(terminal)
+
+    consume_terminal_edge(last_consumed)
+
+    emit(
+        "SWITCH_TO_FIREFOX_FOR_RESULT_RETURN"
+    )
+
+    wait_focus_loss(terminal)
+
+    return_to_chatgpt(composer)
+
+    emit("BRIDGE_ROUND_TRIP=PASS")
+
+
+def run_watch():
+    if not HANDLER.exists():
+        raise BridgeError(
+            f"HANDLER=ABSENT:{HANDLER}"
+        )
+
+    if not RETURNER.exists():
+        raise BridgeError(
+            f"RETURNER=ABSENT:{RETURNER}"
+        )
+
+    terminal, composer = discover_handles()
+
+    emit("TERMINAL_DISCOVERY=PASS")
+    emit("COMPOSER_DISCOVERY=PASS")
+    emit("BRIDGE_WATCH=ARMED")
+
+    previous = focused(terminal)
+    last_consumed = load_last_consumed()
+    result_ready = False
+
+    while True:
+        current = focused(terminal)
+
+        # Rising edge into Ptyxis.
+        if current and not previous:
+            if result_ready:
+                emit(
+                    "TERMINAL_EDGE_BLOCKED="
+                    "RETURN_PENDING"
+                )
+            else:
+                try:
+                    payload = read_clipboard()
+
+                    if not authorized(payload):
+                        emit(
+                            "TERMINAL_EDGE_IGNORED="
+                            "UNAUTHORIZED_CLIPBOARD"
+                        )
+                    else:
+                        digest = payload_sha(payload)
+
+                        if digest == last_consumed:
+                            emit(
+                                "TERMINAL_EDGE_IGNORED="
+                                "DUPLICATE_PAYLOAD"
+                            )
+                        else:
+                            save_last_consumed(digest)
+                            last_consumed = digest
+
+                            emit(
+                                "AUTHORIZATION_GATE=PASS"
+                            )
+                            emit(
+                                "EXECUTING_ON_TERMINAL_EDGE"
+                            )
+
+                            command_rc = execute_payload(
+                                payload
+                            )
+
+                            emit(
+                                f"COMMAND_EXIT={command_rc}"
+                            )
+                            emit(
+                                "EXECUTION_TRANSPORT=PASS"
+                            )
+
+                            result_ready = True
+
+                except BridgeError as exc:
+                    emit(f"BRIDGE_ERROR={exc}")
+
+        # Falling edge away from Ptyxis after
+        # a verified result has reached clipboard.
+        if not current and previous and result_ready:
+            try:
+                return_to_chatgpt(composer)
+                result_ready = False
+                emit("BRIDGE_CYCLE=PASS")
+
+            except BridgeError as exc:
+                # Keep result pending. A later
+                # terminal -> Firefox edge retries
+                # return without re-executing.
+                emit(f"RETURN_PENDING_ERROR={exc}")
+
+        previous = current
+        time.sleep(POLL)
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description=(
+            "Difference Engine ChatGPT/Ptyxis "
+            "focus-edge bridge coordinator"
+        )
+    )
+
+    mode = parser.add_mutually_exclusive_group(
+        required=True
+    )
+
+    mode.add_argument(
+        "--once",
+        action="store_true",
+        help="validate exactly one bridge round trip",
+    )
+
+    mode.add_argument(
+        "--watch",
+        action="store_true",
+        help="run persistent focus-edge coordinator",
+    )
+
+    args = parser.parse_args()
+
+    try:
+        if args.once:
+            run_once()
+        else:
+            run_watch()
+
+    except KeyboardInterrupt:
+        emit("BRIDGE_WATCH=INTERRUPTED")
+        return 130
+
+    except BridgeError as exc:
+        emit(f"BRIDGE_ERROR={exc}")
+        return 1
+
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

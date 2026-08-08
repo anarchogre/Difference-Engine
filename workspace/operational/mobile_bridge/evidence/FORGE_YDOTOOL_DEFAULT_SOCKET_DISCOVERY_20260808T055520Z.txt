@@ -1,0 +1,70 @@
+=== YDOTOOL DEFAULT SOCKET DISCOVERY ===
+DATE_UTC=2026-08-08T05:55:20Z
+
+=== README.DEBIAN ===
+Ydotool for Debian
+------------------
+
+Ydotool on user session
+=======================
+
+The current version of ydotool daemon needs to bind to /dev/uinput,
+and by shipping the user session service file, you need to be part of
+the input group to make sure it starts properly by running:
+
+	sudo usermod -aG input $USER
+
+To fully reload the session, you can either reboot the system or force it
+using and then restarting ydotool:
+	systemctl restart user@$USER
+	systemctl --user restart ydotool
+
+
+=== BINARY SOCKET STRINGS ===
+socket
+%s/.ydotool_socket
+Socket path: %s
+Removing old stale socket
+failed to create socket
+failed to bind socket
+Socket permission: %s
+socket-perm
+socket-own
+socket-path
+Usage: ydotoold [OPTION]...
+The ydotool Daemon.
+  -p, --socket-path=PATH     Custom socket path
+  -P, --socket-perm=PERM     Socket permission (default 0600)
+  -o, --socket-own=UID:GID   Socket ownership
+failed to create socket for daemon collision detection
+failed remove old stale socket
+error: Another ydotoold is running with the same socket.
+failed to change socket permission
+failed to change socket ownership
+Socket ownership: UID=%d, GID=%d
+pointer:ydotoold virtual device
+ydotoold virtual device
+{"type":"deb","os":"ubuntu","name":"ydotool","version":"1.0.4-3","architecture":"amd64"}
+/tmp/.ydotool_socket
+/usr/lib/debug/.dwz/x86_64-linux-gnu/ydotool.debug
+
+=== CLIENT SOCKET STRINGS ===
+socket
+_socket
+fd_daemon_socket: %d
+failed to create socket
+YDOTOOL_SOCKET
+%s/.ydotool_socket
+Use environment variable YDOTOOL_SOCKET to specify daemon socket.
+failed to connect socket `%s': %s
+Please check if the current user has sufficient permissions to access the socket file.
+/tmp/.ydotool_so
+
+=== CURRENT VALIDATED CONTRACT ===
+SOCKET=/run/user/1000/de-ydotool.sock
+DAEMON_FLAGS=-m -p /run/user/1000/de-ydotool.sock
+
+=== STATUS ===
+CHANGES=NONE
+FRESH_LOGIN_REQUIRED=YES
+BRIDGE_PERSISTENCE=NOT_ENABLED

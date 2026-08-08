@@ -1,0 +1,73 @@
+=== OPERATIONAL STATE CENSUS ===
+DATE_UTC=2026-08-08T06:25:27Z
+
+=== TRACKED STATE CANDIDATES ===
+workspace/operational/current/ACTIVE_MISSION.md
+workspace/operational/current/ACTIVE_TASK.md
+workspace/operational/current/REPOSITORY_STATE.md
+
+=== ACTIVE MISSION FILES ===
+--- workspace/operational/current/ACTIVE_MISSION.md
+# Active Mission
+
+GPT Plus Integration
+
+## Objective
+
+Integrate GPT Plus capabilities into the Difference Engine without changing repository-first architecture.
+
+## Governing Constraints
+
+- Repository remains canonical.
+- Bootstrap is executable state.
+- Recovery is evidence-based.
+- ChatGPT Projects are execution workspaces.
+- File Library is recovery infrastructure.
+- GPT Plus is an execution engine, not persistent memory.
+- Repository operations remain interface-independent.
+- Deterministic tooling replaces conversational reconstruction.
+
+## Current Phase
+
+Phase 1 — Foundation
+
+## Status
+
+Active
+
+
+=== ACTIVE TASK FILES ===
+--- workspace/operational/current/ACTIVE_TASK.md
+# Active Task
+
+Repository Service Formalization
+
+## Task Block
+
+1. Inventory existing operational functions.
+2. Recover surviving service primitives.
+3. Separate operations from interfaces.
+4. Define the canonical service contract.
+5. Build the service catalog.
+6. Map existing implementations to services.
+7. Identify missing implementations.
+8. Preserve experimental components as candidates.
+
+## Current Phase
+
+Phase 5 — Repository Services
+
+## Status
+
+Active
+
+
+=== EXECUTABLE BOOTSTRAP STATE ===
+
+=== BRIDGE AUTHORIZATION STATE ===
+BRIDGE_SERVICE_ACTIVE=inactive
+BRIDGE_SERVICE_ENABLED=linked
+
+STATE_RECONCILIATION=NOT_PERFORMED
+GRINDSTONE_BINDING=NOT_PERFORMED
+PROMOTION=NOT_PERFORMED

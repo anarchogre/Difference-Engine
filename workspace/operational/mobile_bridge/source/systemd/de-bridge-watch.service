@@ -1,0 +1,15 @@
+[Unit]
+Description=Difference Engine ChatGPT/Ptyxis bridge watcher
+Requires=ydotool.service
+After=ydotool.service
+
+[Service]
+Type=simple
+Environment=YDOTOOL_SOCKET=%t/de-ydotool.sock
+ExecStart=%h/.local/bin/de-bridge-watch --watch
+Restart=on-failure
+RestartSec=2
+TimeoutStopSec=5
+
+[Install]
+WantedBy=default.target

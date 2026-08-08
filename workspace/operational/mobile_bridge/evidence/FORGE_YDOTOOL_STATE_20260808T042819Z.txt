@@ -1,0 +1,20 @@
+=== YDOTOOL STATE ===
+DATE_UTC=2026-08-08T04:28:19Z
+
+=== USER GROUPS ===
+uid=1000(reckless-ideator) gid=1000(reckless-ideator) groups=1000(reckless-ideator),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),111(lpadmin),114(lxd)
+INPUT_GROUP=ABSENT
+
+=== UINPUT ===
+crw-rw---- 1 root input 10, 223 Aug  7 23:27 /dev/uinput
+
+=== USER SERVICE ===
+ENABLED=enabled
+ACTIVE=inactive
+
+○ ydotool.service - Starts ydotoold service
+     Loaded: loaded (/usr/lib/systemd/user/ydotool.service; enabled; preset: enabled)
+     Active: inactive (dead)
+
+=== RECENT SERVICE LOG ===
+-- No entries --

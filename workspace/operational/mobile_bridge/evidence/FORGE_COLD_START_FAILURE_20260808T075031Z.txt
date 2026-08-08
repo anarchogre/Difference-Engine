@@ -1,0 +1,212 @@
+=== COLD START FAILURE CENSUS ===
+DATE_UTC=2026-08-08T07:50:31Z
+
+=== BOOTS ===
+ -3 1d649c09874946cea4b3b52c484aca36 Fri 2026-08-07 18:05:15 CDT Fri 2026-08-07 18:35:04 CDT
+ -2 ce61b16c031249bf99f0b8b1e2d94c6d Fri 2026-08-07 18:35:43 CDT Sat 2026-08-08 00:59:48 CDT
+ -1 bf787203e65c41759a58f6330b6def06 Sat 2026-08-08 01:00:08 CDT Sat 2026-08-08 01:50:42 CDT
+  0 dd41a4b32aa14819b972e80af0277134 Sat 2026-08-08 02:47:40 CDT Sat 2026-08-08 02:50:28 CDT
+
+=== CURRENT SERVICE STATE — NO MUTATION ===
+BRIDGE_ENABLED=enabled
+BRIDGE_ACTIVE=active
+YDOTOOL_ENABLED=enabled
+YDOTOOL_ACTIVE=active
+
+=== CURRENT BRIDGE JOURNAL ===
+Started de-bridge-watch.service - Difference Engine ChatGPT/Ptyxis bridge watcher.
+BRIDGE_ERROR=COMPOSER_DISCOVERY=FAIL
+de-bridge-watch.service: Main process exited, code=exited, status=1/FAILURE
+de-bridge-watch.service: Failed with result 'exit-code'.
+de-bridge-watch.service: Scheduled restart job, restart counter is at 48.
+Started de-bridge-watch.service - Difference Engine ChatGPT/Ptyxis bridge watcher.
+BRIDGE_ERROR=COMPOSER_DISCOVERY=FAIL
+de-bridge-watch.service: Main process exited, code=exited, status=1/FAILURE
+de-bridge-watch.service: Failed with result 'exit-code'.
+de-bridge-watch.service: Scheduled restart job, restart counter is at 49.
+Started de-bridge-watch.service - Difference Engine ChatGPT/Ptyxis bridge watcher.
+BRIDGE_ERROR=COMPOSER_DISCOVERY=FAIL
+de-bridge-watch.service: Main process exited, code=exited, status=1/FAILURE
+de-bridge-watch.service: Failed with result 'exit-code'.
+de-bridge-watch.service: Scheduled restart job, restart counter is at 50.
+Started de-bridge-watch.service - Difference Engine ChatGPT/Ptyxis bridge watcher.
+BRIDGE_ERROR=COMPOSER_DISCOVERY=FAIL
+de-bridge-watch.service: Main process exited, code=exited, status=1/FAILURE
+de-bridge-watch.service: Failed with result 'exit-code'.
+de-bridge-watch.service: Scheduled restart job, restart counter is at 51.
+Started de-bridge-watch.service - Difference Engine ChatGPT/Ptyxis bridge watcher.
+BRIDGE_ERROR=COMPOSER_DISCOVERY=FAIL
+de-bridge-watch.service: Main process exited, code=exited, status=1/FAILURE
+de-bridge-watch.service: Failed with result 'exit-code'.
+de-bridge-watch.service: Scheduled restart job, restart counter is at 52.
+Started de-bridge-watch.service - Difference Engine ChatGPT/Ptyxis bridge watcher.
+BRIDGE_ERROR=COMPOSER_DISCOVERY=FAIL
+de-bridge-watch.service: Main process exited, code=exited, status=1/FAILURE
+de-bridge-watch.service: Failed with result 'exit-code'.
+de-bridge-watch.service: Scheduled restart job, restart counter is at 53.
+Started de-bridge-watch.service - Difference Engine ChatGPT/Ptyxis bridge watcher.
+BRIDGE_ERROR=COMPOSER_DISCOVERY=FAIL
+de-bridge-watch.service: Main process exited, code=exited, status=1/FAILURE
+de-bridge-watch.service: Failed with result 'exit-code'.
+de-bridge-watch.service: Scheduled restart job, restart counter is at 54.
+Started de-bridge-watch.service - Difference Engine ChatGPT/Ptyxis bridge watcher.
+TERMINAL_DISCOVERY=PASS
+COMPOSER_DISCOVERY=PASS
+BRIDGE_WATCH=ARMED
+TERMINAL_EDGE_IGNORED=UNAUTHORIZED_CLIPBOARD
+
+=== PREVIOUS BRIDGE JOURNAL ===
+RETURNER_EXIT=1
+RETURN_PENDING_ERROR=CHATGPT_RETURN=FAIL
+TERMINAL_EDGE_BLOCKED=RETURN_PENDING
+CACHED_COMPOSER_FOCUS=PASS
+CLIPBOARD_READ=FAIL
+RETURNER_EXIT=1
+RETURN_PENDING_ERROR=CHATGPT_RETURN=FAIL
+AT-SPI: Error in GetItems, sender=:1.13, error=Object does not exist at path “/org/a11y/atspi/cache”
+TERMINAL_EDGE_BLOCKED=RETURN_PENDING
+Stopping de-bridge-watch.service - Difference Engine ChatGPT/Ptyxis bridge watcher...
+Stopped de-bridge-watch.service - Difference Engine ChatGPT/Ptyxis bridge watcher.
+de-bridge-watch.service: Consumed 4.273s CPU time over 2min 9.083s wall clock time, 36.2M memory peak.
+Started de-bridge-watch.service - Difference Engine ChatGPT/Ptyxis bridge watcher.
+TERMINAL_DISCOVERY=PASS
+COMPOSER_DISCOVERY=PASS
+BRIDGE_WATCH=ARMED
+AUTHORIZATION_GATE=PASS
+EXECUTING_ON_TERMINAL_EDGE
+HANDLER_EXIT=0
+OUTPUT_BYTES=197
+OUTPUT_SHA256=2ca9d0ef6eb13063c81e8a35d118f8f8df318dc6439ee9b83ed41b6cbe2b9d3a
+RESULT_SIGNATURE_GATE=PASS
+=== DE BRIDGE EXECUTION ===
+DATE_UTC=2026-08-08T06:20:47Z
+SOURCE=WAYLAND_CLIPBOARD
+REPOSITORY=/home/reckless-ideator/DifferenceEngine
+--- OUTPUT ---
+DE-SYSTEMD-PATCH-RETEST-1
+--- RESULT ---
+EXIT=0
+DECOPYOUT_CLIPBOARD_MATCH=PASS
+COMMAND_EXIT=0
+EXECUTION_TRANSPORT=PASS
+CACHED_COMPOSER_FOCUS=PASS
+EMPTY_GATE=PASS
+FOCUS_GATE=PASS
+PAYLOAD_GATE=PASS
+SEND_STATE_GATE=PASS
+ACTION_GATE=PASS
+SEND_ACTION=PASS
+CHATGPT_RETURN_TEXT=PASS
+RETURNER_EXIT=0
+CHATGPT_RETURN=PASS
+BRIDGE_CYCLE=PASS
+TERMINAL_EDGE_IGNORED=UNAUTHORIZED_CLIPBOARD
+BRIDGE_ERROR=CLIPBOARD_READ=FAIL:1
+BRIDGE_ERROR=CLIPBOARD_READ=FAIL:1
+TERMINAL_EDGE_IGNORED=UNAUTHORIZED_CLIPBOARD
+Stopping de-bridge-watch.service - Difference Engine ChatGPT/Ptyxis bridge watcher...
+Stopped de-bridge-watch.service - Difference Engine ChatGPT/Ptyxis bridge watcher.
+de-bridge-watch.service: Consumed 3.069s CPU time over 1min 24.598s wall clock time, 35.9M memory peak.
+Started de-bridge-watch.service - Difference Engine ChatGPT/Ptyxis bridge watcher.
+TERMINAL_DISCOVERY=PASS
+COMPOSER_DISCOVERY=PASS
+BRIDGE_WATCH=ARMED
+TERMINAL_EDGE_IGNORED=UNAUTHORIZED_CLIPBOARD
+TERMINAL_EDGE_IGNORED=UNAUTHORIZED_CLIPBOARD
+TERMINAL_EDGE_IGNORED=UNAUTHORIZED_CLIPBOARD
+TERMINAL_EDGE_IGNORED=UNAUTHORIZED_CLIPBOARD
+TERMINAL_EDGE_IGNORED=UNAUTHORIZED_CLIPBOARD
+
+=== PREVIOUS YDOTOOL JOURNAL ===
+Started ydotool.service - Starts ydotoold service.
+
+=== PREVIOUS BOOT KERNEL WARNINGS ===
+[    1.216402] The-Forge kernel: KHO: Failed to reserve scratch area, disabling kexec handover
+[    1.216752] The-Forge kernel: x86/cpu: SGX disabled or unsupported by BIOS.
+[    1.217456] The-Forge kernel: MDS CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html for more details.
+[    1.217471] The-Forge kernel: MMIO Stale Data CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/processor_mmio_stale_data.html for more details.
+[    1.217487] The-Forge kernel: VMSCAPE: SMT on, STIBP is required for full protection. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/vmscape.html for more details.
+[    1.252369] The-Forge kernel: hpet_acpi_add: no address or irqs in _CRS
+[    1.258307] The-Forge kernel: ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+[    4.324028] The-Forge kernel: ov9734 i2c-OVTI9734:00: failed to check HW configuration: -6
+[    4.350697] The-Forge kernel: ipu3_imgu: module is from the staging directory, the quality is unknown, you have been warned.
+[    4.456433] The-Forge kernel: ov7251 i2c-INT347E:00: supply vdddo not found, using dummy regulator
+[    4.457225] The-Forge kernel: ov7251 i2c-INT347E:00: supply vddd not found, using dummy regulator
+[    4.457667] The-Forge kernel: ov7251 i2c-INT347E:00: supply vdda not found, using dummy regulator
+[    5.156051] The-Forge kernel: kauditd_printk_skb: 107 callbacks suppressed
+[    6.251083] The-Forge kernel: nvme nvme0: using unchecked data buffer
+[    6.844144] The-Forge kernel: Bluetooth: hci0: unexpected event for opcode 0x0000
+[    6.844191] The-Forge kernel: Bluetooth: hci0: unexpected event for opcode 0x0000
+[    7.069078] The-Forge kernel: pcieport 0000:00:1d.0: resetting
+[    7.093679] The-Forge kernel: pcieport 0000:00:1d.0: reset done
+[    7.095053] The-Forge kernel: mwifiex_pcie 0000:02:00.0: Direct firmware load for nxp/rgpower_WW.bin failed with error -2
+[    7.095573] The-Forge kernel: mwifiex_pcie 0000:02:00.0: Direct firmware load for nxp/rgpower_US.bin failed with error -2
+[   22.668060] The-Forge kernel: kauditd_printk_skb: 121 callbacks suppressed
+[  319.419040] The-Forge kernel: set_capacity_and_notify: 3 callbacks suppressed
+[  360.823024] The-Forge kernel: kauditd_printk_skb: 25 callbacks suppressed
+
+=== PREVIOUS BOOT END ===
+[ 1838.053983] The-Forge gnome-shell[3478]: See https://wayland.freedesktop.org/libinput/doc/1.31.1/touchpad-jumping-cursors.html for details
+[ 1838.368249] The-Forge gnome-shell[3478]: libinput error: event2  - MSHW0092:00 045E:0933 Touchpad: kernel bug: Touch jump detected and discarded.
+[ 1838.368249] The-Forge gnome-shell[3478]: See https://wayland.freedesktop.org/libinput/doc/1.31.1/touchpad-jumping-cursors.html for details
+[ 1838.368249] The-Forge gnome-shell[3478]: libinput error: event2  - MSHW0092:00 045E:0933 Touchpad: WARNING: log rate limit exceeded (5 msgs per 8min). Discarding future messages.
+[ 1908.513931] The-Forge NetworkManager[1239]: <info>  [1786170715.3416] dhcp4 (enxd69c32af687e): state changed new lease, address=10.87.192.57
+[ 1908.517988] The-Forge dbus-daemon[1100]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.10' (uid=0 pid=1239 comm="/usr/sbin/NetworkManager --no-daemon" label="unconfined")
+[ 1908.532516] The-Forge systemd[1]: Starting NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service...
+[ 1908.573739] The-Forge dbus-daemon[1100]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+[ 1908.574259] The-Forge systemd[1]: Started NetworkManager-dispatcher.service - Network Manager Script Dispatcher Service.
+[ 1918.604218] The-Forge systemd[1]: NetworkManager-dispatcher.service: Deactivated successfully.
+[ 2406.776210] The-Forge systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+[ 2406.817298] The-Forge systemd[1]: sysstat-collect.service: Deactivated successfully.
+[ 2406.817714] The-Forge systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+[ 2724.724080] The-Forge gnome-shell[3478]: libinput error: event2  - MSHW0092:00 045E:0933 Touchpad: kernel bug: Touch jump detected and discarded.
+[ 2724.724080] The-Forge gnome-shell[3478]: See https://wayland.freedesktop.org/libinput/doc/1.31.1/touchpad-jumping-cursors.html for details
+[ 2731.051967] The-Forge gnome-shell[3478]: libinput error: event2  - MSHW0092:00 045E:0933 Touchpad: kernel bug: Touch jump detected and discarded.
+[ 2731.051967] The-Forge gnome-shell[3478]: See https://wayland.freedesktop.org/libinput/doc/1.31.1/touchpad-jumping-cursors.html for details
+[ 2826.249118] The-Forge gnome-shell[3478]: libinput error: event2  - MSHW0092:00 045E:0933 Touchpad: kernel bug: Touch jump detected and discarded.
+[ 2826.249118] The-Forge gnome-shell[3478]: See https://wayland.freedesktop.org/libinput/doc/1.31.1/touchpad-jumping-cursors.html for details
+[ 2834.415064] The-Forge gnome-shell[3478]: libinput error: event2  - MSHW0092:00 045E:0933 Touchpad: kernel bug: Touch jump detected and discarded.
+[ 2834.415064] The-Forge gnome-shell[3478]: See https://wayland.freedesktop.org/libinput/doc/1.31.1/touchpad-jumping-cursors.html for details
+[ 2834.838894] The-Forge gnome-shell[3478]: libinput error: event2  - MSHW0092:00 045E:0933 Touchpad: kernel bug: Touch jump detected and discarded.
+[ 2834.838894] The-Forge gnome-shell[3478]: See https://wayland.freedesktop.org/libinput/doc/1.31.1/touchpad-jumping-cursors.html for details
+[ 2834.838894] The-Forge gnome-shell[3478]: libinput error: event2  - MSHW0092:00 045E:0933 Touchpad: WARNING: log rate limit exceeded (5 msgs per 8min). Discarding future messages.
+[ 2886.082105] The-Forge systemd[2996]: Reload requested from client PID 14188 ('systemctl') (unit ptyxis-spawn-78802199-9826-40d1-bce8-47d77c7b3d9a.scope)...
+[ 2886.082253] The-Forge systemd[2996]: Reloading...
+[ 2886.353479] The-Forge systemd[2996]: /usr/lib/systemd/user/spice-vdagent.service:23: Unknown key 'StandardError' in section [Install], ignoring.
+[ 2886.409460] The-Forge systemd[2996]: Reloading finished in 325 ms.
+[ 2886.498862] The-Forge systemd[2996]: Reload requested from client PID 14203 ('systemctl') (unit ptyxis-spawn-78802199-9826-40d1-bce8-47d77c7b3d9a.scope)...
+[ 2886.498908] The-Forge systemd[2996]: Reloading...
+[ 2886.746060] The-Forge systemd[2996]: /usr/lib/systemd/user/spice-vdagent.service:23: Unknown key 'StandardError' in section [Install], ignoring.
+[ 2886.803178] The-Forge systemd[2996]: Reloading finished in 303 ms.
+[ 2886.849654] The-Forge systemd[2996]: Started de-bridge-watch.service - Difference Engine ChatGPT/Ptyxis bridge watcher.
+[ 2888.189967] The-Forge de-bridge-watch[14211]: TERMINAL_DISCOVERY=PASS
+[ 2888.189967] The-Forge de-bridge-watch[14211]: COMPOSER_DISCOVERY=PASS
+[ 2888.189967] The-Forge de-bridge-watch[14211]: BRIDGE_WATCH=ARMED
+[ 2897.499024] The-Forge gnome-shell[3478]: meta_window_set_stack_position_no_sync: assertion 'window->stack_position >= 0' failed
+[ 2897.549928] The-Forge de-bridge-watch[14211]: TERMINAL_EDGE_IGNORED=UNAUTHORIZED_CLIPBOARD
+[ 2924.035311] The-Forge gnome-shell[3478]: meta_window_set_stack_position_no_sync: assertion 'window->stack_position >= 0' failed
+[ 2924.080855] The-Forge de-bridge-watch[14211]: TERMINAL_EDGE_IGNORED=UNAUTHORIZED_CLIPBOARD
+[ 2950.297500] The-Forge gnome-shell[3478]: meta_window_set_stack_position_no_sync: assertion 'window->stack_position >= 0' failed
+[ 2950.343311] The-Forge de-bridge-watch[14211]: TERMINAL_EDGE_IGNORED=UNAUTHORIZED_CLIPBOARD
+[ 2970.792046] The-Forge gnome-shell[3478]: meta_window_set_stack_position_no_sync: assertion 'window->stack_position >= 0' failed
+[ 2970.834236] The-Forge de-bridge-watch[14211]: TERMINAL_EDGE_IGNORED=UNAUTHORIZED_CLIPBOARD
+[ 3006.609942] The-Forge gnome-shell[3478]: meta_window_set_stack_position_no_sync: assertion 'window->stack_position >= 0' failed
+[ 3006.614576] The-Forge systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+[ 3006.660464] The-Forge systemd[1]: sysstat-collect.service: Deactivated successfully.
+[ 3006.660891] The-Forge systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+[ 3006.663494] The-Forge de-bridge-watch[14211]: TERMINAL_EDGE_IGNORED=UNAUTHORIZED_CLIPBOARD
+[ 3019.644619] The-Forge sudo[14287]: pam_unix(sudo:session): session opened for user root(uid=0) by reckless-ideator(uid=1000)
+[ 3019.644875] The-Forge sudo[14287]: reckless-ideator : TTY=/dev/pts/0 ; PWD=/home/reckless-ideator/DifferenceEngine ; USER=root ; COMMAND=/usr/bin/systemctl reboot
+[ 3019.657167] The-Forge sudo[14287]: pam_unix(sudo:session): session closed for user root
+[ 3019.661693] The-Forge systemd[2996]: ptyxis-spawn-78802199-9826-40d1-bce8-47d77c7b3d9a.scope: Consumed 9.113s CPU time over 38min 16.724s wall clock time, 147.1M memory peak.
+[ 3019.730924] The-Forge systemd[2996]: app-gnome-xdg\x2dterminal\x2dexec-12819.scope: Consumed 1min 35.158s CPU time over 38min 17.307s wall clock time, 118.6M memory peak.
+[ 3029.012641] The-Forge systemd[2996]: snap.firefox.firefox-513988d5-bd02-4d2c-9092-18432056ec32.scope: Consumed 36min 23.465s CPU time over 49min 59.542s wall clock time, 2.7G memory peak.
+[ 3033.607126] The-Forge gnome-shell[3478]: endSessionDialog: No XDG_SESSION_ID, fetched from logind: 2
+[ 3035.452918] The-Forge systemd-logind[1133]: The system will reboot now!
+[ 3035.481072] The-Forge kernel: rfkill: input handler enabled
+[ 3035.519603] The-Forge systemd-logind[1133]: System is rebooting.
+[ 3035.520530] The-Forge systemd[1]: unattended-upgrades.service: Deactivated successfully.
+
+COLD_START_RESULT=FAIL_FREEZE
+CAUSE=UNRESOLVED
+SERVICES_MANUALLY_MUTATED=NO

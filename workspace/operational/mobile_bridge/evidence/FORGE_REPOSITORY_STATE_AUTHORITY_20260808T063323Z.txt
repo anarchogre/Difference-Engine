@@ -1,0 +1,113 @@
+=== REPOSITORY STATE AUTHORITY INSPECTION ===
+DATE_UTC=2026-08-08T06:33:23Z
+
+=== .meta/BASELINE_FILES.lst ===
+181-./workspace/operational/bootstrap/BOOTSTRAP.md
+182-./workspace/operational/bootstrap/BOOTSTRAP_vNext.md
+183-./workspace/operational/bootstrap/INITIALIZATION_ORDER.md
+184:./workspace/operational/current/ACTIVE_MISSION.md
+185:./workspace/operational/current/ACTIVE_TASK.md
+186-./workspace/operational/current/COMPLETED_TASK_BLOCK.md
+187-./workspace/operational/current/MISSION.md
+188-./workspace/operational/current/NEXT_COMMAND_BLOCK.md
+189-./workspace/operational/current/NEXT_MISSION.md
+190-./workspace/operational/current/OPERATIONAL_LAWS.md
+191-./workspace/operational/current/PHASE_1_COMPLETION_REPORT.md
+192-./workspace/operational/current/PHASE_2_TASK_BLOCK.md
+193-./workspace/operational/current/QUEUE.md
+194:./workspace/operational/current/REPOSITORY_STATE.md
+195-./workspace/operational/current/RESUME.md
+196-./workspace/operational/current/WORKFLOW.md
+197-./workspace/operational/preservation/PP-0001.md
+198-./workspace/operational/recovery/RECOVERY_CHECKLIST.md
+199-./workspace/operational/recovery/RECOVERY_SOP.md
+200-./workspace/operational/recovery/RECOVERY_VERIFIER_SPECIFICATION.md
+
+=== .meta/BASELINE_MANIFEST.sha256 ===
+181-a28522bcdfc107356019906600849a111980358866e6af934f2aeee843dd1e12  ./workspace/operational/bootstrap/BOOTSTRAP.md
+182-e38c6d10e24d01fdc4fbb2d9bce5510ef80744e034fc3a8f0606f667e3962d56  ./workspace/operational/bootstrap/BOOTSTRAP_vNext.md
+183-37e2d8d98f87a3bd6c4cd80c143e7b0172b9b52526f973457772f8960f517240  ./workspace/operational/bootstrap/INITIALIZATION_ORDER.md
+184:706fdc7ac1284ea0addce59537f9a032e31c8ca9c83194b8bca7290bc8913b2f  ./workspace/operational/current/ACTIVE_MISSION.md
+185:de535fb5d57899fc3615ad6a5aab0280ba6150d5b6873ecaccf47f7645923035  ./workspace/operational/current/ACTIVE_TASK.md
+186-74ed15c9b31b416ebf219673c5b5a083131be06243bbe6ffbe7cbd28695ed21d  ./workspace/operational/current/COMPLETED_TASK_BLOCK.md
+187-675d3276b62d9cca8f1ea4db47ecc5227f7bbcd0cc9fb443321fe66663e8c5c3  ./workspace/operational/current/MISSION.md
+188-d9f767b2ae0a6c99c835f1e9e1b0b075f6a32f014860d51ad1f41e6ac7068042  ./workspace/operational/current/NEXT_COMMAND_BLOCK.md
+189-dc8404059b907ca9d5ddd4ce4c405e1fdffdf43832085fcf12d82ea24ac78924  ./workspace/operational/current/NEXT_MISSION.md
+190-e4382c9f977256741d586d769d029205d789c02bb60876d825f494d557322ba8  ./workspace/operational/current/OPERATIONAL_LAWS.md
+191-49e33dd6fef24018d6785698d32adc3aaaaf0ef3c89e2b497d8fc12c5a3127f0  ./workspace/operational/current/PHASE_1_COMPLETION_REPORT.md
+192-aa07e323ae8f2a5e892e4064aa1057558430501f4c6cb9ec472b45706dc5379a  ./workspace/operational/current/PHASE_2_TASK_BLOCK.md
+193-4bb03465c33a137e43d3708db450264ba38228ad7ac70e1b1443d3d1fd95bc88  ./workspace/operational/current/QUEUE.md
+194:703363e29dd465e218d04e893b8b86dd5b344abb0239d1e4229b8a81ebb3e941  ./workspace/operational/current/REPOSITORY_STATE.md
+195-6887991bbbc530203bee48ed3aca9cea22d36c51b85751927fb29348200760d8  ./workspace/operational/current/RESUME.md
+196-2e5a9a92d62c915fd36b475b627eb2473eb0f6910ac5236139f40052308bc656  ./workspace/operational/current/WORKFLOW.md
+197-f957820dba3277ea9283c0a57d5279730f5a0e3fe12b008389e79594248cfb03  ./workspace/operational/preservation/PP-0001.md
+198-bace3ecc13e2f7264b0b0f3a6e32172a21b077316e80c9df57c6e348f6493faa  ./workspace/operational/recovery/RECOVERY_CHECKLIST.md
+199-d855c77800581ad881079a502cc6941f9e71b2c41441b046d03eb48721056add  ./workspace/operational/recovery/RECOVERY_SOP.md
+200-1bd1a2da889d47cd25ab06e8dcecbeb64adaa0149ef40d1e5612cebb7511894c  ./workspace/operational/recovery/RECOVERY_VERIFIER_SPECIFICATION.md
+
+=== .meta/CANONICAL_FILE_INDEX.lst ===
+189-/storage/emulated/0/DifferenceEngine/workspace/operational/current/NEXT_MISSION.md
+190-/storage/emulated/0/DifferenceEngine/workspace/operational/current/OPERATIONAL_LAWS.md
+191-/storage/emulated/0/DifferenceEngine/workspace/operational/current/QUEUE.md
+192:/storage/emulated/0/DifferenceEngine/workspace/operational/current/REPOSITORY_STATE.md
+193-/storage/emulated/0/DifferenceEngine/workspace/operational/current/RESUME.md
+194-/storage/emulated/0/DifferenceEngine/workspace/operational/current/WORKFLOW.md
+195-/storage/emulated/0/DifferenceEngine/workspace/operational/preservation/PP-0001.md
+
+=== workspace/operational/bootstrap/INITIALIZATION_ORDER.md ===
+22-
+23-   RESUME.md
+24-
+25:   REPOSITORY_STATE.md
+26-
+27-   OPERATIONAL_LAWS.md
+28-
+29-   COMPLETED_TASK_BLOCK.md
+30-
+31-   NEXT_MISSION.md
+32-
+33-   NEXT_COMMAND_BLOCK.md
+
+=== workspace/operational/preservation/PP-006.md ===
+18-- Termux shared-storage Git-hook constraint verified.
+19-- Private executable hook shim established and tested.
+20-
+21:## Repository State
+22-
+23-- Mobile-vocabulary commit: 04ce970
+24-- Hook-recovery commit: 02cfb89
+25-- Recorded HEAD: 02cfb89fbccdd44d927177488d703d7fb2099a48
+26-- Increment manifest: `evidence/MOBILE_VOCABULARY_INCREMENT_MANIFEST.sha256`
+27-- Manifest SHA-256: `835452cd70afaf289af3b8fb65ca1f3aee7904fa8dd336946ef2fa56ce5ffe05`
+28-- Scoped working state: CLEAN
+29-- Global working state: UNTRACKED MATERIAL REMAINS OUTSIDE THIS INCREMENT
+
+=== workspace/operational/current/REPOSITORY_STATE.md ===
+1:# Repository State
+2-
+3-Status
+4-
+5-Repository reconciliation in progress.
+6-
+7:Canonical Working Repository
+8-
+9-/storage/emulated/0/DifferenceEngine
+10-
+11-Evidence Sources
+12-
+13-- DifferenceEngine
+14-- FILE_LIBRARY_UPLOADS
+15-- ChatGPT File Library
+16-- GitHub
+17-
+18:Current Priority
+19-
+20-Recover one canonical repository before constitutional publication.
+21-
+22:Operational State
+23-
+24-Stable.
+25-
+26-Implementation paused pending reconciliation.
+
+STATE_MUTATION=NONE

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -u
+
+ERR="${HOME}/.de-clipboard-error"
+: > "$ERR"
+
+if [ "$#" -gt 0 ]; then
+    if [ "$#" -ne 1 ] || [ ! -f "$1" ]; then
+        printf 'de-copyout: expected zero arguments or one readable file\n' >&2
+        exit 2
+    fi
+    cat -- "$1" | tee >(wl-copy 2>"$ERR")
+else
+    tee >(wl-copy 2>"$ERR")
+fi

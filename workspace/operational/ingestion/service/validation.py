@@ -20,31 +20,35 @@ def validate(
         errors.append("missing_receipt_id")
 
     if isinstance(parsed, dict):
-        if parsed.get("kind") != "conversation":
-            errors.append("invalid_conversation_kind")
-
-        turns = parsed.get("turns") or []
-
-        if not turns:
-            errors.append("no_conversation_turns")
+        if parsed.get("kind") == "json":
+            if "document" not in parsed:
+                errors.append("missing_json_document")
         else:
-            speakers = {
-                turn.get("speaker")
-                if isinstance(turn, dict)
-                else getattr(turn, "speaker", None)
-                for turn in turns
-            }
+            if parsed.get("kind") != "conversation":
+                errors.append("invalid_conversation_kind")
 
-            if "user" not in speakers:
-                errors.append("missing_user_turn")
+            turns = parsed.get("turns") or []
 
-            if "assistant" not in speakers:
-                errors.append("missing_assistant_turn")
+            if not turns:
+                errors.append("no_conversation_turns")
+            else:
+                speakers = {
+                    turn.get("speaker")
+                    if isinstance(turn, dict)
+                    else getattr(turn, "speaker", None)
+                    for turn in turns
+                }
+
+                if "user" not in speakers:
+                    errors.append("missing_user_turn")
+
+                if "assistant" not in speakers:
+                    errors.append("missing_assistant_turn")
     else:
         if not parsed.title:
             errors.append("missing_title")
 
-    if not assets:
+    if not assets and not (isinstance(parsed, dict) and parsed.get("kind") == "json"):
         errors.append("no_assets")
 
     if queues is None:

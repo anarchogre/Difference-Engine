@@ -2,11 +2,13 @@ from pathlib import Path
 
 from .parsers.chatgpt import parse_chatgpt
 from .parsers.markdown import parse_markdown
+from .parsers.json_document import parse_json
 
 
 PARSERS = {
     ".md": parse_markdown,
     ".txt": parse_chatgpt,
+    ".json": parse_json,
 }
 
 

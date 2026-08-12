@@ -52,17 +52,20 @@ def write_output(
     )
 
     if isinstance(parsed, dict):
-        parsed_data = {
-            "kind": parsed.get("kind"),
-            "turns": [
-                asdict(x)
-                for x in parsed.get("turns", [])
-            ],
-            "commands": [
-                asdict(x)
-                for x in parsed.get("commands", [])
-            ],
-        }
+        if parsed.get("kind") == "json":
+            parsed_data = parsed
+        else:
+            parsed_data = {
+                "kind": parsed.get("kind"),
+                "turns": [
+                    asdict(x)
+                    for x in parsed.get("turns", [])
+                ],
+                "commands": [
+                    asdict(x)
+                    for x in parsed.get("commands", [])
+                ],
+            }
     else:
         parsed_data = asdict(parsed)
 

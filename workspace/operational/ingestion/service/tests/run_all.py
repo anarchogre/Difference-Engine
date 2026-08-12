@@ -7,6 +7,9 @@ TESTS = (
     "workspace.operational.ingestion.service.tests.test_conversation_parser",
     "workspace.operational.ingestion.service.tests.test_chat_pipeline",
     "workspace.operational.ingestion.service.tests.test_batch",
+    "workspace.operational.ingestion.service.tests.test_json_parser",
+    "workspace.operational.ingestion.service.tests.test_json_validation",
+    "workspace.operational.ingestion.service.tests.test_json_pipeline",
 )
 
 

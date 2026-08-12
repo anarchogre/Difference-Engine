@@ -29,7 +29,4 @@ def parse_chatgpt(source: Path):
             "commands": parsed["commands"],
         }
 
-    return {
-        "kind": "markdown",
-        "document": parse_markdown(source),
-    }
+    return parse_markdown(source)

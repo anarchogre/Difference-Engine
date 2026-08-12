@@ -10,6 +10,7 @@ TESTS = (
     "workspace.operational.ingestion.service.tests.test_json_parser",
     "workspace.operational.ingestion.service.tests.test_json_validation",
     "workspace.operational.ingestion.service.tests.test_json_pipeline",
+    "workspace.operational.ingestion.service.tests.test_chatgpt_markdown_fallback",
 )
 
 

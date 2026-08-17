@@ -1,0 +1,25 @@
+Verified conversations: 24
+2 turns	500 bytes	/storage/emulated/0/Download/Difference_Engine____Branch_IV____Operations.md.txt
+12 turns	1931 bytes	/storage/emulated/0/Download/Project_Chat_Context.md.txt
+18 turns	9357 bytes	/storage/emulated/0/Download/Bootstrap_BABBAGE_Initialization.md.txt
+22 turns	14078 bytes	/storage/emulated/0/Download/Babbage_GPT_Initialization.md.txt
+52 turns	16045 bytes	/storage/emulated/0/Download/Bootstrap_Initialization_and_Rules.md.txt
+19 turns	23667 bytes	/storage/emulated/0/Download/Difference_Engine____Branch_II____Research.md.txt
+30 turns	27815 bytes	/storage/emulated/0/Download/Difference_Engine____Branch_0____Origins.md.txt
+57 turns	51439 bytes	/storage/emulated/0/Download/Categorization_of_Governance_Elements.md(1).txt
+104 turns	85282 bytes	/storage/emulated/0/Download/Migration_Map_Creation.md.txt
+71 turns	108627 bytes	/storage/emulated/0/Download/Difference_Engine____Branch_II____Research.md(1).txt
+124 turns	124070 bytes	/storage/emulated/0/Download/File_Library_Access_Details.md.txt
+66 turns	127725 bytes	/storage/emulated/0/Download/Summaries_for_the_steward.md.txt
+110 turns	140487 bytes	/storage/emulated/0/Download/Epistemic_Engine_Development.md
+162 turns	145946 bytes	/storage/emulated/0/Download/Workflow_and_Evidence_Consolidation.md.txt
+233 turns	187192 bytes	/storage/emulated/0/Download/Babbage_Initialization_and_Parsing.md.txt
+138 turns	212180 bytes	/storage/emulated/0/DifferenceEngine/workspace/operational/ingestion/inbox/Kernel_and_Bootstrap_Load.md(1).txt
+101 turns	212780 bytes	/storage/emulated/0/Download/Constitutional_Kernel_Initialization.md.txt
+112 turns	238698 bytes	/storage/emulated/0/Download/Constitutional_Kernel_Load.md.txt
+159 turns	450864 bytes	/storage/emulated/0/Download/Difference_Engine____Branch_III____Integration.md.txt
+502 turns	532170 bytes	/storage/emulated/0/Download/Governance_Improvements_Implementation.md.txt
+502 turns	532170 bytes	/storage/emulated/0/Download/Governance_Improvements_Implementation.md(1).txt
+227 turns	670325 bytes	/storage/emulated/0/Download/Difference_Engine____Branch_0____Origins.txt
+315 turns	831385 bytes	/storage/emulated/0/Download/GPT_Plus_Integration_Roadmap.md.txt
+330 turns	849618 bytes	/storage/emulated/0/Download/GPT_Plus_Integration_Roadmap.md(1).txt

@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:45.993318-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/PLUGIN_POLICY.md",
+  "original_name": "PLUGIN_POLICY.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0478",
+  "schema_version": "0.1.0",
+  "sha256": "dfcf436c45dc48aba87d53ed1711ef83718b2494eda1d1252dcbce854b7a9900",
+  "size_bytes": 2938,
+  "source_class": "manual_batch"
+}

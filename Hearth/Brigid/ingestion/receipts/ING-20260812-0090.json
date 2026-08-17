@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:07.757024-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-PRESERVATION-0040_Boundary_Conditions_and_Self_Revision.json",
+  "original_name": "AKS-PRESERVATION-0040_Boundary_Conditions_and_Self_Revision.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0090",
+  "schema_version": "0.1.0",
+  "sha256": "e38399c998903b6f9ec10f378ecc685b716a47e12f7568931d0c0e7a5ddf75f7",
+  "size_bytes": 1436,
+  "source_class": "manual_batch"
+}

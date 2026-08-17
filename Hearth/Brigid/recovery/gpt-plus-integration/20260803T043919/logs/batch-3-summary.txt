@@ -1,0 +1,14 @@
+RUN=workspace/operational/recovery/gpt-plus-integration/20260803T043919
+TEXT_SOURCES=131
+GOVERNANCE_CONTENT_FILES=42
+BOOTSTRAP_CONTENT_FILES=66
+PROJECT_INTEGRATION_FILES=5
+PYTEST_STATUS=1
+DIRECT_STATUS=1
+
+PRIMARY BOOTSTRAP FILES
+Repository/Governance/bootstrap.md
+workspace/operational/bootstrap/BOOTSTRAP.md
+
+TEST RESULT
+/data/data/com.termux/files/usr/bin/python: No module named pytest

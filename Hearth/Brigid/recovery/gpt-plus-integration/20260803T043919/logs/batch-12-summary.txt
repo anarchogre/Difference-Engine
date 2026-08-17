@@ -1,0 +1,14 @@
+RUN=workspace/operational/recovery/gpt-plus-integration/20260803T043919
+VALIDATION_STATUS=0
+
+ARTIFACTS
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-vnext/artifacts/BOOTSTRAP_DIFFERENCE_REPORT.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-vnext/artifacts/BOOTSTRAP_MIGRATION_NOTES.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-vnext/artifacts/BOOTSTRAP_vNext.md
+
+VALIDATION
+ARTIFACT_VALIDATION=PASS
+FILE=workspace/operational/bootstrap/BOOTSTRAP_vNext.md SIZE=2491
+
+CANONICAL COPY
+-rw-rw----. 1 root everybody 2.5K Aug  3 04:59 workspace/operational/bootstrap/BOOTSTRAP_vNext.md

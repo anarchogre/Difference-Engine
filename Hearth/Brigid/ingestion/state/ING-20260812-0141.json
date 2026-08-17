@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0141",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:10.582609-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Covenant_v1.0.json",
+    "original_name": "AKS_Covenant_v1.0.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0141",
+    "schema_version": "0.1.0",
+    "sha256": "26b5a13a469d2585ca024135c7c1474967dc378061989d22d269f90c4da99a84",
+    "size_bytes": 82,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

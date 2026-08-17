@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0368",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:31.570216-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Event_Schema_Specification_v0.1.md",
+    "original_name": "Event_Schema_Specification_v0.1.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0368",
+    "schema_version": "0.1.0",
+    "sha256": "853a565bf8cc903f7aa9bf7b5e323ea5fc00c8a524546c49ec6a7b6001ff3197",
+    "size_bytes": 9344,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

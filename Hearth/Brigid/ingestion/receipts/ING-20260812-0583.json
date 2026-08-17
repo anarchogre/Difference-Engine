@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:49:01.756013-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/SPEC-0000_Constitutional_Registry.json",
+  "original_name": "SPEC-0000_Constitutional_Registry.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0583",
+  "schema_version": "0.1.0",
+  "sha256": "206f2d3d6ac60d7fe4aa7296145402e45b0b9be17850555472fcfc91856cd06d",
+  "size_bytes": 423,
+  "source_class": "manual_batch"
+}

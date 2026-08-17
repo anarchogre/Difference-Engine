@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:13.455349-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Stewards_Oath_v1.0.json",
+  "original_name": "AKS_Stewards_Oath_v1.0.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0183",
+  "schema_version": "0.1.0",
+  "sha256": "901c40c2c81713ac0da2345df00a547dc2ed0cb00e088d68ce114d5d1518686d",
+  "size_bytes": 87,
+  "source_class": "manual_batch"
+}

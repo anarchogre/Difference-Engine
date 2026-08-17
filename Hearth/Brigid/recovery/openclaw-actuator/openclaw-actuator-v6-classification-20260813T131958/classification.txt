@@ -1,0 +1,7 @@
+=== ACCEPTANCE ===
+  "status": "timeout",
+      "finalPromptText": "ACTUATOR END-TO-END ACCEPTANCE. Use exec exactly once. Run exactly: /usr/bin/git -C /home/reckless-ideator/Difference-Engine status --short --branch . Do not mutate anything. Return exactly: STATUS=PASS ACTUATOR_END_TO_END=PASS only if exec actually returns the git output.",
+
+=== TRAJECTORIES ===
+
+=== RUNTIME LOG ===

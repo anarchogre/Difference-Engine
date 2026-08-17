@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:02:00.884836-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Service_Development_Guide_v0.1.md",
+  "original_name": "Service_Development_Guide_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0044",
+  "schema_version": "0.1.0",
+  "sha256": "aef89386877a9b8af75adcf3795eeb0e7484a2674a971a3a9366afb5b7a3d24b",
+  "size_bytes": 3660,
+  "source_class": "manual_batch"
+}

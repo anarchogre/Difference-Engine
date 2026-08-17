@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260811-0005",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-11T22:18:45.096699-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Babbage_Initialization_and_Parsing.md.txt",
+    "original_name": "Babbage_Initialization_and_Parsing.md.txt",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260811-0005",
+    "schema_version": "0.1.0",
+    "sha256": "66c819d2a969c4e161ae6b64f02951534385908813e86703c8c5a77c548c11af",
+    "size_bytes": 187192,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

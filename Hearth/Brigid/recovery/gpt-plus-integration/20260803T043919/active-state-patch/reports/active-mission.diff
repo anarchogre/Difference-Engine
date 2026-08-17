@@ -1,0 +1,32 @@
+diff --git a/workspace/operational/current/ACTIVE_MISSION.md b/workspace/operational/current/ACTIVE_MISSION.md
+new file mode 100644
+index 0000000..90efd71
+--- /dev/null
++++ b/workspace/operational/current/ACTIVE_MISSION.md
+@@ -0,0 +1,26 @@
++# Active Mission
++
++GPT Plus Integration
++
++## Objective
++
++Integrate GPT Plus capabilities into the Difference Engine without changing repository-first architecture.
++
++## Governing Constraints
++
++- Repository remains canonical.
++- Bootstrap is executable state.
++- Recovery is evidence-based.
++- ChatGPT Projects are execution workspaces.
++- File Library is recovery infrastructure.
++- GPT Plus is an execution engine, not persistent memory.
++- Repository operations remain interface-independent.
++- Deterministic tooling replaces conversational reconstruction.
++
++## Current Phase
++
++Phase 1 — Foundation
++
++## Status
++
++Active

@@ -1,0 +1,138 @@
+=== INPUT DEFINITIONS ===
+1557:To prevent this, increase your compaction buffer by setting \`agents.defaults.compaction.reserveTokensFloor\` to ${computeContextAwareReserveTokensFloor(contextWindowTokens)} or higher in your config.`;
+3138:	const reserveTokens = Math.max(0, Math.floor(params.reserveTokensFloor));
+3139:	const softThreshold = Math.max(0, Math.floor(params.softThresholdTokens));
+3539:	const memoryFlushPlan = resolveMemoryFlushPlan({ cfg: params.cfg });
+3540:	const reserveTokensFloor = memoryFlushPlan?.reserveTokensFloor ?? params.cfg.agents?.defaults?.compaction?.reserveTokensFloor ?? 2e4;
+3541:	const softThresholdTokens = memoryFlushPlan?.softThresholdTokens ?? 4e3;
+3546:	const serverCompactionThreshold = resolveResponsesServerCompactionThreshold({
+3551:	const threshold = Math.max(contextWindowTokens - reserveTokensFloor - softThresholdTokens, serverCompactionThreshold ?? 0);
+3582:	logVerbose(`preflightCompaction check: sessionKey=${params.sessionKey} tokenCount=${tokenCountForCompaction ?? freshPersistedTokens ?? "undefined"} contextWindow=${contextWindowTokens} threshold=${threshold} serverCompactionThreshold=${serverCompactionThreshold ?? "undefined"} isHeartbeat=${params.isHeartbeat} isCli=${isCli} persistedFresh=${entry?.totalTokensFresh === true} transcriptPromptTokens=${transcriptPromptTokens ?? "undefined"} promptTokensEst=${promptTokenEstimate ?? "undefined"} activeTranscriptBytes=${activeTranscriptBytes ?? "undefined"} maxActiveTranscriptBytes=${maxActiveTranscriptBytes ?? "undefined"} sizeTrigger=${shouldCompactByTranscriptBytes}`);
+3587:		reserveTokensFloor,
+3588:		softThresholdTokens,
+3589:		minimumThresholdTokens: serverCompactionThreshold
+3712:	const memoryFlushPlan = resolveMemoryFlushPlan({ cfg: params.cfg });
+3713:	if (!memoryFlushPlan) return {
+3749:	const flushThreshold = contextWindowTokens - memoryFlushPlan.reserveTokensFloor - memoryFlushPlan.softThresholdTokens;
+3752:	const forceFlushTranscriptBytes = memoryFlushPlan.forceFlushTranscriptBytes;
+3803:		reserveTokensFloor: memoryFlushPlan.reserveTokensFloor,
+3804:		softThresholdTokens: memoryFlushPlan.softThresholdTokens
+3827:	}) ?? memoryFlushPlan;
+
+=== PREFLIGHT FUNCTION ===
+		const estimatedTokens = estimatedMessageTokens ?? transcriptBytesTokens;
+		if (estimatedTokens === void 0) return;
+		return {
+			promptTokens: Math.ceil(estimatedTokens),
+			transcriptByteSize: snapshot.byteSize,
+			transcriptBytesTokens
+		};
+	} catch {
+		return;
+	}
+}
+/** Runs preflight compaction when session state exceeds configured thresholds. */
+async function runPreflightCompactionIfNeeded(params) {
+	const deps = {
+		compactEmbeddedAgentSession: memoryDeps.compactEmbeddedAgentSession,
+		incrementCompactionCount: memoryDeps.incrementCompactionCount,
+		refreshQueuedFollowupSession: memoryDeps.refreshQueuedFollowupSession
+	};
+	if (!params.sessionKey) return params.sessionEntry;
+	let entry = params.sessionEntry ?? (params.sessionKey ? params.sessionStore?.[params.sessionKey] : void 0);
+	if (!entry?.sessionId) return entry ?? params.sessionEntry;
+	const isCli = followupUsesCliRuntime({
+		cfg: params.cfg,
+		followupRun: params.followupRun,
+		sessionEntry: entry
+	});
+	if (params.isHeartbeat || isCli) return entry ?? params.sessionEntry;
+	if (followupUsesCodexRuntime({
+		cfg: params.cfg,
+		followupRun: params.followupRun,
+		sessionEntry: entry,
+		sessionKey: params.sessionKey,
+		runtimePolicySessionKey: params.runtimePolicySessionKey
+	})) {
+		logVerbose(`preflightCompaction skipped: sessionKey=${params.sessionKey} runtime=codex reason=codex_native_auto_compaction`);
+		return entry ?? params.sessionEntry;
+	}
+	const contextWindowTokens = resolveMemoryFlushContextWindowTokens({
+		cfg: params.cfg,
+		provider: resolveFollowupContextConfigProvider({
+			cfg: params.cfg,
+			followupRun: params.followupRun,
+			sessionEntry: entry,
+			sessionKey: params.sessionKey,
+			runtimePolicySessionKey: params.runtimePolicySessionKey
+		}),
+		modelId: params.followupRun.run.model ?? params.defaultModel,
+		agentCfgContextTokens: params.agentCfgContextTokens
+	});
+	const memoryFlushPlan = resolveMemoryFlushPlan({ cfg: params.cfg });
+	const reserveTokensFloor = memoryFlushPlan?.reserveTokensFloor ?? params.cfg.agents?.defaults?.compaction?.reserveTokensFloor ?? 2e4;
+	const softThresholdTokens = memoryFlushPlan?.softThresholdTokens ?? 4e3;
+	const freshPersistedTokens = resolveFreshSessionTotalTokens(entry);
+	const persistedTotalTokens = entry.totalTokens;
+	const hasPersistedTotalTokens = typeof persistedTotalTokens === "number" && Number.isFinite(persistedTotalTokens) && persistedTotalTokens > 0;
+	const promptTokenEstimate = estimatePromptTokensForMemoryFlush(params.promptForEstimate ?? params.followupRun.prompt);
+	const serverCompactionThreshold = resolveResponsesServerCompactionThreshold({
+		cfg: params.cfg,
+		provider: params.followupRun.run.provider,
+		modelId: params.followupRun.run.model ?? params.defaultModel
+	});
+	const threshold = Math.max(contextWindowTokens - reserveTokensFloor - softThresholdTokens, serverCompactionThreshold ?? 0);
+	const freshNeedsOutputRead = typeof freshPersistedTokens === "number" && typeof promptTokenEstimate === "number" && threshold > 0 && freshPersistedTokens + promptTokenEstimate >= threshold - TRANSCRIPT_OUTPUT_READ_BUFFER_TOKENS;
+	const maxActiveTranscriptBytes = resolveMaxActiveTranscriptBytes(params.cfg);
+	const shouldCheckActiveTranscriptBytes = typeof maxActiveTranscriptBytes === "number";
+	const transcriptUsageTokens = typeof freshPersistedTokens === "number" && !freshNeedsOutputRead ? void 0 : await estimatePromptTokensFromSessionTranscript({
+		sessionId: entry.sessionId,
+		sessionEntry: entry,
+		sessionKey: params.sessionKey ?? params.followupRun.run.sessionKey,
+		sessionFile: entry.sessionFile ?? params.followupRun.run.sessionFile,
+		storePath: params.storePath
+	});
+	const transcriptSizeSnapshot = shouldCheckActiveTranscriptBytes && transcriptUsageTokens?.transcriptByteSize === void 0 ? await readSessionLogSnapshot({
+		sessionId: entry.sessionId,
+		sessionEntry: entry.sessionFile || !params.followupRun.run.sessionFile ? entry : {
+			...entry,
+			sessionFile: params.followupRun.run.sessionFile
+		},
+		sessionKey: params.sessionKey ?? params.followupRun.run.sessionKey,
+		opts: { storePath: params.storePath },
+		includeByteSize: true,
+		includeUsage: false
+	}) : void 0;
+	const activeTranscriptBytes = transcriptUsageTokens?.transcriptByteSize ?? transcriptSizeSnapshot?.byteSize;
+	const shouldCompactByTranscriptBytes = typeof activeTranscriptBytes === "number" && typeof maxActiveTranscriptBytes === "number" && activeTranscriptBytes >= maxActiveTranscriptBytes;
+	const stalePersistedPromptTokens = hasPersistedTotalTokens && entry.totalTokensFresh !== false ? Math.floor(persistedTotalTokens) : void 0;
+	const transcriptPromptTokens = transcriptUsageTokens?.promptTokens;
+	const transcriptOutputTokens = transcriptUsageTokens?.outputTokens;
+	const usageProjectedTokenCount = typeof transcriptPromptTokens === "number" ? resolveEffectivePromptTokens(transcriptPromptTokens, transcriptOutputTokens, promptTokenEstimate) : void 0;
+	const freshProjectedTokenCount = typeof freshPersistedTokens === "number" ? resolveEffectivePromptTokens(freshPersistedTokens, transcriptOutputTokens, promptTokenEstimate) : void 0;
+	const projectedTokenCount = Math.max(usageProjectedTokenCount ?? 0, freshProjectedTokenCount ?? 0, stalePersistedPromptTokens ?? 0);
+	const tokenCountForCompaction = Number.isFinite(projectedTokenCount) && projectedTokenCount > 0 ? projectedTokenCount : void 0;
+	logVerbose(`preflightCompaction check: sessionKey=${params.sessionKey} tokenCount=${tokenCountForCompaction ?? freshPersistedTokens ?? "undefined"} contextWindow=${contextWindowTokens} threshold=${threshold} serverCompactionThreshold=${serverCompactionThreshold ?? "undefined"} isHeartbeat=${params.isHeartbeat} isCli=${isCli} persistedFresh=${entry?.totalTokensFresh === true} transcriptPromptTokens=${transcriptPromptTokens ?? "undefined"} promptTokensEst=${promptTokenEstimate ?? "undefined"} activeTranscriptBytes=${activeTranscriptBytes ?? "undefined"} maxActiveTranscriptBytes=${maxActiveTranscriptBytes ?? "undefined"} sizeTrigger=${shouldCompactByTranscriptBytes}`);
+	if (!(shouldRunPreflightCompaction({
+		entry,
+		tokenCount: tokenCountForCompaction,
+		contextWindowTokens,
+		reserveTokensFloor,
+		softThresholdTokens,
+		minimumThresholdTokens: serverCompactionThreshold
+	}) || shouldCompactByTranscriptBytes)) return entry ?? params.sessionEntry;
+	const compactionTrigger = shouldCompactByTranscriptBytes ? "transcript_bytes" : "tokens";
+	logVerbose(`preflightCompaction triggered: sessionKey=${params.sessionKey} tokenCount=${tokenCountForCompaction ?? freshPersistedTokens ?? "undefined"} threshold=${threshold} trigger=${compactionTrigger} activeTranscriptBytes=${activeTranscriptBytes ?? "undefined"} maxActiveTranscriptBytes=${maxActiveTranscriptBytes ?? "undefined"}`);
+	params.replyOperation.setPhase("preflight_compacting");
+	const notifyCompaction = async (phase) => {
+		try {
+			await params.onCompactionNotice?.(phase);
+		} catch (err) {
+			logVerbose(`preflightCompaction notice delivery failed: ${String(err)}`);
+		}
+	};
+	let startedCompactionNotice = false;
+	let terminalCompactionNoticeSent = false;
+	const notifyStartCompaction = async () => {
+		startedCompactionNotice = true;
+		await notifyCompaction("start");

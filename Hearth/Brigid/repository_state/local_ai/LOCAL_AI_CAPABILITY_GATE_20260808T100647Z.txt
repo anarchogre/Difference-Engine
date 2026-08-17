@@ -1,0 +1,81 @@
+DIFFERENCE ENGINE — LOCAL AI CAPABILITY GATE
+source=/home/reckless-ideator/DifferenceEngine/workspace/operational/repository_state/local_ai/HARDWARE_CENSUS_20260808T100647Z.txt
+source_sha256=a65f967b0720551a61ea509150cc0805019bfe78a2d3cb83e31cce2f58cc4934
+
+===== CPU FLAGS =====
+=== CPU FLAGS ===
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp vnmi md_clear flush_l1d arch_capabilities
+
+=== CPU CACHE ===
+===== STORAGE =====
+=== STORAGE DEVICES ===
+NAME        MODEL                      SIZE TYPE FSTYPE   ROTA TRAN   MOUNTPOINTS
+loop0                                    4K loop squashfs    0        /snap/bare/5
+loop1                                 66.8M loop squashfs    0        /snap/core24/1587
+loop2                                 66.8M loop squashfs    0        /snap/core24/1643
+loop3                                 19.6M loop squashfs    0        /snap/desktop-security-center/150
+loop4                                273.7M loop squashfs    0        /snap/firefox/8107
+loop5                                   20M loop squashfs    0        /snap/desktop-security-center/151
+loop6                                 16.5M loop squashfs    0        /snap/firmware-updater/226
+loop7                                 91.7M loop squashfs    0        /snap/gtk-common-themes/1535
+loop8                                606.1M loop squashfs    0        /snap/gnome-46-2404/153
+loop9                                  395M loop squashfs    0        /snap/mesa-2404/1165
+loop10                                 402M loop squashfs    0        /snap/mesa-2404/1839
+loop11                                18.8M loop squashfs    0        /snap/prompting-client/204
+loop12                                18.8M loop squashfs    0        /snap/prompting-client/222
+loop13                                49.3M loop squashfs    0        /snap/snapd/26865
+loop14                                 580K loop squashfs    0        /snap/snapd-desktop-integration/361
+loop15                                15.7M loop squashfs    0        /snap/snap-store/1367
+nvme0n1     Skhynix BC501 NVMe 256GB 238.5G disk             0 nvme   
+├─nvme0n1p1                            100M part vfat        0 nvme   /boot/efi
+├─nvme0n1p2                             16M part             0 nvme   
+├─nvme0n1p3                           91.4G part ntfs        0 nvme   
+├─nvme0n1p4                              8G part vfat        0 nvme   
+├─nvme0n1p5                            522M part ntfs        0 nvme   
+└─nvme0n1p6                          138.5G part ext4        0 nvme   /
+
+=== FILESYSTEM CAPACITY ===
+===== GPU =====
+=== GPU / DISPLAY HARDWARE ===
+00:02.0 VGA compatible controller [0300]: Intel Corporation Kaby Lake-R GT2 [UHD Graphics 620] [8086:5917] (rev 07)
+	Subsystem: Microsoft Corporation Device [1414:0025]
+	Kernel driver in use: i915
+	Kernel modules: i915
+00:04.0 Signal processing controller [1180]: Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem [8086:1903] (rev 08)
+
+=== DRM DEVICES ===
+===== DRM =====
+=== DRM DEVICES ===
+
+=== OPENGL ===
+===== OPENGL =====
+=== OPENGL ===
+glxinfo: NOT INSTALLED
+
+=== VULKAN ===
+===== VULKAN =====
+=== VULKAN ===
+vulkaninfo: NOT INSTALLED
+
+=== KERNEL MODULES — GPU / SURFACE ===
+===== THERMALS =====
+=== THERMAL ZONES ===
+thermal_zone0 INT3400 Thermal 20000
+thermal_zone1 GEN1 37950
+thermal_zone2 GEN7 38850
+thermal_zone3 pch_skylake 40000
+thermal_zone4 B0D4 46000
+thermal_zone5 x86_pkg_temp 46000
+
+=== BATTERY / POWER ===
+===== TOOLCHAIN =====
+=== COMPILATION TOOLCHAIN ===
+gcc: NOT INSTALLED
+g++: NOT INSTALLED
+clang: NOT INSTALLED
+cmake: NOT INSTALLED
+make: NOT INSTALLED
+git: git version 2.53.0
+python3: Python 3.14.4
+
+=== EXISTING LOCAL-AI SOFTWARE ===

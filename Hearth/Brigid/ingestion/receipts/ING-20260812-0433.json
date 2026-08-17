@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:39.886926-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Templates/ADR.template.md",
+  "original_name": "ADR.template.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0433",
+  "schema_version": "0.1.0",
+  "sha256": "50db31c05132b08999fc718b55ed4b3e32fd49a07f2bffbf9c703cdb64dce3d7",
+  "size_bytes": 623,
+  "source_class": "manual_batch"
+}

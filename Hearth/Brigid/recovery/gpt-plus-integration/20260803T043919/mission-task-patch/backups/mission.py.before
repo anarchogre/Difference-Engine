@@ -1,0 +1,6 @@
+"""
+Mission recovery.
+"""
+
+def recover_mission() -> str | None:
+    return None

@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260808-0001",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-08T15:10:54.806363-05:00",
+    "observed_path": "/home/reckless-ideator/DifferenceEngine/workspace/operational/ingestion/batch_test/sources/first.txt",
+    "original_name": "first.txt",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260808-0001",
+    "schema_version": "0.1.0",
+    "sha256": "a014a4c11df657a0206423566a360672d09656f5b8e2fdb2349dc7f51ba8d4e6",
+    "size_bytes": 25,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

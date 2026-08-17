@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:49:05.180432-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/SPEC-7001_v1.0.0.json",
+  "original_name": "SPEC-7001_v1.0.0.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0604",
+  "schema_version": "0.1.0",
+  "sha256": "24581cdbb39b6e927899ac887143cfa492457d586812051f2e2fb56866ea5082",
+  "size_bytes": 58,
+  "source_class": "manual_batch"
+}

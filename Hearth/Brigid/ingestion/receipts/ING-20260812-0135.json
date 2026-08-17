@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:10.216288-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Communication_Architecture_v1.0.json",
+  "original_name": "AKS_Communication_Architecture_v1.0.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0135",
+  "schema_version": "0.1.0",
+  "sha256": "7cae1155721f4eb4106e842122fcbbf40bd84ad6d55ae285638c1df260b7c503",
+  "size_bytes": 100,
+  "source_class": "manual_batch"
+}

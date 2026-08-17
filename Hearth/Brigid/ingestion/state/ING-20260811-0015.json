@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260811-0015",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-11T22:18:46.159419-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Custom_GPT_Design_Process.json",
+    "original_name": "Custom_GPT_Design_Process.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260811-0015",
+    "schema_version": "0.1.0",
+    "sha256": "d09d6768687cc892dff4f2ddedb45434f83897da31b0c933e9fa86fb9e0ff3b3",
+    "size_bytes": 29943,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

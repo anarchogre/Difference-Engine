@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0026",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:05.069893-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-EVID-0001_Evidence_Quality_Classification.json",
+    "original_name": "AKS-EVID-0001_Evidence_Quality_Classification.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0026",
+    "schema_version": "0.1.0",
+    "sha256": "6191e927d8df220b31c27621eb057d2a93eb6aeba95a65780db3435ebf0c3cbe",
+    "size_bytes": 942,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

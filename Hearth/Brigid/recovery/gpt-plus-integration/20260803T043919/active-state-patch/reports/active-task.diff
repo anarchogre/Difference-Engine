@@ -1,0 +1,27 @@
+diff --git a/workspace/operational/current/ACTIVE_TASK.md b/workspace/operational/current/ACTIVE_TASK.md
+new file mode 100644
+index 0000000..f6b5b4a
+--- /dev/null
++++ b/workspace/operational/current/ACTIVE_TASK.md
+@@ -0,0 +1,21 @@
++# Active Task
++
++Bootstrap Modernization
++
++## Task Block
++
++1. Audit existing bootstrap.
++2. Identify obsolete assumptions.
++3. Repair executable bootstrap initialization.
++4. Establish canonical mission and task recovery.
++5. Produce Bootstrap vNext.
++6. Produce Bootstrap Difference Report.
++7. Produce Bootstrap Migration Notes.
++
++## Current Step
++
++Establish deterministic active-state recovery.
++
++## Status
++
++Active

@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260804-0095",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-04T18:01:44.098774-05:00",
+    "observed_path": "/storage/emulated/0/Download/Constitutional_Kernel_Load.md.txt",
+    "original_name": "Constitutional_Kernel_Load.md.txt",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260804-0095",
+    "schema_version": "0.1.0",
+    "sha256": "fa0eeb17972874f3a991b0f767fbdc0d5dceceae5bfbeed4303782d601e376ea",
+    "size_bytes": 238698,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

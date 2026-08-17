@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:09.450989-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-THEOREM-0001_Inheritance_Conservation.json",
+  "original_name": "AKS-THEOREM-0001_Inheritance_Conservation.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0122",
+  "schema_version": "0.1.0",
+  "sha256": "c876bacb4f749e1d21c74b84ca60b9ca2676224a0a7d3534917871b94c70c4e9",
+  "size_bytes": 1614,
+  "source_class": "manual_batch"
+}

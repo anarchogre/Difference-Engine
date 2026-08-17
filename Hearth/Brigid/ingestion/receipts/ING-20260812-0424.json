@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:38.716759-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Workflow_Service_Resilience_Specification_v0.1.md",
+  "original_name": "Workflow_Service_Resilience_Specification_v0.1.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0424",
+  "schema_version": "0.1.0",
+  "sha256": "f988b92617afbb39f957b2b8d4dcef9aa58bd85e0c7052e18be3dc2ad1d51b58",
+  "size_bytes": 7522,
+  "source_class": "manual_batch"
+}

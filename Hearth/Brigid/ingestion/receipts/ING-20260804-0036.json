@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:58.757123-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Repository_Index_Specification_v0.1.md",
+  "original_name": "Repository_Index_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0036",
+  "schema_version": "0.1.0",
+  "sha256": "b63d7270b6f4a22a3c51b9031469a97e2ec674a1b533144b44d3bcc826fb29aa",
+  "size_bytes": 3084,
+  "source_class": "manual_batch"
+}

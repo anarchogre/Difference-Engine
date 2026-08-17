@@ -1,0 +1,7 @@
+baseline=MILESTONE_002_FROZEN
+regression_initial_exit=1
+regression_initial_class=execution_environment_failure
+regression_retry_exit=0
+required_pythonpath=repository_root
+acceptance=ALL_PASS
+baseline_archive_sha256=42329936954602ffcdd8de57106e27cfa3f42681f20db5b0a7bec3eab01a7788

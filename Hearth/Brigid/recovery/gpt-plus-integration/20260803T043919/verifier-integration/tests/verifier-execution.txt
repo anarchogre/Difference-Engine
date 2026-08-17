@@ -1,0 +1,8 @@
+[BOOTSTRAP] Discovering repository...
+STATUS=DEGRADED
+MISSION=GPT Plus Integration
+TASK=Recovery Standardization
+EXECUTION_MODE=Execution
+BLOCKERS=0
+WARNINGS=4
+OUTPUT=workspace/operational/recovery/runtime

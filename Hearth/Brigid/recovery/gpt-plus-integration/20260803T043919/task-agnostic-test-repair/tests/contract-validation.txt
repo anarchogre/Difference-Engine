@@ -1,0 +1,3 @@
+TASK_AGNOSTIC_TEST_CONTRACT=PASS
+FILE=ade/kernel/tests/test_bootstrap_loader.py
+SIZE=1035

@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:55.773584-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Operational_Readiness_Specification_v0.1.md",
+  "original_name": "Operational_Readiness_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0025",
+  "schema_version": "0.1.0",
+  "sha256": "7132943d8c9c0e6535965645577e2ab80b99aba9613aa031557a34271b955719",
+  "size_bytes": 4008,
+  "source_class": "manual_batch"
+}

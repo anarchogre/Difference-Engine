@@ -1,0 +1,117 @@
+RUN=workspace/operational/recovery/gpt-plus-integration/20260803T043919
+COMPILE_STATUS=0
+TEST_STATUS=1
+IGNORE_STATUS=0
+DRY_RUN_STATUS=0
+AUDIT_STATUS=0
+
+DETERMINISTIC TEST RUNNER
+Traceback (most recent call last):
+  File "/storage/emulated/0/DifferenceEngine/ade/kernel/tests/run_tests.py", line 64, in run
+    test()
+    ~~~~^^
+  File "/storage/emulated/0/DifferenceEngine/ade/kernel/tests/test_bootstrap_loader.py", line 5, in test_initialize
+    assert state.execution_mode == "Execution"
+           ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BootstrapResult' object has no attribute 'execution_mode'
+[BOOTSTRAP] Discovering repository...
+FAIL ade.kernel.tests.test_bootstrap_loader.test_initialize
+DISCOVERED=1
+PASSED=0
+FAILED=1
+
+BASELINE AUDIT
+BASELINE_AUDIT_VALIDATION=PASS
+FILE=.gitignore SIZE=259
+FILE=ade/kernel/tests/run_tests.py SIZE=1881
+
+GENERATED FILES
+33
+
+BINARY FILES
+0
+
+LARGE FILES
+0
+
+GIT ADD DRY RUN
+add 'inventory/reconciliation/FLU_ONLY.hashes'
+add 'inventory/reconciliation/FLU_only.files'
+add 'inventory/reconciliation/FULL_HASH_MANIFEST.sha256'
+add 'inventory/reconciliation/GH_AUTH_STATUS.txt'
+add 'inventory/reconciliation/GIT_CONFIG.lst'
+add 'inventory/reconciliation/LEFT_FILES.report'
+add 'inventory/reconciliation/LOCATION_DRIFT.files'
+add 'inventory/reconciliation/MATCHING_HASHES.report'
+add 'inventory/reconciliation/MISSION.md'
+add 'inventory/reconciliation/ONLY_DE.report'
+add 'inventory/reconciliation/ONLY_FLU.report'
+add 'inventory/reconciliation/ONLY_IN.report'
+add 'inventory/reconciliation/PACKAGES.lst'
+add 'inventory/reconciliation/PATH_DRIFT.diff'
+add 'inventory/reconciliation/RECONCILIATION_NEXT_ACTIONS.md'
+add 'inventory/reconciliation/REPOSITORY.diff'
+add 'inventory/reconciliation/REPOSITORY_SNAPSHOT.md'
+add 'inventory/reconciliation/REPOSITORY_STATISTICS.md'
+add 'inventory/reconciliation/RIGHT_FILES.report'
+add 'inventory/reconciliation/RUN_METADATA.md'
+add 'inventory/reconciliation/SYSTEM_INFO.txt'
+add 'inventory/reconciliation/TERMUX_INFO.txt'
+add 'inventory/reconciliation/TREE_HASH.sha256'
+add 'inventory/reconciliation/TREE_HISTORY.lst'
+add 'inventory/reconciliation/TREE_SNAPSHOT.txt'
+add 'inventory/reconciliation/common.files'
+add 'inventory/reconciliation/directories.lst'
+add 'inventory/reconciliation/files.lst'
+add 'inventory/reports/MISSING_DIRECTORY_RECONCILIATION.md'
+add 'inventory/reports/MISSION_001A_REPOSITORY_RECONCILIATION_REPORT.md'
+add 'inventory/reports/ade_de_dirs.lst'
+add 'inventory/reports/ade_dirs.lst'
+add 'inventory/repository_tree_pretty.txt'
+add 'logs/reconciliation/reconcile_20260802_232013.log'
+add 'queue/SIQ_GPT_PLUS_INTEGRATION.md'
+add 'queue/completed/Q-001A-REPOSITORY-RECONCILIATION.md'
+add 'scripts/reconciliation/DIFFERING_FILES.report'
+add 'scripts/reconciliation/FILE_PAIR_INDEX.report'
+add 'scripts/reconciliation/LEFT_FILES.report'
+add 'scripts/reconciliation/MATCHING_HASHES.report'
+add 'scripts/reconciliation/ONLY_DE.report'
+add 'scripts/reconciliation/ONLY_FLU.report'
+add 'scripts/reconciliation/ONLY_IN.report'
+add 'scripts/reconciliation/PATH_DRIFT.diff'
+add 'scripts/reconciliation/README.md'
+add 'scripts/reconciliation/REPOSITORY.diff'
+add 'scripts/reconciliation/RIGHT_FILES.report'
+add 'scripts/reconciliation/reconcile.sh'
+add 'standards/v1/ARTIFACT_STANDARD_v1.0.md'
+add 'standards/v1/HEADER_STANDARD_v1.0.md'
+add 'standards/v1/IDENTIFIER_STANDARD_v1.0.md'
+add 'standards/v1/MARKDOWN_STANDARD_v1.0.md'
+add 'standards/v1/QUEUE_STANDARD_v1.0.md'
+add 'standards/v1/REPOSITORY_LAYOUT_STANDARD_v1.0.md'
+add 'standards/v1/REPOSITORY_STANDARD_v1.0.md'
+add 'standards/v1/ROUTING_STANDARD_v1.0.md'
+add 'standards/v1/TERMUX_OPERATOR_STANDARD_v1.0.md'
+add 'standards/v1/supporting/STANDARDS_HANDOFF.md'
+add 'workspace/delete from de cgptfl.md'
+add 'workspace/operational/Continue DifferenceEngine.md'
+add 'workspace/operational/bootstrap/BOOTSTRAP.md'
+add 'workspace/operational/bootstrap/BOOTSTRAP_vNext.md'
+add 'workspace/operational/bootstrap/INITIALIZATION_ORDER.md'
+add 'workspace/operational/current/ACTIVE_MISSION.md'
+add 'workspace/operational/current/ACTIVE_TASK.md'
+add 'workspace/operational/current/COMPLETED_TASK_BLOCK.md'
+add 'workspace/operational/current/MISSION.md'
+add 'workspace/operational/current/NEXT_COMMAND_BLOCK.md'
+add 'workspace/operational/current/NEXT_MISSION.md'
+add 'workspace/operational/current/OPERATIONAL_LAWS.md'
+add 'workspace/operational/current/PHASE_1_COMPLETION_REPORT.md'
+add 'workspace/operational/current/PHASE_2_TASK_BLOCK.md'
+add 'workspace/operational/current/QUEUE.md'
+add 'workspace/operational/current/REPOSITORY_STATE.md'
+add 'workspace/operational/current/RESUME.md'
+add 'workspace/operational/current/WORKFLOW.md'
+add 'workspace/operational/preservation/PP-0001.md'
+add 'workspace/operational/recovery/RECOVERY_CHECKLIST.md'
+add 'workspace/operational/recovery/RECOVERY_SOP.md'
+add 'workspace/operational/recovery/RECOVERY_VERIFIER_SPECIFICATION.md'

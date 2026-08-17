@@ -1,0 +1,6 @@
+"""
+Queue recovery.
+"""
+
+def recover_queues() -> list[str]:
+    return []

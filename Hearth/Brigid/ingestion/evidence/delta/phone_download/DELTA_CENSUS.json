@@ -1,0 +1,3079 @@
+{
+  "scope_note": "Structural conversation delta census; candidate status is not semantic qualification or canonical promotion.",
+  "domain": "phone_download",
+  "root": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download",
+  "generated_utc": "2026-08-08T11:58:29Z",
+  "summary": {
+    "files": 138,
+    "conversation_candidates": 45,
+    "strong_candidates": 43,
+    "provisional_candidates": 2,
+    "new_candidate_hashes": 39,
+    "known_verified_paths": 26,
+    "unverified_candidate_paths": 19,
+    "unverified_candidate_hashes": 18
+  },
+  "records": [
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/# Life Companion Constitution.docx",
+      "size": 12362,
+      "sha256": "079640ad40d85c7b16efe10dd3c8c4f6d27cde301edaeb06f663d2e28587ad69",
+      "container": "docx",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 7774,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/.trashed-1788498628-LESSON+1A.2+NUMBERS.pptx",
+      "size": 1542927,
+      "sha256": "7da8df36861f96f4335d8dfea5dbae20eb3996f3032d4680474c41cd848f3b73",
+      "container": "zip",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/.trashed-1788540473-Branch_I___Head_Steward___Cat_Wrangler___Differenc.md.txt",
+      "size": 148211,
+      "sha256": "bb6d828f8dfa729e31b0135fa81e6803ba571d60972d79e4a288f2beadac94dc",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 100,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 147447,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/1_FsbR9i9sXRKjvYr2ryfVHQ.webp",
+      "size": 44484,
+      "sha256": "78323fdf07f9345a9e65ff2d644e6abfef976e26005ad6d1e173badde381be15",
+      "container": "binary",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/1_JxJxS07MssoW7xq-X4fFPA.webp",
+      "size": 36178,
+      "sha256": "dc82e9f21419cb32ed250e59cf6382240df652aa372bb3567cc8d13e490bd9b6",
+      "container": "binary",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/1_U_fQjp6SCMQI9lZLBTtQmw.webp",
+      "size": 42024,
+      "sha256": "99729ecd9db8781f297edb2157c98733a2f10ee450863ef676f792c91412f6fd",
+      "container": "binary",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/1__Pg7bjCUOTwnvdnnyPdnNg.webp",
+      "size": 24442,
+      "sha256": "bf33c59f67d46bf137dad30d9e74a5b047775036529520df21513608d0e033cd",
+      "container": "binary",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/1_soUx5azVgOclcnxwkWaBhQ.webp",
+      "size": 33066,
+      "sha256": "fcd3da2eae48a4ce0b1deafcca28987fd259cf139e55a806fbca99794d8d135f",
+      "container": "binary",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/1_tVQrj-TApEg3pNBpMIT9ow.webp",
+      "size": 43910,
+      "sha256": "12fd43199c97990a5c9826e664e94612ebd39524751951abd7305c1329278c32",
+      "container": "binary",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/ADE_Constitution_v1.4.md",
+      "size": 1249,
+      "sha256": "3252209105c671f3c980c6294f5c39ac22201b9b5ad592b6167754994adfbff3",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 1249,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/ADE_Workflow_Automation_Prompts.json",
+      "size": 14211,
+      "sha256": "7d3082ac903843a804be700ff7d0cd11c2f9b0a189c8ffe77011d3380ec136b0",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 9,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {
+        "user": 5,
+        "assistant": 4
+      },
+      "json_shape": "object",
+      "text_chars": 14167,
+      "candidate_evidence": [
+        "structured user+assistant roles",
+        "repeated serialized role fields"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/AKS-INDEX-0001_Draft_0.3_Update.json",
+      "size": 396,
+      "sha256": "3602a49f93cc4067c7bb17bd67bc71a4fcbdca849cea4cff19a1be0e08590e56",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 396,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/AKS-ROADMAP-0003_Post_Gate_Alpha-2.json",
+      "size": 430,
+      "sha256": "204b601464b2cc98683e1c3bec88653eac7bc590aa9d135c5e9eb7604edc31e8",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 430,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/AKS_Canonical_Knowledge_Object_Schema_v1.json",
+      "size": 338,
+      "sha256": "8d0ddfd5a85ff16f5fce0f6f2215622b9fc1057708da18c0c46263a1e3c4eb42",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 338,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/AKS_Companion_Narrative_Working_Draft_v0_2.json",
+      "size": 894,
+      "sha256": "3e2a0ac4824a5fa406ed43ff3e2038989934bf8eeac62267b48b0c818589a7d6",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 894,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/AKS_Dependency_Graph_Specification_v1.json",
+      "size": 218,
+      "sha256": "ccdbca0f77d34e81953bc7c98840711661021586a234dbf6c8b3828cbc3d218a",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 218,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/AKS_Design_Philosophy_v1.json",
+      "size": 168,
+      "sha256": "c38b9129274353bf1e7dc25f95062dbdde02017d93d9736321d6d0a059df15e1",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 168,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/AKS_Foundational_Theory_v1.json",
+      "size": 173,
+      "sha256": "2af130827253fbc849fc2c7154a86497cb75f16257c9357ca6f58faa0923093f",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 173,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/AKS_Governing_Principles_v2.json",
+      "size": 310,
+      "sha256": "a27d2876c2735635b6cdbc0b9f4d33a647a9cdf3534a792cce3d8821c0fbccd8",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 310,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/AKS_Inference_Linguistic_Preservation_Package/AKS/000_Governance/AKS-GOV-CP-0001.json",
+      "size": 885,
+      "sha256": "93281620d531fe93cf920184f8242f94280cd1a33b83609cfb29e46be0ad6d22",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 885,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/AKS_Inference_Linguistic_Preservation_Package/AKS/300_Education/AKS-EDU-SYN-0001.json",
+      "size": 740,
+      "sha256": "a6f80fc0bbf2e30717136ea9ea0c080268c6f926e914c2182928751e7ef28988",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 740,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/AKS_Integrity_Architecture_v1.json",
+      "size": 246,
+      "sha256": "d3c585eb53aa9b03c575251956a7e6b4a00a31a866f3a3abb43333af138b047b",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 246,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/AKS_Reasoning_Contracts_v1.1.json",
+      "size": 283,
+      "sha256": "532dd72192969b3466deb07e7a83cf161d9100b68f11ff6d160bf8fe0d364562",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 283,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/AKS_Reasoning_Contracts_v2.json",
+      "size": 229,
+      "sha256": "765c47a56edea1ed33ecf0d83d64740039a26c7875fe368288456112c094f4c2",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 229,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/AKS_Repository_Constitution_v1.json",
+      "size": 442,
+      "sha256": "7b9418320b55a3d75fc477977e1e5d8961dc436aa56c82bc80a9364855a545db",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 442,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/AKS_Repository_Invariants_v1.json",
+      "size": 292,
+      "sha256": "f169fcddbe5e33c3b97ae9b9b2a4ec6b2a8f3c091d66347933bfac3b43071932",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 292,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/BLUEPRINT.md",
+      "size": 24956,
+      "sha256": "45456f0df12c1072d761755ef212424021f6926095f4fb89f49de8d84ca05051",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 23108,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/BLUEPRINT_v2.0_RESTORATION.md",
+      "size": 775,
+      "sha256": "8037e96aa2088d5144bb824070f231c7efed4a9e3c5e3f1d462ba4f6ff31b520",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 775,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/BRANCH-NOMENCLATURE-LOCK-v1.0.0.md",
+      "size": 4933,
+      "sha256": "ee6770d602a3c4c7dd9caf09576d820770b64774f65c3cfc56bd1e4fb679be9a",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 4838,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Babbage_GPT_Initialization.md.txt",
+      "size": 14078,
+      "sha256": "7b142fadaa911b1b72cc274e371ad784e7d84de55a71d56f0d47e5eba4ed9b42",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 22,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 13934,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Babbage_Initialization_and_Parsing.md.txt",
+      "size": 187192,
+      "sha256": "66c819d2a969c4e161ae6b64f02951534385908813e86703c8c5a77c548c11af",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 233,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 186361,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Bootstrap_BABBAGE_Initialization.md.txt",
+      "size": 9357,
+      "sha256": "ff976445f55b32c13441e1fac0a8d24d9ad44c6c8c54f978edc7bd42f1d38806",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 18,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 9309,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Bootstrap_Initialization_and_Rules.md.txt",
+      "size": 16045,
+      "sha256": "a48dcc6e2768ac9f9c23f4d4439fbd010c0fc427ece4b8de8f2d07cd6b80a6c1",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 52,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 15919,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Branch I - Head Steward -  Cat Wrangler - Difference Engine.md",
+      "size": 148196,
+      "sha256": "b7122b68899e23016d7bfc52338127bea545a76c6e39c4b0128d6da3aa5d06b3",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 100,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 147432,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Branch Management Assistance.pdf",
+      "size": 924735,
+      "sha256": "5464a52d4bf01645069b56c39ebef88a073ed7d1c1200ea813ee6b21975e00b7",
+      "container": "pdf",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 66
+      },
+      "roles": {},
+      "text_chars": 110330,
+      "candidate_evidence": [
+        "embedded ChatGPT conversation URL",
+        "ChatGPT PDF export header"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Branch_III_Integration_Update_2026-08-05-1.zip",
+      "size": 9339,
+      "sha256": "e749decc757fb4211d949867601298eb616b640ffaf46f7a5069f7ef7646646c",
+      "container": "zip",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Branch_III_Integration_Update_2026-08-05.zip",
+      "size": 9339,
+      "sha256": "e749decc757fb4211d949867601298eb616b640ffaf46f7a5069f7ef7646646c",
+      "container": "zip",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Categorization of Governance Elements.pdf",
+      "size": 211978,
+      "sha256": "ca1e559ab43f8e824f167dd6ae6612757da65f8b5d4941e7cb0c742d73104c11",
+      "container": "pdf",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 54
+      },
+      "roles": {},
+      "text_chars": 30247,
+      "candidate_evidence": [
+        "embedded ChatGPT conversation URL",
+        "ChatGPT PDF export header"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Categorization_of_Governance_Elements.md(1).txt",
+      "size": 51439,
+      "sha256": "41f9205e9dc88751d416f9884ef7c1c34f463dc3f622b94d95699f634beaa8cb",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 57,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 50949,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Categorization_of_Governance_Elements.md.txt",
+      "size": 51439,
+      "sha256": "41f9205e9dc88751d416f9884ef7c1c34f463dc3f622b94d95699f634beaa8cb",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 57,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 50949,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Charles_Babbage.jpg",
+      "size": 230577,
+      "sha256": "b2d595d614721ed751b6f7db42ff6e151606c4f82ad16f2e63e0d2196a6a0f23",
+      "container": "binary",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Code GPT - Standby for end handoff.pdf",
+      "size": 301723,
+      "sha256": "522f2efd23c88c58502d62d2398ba6b7a9c90f19f09cb70099d6b14604b9db16",
+      "container": "pdf",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 66477,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Constitutional Invariants for Governing Autonomous AI Action.pdf",
+      "size": 1287453,
+      "sha256": "06e7db5dddf46130847f2ee8b2ec535a991c316368ec78a47fc27e74baee225c",
+      "container": "pdf",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 131074,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Constitutional_Kernel_Initialization.md.txt",
+      "size": 212780,
+      "sha256": "3765fbf5380a3006353f07da2ea82f06b37f200e09ce327c29deff99f5351c1f",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 101,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 209734,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Constitutional_Kernel_Load.md.txt",
+      "size": 238698,
+      "sha256": "fa0eeb17972874f3a991b0f767fbdc0d5dceceae5bfbeed4303782d601e376ea",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 112,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 236104,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Construction_Kernel_Load_and_Implementation.md.txt",
+      "size": 188854,
+      "sha256": "e1f57e0c6f2017852a177418718bead00c6d3cd83289f3a6b719cf8006747c05",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 5,
+        "chatgpt_headings": 169,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 188569,
+      "candidate_evidence": [
+        "repeated user/assistant labels",
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Construction_Research_and_Analysis.md.txt",
+      "size": 9380,
+      "sha256": "07f8c7ee462b266379c52675542872e1cbb0a75c71916fbd13a24d3996bf5050",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 51,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 9282,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Custom_GPT_Design_Process.json",
+      "size": 29943,
+      "sha256": "d09d6768687cc892dff4f2ddedb45434f83897da31b0c933e9fa86fb9e0ff3b3",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 30,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {
+        "user": 20,
+        "assistant": 10
+      },
+      "json_shape": "object",
+      "text_chars": 29804,
+      "candidate_evidence": [
+        "structured user+assistant roles",
+        "repeated serialized role fields"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/DIFFERENCE_ENGINE_ROADMAP.md",
+      "size": 13620,
+      "sha256": "4e8803a8905f07909986cae026e0a150276dac17d93bcd9f2e8a7f5a0b8052ef",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 13304,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Difference __ Engine __ Head Steward __ Cat Wrangler.pdf",
+      "size": 1312316,
+      "sha256": "daed3c175e4c8d46fb51e9f2124c852c2813549455dfef5f519dfc6504aff52c",
+      "container": "pdf",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 129
+      },
+      "roles": {},
+      "text_chars": 212746,
+      "candidate_evidence": [
+        "embedded ChatGPT conversation URL",
+        "ChatGPT PDF export header"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/DifferenceEngine-Gboard-Concept-Probe-v0.1.0.zip",
+      "size": 223,
+      "sha256": "e0c9d13156f1248bc040e4a40c56f42013178e542735c8e4ee57e8a6e6b042c6",
+      "container": "zip",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/DifferenceEngine-Gboard-Concepts-v0.1.0.zip",
+      "size": 429,
+      "sha256": "0e65861fbe7a11412f8b0e0f85a5b41246482d1956b6115da0132de45c9e86da",
+      "container": "zip",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/DifferenceEngine-Gboard-Greek-v0.1.1.zip",
+      "size": 248,
+      "sha256": "4421eb80708ec057d6689c0afca9bf9f640b7059f2fdf77453f073fbe6249a76",
+      "container": "zip",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/DifferenceEngine-Gboard-Greek-v0.1.zip",
+      "size": 246,
+      "sha256": "9a3a3399cf9fb678e1378fa6869969e8cc360812637b0d932313a6d7db25a39a",
+      "container": "zip",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Difference_Engine_2.json",
+      "size": 482389,
+      "sha256": "a1eade1a46e4f1af06d265c69bfd4b5c667179502326f1f97aa68e2274dc7eb0",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 158,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {
+        "user": 53,
+        "assistant": 105
+      },
+      "json_shape": "object",
+      "text_chars": 480290,
+      "candidate_evidence": [
+        "structured user+assistant roles",
+        "repeated serialized role fields"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Difference_Engine_Operational_Bedrock_Synthesis_v0.1.0.md",
+      "size": 31273,
+      "sha256": "70da378a724b2ad0d22cfbe39c2950ce4496b42197392964e314e36a6cdb4771",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 31123,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Difference_Engine____Branch_0____Origins.md.txt",
+      "size": 27815,
+      "sha256": "6ea1103958a3b5e513fafde16b80c107f2ef55c3b481065a5961d00f9baa37cc",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 30,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 27676,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Difference_Engine____Branch_0____Origins.txt",
+      "size": 670325,
+      "sha256": "0a2619397bc7687c57fd8e08765062ea5b4eae141fd8902d71536a443fa5f657",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 2,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 663456,
+      "candidate_evidence": [
+        "repeated user/assistant labels"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Difference_Engine____Branch_III____Integration.md(1).txt",
+      "size": 730928,
+      "sha256": "634d2c14dba7bceb69d6f6fb5dacf9b3fcc6b263cca5428408ef4b2d5399a017",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 336,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 724466,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Difference_Engine____Branch_III____Integration.md.txt",
+      "size": 450864,
+      "sha256": "9a43ae30cb3d58bd59f243cc41bb28fa8ddd02e6c1a1620c92e71b9557b237c7",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 158,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 448765,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Difference_Engine____Branch_III____Integration.txt",
+      "size": 702026,
+      "sha256": "e3e1f2f5b80db46a0942efa1a1fb20e7bba0060a487f6c764000cac292ef7280",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 695556,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Difference_Engine____Branch_II____Research.md(1).txt",
+      "size": 108627,
+      "sha256": "734a6d8fde65b6c40eb9fe58a439f0f977babea6a950720c7016782cf2643b81",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 71,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 107563,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Difference_Engine____Branch_II____Research.md.txt",
+      "size": 23667,
+      "sha256": "3070b03ec60d697cef3c8051553adc27b34a141bda6cd3cda3f112edd81f53a7",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 19,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 23241,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Difference_Engine____Branch_II____Research.txt",
+      "size": 103140,
+      "sha256": "05ad3b363b2b1c0bedd8bd2b0ffa1a25dbb912e8ec8e858d2befa79e7a232ed7",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 102076,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Difference_Engine____Branch_IV____Operations.md.txt",
+      "size": 500,
+      "sha256": "d1c9064bb50f0b6b29b34beafb8aebb9c31c0a02ba1f86b3c1338311ecda7bd9",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 2,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 500,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Difference_Engine____Branch_IV____Operations.txt",
+      "size": 151240,
+      "sha256": "ef20992be9eeb05fd0bad187a2b4c97ff4b07544b4206c865600d4f60966587d",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 148145,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Difference____Engine____Branch_IV_Operations_ADE_E.txt",
+      "size": 281121,
+      "sha256": "be12e955411196399652800ba8b11e805ab56dde869bd0e9f43aa364cbb2b9b1",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 277876,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Difference____Engine____Branch_V____Human_Imterfac.txt",
+      "size": 136277,
+      "sha256": "cf1ee389ec7c33f7ba4a9b989568ab8685d1aa771222763da15151ec5691e191",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 135420,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Discovery Log.txt",
+      "size": 2764,
+      "sha256": "086114b6fa0bb7f1f2e948407f0b31265d79043b7e1b06a0b45897281136cbdb",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 2722,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/ED311451.pdf",
+      "size": 3259849,
+      "sha256": "677200f0ec668a20b41ef1481641a499725a5a4a8e9e247e89d4ae3a95161b4e",
+      "container": "pdf",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 546587,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Epistemic_Engine_Development.md",
+      "size": 140487,
+      "sha256": "64263a35738281b8c4288b32577feb928f45c47331c7fa2ab94027c4e50b36ec",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 110,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 139630,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Evidence_Transformation_Specification_v1.0.json",
+      "size": 401,
+      "sha256": "e5c9b0eebeb37726ffda0b130ae0ca99e969e9856fe416e19d42d08adf096e3d",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 401,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/FPA-0001-CanonicalVocabulary.json",
+      "size": 901,
+      "sha256": "3993eeb0f18e39448e0d6842d4ad63e24a6b9046e46f1cb5f2123e0210703bc6",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 901,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/FPA-0002-SpecificationFramework.json",
+      "size": 848,
+      "sha256": "225aa2ed28bc264513ac3cfebc522166a6f31880d257a563835ae7dbe282be9a",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 848,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/FPA-0003-CanonicalArtifactOntology.json",
+      "size": 768,
+      "sha256": "c79a273debf1fdcd62a2075e31a58a063e2c545d8acfc7dcaedbfd206bc8e27c",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 768,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/File_Library_Access_Details.md.txt",
+      "size": 124070,
+      "sha256": "e6ade85893a0e1c71e38ee13e681f9fd44823ba5b783262fc5ac4c92e29d51e8",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 124,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 121943,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/For_Emily___Homework.txt",
+      "size": 8963,
+      "sha256": "f5018d64e658e1e31b48001c46f6fefc68c3648ec8eef585be5754a21230d7ba",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 8687,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Forensic_Parser_Workflow_full_chat.json",
+      "size": 138106,
+      "sha256": "773a4f2475c5a271bd5ccc7f1e5df1e559d204e7cd0dd53c375b4b0226a70ab2",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 162,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {
+        "user": 102,
+        "assistant": 60
+      },
+      "json_shape": "object",
+      "text_chars": 136258,
+      "candidate_evidence": [
+        "structured user+assistant roles",
+        "repeated serialized role fields"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": true,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/GPT_Plus_Integration_Roadmap.md(1).txt",
+      "size": 849618,
+      "sha256": "a053bdf9d1710ff9973c940058990e1383806a68a0a0f6ddfe2aa8a9c5b5a566",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 330,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 846184,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/GPT_Plus_Integration_Roadmap.md.txt",
+      "size": 831385,
+      "sha256": "c3897397c4b8b9e1653ad977ad0249da1334595a5223913e7140e5191371ae10",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 315,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 828077,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Governance.zip",
+      "size": 1829,
+      "sha256": "2e665cda8b3a3665e32300eb3ad07a1c7873fd150ec592be6c237cb643032bf4",
+      "container": "zip",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Governance_Improvements_Implementation.md(1).txt",
+      "size": 532170,
+      "sha256": "f0d08cbc34270a52c9502851ce02873832ee40f151cc91b4d6babcfe8200dfd0",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 502,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 524810,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Governance_Improvements_Implementation.md.txt",
+      "size": 532170,
+      "sha256": "5b0e93774638f5f0ade186de3769c6bf9fd440971965b101fe45b42b0eb80e83",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 502,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 524810,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Governed Repository–GPT Interface – Deep Research Findings.pdf",
+      "size": 68362,
+      "sha256": "de7d464fcc7d287124a2b0030dae84f0efe9ba5c5ca617de3191e70f6d3ef1b4",
+      "container": "pdf",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 22552,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Handbook_Project_Organization.json",
+      "size": 150062,
+      "sha256": "b13a2c1574432d34caacdcc9359a50ad5e9e42ab81eb01a105f1417b18e8a1dc",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 55,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {
+        "user": 28,
+        "assistant": 27
+      },
+      "json_shape": "object",
+      "text_chars": 149474,
+      "candidate_evidence": [
+        "structured user+assistant roles",
+        "repeated serialized role fields"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": true,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Head Steward.txt",
+      "size": 4145,
+      "sha256": "8380397cb349207949d3b2b1d4db413b33a413a717bce3b72516418561c2c950",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 4145,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Inactive____Difference_Engine____Branch_IV____Oper.txt",
+      "size": 332138,
+      "sha256": "c4f3625282886400227255fc6169cd57c1672f9e753a4baefd5cefda06b31dd6",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 325492,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Inference_and_Linguistic_Models.json",
+      "size": 73888,
+      "sha256": "3046b3927cbfba704db10596a8bbd7b410528e16ad2d0216a29f377d11f875cf",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 41,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {
+        "user": 21,
+        "assistant": 20
+      },
+      "json_shape": "object",
+      "text_chars": 73024,
+      "candidate_evidence": [
+        "structured user+assistant roles",
+        "repeated serialized role fields"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": true,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Integration_Status_Update.md.txt",
+      "size": 5769,
+      "sha256": "34026bfc2954e1d2fbc2cace6cd41f6090811135b93d78d273d43476752350dd",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 34,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 5660,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Kernel_Manifest_v2.json",
+      "size": 303,
+      "sha256": "c78db926e497ab7fe8bae17ff3999f4385192ca120309a907e8a8dc2bebe5cfc",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 303,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Kernel_and_Bootstrap_Load.md.txt",
+      "size": 212180,
+      "sha256": "1bb1d6b364864de9b346f27e67bb111153e65db14806a483406816602bfe2529",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 138,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 210877,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Life Companion Constitution.docx",
+      "size": 10368,
+      "sha256": "5e6374b162fcf2c9ae986259c4158f1fa042f8fbcd672e6b6d3436bb4205e676",
+      "container": "docx",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 5001,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Life Companion Constitution.md",
+      "size": 5269,
+      "sha256": "03b4f999bc77b4292d200708d2d60455ee80f7e9d2e52e28743e48eda8108b2a",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 5243,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Life Companion Constitution.txt",
+      "size": 4883,
+      "sha256": "e640ae43eb7c52a478ff6730c210b98f69971ed93e83c1a1e76643341298e939",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 4859,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/MAJOR_PP_0001.json",
+      "size": 933,
+      "sha256": "544d236dae0f888ff984166b7f6828fe2d258f5514bd2b37fe14a063716ccfed",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 933,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/MOBILE_BRIDGE_BOOTSTRAP_AUTHORITY.tar",
+      "size": 20480,
+      "sha256": "1028e68af41025f1f97800a7658c5b3072aae54db120b7beecee44be48d488c2",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 20460,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/MOBILE_BRIDGE_LIVE_BOOTSTRAP_CENSUS_20260806T181711Z.txt",
+      "size": 6952,
+      "sha256": "91f30eea05698a2397fe6c37a1ed929ffa9a0f949f8858b283e3d69eebcf338e",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 6946,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/MOBILE_BRIDGE_MANUAL_REVIEW_CORRECTED_20260806T150216Z.txt",
+      "size": 3305,
+      "sha256": "ab34eebfd8a71265968cdc5be8f4e0389f080aa97a652e907489ae1dd548fce6",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 3305,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/MOBILE_BRIDGE_MANUAL_REVIEW_FILES.tar",
+      "size": 757760,
+      "sha256": "ae1c967951dfd52d072da09070b0ded7cdb28f775642f633bded3588f4f756bf",
+      "container": "binary",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Migration_Map_Creation.md.txt",
+      "size": 85282,
+      "sha256": "e54a100d601a877e0f96cd1ba14677bc123f8a6bd4b1b30ccc6f9810ca0f68ac",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 104,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 82094,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Observation_Database_v0.2.pdf",
+      "size": 1642,
+      "sha256": "2d25020f7eebafbb98a5dba730811dfe451d3270aa8635725f40d7af7ee12b87",
+      "container": "pdf",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 84,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Operational Doctrine.txt",
+      "size": 685,
+      "sha256": "c8e9ab9918a4849f550edff686ba6244d1ae6b977a6612b8295f5497f3f79477",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 685,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Operational Reality.txt",
+      "size": 603,
+      "sha256": "978cefd9fc116274b4a5d8b358ddca34d93a4d6eac256ab60aa96ce33683e310",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 603,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/PP-0058-MAJOR.json",
+      "size": 879,
+      "sha256": "fc4d8cd0604c57d6d781c90f816ca833541f6b97288ba439c80df8cfcb2a0072",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 879,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/PP-0058-Manifest.json",
+      "size": 157,
+      "sha256": "7ceac0fd2062fee02d8df5c7d2882e0e2335ea0bd18a9070f8935e278ab4a8b9",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 157,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/PP-0058-Principles.json",
+      "size": 490,
+      "sha256": "79db27459cf1e2c1c1fa8eb7eaa2a9ba53c76eb93550e1d6d8c8613b69f35352",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 490,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/PR-0005_Architectural_Change_Preservation.json",
+      "size": 1161,
+      "sha256": "878b84bcd409a664c4a8edcabfa9f442a670e84dd5d8ecc0dccbd516da9b4f3f",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 1161,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Project_Chat_Context.md.txt",
+      "size": 1931,
+      "sha256": "09b52590f09055c5781e0ee9c6258b11adde31c13c6e12334352118cc4d9cb99",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 12,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 1927,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/RECOVERY_CANDIDATE_CENSUS.json",
+      "size": 235032,
+      "sha256": "4eaab44b130d6b06873791794fb3f022562489eb9f349349d76b5b4ea716f8c2",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 235030,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/RECOVERY_CANDIDATE_CENSUS.md",
+      "size": 11661,
+      "sha256": "a6d41f9106b4c1d799e9da6fea2ec4a3c683f0789b994cfa2c1706130afb77ac",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 11481,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/ROADMAP_v2.0_RESTORATION.md",
+      "size": 475,
+      "sha256": "7cb54b6e686ee22921f382b212c9ec1b0727666ef4f037572b618ba1f43c4cda",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 475,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Repository_State_PP0005.json",
+      "size": 174,
+      "sha256": "a3001d61a07e8b874613d66dba0be6cc395dcee1d0977fd17bcb7aa373ecde6c",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 174,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Research_Branch_Workflow-2.json",
+      "size": 25376,
+      "sha256": "8526f7a2573eccb394e70111edc6381366c1cf513ee41da64b786b50c815ec62",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 19,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {
+        "user": 14,
+        "assistant": 5
+      },
+      "json_shape": "object",
+      "text_chars": 24950,
+      "candidate_evidence": [
+        "structured user+assistant roles",
+        "repeated serialized role fields"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Research_Branch_Workflow.json",
+      "size": 25376,
+      "sha256": "8526f7a2573eccb394e70111edc6381366c1cf513ee41da64b786b50c815ec62",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 19,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {
+        "user": 14,
+        "assistant": 5
+      },
+      "json_shape": "object",
+      "text_chars": 24950,
+      "candidate_evidence": [
+        "structured user+assistant roles",
+        "repeated serialized role fields"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/SPEC-0000_Constitutional_Registry.json",
+      "size": 423,
+      "sha256": "206f2d3d6ac60d7fe4aa7296145402e45b0b9be17850555472fcfc91856cd06d",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 423,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/SYSTEM_BOOTSTRAP_v2.0_CHATGPT.md",
+      "size": 2260,
+      "sha256": "b426cb626bad898ee2c8fabc06a0e7047554146450f9f2316b6140aebf5bf984",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 2260,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Stability structures, motivic Donaldson-Thomas invariants and cluster transformations - PDF Room.pdf",
+      "size": 1019441,
+      "sha256": "213cd8130534480ecc605de03a1087b3824eea814e762e6f4e8c6d8603f51d2f",
+      "container": "pdf",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 338377,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Structural_Emergence_of_Irreducibles_in(1).pdf",
+      "size": 493864,
+      "sha256": "e70bcd061251424bec74211f10f3b86e4bb14f689110682026925c710c28c1ab",
+      "container": "pdf",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 107106,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Structural_Emergence_of_Irreducibles_in.pdf",
+      "size": 493864,
+      "sha256": "e70bcd061251424bec74211f10f3b86e4bb14f689110682026925c710c28c1ab",
+      "container": "pdf",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 107106,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Summaries_for_the_steward.md.txt",
+      "size": 127725,
+      "sha256": "dba3f90ff24cd051dd3dec204a7d6c3cf3f8232ed3c2a8fa6fb8bb7b224c4e0d",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 66,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 125956,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/The Difference Engine Summary 8-3-26.txt",
+      "size": 3390,
+      "sha256": "2886fbe1f31d6c1ce51418be19fcdeb621c0153cb859e0b2aae1bb86bfeb547e",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 3378,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Twenty conversation .docx",
+      "size": 7700,
+      "sha256": "67cff96687cded90cbdfa127e46a63885ea9412ee77e0fa1c9ecc2bb000b6cda",
+      "container": "docx",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 1476,
+      "candidate_evidence": [
+        "conversation-bearing name plus substantive dialogue-like content"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "provisional",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Volume_I_v0.2.pdf",
+      "size": 1628,
+      "sha256": "35cdaf165c63eb261d26e9131dc7a6075f68c2d632e02d59c750d543e20c97be",
+      "container": "pdf",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 94,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Workflow_and_Evidence_Consolidation.md(1).txt",
+      "size": 145946,
+      "sha256": "71176b39c2ad2ac55bf71cb7b56460756f73c8d2821c62bfe0f4f2093f817805",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 162,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 144664,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Workflow_and_Evidence_Consolidation.md.txt",
+      "size": 145946,
+      "sha256": "71176b39c2ad2ac55bf71cb7b56460756f73c8d2821c62bfe0f4f2093f817805",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 162,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 144664,
+      "candidate_evidence": [
+        "repeated You/ChatGPT headings"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "strong",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": true
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/Writing Assistant - Difference __ Engine __ Branch V __ Human Imterface.pdf",
+      "size": 503832,
+      "sha256": "436500a2aea93e454d136bbf7354b2cd3ad818e3a9756e273fdbae482eddd937",
+      "container": "pdf",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 131122,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/anarchogre-ade-working-repository--8a5edab282632443.txt",
+      "size": 718396,
+      "sha256": "036e839af04cc0ebbaaaed19551f768e29f23fcc75ab95ebbd85400868e88bda",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 9,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 710015,
+      "candidate_evidence": [
+        "repeated serialized role fields"
+      ],
+      "conversation_candidate": true,
+      "candidate_strength": "provisional",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/census_recovery_archive.py",
+      "size": 9815,
+      "sha256": "09e773b68ffbb885492365d1ca0e52cda95ca4901fe2e470609765277702f67d",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 9809,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/chatgpt-conversation.json",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "container": "text",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/gemini-code-1785052718605.txt",
+      "size": 1675,
+      "sha256": "3cecc9a779bdd6d325e1573ca4361f40dda73c7f7af8f987096235717b6f7feb",
+      "container": "text",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 1675,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/images.jpg",
+      "size": 38586,
+      "sha256": "f1da15fe6082383288eb7188d8cb0594efd80a3c829e8057759b910009e83414",
+      "container": "binary",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/mas.965-fall-2003.zip",
+      "size": 10651244,
+      "sha256": "720f44ac6b571fe56b4440001eec78bce83284f69d7044e7c4e2434e1ab89311",
+      "container": "zip",
+      "extraction": "not_applicable",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 0,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/master_manifest_v0.2.json",
+      "size": 593,
+      "sha256": "2bfdcba7acb908da7e4acd60249d2ea0cd086b1dff5c4d2f63ba04b2c25b6114",
+      "container": "json",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "json_shape": "object",
+      "text_chars": 593,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/👌Academic Assistant Pro - Difference Engine __ Branch 0 __ Origins.pdf",
+      "size": 845689,
+      "sha256": "e6c19baf4dfb9e1a04b4c576bd5519df1bacf7bc5498a2c5bcee475e444e299a",
+      "container": "pdf",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 216037,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/👌Academic Assistant Pro - Difference Engine __ Branch II __ Research.pdf",
+      "size": 242961,
+      "sha256": "3789068d88eb2079948889c8122a33698f57bdb8ef42fffcd8bdae8bff33ae8d",
+      "container": "pdf",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 45315,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/👌Academic Assistant Pro - Difference Engine __ Branch III __ Integration.pdf",
+      "size": 852033,
+      "sha256": "02ca395f8d306b8aeb5d08a47b20c3d82c962fc0ee4b6cb8f84dd0c9d112cb73",
+      "container": "pdf",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 235230,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/👌Academic Assistant Pro - Difference Engine __ Branch IV __ Operations.pdf",
+      "size": 379098,
+      "sha256": "5bf9cabc6a00c68db062852e0d6f5bb8983dc17b3058eb78803fcb6c13890028",
+      "container": "pdf",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 58313,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    },
+    {
+      "path": "/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/👌Academic Assistant Pro - Difference __ Engine __ Branch IV Operations ADE Execution.pdf",
+      "size": 435901,
+      "sha256": "a69bca43654541078b44b7386d5a83a58569777abfe586920de17f69410cfc0a",
+      "container": "pdf",
+      "extraction": "ok",
+      "signals": {
+        "user_assistant_labels": 0,
+        "chatgpt_headings": 0,
+        "role_fields": 0,
+        "chatgpt_conversation_url": 0
+      },
+      "roles": {},
+      "text_chars": 94437,
+      "candidate_evidence": [],
+      "conversation_candidate": false,
+      "candidate_strength": "none",
+      "domain": "phone_download",
+      "known_recovery_candidate": false,
+      "known_verified_conversation": false
+    }
+  ]
+}

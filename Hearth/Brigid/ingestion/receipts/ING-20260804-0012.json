@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:52.198506-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Event_Catalog_Specification_v0.1.md",
+  "original_name": "Event_Catalog_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0012",
+  "schema_version": "0.1.0",
+  "sha256": "b570625ac49761715ef4bf76957deb5042843bbea0a8bc965c7dafe4f5bcf952",
+  "size_bytes": 5644,
+  "source_class": "manual_batch"
+}

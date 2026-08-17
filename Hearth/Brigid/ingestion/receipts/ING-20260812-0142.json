@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:10.644940-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Culture_Architecture_v1.0.json",
+  "original_name": "AKS_Culture_Architecture_v1.0.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0142",
+  "schema_version": "0.1.0",
+  "sha256": "9ab61d845f0341e5a7943baa4f6ffe3729168a3bfac2c67fa90c06be787adee6",
+  "size_bytes": 94,
+  "source_class": "manual_batch"
+}

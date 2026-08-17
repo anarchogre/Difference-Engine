@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:51.079555-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Canonical_Promotion_Specification_v0.1.md",
+  "original_name": "Canonical_Promotion_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0008",
+  "schema_version": "0.1.0",
+  "sha256": "febae23e4564ce88f779b6270c5be2fb2b1ec1f94801a9373a9b316e48417249",
+  "size_bytes": 2696,
+  "source_class": "manual_batch"
+}

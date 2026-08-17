@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0656",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:49:13.835434-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Rebuild.md/Project Space BABBAGE.md",
+    "original_name": "Project Space BABBAGE.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0656",
+    "schema_version": "0.1.0",
+    "sha256": "5cc0bd7d7ce3acbbc82fd7e7d7f14ffa72f56d937fd2c778397703246144f888",
+    "size_bytes": 5105,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

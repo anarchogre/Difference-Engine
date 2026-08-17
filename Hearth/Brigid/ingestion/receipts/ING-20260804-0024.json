@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:55.474907-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Observability_Specification_v0.1.md",
+  "original_name": "Observability_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0024",
+  "schema_version": "0.1.0",
+  "sha256": "c9c660e19409f62f6309006921b292ef1e9cbf7f4433c9a42bcb91cbe18a681a",
+  "size_bytes": 4141,
+  "source_class": "manual_batch"
+}

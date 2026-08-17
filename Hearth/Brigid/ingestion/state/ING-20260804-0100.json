@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260804-0100",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-04T18:01:48.250588-05:00",
+    "observed_path": "/storage/emulated/0/Download/GPT_Plus_Integration_Roadmap.md.txt",
+    "original_name": "GPT_Plus_Integration_Roadmap.md.txt",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260804-0100",
+    "schema_version": "0.1.0",
+    "sha256": "c3897397c4b8b9e1653ad977ad0249da1334595a5223913e7140e5191371ae10",
+    "size_bytes": 831385,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

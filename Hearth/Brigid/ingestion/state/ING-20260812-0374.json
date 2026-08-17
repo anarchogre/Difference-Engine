@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0374",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:32.291230-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Ingestion_Pipeline_Specification_v0.1.md",
+    "original_name": "Ingestion_Pipeline_Specification_v0.1.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0374",
+    "schema_version": "0.1.0",
+    "sha256": "62cd62e53dc6b24168129c3b49391641b1edd73c302ace661f92ac2d84db668e",
+    "size_bytes": 3546,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

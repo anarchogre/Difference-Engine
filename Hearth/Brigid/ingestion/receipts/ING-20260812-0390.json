@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:34.275433-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Repository_Relationship_Schema_v0.1.md",
+  "original_name": "Repository_Relationship_Schema_v0.1.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0390",
+  "schema_version": "0.1.0",
+  "sha256": "de7ee654d04a27abc6506ddbd0c13998159fe10dba76119fd6b3813f4ba6f3b4",
+  "size_bytes": 2355,
+  "source_class": "manual_batch"
+}

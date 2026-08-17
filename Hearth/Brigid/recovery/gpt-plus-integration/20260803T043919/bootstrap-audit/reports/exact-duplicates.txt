@@ -1,0 +1,6 @@
+721dd10684a3e7d55abcb84289c734e221df37d824024f8870c2a351b06fe132  ./Repository/Governance/bootstrap.md
+721dd10684a3e7d55abcb84289c734e221df37d824024f8870c2a351b06fe132  ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_SPECIFICATION_v1.md
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./.gitinfo/branches.txt
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./.gitinfo/history/branches.txt
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./standards/v1/QUEUE_STANDARD_v1.0.md
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./workspace/operational/recovery/gpt-plus-integration/20260803T043919/reports/git-branches.txt

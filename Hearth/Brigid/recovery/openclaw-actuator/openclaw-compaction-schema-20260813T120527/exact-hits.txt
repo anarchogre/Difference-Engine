@@ -1,0 +1,44 @@
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/proxy-BzhBz8iM.js:2113:	keepRecentTokens: 2e4
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/proxy-BzhBz8iM.js:2258:function findCutPoint(entries, startIndex, endIndex, keepRecentTokens) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/proxy-BzhBz8iM.js:2272:		if (accumulatedTokens >= keepRecentTokens) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/proxy-BzhBz8iM.js:2441:	const cutPoint = findCutPoint(pathEntries, boundaryStart, boundaryEnd, settings.keepRecentTokens);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/plugin-sdk/config-schema.d.ts:937:        keepRecentTokens: ZodOptional<ZodNumber>;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/plugin-sdk/config-schema.d.ts:938:        reserveTokensFloor: ZodOptional<ZodNumber>;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts:7:  keepRecentTokens?: number;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts:188:    keepRecentTokens: number;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/index-gVeC7XQ4.d.ts:860:  keepRecentTokens: number;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/index-gVeC7XQ4.d.ts:1219:  keepRecentTokens: number;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/index-gVeC7XQ4.d.ts:1256:declare function findCutPoint(entries: SessionTreeEntry[], startIndex: number, endIndex: number, keepRecentTokens: number): CutPointResult;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js:3488:		return this.settings.compaction?.keepRecentTokens ?? 2e4;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js:3494:			keepRecentTokens: this.getCompactionKeepRecentTokens()
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js:865:	"agents.defaults.compaction.keepRecentTokens": "Minimum token budget preserved from the most recent conversation window during compaction. Use higher values to protect immediate context continuity and lower values to keep more long-tail history.",
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js:866:	"agents.defaults.compaction.reserveTokensFloor": "Minimum floor enforced for reserveTokens in embedded OpenClaw compaction paths (0 disables the floor guard). Use a non-zero floor to avoid over-aggressive compression under fluctuating token estimates.",
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js:1805:	"agents.defaults.compaction.keepRecentTokens": "Compaction Keep Recent Tokens",
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js:1806:	"agents.defaults.compaction.reserveTokensFloor": "Compaction Reserve Token Floor",
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/memory-state-B0GCV1Gi.d.ts:228:  reserveTokensFloor: number;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js:1557:To prevent this, increase your compaction buffer by setting \`agents.defaults.compaction.reserveTokensFloor\` to ${computeContextAwareReserveTokensFloor(contextWindowTokens)} or higher in your config.`;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js:3138:	const reserveTokens = Math.max(0, Math.floor(params.reserveTokensFloor));
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js:3540:	const reserveTokensFloor = memoryFlushPlan?.reserveTokensFloor ?? params.cfg.agents?.defaults?.compaction?.reserveTokensFloor ?? 2e4;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js:3551:	const threshold = Math.max(contextWindowTokens - reserveTokensFloor - softThresholdTokens, serverCompactionThreshold ?? 0);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js:3587:		reserveTokensFloor,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js:3749:	const flushThreshold = contextWindowTokens - memoryFlushPlan.reserveTokensFloor - memoryFlushPlan.softThresholdTokens;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js:3803:		reserveTokensFloor: memoryFlushPlan.reserveTokensFloor,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/extensions/memory-core/index.js:81:	const reserveTokensFloor = normalizeNonNegativeInt(cfg?.agents?.defaults?.compaction?.reserveTokensFloor) ?? 2e4;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/extensions/memory-core/index.js:90:		reserveTokensFloor,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/thread-lifecycle-DSMv62L1.js:1141:	const configuredReserveTokensFloor = toNonNegativeInt(asRecord(compaction)?.reserveTokensFloor);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/zod-schema-O9ml_nmo.js:205:		keepRecentTokens: number().int().positive().optional(),
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/zod-schema-O9ml_nmo.js:206:		reserveTokensFloor: number().int().nonnegative().optional(),
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/compact-DLB4d8IL.js:1159:							preserveRecentTail: typeof params.config?.agents?.defaults?.compaction?.keepRecentTokens === "number"
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/run-attempt-CXZNKJ6y.js:4986:	const reserveTokensFloor = toNonNegativeInt(compaction?.reserveTokensFloor);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/run-attempt-CXZNKJ6y.js:4987:	if (reserveTokens !== void 0) return Math.max(reserveTokens, reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/run-attempt-CXZNKJ6y.js:4988:	return reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js:9:	const raw = cfg?.agents?.defaults?.compaction?.reserveTokensFloor;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js:27:	const configuredKeepRecentTokens = toPositiveInt(compactionCfg?.keepRecentTokens);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js:28:	let reserveTokensFloor = resolveCompactionReserveTokensFloor(params.cfg);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js:34:		reserveTokensFloor = Math.min(reserveTokensFloor, maxReserveTokens);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js:36:	let targetReserveTokens = Math.max(configuredReserveTokens ?? currentReserveTokens, reserveTokensFloor);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js:41:	if (targetKeepRecentTokens !== currentKeepRecentTokens) overrides.keepRecentTokens = targetKeepRecentTokens;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js:48:			keepRecentTokens: targetKeepRecentTokens
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/types.openclaw-CXjMEWAQ.d.ts:430:  reserveTokens?: number; /** Embedded OpenClaw keepRecentTokens budget used for cut-point selection. */
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/types.openclaw-CXjMEWAQ.d.ts:431:  keepRecentTokens?: number; /** Minimum reserve tokens enforced for embedded OpenClaw compaction (0 disables the floor). */
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/types.openclaw-CXjMEWAQ.d.ts:432:  reserveTokensFloor?: number; /** Max share of context window for history during safeguard pruning (0.1–0.9, default 0.5). */

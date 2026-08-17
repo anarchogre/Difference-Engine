@@ -1,0 +1,4 @@
+hint: The '.githooks/pre-commit' hook was ignored because it's not set as executable.
+hint: You can disable this warning with `git config set advice.ignoredHook false`.
+[master 289b620] Integrate external recovery verification
+ 1 file changed, 44 insertions(+), 2 deletions(-)

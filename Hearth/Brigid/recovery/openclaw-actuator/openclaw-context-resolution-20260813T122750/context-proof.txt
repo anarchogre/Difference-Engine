@@ -1,0 +1,154 @@
+=== CONTEXT WINDOW RESOLVER ===
+3067-}
+3068-/** Creates the visibility gate for tool result summaries. */
+3069-const createShouldEmitToolResult = (params) => {
+3070-	return createVerboseGate(params, (level) => level !== "off");
+3071-};
+3072-/** Creates the visibility gate for command/tool output streams. */
+3073-const createShouldEmitToolOutput = (params) => {
+3074-	return createVerboseGate(params, (level) => level === "full");
+3075-};
+3076-/** Sends typing signals for visible text payloads when typing is enabled. */
+3077-const signalTypingIfNeeded = async (payloads, typingSignals) => {
+3078-	if (payloads.some((payload) => hasOutboundReplyContent(payload, { trimText: true }))) await typingSignals.signalRunStart();
+3079-};
+3080-//#endregion
+3081-//#region src/auto-reply/reply/memory-flush.ts
+3082:function resolveMemoryFlushContextWindowTokens(params) {
+3083-	return resolveContextTokensForModel({
+3084-		cfg: params.cfg,
+3085-		provider: params.provider,
+3086-		model: params.modelId,
+3087-		contextTokensOverride: params.agentCfgContextTokens,
+3088-		allowAsyncLoad: false
+3089-	}) ?? 2e5;
+3090-}
+3091-function resolveMaxActiveTranscriptBytes(cfg) {
+3092-	const compaction = cfg?.agents?.defaults?.compaction;
+3093-	if (compaction?.truncateAfterCompaction !== true) return;
+3094-	const parsed = parseNonNegativeByteSize(compaction.maxActiveTranscriptBytes);
+3095-	return typeof parsed === "number" && parsed > 0 ? parsed : void 0;
+3096-}
+3097-function resolvePositiveTokenCount(value) {
+3098-	return typeof value === "number" && Number.isFinite(value) && value > 0 ? Math.floor(value) : void 0;
+3099-}
+3100-function asRecord(value) {
+3101-	return value && typeof value === "object" && !Array.isArray(value) ? value : void 0;
+3102-}
+3103-function resolveBooleanParam(sources, key) {
+3104-	for (const source of sources.toReversed()) {
+3105-		const value = source?.[key];
+3106-		if (typeof value === "boolean") return value;
+3107-	}
+3108-}
+3109-function resolvePositiveIntegerParam(sources, key) {
+3110-	for (const source of sources.toReversed()) {
+3111-		const value = source?.[key];
+3112-		if (typeof value === "number" && Number.isFinite(value) && value > 0) return Math.floor(value);
+3113-	}
+3114-}
+3115-function resolveResponsesServerCompactionThreshold(params) {
+3116-	const provider = params.provider?.trim();
+3117-	const modelId = params.modelId?.trim();
+3118-	if (!provider || !modelId) return;
+3119-	const legacyKey = legacyModelKey(provider, modelId);
+3120-	const providerConfig = params.cfg?.models?.providers?.[provider];
+3121-	const modelConfig = params.cfg?.agents?.defaults?.models?.[modelKey(provider, modelId)] ?? (legacyKey ? params.cfg?.agents?.defaults?.models?.[legacyKey] : void 0);
+3122-	const providerModelConfig = providerConfig?.models?.find((entry) => entry.id === modelId);
+3123-	const sources = [
+3124-		asRecord(providerConfig?.params),
+3125-		asRecord(providerModelConfig?.params),
+3126-		asRecord(params.cfg?.agents?.defaults?.params),
+3127-		asRecord(modelConfig?.params)
+3128-	];
+3129-	const serverCompaction = resolveBooleanParam(sources, "responsesServerCompaction");
+3130-	if (!(provider === "openai" ? serverCompaction !== false : serverCompaction === true)) return;
+3131-	return resolvePositiveIntegerParam(sources, "responsesCompactThreshold");
+3132-}
+3133-function resolveMemoryFlushGateState(params) {
+3134-	if (!params.entry) return null;
+3135-	const totalTokens = resolvePositiveTokenCount(params.tokenCount) ?? resolveFreshSessionTotalTokens(params.entry);
+3136-	if (!totalTokens || totalTokens <= 0) return null;
+3137-	const contextWindow = Math.max(1, Math.floor(params.contextWindowTokens));
+3138-	const reserveTokens = Math.max(0, Math.floor(params.reserveTokensFloor));
+3139-	const softThreshold = Math.max(0, Math.floor(params.softThresholdTokens));
+3140-	const threshold = Math.max(0, contextWindow - reserveTokens - softThreshold, Math.floor(params.minimumThresholdTokens ?? 0));
+3141-	if (threshold <= 0) return null;
+3142-	return {
+3143-		entry: params.entry,
+3144-		totalTokens,
+3145-		threshold
+3146-	};
+3147-}
+3148-function shouldRunMemoryFlush(params) {
+3149-	const state = resolveMemoryFlushGateState(params);
+3150-	if (!state || state.totalTokens < state.threshold) return false;
+3151-	if (hasAlreadyFlushedForCurrentCompaction(state.entry)) return false;
+3152-	return true;
+
+=== RESOLVER CALLSITE ===
+	if (!entry?.sessionId) return entry ?? params.sessionEntry;
+	const isCli = followupUsesCliRuntime({
+		cfg: params.cfg,
+		followupRun: params.followupRun,
+		sessionEntry: entry
+	});
+	if (params.isHeartbeat || isCli) return entry ?? params.sessionEntry;
+	if (followupUsesCodexRuntime({
+		cfg: params.cfg,
+		followupRun: params.followupRun,
+		sessionEntry: entry,
+		sessionKey: params.sessionKey,
+		runtimePolicySessionKey: params.runtimePolicySessionKey
+	})) {
+		logVerbose(`preflightCompaction skipped: sessionKey=${params.sessionKey} runtime=codex reason=codex_native_auto_compaction`);
+		return entry ?? params.sessionEntry;
+	}
+	const contextWindowTokens = resolveMemoryFlushContextWindowTokens({
+		cfg: params.cfg,
+		provider: resolveFollowupContextConfigProvider({
+			cfg: params.cfg,
+			followupRun: params.followupRun,
+			sessionEntry: entry,
+			sessionKey: params.sessionKey,
+			runtimePolicySessionKey: params.runtimePolicySessionKey
+		}),
+		modelId: params.followupRun.run.model ?? params.defaultModel,
+		agentCfgContextTokens: params.agentCfgContextTokens
+	});
+	const memoryFlushPlan = resolveMemoryFlushPlan({ cfg: params.cfg });
+	const reserveTokensFloor = memoryFlushPlan?.reserveTokensFloor ?? params.cfg.agents?.defaults?.compaction?.reserveTokensFloor ?? 2e4;
+	const softThresholdTokens = memoryFlushPlan?.softThresholdTokens ?? 4e3;
+	const freshPersistedTokens = resolveFreshSessionTotalTokens(entry);
+	const persistedTotalTokens = entry.totalTokens;
+	const hasPersistedTotalTokens = typeof persistedTotalTokens === "number" && Number.isFinite(persistedTotalTokens) && persistedTotalTokens > 0;
+	const promptTokenEstimate = estimatePromptTokensForMemoryFlush(params.promptForEstimate ?? params.followupRun.prompt);
+	const serverCompactionThreshold = resolveResponsesServerCompactionThreshold({
+		cfg: params.cfg,
+		provider: params.followupRun.run.provider,
+		modelId: params.followupRun.run.model ?? params.defaultModel
+	});
+
+=== CONTEXT REFERENCES ===
+1510:function computeContextAwareReserveTokensFloor(contextWindow) {
+1511:	if (typeof contextWindow !== "number" || contextWindow <= 0) return DEFAULT_RESERVE_TOKENS_FLOOR;
+1512:	if (contextWindow >= 1e6) return 1e5;
+1513:	if (contextWindow >= 2e5) return 5e4;
+1514:	if (contextWindow >= 1e5) return 35e3;
+1546:	const contextWindow = modelWindow ?? trustedSessionWindow;
+1551:	if (agentCap !== void 0 && contextWindow !== void 0) return Math.min(agentCap, contextWindow);
+1552:	return agentCap ?? contextWindow;
+1554:function buildContextOverflowResetHint(contextWindowTokens) {
+1557:To prevent this, increase your compaction buffer by setting \`agents.defaults.compaction.reserveTokensFloor\` to ${computeContextAwareReserveTokensFloor(contextWindowTokens)} or higher in your config.`;
+3082:function resolveMemoryFlushContextWindowTokens(params) {
+3137:	const contextWindow = Math.max(1, Math.floor(params.contextWindowTokens));
+3140:	const threshold = Math.max(0, contextWindow - reserveTokens - softThreshold, Math.floor(params.minimumThresholdTokens ?? 0));
+3527:	const contextWindowTokens = resolveMemoryFlushContextWindowTokens({
+3551:	const threshold = Math.max(contextWindowTokens - reserveTokensFloor - softThresholdTokens, serverCompactionThreshold ?? 0);
+3582:	logVerbose(`preflightCompaction check: sessionKey=${params.sessionKey} tokenCount=${tokenCountForCompaction ?? freshPersistedTokens ?? "undefined"} contextWindow=${contextWindowTokens} threshold=${threshold} serverCompactionThreshold=${serverCompactionThreshold ?? "undefined"} isHeartbeat=${params.isHeartbeat} isCli=${isCli} persistedFresh=${entry?.totalTokensFresh === true} transcriptPromptTokens=${transcriptPromptTokens ?? "undefined"} promptTokensEst=${promptTokenEstimate ?? "undefined"} activeTranscriptBytes=${activeTranscriptBytes ?? "undefined"} maxActiveTranscriptBytes=${maxActiveTranscriptBytes ?? "undefined"} sizeTrigger=${shouldCompactByTranscriptBytes}`);
+3586:		contextWindowTokens,
+3648:			contextTokenBudget: contextWindowTokens,
+3733:	const contextWindowTokens = resolveMemoryFlushContextWindowTokens({
+3749:	const flushThreshold = contextWindowTokens - memoryFlushPlan.reserveTokensFloor - memoryFlushPlan.softThresholdTokens;
+3798:	logVerbose(`memoryFlush check: sessionKey=${params.sessionKey} tokenCount=${tokenCountForFlush ?? "undefined"} contextWindow=${contextWindowTokens} threshold=${flushThreshold} isHeartbeat=${params.isHeartbeat} isCli=${isCli} memoryFlushWritable=${memoryFlushWritable} compactionCount=${entry?.compactionCount ?? 0} memoryFlushCompactionCount=${entry?.memoryFlushCompactionCount ?? "undefined"} persistedPromptTokens=${persistedPromptTokens ?? "undefined"} persistedFresh=${entry?.totalTokensFresh === true} promptTokensEst=${promptTokenEstimate ?? "undefined"} transcriptPromptTokens=${transcriptPromptTokens ?? "undefined"} transcriptOutputTokens=${transcriptOutputTokens ?? "undefined"} projectedTokenCount=${projectedTokenCount ?? "undefined"} transcriptBytes=${transcriptByteSize ?? "undefined"} forceFlushTranscriptBytes=${forceFlushTranscriptBytes} forceFlushByTranscriptSize=${shouldForceFlushByTranscriptSize}`);
+3802:		contextWindowTokens,

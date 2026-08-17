@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260811-0013",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-11T22:18:45.876787-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Construction_Kernel_Load_and_Implementation.md.txt",
+    "original_name": "Construction_Kernel_Load_and_Implementation.md.txt",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260811-0013",
+    "schema_version": "0.1.0",
+    "sha256": "e1f57e0c6f2017852a177418718bead00c6d3cd83289f3a6b719cf8006747c05",
+    "size_bytes": 188854,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

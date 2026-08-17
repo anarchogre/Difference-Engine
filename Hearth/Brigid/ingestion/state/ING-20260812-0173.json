@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0173",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:12.724036-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Reasoning_Manifest_v1.json",
+    "original_name": "AKS_Reasoning_Manifest_v1.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0173",
+    "schema_version": "0.1.0",
+    "sha256": "594cfad03fd7a670eb4110d22f750b42ed24b4b17d896bf739fe45b5c4440751",
+    "size_bytes": 394,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

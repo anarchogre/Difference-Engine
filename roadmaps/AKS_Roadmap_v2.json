@@ -1,0 +1,17 @@
+{
+  "kernel": "Phases I-V",
+  "future_phases": [
+    "VI Developmental Reasoning",
+    "VII Evidence & Screening",
+    "VIII Adaptive Intervention",
+    "IX Knowledge Accumulation",
+    "X Decision Support"
+  ],
+  "development_strategy": [
+    "Observation Language",
+    "Developmental Constructs",
+    "Evidence Mapping",
+    "Screening Frameworks",
+    "Adaptive Intervention"
+  ]
+}

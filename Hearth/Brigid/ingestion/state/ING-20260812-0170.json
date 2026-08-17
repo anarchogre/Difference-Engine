@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0170",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:12.511484-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Reasoning_Contracts_v1.1-1.json",
+    "original_name": "AKS_Reasoning_Contracts_v1.1-1.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0170",
+    "schema_version": "0.1.0",
+    "sha256": "532dd72192969b3466deb07e7a83cf161d9100b68f11ff6d160bf8fe0d364562",
+    "size_bytes": 283,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

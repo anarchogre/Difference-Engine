@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/bootstrap.py", line 5, in <module>
+    from .artifacts import bootstrap
+ImportError: cannot import name 'bootstrap' from 'ade.kernel.bootstrap_loader.artifacts' (/storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/artifacts.py)

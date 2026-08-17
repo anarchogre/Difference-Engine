@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:48.948839-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/REPOSITORY_GOVERNANCE.md",
+  "original_name": "REPOSITORY_GOVERNANCE.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0499",
+  "schema_version": "0.1.0",
+  "sha256": "c3a758597e69de84917f9f62ef01b7a66769f3111abd39b4395c2b568fe717df",
+  "size_bytes": 461,
+  "source_class": "manual_batch"
+}

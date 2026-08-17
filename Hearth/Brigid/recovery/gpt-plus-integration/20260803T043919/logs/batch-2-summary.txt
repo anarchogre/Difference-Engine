@@ -1,0 +1,54 @@
+RUN=workspace/operational/recovery/gpt-plus-integration/20260803T043919
+CANDIDATES=34
+BOOTSTRAP_FILES=28
+CONSTITUTIONAL_FILES=1
+OPERATIONAL_FILES=0
+QUEUE_FILES=4
+BRANCH_FILES=3
+DUPLICATE_HASHES=2
+
+BOOTSTRAP CANDIDATES
+./Repository/Governance/bootstrap.md
+./ade/kernel/bootstrap_loader/__pycache__/bootstrap.cpython-313.pyc
+./ade/kernel/bootstrap_loader/__pycache__/queue.cpython-313.pyc
+./ade/kernel/bootstrap_loader/bootstrap.py
+./ade/kernel/bootstrap_loader/queue.py
+./ade/kernel/tests/__pycache__/test_bootstrap_loader.cpython-313.pyc
+./ade/kernel/tests/test_bootstrap_loader.py
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_API_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONFIGURATION_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONTRACT_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_DEPENDENCIES_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_DISCOVERY_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_ERRORS_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_FILE_LAYOUT_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_GLOSSARY_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_IMPLEMENTATION_PLAN_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_INTERFACE_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_LIFECYCLE_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_MODULES_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_OUTPUT_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_PSEUDOCODE_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_PYTHON_MAPPING_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_SEQUENCE_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_SPECIFICATION_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_STATE_MACHINE_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_TEST_PLAN_v1.md
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_WORKFLOW_v1.md
+./workspace/operational/bootstrap/BOOTSTRAP.md
+
+GIT STATE
+## No commits yet on master
+?? .de/
+?? .githooks/
+?? .gitinfo/
+?? .meta/
+?? Repository/
+?? ade/
+?? architecture/
+?? inventory/
+?? logs/
+?? queue/
+?? scripts/
+?? standards/
+?? workspace/

@@ -1,0 +1,15 @@
+{
+  "observations": [],
+  "patterns": [],
+  "relationships": [],
+  "entities": [],
+  "sources": [],
+  "volumes": [
+    "Volume I - Governance",
+    "Volume II - Architecture",
+    "Volume III - Observation Database",
+    "Volume IV - Patterns & Relationships",
+    "Volume V - Handbook Source",
+    "Volume VI - Disaster Recovery"
+  ]
+}

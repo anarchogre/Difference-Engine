@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:59.822840-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Repository_Standards_v0.1.md",
+  "original_name": "Repository_Standards_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0040",
+  "schema_version": "0.1.0",
+  "sha256": "7c4805ea55151a1441b979f2a5483746670a9705799d1e6e4170da2d62248922",
+  "size_bytes": 4047,
+  "source_class": "manual_batch"
+}

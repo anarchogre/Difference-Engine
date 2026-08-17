@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "file_library": {
+    "manifest_exists": true,
+    "externally_verified": false,
+    "status": "pending"
+  },
+  "project_configuration": {
+    "manifest_exists": true,
+    "externally_verified": false,
+    "status": "pending"
+  }
+}

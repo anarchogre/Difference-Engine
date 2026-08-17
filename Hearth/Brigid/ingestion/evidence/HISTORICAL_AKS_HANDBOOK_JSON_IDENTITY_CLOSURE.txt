@@ -1,0 +1,17 @@
+status=AKS_HANDBOOK_STRUCTURED_IDENTITY_RESOLVED
+promotion=NONE
+
+artifact_paths=4
+messages_per_artifact=55
+unique_normalized_message_fingerprints=1
+
+normalized_message_fingerprint=77507137133b1fb4356d89ce3c6cbed32cf8f3a8b11ac16c7a8c0674485f712d
+
+artifact_1=AKS_AOS_1_0__All_Previous_data_and_conv.json
+artifact_2=AKS_AOS_Repository.json
+artifact_3=Handbook_Project_Organization (1).json
+artifact_4=Handbook_Project_Organization.json
+
+finding=All four artifacts contain the same normalized ordered 55-message sequence.
+finding=The four paths represent one underlying structured source/conversation at the message-identity level.
+finding=Filename and repository-role differences do not establish distinct conversation identity.

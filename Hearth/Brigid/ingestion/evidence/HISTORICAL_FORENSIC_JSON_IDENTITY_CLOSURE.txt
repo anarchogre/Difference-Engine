@@ -1,0 +1,26 @@
+status=STRUCTURED_FORENSIC_JSON_IDENTITY_RESOLVED
+promotion=NONE
+
+structured_json_artifacts=3
+underlying_structured_conversations=1
+
+exact_representation_pair=Forensic_Parser_Workflow_full_chat.json|Forensic_Parser_Workflow_reverse_parse_901pm_7_23_26.json
+exact_aligned_messages=162_of_162
+
+variant_artifact=Forensic_Parser_Workflow.json
+variant_aligned_messages=161_of_162
+variant_message_index=26
+variant_role=assistant
+variant_difference=ENCODING_CORRUPTION
+clean_sequence=├──
+corrupted_sequence=├��─
+semantic_divergence=NONE_OBSERVED
+
+forensic_parser_workflow_start_json_messages=0
+forensic_parser_workflow_start_source_text_chars=5564
+forensic_parser_workflow_start_vs_structured_8word_coverage_pct=0.00
+forensic_parser_workflow_start_identity=OPEN
+
+finding=The three 162-message structured Forensic Parser Workflow JSON artifacts represent one underlying conversation.
+finding=The sole structured variance is localized character-encoding corruption in a box-drawing glyph.
+finding=forensic_parser_workflow_start remains a separate unresolved conversation-bearing source artifact.

@@ -1,0 +1,4 @@
+ADE-Working-Repository-/REPOSITORY_FILES.txt
+ADE-Working-Repository-/REPOSITORY_TREE.json
+	THE ACTIVE STATE SNAPSHOT.docx
+👌Academic Assistant Pro - Custom GPT Design Process

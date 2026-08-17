@@ -1,0 +1,4 @@
+hint: The '.githooks/pre-commit' hook was ignored because it's not set as executable.
+hint: You can disable this warning with `git config set advice.ignoredHook false`.
+[master e324b78] Expand deterministic cross-domain drift detection
+ 1 file changed, 679 insertions(+), 84 deletions(-)

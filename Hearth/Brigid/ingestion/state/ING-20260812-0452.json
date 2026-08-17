@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0452",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:42.417792-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/ARTIFACT_POLICY.md",
+    "original_name": "ARTIFACT_POLICY.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0452",
+    "schema_version": "0.1.0",
+    "sha256": "33f328ae5da428b748a1f413df629e3284c7148e123f8aae48f5c48235e9401a",
+    "size_bytes": 275,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

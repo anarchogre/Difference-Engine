@@ -1,0 +1,120 @@
+=== REPOSITORY VALIDATION ===
+2026-08-07T21:23:51-05:00
+
+=== HEAD ===
+b39d2138800c6df9df173321c30fb7ccfe157d71
+
+=== BRANCH ===
+master
+
+=== LOCAL / REMOTE REFS ===
+error: unknown option `remotes'
+usage: git show-ref [--head] [-d | --dereference]
+                    [-s | --hash[=<n>]] [--abbrev[=<n>]] [--branches] [--tags]
+                    [--] [<pattern>...]
+   or: git show-ref --verify [-q | --quiet] [-d | --dereference]
+                    [-s | --hash[=<n>]] [--abbrev[=<n>]]
+                    [--] [<ref>...]
+   or: git show-ref --exclude-existing[=<pattern>]
+   or: git show-ref --exists <ref>
+
+    --[no-]tags           only show tags (can be combined with --branches)
+    --[no-]branches       only show branches (can be combined with --tags)
+    --[no-]exists         check for reference existence without resolving
+    --[no-]verify         stricter reference checking, requires exact ref path
+    --[no-]head           show the HEAD reference, even if it would be filtered out
+    -d, --[no-]dereference
+                          dereference tags into object IDs
+    -s, --[no-]hash[=<n>] only show SHA1 hash using <n> digits
+    --[no-]abbrev[=<n>]   use <n> digits to display object names
+    -q, --[no-]quiet      do not print results to stdout (useful with --verify)
+    --exclude-existing[=<pattern>]
+                          show refs from stdin that aren't in local repository
+
+b39d2138800c6df9df173321c30fb7ccfe157d71 refs/heads/master
+a081b555ba5602ccc0c16011ebc1688d2cb31a58 refs/remotes/origin/master
+794ae2f186cc74c3ada4027364cd2eb5be51e8eb refs/tags/bootstrap-v1.0
+c46033689da4c6fff8c99e439955858f72e2e81c refs/tags/drift-detection-v1
+0a5f5f8e2529fdd286c8edc0295c9ead011ff6d1 refs/tags/epoch-2-foundation-complete
+9bb6e472138b3b0f139e4f6b5ff18bbfb025ff38 refs/tags/phase-4-start
+ad191fc1ff60def05fde1e9a2bf8b9bd7862bcd1 refs/tags/repository-bootstrap-v1
+
+=== A081 ANCESTOR OF B39D ===
+ANCESTRY=PASS
+
+=== COMMITS SINCE REMOTE ===
+b39d213 Request Head Steward revision confirmation
+2553940 Classify Steward Core source authority
+a2b0e90 Record Head Steward process review
+eb010b7 Request Head Steward review of Steward Core sync
+519d307 Draft Steward Core synchronization contract
+0df5547 Record Termux clipboard integration
+99d2a05 Record preservation point PP-006
+02cfb89 Record Termux Git hook recovery
+04ce970 Preserve mobile vocabulary integration evidence
+
+=== WORKTREE STATUS ===
+?? "BOOTSTRAP/BOOTSTRAP - CONTINUE - INGESTER EPOCH v1.0 - 8-4-26-1300.md"
+?? "BOOTSTRAP/BOOTSTRAP \342\200\224 Foundational Reduction Continuation.md"
+?? BOOTSTRAP/BST-CBD-OPS_Operational_Bedrock_and_Ingester_Execution_v0.1.0.md
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Architectural Philosophy And Meta Synthsis.md"
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Computational Bedrock.md"
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Session Continuation Bootstrap - Epoch II - Repository Archaeology - Into - Constitutional Synthesis.md"
+?? "BOOTSTRAP/Bootstrap - Epoch II \342\200\224 Post Milestone 002 - Constitutional Kernel - Operational Bootstrap.md"
+?? "BOOTSTRAP/Bootstrap vNext \342\200\224 Candidate Constitutional Bootstrap Additions.md"
+?? BOOTSTRAP/Branches/
+?? "BOOTSTRAP/Computational Bedrock Bootstrap Ingester Recovery Continuation.md"
+?? BOOTSTRAP/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md
+?? "BOOTSTRAP/Load The Constitutional Kernel.md"
+?? "BOOTSTRAP/Recover Existing Injestion Files.md"
+?? BOOTSTRAP_BRANCHES.txt
+?? BOOTSTRAP_FILES.txt
+?? BOOTSTRAP_FOLDER.txt
+?? BOOTSTRAP_TOP.txt
+?? CONVERSATION_CORPUS_VERIFIED.json
+?? ENTRY_POINTS.txt
+?? INGESTER_CODE.tar
+?? INGESTION_FILES.txt
+?? MILESTONE_002_CONVERSATION_CORPUS.md
+?? PHONE_ACTIVE_STATE.txt
+?? REPOSITORY_STATUS.txt
+?? ade/services/
+?? ade/tests/
+?? architecture/services/
+?? discover_conversations.py
+?? "evidence/Branch 0 - Origins - Computational Bedrock Reduction.md"
+?? "evidence/Branch II - Research - Computational Bedrock \342\200\224 Cross-Branch Synthesis for Discussion.md"
+?? "evidence/Branch IV - Operations - Computational Bedrock.md"
+?? "evidence/Branch V - Human Interface - Computational Bedrock.md"
+?? evidence/CORE_INTERFACE_PANE_REQUIREMENT_CANDIDATE.md
+?? evidence/MEMORY_PALACE_SIMONIDES_PANE_CANDIDATE.md
+?? evidence/ingestion/
+?? governance/
+?? inventory/initialization/
+?? queue/ingestion/
+?? workspace/operational/census/
+?? workspace/operational/corpus/
+?? workspace/operational/current/state-model-candidates.lst
+?? workspace/operational/current/state-references.clean.out
+?? workspace/operational/current/state-references.out
+?? workspace/operational/identity/
+?? workspace/operational/ingestion/
+?? workspace/operational/mobile_bridge/
+?? workspace/operational/repository_state/
+
+=== OBJECT DATABASE ===
+dangling blob 648c41df18180de5ace38e395ecbdb325a159752
+dangling blob b8b0278f27e3b59923c1a7cc57776b9cfa24e898
+dangling blob 5201f476b66f66feb732772c96cd9966a2f1ff45
+dangling blob f0d966a4c063afd6539db505c0230dd957a16cfe
+dangling blob 227e28f5f4cc5885c8f247b0e7dcbed570505d6c
+dangling blob 3096679fbfb0c444872034a212f9502a42927c9d
+dangling blob 396eb994016f819eb99badb810cda7405717db95
+dangling blob 75727ff4b98e752976c805bd3f64a03f3919b844
+dangling blob 7d3ed2796da3f4e39c633d88fd3b1ae2b0be1ffa
+dangling blob bb82be5cb045522df7c0827e8bcbdbb1e43367ed
+dangling blob 69b304ac6ad4381222529a1ac0d7804ddbd9781f
+dangling blob 9a57319f0a0c42263e360473ace25bd63f053f05
+
+=== HOOK PATH ===
+/data/data/com.termux/files/home/.local/libexec/DifferenceEngine-hooks

@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:12.301548-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Phylactery_PreFreeze_Baseline_v0.1.json",
+  "original_name": "AKS_Phylactery_PreFreeze_Baseline_v0.1.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0167",
+  "schema_version": "0.1.0",
+  "sha256": "aa376b3c093068a75df41a17a3ee81c0c08012dbf2fe1fd467870cd8d4331c2b",
+  "size_bytes": 1081,
+  "source_class": "manual_batch"
+}

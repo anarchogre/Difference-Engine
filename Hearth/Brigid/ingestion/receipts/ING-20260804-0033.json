@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:58.044468-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Queue_Specification_v0.1.md",
+  "original_name": "Queue_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0033",
+  "schema_version": "0.1.0",
+  "sha256": "03ce352b3bb7ac5024227ec200a2044b87e18c906f04d48f5f285d46b754b232",
+  "size_bytes": 3732,
+  "source_class": "manual_batch"
+}

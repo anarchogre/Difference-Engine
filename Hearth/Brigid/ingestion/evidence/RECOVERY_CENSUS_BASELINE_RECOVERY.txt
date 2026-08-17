@@ -1,0 +1,23 @@
+=== RECOVERED CONVERSATION CENSUS BASELINE ===
+recovered_utc=2026-08-08T11:13:49Z
+
+=== RECOVERED ARTIFACTS ===
+09e773b68ffbb885492365d1ca0e52cda95ca4901fe2e470609765277702f67d  workspace/operational/ingestion/recovery/census_baseline/census_recovery_archive.py
+4eaab44b130d6b06873791794fb3f022562489eb9f349349d76b5b4ea716f8c2  workspace/operational/ingestion/recovery/census_baseline/RECOVERY_CANDIDATE_CENSUS.json
+a6d41f9106b4c1d799e9da6fea2ec4a3c683f0789b994cfa2c1706130afb77ac  workspace/operational/ingestion/recovery/census_baseline/RECOVERY_CANDIDATE_CENSUS.md
+
+=== REFERENCED SOURCE ARCHIVES ===
+0bf8e2742484b83649ad11e5a7edf86b252f9ffec420d66189e03aa9dfa9dd60  /home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/ADE/ADE-Working-Repository-/Archive/Archive_Recovery.zip
+0bf8e2742484b83649ad11e5a7edf86b252f9ffec420d66189e03aa9dfa9dd60  /home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Archive_Recovery.zip
+
+=== EXPECTED BASELINE ===
+archive_sha256=0bf8e2742484b83649ad11e5a7edf86b252f9ffec420d66189e03aa9dfa9dd60
+archive_files=394
+conversation_candidates=45
+strong_candidates=20
+provisional_candidates=25
+duplicate_families=14
+duplicate_paths=55
+
+STATUS=RECOVERED_NOT_RERUN
+PROMOTION=NONE

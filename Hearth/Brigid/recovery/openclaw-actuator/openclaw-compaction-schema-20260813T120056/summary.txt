@@ -1,0 +1,38 @@
+PACKAGE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw
+SOURCE=/home/reckless-ideator/Difference-Engine/workspace/operational/recovery/openclaw-actuator/openclaw-compaction-schema-20260813T120056/schema-hits.txt
+
+317:2427: 	for (let i = pathEntries.length - 1; i >= 0; i--) if (pathEntries[i].type === "compaction") {
+319:2428: 		prevCompactionIndex = i;
+328:2433: 	if (prevCompactionIndex >= 0) {
+329:2434: 		const prevCompaction = pathEntries[prevCompactionIndex];
+330:2435: 		previousSummary = prevCompaction.summary;
+331:2436: 		const firstKeptEntryIndex = pathEntries.findIndex((entry) => entry.id === prevCompaction.firstKeptEntryId);
+333:2437: 		boundaryStart = firstKeptEntryIndex >= 0 ? firstKeptEntryIndex : prevCompactionIndex + 1;
+341:2441: 	const cutPoint = findCutPoint(pathEntries, boundaryStart, boundaryEnd, settings.keepRecentTokens);
+343:2443: 	if (!firstKeptEntry?.id) return err(new CompactionError("invalid_session", "First kept entry has no UUID - session may need migration"));
+350:2448: 		const msg = getMessageFromEntryForCompaction(pathEntries[i]);
+356:2453: 		const msg = getMessageFromEntryForCompaction(pathEntries[i]);
+359:2456: 	const fileOps = extractFileOperations(messagesToSummarize, pathEntries, prevCompactionIndex);
+368:2483: /** Generate compaction summary data from prepared session history. */
+371:2486: 	if (!firstKeptEntryId) return err(new CompactionError("invalid_session", "First kept entry has no UUID - session may need migration"));
+375:2489: 		const historyResult = messagesToSummarize.length > 0 ? await generateSummary(messagesToSummarize, model, settings.reserveTokens, apiKey, headers, signal, customInstructions, previousSummary, thinkingLevel, streamFn, runtime) : ok("No prior history.");
+378:2491: 		const turnPrefixResult = await generateTurnPrefixSummary(turnPrefixMessages, model, settings.reserveTokens, apiKey, headers, signal, thinkingLevel, streamFn, runtime);
+384:2495: 		const summaryResult = await generateSummary(messagesToSummarize, model, settings.reserveTokens, apiKey, headers, signal, customInstructions, previousSummary, thinkingLevel, streamFn, runtime);
+392:2511: async function generateTurnPrefixSummary(messages, model, reserveTokens, apiKey, headers, signal, thinkingLevel, streamFn, runtime) {
+393:2512: 	const maxTokens = Math.min(Math.floor(.5 * reserveTokens), model.maxTokens > 0 ? model.maxTokens : Number.POSITIVE_INFINITY);
+402:2527: //#region packages/agent-core/src/harness/compaction/branch-summarization.ts
+410:2557: 		case "compaction": return asAgentMessage(createCompactionSummaryMessage(entry.summary, entry.tokensBefore, entry.timestamp));
+418:2583: 			if (entry.type === "compaction" || entry.type === "branch_summary") {
+426:2634: 	const { model, apiKey, headers, signal, customInstructions, replaceInstructions, reserveTokens = 16384 } = options;
+427:2635: 	const { messages, fileOps } = prepareBranchEntries(entries, (model.contextWindow || 128e3) - reserveTokens);
+436:2844: 	if (cause instanceof CompactionError) return new AgentHarnessError("compaction", cause.message, cause);
+444:3290: 		this.phase = "compaction";
+447:3293: 			if (!model) throw new AgentHarnessError("invalid_state", "No model set for compaction");
+450:3295: 			if (!auth) throw new AgentHarnessError("auth", "No auth available for compaction");
+453:3297: 			const preparationResult = prepareCompaction(branchEntries, DEFAULT_COMPACTION_SETTINGS);
+457:3300: 			if (!preparation) throw new AgentHarnessError("compaction", "Nothing to compact");
+466:3308: 			if (hookResult?.cancel) throw new AgentHarnessError("compaction", "Compaction cancelled");
+467:3309: 			const provided = hookResult?.compaction;
+476:3316: 			const entryId = await this.session.appendCompaction(result.summary, result.firstKeptEntryId, result.tokensBefore, result.details, provided !== void 0);
+478:3318: 			if (entry?.type === "compaction") await this.emitOwn({
+481:3320: 				compactionEntry: entry,

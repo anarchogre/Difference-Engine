@@ -1,0 +1,83 @@
+Moving ﬁles in GitHub                                           https://chatgpt.com/c/6a647a8e-5558-83ea-a723-a2ae78eefa95
+
+
+
+
+               ChatGPT
+
+                                                       Today 3:55 AM
+
+
+
+                                                         How do I tediously move files in GitHub again?
+
+
+
+            GitHub itself still doesn't have a simple "Move" button in the web interface. The tedious
+            way is:
+              1. Navigate to the file.
+              2. Click the     Edit (pencil) button.
+              3. In the filename field at the top, edit the path. For example, change:
+
+
+                      docs/oldfile.md
+
+
+                 to
+
+
+                      handbook/reference/oldfile.md
+
+
+                 You can also rename the file at the same time.
+              4. Scroll to the bottom.
+              5. Enter a commit message.
+              6. Click Commit changes.
+
+            GitHub treats changing the path as moving the file.
+
+            To move many files
+            Unfortunately, the GitHub web UI requires you to do this one file at a time. There is no bulk
+            move feature.
+
+            If you're moving dozens or hundreds of files, it's much faster to use Git locally:
+
+
+                   Bash
+
+               git mv old/path/file.md new/path/file.md
+               git commit -m "Reorganize repository"
+               git push
+
+
+            or even:
+
+
+1 of 2                                                                                                       7/25/26, 10:47
+Moving ﬁles in GitHub                                         https://chatgpt.com/c/6a647a8e-5558-83ea-a723-a2ae78eefa95
+
+
+
+
+                   Bash
+
+               git mv oldfolder/* newfolder/
+
+
+            Git preserves rename history quite well when using git mv .
+
+            Using the GitHub Mobile app
+            The mobile app is even more limited. As far as I know, it does not support moving files
+            directly. You'll either need to:
+              • use the GitHub website in your mobile browser (preferably "Desktop site"), or
+              • use Git locally on a computer.
+
+            Given what I know about your AKS repository work, if you're planning to reorganize a large
+            library of JSONs and documents, I'd avoid doing it through the web interface unless it's
+            just a handful of files. Git locally will save you a tremendous amount of repetitive work.
+
+
+
+
+2 of 2                                                                                                     7/25/26, 10:47
+

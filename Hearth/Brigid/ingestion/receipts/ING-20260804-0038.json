@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:59.278816-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Repository_Maturity_Model_v0.1.md",
+  "original_name": "Repository_Maturity_Model_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0038",
+  "schema_version": "0.1.0",
+  "sha256": "e19317904d9f05e34dbad0d0eb23aec06621985e9c0342fee2f47ea0cb2cbaef",
+  "size_bytes": 3806,
+  "source_class": "manual_batch"
+}

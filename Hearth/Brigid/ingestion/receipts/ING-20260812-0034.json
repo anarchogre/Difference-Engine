@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:05.358687-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-GOV-0002_Evidence_Driven_Evolution.json",
+  "original_name": "AKS-GOV-0002_Evidence_Driven_Evolution.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0034",
+  "schema_version": "0.1.0",
+  "sha256": "e496e3d1f3b095f08f9a5d205da632e552e8828d869f1a7a475c4682ddf91929",
+  "size_bytes": 366,
+  "source_class": "manual_batch"
+}

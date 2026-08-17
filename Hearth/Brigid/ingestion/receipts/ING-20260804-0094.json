@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/plain",
+  "observed_at": "2026-08-04T18:01:43.184715-05:00",
+  "observed_path": "/storage/emulated/0/Download/Constitutional_Kernel_Initialization.md.txt",
+  "original_name": "Constitutional_Kernel_Initialization.md.txt",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260804-0094",
+  "schema_version": "0.1.0",
+  "sha256": "3765fbf5380a3006353f07da2ea82f06b37f200e09ce327c29deff99f5351c1f",
+  "size_bytes": 212780,
+  "source_class": "conversation"
+}

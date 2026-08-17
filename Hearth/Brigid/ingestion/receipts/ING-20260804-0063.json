@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:02:04.341218-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Contract_Specification_v0.1.md",
+  "original_name": "Workflow_Service_Contract_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0063",
+  "schema_version": "0.1.0",
+  "sha256": "4a8183d51b02d3d7908fca1fcb17c60d2450821c6d6e9da568b68f323a3907a8",
+  "size_bytes": 5844,
+  "source_class": "manual_batch"
+}

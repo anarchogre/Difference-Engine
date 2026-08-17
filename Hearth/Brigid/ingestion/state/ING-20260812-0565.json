@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0565",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:58.920759-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/PR-INDEX-0001_Draft_0.2_Canonical.json",
+    "original_name": "PR-INDEX-0001_Draft_0.2_Canonical.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0565",
+    "schema_version": "0.1.0",
+    "sha256": "6bbbe132e7dc0aa73d5761c47c10704bb73256a7a5ccc29619ada6682e69e180",
+    "size_bytes": 599,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

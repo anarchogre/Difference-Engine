@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0229",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:17.197008-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Preservation-Points-RC-GOLD/PP-0054_Governance_Manifest.json",
+    "original_name": "PP-0054_Governance_Manifest.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0229",
+    "schema_version": "0.1.0",
+    "sha256": "81809534a096cc9187e10a48f1a03b816900ddd66d9127627d5c794a22731413",
+    "size_bytes": 452,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

@@ -1,0 +1,44 @@
+--- workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair-final/backups/verifier.py.before	2026-08-03 11:31:30.166831133 -0500
++++ ade/kernel/bootstrap_loader/verifier.py	2026-08-03 11:31:30.273497810 -0500
+@@ -271,35 +271,35 @@
+                 )
+             )
+ 
+-            artifacts = library_index.get(
++            library_artifacts = library_index.get(
+                 "artifacts",
+                 [],
+             )
+ 
+             identifiers = [
+                 artifact.get("id")
+-                for artifact in artifacts
++                for artifact in library_artifacts
+             ]
+ 
+             names = [
+                 artifact.get("canonical_name")
+-                for artifact in artifacts
++                for artifact in library_artifacts
+             ]
+ 
+             library_governance_ok = (
+-                bool(artifacts)
++                bool(library_artifacts)
+                 and len(identifiers)
+                 == len(set(identifiers))
+                 and len(names)
+                 == len(set(names))
+                 and all(
+                     artifact.get("verified") is True
+-                    for artifact in artifacts
++                    for artifact in library_artifacts
+                 )
+             )
+ 
+             library_governance_status = {
+-                "artifacts": len(artifacts),
++                "artifacts": len(library_artifacts),
+                 "unique_identifiers": (
+                     len(identifiers)
+                     == len(set(identifiers))

@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0418",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:37.937254-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Workflow_Service_Dispatch_Specification_v0.1.md",
+    "original_name": "Workflow_Service_Dispatch_Specification_v0.1.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0418",
+    "schema_version": "0.1.0",
+    "sha256": "9b91260bccb4d23dfb1f7122bcd62f8337594d502b24897f2a9509ba3280832a",
+    "size_bytes": 7893,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

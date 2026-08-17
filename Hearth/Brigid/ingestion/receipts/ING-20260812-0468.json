@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:44.582118-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/INDEX_v1.4.md",
+  "original_name": "INDEX_v1.4.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0468",
+  "schema_version": "0.1.0",
+  "sha256": "2d8acd73c51f6c602d85d12b850fd60eb56099b56754a8b3eae41464c688cf82",
+  "size_bytes": 135,
+  "source_class": "manual_batch"
+}

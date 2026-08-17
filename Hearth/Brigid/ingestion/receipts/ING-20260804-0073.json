@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:02:05.856463-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Resilience_Specification_v0.1.md",
+  "original_name": "Workflow_Service_Resilience_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0073",
+  "schema_version": "0.1.0",
+  "sha256": "f988b92617afbb39f957b2b8d4dcef9aa58bd85e0c7052e18be3dc2ad1d51b58",
+  "size_bytes": 7522,
+  "source_class": "manual_batch"
+}

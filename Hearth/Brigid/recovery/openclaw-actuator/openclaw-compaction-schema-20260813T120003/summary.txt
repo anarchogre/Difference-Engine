@@ -1,0 +1,4 @@
+OPENCLAW_BIN=/home/reckless-ideator/.openclaw/bin/openclaw
+OPENCLAW_ROOT=/home/reckless-ideator/.openclaw/bin
+CENSUS=/home/reckless-ideator/Difference-Engine/workspace/operational/recovery/openclaw-actuator/openclaw-compaction-schema-20260813T120003/compaction-schema-census.txt
+

@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0195",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:14.380699-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-ANDROID/data/com.foxdebug.acodefree/files/.key-bindings.json",
+    "original_name": ".key-bindings.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0195",
+    "schema_version": "0.1.0",
+    "sha256": "decd82804f14745e6651614d37747cdaf308d348f3aafcb38d63ed5b18a74e49",
+    "size_bytes": 15493,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

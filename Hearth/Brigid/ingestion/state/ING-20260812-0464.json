@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0464",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:44.031078-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/GLOSSARY.md",
+    "original_name": "GLOSSARY.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0464",
+    "schema_version": "0.1.0",
+    "sha256": "90dc12651a7d27e24a068e5146f01866ada6ee24745c52d04582df5332691d64",
+    "size_bytes": 488,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

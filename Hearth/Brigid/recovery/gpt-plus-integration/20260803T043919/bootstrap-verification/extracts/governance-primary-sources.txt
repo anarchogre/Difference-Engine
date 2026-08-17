@@ -1,0 +1,310 @@
+# Governance Candidate Extracts
+
+Generated: 2026-08-03T04:44:30-05:00
+
+
+===== ./.de/README.md =====
+10:No repository artifacts.
+11:No permanent governance.
+
+===== ./Repository/Governance/bootstrap.md =====
+11:- Discover repository.
+12:- Locate Constitution.
+17:- Recover active mission.
+
+===== ./Repository/Governance/constitution.md =====
+1:# Constitution
+7:Canonical constitutional content will replace this placeholder during Constitution Reduction.
+
+===== ./ade/kernel/bootstrap_loader/artifacts.py =====
+12:    constitution: Path
+17:    governance = root / "Repository" / "Governance"
+20:        constitution=require(governance / "constitution.md"),
+21:        amendments=require(governance / "amendments.md"),
+22:        bootstrap=require(governance / "bootstrap.md"),
+
+===== ./ade/kernel/bootstrap_loader/config.py =====
+7:REPOSITORY_ROOT = Path.cwd()
+9:GOVERNANCE_ROOT = REPOSITORY_ROOT / "Repository" / "Governance"
+11:SPECIFICATION_ROOT = REPOSITORY_ROOT / "specifications"
+
+===== ./ade/kernel/bootstrap_loader/governance.py =====
+2:Governance loading.
+7:def load_governance(root):
+
+===== ./ade/kernel/bootstrap_loader/loader.py =====
+5:from .discover import discover_repository
+7:from .governance import load_governance
+9:from .mission import recover_mission
+21:    log("Discovering repository...")
+22:    root = discover_repository()
+24:    artifacts = load_governance(root)
+33:        repository_root=root,
+34:        governance_root=artifacts.constitution.parent,
+37:        mission=recover_mission(),
+
+===== ./ade/kernel/bootstrap_loader/models.py =====
+9:class Governance:
+10:    constitution: Path
+
+===== ./ade/kernel/bootstrap_loader/paths.py =====
+2:Canonical repository paths.
+7:def governance(root: Path) -> Path:
+8:    return root / "Repository" / "Governance"
+16:def repository(root: Path) -> Path:
+17:    return root / "Repository"
+
+===== ./ade/kernel/bootstrap_loader/state.py =====
+10:    repository_root: Path
+11:    governance_root: Path
+14:    mission: str | None = None
+
+===== ./ade/kernel/bootstrap_loader/validators.py =====
+12:    assert artifacts.constitution.exists()
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_API_v1.md =====
+7:discover_repository()
+9:load_constitution()
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONFIGURATION_v1.md =====
+5:RepositoryRoot
+7:ConstitutionLocation
+15:RepositoryRootIndex
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONTRACT_v1.md =====
+7:Repository exists.
+9:Canonical governance exists.
+19:Repository context established.
+21:Mission recovered.
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_DEPENDENCIES_v1.md =====
+5:Constitution
+7:Ratified Amendments
+17:Repository Index
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_DISCOVERY_v1.md =====
+7:Repository Root
+9:Constitution
+11:Ratified Amendments
+17:Repository Index
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_ERRORS_v1.md =====
+5:REPOSITORY_NOT_FOUND
+7:CONSTITUTION_NOT_FOUND
+15:MISSION_NOT_FOUND
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_INTERFACE_v1.md =====
+7:Repository
+9:Constitution
+23:Mission
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_MODULES_v1.md =====
+7:governance.py
+19:mission.py
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_PSEUDOCODE_v1.md =====
+5:discover_repository()
+7:load_governance()
+19:recover_mission()
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_PYTHON_MAPPING_v1.md =====
+5:discover_repository()        -> discover.py
+7:load_governance()            -> governance.py
+19:recover_mission()            -> mission.py
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_SPECIFICATION_v1.md =====
+11:- Discover repository.
+12:- Locate Constitution.
+17:- Recover active mission.
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_WORKFLOW_v1.md =====
+7:1. Discover repository root.
+8:2. Verify repository layout.
+9:3. Locate Constitution.
+10:4. Locate Ratified Amendments.
+15:9. Recover repository state.
+16:10. Recover mission.
+27:Repository operational.
+
+===== ./inventory/directory_tree.txt =====
+4:./Repository
+5:./Repository/Entities
+6:./Repository/Governance
+7:./Repository/Observations
+8:./Repository/Patterns
+9:./Repository/Preservation
+10:./Repository/Publications
+11:./Repository/Relationships
+12:./Repository/Specifications
+13:./Repository/Validation
+
+===== ./inventory/directory_tree_pretty.txt =====
+4:├── Repository
+6:│   ├── Governance
+
+===== ./inventory/reconciliation/DRIFT_POLICY.md =====
+3:Repository drift is evidence.
+9:Repository topology SHALL NOT change without constitutional reconciliation.
+
+===== ./inventory/reconciliation/TREE_SNAPSHOT.txt =====
+4:├── Repository
+6:│   ├── Governance
+9:│   │   └── constitution.md
+38:│   │   │   │   ├── governance.cpython-313.pyc
+43:│   │   │   │   ├── mission.cpython-313.pyc
+66:│   │   │   ├── governance.py
+71:│   │   │   ├── mission.py
+168:│   │   ├── MISSION.md
+174:│   │   ├── REPOSITORY.diff
+175:│   │   ├── REPOSITORY_SNAPSHOT.md
+176:│   │   ├── REPOSITORY_STATISTICS.md
+187:│   │   ├── MISSION_001A_REPOSITORY_RECONCILIATION_REPORT.md
+190:│   └── repository_tree_pretty.txt
+200:│   │   └── Q-001A-REPOSITORY-RECONCILIATION.md
+220:│       ├── REPOSITORY.diff
+226:│   └── repository
+234:│   │   ├── REPOSITORY_LAYOUT_STANDARD_v1.0.md
+235:│   │   ├── REPOSITORY_STANDARD_v1.0.md
+237:│   │   ├── TERMUX_OPERATOR_STANDARD_v1.0.md
+251:│       │   ├── MISSION.md
+253:│       │   ├── NEXT_MISSION.md
+256:│       │   ├── REPOSITORY_STATE.md
+
+===== ./inventory/repository_tree_pretty.txt =====
+4:├── Repository
+6:│   ├── Governance
+32:│   └── repository_tree_pretty.txt
+
+===== ./workspace/operational/current/NEXT_MISSION.md =====
+1:# Next Mission
+3:Repository Reconciliation
+7:1. Recover canonical repository topology.
+8:2. Eliminate repository drift.
+11:5. Ratify repository constitution.
+14:Constraints
+
+===== ./workspace/operational/current/OPERATIONAL_LAWS.md =====
+3:## Constitutional Operational Laws
+5:1. Repository-first.
+13:9. Existing repository conventions ("mortar") SHALL NOT be modified without constitutional reconciliation.
+19:15. Repository identity SHALL be validated before any repository mutation.
+
+===== ./workspace/operational/current/QUEUE.md =====
+5:- Complete repository reconciliation.
+9:- Reconcile GitHub repository.
+10:- Establish canonical repository.
+13:- Rename GitHub repository to DifferenceEngine.
+29:- Publication automation.# Next Mission
+31:Repository Reconciliation
+35:1. Recover canonical repository topology.
+36:2. Eliminate repository drift.
+39:5. Ratify repository constitution.
+42:Constraints
+
+===== ./workspace/operational/current/REPOSITORY_STATE.md =====
+1:# Repository State
+5:Repository reconciliation in progress.
+7:Canonical Working Repository
+20:Recover one canonical repository before constitutional publication.
+
+===== ./workspace/operational/current/WORKFLOW.md =====
+6:→ Constraint
+10:→ Governance
+20:→ Constitutional Standard
+22:Repository reconciliation precedes implementation.
+24:Artifact generation remains deferred until canonical repository reconciliation is complete.
+
+===== ./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-audit/extracts/candidate-headings.txt =====
+6:===== ./Repository/Governance/bootstrap.md =====
+11:===== ./Repository/Governance/constitution.md =====
+12:1:# Constitution
+36:5:RepositoryRoot
+39:15:RepositoryRootIndex
+44:7:Repository exists.
+45:19:Repository context established.
+46:21:Mission recovered.
+52:17:Repository Index
+58:7:Repository Root
+60:17:Repository Index
+65:5:REPOSITORY_NOT_FOUND
+67:15:MISSION_NOT_FOUND
+77:7:Repository
+78:17:Mission
+84:7:Repository Discovery
+90:7:Repository
+92:23:Mission
+103:19:mission.py
+109:21:Repository Context
+135:7:Repository discovery
+136:15:Mission recovery
+142:27:Repository operational.
+157:31:Repository Reconciliation
+158:42:Constraints
+
+===== ./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-audit/hashes/candidate-sha256.sorted.txt =====
+6:3a735935099c78aa0ad98f0b67733173ec3bb75b7fb3cdeb356169ea0a11643f  ./Repository/Governance/constitution.md
+13:721dd10684a3e7d55abcb84289c734e221df37d824024f8870c2a351b06fe132  ./Repository/Governance/bootstrap.md
+
+===== ./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-audit/hashes/candidate-sha256.txt =====
+3:721dd10684a3e7d55abcb84289c734e221df37d824024f8870c2a351b06fe132  ./Repository/Governance/bootstrap.md
+4:3a735935099c78aa0ad98f0b67733173ec3bb75b7fb3cdeb356169ea0a11643f  ./Repository/Governance/constitution.md
+
+===== ./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-audit/reports/candidate-metadata.txt =====
+8:===== ./Repository/Governance/bootstrap.md =====
+9:SIZE=395 | MODIFIED=2026-08-02 20:32:17.358555895 -0500 | PATH=./Repository/Governance/bootstrap.md
+11:===== ./Repository/Governance/constitution.md =====
+12:SIZE=182 | MODIFIED=2026-08-02 20:36:57.055250426 -0500 | PATH=./Repository/Governance/constitution.md
+
+===== ./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-audit/reports/exact-duplicates.txt =====
+1:721dd10684a3e7d55abcb84289c734e221df37d824024f8870c2a351b06fe132  ./Repository/Governance/bootstrap.md
+
+===== ./workspace/operational/recovery/gpt-plus-integration/20260803T043919/hashes/repository-sha256.txt =====
+23:13073ef72507d37ebaa00983a5b1cb86be2940031bff6b911e2173b1f79a32af  ./Repository/Governance/amendments.md
+24:721dd10684a3e7d55abcb84289c734e221df37d824024f8870c2a351b06fe132  ./Repository/Governance/bootstrap.md
+25:3a735935099c78aa0ad98f0b67733173ec3bb75b7fb3cdeb356169ea0a11643f  ./Repository/Governance/constitution.md
+40:fb93076c73e4fee8fdcc35a50127114917d5e65ef7672d32f8da6c7708d9a6c2  ./ade/kernel/bootstrap_loader/__pycache__/governance.cpython-313.pyc
+45:fdc016ac40148f20e4e4358c976a95f044a6030604065a46c0de56ca41758ec3  ./ade/kernel/bootstrap_loader/__pycache__/mission.cpython-313.pyc
+68:d358f83d101a97237eec2ba5a99731d8d1709d308394d3e458fcdea02b450026  ./ade/kernel/bootstrap_loader/governance.py
+73:a7ef42923c206d151e634664182ff7905cfe9474e6733c7b6bd52a489ba3e204  ./ade/kernel/bootstrap_loader/mission.py
+154:8caf891569d921cc45ec5ae2e25e04acb3e679f8eedffe8384ac993ee69cca4c  ./inventory/reconciliation/MISSION.md
+161:1b7a7b81276645267958091ef974134c1fee6e5f06faf3e1dd538b90670e0990  ./inventory/reconciliation/REPOSITORY.diff
+162:0bce8f928655eee3d1a4e5e5ebcad0907093c26ae7b9853e5869d5cbfb6c2d9e  ./inventory/reconciliation/REPOSITORY_SNAPSHOT.md
+163:9569080773293bd8b571b5d86b912ba9cce416e73de1b817ca3b7e4fc25828b1  ./inventory/reconciliation/REPOSITORY_STATISTICS.md
+175:e9d59ad175ebbce4f774f74cafb29bf6c481432440fe7870bad93e9922b29749  ./inventory/reports/MISSION_001A_REPOSITORY_RECONCILIATION_REPORT.md
+178:b7f7d2e778d94820e3b41cb659c6e2607c5de55e1935edf9fda83ba22ae6fce0  ./inventory/repository_tree_pretty.txt
+180:b3fe7a12b0870788ac31a3a41c00751e8df58fb58f3da627cf6eafe1de15bc27  ./queue/completed/Q-001A-REPOSITORY-RECONCILIATION.md
+190:1b7a7b81276645267958091ef974134c1fee6e5f06faf3e1dd538b90670e0990  ./scripts/reconciliation/REPOSITORY.diff
+198:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./standards/v1/REPOSITORY_LAYOUT_STANDARD_v1.0.md
+199:443e7a4fd4ac6f33784e2704e14480f655899c6f34fac9c31be1f5afeb206c7b  ./standards/v1/REPOSITORY_STANDARD_v1.0.md
+201:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./standards/v1/TERMUX_OPERATOR_STANDARD_v1.0.md
+208:675d3276b62d9cca8f1ea4db47ecc5227f7bbcd0cc9fb443321fe66663e8c5c3  ./workspace/operational/current/MISSION.md
+210:dc8404059b907ca9d5ddd4ce4c405e1fdffdf43832085fcf12d82ea24ac78924  ./workspace/operational/current/NEXT_MISSION.md
+213:703363e29dd465e218d04e893b8b86dd5b344abb0239d1e4229b8a81ebb3e941  ./workspace/operational/current/REPOSITORY_STATE.md
+217:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./workspace/operational/recovery/gpt-plus-integration/20260803T043919/hashes/repository-sha256.txt
+219:ece8d411c08741f82f6fe91a22166f1e57f652805c31ffef4dc80c88b8287249  ./workspace/operational/recovery/gpt-plus-integration/20260803T043919/manifests/repository-dirs.lst
+220:547e00b4ecb4c87edf35be2857c4d796cfe929c375c67aa7b730978395ce5c63  ./workspace/operational/recovery/gpt-plus-integration/20260803T043919/manifests/repository-files.lst
+221:86de75995e0adba70dbc8c6dafaa96471145b6b475f09dacf73a50e3fdcf2479  ./workspace/operational/recovery/gpt-plus-integration/20260803T043919/manifests/repository-tree.lst
+228:daeeb5187c57465e5d0feffc7c244cba261805d085dce44f9ebf8392ab8684a6  ./workspace/operational/recovery/gpt-plus-integration/20260803T043919/reports/repository-size.txt
+
+===== ./workspace/operational/recovery/gpt-plus-integration/20260803T043919/logs/batch-2-summary.txt =====
+4:CONSTITUTIONAL_FILES=1
+11:./Repository/Governance/bootstrap.md
+46:?? Repository/
+
+===== ./workspace/operational/recovery/gpt-plus-integration/20260803T043919/reports/largest-files.txt =====
+1:2140411	./scripts/reconciliation/REPOSITORY.diff
+2:2140411	./inventory/reconciliation/REPOSITORY.diff
+27:12720	./workspace/operational/recovery/gpt-plus-integration/20260803T043919/manifests/repository-tree.lst
+31:10599	./workspace/operational/recovery/gpt-plus-integration/20260803T043919/manifests/repository-files.lst
+45:2222	./workspace/operational/recovery/gpt-plus-integration/20260803T043919/manifests/repository-dirs.lst
+49:1283	./inventory/repository_tree_pretty.txt
+83:446	./workspace/operational/current/NEXT_MISSION.md
+88:414	./workspace/operational/current/REPOSITORY_STATE.md
+91:395	./Repository/Governance/bootstrap.md
+95:378	./ade/kernel/bootstrap_loader/__pycache__/governance.cpython-313.pyc
+96:376	./inventory/reconciliation/REPOSITORY_SNAPSHOT.md
+
+===== ./workspace/operational/recovery/gpt-plus-integration/20260803T043919/reports/top-level-sizes.txt =====
+2:3.5K	./DOCTRINE
+3:3.5K	./MISSIONS
+20:47K	./Repository

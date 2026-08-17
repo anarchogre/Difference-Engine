@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260811-0041",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-11T22:18:49.674783-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Kernel_and_Bootstrap_Load.md.txt",
+    "original_name": "Kernel_and_Bootstrap_Load.md.txt",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260811-0041",
+    "schema_version": "0.1.0",
+    "sha256": "1bb1d6b364864de9b346f27e67bb111153e65db14806a483406816602bfe2529",
+    "size_bytes": 212180,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

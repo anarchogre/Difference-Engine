@@ -1,0 +1,852 @@
+2026-07-25 00:25:35.5152595350 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/objects/pack/pack-a43bfdb3d40bc444bbb44892041c87ebcd787d72.idx
+2026-07-25 00:25:35.6685928830 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/HEAD
+2026-07-25 00:25:35.6919262190 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/config
+2026-07-25 00:25:35.9852595820 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/dusty.md
+2026-07-25 00:25:36.0085929170 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CHANGELOG.md
+2026-07-25 00:25:36.0285929190 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CODE_OF_CONDUCT.md
+2026-07-25 00:25:36.0519262550 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CONTRIBUTING.md
+2026-07-25 00:25:36.0785929240 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/EVIDENCE_STANDARD.md
+2026-07-25 00:25:36.1119262610 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/GLOSSARY.md
+2026-07-25 00:25:36.1519262650 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Governance/placeholder.md
+2026-07-25 00:25:36.1785929340 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/INDEX.md
+2026-07-25 00:25:36.2119262710 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/LICENSE.md
+2026-07-25 00:25:36.2452596080 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Library/placeholder.md
+2026-07-25 00:25:36.2752596110 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/MANIFEST.md
+2026-07-25 00:25:36.3085929470 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/NAMING_CONVENTIONS.md
+2026-07-25 00:25:36.3585929520 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/PP/placeholder.md
+2026-07-25 00:25:36.3919262890 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/PRINCIPLES.md
+2026-07-25 00:25:36.4485929610 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Parser/placeholder.md
+2026-07-25 00:25:36.4919262990 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Publications/placeholder.md
+2026-07-25 00:25:36.5452596370 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/.gitkeep
+2026-07-25 00:25:36.8319263330 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/REPOSITORY_CHARTER.md
+2026-07-25 00:25:36.8719263370 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/REPOSITORY_STRUCTURE.md
+2026-07-25 00:25:36.8985930060 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/ROADMAP.md
+2026-07-25 00:25:36.9485930110 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Research/science.md
+2026-07-25 00:25:36.9885930150 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/SECURITY.md
+2026-07-25 00:25:37.0385930200 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/scrooge.md
+2026-07-25 00:25:37.0719263570 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Tools/timesink.md
+2026-07-25 00:25:37.0985930260 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/VERSIONING_POLICY.md
+2026-07-25 00:25:37.1319263630 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/docs/README.md
+2026-07-25 00:25:37.1552596980 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/docs/Repository documentation.
+2026-07-25 00:26:15.4885968500 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.cg/gradle-sync/sync.lock
+2026-07-25 00:26:15.5752635260 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.cg/gradle-sync/project.pb
+2026-07-25 00:26:15.8085968820 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.cg/gradle-sync/sync.pb
+2026-07-25 01:41:35.4157137820 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.cg/editor/openedFiles.json.bak
+2026-07-25 01:46:13.5757414910 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Governance/PLUGIN_POLICY.md
+2026-07-25 01:51:58.9424425620 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/README.md
+2026-07-25 02:06:04.8291934980 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.cg/editor/breakpoints.json
+2026-07-25 02:06:11.7558608550 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.gitignore
+2026-07-25 02:09:53.0458829000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/objects/32/08ccae89f587d09e24fb4ef97227547ad702ce
+2026-07-25 02:09:53.0792162370 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/objects/14/d9d1ad3733848b195d4b10ffa3ad765db55aa4
+2026-07-25 02:11:00.2025562570 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/objects/pack/pack-a43bfdb3d40bc444bbb44892041c87ebcd787d72.pack
+2026-07-25 02:11:00.2192229260 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/objects/ea/811ff019ee193089466e989b44d79066923499
+2026-07-25 02:11:00.2325562600 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/objects/06/89a69ade0fc89afef27b0f784e4a97e3687eab
+2026-07-25 02:17:52.8492640330 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/COMMIT_EDITMSG
+2026-07-25 02:17:52.9225973740 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/objects/93/f79ec2c6c352fdcf555dfecdfaf27d9910f337
+2026-07-25 11:30:16.4925657970 ADE_DIFFERENCE_ENGINE/THE ACTIVE STATE SNAPSHOT.docx
+2026-07-26 06:57:29.6913453150 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/REPOSITORY_TREE.txt
+2026-07-26 07:17:04.3614623320 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/REPOSITORY_TREE_FULL.txt
+2026-07-26 07:49:17.4649882380 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/objects/pack/pack-33e66ff2a706f66df39996c1b6bfb2337dd4ba0d.pack
+2026-07-26 07:49:17.4683215710 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/objects/pack/pack-33e66ff2a706f66df39996c1b6bfb2337dd4ba0d.idx
+2026-07-26 07:49:17.4783215720 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/objects/pack/pack-33e66ff2a706f66df39996c1b6bfb2337dd4ba0d.rev
+2026-07-26 07:49:17.8816549460 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/refs/remotes/origin/main
+2026-07-26 07:49:17.9083216150 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/logs/refs/remotes/origin/main
+2026-07-26 07:49:17.9149882820 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/FETCH_HEAD
+2026-07-26 07:49:18.3649883270 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/ORIG_HEAD
+2026-07-26 07:49:18.7683217010 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/ACP-0001_Foundation_Gamma_v1.4-1.md
+2026-07-26 07:49:18.7816550360 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/ACP-0001_Foundation_Gamma_v1.4.md
+2026-07-26 07:49:18.7916550360 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/ACTIVE_STATE_SNAPSHOT_v1.4.md
+2026-07-26 07:49:18.8049883710 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/ACTIVE_STATE_SNAPSHOT_v1.4_REVISED.md
+2026-07-26 07:49:18.8216550390 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/ACTIVE_STATE_SNAPSHOT_v1.4_REVISION.md
+2026-07-26 07:49:18.8349883740 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/ADE Workflow Automation Prompts-1.pdf
+2026-07-26 07:49:18.8516550420 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/ADE Workflow Automation Prompts.pdf
+2026-07-26 07:49:18.8683217110 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/ADE_Constitution_v1.1.md
+2026-07-26 07:49:18.8783217120 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/ADE_Constitution_v1.2.md
+2026-07-26 07:49:18.8883217130 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/ADE_Constitution_v1.4-1.md
+2026-07-26 07:49:18.9016550470 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/ADE_Constitution_v1.4.md
+2026-07-26 07:49:18.9183217160 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/ADE_Workflow_Automation_Prompts.json
+2026-07-26 07:49:18.9483217190 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/ADE_full_repo_context.txt
+2026-07-26 07:49:18.9649883870 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/AKS_Companion_Narrative_Working_Draft_v0_2.docx
+2026-07-26 07:49:18.9716550540 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/AKS_Companion_Narrative_Working_Draft_v0_2.json
+2026-07-26 07:49:18.9849883890 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/AKS_Covenant_v1.0.json
+2026-07-26 07:49:18.9983217240 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/AKS_Gardener_Cultivation_Model_v1.0.json
+2026-07-26 07:49:19.0083217250 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/AKS_Human_Centered_Repository_Philosophy_v1.0.json
+2026-07-26 07:49:19.0216550590 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/AKS_Inference_Linguistic_Preservation_Package.zip
+2026-07-26 07:49:19.0349883940 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/AKS_Living_Repository_Architecture_v1.0.json
+2026-07-26 07:49:19.0483217290 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/AKS_Longitudinal_Reasoning_v1.0.json
+2026-07-26 07:49:19.0616550630 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/AKS_Mission_Statement_v1.0.json
+2026-07-26 07:49:19.0749883980 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/AKS_Stewards_Compass_v1.0.json
+2026-07-26 07:49:19.1316550700 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Evidence/OBS-0001/Derived/f.md
+2026-07-26 07:49:19.1549884060 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Evidence/OBS-0001/Notes/vhy.md
+2026-07-26 07:49:19.1749884080 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Evidence/OBS-0001/Sources/fhu.md
+2026-07-26 07:49:19.1916550760 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Evidence/OBS-0001/dfr.md
+2026-07-26 07:49:19.2049884110 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Evidence/fgh.md
+2026-07-26 07:49:19.2383217480 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Imports/Accepted/ghy.md
+2026-07-26 07:49:19.2616550830 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Imports/Parsing/ghy.md
+2026-07-26 07:49:19.2883217530 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Imports/Pending/ghy.md
+2026-07-26 07:49:19.3116550880 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Imports/Rejected/ghy.md
+2026-07-26 07:49:19.3349884240 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Imports/Review/ghy.md
+2026-07-26 07:49:19.3516550920 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Imports/df.md
+2026-07-26 07:49:19.3749884280 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Logs/Djt.md
+2026-07-26 07:49:19.4049884310 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ARCH-0007_Domain_Separation.json
+2026-07-26 07:49:19.4216550990 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ARCHITECTURAL-PRINCIPLES-0001.json
+2026-07-26 07:49:19.4349884340 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-AUDIT-0001_Foundation_Audit-2.json
+2026-07-26 07:49:19.4483217690 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-AUDIT-0001_Foundation_Audit.json
+2026-07-26 07:49:19.4649884370 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-AXIOM-0001_Identity_Independence.json
+2026-07-26 07:49:19.4749884380 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-CONSTRAINT-0001_Universal_Constraint_Model.json
+2026-07-26 07:49:19.4883217730 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-CV-0001_Draft_0.2_Canonical.json
+2026-07-26 07:49:19.5016551070 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-CV-0001_Draft_0.3_Vocabulary_Update.json
+2026-07-26 07:49:19.5149884420 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-DECISION-0001_Template.json
+2026-07-26 07:49:19.5249884430 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-DECISION-0002_Kernel_Validation_Layer.json
+2026-07-26 07:49:19.5383217780 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-DECISION-0003_Theorem_Workflow.json
+2026-07-26 07:49:19.5516551120 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-DECISION-0004_Kernel_Freeze.json
+2026-07-26 07:49:19.5649884470 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-EDU-SYN-0001.json
+2026-07-26 07:49:19.5783217820 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ENDURANCE-B-REPORT-0001.json
+2026-07-26 07:49:19.5916551160 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ENDURANCE-C-REPORT-0001.json
+2026-07-26 07:49:19.6049884510 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ENTITY-0001_Draft_0.1_Universal_Entity_Model.json
+2026-07-26 07:49:19.6149884520 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ENTITY-0001_Draft_0.2_Update.json
+2026-07-26 07:49:19.6249884530 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ENTITY-0001_Draft_0.3_Update.json
+2026-07-26 07:49:19.6349884540 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ENTITY-0001_Repository_Grade_v1.0.json
+2026-07-26 07:49:19.6483217890 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-EVID-0001_Evidence_Quality_Classification.json
+2026-07-26 07:49:19.6583217900 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-FOUNDATION-ROADMAP-0002.json
+2026-07-26 07:49:19.6716551240 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-FOUNDATION-SPRINT-0001.json
+2026-07-26 07:49:19.6816551250 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-FRENZY-0001_Validation_Backlog.json
+2026-07-26 07:49:19.6949884600 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GATE-ALPHA-0001_Candidate.json
+2026-07-26 07:49:19.7083217950 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GATE-ALPHA-0002_Declaration.json
+2026-07-26 07:49:19.7216551290 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GATE-BETA-0001_Candidate-1.json
+2026-07-26 07:49:19.7383217980 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GATE-BETA-0001_Candidate.json
+2026-07-26 07:49:19.7483217980 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-0002_Evidence_Driven_Evolution.json
+2026-07-26 07:49:19.7583217990 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-0003_Preservation_Discipline.json
+2026-07-26 07:49:19.7816551350 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-0004_Dependency_Review_Status.json
+2026-07-26 07:49:19.7916551360 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-0005_Contradiction_Resolution_Status.json
+2026-07-26 07:49:19.8049884710 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-0006_Representation_Revision.json
+2026-07-26 07:49:19.8183218050 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-0007_Lineage_Change_Rationale.json
+2026-07-26 07:49:19.8383218070 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-0008_RSI_Metric_Separation.json
+2026-07-26 07:49:19.8483218080 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-0009_Behavior_First_Validation.json
+2026-07-26 07:49:19.8649884770 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-0011_Preservation_JSON_Rule.json
+2026-07-26 07:49:19.8783218110 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-CP-0001.json
+2026-07-26 07:49:19.8949884800 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-INDEX-0001_Draft_0.1_Canonical.json
+2026-07-26 07:49:19.9116551480 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-INDEX-0001_Draft_0.2_Update.json
+2026-07-26 07:49:19.9249884830 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-INVARIANTS-0001_Draft_0.1_Canonical.json
+2026-07-26 07:49:19.9383218170 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-IR-0001_Working_Model.json
+2026-07-26 07:49:19.9483218180 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PATTERN-0001_Artifact_Family.json
+2026-07-26 07:49:19.9649884870 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PHASE-0006_Escalated_Verification.json
+2026-07-26 07:49:19.9816551550 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PIPELINE-0001.json
+2026-07-26 07:49:19.9949884900 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0004_Inheritance_Conservation_Checkpoint.json
+2026-07-26 07:49:20.0049884910 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0005_Foundation_Logic_Checkpoint.json
+2026-07-26 07:49:20.0249884930 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0006_Kernel_Constraint_Checkpoint.json
+2026-07-26 07:49:20.0416551610 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0007_Theorem_Queue_Checkpoint.json
+2026-07-26 07:49:20.0549884960 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0008_Foundation_Audit_Checkpoint.json
+2026-07-26 07:49:20.0749884980 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0009_Gate_Alpha.json
+2026-07-26 07:49:20.0916551660 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0010_Semantic_Composition_Checkpoint.json
+2026-07-26 07:49:20.1116551680 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0011_Engineering_Test_Transition-2.json
+2026-07-26 07:49:20.1249885030 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0011_Engineering_Test_Transition.json
+2026-07-26 07:49:20.1383218370 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0012_Behavior_Architecture.json
+2026-07-26 07:49:20.1549885060 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0013_Repository_Maturity.json
+2026-07-26 07:49:20.1649885070 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0014_Proposition_Completion.json
+2026-07-26 07:49:20.1849885090 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0016_Relationship_Classification.json
+2026-07-26 07:49:20.1983218430 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0017_Evidence_Refinement.json
+2026-07-26 07:49:20.2116551780 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0018_Governance_Dashboard.json
+2026-07-26 07:49:20.2216551790 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0019_Dependency_Review_Status.json
+2026-07-26 07:49:20.2316551800 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0020_Contradiction_Framework.json
+2026-07-26 07:49:20.2416551810 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0021_Semantic_Conservation.json
+2026-07-26 07:49:20.2483218480 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0022_Replay_Queue.json
+2026-07-26 07:49:20.2616551830 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0023_Scale_Simulation.json
+2026-07-26 07:49:20.2749885180 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0024_Evidence_Sufficiency.json
+2026-07-26 07:49:20.2816551850 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0025_Validation_Program_Transition.json
+2026-07-26 07:49:20.2916551860 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0026_Phase_Transition.json
+2026-07-26 07:49:20.3016551870 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0027_Methodical_Progression.json
+2026-07-26 07:49:20.3116551880 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0029_Endurance_Cycle_A.json
+2026-07-26 07:49:20.3216551890 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0030_Endurance_Cycle_B.json
+2026-07-26 07:49:20.3316551900 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0031_Gate_Beta_PreAudit.json
+2026-07-26 07:49:20.3549885260 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0032_Engineering_Reproducibility.json
+2026-07-26 07:49:20.3683218600 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0033_Viking_Campaign_I.json
+2026-07-26 07:49:20.3816551950 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0034_Engineering_Maturity_Snapshot.json
+2026-07-26 07:49:20.3883218620 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0035_Architectural_Invariant_Assault.json
+2026-07-26 07:49:20.3983218630 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0036_Necessary_Complexity_Snapshot.json
+2026-07-26 07:49:20.4083218640 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0037_First_Principles_Extraction_I.json
+2026-07-26 07:49:20.4183218650 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0038_First_Principles_Falsification_I.json
+2026-07-26 07:49:20.4316552000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0039_First_Principle_Independence_Snapshot.json
+2026-07-26 07:49:20.4449885350 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0040_Boundary_Conditions_and_Self_Revision.json
+2026-07-26 07:49:20.4649885370 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0041_Emergent_Interaction_and_Dynamic_Equilibrium.json
+2026-07-26 07:49:20.4783218710 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0042_Emergent_Behavior_and_Regulatory_Structures.json
+2026-07-26 07:49:20.4883218720 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRINCIPLE-QUEUE-0001_Knowledge_Composition.json
+2026-07-26 07:49:20.5049885410 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRINCIPLE-QUEUE-0002_Pipeline_Determinism.json
+2026-07-26 07:49:20.5183218750 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRINCIPLE-QUEUE-0003_Self_Representation.json
+2026-07-26 07:49:20.5349885440 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PROP-0001_Draft_0.1_Proposition_Model.json
+2026-07-26 07:49:20.5583218790 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PROP-0002_P021_Canonical_Granularity.json
+2026-07-26 07:49:20.5749885480 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-QUEUE-0003_Semantic_Conservation.json
+2026-07-26 07:49:20.5916552160 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-QUEUE-0004_Repository_Replay.json
+2026-07-26 07:49:20.6049885510 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-QUEUE-0005_Evidence_Sufficiency_Check.json
+2026-07-26 07:49:20.6149885520 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-QUEUE-0006_Architectural_Stability_Principle.json
+2026-07-26 07:49:20.6316552200 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-QUEUE-0007_Validation_Outcome_Classification.json
+2026-07-26 07:49:20.6483218880 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-QUEUE-0008_Engineering_Culture_Preservation-1.json
+2026-07-26 07:49:20.6683218900 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-QUEUE-0008_Engineering_Culture_Preservation.json
+2026-07-26 07:49:20.6849885590 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-REL-0001_Relationship_Classification.json
+2026-07-26 07:49:20.7049885600 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-RML-0001.json
+2026-07-26 07:49:20.7216552290 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ROADMAP-0001_Draft_0.1_Semantic_Core_Roadmap.json
+2026-07-26 07:49:20.7383218970 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ROADMAP-0003_Post_Gate_Alpha-1.json
+2026-07-26 07:49:20.7549885650 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ROADMAP-0003_Post_Gate_Alpha.json
+2026-07-26 07:49:20.7749885670 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-SIS-0001_Semantic_Integrity_Checklist.json
+2026-07-26 07:49:20.7916552360 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-SPEC-0001_Draft_0.4_Canonical.json
+2026-07-26 07:49:20.8183219050 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-SPEC-0002_Draft_0.1_Canonical.json
+2026-07-26 07:49:20.8349885730 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-SPEC-0004_Draft_0.1_Canonical_Knowledge_Model.json
+2026-07-26 07:49:20.8516552420 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-SPEC-0005_Draft_0.1_Semantic_Kernel_Architecture.json
+2026-07-26 07:49:20.8649885760 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-SPECSTATE-0001_Template.json
+2026-07-26 07:49:20.8849885780 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-TEST-0001_EXECUTION_0002.json
+2026-07-26 07:49:20.9016552470 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-TEST-0003_EXECUTION_0001.json
+2026-07-26 07:49:20.9149885810 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-TEST-0004_EXECUTION_0001.json
+2026-07-26 07:49:20.9349885830 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-TEST-0007_EXECUTION_0001.json
+2026-07-26 07:49:20.9449885840 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-TEST-FAMILY-0001.json
+2026-07-26 07:49:20.9549885850 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-THEOREM-0001_Inheritance_Conservation.json
+2026-07-26 07:49:20.9649885860 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-THEOREM-QUEUE-0001_Update-1.json
+2026-07-26 07:49:20.9749885870 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-THEOREM-QUEUE-0001_Update.json
+2026-07-26 07:49:20.9849885880 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-THEOREMS-0001_Draft_0.1_Canonical.json
+2026-07-26 07:49:20.9949885890 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS-TRUTH-0001_Draft_0.1_Truth_State_Model.json
+2026-07-26 07:49:21.0149885910 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_AOS_1_0__All_Previous_data_and_conv.json
+2026-07-26 07:49:21.0316552600 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_AOS_Repository.json
+2026-07-26 07:49:21.0483219280 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Architecture_Manifest_v1.json
+2026-07-26 07:49:21.0649885960 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Architecture_v0.1_Draft.json
+2026-07-26 07:49:21.0783219310 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Author_Statement_v1.0.json
+2026-07-26 07:49:21.0949885990 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Benediction_v1.0.json
+2026-07-26 07:49:21.1116552680 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_CPA_0001_Foundation_Update.json
+2026-07-26 07:49:21.1249886020 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_CPA_0001_Manifest_Draft.json
+2026-07-26 07:49:21.1449886040 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Canonical_Knowledge_Object_Schema_v1.1.json
+2026-07-26 07:49:21.1583219390 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Communication_Architecture_v1.0.json
+2026-07-26 07:49:21.1716552740 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Communication_Architecture_v1.json
+2026-07-26 07:49:21.1849886080 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Companion_Narrative_Working_Draft_v0_2.json
+2026-07-26 07:49:21.1949886090 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Conformance_Preparation.json
+2026-07-26 07:49:21.2116552780 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Constitution_v0.1_Draft.json
+2026-07-26 07:49:21.2249886120 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Contributor_Provenance_v1.0.json
+2026-07-26 07:49:21.2416552810 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Covenant_v1.0.json
+2026-07-26 07:49:21.2516552820 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Culture_Architecture_v1.0.json
+2026-07-26 07:49:21.2616552830 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Dependency_Graph_Specification_v1.1.json
+2026-07-26 07:49:21.2716552840 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Design_Philosophy_v1.1.json
+2026-07-26 07:49:21.2849886180 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Developmental_Framework_v1.json
+2026-07-26 07:49:21.2983219530 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Engineering_Method_Update.json
+2026-07-26 07:49:21.3116552880 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Final_Observation_v1.0.json
+2026-07-26 07:49:21.3283219560 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Forensic_Checkpoint_0001.json
+2026-07-26 07:49:21.3483219580 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Foundational_Theory_v1.1.json
+2026-07-26 07:49:21.3649886260 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Gardener_Cultivation_Model_v1.0.json
+2026-07-26 07:49:21.3816552950 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Gardener_Principle_v1.0.json
+2026-07-26 07:49:21.3949886290 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Governing_Principles_v1.1.json
+2026-07-26 07:49:21.4049886300 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Hope_Architecture_v1.0.json
+2026-07-26 07:49:21.4149886310 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Human_Centered_Repository_Philosophy_v1.0.json
+2026-07-26 07:49:21.4249886320 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Implementation_Roadmap_v1.0.json
+2026-07-26 07:49:21.4483219680 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Integrity_Architecture_v1.1.json
+2026-07-26 07:49:21.4616553030 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Legacy_Architecture_v1.0.json
+2026-07-26 07:49:21.4749886370 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Living_Repository_Architecture_v1.0.json
+2026-07-26 07:49:21.4949886390 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Longitudinal_Reasoning_v1.0.json
+2026-07-26 07:49:21.5149886410 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_MetaArchitecture_Update.json
+2026-07-26 07:49:21.5316553100 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Mission_Statement_v1.0.json
+2026-07-26 07:49:21.5483219780 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Phylactery_PreFreeze_Baseline_v0.1.json
+2026-07-26 07:49:21.5649886460 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Preservation_Automation_Constitution_v1.0.json
+2026-07-26 07:49:21.5749886470 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Publication_Front_Matter_v1.0.json
+2026-07-26 07:49:21.5883219820 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Reasoning_Contracts_v1.1-1.json
+2026-07-26 07:49:21.6049886500 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Reasoning_Manifest_v1.json
+2026-07-26 07:49:21.6216553180 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Repository_Constitution_v1.1.json
+2026-07-26 07:49:21.6383219870 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Repository_Invariants_v1.1.json
+2026-07-26 07:49:21.6516553210 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Repository_Voice_v1.0.json
+2026-07-26 07:49:21.6749886570 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Roadmap_v2.json
+2026-07-26 07:49:21.6916553250 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Runtime_Specification_v1.0.json
+2026-07-26 07:49:21.7083219940 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_SPEC_Roadmap_Update.json
+2026-07-26 07:49:21.7216553280 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Stewards_Compass_v1.0.json
+2026-07-26 07:49:21.7349886630 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Stewards_Oath_v1.0.json
+2026-07-26 07:49:21.7483219980 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Stewardship_Architecture_v1.0.json
+2026-07-26 07:49:21.7683220000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Style_Profile_Model_v1.json
+2026-07-26 07:49:21.7883220020 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Validation_Queue.json
+2026-07-26 07:49:21.8016553360 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_repository_layers.json
+2026-07-26 07:49:21.8149886710 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/AKS_workflow_vNext.json
+2026-07-26 07:49:21.8416553400 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/DOCX/AKS_Archive_Program_Roadmap_v0.1.docx
+2026-07-26 07:49:21.8549886750 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/DOCX/AKS_Archive_Volume_II_Architecture_Blueprint_v0.1.docx
+2026-07-26 07:49:21.8649886760 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/DOCX/AKS_Archive_Volume_I_Governance_Methodology_v0.1.docx
+2026-07-26 07:49:21.8783220110 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/DOCX/AKS_Checkpoint_v0.2.docx
+2026-07-26 07:49:21.8883220120 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/DOCX/AKS_Curation_Protocol_v0.1.docx
+2026-07-26 07:49:21.8983220130 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/DOCX/AKS_Governing_Constitution_v1.0.docx
+2026-07-26 07:49:21.9216553480 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/DOCX/AKS_Project_Ledger_v0.1.docx
+2026-07-26 07:49:21.9383220170 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/DOCX/AOS_Operating_Doctrine_v1.0.docx
+2026-07-26 07:49:21.9483220180 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/DOCX/df.md
+2026-07-26 07:49:21.9649886860 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/AKS/add.md
+2026-07-26 07:49:21.9883220220 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Archives/Ju.md
+2026-07-26 07:49:22.0116553570 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Archives/MISC/ghy.md
+2026-07-26 07:49:22.0349886930 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Archives/TAR/ghy.md
+2026-07-26 07:49:22.0716553630 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Archives/ZIP/ghy.md
+2026-07-26 07:49:22.0883220320 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Audio/Sd.md
+2026-07-26 07:49:22.1216553680 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/Exports/Ji.md
+2026-07-26 07:49:22.1383220370 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/Hh.md
+2026-07-26 07:49:22.1583220390 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/AKS_archive_manifest_v1_seed.json
+2026-07-26 07:49:22.2149887110 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/AKS_manifest_v0.1.json
+2026-07-26 07:49:22.2249887120 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/ALT_Specification_v1.0.json
+2026-07-26 07:49:22.2449887140 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/AUDIT_STATE_PP0001.json
+2026-07-26 07:49:22.2583220490 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/BUR_Specification_v1.0-1.json
+2026-07-26 07:49:22.2649887160 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/BUR_Specification_v1.0-2.json
+2026-07-26 07:49:22.2749887170 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/BUR_Specification_v1.0.json
+2026-07-26 07:49:22.2883220520 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/CA-0003.json
+2026-07-26 07:49:22.2949887190 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/CA-0004.json
+2026-07-26 07:49:22.3016553860 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/CNF-0001.json
+2026-07-26 07:49:22.3149887210 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/CTX_Specification_v1.0.json
+2026-07-26 07:49:22.3383220570 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/ENT_Specification_v1.0.json
+2026-07-26 07:49:22.3483220580 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/ENV_Specification_v1.0-1.json
+2026-07-26 07:49:22.3549887250 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/ENV_Specification_v1.0.json
+2026-07-26 07:49:22.3649887260 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/EXECUTION_QUEUE_PP0001.json
+2026-07-26 07:49:22.3716553930 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Evidence_Transformation_Specification_v1.0.json
+2026-07-26 07:49:22.3849887280 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Execution_Queue_PP0005.json
+2026-07-26 07:49:22.3916553950 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Execution_Queue_PP0006.json
+2026-07-26 07:49:22.4083220640 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Execution_Sprint_1.json
+2026-07-26 07:49:22.4183220640 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Execution_Sprint_1_Update.json
+2026-07-26 07:49:22.4249887320 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Execution_State_v0.2.json
+2026-07-26 07:49:22.4349887330 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Forensic_Parser_Workflow.json
+2026-07-26 07:49:22.4483220670 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Forensic_Parser_Workflow_full_chat.json
+2026-07-26 07:49:22.4549887350 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Forensic_Parser_Workflow_reverse_parse_901pm_7_23_26.json
+2026-07-26 07:49:22.4683220690 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/GAP_Specification_v1.0.json
+2026-07-26 07:49:22.4783220700 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Handbook_Project_Organization (1).json
+2026-07-26 07:49:22.4916554050 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Handbook_Project_Organization.json
+2026-07-26 07:49:22.4983220720 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Inference_and_Linguistic_Models.json
+2026-07-26 07:49:22.5049887400 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Kernel_Manifest_v2.1.json
+2026-07-26 07:49:22.5116554070 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Kernel_Manifest_v2.json
+2026-07-26 07:49:22.5183220740 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/MAJOR_PP_0001.json
+2026-07-26 07:49:22.5249887420 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/MAJOR_PP_0002.json
+2026-07-26 07:49:22.5316554090 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/MAJOR_PP_0003.json
+2026-07-26 07:49:22.5449887440 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Master_Conversations_Unparsed_v1.json
+2026-07-26 07:49:22.5583220780 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/OBS_Specification_v1.0.json
+2026-07-26 07:49:22.5649887460 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/OUT_Specification_v1.0.json
+2026-07-26 07:49:22.5783220800 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PAT_Specification_v1.0.json
+2026-07-26 07:49:22.5816554140 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-0001_Automatic_Transition_Preservation.json
+2026-07-26 07:49:22.5916554150 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-0002_Incremental_Canonical_Preservation.json
+2026-07-26 07:49:22.6016554160 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-0003_Continuous_Repository_Indexing.json
+2026-07-26 07:49:22.6149887510 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-0004_Conservation_of_Architectural_Work.json
+2026-07-26 07:49:22.6249887520 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-0005_Architectural_Change_Preservation.json
+2026-07-26 07:49:22.6383220860 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-0006_Canonical_Test_Requirement-1.json
+2026-07-26 07:49:22.6483220870 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-0006_Canonical_Test_Requirement-2.json
+2026-07-26 07:49:22.6583220880 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-INDEX-0001_Draft_0.1_Canonical.json
+2026-07-26 07:49:22.6683220890 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-INDEX-0001_Draft_0.2_Canonical.json
+2026-07-26 07:49:22.6816554240 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-INDEX-0001_Draft_0.3_Update.json
+2026-07-26 07:49:22.6916554250 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/QST_Specification_v1.0.json
+2026-07-26 07:49:22.7116554270 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/REL_Specification_v1.0.json
+2026-07-26 07:49:22.7183220940 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/REV-0001.json
+2026-07-26 07:49:22.7249887620 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/REV-0002.json
+2026-07-26 07:49:22.7383220960 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/REV-0005.json
+2026-07-26 07:49:22.7416554300 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/REV-0006.json
+2026-07-26 07:49:22.7549887650 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Repository_State_PP0004.json
+2026-07-26 07:49:22.7716554330 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Repository_State_PP0005.json
+2026-07-26 07:49:22.7816554340 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Repository_State_PP0006.json
+2026-07-26 07:49:22.7883221010 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Repository_State_PP0007.json
+2026-07-26 07:49:22.7949887690 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Repository_State_PP0008.json
+2026-07-26 07:49:22.8083221030 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Runtime_Manifest_v2.2.json
+2026-07-26 07:49:22.8149887710 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Runtime_Manifest_v3.0.json
+2026-07-26 07:49:22.8283221050 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Runtime_Manifest_v4.0.json
+2026-07-26 07:49:22.8416554400 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Runtime_Manifest_v5.0.json
+2026-07-26 07:49:22.8649887760 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Runtime_Manifest_v6.0.json
+2026-07-26 07:49:22.8749887770 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-0000_Constitutional_Registry.json
+2026-07-26 07:49:22.8883221110 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-0001_Machine_State_Model.json
+2026-07-26 07:49:22.9016554460 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-0002_Error_Exception_Framework.json
+2026-07-26 07:49:22.9149887810 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-0003_v1.0.1.json
+2026-07-26 07:49:22.9283221150 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-0004_v1.0.0.json
+2026-07-26 07:49:22.9416554500 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-0005_v1.0.0.json
+2026-07-26 07:49:22.9549887850 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-0006_v1.0.0.json
+2026-07-26 07:49:22.9649887860 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-1004_v1.0.0.json
+2026-07-26 07:49:22.9816554540 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-1005_v1.0.0.json
+2026-07-26 07:49:22.9883221210 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-2010_v1.0.0-1.json
+2026-07-26 07:49:22.9949887890 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-4002_v1.0.0.json
+2026-07-26 07:49:23.0049887900 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-4003_v1.0.0.json
+2026-07-26 07:49:23.0116554570 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-4004_v1.0.0.json
+2026-07-26 07:49:23.0216554580 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-4005_v1.0.0.json
+2026-07-26 07:49:23.0316554590 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-4006_v1.0.0.json
+2026-07-26 07:49:23.0383221260 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-5011_v1.0.0.json
+2026-07-26 07:49:23.0483221270 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-5012_v1.0.0.json
+2026-07-26 07:49:23.0583221280 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-5013_v1.0.0.json
+2026-07-26 07:49:23.0716554630 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-5014_v1.0.0.json
+2026-07-26 07:49:23.0816554640 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-5015_v1.0.0.json
+2026-07-26 07:49:23.0949887990 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-6001_v1.0.0.json
+2026-07-26 07:49:23.1216554680 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-7001_v1.0.0.json
+2026-07-26 07:49:23.1316554690 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-GOV-0001.json
+2026-07-26 07:49:23.1449888040 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Se.md
+2026-07-26 07:49:23.1583221380 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/TRN_Specification_v1.0.json
+2026-07-26 07:49:23.1683221390 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Traversal_Ledger_v0.1.json
+2026-07-26 07:49:23.1816554740 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/VAL-0001.json
+2026-07-26 07:49:23.1916554750 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/VAL-0004.json
+2026-07-26 07:49:23.2083221430 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/VAL-0005.json
+2026-07-26 07:49:23.2216554780 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/census_v0.1.json
+2026-07-26 07:49:23.2383221460 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/chatgpt-conversation (2).json
+2026-07-26 07:49:23.2483221470 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/confidence_framework.json
+2026-07-26 07:49:23.2649888160 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/cross_reference_index_seed.json
+2026-07-26 07:49:23.2716554830 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/decisions_template.json
+2026-07-26 07:49:23.2816554840 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/entities_template.json
+2026-07-26 07:49:23.2983221520 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/forensic_parser_workflow_start.json
+2026-07-26 07:49:23.3149888210 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/interventions_template.json
+2026-07-26 07:49:23.3283221550 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/master_index_template.json
+2026-07-26 07:49:23.3449888230 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/master_manifest_v0.2.json
+2026-07-26 07:49:23.3549888240 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/migration_manifest_v0.1.json
+2026-07-26 07:49:23.3683221590 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/negative_evidence_template.json
+2026-07-26 07:49:23.3849888270 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/observations_schema.json
+2026-07-26 07:49:23.3983221620 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/observations_seed.json
+2026-07-26 07:49:23.4116554970 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/pattern_schema.json
+2026-07-26 07:49:23.4216554980 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/patterns_seed.json
+2026-07-26 07:49:23.4349888320 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/questions_template.json
+2026-07-26 07:49:23.4483221670 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/relationship_schema.json
+2026-07-26 07:49:23.4583221680 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/relationships_seed.json
+2026-07-26 07:49:23.4749888360 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/repository_structure.json
+2026-07-26 07:49:23.5349888420 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/sources_template.json
+2026-07-26 07:49:23.5449888430 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/strengths_template.json
+2026-07-26 07:49:23.5583221780 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/timeline_template.json
+2026-07-26 07:49:23.5749888460 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/Screenshots/aw.md
+2026-07-26 07:49:23.5949888480 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Chatgpt/Shared Links/tujd
+2026-07-26 07:49:23.6183221840 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Clinician Edition/Clinician Edition Volume 1 v0.25.docx
+2026-07-26 07:49:23.6283221850 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Clinician Edition/Clinician_Edition_v0.5_Working_Draft.docx
+2026-07-26 07:49:23.6349888520 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Clinician Edition/ase.md
+2026-07-26 07:49:23.6683221890 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/AKS Internal Storage.docx
+2026-07-26 07:49:23.6816555240 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/AKS Repository Synchronization Directive — Library Normalization.docx
+2026-07-26 07:49:23.6949888580 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Canonical_Object_Standard_v1.0.docx
+2026-07-26 07:49:23.7016555260 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Clinician_Edition_v0.5_Working_Draft.docx
+2026-07-26 07:49:23.7116555270 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/DHP_Foundation_Handbook_v0.1.docx
+2026-07-26 07:49:23.7216555280 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/DHP_Recovery_Checkpoint_RC-0001.docx
+2026-07-26 07:49:23.7349888620 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Eighteenth conversation - final.docx
+2026-07-26 07:49:23.7516555310 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Eighth conversation .docx
+2026-07-26 07:49:23.7649888650 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Eleventh conversation .docx
+2026-07-26 07:49:23.7749888660 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Engineering Methodology.docx
+2026-07-26 07:49:23.7916555350 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Evidence_Standard_v1.0.docx
+2026-07-26 07:49:23.8083222030 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Fifteenth conversation.docx
+2026-07-26 07:49:23.8216555380 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Fifth Conversation.docx
+2026-07-26 07:49:23.8349888720 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/First Conversation .docx
+2026-07-26 07:49:23.8483222070 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Fourteenth conversation .docx
+2026-07-26 07:49:23.8649888750 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Fourth Conversation .docx
+2026-07-26 07:49:23.8883222110 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Governance_Manual_v1.0.docx
+2026-07-26 07:49:23.9049888790 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Handbook_Foundation_Package.docx
+2026-07-26 07:49:23.9216555480 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Last chat before starting new project.docx
+2026-07-26 07:49:23.9449888830 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Master Conversations 1-18-part-1.docx
+2026-07-26 07:49:23.9649888850 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Master Conversations 1-18.docx
+2026-07-26 07:49:23.9883222210 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Master Conversations 18-20-part-2.docx
+2026-07-26 07:49:24.0049888890 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Master_Handbook_v0.2.docx
+2026-07-26 07:49:24.0249888910 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Nineteenth conversation  (1).docx
+2026-07-26 07:49:24.0349888920 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Ninth Conversation .docx
+2026-07-26 07:49:24.0483222270 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Observation_Register_v0.1.docx
+2026-07-26 07:49:24.0649888950 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Observation_Standard_v1.0.docx
+2026-07-26 07:49:24.0783222300 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Preservation_Principles_v1.0.docx
+2026-07-26 07:49:24.0883222310 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Project_Change_Log_v0.1-1.docx
+2026-07-26 07:49:24.1016555660 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Project_Change_Log_v0.1.docx
+2026-07-26 07:49:24.1149889000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Project_Ledger_Specification_v1.0.docx
+2026-07-26 07:49:24.1316555690 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Provenance_Standard_v1.0.docx
+2026-07-26 07:49:24.1483222370 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Publication_Doctrine_v1.0.docx
+2026-07-26 07:49:24.1583222380 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Reconciliation_Doctrine_v1.0-1.docx
+2026-07-26 07:49:24.1683222390 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Reconciliation_Doctrine_v1.0.docx
+2026-07-26 07:49:24.1816555740 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Recovery_Checkpoint_v1.0.docx
+2026-07-26 07:49:24.1949889080 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Recovery_Doctrine_v1.0.docx
+2026-07-26 07:49:24.2083222430 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Second Conversation .docx
+2026-07-26 07:49:24.2216555780 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Seventeenth conversation .docx
+2026-07-26 07:49:24.2383222460 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Seventh conversation .docx
+2026-07-26 07:49:24.2516555800 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Sixteenth conversation .docx
+2026-07-26 07:49:24.2649889150 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Sixth Conversation .docx
+2026-07-26 07:49:24.2816555830 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Standing_Orders_v1.0.docx
+2026-07-26 07:49:24.2949889180 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Stewardship_Manual_v1.0.docx
+2026-07-26 07:49:24.3083222530 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/THE ACTIVE STATE SNAPSHOT.docx
+2026-07-26 07:49:24.3249889210 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Tenth conversation .docx
+2026-07-26 07:49:24.3383222560 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Third Conversation .docx
+2026-07-26 07:49:24.3583222580 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Thirteenth conversation .docx
+2026-07-26 07:49:24.3716555920 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Twelfth conversation .docx
+2026-07-26 07:49:24.3849889270 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Twenty conversation .docx
+2026-07-26 07:49:24.4016555950 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Versioning_Standard_v1.0.docx
+2026-07-26 07:49:24.4149889300 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/forensic parser workflow start.docx
+2026-07-26 07:49:24.4249889310 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/ghy.md
+2026-07-26 07:49:24.4349889320 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/Fg.md
+2026-07-26 07:49:24.4549889340 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/PDF/ADE Workflow Automation Prompts.pdf
+2026-07-26 07:49:24.4783222700 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/PDF/AOS Repository.pdf
+2026-07-26 07:49:24.5216556070 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Bootstrap Preparation Checklist.pdf
+2026-07-26 07:49:24.5649889450 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Forensic Parser Workflow.pdf
+2026-07-26 07:49:24.5849889470 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Free ChatGPT Plugins for ADE.pdf
+2026-07-26 07:49:24.5983222820 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/PDF/GitHub Access Limitations.pdf
+2026-07-26 07:49:24.6216556170 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/PDF/GitHub PR Inspection.pdf
+2026-07-26 07:49:24.6416556190 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Inference and Linguistic Models.pdf
+2026-07-26 07:49:24.6583222880 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Moving files in GitHub.pdf
+2026-07-26 07:49:24.6716556220 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/PDF/OAuth Error Investigation.pdf
+2026-07-26 07:49:24.6916556240 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Project Organization Strategy.pdf
+2026-07-26 07:49:24.7083222930 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Repo Not Found.pdf
+2026-07-26 07:49:24.7249889610 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Rowan_Learns_Words_v0.1.pdf
+2026-07-26 07:49:24.7383222960 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Rowan_Today_Field_Guide_Mom_v3.0.pdf
+2026-07-26 07:49:24.7649889650 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Rowan_Today_Mom_Edition_v1.0.pdf
+2026-07-26 07:49:24.7783223000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/PDF/ghy.md
+2026-07-26 07:49:24.7949889680 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/PDT/ghy.md
+2026-07-26 07:49:24.8183223040 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Documents/TXT/ghy.md
+2026-07-26 07:49:24.8449889730 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Foundation Package Alpha/FPA-0000-Manifest.json
+2026-07-26 07:49:24.8583223080 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Foundation Package Alpha/FPA-0001-CanonicalVocabulary.json
+2026-07-26 07:49:24.8783223100 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Foundation Package Alpha/FPA-0002-SpecificationFramework.json
+2026-07-26 07:49:24.8916556440 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Foundation Package Alpha/FPA-0003-CanonicalArtifactOntology.json
+2026-07-26 07:49:24.9049889790 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Foundation Package Alpha/FPA-0004-ProductionState.json
+2026-07-26 07:49:24.9149889800 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Foundation Package Alpha/Foundation_Package_Alpha_JSONs.zip
+2026-07-26 07:49:24.9283223150 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Foundation Package Alpha/ap.md
+2026-07-26 07:49:24.9583223180 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Images/JPG/ghy.md
+2026-07-26 07:49:24.9783223200 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Images/PNG/ghy.md
+2026-07-26 07:49:24.9949889880 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Images/U.md
+2026-07-26 07:49:25.0216556570 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Images/WEBP/ghy.md
+2026-07-26 07:49:25.0449889930 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Misc/Gh.md
+2026-07-26 07:49:25.0649889950 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Presentations/Th.md
+2026-07-26 07:49:25.0849889970 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Spreadsheets/Er.md
+2026-07-26 07:49:25.1049889990 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/Video/vd.md
+2026-07-26 07:49:25.1216556670 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Recovery/plh.md
+2026-07-26 07:49:25.1416556690 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/Dfg.md
+2026-07-26 07:49:25.1683223390 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/MAJOR_PP_0001.json
+2026-07-26 07:49:25.1783223390 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/MAJOR_PP_0002.json
+2026-07-26 07:49:25.1849890070 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/MAJOR_PP_0003.json
+2026-07-26 07:49:25.1949890080 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0004.json
+2026-07-26 07:49:25.2016556750 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0005.json
+2026-07-26 07:49:25.2116556760 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0005_Bundle_Manifest.json
+2026-07-26 07:49:25.2183223430 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0006.json
+2026-07-26 07:49:25.2249890110 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0006_Bundle_Manifest.json
+2026-07-26 07:49:25.2349890120 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0007.json
+2026-07-26 07:49:25.2416556790 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0007_Bundle_Manifest.json
+2026-07-26 07:49:25.2549890140 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0008.json
+2026-07-26 07:49:25.2683223480 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0008_Bundle_Manifest.json
+2026-07-26 07:49:25.2816556830 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0044_Provenance_Before_Path.json
+2026-07-26 07:49:25.2916556840 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0045_Fingerprints_Endure.json
+2026-07-26 07:49:25.3083223520 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0046_Repository_Architecture.json
+2026-07-26 07:49:25.3283223540 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0047_Epistemic_Engineering.json
+2026-07-26 07:49:25.3416556890 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0048_Conservative_Synthesis.json
+2026-07-26 07:49:25.3516556900 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0049_Developmental_Framework_Foundation.json
+2026-07-26 07:49:25.3649890250 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0050_Communication_Architecture.json
+2026-07-26 07:49:25.3783223590 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0051_Constitutional_Epistemics_v1.1.json
+2026-07-26 07:49:25.3849890270 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0052_Human_Centered_Stewardship_v1.0.json
+2026-07-26 07:49:25.3949890280 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0052_Minor.json
+2026-07-26 07:49:25.4149890300 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0052_Recovery_Manifest.json
+2026-07-26 07:49:25.4283223640 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0053_Minor.json
+2026-07-26 07:49:25.4383223650 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0053_Policy_Manifest.json
+2026-07-26 07:49:25.4483223660 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0053_Repository_Voice_and_Stewardship_v1.0.json
+2026-07-26 07:49:25.4583223670 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054A_manifest.json
+2026-07-26 07:49:25.4683223680 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Governance_Manifest.json
+2026-07-26 07:49:25.4783223690 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Minor.json
+2026-07-26 07:49:25.4916557040 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Phase_Shift_Living_Repository_v1.0.json
+2026-07-26 07:49:25.5049890390 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Summary.xlsx
+2026-07-26 07:49:25.5216557070 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Synthesis.json
+2026-07-26 07:49:25.5349890420 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Intervention_Failures.json
+2026-07-26 07:49:25.5483223760 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Intervention_Failures.xlsx
+2026-07-26 07:49:25.5616557110 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Interventions.json
+2026-07-26 07:49:25.5783223790 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Knowledge_Model.json
+2026-07-26 07:49:25.5883223800 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Manifest.json
+2026-07-26 07:49:25.6083223820 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Repository_Corpus_Ingestion.json
+2026-07-26 07:49:25.6249890510 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0056_Minor.json
+2026-07-26 07:49:25.6416557190 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0056_Minor_Execution_Transition.json
+2026-07-26 07:49:25.6549890540 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0057_Major.json
+2026-07-26 07:49:25.6683223880 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0058-MAJOR.json
+2026-07-26 07:49:25.6816557230 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0058-Manifest.json
+2026-07-26 07:49:25.6916557240 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP-0058-Principles.json
+2026-07-26 07:49:25.7016557250 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/PP0001_MANIFEST.json
+2026-07-26 07:49:25.7216557270 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Snapshots/PP/ghy.md
+2026-07-26 07:49:25.7383223950 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive_INDEX.md
+2026-07-26 07:49:25.7549890640 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive_README.md
+2026-07-26 07:49:25.7783223990 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CATALOG.md
+2026-07-26 07:49:25.8049890690 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/ACP-0001_Foundation_Gamma_v1.4.md
+2026-07-26 07:49:25.8249890710 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/ACTIVE_STATE_SNAPSHOT_v1.4.md
+2026-07-26 07:49:25.8449890730 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/ADE Workflow Automation Prompts.pdf
+2026-07-26 07:49:25.8616557410 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/ADE_Constitution_v1.4.md
+2026-07-26 07:49:25.8816557430 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/ADE_full_repo_context.txt
+2026-07-26 07:49:25.8983224110 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/AKS-INVARIANTS-0001_Draft_0.1.json
+2026-07-26 07:49:25.9049890790 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/AKS-PRESERVATION-0042_Emergent_Behavior_and_Regulatory_Structures.json
+2026-07-26 07:49:25.9149890800 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/AKS_Companion_Narrative_Working_Draft_v0_2.docx
+2026-07-26 07:49:25.9249890810 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/AKS_Companion_Narrative_Working_Draft_v0_2.json
+2026-07-26 07:49:25.9383224150 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/AKS_Covenant_v1.0.json
+2026-07-26 07:49:25.9483224160 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/AKS_Gardener_Cultivation_Model_v1.0.json
+2026-07-26 07:49:25.9583224170 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/AKS_Human_Centered_Repository_Philosophy_v1.0.json
+2026-07-26 07:49:25.9683224180 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/AKS_Living_Repository_Architecture_v1.0.json
+2026-07-26 07:49:25.9849890870 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/AKS_Longitudinal_Reasoning_v1.0.json
+2026-07-26 07:49:25.9883224200 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/AKS_Mission_Statement_v1.0.json
+2026-07-26 07:49:25.9983224210 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/AKS_Stewards_Compass_v1.0.json
+2026-07-26 07:49:26.0116557560 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/AOS Repository.pdf
+2026-07-26 07:49:26.0249890910 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/ARTIFACT_POLICY.md
+2026-07-26 07:49:26.0349890920 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/AUTOMATION_POLICY.md
+2026-07-26 07:49:26.0449890930 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/BLUEPRINT_v2.0_RESTORATION.md
+2026-07-26 07:49:26.0549890940 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/BOOTSTRAP_v1.4.md
+2026-07-26 07:49:26.0849890970 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Bootstrap Preparation Checklist(1).pdf
+2026-07-26 07:49:26.1283224340 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Bootstrap Preparation Checklist.pdf
+2026-07-26 07:49:26.1449891020 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/CHANGELOG.md
+2026-07-26 07:49:26.1516557700 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/CHANGELOG_v1.4.md
+2026-07-26 07:49:26.1616557710 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/CLAUDE_FOUNDATIONAL_ROADMAP.txt
+2026-07-26 07:49:26.1716557720 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/CODE_OF_CONDUCT.md
+2026-07-26 07:49:26.1783224390 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/CONSTITUTIONAL_AMENDMENT_FULL_ARTIFACTS.md
+2026-07-26 07:49:26.1883224400 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/CONTRIBUTING.md
+2026-07-26 07:49:26.1983224410 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Claude Network Drop Protocol .txt
+2026-07-26 07:49:26.2083224420 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Clinician Edition Volume 1 v0.25.docx
+2026-07-26 07:49:26.2183224430 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Clinician_Edition_v0.5_Working_Draft.docx
+2026-07-26 07:49:26.2349891110 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Clinician_Edition_v1.0_Master_Assembly_Manuscript.docx
+2026-07-26 07:49:26.2583224470 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/DECISION_POLICY.md
+2026-07-26 07:49:26.2683224480 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/DHP_Foundation_Handbook_v0.1(1).docx
+2026-07-26 07:49:26.2783224490 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/EVIDENCE_STANDARD.md
+2026-07-26 07:49:26.2916557840 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Execution_Sprint_1.json
+2026-07-26 07:49:26.3049891180 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/FOUNDATION_GAMMA_PACKAGE_v1.3.pdf
+2026-07-26 07:49:26.3216557870 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Fifth Conversation.docx
+2026-07-26 07:49:26.3316557880 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/First Conversation .docx
+2026-07-26 07:49:26.3649891240 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Forensic Parser Workflow-1.pdf
+2026-07-26 07:49:26.3883224600 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Forensic Parser Workflow.pdf
+2026-07-26 07:49:26.4083224620 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Forensic_Parser_Workflow_full_chat.json
+2026-07-26 07:49:26.4149891290 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Foundation_Gamma_Revision_Package_v1.4.pdf
+2026-07-26 07:49:26.4316557980 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Foundation_Gamma_v1.4_Final_Revision_Notes.docx
+2026-07-26 07:49:26.4483224660 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Foundation_Gamma_v1.4_Revised_Package.docx
+2026-07-26 07:49:26.4583224670 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Fourth Conversation .docx
+2026-07-26 07:49:26.4749891350 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Free ChatGPT Plugins for ADE-1.pdf
+2026-07-26 07:49:26.4949891370 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Free ChatGPT Plugins for ADE.pdf
+2026-07-26 07:49:26.5049891380 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/GLOSSARY.md
+2026-07-26 07:49:26.5149891390 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/GitHub Access Limitations.pdf
+2026-07-26 07:49:26.5283224740 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/GitHub PR Inspection.pdf
+2026-07-26 07:49:26.5349891410 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Handbook_Foundation_Package(1).docx
+2026-07-26 07:49:26.5483224760 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Handbook_Project_Organization(1).txt
+2026-07-26 07:49:26.5583224770 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/IMPORT_POLICY(1).md
+2026-07-26 07:49:26.5749891450 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/INDEX.md
+2026-07-26 07:49:26.5849891460 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/INDEX_v1.3.md
+2026-07-26 07:49:26.5949891470 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/INDEX_v1.4.md
+2026-07-26 07:49:26.6083224820 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/INDEX_v1.4_REVISED.md
+2026-07-26 07:49:26.6216558170 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/INDEX_v1.4_REVISION.md
+2026-07-26 07:49:26.6349891510 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Inference and Linguistic Models(1).pdf
+2026-07-26 07:49:26.6483224860 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Inference and Linguistic Models.pdf
+2026-07-26 07:49:26.6683224880 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Inference_and_Linguistic_Models.json
+2026-07-26 07:49:26.6949891570 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/KNOWLEDGE_MANAGEMENT.md
+2026-07-26 07:49:26.7083224920 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Kernel_Manifest_v2.1.json
+2026-07-26 07:49:26.7216558270 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/LICENSE.md
+2026-07-26 07:49:26.7349891610 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Last_chat_before_starting_new_project.docx.md
+2026-07-26 07:49:26.7483224960 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/MAJOR_PP_0003.json
+2026-07-26 07:49:26.7616558310 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/MANIFEST.md
+2026-07-26 07:49:26.7783224990 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Master Conversations 1-18-part-1.docx
+2026-07-26 07:49:26.7983225010 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Master Conversations 1-18.docx
+2026-07-26 07:49:26.8183225030 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Master Conversations 18-20-part-2.docx
+2026-07-26 07:49:26.8449891720 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Master_Conversations_1-18-part-1.docx.md
+2026-07-26 07:49:26.8683225080 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Master_Conversations_18-20-part-2.docx.md
+2026-07-26 07:49:26.9016558450 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Master_Conversations_Unparsed_v1.json
+2026-07-26 07:49:26.9216558470 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Moving files in GitHub-1.pdf
+2026-07-26 07:49:26.9383225150 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Moving files in GitHub.pdf
+2026-07-26 07:49:26.9549891830 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/NAMING_CONVENTIONS.md
+2026-07-26 07:49:26.9749891850 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/OAuth Error Investigation.pdf
+2026-07-26 07:49:27.0116558560 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/PLUGIN_POLICY.md
+2026-07-26 07:49:27.0249891900 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/PP-0004.json
+2026-07-26 07:49:27.0349891910 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/PP-0008.json
+2026-07-26 07:49:27.0449891920 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/PP-0008_Bundle_Manifest.json
+2026-07-26 07:49:27.0549891930 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/PP-0054_Phase_Shift_Living_Repository_v1.0.json
+2026-07-26 07:49:27.0649891940 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/PP-0058-MAJOR.json
+2026-07-26 07:49:27.0816558620 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/PP-0058-Manifest.json
+2026-07-26 07:49:27.0983225310 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/PP-0058-Principles.json
+2026-07-26 07:49:27.1083225320 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/PRINCIPLES.md
+2026-07-26 07:49:27.1216558660 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/PROJECT_LIFECYCLE.md
+2026-07-26 07:49:27.1349892010 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Project Organization Strategy-1.pdf
+2026-07-26 07:49:27.1549892030 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Project Organization Strategy.pdf
+2026-07-26 07:49:27.1749892050 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/QUALITY_STANDARD.md
+2026-07-26 07:49:27.1949892070 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/RC1-0000_Master_Manifest_GOLD_MASTER_v1.2.0_FROZEN.json
+2026-07-26 07:49:27.2116558750 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/RC1-0001_Repository_Constitution_GOLD_v1.2.0.json
+2026-07-26 07:49:27.2283225440 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/RC1-0002_Constitutional_Amendments_Ledger_GOLD_v1.2.0.json
+2026-07-26 07:49:27.2416558780 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/RC1-0003_Governance_Framework_GOLD_v1.2.0.json
+2026-07-26 07:49:27.2583225470 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/RC1-0004_Constitutional_Registry_GOLD_v1.2.0.json
+2026-07-26 07:49:27.2749892150 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/RC1-0005_Validation_Framework_GOLD_v1.2.0.json
+2026-07-26 07:49:27.2916558830 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/README.md
+2026-07-26 07:49:27.3049892180 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/RECOVERY_MANIFEST(1).md
+2026-07-26 07:49:27.3216558860 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/RECOVERY_POLICY.md
+2026-07-26 07:49:27.3383225550 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/REPOSITORY_CHARTER.md
+2026-07-26 07:49:27.3549892230 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/REPOSITORY_GOVERNANCE.md
+2026-07-26 07:49:27.3716558910 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/REPOSITORY_STRUCTURE.md
+2026-07-26 07:49:27.3849892260 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/ROADMAP.md
+2026-07-26 07:49:27.3983225610 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/ROADMAP_v1.3.md
+2026-07-26 07:49:27.4149892290 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/ROADMAP_v1.4.md
+2026-07-26 07:49:27.4316558970 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/ROADMAP_v1.4_REVISED.md
+2026-07-26 07:49:27.4416558980 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/ROADMAP_v1.4_REVISION.md
+2026-07-26 07:49:27.4549892330 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/ROADMAP_v2.0_RESTORATION.md
+2026-07-26 07:49:27.4649892340 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Reconciliation_Doctrine_v1.0-1.docx
+2026-07-26 07:49:27.4816559020 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Repo Not Found.pdf
+2026-07-26 07:49:27.4983225710 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Repository documentation.
+2026-07-26 07:49:27.5149892390 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/SECURITY.md
+2026-07-26 07:49:27.5349892410 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/STARTUP_PROCEDURE_v1.0.docx
+2026-07-26 07:49:27.5483225760 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/STARTUP_PROCEDURE_v1.0.md
+2026-07-26 07:49:27.5649892440 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/STATE_SNAPSHOT_PACKAGE.pdf
+2026-07-26 07:49:27.5783225790 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/SYSTEM_BOOTSTRAP_v2.0_CHATGPT.md
+2026-07-26 07:49:27.5883225800 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Second Conversation .docx
+2026-07-26 07:49:27.6049892480 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Seventh conversation .docx
+2026-07-26 07:49:27.6183225830 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Sixth Conversation .docx
+2026-07-26 07:49:27.6316559170 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/THE ACTIVE STATE SNAPSHOT.docx
+2026-07-26 07:49:27.6483225860 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/THE DIFFERENCE ENGINE- SYSTEM SPECIFICATION & REVISED BOOTSTRAP PROTOCOL (1).docx
+2026-07-26 07:49:27.6583225870 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/THE DIFFERENCE ENGINE- SYSTEM SPECIFICATION & REVISED BOOTSTRAP PROTOCOL.docx
+2026-07-26 07:49:27.6749892550 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Third Conversation .docx
+2026-07-26 07:49:27.6849892560 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/Traversal_Ledger_v0.1.json
+2026-07-26 07:49:27.7016559240 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/UPDATE FIRST PJT INSTRCT CONS  LAWS FOR CLAUDE.txt
+2026-07-26 07:49:27.7149892590 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/VERSIONING_POLICY.md
+2026-07-26 07:49:27.7316559270 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/forensic_parser_workflow_start.json
+2026-07-26 07:49:27.7483225960 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CLAUDE START HERE/oh.md
+2026-07-26 07:49:27.7583225970 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/CONSTITUTIONAL_AMENDMENT_FULL_ARTIFACTS.md
+2026-07-26 07:49:27.7716559310 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/IMPORT_POLICY(1).md
+2026-07-26 07:49:27.7883226000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/In ox/ACP-0001_Foundation_Gamma_v1.4.md
+2026-07-26 07:49:27.8016559340 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/In ox/ADE_Constitution_v1.4.md
+2026-07-26 07:49:27.8083226020 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/In ox/BOOTSTRAP_v1.3.md
+2026-07-26 07:49:27.8149892690 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/In ox/BOOTSTRAP_v1.4.md
+2026-07-26 07:49:27.8216559360 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/In ox/CHANGELOG_v1.3.md
+2026-07-26 07:49:27.8416559380 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/In ox/CHANGELOG_v1.4.md
+2026-07-26 07:49:27.8549892730 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/In ox/FOUNDATION_GAMMA_PACKAGE_v1.3.pdf
+2026-07-26 07:49:27.8683226080 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/In ox/Foundation_Gamma_Revision_Package_v1.4.pdf
+2026-07-26 07:49:27.8783226090 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/In ox/INDEX_v1.3.md
+2026-07-26 07:49:27.8883226100 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/In ox/INDEX_v1.4.md
+2026-07-26 07:49:27.9016559440 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/In ox/ROADMAP_v1.3.md
+2026-07-26 07:49:27.9116559450 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/In ox/ROADMAP_v1.4.md
+2026-07-26 07:49:27.9249892800 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/In ox/STATE_SNAPSHOT_PACKAGE.pdf
+2026-07-26 07:49:27.9383226150 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/In ox/sd.md
+2026-07-26 07:49:27.9549892830 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0000_Master_Manifest_GOLD_MASTER_v1.2.0_FROZEN.json
+2026-07-26 07:49:27.9649892840 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0001_Repository_Constitution_GOLD_v1.2.0.json
+2026-07-26 07:49:27.9749892850 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0002_Constitutional_Amendments_Ledger_GOLD_v1.2.0.json
+2026-07-26 07:49:27.9849892860 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0003_Governance_Framework_GOLD_v1.2.0.json
+2026-07-26 07:49:27.9949892870 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0004_Constitutional_Registry_GOLD_v1.2.0.json
+2026-07-26 07:49:28.0049892880 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0005_Validation_Framework_GOLD_v1.2.0.json
+2026-07-26 07:49:28.0149892890 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0006_Specification_Framework_GOLD_v1.2.0.json
+2026-07-26 07:49:28.0216559560 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0007_Specification_Volume_I_GOLD_v1.2.0.json
+2026-07-26 07:49:28.0283226230 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0008_Specification_Volume_II_GOLD_v1.2.0.json
+2026-07-26 07:49:28.0383226240 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0009_Specification_Volume_III_GOLD_v1.2.0.json
+2026-07-26 07:49:28.0449892920 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0010_Specification_Volume_IV_GOLD_v1.2.0.json
+2026-07-26 07:49:28.0549892930 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0011_Specification_Volume_V_GOLD_v1.2.0.json
+2026-07-26 07:49:28.0683226270 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0012_Specification_Volume_VI_GOLD_v1.2.0.json
+2026-07-26 07:49:28.0816559620 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0013_Specification_Volume_VII_GOLD_v1.2.0.json
+2026-07-26 07:49:28.0983226300 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0014_Specification_Volume_VIII_GOLD_v1.2.0.json
+2026-07-26 07:49:28.1083226310 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0015_Specification_Volume_IX_GOLD_v1.2.0.json
+2026-07-26 07:49:28.1216559660 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0016_Specification_Volume_X_GOLD_v1.2.0.json
+2026-07-26 07:49:28.1316559670 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0017_Specification_Volume_XI_GOLD_v1.2.0.json
+2026-07-26 07:49:28.1416559680 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0018_Specification_Volume_XII_GOLD_v1.2.0.json
+2026-07-26 07:49:28.1516559690 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0019_Publication_Manifest_GOLD_v1.2.0.json
+2026-07-26 07:49:28.1683226370 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0020_Repository_Certification_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.1849893060 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0021_Repository_Release_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.2016559740 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0022_Repository_Preservation_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.2216559760 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0023_Repository_Freeze_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.2349893110 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0024_Repository_Archive_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.2516559790 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0025_Repository_Final_Certification_GOLD_v1.2.0.json
+2026-07-26 07:49:28.2683226470 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0026_Repository_Release_Closure_GOLD_v1.2.0.json
+2026-07-26 07:49:28.2816559820 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0027_Repository_Completion_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.2949893170 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0028_Repository_Ratification_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.3083226510 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0029_Repository_Canonical_Release_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.3183226520 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0030_Repository_Publication_Completion_GOLD_v1.2.0.json
+2026-07-26 07:49:28.3283226530 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0031_Repository_RC1_Closure_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.3416559880 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0032_Repository_Preservation_Point_Index_GOLD_v1.2.0.json
+2026-07-26 07:49:28.3516559890 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0033_Repository_Publication_Ledger_GOLD_v1.2.0.json
+2026-07-26 07:49:28.3749893250 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0034_Repository_Final_Preservation_Point_GOLD_v1.2.0.json
+2026-07-26 07:49:28.3883226590 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0035_Repository_Canonical_Archive_Index_GOLD_v1.2.0.json
+2026-07-26 07:49:28.3983226600 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0036_Repository_Certification_Evidence_Register_GOLD_v1.2.0.json
+2026-07-26 07:49:28.4149893290 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0037_Repository_Immutable_Release_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.4283226630 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0038_Repository_Release_Seal_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.4416559980 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0039_Repository_Golden_Archive_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.4549893330 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0040_Repository_RC1_Completion_Certificate_GOLD_v1.2.0.json
+2026-07-26 07:49:28.4749893350 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0041_Repository_RC1_Transition_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.4949893370 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0042_Repository_RC1_Governance_Handoff_GOLD_v1.2.0.json
+2026-07-26 07:49:28.5083226710 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0043_Repository_RC1_Successor_Initialization_GOLD_v1.2.0.json
+2026-07-26 07:49:28.5183226720 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0044_Repository_RC1_Legacy_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.5316560070 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0045_Repository_RC1_Canonical_Closure_GOLD_v1.2.0.json
+2026-07-26 07:49:28.5483226750 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0046_Repository_RC1_Final_Ratification_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.5616560100 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0047_Repository_RC1_Canonical_Baseline_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.5716560110 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0048_Repository_RC1_Release_Continuity_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.5849893460 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0049_Repository_RC1_Successor_Baseline_Certificate_GOLD_v1.2.0.json
+2026-07-26 07:49:28.5949893470 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0050_Repository_RC1_Continuity_Charter_GOLD_v1.2.0.json
+2026-07-26 07:49:28.6049893480 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0051_Repository_RC1_Governance_Continuation_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.6183226820 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0052_Repository_RC1_Stewardship_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.6316560170 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0053_Repository_RC1_Successor_Governance_Charter_GOLD_v1.2.0.json
+2026-07-26 07:49:28.6416560180 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0054_Repository_RC1_Perpetual_Governance_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:28.6583226860 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0055_Repository_RC1_Legacy_Continuity_Register_GOLD_v1.2.0.json
+2026-07-26 07:49:28.6716560210 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0056_Repository_RC1_Repository_Continuity_Ledger_GOLD_v1.2.0.json
+2026-07-26 07:49:28.6949893570 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0057_Repository_RC1_Canonical_Continuity_Index_GOLD_v1.2.0.json
+2026-07-26 07:49:28.7083226910 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0058_Repository_RC1_Canonical_Preservation_Register_GOLD_v1.2.0.json
+2026-07-26 07:49:28.7249893600 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0059_Repository_RC1_Constitutional_Archive_Register_GOLD_v1.2.0.json
+2026-07-26 07:49:28.7383226940 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0060_Repository_RC1_Constitutional_Preservation_Ledger_GOLD_v1.2.0.json
+2026-07-26 07:49:28.7549893630 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0061_Repository_RC1_Constitutional_Integrity_Register_GOLD_v1.2.0.json
+2026-07-26 07:49:28.7683226970 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0062_Repository_RC1_Constitutional_Certification_Register_GOLD_v1.2.0.json
+2026-07-26 07:49:28.7883226990 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0063_Repository_RC1_Constitutional_Ratification_Register_GOLD_v1.2.0.json
+2026-07-26 07:49:28.7983227000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0064_Repository_RC1_Constitutional_Finalization_Register_GOLD_v1.2.0.json
+2026-07-26 07:49:28.8149893680 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0065_Repository_RC1_Constitutional_Closure_Register_GOLD_v1.2.0.json
+2026-07-26 07:49:28.8283227030 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0066_Repository_RC1_Constitutional_Archive_Closure_Certificate_GOLD_v1.2.0.json
+2026-07-26 07:49:28.8383227040 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0067_Repository_RC1_Canonical_Repository_Freeze_Certificate_GOLD_v1.2.0.json
+2026-07-26 07:49:28.8516560390 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0068_Repository_RC1_Canonical_Repository_Seal_Certificate_GOLD_v1.2.0.json
+2026-07-26 07:49:28.8683227070 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0069_Repository_RC1_Canonical_Repository_Completion_Certificate_GOLD_v1.2.0.json
+2026-07-26 07:49:28.8816560420 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0070_Repository_RC1_Canonical_Publication_Completion_Ledger_GOLD_v1.2.0.json
+2026-07-26 07:49:28.9016560440 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0071_Repository_RC1_Canonical_Repository_Acceptance_Certificate_GOLD_v1.2.0.json
+2026-07-26 07:49:28.9149893780 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0072_Repository_RC1_Canonical_Repository_Release_Certificate_GOLD_v1.2.0.json
+2026-07-26 07:49:28.9283227130 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0073_Repository_RC1_Canonical_Repository_Distribution_Certificate_GOLD_v1.2.0.json
+2026-07-26 07:49:28.9383227140 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0074_Repository_RC1_Canonical_Repository_Delivery_Certificate_GOLD_v1.2.0.json
+2026-07-26 07:49:28.9449893810 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0075_Repository_RC1_Canonical_Repository_Receipt_Certificate_GOLD_v1.2.0.json
+2026-07-26 07:49:28.9549893820 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0076_Repository_RC1_Canonical_Repository_Verification_Certificate_GOLD_v1.2.0.json
+2026-07-26 07:49:28.9683227170 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0077_Repository_RC1_Canonical_Repository_Validation_Certificate_GOLD_v1.2.0.json
+2026-07-26 07:49:28.9783227180 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0078_Repository_RC1_Canonical_Repository_Compliance_Certificate_GOLD_v1.2.0.json
+2026-07-26 07:49:28.9983227200 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0079_Repository_RC1_Canonical_Repository_Conformance_Certificate_GOLD_v1.2.0.json
+2026-07-26 07:49:29.0083227210 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0080_Repository_RC1_Canonical_Repository_Certification_Ledger_GOLD_v1.2.0.json
+2026-07-26 07:49:29.0183227220 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0081_Repository_RC1_Canonical_Repository_Certification_Archive_GOLD_v1.2.0.json
+2026-07-26 07:49:29.0316560570 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0082_Repository_RC1_Canonical_Repository_Certification_Index_GOLD_v1.2.0.json
+2026-07-26 07:49:29.0416560580 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0083_Repository_RC1_Canonical_Repository_Certification_Manifest_GOLD_v1.2.0.json
+2026-07-26 07:49:29.0549893920 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0084_Repository_RC1_Canonical_Repository_Certification_Register_GOLD_v1.2.0.json
+2026-07-26 07:49:29.0683227270 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0085_Repository_RC1_Canonical_Repository_Certification_Summary_GOLD_v1.2.0.json
+2026-07-26 07:49:29.0816560620 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0086_Repository_RC1_Canonical_Repository_Certification_Digest_GOLD_v1.2.0.json
+2026-07-26 07:49:29.0916560630 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0087_Repository_RC1_Canonical_Repository_Certification_Seal_GOLD_v1.2.0.json
+2026-07-26 07:49:29.1049893970 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0088_Repository_RC1_Canonical_Repository_Certification_Attestation_GOLD_v1.2.0.json
+2026-07-26 07:49:29.1183227320 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0089_Repository_RC1_Canonical_Repository_Certification_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:29.1316560670 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0090_Repository_RC1_Canonical_Repository_Certification_Dossier_GOLD_v1.2.0.json
+2026-07-26 07:49:29.1483227350 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0091_Repository_RC1_Canonical_Repository_Certification_Portfolio_GOLD_v1.2.0.json
+2026-07-26 07:49:29.1649894030 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0092_Repository_RC1_Canonical_Repository_Certification_Compendium_GOLD_v1.2.0.json
+2026-07-26 07:49:29.1883227390 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0093_Repository_RC1_Canonical_Repository_Certification_Archive_Register_GOLD_v1.2.0.json
+2026-07-26 07:49:29.2116560750 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0094_Repository_RC1_Canonical_Repository_Certification_Master_Register_GOLD_v1.2.0.json
+2026-07-26 07:49:29.2249894090 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0095_Repository_RC1_Canonical_Repository_Certification_Master_Archive_GOLD_v1.2.0.json
+2026-07-26 07:49:29.2383227440 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0096_Repository_RC1_Canonical_Repository_Certification_Master_Compendium_GOLD_v1.2.0.json
+2026-07-26 07:49:29.2516560790 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0097_Repository_RC1_Canonical_Repository_Certification_Master_Ledger_GOLD_v1.2.0.json
+2026-07-26 07:49:29.2683227470 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0098_Repository_RC1_Canonical_Repository_Certification_Master_Index_GOLD_v1.2.0.json
+2026-07-26 07:49:29.2883227490 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0099_Repository_RC1_Canonical_Repository_Certification_Master_Catalog_GOLD_v1.2.0.json
+2026-07-26 07:49:29.3016560840 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0100_Repository_RC1_Canonical_Repository_Centennial_Preservation_Record_GOLD_v1.2.0.json
+2026-07-26 07:49:29.3116560850 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0101_Repository_RC1_Canonical_Repository_Centennial_Continuity_Register_GOLD_v1.2.0.json
+2026-07-26 07:49:29.3283227530 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC/RC1-0102_Repository_RC1_Canonical_Repository_Centennial_Preservation_Ledger_GOLD_v1.2.0.json
+2026-07-26 07:49:29.3449894210 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RECOVERY_MANIFEST(1).md
+2026-07-26 07:49:29.3549894220 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/STARTUP_PROCEDURE_v1.0.docx
+2026-07-26 07:49:29.3616560900 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/STARTUP_PROCEDURE_v1.0.md
+2026-07-26 07:49:29.3749894240 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/bootstrap_download.md
+2026-07-26 07:49:29.3949894260 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/index
+2026-07-26 07:49:29.4449894310 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/refs/heads/main
+2026-07-26 07:49:29.4583227660 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/logs/HEAD
+2026-07-26 07:49:29.4749894340 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/.git/logs/refs/heads/main
+2026-07-26 10:19:23.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/RC1.zip
+2026-07-26 10:20:05.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Claude.zip
+2026-07-26 10:22:01.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Loose repo tree files.zip
+2026-07-26 11:21:49.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Governance.zip
+2026-07-26 11:22:11.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/PP.zip
+2026-07-26 11:22:28.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Parser.zip
+2026-07-26 11:22:57.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Inbox.zip
+2026-07-26 11:23:52.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specs.zip
+2026-07-26 11:24:27.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Tools.zip
+2026-07-26 11:24:46.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Library.zip
+2026-07-26 11:25:10.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Docs.zip
+2026-07-26 11:25:51.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Reaearch.zip
+2026-07-26 11:26:07.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Pubs.zip
+2026-07-26 11:26:33.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archives.zip
+2026-07-26 11:51:43.2507037870 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Archive_Evidence.zip
+2026-07-26 11:52:23.9807078440 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Archive_Imports.zip
+2026-07-26 11:53:05.7207120030 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Archive_Logs.zip
+2026-07-26 11:53:33.6107147810 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Archive_Recovery.zip
+2026-07-26 11:53:55.0207169140 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Archive_Snapshots.zip
+2026-07-26 23:53:24.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archives (1).zip
+2026-07-27 00:01:25.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-4004_v1.0.0.json
+2026-07-27 00:01:25.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-4006_v1.0.0.json
+2026-07-27 00:01:25.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-6001_v1.0.0.json
+2026-07-27 00:01:25.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-7001_v1.0.0.json
+2026-07-27 00:01:26.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-4002_v1.0.0.json
+2026-07-27 00:01:26.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-4003_v1.0.0.json
+2026-07-27 00:01:26.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-5013_v1.0.0.json
+2026-07-27 00:01:26.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-5014_v1.0.0.json
+2026-07-27 00:01:26.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-5015_v1.0.0.json
+2026-07-27 00:01:27.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-1005_v1.0.0.json
+2026-07-27 00:01:27.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-2010_v1.0.0.json
+2026-07-27 00:01:27.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-4005_v1.0.0.json
+2026-07-27 00:01:27.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-5011_v1.0.0.json
+2026-07-27 00:01:27.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-5012_v1.0.0.json
+2026-07-27 00:01:27.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-GOV-0001.json
+2026-07-27 00:01:28.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/ALT_Specification_v1.0.json
+2026-07-27 00:01:28.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/OUT_Specification_v1.0.json
+2026-07-27 00:01:28.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-0000_Constitutional_Registry.json
+2026-07-27 00:01:28.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-0001_Machine_State_Model.json
+2026-07-27 00:01:28.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-0002_Error_Exception_Framework.json
+2026-07-27 00:01:28.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-0003_v1.0.1.json
+2026-07-27 00:01:28.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-0004_v1.0.0.json
+2026-07-27 00:01:28.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-0006_v1.0.0.json
+2026-07-27 00:01:28.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-1004_v1.0.0.json
+2026-07-27 00:01:29.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/BUR_Specification_v1.0.json
+2026-07-27 00:01:29.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/CTX_Specification_v1.0.json
+2026-07-27 00:01:29.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/ENV_Specification_v1.0.json
+2026-07-27 00:01:29.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/GAP_Specification_v1.0.json
+2026-07-27 00:01:29.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/QST_Specification_v1.0.json
+2026-07-27 00:01:29.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/SPEC-0005_v1.0.0.json
+2026-07-27 00:01:29.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/TRN_Specification_v1.0.json
+2026-07-27 00:01:30.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/BUR_Specification_v1.0-2.json
+2026-07-27 00:01:30.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/ENT_Specification_v1.0.json
+2026-07-27 00:01:30.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/Evidence_Transformation_Specification_v1.0.json
+2026-07-27 00:01:30.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/FPA-0002-SpecificationFramework.json
+2026-07-27 00:01:30.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/OBS_Specification_v1.0.json
+2026-07-27 00:01:30.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/PAT_Specification_v1.0.json
+2026-07-27 00:01:30.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/REL_Specification_v1.0.json
+2026-07-27 00:01:31.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/Project_Ledger_Specification_v1.0.docx
+2026-07-27 00:01:32.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications/THE DIFFERENCE ENGINE- SYSTEM SPECIFICATION & REVISED BOOTSTRAP PROTOCOL.docx
+2026-07-27 00:04:35.0000000000 ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Specifications.zip

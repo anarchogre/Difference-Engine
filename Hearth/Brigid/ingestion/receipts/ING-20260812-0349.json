@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:29.311860-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/10_Governance/GOV-0001_Repository_Principles.md",
+  "original_name": "GOV-0001_Repository_Principles.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0349",
+  "schema_version": "0.1.0",
+  "sha256": "6971a90f994c32aa33853476339764c05faa1bfab027a13df2437cb86c7b9fcb",
+  "size_bytes": 1729,
+  "source_class": "manual_batch"
+}

@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:17.563064-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Preservation-Points-RC-GOLD/PP-0055_Intervention_Failures.json",
+  "original_name": "PP-0055_Intervention_Failures.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0233",
+  "schema_version": "0.1.0",
+  "sha256": "a2b96adb26f87be1d3bc396560cc267df85df76ed051efc784c176b82161f551",
+  "size_bytes": 1351,
+  "source_class": "manual_batch"
+}

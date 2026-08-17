@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0097",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:08.107655-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-PROP-0002_P021_Canonical_Granularity.json",
+    "original_name": "AKS-PROP-0002_P021_Canonical_Granularity.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0097",
+    "schema_version": "0.1.0",
+    "sha256": "56b1395ba755eec2a2314c16b448b0407f8ef53835ee01a20dfad437c2566450",
+    "size_bytes": 389,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

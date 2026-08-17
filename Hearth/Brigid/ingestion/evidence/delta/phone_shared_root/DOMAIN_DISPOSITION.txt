@@ -1,0 +1,8 @@
+domain=phone_shared_root
+files=19
+conversation_candidates=1
+unverified_candidate_hashes=1
+cross_domain_duplicate_hashes=1
+new_underlying_conversations=0
+duplicate_of_phone_download=d09d6768687cc892dff4f2ddedb45434f83897da31b0c933e9fa86fb9e0ff3b3
+promotion=NONE

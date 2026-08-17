@@ -1,0 +1,22 @@
+status=HISTORICAL21_SEPARATE_FROM_VERIFIED24
+promotion=NONE
+
+historical_sources=21
+historical_numbered_conversations=20
+historical_pre_branch0_prelude=1
+
+verified_txt_md_sources=24
+verified_txt_md_sha256_integrity=24_of_24
+
+exact_normalized_containment_matches=0
+historical_coverage_ge_95=0
+historical_coverage_ge_80=0
+historical_coverage_ge_50=0
+historical_coverage_lt_50=21
+
+maximum_observed_best_match_coverage_pct=0.09
+
+finding=No historical numbered conversation or pre-Branch-0 prelude is textually represented in the verified-24 corpus under normalized containment or 8-word-shingle coverage.
+finding=The historical 21 constitute a separate recovered corpus layer from the verified 24 under current identity evidence.
+finding=The previous 24-qualified/0-unresolved result was scoped to the txt/md qualification universe and must not be interpreted as historical corpus completeness.
+finding=Cross-representation PDF and JSON identity work remains before a final underlying-conversation count can be established.

@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0088",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:07.658367-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-PRESERVATION-0038_First_Principles_Falsification_I.json",
+    "original_name": "AKS-PRESERVATION-0038_First_Principles_Falsification_I.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0088",
+    "schema_version": "0.1.0",
+    "sha256": "7e5d2e918b310d7ee5189eec25cca7f4da7f60943b0774eaf65d7a0af62358ce",
+    "size_bytes": 1060,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

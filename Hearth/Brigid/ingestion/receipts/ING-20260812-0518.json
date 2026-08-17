@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:51.720764-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/FPA-0001-CanonicalVocabulary.json",
+  "original_name": "FPA-0001-CanonicalVocabulary.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0518",
+  "schema_version": "0.1.0",
+  "sha256": "3993eeb0f18e39448e0d6842d4ad63e24a6b9046e46f1cb5f2123e0210703bc6",
+  "size_bytes": 901,
+  "source_class": "manual_batch"
+}

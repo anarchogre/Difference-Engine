@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:13.530198-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Stewardship_Architecture_v1.0.json",
+  "original_name": "AKS_Stewardship_Architecture_v1.0.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0184",
+  "schema_version": "0.1.0",
+  "sha256": "58b46d49d5b13106d3af6d1d47079f24624b0791598ab34649b8bdbe2484cfdb",
+  "size_bytes": 98,
+  "source_class": "manual_batch"
+}

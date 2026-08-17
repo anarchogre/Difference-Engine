@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0125",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:09.623765-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-THEOREMS-0001_Draft_0.1_Canonical.json",
+    "original_name": "AKS-THEOREMS-0001_Draft_0.1_Canonical.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0125",
+    "schema_version": "0.1.0",
+    "sha256": "51104a192210d74b2c1a83cbeb2b6730ccb265ff8a932c4dc4a896e9aaca5039",
+    "size_bytes": 2440,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

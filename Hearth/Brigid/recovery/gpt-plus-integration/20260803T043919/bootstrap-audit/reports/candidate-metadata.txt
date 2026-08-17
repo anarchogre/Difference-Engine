@@ -1,0 +1,102 @@
+
+===== ./.gitinfo/branches.txt =====
+SIZE=0 | MODIFIED=2026-08-02 23:53:11.963090107 -0500 | PATH=./.gitinfo/branches.txt
+
+===== ./.gitinfo/history/branches.txt =====
+SIZE=0 | MODIFIED=2026-08-02 23:55:00.859767621 -0500 | PATH=./.gitinfo/history/branches.txt
+
+===== ./Repository/Governance/bootstrap.md =====
+SIZE=395 | MODIFIED=2026-08-02 20:32:17.358555895 -0500 | PATH=./Repository/Governance/bootstrap.md
+
+===== ./Repository/Governance/constitution.md =====
+SIZE=182 | MODIFIED=2026-08-02 20:36:57.055250426 -0500 | PATH=./Repository/Governance/constitution.md
+
+===== ./ade/kernel/bootstrap_loader/__pycache__/bootstrap.cpython-313.pyc =====
+SIZE=365 | MODIFIED=2026-08-02 21:16:59.452156420 -0500 | PATH=./ade/kernel/bootstrap_loader/__pycache__/bootstrap.cpython-313.pyc
+
+===== ./ade/kernel/bootstrap_loader/__pycache__/queue.cpython-313.pyc =====
+SIZE=324 | MODIFIED=2026-08-02 21:16:59.875489796 -0500 | PATH=./ade/kernel/bootstrap_loader/__pycache__/queue.cpython-313.pyc
+
+===== ./ade/kernel/bootstrap_loader/bootstrap.py =====
+SIZE=115 | MODIFIED=2026-08-02 21:06:27.085426758 -0500 | PATH=./ade/kernel/bootstrap_loader/bootstrap.py
+
+===== ./ade/kernel/bootstrap_loader/queue.py =====
+SIZE=74 | MODIFIED=2026-08-02 20:42:15.015282101 -0500 | PATH=./ade/kernel/bootstrap_loader/queue.py
+
+===== ./ade/kernel/tests/__pycache__/test_bootstrap_loader.cpython-313.pyc =====
+SIZE=471 | MODIFIED=2026-08-02 20:49:03.465322791 -0500 | PATH=./ade/kernel/tests/__pycache__/test_bootstrap_loader.cpython-313.pyc
+
+===== ./ade/kernel/tests/test_bootstrap_loader.py =====
+SIZE=154 | MODIFIED=2026-08-02 20:48:34.848653273 -0500 | PATH=./ade/kernel/tests/test_bootstrap_loader.py
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_API_v1.md =====
+SIZE=261 | MODIFIED=2026-08-02 19:27:21.828167828 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_API_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONFIGURATION_v1.md =====
+SIZE=275 | MODIFIED=2026-08-02 19:31:03.158189876 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONFIGURATION_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONTRACT_v1.md =====
+SIZE=326 | MODIFIED=2026-08-02 19:49:52.631635725 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONTRACT_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_DEPENDENCIES_v1.md =====
+SIZE=225 | MODIFIED=2026-08-02 19:37:26.851561432 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_DEPENDENCIES_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_DISCOVERY_v1.md =====
+SIZE=296 | MODIFIED=2026-08-02 19:38:44.978235882 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_DISCOVERY_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_ERRORS_v1.md =====
+SIZE=273 | MODIFIED=2026-08-02 19:32:26.478198177 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_ERRORS_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_FILE_LAYOUT_v1.md =====
+SIZE=237 | MODIFIED=2026-08-02 19:54:55.614999241 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_FILE_LAYOUT_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_GLOSSARY_v1.md =====
+SIZE=176 | MODIFIED=2026-08-02 19:50:16.728304792 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_GLOSSARY_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_IMPLEMENTATION_PLAN_v1.md =====
+SIZE=239 | MODIFIED=2026-08-02 19:52:51.734986901 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_IMPLEMENTATION_PLAN_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_INTERFACE_v1.md =====
+SIZE=222 | MODIFIED=2026-08-02 19:36:04.694886581 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_INTERFACE_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_LIFECYCLE_v1.md =====
+SIZE=131 | MODIFIED=2026-08-02 19:36:27.868222223 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_LIFECYCLE_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_MODULES_v1.md =====
+SIZE=185 | MODIFIED=2026-08-02 19:56:09.125006564 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_MODULES_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_OUTPUT_v1.md =====
+SIZE=221 | MODIFIED=2026-08-02 19:39:11.481571855 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_OUTPUT_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_PSEUDOCODE_v1.md =====
+SIZE=297 | MODIFIED=2026-08-02 19:54:29.634996653 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_PSEUDOCODE_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_PYTHON_MAPPING_v1.md =====
+SIZE=544 | MODIFIED=2026-08-02 19:55:45.321670860 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_PYTHON_MAPPING_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_SEQUENCE_v1.md =====
+SIZE=117 | MODIFIED=2026-08-02 19:37:53.984897469 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_SEQUENCE_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_SPECIFICATION_v1.md =====
+SIZE=395 | MODIFIED=2026-08-02 19:24:08.178148537 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_SPECIFICATION_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_STATE_MACHINE_v1.md =====
+SIZE=321 | MODIFIED=2026-08-02 19:29:19.204846187 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_STATE_MACHINE_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_TEST_PLAN_v1.md =====
+SIZE=253 | MODIFIED=2026-08-02 19:53:32.404990952 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_TEST_PLAN_v1.md
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_WORKFLOW_v1.md =====
+SIZE=480 | MODIFIED=2026-08-02 19:25:49.328158613 -0500 | PATH=./architecture/bootstrap_loader/BOOTSTRAP_LOADER_WORKFLOW_v1.md
+
+===== ./standards/v1/QUEUE_STANDARD_v1.0.md =====
+SIZE=0 | MODIFIED=2026-07-30 13:36:46.192059554 -0500 | PATH=./standards/v1/QUEUE_STANDARD_v1.0.md
+
+===== ./workspace/operational/bootstrap/BOOTSTRAP.md =====
+SIZE=231 | MODIFIED=2026-08-02 21:42:53.568977909 -0500 | PATH=./workspace/operational/bootstrap/BOOTSTRAP.md
+
+===== ./workspace/operational/current/QUEUE.md =====
+SIZE=1009 | MODIFIED=2026-08-03 00:16:58.186565517 -0500 | PATH=./workspace/operational/current/QUEUE.md
+
+===== ./workspace/operational/recovery/gpt-plus-integration/20260803T043919/reports/git-branches.txt =====
+SIZE=0 | MODIFIED=2026-08-03 04:39:22.876349667 -0500 | PATH=./workspace/operational/recovery/gpt-plus-integration/20260803T043919/reports/git-branches.txt

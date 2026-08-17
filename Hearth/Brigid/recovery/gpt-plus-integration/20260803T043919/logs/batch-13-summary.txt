@@ -1,0 +1,18 @@
+RUN=workspace/operational/recovery/gpt-plus-integration/20260803T043919
+VALIDATION_STATUS=0
+
+ARTIFACTS
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-specification/artifacts/RECOVERY_CHECKLIST.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-specification/artifacts/RECOVERY_SOP.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-specification/artifacts/RECOVERY_VERIFIER_SPECIFICATION.md
+
+VALIDATION
+RECOVERY_ARTIFACT_VALIDATION=PASS
+FILE=workspace/operational/recovery/RECOVERY_SOP.md SIZE=2839
+FILE=workspace/operational/recovery/RECOVERY_CHECKLIST.md SIZE=1393
+FILE=workspace/operational/recovery/RECOVERY_VERIFIER_SPECIFICATION.md SIZE=2291
+
+CANONICAL COPIES
+-rw-rw----. 1 root everybody 1.4K Aug  3 05:01 workspace/operational/recovery/RECOVERY_CHECKLIST.md
+-rw-rw----. 1 root everybody 2.8K Aug  3 05:01 workspace/operational/recovery/RECOVERY_SOP.md
+-rw-rw----. 1 root everybody 2.3K Aug  3 05:01 workspace/operational/recovery/RECOVERY_VERIFIER_SPECIFICATION.md

@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:53.882799-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Implementation_Checklist_v0.1.md",
+  "original_name": "Implementation_Checklist_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0018",
+  "schema_version": "0.1.0",
+  "sha256": "74d8236eef566b74aa7092d17940f72ae2ea838929bed1b885de6a3fc5ba35cc",
+  "size_bytes": 3940,
+  "source_class": "manual_batch"
+}

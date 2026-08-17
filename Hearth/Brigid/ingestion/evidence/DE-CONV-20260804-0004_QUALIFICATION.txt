@@ -1,0 +1,19 @@
+CONVERSATION INGESTION QUALIFICATION
+
+Package: workspace/operational/ingestion/output/DE-CONV-20260804-0004
+Source: DifferenceEngine Gubmint Cheese.txt
+Recovered turns: 1
+Recovered commands: 0
+Receipt parser status: complete
+Validation errors: []
+
+Speaker counts:
+assistant: 1
+
+hash_match: PASS
+conversation_kind: PASS
+turns_recovered: PASS
+validation_passed: PASS
+parser_complete: PASS
+
+QUALIFIED: YES

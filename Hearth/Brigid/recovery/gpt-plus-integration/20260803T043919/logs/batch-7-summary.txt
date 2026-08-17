@@ -1,0 +1,23 @@
+RUN=workspace/operational/recovery/gpt-plus-integration/20260803T043919
+COMPILE_STATUS=0
+IMPORT_STATUS=0
+MODULE_STATUS=0
+PACKAGE_STATUS=0
+INITIALIZE_STATUS=0
+
+IMPORT RESULT
+IMPORT_LOAD_BOOTSTRAP=PASS
+IMPORT_INITIALIZE=PASS
+LOAD_BOOTSTRAP=PASS
+ARTIFACT_TYPE=BootstrapArtifacts
+ARTIFACTS=BootstrapArtifacts(constitution=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/constitution.md'), amendments=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/amendments.md'), bootstrap=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/bootstrap.md'))
+
+PACKAGE RESULT
+[BOOTSTRAP] Discovering repository...
+OperationalState(repository_root=PosixPath('/storage/emulated/0/DifferenceEngine'), governance_root=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance'), specification_root=PosixPath('/storage/emulated/0/DifferenceEngine/specifications'), execution_mode='Execution', mission=None, task=None)
+
+INITIALIZE RESULT
+[BOOTSTRAP] Discovering repository...
+INITIALIZE=PASS
+RESULT_TYPE=BootstrapResult
+RESULT=BootstrapResult(artifacts=BootstrapArtifacts(constitution=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/constitution.md'), amendments=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/amendments.md'), bootstrap=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/bootstrap.md')), specifications=Specifications(root=PosixPath('/storage/emulated/0/DifferenceEngine/specifications')), state=OperationalState(repository_root=PosixPath('/storage/emulated/0/DifferenceEngine'), governance_root=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance'), specification_root=PosixPath('/storage/emulated/0/DifferenceEngine/specifications'), execution_mode='Execution', mission=None, task=None))

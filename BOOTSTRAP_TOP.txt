@@ -1,0 +1,15 @@
+total 76
+-rw-rw----. 1 root everybody  4046 Aug  5 02:07 Bootstrap - Difference Engine - Session Continuation Bootstrap - Epoch II - Repository Archaeology - Into - Constitutional Synthesis.md
+-rw-rw----. 1 root everybody  7514 Aug  4 18:29 Bootstrap - Epoch II — Post Milestone 002 - Constitutional Kernel - Operational Bootstrap.md
+-rw-rw----. 1 root everybody  3173 Aug  4 13:34 BOOTSTRAP - CONTINUE - INGESTER EPOCH v1.0 - 8-4-26-1300.md
+-rw-rw----. 1 root everybody  5242 Aug  4 08:45 Computational Bedrock Bootstrap Ingester Recovery Continuation.md
+-rw-rw----. 1 root everybody  2704 Aug  4 07:29 BST-CBD-OPS_Operational_Bedrock_and_Ingester_Execution_v0.1.0.md
+-rw-rw----. 1 root everybody   549 Aug  4 07:15 Recover Existing Injestion Files.md
+-rw-rw----. 1 root everybody  3542 Aug  4 05:39 Bootstrap vNext — Candidate Constitutional Bootstrap Additions.md
+-rw-rw----. 1 root everybody   641 Aug  4 00:51 Load The Constitutional Kernel.md
+-rw-rw----. 1 root everybody 11991 Aug  4 00:48 KRN-0001_Common_Constitutional_Kernel_v0.1.0.md
+drwxrwx---. 2 root everybody  3488 Aug  4 00:38 Branches
+-rw-rw----. 1 root everybody  3577 Aug  4 00:13 Bootstrap - Difference Engine - Computational Bedrock.md
+-rw-rw----. 1 root everybody  2697 Aug  3 23:14 Bootstrap - Difference Engine - Architectural Philosophy And Meta Synthsis.md
+-rw-rw----. 1 root everybody  4157 Aug  3 19:15 BOOTSTRAP — Foundational Reduction Continuation.md
+-rw-rw----. 1 root everybody  1323 Aug  3 15:45 BOOTSTRAP - Load the Difference Engine project.md

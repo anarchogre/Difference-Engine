@@ -1,0 +1,266 @@
+=== INGESTION ENTRY POINTS ===
+ade/kernel/bootstrap_loader/__init__.py
+ade/kernel/bootstrap_loader/discover.py
+ade/kernel/bootstrap_loader/bootstrap.py
+ade/kernel/bootstrap_loader/specifications.py
+ade/kernel/bootstrap_loader/modes.py
+ade/kernel/bootstrap_loader/readiness.py
+ade/kernel/bootstrap_loader/recovery.py
+ade/kernel/bootstrap_loader/mission.py
+ade/kernel/bootstrap_loader/task.py
+ade/kernel/bootstrap_loader/queue.py
+ade/kernel/bootstrap_loader/execution.py
+ade/kernel/bootstrap_loader/governance.py
+ade/kernel/bootstrap_loader/state.py
+ade/kernel/bootstrap_loader/loader.py
+ade/kernel/bootstrap_loader/main.py
+ade/kernel/bootstrap_loader/__main__.py
+ade/kernel/bootstrap_loader/version.py
+ade/kernel/bootstrap_loader/health.py
+ade/kernel/bootstrap_loader/errors.py
+ade/kernel/bootstrap_loader/config.py
+ade/kernel/bootstrap_loader/paths.py
+ade/kernel/bootstrap_loader/contracts.py
+ade/kernel/bootstrap_loader/constants.py
+ade/kernel/bootstrap_loader/context.py
+ade/kernel/bootstrap_loader/logging.py
+ade/kernel/bootstrap_loader/filesystem.py
+ade/kernel/bootstrap_loader/artifacts.py
+ade/kernel/bootstrap_loader/models.py
+ade/kernel/bootstrap_loader/result.py
+ade/kernel/bootstrap_loader/validators.py
+ade/kernel/bootstrap_loader/verifier.py
+ade/kernel/bootstrap_loader/drift.py
+ade/kernel/tests/test_bootstrap_loader.py
+ade/kernel/tests/run_tests.py
+ade/services/ingestion/INGESTER_CONTRACT_v0.1.md
+ade/services/ingestion/receipt.py
+ade/services/ingestion/__init__.py
+ade/services/ingestion/intake.py
+ade/services/ingestion/tests/test_intake.py
+ade/services/ingestion/tests/test_markdown_parser.py
+ade/services/ingestion/tests/test_pipeline.py
+ade/services/ingestion/tests/test_conversation_parser.py
+ade/services/ingestion/tests/test_chat_pipeline.py
+ade/services/ingestion/tests/run_all.py
+ade/services/ingestion/parsers/markdown.py
+ade/services/ingestion/parsers/__init__.py
+ade/services/ingestion/parsers/conversation.py
+ade/services/ingestion/parsers/chatgpt.py
+ade/services/ingestion/parser.py
+ade/services/ingestion/pipeline.py
+ade/services/ingestion/assets.py
+ade/services/ingestion/references.py
+ade/services/ingestion/queues.py
+ade/services/ingestion/validation.py
+ade/services/ingestion/output.py
+ade/services/ingestion/provenance.py
+ade/services/ingestion/manifest.py
+ade/services/ingestion/report.py
+ade/services/ingestion/cli.py
+ade/services/ingestion/ids.py
+ade/services/ingestion/discover.py
+ade/services/ingestion/batch.py
+ade/services/ingestion/index.py
+ade/services/ingestion/resume.py
+ade/services/ingestion/stages.py
+ade/services/ingestion/state.py
+ade/services/ingestion/recover.py
+ade/services/ingestion/registry.py
+workspace/operational/ingestion/test_output/TEST-PIPELINE-0002/source/AIS_v0.1.md
+workspace/operational/ingestion/test_output/TEST-PIPELINE-0003/source/AIS_v0.1.md
+workspace/operational/ingestion/test_output/TEST-PIPELINE-0003/reports/ingestion_report.md
+workspace/operational/ingestion/test_output/TEST-CHAT-0002/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-LOCAL-0001/source/AIS_v0.1.md
+workspace/operational/ingestion/output/ING-LOCAL-0001/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0002/source/AIS_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0002/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0003/source/AIS_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0003/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0004/source/Architecture_Decision_Record_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0004/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0005/source/Artifact_Lifecycle_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0005/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0006/source/Artifact_Schema_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0006/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0007/source/Asset_Schema_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0007/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0008/source/Canonical_Promotion_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0008/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0009/source/Configuration_Management_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0009/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0010/source/Conversation_Schema_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0010/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0011/source/Developer_Guide_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0011/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0012/source/Event_Catalog_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0012/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0013/source/Event_Model_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0013/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0014/source/Event_Processing_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0014/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0015/source/Event_Routing_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0015/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0016/source/Event_Schema_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0016/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0017/source/Implementation_Backlog_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0017/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0018/source/Implementation_Checklist_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0018/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0019/source/Implementation_Milestones_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0019/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0020/source/Implementation_Roadmap_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0020/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0021/source/Ingestion_Glossary_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0021/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0022/source/Ingestion_Pipeline_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0022/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0023/source/Ingestion_Report_Schema_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0023/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0024/source/Observability_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0024/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0025/source/Operational_Readiness_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0025/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0026/source/Output_Package_Specificatiom_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0026/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0027/source/Parser_Behavior_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0027/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0028/source/Parser_Development_Guide_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0028/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0029/source/Provenance_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0029/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0030/source/Publication_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0030/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0031/source/Quality_Assurance_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0031/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0032/source/Queue_Candidate_Schema_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0032/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0033/source/Queue_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0033/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0034/source/Reference_Schema_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0034/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0035/source/Repository_Constitution_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0035/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0036/source/Repository_Index_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0036/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0037/source/Repository_Mapping_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0037/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0038/source/Repository_Maturity_Model_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0038/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0039/source/Repository_Relationship_Schema_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0039/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0040/source/Repository_Standards_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0040/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0041/source/Schema_Governance_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0041/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0042/source/Security_and_Integrity_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0042/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0043/source/Service_Contracts_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0043/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0044/source/Service_Development_Guide_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0044/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0045/source/Testing_Strategy_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0045/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0046/source/Validation_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0046/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0047/source/Workflow_API_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0047/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0048/source/Workflow_Audit_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0048/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0049/source/Workflow_Checkpointing_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0049/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0050/source/Workflow_Context_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0050/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0051/source/Workflow_Definition_Schema_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0051/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0052/source/Workflow_Execution_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0052/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0053/source/Workflow_Governance_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0053/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0054/source/Workflow_Metrics_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0054/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0055/source/Workflow_Orchestration_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0055/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0056/source/Workflow_Recovery_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0056/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0057/source/Workflow_Replay_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0057/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0058/source/Workflow_Reporting_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0058/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0059/source/Workflow_Service_Capability_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0059/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0060/source/Workflow_Service_Communication_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0060/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0061/source/Workflow_Service_Composition_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0061/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0062/source/Workflow_Service_Configuration_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0062/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0063/source/Workflow_Service_Contract_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0063/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0064/source/Workflow_Service_Coordination_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0064/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0065/source/Workflow_Service_Dependency_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0065/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0066/source/Workflow_Service_Discovery_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0066/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0067/source/Workflow_Service_Dispatch_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0067/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0068/source/Workflow_Service_Health_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0068/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0069/source/Workflow_Service_Lifecycle_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0069/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0070/source/Workflow_Service_Load_Balancing_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0070/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0071/source/Workflow_Service_Messaging_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0071/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0072/source/Workflow_Service_Registry_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0072/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0073/source/Workflow_Service_Resilience_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0073/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0074/source/Workflow_Service_Routing_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0074/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0075/source/Workflow_Service_Scaling_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0075/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0076/source/Workflow_Service_Scheduling_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0076/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0077/source/Workflow_State_Machine_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0077/reports/ingestion_report.md
+workspace/operational/ingestion/output/ING-20260804-0078/source/Workflow_Versioning_Specification_v0.1.md
+workspace/operational/ingestion/output/ING-20260804-0078/reports/ingestion_report.md
+workspace/operational/ingestion/reports/MILESTONE_001_SUMMARY.md
+workspace/operational/ingestion/roadmap/INGESTER_TREK_MAP_v0.1.md
+
+=== EXECUTABLE CANDIDATES ===
+ade/kernel/bootstrap_loader/main.py:7:def main():
+ade/kernel/bootstrap_loader/main.py:11:if __name__ == "__main__":
+ade/kernel/bootstrap_loader/verifier.py:550:def main() -> int:
+ade/kernel/bootstrap_loader/verifier.py:589:if __name__ == "__main__":
+ade/kernel/bootstrap_loader/drift.py:906:def main() -> int:
+ade/kernel/bootstrap_loader/drift.py:945:if __name__ == "__main__":
+ade/kernel/tests/run_tests.py:96:if __name__ == "__main__":
+ade/services/ingestion/tests/test_intake.py:6:def main():
+ade/services/ingestion/tests/test_intake.py:24:if __name__ == "__main__":
+ade/services/ingestion/tests/test_markdown_parser.py:6:def main():
+ade/services/ingestion/tests/test_markdown_parser.py:23:if __name__ == "__main__":
+ade/services/ingestion/tests/test_pipeline.py:6:def main():
+ade/services/ingestion/tests/test_pipeline.py:34:if __name__ == "__main__":
+ade/services/ingestion/tests/test_conversation_parser.py:6:def main():
+ade/services/ingestion/tests/test_conversation_parser.py:37:if __name__ == "__main__":
+ade/services/ingestion/tests/test_chat_pipeline.py:7:def main():
+ade/services/ingestion/tests/test_chat_pipeline.py:50:if __name__ == "__main__":
+ade/services/ingestion/tests/run_all.py:12:def main():
+ade/services/ingestion/tests/run_all.py:20:if __name__ == "__main__":
+ade/services/ingestion/cli.py:10:def main():
+ade/services/ingestion/cli.py:52:if __name__ == "__main__":
+ade/services/ingestion/recover.py:20:if __name__ == "__main__":
+workspace/operational/ingestion/inbox/Kernel_and_Bootstrap_Load.md(1).txt:3691:__main__.py
+workspace/operational/ingestion/inbox/Kernel_and_Bootstrap_Load.md(1).txt:3745:    '^(def main|class |if __name__|from .* import|import )' \
+workspace/operational/ingestion/inbox/Kernel_and_Bootstrap_Load.md(1).txt:3746:    ade/kernel/bootstrap_loader/__main__.py \
+workspace/operational/ingestion/inbox/Kernel_and_Bootstrap_Load.md(1).txt:3771:>     '^(def main|class |if __name__|from .* import|import )' \
+workspace/operational/ingestion/inbox/Kernel_and_Bootstrap_Load.md(1).txt:3772:>     ade/kernel/bootstrap_loader/__main__.py \
+workspace/operational/ingestion/inbox/Kernel_and_Bootstrap_Load.md(1).txt:3811:31      __main__.py
+workspace/operational/ingestion/inbox/Kernel_and_Bootstrap_Load.md(1).txt:3814:ade/kernel/bootstrap_loader/__main__.py:1:from .main import main
+workspace/operational/ingestion/inbox/Kernel_and_Bootstrap_Load.md(1).txt:3816:ade/kernel/bootstrap_loader/main.py:7:def main():
+workspace/operational/ingestion/inbox/Kernel_and_Bootstrap_Load.md(1).txt:3817:ade/kernel/bootstrap_loader/main.py:11:if __name__ == "__main__":
+workspace/operational/ingestion/inbox/Kernel_and_Bootstrap_Load.md(1).txt:4052:def main():
+workspace/operational/ingestion/inbox/Kernel_and_Bootstrap_Load.md(1).txt:4056:if __name__ == "__main__":

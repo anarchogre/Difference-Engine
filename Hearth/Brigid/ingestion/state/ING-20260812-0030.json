@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0030",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:05.213014-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-GATE-ALPHA-0001_Candidate.json",
+    "original_name": "AKS-GATE-ALPHA-0001_Candidate.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0030",
+    "schema_version": "0.1.0",
+    "sha256": "698cfd12531800cb0bb8e05133973b9c2f8fe6d260f2a118c7d2c5ef8739d8b1",
+    "size_bytes": 504,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

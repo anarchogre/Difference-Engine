@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:49.092490-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/REPOSITORY_STRUCTURE.md",
+  "original_name": "REPOSITORY_STRUCTURE.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0500",
+  "schema_version": "0.1.0",
+  "sha256": "c598896a77ee9023a0eeaabd9facb07df66883973b303a73e674d11a3d42b614",
+  "size_bytes": 674,
+  "source_class": "manual_batch"
+}

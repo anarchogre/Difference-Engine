@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0083",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:07.417846-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-PRESERVATION-0033_Viking_Campaign_I.json",
+    "original_name": "AKS-PRESERVATION-0033_Viking_Campaign_I.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0083",
+    "schema_version": "0.1.0",
+    "sha256": "eea975f31bd5df60174128f501129fb5c2c7c393e82e7d72524253332647b94a",
+    "size_bytes": 1140,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

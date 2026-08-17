@@ -1,0 +1,78 @@
+file	bytes	lines	title	version	status
+AIS_v0.1.md	2627	151	Artifact Ingestion Specification (AIS)	0.1  	Draft  
+Queue_Specification_v0.1.md	3732	281	Queue Specification	0.1  	Draft  
+Conversation_Schema_v0.1.md	3219	238	Conversation Schema	0.1  	Draft  
+Artifact_Schema_v0.1.md	3103	229	Artifact Schema	0.1  	Draft  
+Service_Contracts_v0.1.md	3736	259	Service Contracts	0.1  	Draft  
+Provenance_Specification_v0.1.md	2222	147	Provenance Specification	0.1	Draft
+Output_Package_Specification_v0.1d	0	0			
+Output_Package_Specificatiom_v0.1.md	2328	158	Output Package Specification	0.1	Draft
+Validation_Specification_v0.1.md	2567	153	Validation Specification	0.1	Draft
+Repository_Mapping_Specification_v0.1.md	2261	159	Repository Mapping Specification	0.1	Draft
+Canonical_Promotion_Specification_v0.1.md	2696	158	Canonical Promotion Specification	0.1	Draft
+Publication_Specification_v0.1.md	2318	138	Publication Specification	0.1	Draft
+Parser_Behavior_Specification_v0.1.md	2747	176	Parser Behavior Specification	0.1	Draft
+Queue_Candidate_Schema_v0.1.md	2173	139	Queue Candidate Schema	0.1	Draft
+Repository_Relationship_Schema_v0.1.md	2355	148	Repository Relationship Schema	0.1	Draft
+Asset_Schema_v0.1.md	2461	159	Asset Schema	0.1	Draft
+Reference_Schema_v0.1.md	2421	145	Contents	0.1	Draft
+Ingestion_Report_Schema_v0.1.md	2645	175	Contents	0.1	Draft
+Artifact_Lifecycle_Specification_v0.1.md	3018	208	Contents	0.1	Draft
+Ingestion_Pipeline_Specification_v0.1.md	3546	267	Contents	0.1	Draft
+Repository_Index_Specification_v0.1.md	3084	198	Contents	0.1	Draft
+Schema_Governance_Specification_v0.1.md	2437	175	Contents	0.1	Draft
+Ingestion_Glossary_v0.1.md	3957	212	Contents	0.1	Draft
+Implementation_Roadmap_v0.1.md	3856	243	Contents	0.1	Draft
+Implementation_Backlog_v0.1.md	3300	223	Contents	0.1  	Draft  
+Implementation_Checklist_v0.1.md	3940	212	Contents	0.1  	Draft  
+Implementation_Milestones_v0.1.md	4511	251	Implementation Milestones	0.1  	Draft  
+Developer_Guide_v0.1.md	3581	190	Developer Guide	0.1  	Draft  
+Parser_Development_Guide_v0.1.md	3015	167	Parser Development Guide	0.1  	Draft  
+Service_Development_Guide_v0.1.md	3660	198	Service Development Guide	0.1  	Draft  
+Testing_Strategy_Specification_v0.1.md	3952	213	Testing Strategy Specification	0.1  	Draft  
+Quality_Assurance_Specification_v0.1.md	4078	218	Quality Assurance Specification	0.1  	Draft  
+Architecture_Decision_Record_Specification_v0.1.md	3575	201	Architecture Decision Record (ADR) Specification	0.1  	Draft  
+Repository_Constitution_v0.1.md	4523	193	Repository Constitution	0.1  	Draft  
+Repository_Standards_v0.1.md	4047	229	Repository Standards	0.1  	Draft  
+Repository_Maturity_Model_v0.1.md	3806	198	Repository Maturity Model	0.1  	Draft  
+Operational_Readiness_Specification_v0.1.md	4008	206	Operational Readiness Specification	0.1  	Draft  
+Security_and_Integrity_Specification_v0.1.md	3814	205	Security and Integrity Specification	0.1  	Draft  
+Configuration_Management_Specification_v0.1.md	3723	200	Configuration Management Specification	0.1  	Draft  
+Observability_Specification_v0.1.md	4141	221	Observability Specification	0.1  	Draft  
+Event_Model_Specification_v0.1.md	3931	267	Event Model Specification	0.1  	Draft  
+Event_Catalog_Specification_v0.1.md	5644	241	Event Catalog Specification	0.1	Draft
+Event_Schema_Specification_v0.1.md	9344	546	Event Schema Specification	0.1	Draft
+Event_Routing_Specification_v0.1.md	3975	230	Event Routing Specification	0.1	Draft
+Event_Processing_Specification_v0.1.md	4143	235	Event Processing Specification	0.1	Draft
+Workflow_Orchestration_Specification_v0.1.md	4655	264	Workflow Orchestration Specification	0.1	Draft
+Workflow_Definition_Schema_v0.1.md	4406	235	Workflow Definition Schema	0.1	Draft
+Workflow_Execution_Specification_v0.1.md	5274	295	Workflow Execution Specification	0.1	Draft
+Workflow_State_Machine_Specification_v0.1.md	5195	303	Workflow State Machine Specification	0.1	Draft
+Workflow_Context_Specification_v0.1.md	4617	213	Workflow Context Specification	0.1	Draft
+Workflow_Checkpointing_Specification_v0.1.md	5214	237	Workflow Checkpointing Specification	0.1  	Draft  
+Workflow_Recovery_Specification_v0.1.md	5960	284	Workflow Recovery Specification	0.1  	Draft  
+Workflow_Replay_Specification_v0.1.md	5667	267	Workflow Replay Specification	0.1  	Draft  
+Workflow_Versioning_Specification_v0.1.md	5941	313	Workflow Versioning Specification	0.1  	Draft  
+Workflow_Governance_Specification_v0.1.md	5794	305	Workflow Governance Specification	0.1  	Draft  
+Workflow_Audit_Specification_v0.1.md	5583	265	Workflow Audit Specification	0.1  	Draft  
+Workflow_Metrics_Specification_v0.1.md	6356	306	Workflow Metrics Specification	0.1  	Draft  
+Workflow_Reporting_Specification_v0.1.md	6323	303	Workflow Reporting Specification	0.1  	Draft  
+Workflow_API_Specification_v0.1.md	5899	308	Workflow API Specification	0.1  	Draft  
+Workflow_Service_Contract_Specification_v0.1.md	5844	310	Workflow Service Contract Specification	0.1  	Draft  
+Workflow_Service_Registry_Specification_v0.1.md	6000	303	Workflow Service Registry Specification	0.1  	Draft  
+Workflow_Service_Discovery_Specification_v0.1.md	6264	292	Workflow Service Discovery Specification	0.1  	Draft  
+Workflow_Service_Capability_Specification_v0.1.md	6332	303	Workflow Service Capability Specification	0.1  	Draft  
+Workflow_Service_Lifecycle_Specification_v0.1.md	7954	390	Workflow Service Lifecycle Specification	0.1  	Draft  
+Workflow_Service_Dependency_Specification_v0.1.md	6823	305	Workflow Service Dependency Specification	0.1  	Draft  
+Workflow_Service_Composition_Specification_v0.1.md	6431	328	Workflow Service Composition Specification	0.1  	Draft  
+Workflow_Service_Configuration_Specification_v0.1.md	7128	355	Workflow Service Configuration Specification	0.1  	Draft  
+Workflow_Service_Health_Specification_v0.1.md	7215	342	Workflow Service Health Specification	0.1  	Draft  
+Workflow_Service_Resilience_Specification_v0.1.md	7522	346	Workflow Service Resilience Specification	0.1  	Draft  
+Workflow_Service_Scaling_Specification_v0.1.md	7950	366	Workflow Service Scaling Specification	0.1  	Draft  
+Workflow_Service_Load_Balancing_Specification_v0.1.md	7731	332	Workflow Service Load Balancing Specification	0.1  	Draft  
+Workflow_Service_Scheduling_Specification_v0.1.md	7675	357	Workflow Service Scheduling Specification	0.1  	Draft  
+Workflow_Service_Coordination_Specification_v0.1.md	8139	365	Workflow Service Coordination Specification	0.1  	Draft  
+Workflow_Service_Communication_Specification_v0.1.md	7198	337	Workflow Service Communication Specification	0.1  	Draft  
+Workflow_Service_Messaging_Specification_v0.1.md	7601	392	Workflow Service Messaging Specification	0.1  	Draft  
+Workflow_Service_Routing_Specification_v0.1.md	7486	336	Workflow Service Routing Specification	0.1  	Draft  
+Workflow_Service_Dispatch_Specification_v0.1.md	7893	392	Workflow Service Dispatch Specification	0.1  	Draft  

@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0504",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:49.668400-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/ROADMAP_v1.4_REVISED.md",
+    "original_name": "ROADMAP_v1.4_REVISED.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0504",
+    "schema_version": "0.1.0",
+    "sha256": "4c227a49de39c486bcf5f32387d1c7ba4c2a19b2457428e4169337c59ae2179b",
+    "size_bytes": 229,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

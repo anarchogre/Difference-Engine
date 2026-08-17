@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0662",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:49:14.867075-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Rebuild.md/SIQ Suggested Implementation Queue.md",
+    "original_name": "SIQ Suggested Implementation Queue.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0662",
+    "schema_version": "0.1.0",
+    "sha256": "3682868cc492e423f9a54a74f4b95369687826d536d2c770ec53024d280da126",
+    "size_bytes": 468,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

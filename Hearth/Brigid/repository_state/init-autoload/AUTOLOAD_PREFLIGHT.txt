@@ -1,0 +1,19 @@
+=== REQUIRED INITIALIZATION SOURCES ===
+./BOOTSTRAP/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md
+./BOOTSTRAP/Load The Constitutional Kernel.md
+./governance/kernel/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md
+./workspace/operational/corpus/chatgpt/Operational Reality.txt
+./workspace/operational/corpus/chatgpt/Operator Profile.md
+./workspace/operational/ingestion/output/ING-20260804-0081/source/Bootstrap_BABBAGE_Initialization.md.txt
+./workspace/operational/ingestion/output/ING-20260804-0082/source/Babbage_GPT_Initialization.md.txt
+./workspace/operational/ingestion/output/ING-20260804-0093/source/Babbage_Initialization_and_Parsing.md.txt
+
+=== LOADER ===
+--- ade/kernel/bootstrap_loader/loader.py
+3a6663a43119cca53a64adbf49307b9472a2568719ac6938110284d8393e5cbd  ade/kernel/bootstrap_loader/loader.py
+--- ade/kernel/bootstrap_loader/artifacts.py
+47c41dfe15f7d23d0b3eb0927f701b4be36f7523306bed4b510857e599c8aa72  ade/kernel/bootstrap_loader/artifacts.py
+--- ade/kernel/bootstrap_loader/governance.py
+d358f83d101a97237eec2ba5a99731d8d1709d308394d3e458fcdea02b450026  ade/kernel/bootstrap_loader/governance.py
+--- ade/kernel/bootstrap_loader/verifier.py
+0b928c5ba765f2f431b09713a9bb55792dcc6c5bb82de671050b2e5994343674  ade/kernel/bootstrap_loader/verifier.py

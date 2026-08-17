@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:02:03.766671-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Recovery_Specification_v0.1.md",
+  "original_name": "Workflow_Recovery_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0056",
+  "schema_version": "0.1.0",
+  "sha256": "ab6d51ea4c17948d0052e86089b9047ee028e4c92d0b34057d2a5fb5616e31ac",
+  "size_bytes": 5960,
+  "source_class": "manual_batch"
+}

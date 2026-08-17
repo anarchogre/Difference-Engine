@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:54.579785-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/ENT_Specification_v1.0.json",
+  "original_name": "ENT_Specification_v1.0.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0537",
+  "schema_version": "0.1.0",
+  "sha256": "810f00ef12317b5d87692cc14ad660980beb194b8b2ba43172ab11d56ac5c5af",
+  "size_bytes": 521,
+  "source_class": "manual_batch"
+}

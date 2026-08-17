@@ -1,0 +1,21 @@
+FILES=219
+DIRS=108
+RECOVERY_CANDIDATES=34
+RUN_DIRECTORY=workspace/operational/recovery/gpt-plus-integration/20260803T043919
+
+6.1M	.
+
+## No commits yet on master
+?? .de/
+?? .githooks/
+?? .gitinfo/
+?? .meta/
+?? Repository/
+?? ade/
+?? architecture/
+?? inventory/
+?? logs/
+?? queue/
+?? scripts/
+?? standards/
+?? workspace/

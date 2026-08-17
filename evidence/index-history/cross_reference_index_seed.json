@@ -1,0 +1,11 @@
+{
+  "object": "CrossReferenceIndex",
+  "indexes": {
+    "observation_to_pattern": {},
+    "observation_to_relationship": {},
+    "pattern_to_observation": {},
+    "relationship_to_observation": {},
+    "entity_to_observation": {},
+    "source_to_objects": {}
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:02:03.912870-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Reporting_Specification_v0.1.md",
+  "original_name": "Workflow_Reporting_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0058",
+  "schema_version": "0.1.0",
+  "sha256": "a527fbb9ad826d9a3f517c18b5dfe241f1f9db8ef5dd4282d1a312438ebc382a",
+  "size_bytes": 6323,
+  "source_class": "manual_batch"
+}

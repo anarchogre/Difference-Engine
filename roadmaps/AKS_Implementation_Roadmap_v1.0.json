@@ -1,0 +1,18 @@
+{
+  "next_phase": "Implementation",
+  "workstreams": [
+    "Object constitutions",
+    "Transformation engine",
+    "Query language",
+    "Recovery pipeline",
+    "Audit automation",
+    "Knowledge services"
+  ],
+  "sequence": [
+    "Implement runtime",
+    "Populate canonical registers",
+    "Run forensic recovery",
+    "Validate",
+    "Generate services"
+  ]
+}

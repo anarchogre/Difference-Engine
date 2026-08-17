@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0005",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:04.375902-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-ACTIVE-STATE-SNAPSHOTS/ACTIVE_STATE_SNAPSHOT_v1.4_REVISED.md",
+    "original_name": "ACTIVE_STATE_SNAPSHOT_v1.4_REVISED.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0005",
+    "schema_version": "0.1.0",
+    "sha256": "d78e6ff0c1a0ac8975e8cf68261eda6e6ab42f20afc5f59be5a690ba0a68092f",
+    "size_bytes": 318,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0156",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:11.549863-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Governing_Principles_v2.json",
+    "original_name": "AKS_Governing_Principles_v2.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0156",
+    "schema_version": "0.1.0",
+    "sha256": "a27d2876c2735635b6cdbc0b9f4d33a647a9cdf3534a792cce3d8821c0fbccd8",
+    "size_bytes": 310,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:51.359361-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Configuration_Management_Specification_v0.1.md",
+  "original_name": "Configuration_Management_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0009",
+  "schema_version": "0.1.0",
+  "sha256": "cb516390740a2b2b56b726de591ba147a3f9b4bf334f6044b38af45f72306b63",
+  "size_bytes": 3723,
+  "source_class": "manual_batch"
+}

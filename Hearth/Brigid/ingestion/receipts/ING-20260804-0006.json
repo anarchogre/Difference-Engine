@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:50.601646-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Artifact_Schema_v0.1.md",
+  "original_name": "Artifact_Schema_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0006",
+  "schema_version": "0.1.0",
+  "sha256": "3dfde42a66a991a398e00f9796ecbf90424aa5a198602663d96e83804ea57a54",
+  "size_bytes": 3103,
+  "source_class": "manual_batch"
+}

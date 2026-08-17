@@ -1,0 +1,153 @@
+=== CONTEXT RESOLVER IMPLEMENTATION ===
+		isGenericRunnerFailure: false,
+		cfg: params.cfg
+	}) });
+	const externalRunFailureReply = buildExternalRunFailureReply({
+		message,
+		error: params.err
+	}, {
+		includeAuthProfileId: !isNonDirectConversationContext(params.sessionCtx),
+		includeDetails: isVerboseFailureDetailEnabled(params.resolvedVerboseLevel)
+	});
+	if (externalRunFailureReply.isGenericRunnerFailure) return;
+	return markAgentRunFailureReplyPayload({ text: resolveExternalRunFailureTextForConversation({
+		text: externalRunFailureReply.text,
+		sessionCtx: params.sessionCtx,
+		isGenericRunnerFailure: false,
+		cfg: params.cfg
+	}) });
+}
+const DEFAULT_RESERVE_TOKENS_FLOOR = 2e4;
+/** Computes a reserve-token floor scaled to the selected context window. */
+function computeContextAwareReserveTokensFloor(contextWindow) {
+	if (typeof contextWindow !== "number" || contextWindow <= 0) return DEFAULT_RESERVE_TOKENS_FLOOR;
+	if (contextWindow >= 1e6) return 1e5;
+	if (contextWindow >= 2e5) return 5e4;
+	if (contextWindow >= 1e5) return 35e3;
+	return DEFAULT_RESERVE_TOKENS_FLOOR;
+}
+function resolveContextWindowForCompactionHint(params) {
+	let modelWindow;
+	const entryProvider = params.activeSessionEntry?.modelProvider;
+	const entryModel = params.activeSessionEntry?.model;
+	const runtimeProvider = params.runtimeProvider ?? entryProvider;
+	const runtimeModel = params.runtimeModel ?? entryModel;
+	const hasExplicitRuntimeRef = Boolean(params.runtimeProvider && params.runtimeModel);
+	if (runtimeProvider && runtimeModel) {
+		const resolved = resolveContextTokensForModel({
+			cfg: params.cfg,
+			provider: runtimeProvider,
+			model: runtimeModel,
+			allowAsyncLoad: false
+		});
+		if (typeof resolved === "number" && resolved > 0) modelWindow = resolved;
+	}
+	const sessionWindow = normalizePositiveContextTokens(params.activeSessionEntry?.contextTokens);
+	const sessionMatchesRuntimeRef = runtimeProvider === entryProvider && runtimeModel === entryModel;
+	const trustedSessionWindow = !hasExplicitRuntimeRef || sessionMatchesRuntimeRef ? sessionWindow : void 0;
+	if (modelWindow === void 0 && sessionMatchesRuntimeRef && sessionWindow !== void 0) modelWindow = sessionWindow;
+	if (modelWindow === void 0 && !hasExplicitRuntimeRef && params.primaryProvider && params.primaryModel) {
+		const resolved = resolveContextTokensForModel({
+			cfg: params.cfg,
+			provider: params.primaryProvider,
+			model: params.primaryModel,
+			allowAsyncLoad: false
+		});
+		if (typeof resolved === "number" && resolved > 0) modelWindow = resolved;
+	}
+	const contextWindow = modelWindow ?? trustedSessionWindow;
+	const agentCap = resolveAgentContextTokensForHint({
+		cfg: params.cfg,
+		agentId: params.agentId
+	});
+	if (agentCap !== void 0 && contextWindow !== void 0) return Math.min(agentCap, contextWindow);
+	return agentCap ?? contextWindow;
+}
+function buildContextOverflowResetHint(contextWindowTokens) {
+	return `
+
+To prevent this, increase your compaction buffer by setting \`agents.defaults.compaction.reserveTokensFloor\` to ${computeContextAwareReserveTokensFloor(contextWindowTokens)} or higher in your config.`;
+}
+function resolveAgentHeartbeatModelRaw(params) {
+	const defaultModel = normalizeOptionalString(params.cfg.agents?.defaults?.heartbeat?.model);
+
+=== MEMORY CONTEXT WRAPPER ===
+	if (payloads.some((payload) => hasOutboundReplyContent(payload, { trimText: true }))) await typingSignals.signalRunStart();
+};
+//#endregion
+//#region src/auto-reply/reply/memory-flush.ts
+function resolveMemoryFlushContextWindowTokens(params) {
+	return resolveContextTokensForModel({
+		cfg: params.cfg,
+		provider: params.provider,
+		model: params.modelId,
+		contextTokensOverride: params.agentCfgContextTokens,
+		allowAsyncLoad: false
+	}) ?? 2e5;
+}
+function resolveMaxActiveTranscriptBytes(cfg) {
+	const compaction = cfg?.agents?.defaults?.compaction;
+
+=== FOLLOWUP PROVIDER/MODEL CALLSITE ===
+	});
+	if (params.isHeartbeat || isCli) return entry ?? params.sessionEntry;
+	if (followupUsesCodexRuntime({
+		cfg: params.cfg,
+		followupRun: params.followupRun,
+		sessionEntry: entry,
+		sessionKey: params.sessionKey,
+		runtimePolicySessionKey: params.runtimePolicySessionKey
+	})) {
+		logVerbose(`preflightCompaction skipped: sessionKey=${params.sessionKey} runtime=codex reason=codex_native_auto_compaction`);
+		return entry ?? params.sessionEntry;
+	}
+	const contextWindowTokens = resolveMemoryFlushContextWindowTokens({
+		cfg: params.cfg,
+		provider: resolveFollowupContextConfigProvider({
+			cfg: params.cfg,
+			followupRun: params.followupRun,
+			sessionEntry: entry,
+			sessionKey: params.sessionKey,
+			runtimePolicySessionKey: params.runtimePolicySessionKey
+		}),
+		modelId: params.followupRun.run.model ?? params.defaultModel,
+		agentCfgContextTokens: params.agentCfgContextTokens
+	});
+	const memoryFlushPlan = resolveMemoryFlushPlan({ cfg: params.cfg });
+	const reserveTokensFloor = memoryFlushPlan?.reserveTokensFloor ?? params.cfg.agents?.defaults?.compaction?.reserveTokensFloor ?? 2e4;
+	const softThresholdTokens = memoryFlushPlan?.softThresholdTokens ?? 4e3;
+	const freshPersistedTokens = resolveFreshSessionTotalTokens(entry);
+	const persistedTotalTokens = entry.totalTokens;
+	const hasPersistedTotalTokens = typeof persistedTotalTokens === "number" && Number.isFinite(persistedTotalTokens) && persistedTotalTokens > 0;
+	const promptTokenEstimate = estimatePromptTokensForMemoryFlush(params.promptForEstimate ?? params.followupRun.prompt);
+
+=== PAN CONFIG KEYS ===
+{
+  "baseUrl": "http://127.0.0.1:18080/v1",
+  "apiKey": "__OPENCLAW_REDACTED__",
+  "api": "openai-completions",
+  "timeoutSeconds": 600,
+  "models": [
+    {
+      "id": "pan-qwen",
+      "name": "Pan Qwen 3.5 4B",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "contextWindow": 16384,
+      "maxTokens": 2048,
+      "compat": {
+        "supportsTools": true
+      },
+      "api": "openai-completions"
+    }
+  ]
+}
+Config path not found: agents.defaults.models. Run openclaw config validate to inspect config shape.

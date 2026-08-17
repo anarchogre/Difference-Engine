@@ -1,0 +1,69 @@
+RUN=workspace/operational/recovery/gpt-plus-integration/20260803T043919
+FUNCTION_STATUS=0
+MISSION_TASK_HITS=57
+LIKELY_STATE_FILES=100
+
+RECOVERY FUNCTION RESULT
+MISSION=None
+TASK=None
+MISSION_TYPE=NoneType
+TASK_TYPE=NoneType
+
+TOP MISSION/TASK HITS
+./Repository/Governance/bootstrap.md:17:- Recover active mission.
+./Repository/Governance/bootstrap.md:18:- Recover active task.
+./ade/kernel/bootstrap_loader/loader.py:9:from .mission import recover_mission
+./ade/kernel/bootstrap_loader/loader.py:37:        mission=recover_mission(),
+./ade/kernel/bootstrap_loader/mission.py:2:Mission recovery.
+./ade/kernel/bootstrap_loader/state.py:14:    mission: str | None = None
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONTRACT_v1.md:21:Mission recovered.
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_ERRORS_v1.md:15:MISSION_NOT_FOUND
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_SPECIFICATION_v1.md:17:- Recover active mission.
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_SPECIFICATION_v1.md:18:- Recover active task.
+./architecture/bootstrap_loader/BOOTSTRAP_LOADER_TEST_PLAN_v1.md:15:Mission recovery
+./inventory/reconciliation/TREE_SNAPSHOT.txt:187:│   │   ├── MISSION_001A_REPOSITORY_RECONCILIATION_REPORT.md
+./inventory/reports/MISSION_001A_REPOSITORY_RECONCILIATION_REPORT.md:1:# Mission 001A Repository Reconciliation Report
+./queue/completed/Q-001A-REPOSITORY-RECONCILIATION.md:1:Mission Complete
+./workspace/operational/Continue DifferenceEngine.md:19:Resume the active mission immediately.
+./workspace/operational/bootstrap/INITIALIZATION_ORDER.md:43:6. Resume active mission immediately.
+./workspace/operational/bootstrap/INITIALIZATION_ORDER.md:57:Discussion only after completion of a task block.
+./workspace/operational/bootstrap/INITIALIZATION_ORDER.md:61:Current Mission
+./workspace/operational/current/COMPLETED_TASK_BLOCK.md:1:# Completed Task Block
+./workspace/operational/current/COMPLETED_TASK_BLOCK.md:30:Repository reconciliation remains the active mission.
+./workspace/operational/preservation/PP-0001.md:7:Completed Task Block
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-audit/extracts/candidate-headings.txt:46:21:Mission recovered.
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-audit/extracts/candidate-headings.txt:67:15:MISSION_NOT_FOUND
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-audit/extracts/candidate-headings.txt:136:15:Mission recovery
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/extracts/bootstrap-documents.txt:18:- Recover active mission.
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/extracts/bootstrap-documents.txt:19:- Recover active task.
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/reports/import-map.txt:21:ade/kernel/bootstrap_loader/loader.py:9:from .mission import recover_mission
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-patch/reports/bootstrap-patch-report.txt:44:OperationalState(repository_root=PosixPath('/storage/emulated/0/DifferenceEngine'), governance_root=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance'), specification_root=PosixPath('/storage/emulated/0/DifferenceEngine/specifications'), execution_mode='Execution', mission=None, task=None)
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-patch/reports/bootstrap-patch-report.txt:50:RESULT=BootstrapResult(artifacts=BootstrapArtifacts(constitution=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/constitution.md'), amendments=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/amendments.md'), bootstrap=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/bootstrap.md')), specifications=Specifications(root=PosixPath('/storage/emulated/0/DifferenceEngine/specifications')), state=OperationalState(repository_root=PosixPath('/storage/emulated/0/DifferenceEngine'), governance_root=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance'), specification_root=PosixPath('/storage/emulated/0/DifferenceEngine/specifications'), execution_mode='Execution', mission=None, task=None))
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-patch/tests/initialize-smoke.txt:4:RESULT=BootstrapResult(artifacts=BootstrapArtifacts(constitution=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/constitution.md'), amendments=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/amendments.md'), bootstrap=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/bootstrap.md')), specifications=Specifications(root=PosixPath('/storage/emulated/0/DifferenceEngine/specifications')), state=OperationalState(repository_root=PosixPath('/storage/emulated/0/DifferenceEngine'), governance_root=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance'), specification_root=PosixPath('/storage/emulated/0/DifferenceEngine/specifications'), execution_mode='Execution', mission=None, task=None))
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-patch/tests/package-execution.txt:2:OperationalState(repository_root=PosixPath('/storage/emulated/0/DifferenceEngine'), governance_root=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance'), specification_root=PosixPath('/storage/emulated/0/DifferenceEngine/specifications'), execution_mode='Execution', mission=None, task=None)
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/extracts/current-source.txt:45:from .mission import recover_mission
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/extracts/current-source.txt:73:        mission=recover_mission(),
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/reports/interface-map.txt:63:IMPORT_FROM module=mission names=['recover_mission']
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/reports/interface-map.txt:84:FUNCTION recover_mission args=[] defaults=0
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts/bootstrap-primary-sources.txt:23:- Recover active mission.
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts/bootstrap-primary-sources.txt:24:- Recover active task.
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts/bootstrap-primary-sources.txt:74:- Recover active mission.
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts/bootstrap-primary-sources.txt:75:- Recover active task.
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts/bootstrap-primary-sources.txt:103:Mission recovered.
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts/governance-primary-sources.txt:13:17:- Recover active mission.
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts/governance-primary-sources.txt:38:9:from .mission import recover_mission
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts/governance-primary-sources.txt:44:37:        mission=recover_mission(),
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts/governance-primary-sources.txt:60:14:    mission: str | None = None
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts/governance-primary-sources.txt:78:21:Mission recovered.
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts/governance-primary-sources.txt:94:15:MISSION_NOT_FOUND
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts/governance-primary-sources.txt:118:17:- Recover active mission.
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts/governance-primary-sources.txt:161:187:│   │   ├── MISSION_001A_REPOSITORY_RECONCILIATION_REPORT.md
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts/governance-primary-sources.txt:225:46:21:Mission recovered.
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts/governance-primary-sources.txt:230:67:15:MISSION_NOT_FOUND
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts/governance-primary-sources.txt:239:136:15:Mission recovery
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts/governance-primary-sources.txt:273:175:e9d59ad175ebbce4f774f74cafb29bf6c481432440fe7870bad93e9922b29749  ./inventory/reports/MISSION_001A_REPOSITORY_RECONCILIATION_REPORT.md
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/hashes/repository-sha256.txt:175:e9d59ad175ebbce4f774f74cafb29bf6c481432440fe7870bad93e9922b29749  ./inventory/reports/MISSION_001A_REPOSITORY_RECONCILIATION_REPORT.md
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/logs/batch-6-summary.txt:66:IMPORT_FROM module=mission names=['recover_mission']
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/logs/batch-6-summary.txt:87:FUNCTION recover_mission args=[] defaults=0
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/logs/batch-7-summary.txt:17:OperationalState(repository_root=PosixPath('/storage/emulated/0/DifferenceEngine'), governance_root=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance'), specification_root=PosixPath('/storage/emulated/0/DifferenceEngine/specifications'), execution_mode='Execution', mission=None, task=None)
+./workspace/operational/recovery/gpt-plus-integration/20260803T043919/logs/batch-7-summary.txt:23:RESULT=BootstrapResult(artifacts=BootstrapArtifacts(constitution=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/constitution.md'), amendments=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/amendments.md'), bootstrap=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/bootstrap.md')), specifications=Specifications(root=PosixPath('/storage/emulated/0/DifferenceEngine/specifications')), state=OperationalState(repository_root=PosixPath('/storage/emulated/0/DifferenceEngine'), governance_root=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance'), specification_root=PosixPath('/storage/emulated/0/DifferenceEngine/specifications'), execution_mode='Execution', mission=None, task=None))

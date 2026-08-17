@@ -1,0 +1,20 @@
+=== FORGE GITHUB IDENTITY INSTALL ===
+2026-08-07T21:37:41-05:00
+
+=== INSTALLED FILES ===
+-rw------- 600 /home/reckless-ideator/.ssh/id_ed25519_differenceengine
+-rw------- 600 /home/reckless-ideator/.ssh/id_ed25519_differenceengine.pub
+-rw------- 600 /home/reckless-ideator/.ssh/known_hosts_differenceengine
+
+=== SOURCE / INSTALLED FINGERPRINT ===
+256 SHA256:TllnOv6RpVeDv7r2G2uWSjlOel6gqLL+RmqIqSl+/Ys darth.panda@gmail.com (ED25519)
+256 SHA256:TllnOv6RpVeDv7r2G2uWSjlOel6gqLL+RmqIqSl+/Ys darth.panda@gmail.com (ED25519)
+
+=== REPOSITORY SSH BINDING ===
+ssh -i /home/reckless-ideator/.ssh/id_ed25519_differenceengine -o IdentitiesOnly=yes -o UserKnownHostsFile=/home/reckless-ideator/.ssh/known_hosts_differenceengine -o StrictHostKeyChecking=yes
+
+=== READ-ONLY REMOTE TEST ===
+1a1f5f44aea9ed6889714f1373f9265cdf69bc0e	refs/heads/main
+a081b555ba5602ccc0c16011ebc1688d2cb31a58	refs/heads/master
+
+IDENTITY_INSTALL=PASS

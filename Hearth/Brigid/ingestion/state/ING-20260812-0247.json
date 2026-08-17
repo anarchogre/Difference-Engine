@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0247",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:18.809115-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-RC-GOLD/RC1-0002_Constitutional_Amendments_Ledger_GOLD_v1.2.0.json",
+    "original_name": "RC1-0002_Constitutional_Amendments_Ledger_GOLD_v1.2.0.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0247",
+    "schema_version": "0.1.0",
+    "sha256": "f6d356ccb94ef0fcfe0a2a599247d2e1aa8fdaa78ca3d5a83d9c01adb38653cb",
+    "size_bytes": 2151,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

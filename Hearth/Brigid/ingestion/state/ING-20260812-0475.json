@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0475",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:45.563336-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/MANIFEST.md",
+    "original_name": "MANIFEST.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0475",
+    "schema_version": "0.1.0",
+    "sha256": "8aa1aaf44396abb29bda2a9b44fba9e25bf8c42b6a15c23797bb5b3ac1ae15cb",
+    "size_bytes": 351,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

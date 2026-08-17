@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0200",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:14.773485-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Foundation-Package-Alpha/FPA-0003-CanonicalArtifactOntology.json",
+    "original_name": "FPA-0003-CanonicalArtifactOntology.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0200",
+    "schema_version": "0.1.0",
+    "sha256": "c79a273debf1fdcd62a2075e31a58a063e2c545d8acfc7dcaedbfd206bc8e27c",
+    "size_bytes": 768,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

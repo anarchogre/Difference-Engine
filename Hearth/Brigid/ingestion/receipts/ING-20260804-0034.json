@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:58.287752-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Reference_Schema_v0.1.md",
+  "original_name": "Reference_Schema_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0034",
+  "schema_version": "0.1.0",
+  "sha256": "d95f8c590d23540738750671ed0ebc341c9a9f0e6d6e53b68df2de36aa550f44",
+  "size_bytes": 2421,
+  "source_class": "manual_batch"
+}

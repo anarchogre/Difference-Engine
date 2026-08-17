@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:50.850221-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Asset_Schema_v0.1.md",
+  "original_name": "Asset_Schema_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0007",
+  "schema_version": "0.1.0",
+  "sha256": "123ca1c3250dc7f6563992da4d95cec8d8adf199aa179f1fc9e1c5de914053e6",
+  "size_bytes": 2461,
+  "source_class": "manual_batch"
+}

@@ -1,0 +1,26 @@
+--- workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-patch/backups/bootstrap.py.before	2026-08-03 04:50:43.256417447 -0500
++++ ade/kernel/bootstrap_loader/bootstrap.py	2026-08-03 04:50:43.279750782 -0500
+@@ -1,8 +1,17 @@
+-"""
+-Bootstrap loading.
+-"""
++from pathlib import Path
+ 
+-from .artifacts import bootstrap
++from .artifacts import BootstrapArtifacts
++from .artifacts import discover_artifacts
+ 
+-def load_bootstrap(root):
+-    return bootstrap(root)
++
++def load_bootstrap(
++    root: Path,
++) -> BootstrapArtifacts:
++    """
++    Load the bootstrap artifact set for a repository root.
++
++    This module preserves the historical load_bootstrap interface
++    while delegating artifact discovery to the canonical
++    discover_artifacts implementation.
++    """
++    return discover_artifacts(root)

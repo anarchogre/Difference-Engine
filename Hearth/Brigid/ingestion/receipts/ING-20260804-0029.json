@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:56.967037-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Provenance_Specification_v0.1.md",
+  "original_name": "Provenance_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0029",
+  "schema_version": "0.1.0",
+  "sha256": "8268bdc1d2af37eb271ffe9afcbcb4d865e02b8880d323bf7ddf77ff342b332a",
+  "size_bytes": 2222,
+  "source_class": "manual_batch"
+}

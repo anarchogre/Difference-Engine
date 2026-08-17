@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:33.518514-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Queue_Candidate_Schema_v0.1.md",
+  "original_name": "Queue_Candidate_Schema_v0.1.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0384",
+  "schema_version": "0.1.0",
+  "sha256": "a6a8b6f7b011536c99f7866341e6affa5def05e7f4449d338b65721d037d3c55",
+  "size_bytes": 2173,
+  "source_class": "manual_batch"
+}

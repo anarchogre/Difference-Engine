@@ -1,0 +1,146 @@
+=== CORE COMPACTION FORMULA ===
+}
+function getLastAssistantUsageInfo(messages) {
+	for (let i = messages.length - 1; i >= 0; i--) {
+		const usage = getAssistantUsage(messages[i]);
+		if (usage && usage.contextUsage?.state !== "unavailable") return {
+			usage,
+			index: i
+		};
+	}
+}
+/** Estimate context tokens for messages using provider usage when available. */
+function estimateContextTokens(messages) {
+	const usageInfo = getLastAssistantUsageInfo(messages);
+	if (!usageInfo) {
+		let estimated = 0;
+		for (const message of messages) estimated += estimateTokens(message);
+		return {
+			tokens: estimated,
+			usageTokens: 0,
+			trailingTokens: estimated,
+			lastUsageIndex: null
+		};
+	}
+	const usageTokens = calculateContextTokens(usageInfo.usage);
+	let trailingTokens = 0;
+	for (let i = usageInfo.index + 1; i < messages.length; i++) trailingTokens += estimateTokens(messages[i]);
+	return {
+		tokens: usageTokens + trailingTokens,
+		usageTokens,
+		trailingTokens,
+		lastUsageIndex: usageInfo.index
+	};
+}
+/** Return whether context usage exceeds the configured compaction threshold. */
+function shouldCompact(contextTokens, contextWindow, settings) {
+	if (!settings.enabled) return false;
+	return contextTokens > contextWindow - settings.reserveTokens;
+}
+const IMAGE_BLOCK_CHARS = 4800;
+function countContentBlockChars(content) {
+	let chars = 0;
+	for (const block of content) if (block.type === "image") chars += IMAGE_BLOCK_CHARS;
+	else chars += getCompactionContentBlockText(block).length;
+	return chars;
+}
+/** Estimate token count for one message using a conservative character heuristic. */
+function estimateTokens(message) {
+	let chars = 0;
+	const harnessMessage = message;
+	switch (harnessMessage.role) {
+		case "user": {
+			const content = harnessMessage.content;
+			if (typeof content === "string") chars = content.length;
+			else if (Array.isArray(content)) chars = countContentBlockChars(content);
+			return Math.ceil(chars / 4);
+		}
+		case "assistant": {
+			const assistant = harnessMessage;
+			for (const block of assistant.content) if (block.type === "text") chars += block.text.length;
+			else if (block.type === "thinking") chars += block.thinking.length;
+			else if (block.type === "toolCall") chars += block.name.length + safeJsonStringify(block.arguments).length;
+
+=== EMBEDDED AUTO-COMPACTION CALLSITE ===
+	*
+	* @param assistantMessage The assistant message to check
+	* @param skipAbortedCheck If false, include aborted messages (for pre-prompt check). Default: true
+	*/
+	async checkCompaction(assistantMessage, skipAbortedCheck = true) {
+		const settings = this.settingsManager.getCompactionSettings();
+		if (!settings.enabled) return false;
+		if (skipAbortedCheck && assistantMessage.stopReason === "aborted") return false;
+		const contextWindow = this.model?.contextWindow ?? 0;
+		const sameModel = this.model && assistantMessage.provider === this.model.provider && assistantMessage.model === this.model.id;
+		const compactionEntry = getLatestCompactionEntry(this.sessionManager.getBranch());
+		if (compactionEntry !== null && assistantMessage.timestamp <= new Date(compactionEntry.timestamp).getTime()) return false;
+		if (sameModel && isContextOverflow(assistantMessage, contextWindow)) {
+			if (this.overflowRecoveryAttempted) {
+				this.emit({
+					type: "compaction_end",
+					reason: "overflow",
+					result: void 0,
+					aborted: false,
+					willRetry: false,
+					errorMessage: "Context overflow recovery failed after one compact-and-retry attempt. Try reducing context or switching to a larger-context model."
+				});
+				return false;
+			}
+			this.overflowRecoveryAttempted = true;
+			const messages = this.agent.state.messages;
+			if (messages.length > 0 && messages[messages.length - 1].role === "assistant") this.agent.state.messages = messages.slice(0, -1);
+			return await this.runAutoCompaction("overflow", true);
+		}
+		let contextTokens;
+		if (assistantMessage.stopReason === "error") {
+			const messages = this.agent.state.messages;
+			const estimate = estimateContextTokens(messages);
+			if (estimate.lastUsageIndex === null) return false;
+			const usageMsg = messages[estimate.lastUsageIndex];
+			if (compactionEntry && usageMsg.role === "assistant" && usageMsg.timestamp <= new Date(compactionEntry.timestamp).getTime()) return false;
+			contextTokens = estimate.tokens;
+		} else if (assistantMessage.usage.contextUsage?.state === "unavailable") {
+			const estimatedContextTokens = this.getContextUsage()?.tokens;
+			if (estimatedContextTokens == null) return false;
+			contextTokens = estimatedContextTokens;
+		} else contextTokens = calculateContextTokens(assistantMessage.usage);
+		if (shouldCompact(contextTokens, contextWindow, settings)) return await this.runAutoCompaction("threshold", false);
+		return false;
+	}
+	/**
+	* Internal: Run auto-compaction with events.
+	*/
+	async runAutoCompaction(reason, willRetry) {
+		const settings = this.settingsManager.getCompactionSettings();
+		this.emit({
+			type: "compaction_start",
+			reason
+		});
+		this.autoCompactionAbortController = new AbortController();
+		try {
+			const outcome = await this.runCompactionWork({
+				mode: "auto",
+				settings,
+				signal: this.autoCompactionAbortController.signal
+			});
+			if (outcome.status === "skipped") {
+				this.emit({
+					type: "compaction_end",
+					reason,
+					result: void 0,
+
+=== COMPACTION CONSTANTS ===
+//#region src/agents/agent-compaction-constants.ts
+/**
+* Absolute minimum prompt budget in tokens.  When the context window is
+* large enough that `contextTokenBudget * MIN_PROMPT_BUDGET_RATIO` exceeds
+* this value, this absolute floor takes precedence.
+*/
+const MIN_PROMPT_BUDGET_TOKENS = 8e3;
+/**
+* Minimum share of the context window that must remain available for prompt
+* content after reserve tokens are subtracted.
+*/
+const MIN_PROMPT_BUDGET_RATIO = .5;
+//#endregion
+export { MIN_PROMPT_BUDGET_TOKENS as n, MIN_PROMPT_BUDGET_RATIO as t };

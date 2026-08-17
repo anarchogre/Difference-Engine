@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260804-0084",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-04T18:01:36.858527-05:00",
+    "observed_path": "/storage/emulated/0/Download/Difference_Engine____Branch_II____Research.md.txt",
+    "original_name": "Difference_Engine____Branch_II____Research.md.txt",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260804-0084",
+    "schema_version": "0.1.0",
+    "sha256": "3070b03ec60d697cef3c8051553adc27b34a141bda6cd3cda3f112edd81f53a7",
+    "size_bytes": 23667,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

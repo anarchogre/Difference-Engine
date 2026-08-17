@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0091",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:07.806373-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-PRESERVATION-0041_Emergent_Interaction_and_Dynamic_Equilibrium.json",
+    "original_name": "AKS-PRESERVATION-0041_Emergent_Interaction_and_Dynamic_Equilibrium.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0091",
+    "schema_version": "0.1.0",
+    "sha256": "b7f93e2664f123f99a91896cc4fb42b55be92c29bf22c9a69b5ae5456136be13",
+    "size_bytes": 1288,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

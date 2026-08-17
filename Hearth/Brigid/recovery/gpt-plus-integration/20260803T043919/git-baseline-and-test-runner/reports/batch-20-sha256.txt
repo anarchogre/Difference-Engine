@@ -1,0 +1,4 @@
+c5a141198225dbda5f5244453b1a44aec14ca3ce328e9481131992e8adc06508  .gitignore
+5421d39c664b755d4ed0f22f6baab198c7be9b7895a4a55e43a2185681f588c4  ade/kernel/tests/run_tests.py
+df58bedc9ca3e96eb71d4bd61d147eb1343ccdf9eec72123db471b39bff206bf  workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-and-test-runner/reports/git-add-dry-run.txt
+633d3fa3f24c61aebf4ded5b7f8b0b5d0b7e10489cc66b96a313709a03afe9d4  workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-and-test-runner/tests/deterministic-test-runner.txt

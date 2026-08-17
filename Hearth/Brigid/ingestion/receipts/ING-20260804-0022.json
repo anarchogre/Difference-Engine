@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:55.009370-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Ingestion_Pipeline_Specification_v0.1.md",
+  "original_name": "Ingestion_Pipeline_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0022",
+  "schema_version": "0.1.0",
+  "sha256": "62cd62e53dc6b24168129c3b49391641b1edd73c302ace661f92ac2d84db668e",
+  "size_bytes": 3546,
+  "source_class": "manual_batch"
+}

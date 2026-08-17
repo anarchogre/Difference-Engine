@@ -1,0 +1,10 @@
+EMBEDDED FALLBACK: Gateway agent timed out; running embedded agent with fresh session gateway-fallback-743be4f4-4323-4869-975c-7c171bdebd0b: GatewayTransportError: gateway timeout after 330000ms
+Gateway target: ws://127.0.0.1:18789
+Source: local loopback
+Config: /home/reckless-ideator/.openclaw/openclaw.json
+Bind: loopback
+[35m[plugins][39m [33mplugins.allow is empty; discovered non-bundled plugins may auto-load: llama-cpp (/home/reckless-ideator/.openclaw/npm/projects/openclaw-llama-cpp-provider-15b2d859e6/node_modules/@openclaw/llama-cpp-provider/dist/index.js). To trust them explicitly, set plugins.allow in openclaw.json (e.g. "plugins": { "allow": ["llama-cpp"] }). Run 'openclaw plugins list --enabled --verbose' or 'openclaw plugins inspect llama-cpp' to confirm plugin ids.[39m
+[33m[agent/embedded][39m [36mtool-search: cataloged 29 tools behind compact prompt surface[39m
+[33m[provider-transport-fetch][39m [36m[model-fetch] start provider=pan-local api=openai-completions model=pan-qwen method=POST url=http://127.0.0.1:18080/v1/chat/completions timeoutMs=600000 proxy=none policy=custom[39m
+[33m[provider-transport-fetch][39m [36m[model-fetch] response provider=pan-local api=openai-completions model=pan-qwen status=200 elapsedMs=1035 contentType=text/event-stream[39m
+[33m[agent/embedded][39m [33membedded run timeout: runId=gateway-fallback-743be4f4-4323-4869-975c-7c171bdebd0b sessionId=gateway-fallback-743be4f4-4323-4869-975c-7c171bdebd0b timeoutMs=300000[39m

@@ -1,0 +1,7 @@
+Repository: /data/data/com.termux/files/home/storage/shared/DifferenceEngine
+Generated: 2026-08-04T19:01:39-05:00
+Directories: 1149
+Files: 2128
+
+Output:
+workspace/operational/repository_state/REPOSITORY_TREE_FULL_2026-08-04.txt

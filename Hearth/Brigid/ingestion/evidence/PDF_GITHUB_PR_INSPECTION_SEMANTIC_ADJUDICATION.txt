@@ -1,0 +1,10 @@
+status=CONVERSATION_BEARING_CANDIDATE
+file=GitHub PR Inspection.pdf
+chat_id=6a642757-94f4-83ea-9bfb-62d178690f51
+chars=1688
+simple_dialogue_markers=0
+qualification_method=INDIVIDUAL_STRUCTURAL_INSPECTION
+human_turns=CONFIRMED
+assistant_turns=CONFIRMED
+evidence=human GitHub invocation turns and substantive assistant connector responses survive flattened PDF extraction
+promotion=NONE

@@ -1,0 +1,144 @@
+===== ade/kernel/bootstrap_loader/__init__.py =====
+
+===== ade/kernel/bootstrap_loader/__main__.py =====
+IMPORT_FROM module=main names=['main']
+
+===== ade/kernel/bootstrap_loader/artifacts.py =====
+IMPORT_FROM module=dataclasses names=['dataclass']
+IMPORT_FROM module=pathlib names=['Path']
+IMPORT_FROM module=filesystem names=['require']
+CLASS BootstrapArtifacts
+FUNCTION discover_artifacts args=['root'] defaults=0
+
+===== ade/kernel/bootstrap_loader/bootstrap.py =====
+IMPORT_FROM module=artifacts names=['bootstrap']
+FUNCTION load_bootstrap args=['root'] defaults=0
+
+===== ade/kernel/bootstrap_loader/config.py =====
+IMPORT_FROM module=pathlib names=['Path']
+
+===== ade/kernel/bootstrap_loader/constants.py =====
+
+===== ade/kernel/bootstrap_loader/context.py =====
+IMPORT_FROM module=dataclasses names=['dataclass']
+IMPORT_FROM module=state names=['OperationalState']
+CLASS BootstrapContext
+
+===== ade/kernel/bootstrap_loader/contracts.py =====
+IMPORT_FROM module=typing names=['Protocol']
+IMPORT_FROM module=pathlib names=['Path']
+CLASS Loader
+  METHOD __call__ args=['self', 'root']
+
+===== ade/kernel/bootstrap_loader/discover.py =====
+IMPORT_FROM module=pathlib names=['Path']
+IMPORT_FROM module=config names=['REPOSITORY_ROOT']
+FUNCTION discover_repository args=['start'] defaults=1
+
+===== ade/kernel/bootstrap_loader/errors.py =====
+CLASS BootstrapError
+CLASS ReadinessError
+
+===== ade/kernel/bootstrap_loader/execution.py =====
+IMPORT_FROM module=state names=['OperationalState']
+FUNCTION enter_execution_mode args=['state'] defaults=0
+
+===== ade/kernel/bootstrap_loader/filesystem.py =====
+IMPORT_FROM module=pathlib names=['Path']
+FUNCTION require args=['path'] defaults=0
+
+===== ade/kernel/bootstrap_loader/governance.py =====
+IMPORT_FROM module=artifacts names=['discover_artifacts']
+FUNCTION load_governance args=['root'] defaults=0
+
+===== ade/kernel/bootstrap_loader/health.py =====
+IMPORT_FROM module=loader names=['initialize']
+FUNCTION check args=[] defaults=0
+
+===== ade/kernel/bootstrap_loader/loader.py =====
+IMPORT_FROM module=discover names=['discover_repository']
+IMPORT_FROM module=execution names=['enter_execution_mode']
+IMPORT_FROM module=governance names=['load_governance']
+IMPORT_FROM module=logging names=['log']
+IMPORT_FROM module=mission names=['recover_mission']
+IMPORT_FROM module=modes names=['activate_modes']
+IMPORT_FROM module=queue names=['recover_queues']
+IMPORT_FROM module=readiness names=['verify_readiness']
+IMPORT_FROM module=recovery names=['recover_state']
+IMPORT_FROM module=result names=['BootstrapResult']
+IMPORT_FROM module=specifications names=['load_specifications']
+IMPORT_FROM module=state names=['OperationalState']
+IMPORT_FROM module=task names=['recover_task']
+IMPORT_FROM module=validators names=['validate']
+FUNCTION initialize args=[] defaults=0
+
+===== ade/kernel/bootstrap_loader/logging.py =====
+IMPORT_FROM module=pathlib names=['Path']
+FUNCTION log args=['message'] defaults=0
+
+===== ade/kernel/bootstrap_loader/main.py =====
+IMPORT_FROM module=loader names=['initialize']
+FUNCTION main args=[] defaults=0
+
+===== ade/kernel/bootstrap_loader/mission.py =====
+FUNCTION recover_mission args=[] defaults=0
+
+===== ade/kernel/bootstrap_loader/models.py =====
+IMPORT_FROM module=dataclasses names=['dataclass']
+IMPORT_FROM module=pathlib names=['Path']
+CLASS Governance
+CLASS Specifications
+
+===== ade/kernel/bootstrap_loader/modes.py =====
+IMPORT_FROM module=constants names=['DISCUSSION_MODE', 'EXECUTION_MODE', 'PRESERVATION_MODE', 'RECOVERY_MODE']
+FUNCTION activate_modes args=[] defaults=0
+
+===== ade/kernel/bootstrap_loader/paths.py =====
+IMPORT_FROM module=pathlib names=['Path']
+FUNCTION governance args=['root'] defaults=0
+FUNCTION specifications args=['root'] defaults=0
+FUNCTION architecture args=['root'] defaults=0
+FUNCTION repository args=['root'] defaults=0
+
+===== ade/kernel/bootstrap_loader/queue.py =====
+FUNCTION recover_queues args=[] defaults=0
+
+===== ade/kernel/bootstrap_loader/readiness.py =====
+IMPORT_FROM module=paths names=['architecture', 'repository', 'specifications']
+FUNCTION verify_readiness args=['root'] defaults=0
+
+===== ade/kernel/bootstrap_loader/recovery.py =====
+IMPORT_FROM module=state names=['OperationalState']
+FUNCTION recover_state args=['state'] defaults=0
+
+===== ade/kernel/bootstrap_loader/result.py =====
+IMPORT_FROM module=dataclasses names=['dataclass']
+IMPORT_FROM module=artifacts names=['BootstrapArtifacts']
+IMPORT_FROM module=models names=['Specifications']
+IMPORT_FROM module=state names=['OperationalState']
+CLASS BootstrapResult
+
+===== ade/kernel/bootstrap_loader/specifications.py =====
+IMPORT_FROM module=models names=['Specifications']
+IMPORT_FROM module=paths names=['specifications']
+FUNCTION load_specifications args=['root'] defaults=0
+
+===== ade/kernel/bootstrap_loader/state.py =====
+IMPORT_FROM module=dataclasses names=['dataclass']
+IMPORT_FROM module=pathlib names=['Path']
+CLASS OperationalState
+
+===== ade/kernel/bootstrap_loader/task.py =====
+FUNCTION recover_task args=[] defaults=0
+
+===== ade/kernel/bootstrap_loader/validators.py =====
+IMPORT_FROM module=artifacts names=['BootstrapArtifacts']
+IMPORT_FROM module=models names=['Specifications']
+FUNCTION validate args=['artifacts', 'specifications'] defaults=0
+
+===== ade/kernel/bootstrap_loader/version.py =====
+
+===== ade/kernel/tests/test_bootstrap_loader.py =====
+IMPORT_FROM module=ade.kernel.bootstrap_loader.loader names=['initialize']
+FUNCTION test_initialize args=[] defaults=0
+

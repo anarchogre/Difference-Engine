@@ -1,0 +1,277 @@
+=== LATER OPERATIONAL STATE CANDIDATES ===
+2026-08-07T21:58:26-05:00
+
+===== PHONE_ACTIVE_STATE.txt =====
+MTIME=2026-08-07 20:00:23.824297708 -0500 SIZE=109946
+fbd04660ef55a109139db39f7afa6094ac93f647ce56dc5246c73b34f05f7497  /home/reckless-ideator/DifferenceEngine/PHONE_ACTIVE_STATE.txt
+--- FIRST 80 LINES ---
+/storage/emulated/0/DifferenceEngine
+a081b555ba5602ccc0c16011ebc1688d2cb31a58
+## master...origin/master
+?? "BOOTSTRAP/BOOTSTRAP - CONTINUE - INGESTER EPOCH v1.0 - 8-4-26-1300.md"
+?? "BOOTSTRAP/BOOTSTRAP \342\200\224 Foundational Reduction Continuation.md"
+?? BOOTSTRAP/BST-CBD-OPS_Operational_Bedrock_and_Ingester_Execution_v0.1.0.md
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Architectural Philosophy And Meta Synthsis.md"
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Computational Bedrock.md"
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Session Continuation Bootstrap - Epoch II - Repository Archaeology - Into - Constitutional Synthesis.md"
+?? "BOOTSTRAP/Bootstrap - Epoch II \342\200\224 Post Milestone 002 - Constitutional Kernel - Operational Bootstrap.md"
+?? "BOOTSTRAP/Bootstrap vNext \342\200\224 Candidate Constitutional Bootstrap Additions.md"
+?? BOOTSTRAP/Branches/
+?? "BOOTSTRAP/Computational Bedrock Bootstrap Ingester Recovery Continuation.md"
+?? BOOTSTRAP/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md
+?? "BOOTSTRAP/Load The Constitutional Kernel.md"
+?? "BOOTSTRAP/Recover Existing Injestion Files.md"
+?? BOOTSTRAP_BRANCHES.txt
+?? BOOTSTRAP_FILES.txt
+?? BOOTSTRAP_FOLDER.txt
+?? BOOTSTRAP_TOP.txt
+?? CONVERSATION_CORPUS_VERIFIED.json
+?? ENTRY_POINTS.txt
+?? INGESTER_CODE.tar
+?? INGESTION_FILES.txt
+?? MILESTONE_002_CONVERSATION_CORPUS.md
+?? PHONE_ACTIVE_STATE.txt
+?? REPOSITORY_STATUS.txt
+?? ade/services/
+?? ade/tests/
+?? architecture/services/
+?? discover_conversations.py
+?? evidence/
+?? governance/
+?? inventory/initialization/
+?? queue/ingestion/
+?? workspace/operational/census/
+?? workspace/operational/corpus/
+?? workspace/operational/current/state-model-candidates.lst
+?? workspace/operational/current/state-references.clean.out
+?? workspace/operational/current/state-references.out
+?? workspace/operational/identity/
+?? workspace/operational/ingestion/
+?? workspace/operational/repository_state/
+workspace/operational/ingestion/batch_test/output/ING-20260804-0001/metadata/receipt.json
+workspace/operational/ingestion/batch_test/output/ING-20260804-0001/provenance/provenance.json
+workspace/operational/ingestion/batch_test/output/ING-20260804-0001/queues/candidates.json
+workspace/operational/ingestion/batch_test/output/ING-20260804-0001/reports/ingestion_report.md
+workspace/operational/ingestion/batch_test/output/ING-20260804-0001/reports/manifest.json
+workspace/operational/ingestion/batch_test/output/ING-20260804-0001/reports/validation.json
+workspace/operational/ingestion/batch_test/output/ING-20260804-0001/source/first.txt
+workspace/operational/ingestion/batch_test/output/ING-20260804-0001/structure/assets.json
+workspace/operational/ingestion/batch_test/output/ING-20260804-0001/structure/parsed.json
+workspace/operational/ingestion/batch_test/output/ING-20260804-0001/structure/references.json
+workspace/operational/ingestion/batch_test/output/ING-20260804-0002/metadata/receipt.json
+workspace/operational/ingestion/batch_test/output/ING-20260804-0002/provenance/provenance.json
+workspace/operational/ingestion/batch_test/output/ING-20260804-0002/queues/candidates.json
+workspace/operational/ingestion/batch_test/output/ING-20260804-0002/reports/ingestion_report.md
+workspace/operational/ingestion/batch_test/output/ING-20260804-0002/reports/manifest.json
+workspace/operational/ingestion/batch_test/output/ING-20260804-0002/reports/validation.json
+workspace/operational/ingestion/batch_test/output/ING-20260804-0002/source/second.txt
+workspace/operational/ingestion/batch_test/output/ING-20260804-0002/structure/assets.json
+workspace/operational/ingestion/batch_test/output/ING-20260804-0002/structure/parsed.json
+workspace/operational/ingestion/batch_test/output/ING-20260804-0002/structure/references.json
+workspace/operational/ingestion/batch_test/receipts/ING-20260804-0001.json
+workspace/operational/ingestion/batch_test/receipts/ING-20260804-0002.json
+workspace/operational/ingestion/batch_test/sources/first.txt
+workspace/operational/ingestion/batch_test/sources/second.txt
+workspace/operational/ingestion/chat_pipeline_test.txt
+workspace/operational/ingestion/chat_test.txt
+workspace/operational/ingestion/discover_conversations.py
+workspace/operational/ingestion/evidence/BATCH_INGESTION_QUALIFICATION.txt
+workspace/operational/ingestion/evidence/BATCH_INGESTION_RUN.txt
+workspace/operational/ingestion/evidence/CONVERSATION_CORPUS_CANDIDATES.txt
+workspace/operational/ingestion/evidence/CONVERSATION_CORPUS_DUPLICATES.txt
+workspace/operational/ingestion/evidence/CONVERSATION_CORPUS_UNIQUE.txt
+workspace/operational/ingestion/evidence/CONVERSATION_CORPUS_VERIFIED.json
+workspace/operational/ingestion/evidence/CONVERSATION_PACKAGE_HISTORY.txt
+workspace/operational/ingestion/evidence/DE-CONV-20260804-0001_FILES.txt
+workspace/operational/ingestion/evidence/DE-CONV-20260804-0001_QUALIFICATION.txt
+workspace/operational/ingestion/evidence/DE-CONV-20260804-0002_QUALIFICATION.txt
+
+===== REPOSITORY_STATUS.txt =====
+MTIME=2026-08-07 20:00:23.825009296 -0500 SIZE=1561
+45cda5466fd9341cad502dba7c36626d5b87677fc68dc1b0c5d40db04e60736d  /home/reckless-ideator/DifferenceEngine/REPOSITORY_STATUS.txt
+--- FIRST 80 LINES ---
+## master...origin/master
+?? "BOOTSTRAP/BOOTSTRAP - CONTINUE - INGESTER EPOCH v1.0 - 8-4-26-1300.md"
+?? "BOOTSTRAP/BOOTSTRAP \342\200\224 Foundational Reduction Continuation.md"
+?? BOOTSTRAP/BST-CBD-OPS_Operational_Bedrock_and_Ingester_Execution_v0.1.0.md
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Architectural Philosophy And Meta Synthsis.md"
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Computational Bedrock.md"
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Session Continuation Bootstrap - Epoch II - Repository Archaeology - Into - Constitutional Synthesis.md"
+?? "BOOTSTRAP/Bootstrap - Epoch II \342\200\224 Post Milestone 002 - Constitutional Kernel - Operational Bootstrap.md"
+?? "BOOTSTRAP/Bootstrap vNext \342\200\224 Candidate Constitutional Bootstrap Additions.md"
+?? BOOTSTRAP/Branches/
+?? "BOOTSTRAP/Computational Bedrock Bootstrap Ingester Recovery Continuation.md"
+?? BOOTSTRAP/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md
+?? "BOOTSTRAP/Load The Constitutional Kernel.md"
+?? "BOOTSTRAP/Recover Existing Injestion Files.md"
+?? REPOSITORY_STATUS.txt
+?? ade/services/
+?? ade/tests/
+?? architecture/services/
+?? evidence/
+?? governance/
+?? inventory/initialization/
+?? queue/ingestion/
+?? workspace/operational/census/
+?? workspace/operational/corpus/
+?? workspace/operational/current/state-model-candidates.lst
+?? workspace/operational/current/state-references.clean.out
+?? workspace/operational/current/state-references.out
+?? workspace/operational/identity/
+?? workspace/operational/ingestion/
+?? workspace/operational/repository_state/
+
+===== MILESTONE_002_CONVERSATION_CORPUS.md =====
+MTIME=2026-08-07 20:00:23.591300485 -0500 SIZE=823
+60d7e07e2222513b9e58409a3c9dd3285996b470e035841f9c4197fecdc34fcd  /home/reckless-ideator/DifferenceEngine/MILESTONE_002_CONVERSATION_CORPUS.md
+--- FIRST 80 LINES ---
+# Milestone 002 — Conversation Corpus Ingestion
+
+Status: Complete
+
+Verified conversation sources: 24
+Qualified conversation sources: 24
+Unresolved real conversations: 0
+
+Rejected false-positive source:
+
+- DifferenceEngine Gubmint Cheese.txt
+- SHA-256: e6260a8c5fbb44af9e6c95c05ba2cbe518b31d79029dc6982ebad14e4f6dda77
+- Classification: prose artifact, not conversation
+
+Validated capabilities:
+
+- source preservation
+- immutable receipts
+- SHA-256 provenance
+- TXT and Markdown conversation dispatch
+- multiline turn recovery
+- speaker recovery
+- command recovery
+- validation
+- deterministic packaging
+- resumable batch ingestion
+- package-history preservation
+- qualified-source resolution
+- repository output indexing
+
+Output index: workspace/operational/ingestion/output/INDEX.json
+
+Canonical promotion: not performed
+
+===== CONVERSATION_CORPUS_VERIFIED.json =====
+MTIME=2026-08-07 20:00:23.560019781 -0500 SIZE=7350
+1afad4cd40a40585b91869a3f523f0b18e028e5bc951a9a31daabd295a099b8c  /home/reckless-ideator/DifferenceEngine/CONVERSATION_CORPUS_VERIFIED.json
+--- FIRST 80 LINES ---
+{
+  "conversations": [
+    {
+      "path": "/storage/emulated/0/Download/Difference_Engine____Branch_IV____Operations.md.txt",
+      "sha256": "d1c9064bb50f0b6b29b34beafb8aebb9c31c0a02ba1f86b3c1338311ecda7bd9",
+      "size_bytes": 500,
+      "speakers": [
+        "assistant",
+        "user"
+      ],
+      "turn_count": 2
+    },
+    {
+      "path": "/storage/emulated/0/Download/Project_Chat_Context.md.txt",
+      "sha256": "09b52590f09055c5781e0ee9c6258b11adde31c13c6e12334352118cc4d9cb99",
+      "size_bytes": 1931,
+      "speakers": [
+        "assistant",
+        "user"
+      ],
+      "turn_count": 12
+    },
+    {
+      "path": "/storage/emulated/0/Download/Bootstrap_BABBAGE_Initialization.md.txt",
+      "sha256": "ff976445f55b32c13441e1fac0a8d24d9ad44c6c8c54f978edc7bd42f1d38806",
+      "size_bytes": 9357,
+      "speakers": [
+        "assistant",
+        "user"
+      ],
+      "turn_count": 18
+    },
+    {
+      "path": "/storage/emulated/0/Download/Babbage_GPT_Initialization.md.txt",
+      "sha256": "7b142fadaa911b1b72cc274e371ad784e7d84de55a71d56f0d47e5eba4ed9b42",
+      "size_bytes": 14078,
+      "speakers": [
+        "assistant",
+        "user"
+      ],
+      "turn_count": 22
+    },
+    {
+      "path": "/storage/emulated/0/Download/Bootstrap_Initialization_and_Rules.md.txt",
+      "sha256": "a48dcc6e2768ac9f9c23f4d4439fbd010c0fc427ece4b8de8f2d07cd6b80a6c1",
+      "size_bytes": 16045,
+      "speakers": [
+        "assistant",
+        "user"
+      ],
+      "turn_count": 52
+    },
+    {
+      "path": "/storage/emulated/0/Download/Difference_Engine____Branch_II____Research.md.txt",
+      "sha256": "3070b03ec60d697cef3c8051553adc27b34a141bda6cd3cda3f112edd81f53a7",
+      "size_bytes": 23667,
+      "speakers": [
+        "assistant",
+        "user"
+      ],
+      "turn_count": 19
+    },
+    {
+      "path": "/storage/emulated/0/Download/Difference_Engine____Branch_0____Origins.md.txt",
+      "sha256": "6ea1103958a3b5e513fafde16b80c107f2ef55c3b481065a5961d00f9baa37cc",
+      "size_bytes": 27815,
+      "speakers": [
+        "assistant",
+        "user"
+      ],
+      "turn_count": 30
+    },
+    {
+      "path": "/storage/emulated/0/Download/Categorization_of_Governance_Elements.md(1).txt",
+      "sha256": "41f9205e9dc88751d416f9884ef7c1c34f463dc3f622b94d95699f634beaa8cb",
+      "size_bytes": 51439,
+      "speakers": [
+        "assistant",
+        "user"
+      ],
+
+=== LATEST NON-BOOTSTRAP OPERATIONAL FILES ===
+1786150965.7626057870	2026-08-07 20:02:45.7626057870	mobile_bridge/MOBILE_BRIDGE_UNTRACKED_INVENTORY_20260806T145033Z.txt
+1786150965.7386060730	2026-08-07 20:02:45.7386060730	mobile_bridge/MOBILE_BRIDGE_UNTRACKED_CLASSIFICATION_20260806T145248Z.txt
+1786150965.7206062880	2026-08-07 20:02:45.7206062880	mobile_bridge/MOBILE_BRIDGE_SEMANTIC_DISPOSITIONS_20260806T145927Z.txt
+1786150965.6850146770	2026-08-07 20:02:45.6850146770	mobile_bridge/MOBILE_BRIDGE_MANUAL_REVIEW_CORRECTED_20260806T150216Z.txt
+1786150965.6846067170	2026-08-07 20:02:45.6846067170	mobile_bridge/MOBILE_BRIDGE_MANUAL_REVIEW_20260806T150108Z.txt
+1786150965.6160980140	2026-08-07 20:02:45.6160980140	mobile_bridge/MOBILE_BRIDGE_MANUAL_DISPOSITIONS_20260806T181533Z.tsv
+1786150965.6160341730	2026-08-07 20:02:45.6160341730	mobile_bridge/MOBILE_BRIDGE_LIVE_BOOTSTRAP_CENSUS_20260806T181711Z.txt
+1786150965.6156075390	2026-08-07 20:02:45.6156075390	mobile_bridge/MOBILE_BRIDGE_LIVE_BOOTSTRAP_CENSUS_20260806T181634Z.txt
+1786150965.6146075510	2026-08-07 20:02:45.6146075510	mobile_bridge/MOBILE_BRIDGE_CLASSIFICATION_SEMANTIC_AUDIT_20260806T145534Z.txt
+1786150965.5736080400	2026-08-07 20:02:45.5736080400	mobile_bridge/MOBILE_BRIDGE_BOOTSTRAP_TEST_20260806T184520Z.txt
+1786150965.5449394590	2026-08-07 20:02:45.5449394590	mobile_bridge/MOBILE_BRIDGE_BOOTSTRAP_PREFLIGHT_20260806T184151Z.txt
+1786150965.5446083860	2026-08-07 20:02:45.5446083860	REPOSITORY_TREE_FULL_2026-08-04_SUMMARY.txt
+1786150965.5436083980	2026-08-07 20:02:45.5436083980	REPOSITORY_TREE_FULL_2026-08-04.txt
+1786150965.5076088270	2026-08-07 20:02:45.5076088270	LEGACY_REPOSITORY_TREE_FULL_2026-08-04.txt
+1786150965.4830059560	2026-08-07 20:02:45.4830059560	LEGACY_REPOSITORY_SUMMARY.txt
+1786150965.4826091250	2026-08-07 20:02:45.4826091250	LEGACY_REPOSITORY_SHA256.txt
+1786150965.4620950790	2026-08-07 20:02:45.4620950790	GIT_STATUS_BEFORE_SEMANTIC_RECOVERY.txt
+1786150965.4620251150	2026-08-07 20:02:45.4620251150	ADE_DIRECTORIES.txt
+1786150951.3060380730	2026-08-07 20:02:31.3060380730	test_receipts/TEST-PIPELINE-MD-CONV.json
+1786150951.3059830640	2026-08-07 20:02:31.3059830640	test_receipts/TEST-PIPELINE-0003.json
+1786150951.3059027820	2026-08-07 20:02:31.3059027820	test_receipts/TEST-PIPELINE-0002.json
+1786150951.3058151360	2026-08-07 20:02:31.3058151360	test_receipts/TEST-PIPELINE-0001.json
+1786150951.3057519170	2026-08-07 20:02:31.3057519170	test_receipts/TEST-CHAT-0002.json
+1786150951.3056881070	2026-08-07 20:02:31.3056881070	test_receipts/TEST-CHAT-0001.json
+1786150951.3056269260	2026-08-07 20:02:31.3056269260	test_receipts/TEST-0001.json
+1786150951.3055754110	2026-08-07 20:02:31.3055754110	test_output/TEST-PIPELINE-MD-CONV/structure/references.json
+1786150951.3055226110	2026-08-07 20:02:31.3055226110	test_output/TEST-PIPELINE-MD-CONV/structure/parsed.json
+1786150951.3054554080	2026-08-07 20:02:31.3054554080	test_output/TEST-PIPELINE-MD-CONV/structure/assets.json
+1786150951.3053556870	2026-08-07 20:02:31.3053556870	test_output/TEST-PIPELINE-MD-CONV/source/markdown_conversation_test.md
+1786150951.3053038840	2026-08-07 20:02:31.3053038840	test_output/TEST-PIPELINE-MD-CONV/reports/validation.json

@@ -1,0 +1,11 @@
+status=CONVERSATION_BEARING_CANDIDATE
+file=Project Organization Strategy.pdf
+chat_id=6a5e609a-a434-83ea-bdd1-75d163f5a9ab
+chars=9178
+simple_dialogue_markers=0
+qualification_method=INDIVIDUAL_STRUCTURAL_INSPECTION
+human_turns=CONFIRMED
+assistant_turns=CONFIRMED
+evidence=human document-limit turn survives at line 51 followed by substantive assistant project-governance response beginning around line 62
+archaeological_note=contains early explicit repository-first reasoning: durable governing documents and version history over conversational memory
+promotion=NONE

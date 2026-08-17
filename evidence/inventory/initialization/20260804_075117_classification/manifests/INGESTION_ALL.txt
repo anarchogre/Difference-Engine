@@ -1,0 +1,17 @@
+BOOTSTRAP/BST-CBD-OPS_Operational_Bedrock_and_Ingester_Execution_v0.1.0.md
+ade/kernel/bootstrap_loader/__pycache__/artifacts.cpython-313.pyc
+ade/kernel/bootstrap_loader/artifacts.py
+architecture/artifacterator/UNIVERSAL_ARTIFACTERATOR_ARCHITECTURE_v1.md
+architecture/formatter/UNIVERSAL_FORMATTER_ARCHITECTURE_v1.md
+architecture/parser/PARSER_ARCHITECTURE_v1.md
+inventory/initialization/20260804_074926/reports/INGESTION_CANDIDATES.txt
+inventory/initialization/20260804_075117_classification/manifests/INGESTION_ALL.txt
+standards/v1/ARTIFACT_STANDARD_v1.0.md
+workspace/operational/library/ARTIFACT_LIFECYCLE.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/backups/artifacts.py.before
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-vnext/tests/artifact-validation.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-1-closeout/reports/runtime-artifacts.lst
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-specification/reports/recovery-artifacts-sha256.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-specification/tests/recovery-artifact-validation.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-verifier/tests/verifier-artifacts.txt
+workspace/operational/standards/ARTIFACT_DELIVERY_STANDARD.md

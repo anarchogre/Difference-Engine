@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0516",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:51.425677-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Difference_Engine_Operational_Bedrock_Synthesis_v0.1.0.md",
+    "original_name": "Difference_Engine_Operational_Bedrock_Synthesis_v0.1.0.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0516",
+    "schema_version": "0.1.0",
+    "sha256": "70da378a724b2ad0d22cfbe39c2950ce4496b42197392964e314e36a6cdb4771",
+    "size_bytes": 31273,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

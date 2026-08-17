@@ -1,0 +1,11 @@
+status=CONVERSATION_BEARING_CANDIDATE
+file=OAuth Error Investigation.pdf
+chat_id=6a640adb-3070-83ea-8bc2-f60034dc48bf
+chars=24659
+simple_dialogue_markers=0
+qualification_method=INDIVIDUAL_STRUCTURAL_INSPECTION
+human_turns=CONFIRMED
+assistant_turns=CONFIRMED
+evidence=multiple human troubleshooting turns survive through line 120; substantive assistant synthesis begins around line 124
+provenance_note=human explicitly references PDF captures of other chats and directs ingestion and synthesis
+promotion=NONE

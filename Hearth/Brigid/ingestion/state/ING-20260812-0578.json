@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0578",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:49:00.961171-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/Runtime_Manifest_v2.2.json",
+    "original_name": "Runtime_Manifest_v2.2.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0578",
+    "schema_version": "0.1.0",
+    "sha256": "7be46daac70f1dd324b618203f62d10356a46d01e4f7235498bbc8d9305f373a",
+    "size_bytes": 185,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

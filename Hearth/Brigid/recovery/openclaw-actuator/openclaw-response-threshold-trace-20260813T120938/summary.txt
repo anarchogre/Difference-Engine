@@ -1,0 +1,72 @@
+EVIDENCE=/home/reckless-ideator/Difference-Engine/workspace/operational/recovery/openclaw-actuator/openclaw-response-threshold-trace-20260813T120938/full-trace.txt
+
+827:HIT=3803: 		reserveTokensFloor: memoryFlushPlan.reserveTokensFloor,
+841:3798: 	logVerbose(`memoryFlush check: sessionKey=${params.sessionKey} tokenCount=${tokenCountForFlush ?? "undefined"} contextWindow=${contextWindowTokens} threshold=${flushThreshold} isHeartbeat=${params.isHeartbeat} isCli=${isCli} memoryFlushWritable=${memoryFlushWritable} compactionCount=${entry?.compactionCount ?? 0} memoryFlushCompactionCount=${entry?.memoryFlushCompactionCount ?? "undefined"} persistedPromptTokens=${persistedPromptTokens ?? "undefined"} persistedFresh=${entry?.totalTokensFresh === true} promptTokensEst=${promptTokenEstimate ?? "undefined"} transcriptPromptTokens=${transcriptPromptTokens ?? "undefined"} transcriptOutputTokens=${transcriptOutputTokens ?? "undefined"} projectedTokenCount=${projectedTokenCount ?? "undefined"} transcriptBytes=${transcriptByteSize ?? "undefined"} forceFlushTranscriptBytes=${forceFlushTranscriptBytes} forceFlushByTranscriptSize=${shouldForceFlushByTranscriptSize}`);
+845:3802: 		contextWindowTokens,
+846:3803: 		reserveTokensFloor: memoryFlushPlan.reserveTokensFloor,
+847:3804: 		softThresholdTokens: memoryFlushPlan.softThresholdTokens
+868:HIT=3804: 		softThresholdTokens: memoryFlushPlan.softThresholdTokens
+881:3798: 	logVerbose(`memoryFlush check: sessionKey=${params.sessionKey} tokenCount=${tokenCountForFlush ?? "undefined"} contextWindow=${contextWindowTokens} threshold=${flushThreshold} isHeartbeat=${params.isHeartbeat} isCli=${isCli} memoryFlushWritable=${memoryFlushWritable} compactionCount=${entry?.compactionCount ?? 0} memoryFlushCompactionCount=${entry?.memoryFlushCompactionCount ?? "undefined"} persistedPromptTokens=${persistedPromptTokens ?? "undefined"} persistedFresh=${entry?.totalTokensFresh === true} promptTokensEst=${promptTokenEstimate ?? "undefined"} transcriptPromptTokens=${transcriptPromptTokens ?? "undefined"} transcriptOutputTokens=${transcriptOutputTokens ?? "undefined"} projectedTokenCount=${projectedTokenCount ?? "undefined"} transcriptBytes=${transcriptByteSize ?? "undefined"} forceFlushTranscriptBytes=${forceFlushTranscriptBytes} forceFlushByTranscriptSize=${shouldForceFlushByTranscriptSize}`);
+885:3802: 		contextWindowTokens,
+886:3803: 		reserveTokensFloor: memoryFlushPlan.reserveTokensFloor,
+887:3804: 		softThresholdTokens: memoryFlushPlan.softThresholdTokens
+909:HIT=1141: 	const configuredReserveTokensFloor = toNonNegativeInt(asRecord(compaction)?.reserveTokensFloor);
+928:1141: 	const configuredReserveTokensFloor = toNonNegativeInt(asRecord(compaction)?.reserveTokensFloor);
+929:1142: 	if (configuredReserveTokens !== void 0) return Math.max(configuredReserveTokens, configuredReserveTokensFloor ?? 2e4);
+930:1143: 	if (configuredReserveTokensFloor !== void 0) return configuredReserveTokensFloor;
+950:HIT=206: 		reserveTokensFloor: number().int().nonnegative().optional(),
+969:206: 		reserveTokensFloor: number().int().nonnegative().optional(),
+991:HIT=232: 			softThresholdTokens: number().int().nonnegative().optional(),
+1010:232: 			softThresholdTokens: number().int().nonnegative().optional(),
+1032:HIT=4986: 	const reserveTokensFloor = toNonNegativeInt(compaction?.reserveTokensFloor);
+1035:4970: 		if (modelContextWindow !== void 0) snapshot.modelContextWindow = modelContextWindow;
+1036:4971: 		return snapshot.totalTokens !== void 0 || snapshot.modelContextWindow !== void 0 ? snapshot : void 0;
+1051:4986: 	const reserveTokensFloor = toNonNegativeInt(compaction?.reserveTokensFloor);
+1052:4987: 	if (reserveTokens !== void 0) return Math.max(reserveTokens, reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS);
+1053:4988: 	return reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS;
+1057:4992: 	const contextWindow = params.modelContextWindow ?? CODEX_APP_SERVER_NATIVE_THREAD_FALLBACK_MAX_TOKENS;
+1058:4993: 	const minPromptBudget = Math.min(CODEX_APP_SERVER_NATIVE_THREAD_MIN_PROMPT_BUDGET_TOKENS, Math.max(1, Math.floor(contextWindow * CODEX_APP_SERVER_NATIVE_THREAD_MIN_PROMPT_BUDGET_RATIO)));
+1059:4994: 	const effectiveReserveTokens = Math.min(params.reserveTokens, Math.max(0, contextWindow - minPromptBudget));
+1060:4995: 	return Math.max(1, contextWindow - effectiveReserveTokens - projectedTurnTokens);
+1073:HIT=4987: 	if (reserveTokens !== void 0) return Math.max(reserveTokens, reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS);
+1075:4970: 		if (modelContextWindow !== void 0) snapshot.modelContextWindow = modelContextWindow;
+1076:4971: 		return snapshot.totalTokens !== void 0 || snapshot.modelContextWindow !== void 0 ? snapshot : void 0;
+1091:4986: 	const reserveTokensFloor = toNonNegativeInt(compaction?.reserveTokensFloor);
+1092:4987: 	if (reserveTokens !== void 0) return Math.max(reserveTokens, reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS);
+1093:4988: 	return reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS;
+1097:4992: 	const contextWindow = params.modelContextWindow ?? CODEX_APP_SERVER_NATIVE_THREAD_FALLBACK_MAX_TOKENS;
+1098:4993: 	const minPromptBudget = Math.min(CODEX_APP_SERVER_NATIVE_THREAD_MIN_PROMPT_BUDGET_TOKENS, Math.max(1, Math.floor(contextWindow * CODEX_APP_SERVER_NATIVE_THREAD_MIN_PROMPT_BUDGET_RATIO)));
+1099:4994: 	const effectiveReserveTokens = Math.min(params.reserveTokens, Math.max(0, contextWindow - minPromptBudget));
+1100:4995: 	return Math.max(1, contextWindow - effectiveReserveTokens - projectedTurnTokens);
+1114:HIT=4988: 	return reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS;
+1115:4970: 		if (modelContextWindow !== void 0) snapshot.modelContextWindow = modelContextWindow;
+1116:4971: 		return snapshot.totalTokens !== void 0 || snapshot.modelContextWindow !== void 0 ? snapshot : void 0;
+1131:4986: 	const reserveTokensFloor = toNonNegativeInt(compaction?.reserveTokensFloor);
+1132:4987: 	if (reserveTokens !== void 0) return Math.max(reserveTokens, reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS);
+1133:4988: 	return reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS;
+1137:4992: 	const contextWindow = params.modelContextWindow ?? CODEX_APP_SERVER_NATIVE_THREAD_FALLBACK_MAX_TOKENS;
+1138:4993: 	const minPromptBudget = Math.min(CODEX_APP_SERVER_NATIVE_THREAD_MIN_PROMPT_BUDGET_TOKENS, Math.max(1, Math.floor(contextWindow * CODEX_APP_SERVER_NATIVE_THREAD_MIN_PROMPT_BUDGET_RATIO)));
+1139:4994: 	const effectiveReserveTokens = Math.min(params.reserveTokens, Math.max(0, contextWindow - minPromptBudget));
+1140:4995: 	return Math.max(1, contextWindow - effectiveReserveTokens - projectedTurnTokens);
+1155:HIT=9: 	const raw = cfg?.agents?.defaults?.compaction?.reserveTokensFloor;
+1163:8: function resolveCompactionReserveTokensFloor(cfg) {
+1164:9: 	const raw = cfg?.agents?.defaults?.compaction?.reserveTokensFloor;
+1186:HIT=28: 	let reserveTokensFloor = resolveCompactionReserveTokensFloor(params.cfg);
+1205:28: 	let reserveTokensFloor = resolveCompactionReserveTokensFloor(params.cfg);
+1211:34: 		reserveTokensFloor = Math.min(reserveTokensFloor, maxReserveTokens);
+1213:36: 	let targetReserveTokens = Math.max(configuredReserveTokens ?? currentReserveTokens, reserveTokensFloor);
+1227:HIT=34: 		reserveTokensFloor = Math.min(reserveTokensFloor, maxReserveTokens);
+1240:28: 	let reserveTokensFloor = resolveCompactionReserveTokensFloor(params.cfg);
+1246:34: 		reserveTokensFloor = Math.min(reserveTokensFloor, maxReserveTokens);
+1248:36: 	let targetReserveTokens = Math.max(configuredReserveTokens ?? currentReserveTokens, reserveTokensFloor);
+1268:HIT=36: 	let targetReserveTokens = Math.max(configuredReserveTokens ?? currentReserveTokens, reserveTokensFloor);
+1279:28: 	let reserveTokensFloor = resolveCompactionReserveTokensFloor(params.cfg);
+1285:34: 		reserveTokensFloor = Math.min(reserveTokensFloor, maxReserveTokens);
+1287:36: 	let targetReserveTokens = Math.max(configuredReserveTokens ?? currentReserveTokens, reserveTokensFloor);
+1309:HIT=432:   reserveTokensFloor?: number; /** Max share of context window for history during safeguard pruning (0.1–0.9, default 0.5). */
+1328:432:   reserveTokensFloor?: number; /** Max share of context window for history during safeguard pruning (0.1–0.9, default 0.5). */
+1350:HIT=485:   softThresholdTokens?: number;
+1369:485:   softThresholdTokens?: number;
+1387:503: /** Discovery and watcher settings for skill sources. */
+1391:HIT=938:         reserveTokensFloor: ZodOptional<ZodNumber>;
+1410:938:         reserveTokensFloor: ZodOptional<ZodNumber>;

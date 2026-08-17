@@ -1,0 +1,281 @@
+{
+  "runId": "135a09fe-25c1-4ca3-b569-bbec8749c57a",
+  "status": "ok",
+  "summary": "completed",
+  "result": {
+    "payloads": [
+      {
+        "text": "STATUS=PASS ACTUATOR_END_TO_END=PASS",
+        "mediaUrl": null
+      }
+    ],
+    "meta": {
+      "durationMs": 480045,
+      "agentMeta": {
+        "sessionId": "0e111800-c398-4592-895b-f20a6e64c1d9",
+        "sessionFile": "/home/reckless-ideator/.openclaw/agents/main/sessions/0e111800-c398-4592-895b-f20a6e64c1d9.jsonl",
+        "provider": "pan-local",
+        "model": "pan-qwen",
+        "contextTokens": 16384,
+        "agentHarnessId": "openclaw",
+        "usage": {
+          "input": 3561,
+          "output": 151,
+          "cacheRead": 15166,
+          "total": 18878
+        },
+        "lastCallUsage": {
+          "input": 3561,
+          "output": 151,
+          "cacheRead": 15166,
+          "total": 18878
+        },
+        "contextBudgetStatus": {
+          "schemaVersion": 1,
+          "source": "pre-prompt-estimate",
+          "updatedAt": 1786648401071,
+          "provider": "pan-local",
+          "model": "pan-qwen",
+          "route": "fits",
+          "shouldCompact": false,
+          "estimatedPromptTokens": 7946,
+          "contextTokenBudget": 16384,
+          "promptBudgetBeforeReserve": 8000,
+          "reserveTokens": 8384,
+          "effectiveReserveTokens": 8384,
+          "remainingPromptBudgetTokens": 54,
+          "overflowTokens": 0,
+          "toolResultReducibleChars": 0,
+          "messageCount": 0,
+          "unwindowedMessageCount": 0,
+          "sessionId": "0e111800-c398-4592-895b-f20a6e64c1d9"
+        },
+        "compactionCount": 1
+      },
+      "aborted": false,
+      "systemPromptReport": {
+        "source": "run",
+        "generatedAt": 1786648401015,
+        "sessionId": "0e111800-c398-4592-895b-f20a6e64c1d9",
+        "sessionKey": "agent:main:pan-actuator-v7-20260813t135930",
+        "provider": "pan-local",
+        "model": "pan-qwen",
+        "workspaceDir": "/home/reckless-ideator/Difference-Engine",
+        "bootstrapMaxChars": 20000,
+        "bootstrapTotalMaxChars": 60000,
+        "bootstrapTruncation": {
+          "warningMode": "always",
+          "warningShown": false,
+          "truncatedFiles": 0,
+          "nearLimitFiles": 0,
+          "totalNearLimit": false
+        },
+        "sandbox": {
+          "mode": "off",
+          "sandboxed": false
+        },
+        "systemPrompt": {
+          "chars": 26087,
+          "hash": "6b17d868987e9352e01bb5e0c58c91af1c4ab4f3906fb46ee228b89ed317e46d",
+          "projectContextChars": 11802,
+          "nonProjectContextChars": 14285
+        },
+        "injectedWorkspaceFiles": [
+          {
+            "name": "AGENTS.md",
+            "path": "/home/reckless-ideator/Difference-Engine/AGENTS.md",
+            "missing": false,
+            "rawChars": 7195,
+            "injectedChars": 7195,
+            "truncated": false
+          },
+          {
+            "name": "SOUL.md",
+            "path": "/home/reckless-ideator/Difference-Engine/SOUL.md",
+            "missing": false,
+            "rawChars": 1509,
+            "injectedChars": 1509,
+            "truncated": false
+          },
+          {
+            "name": "TOOLS.md",
+            "path": "/home/reckless-ideator/Difference-Engine/TOOLS.md",
+            "missing": false,
+            "rawChars": 866,
+            "injectedChars": 866,
+            "truncated": false
+          },
+          {
+            "name": "IDENTITY.md",
+            "path": "/home/reckless-ideator/Difference-Engine/IDENTITY.md",
+            "missing": false,
+            "rawChars": 1275,
+            "injectedChars": 1275,
+            "truncated": false
+          },
+          {
+            "name": "USER.md",
+            "path": "/home/reckless-ideator/Difference-Engine/USER.md",
+            "missing": false,
+            "rawChars": 534,
+            "injectedChars": 534,
+            "truncated": false
+          },
+          {
+            "name": "HEARTBEAT.md",
+            "path": "/home/reckless-ideator/Difference-Engine/HEARTBEAT.md",
+            "missing": false,
+            "rawChars": 243,
+            "injectedChars": 243,
+            "truncated": false
+          }
+        ],
+        "skills": {
+          "promptChars": 5561,
+          "hash": "52660a0ea2fbbeab93eec5a5972a891c578c28561a7fd25f69a3c23af96fd58a",
+          "entries": [
+            {
+              "name": "browser-automation",
+              "blockChars": 371
+            },
+            {
+              "name": "canvas",
+              "blockChars": 289
+            },
+            {
+              "name": "clawhub",
+              "blockChars": 358
+            },
+            {
+              "name": "diagram-maker",
+              "blockChars": 331
+            },
+            {
+              "name": "healthcheck",
+              "blockChars": 343
+            },
+            {
+              "name": "meme-maker",
+              "blockChars": 316
+            },
+            {
+              "name": "node-connect",
+              "blockChars": 346
+            },
+            {
+              "name": "node-inspect-debugger",
+              "blockChars": 342
+            },
+            {
+              "name": "notion",
+              "blockChars": 337
+            },
+            {
+              "name": "python-debugpy",
+              "blockChars": 330
+            },
+            {
+              "name": "skill-creator",
+              "blockChars": 324
+            },
+            {
+              "name": "spike",
+              "blockChars": 316
+            },
+            {
+              "name": "taskflow",
+              "blockChars": 346
+            },
+            {
+              "name": "taskflow-inbox-triage",
+              "blockChars": 356
+            },
+            {
+              "name": "weather",
+              "blockChars": 354
+            }
+          ]
+        },
+        "tools": {
+          "listChars": 0,
+          "schemaChars": 1845,
+          "entries": [
+            {
+              "name": "exec",
+              "summaryChars": 446,
+              "summaryHash": "369f5e5e195c647ab1e3cfad282e6d25488d4b9fe269f1157e273a546ca80295",
+              "schemaChars": 1332,
+              "schemaHash": "49dcb29ee9f7016cd248f40cfb44508aac4d6a67d4c9acb52cbd08ad3e3ae893",
+              "propertiesCount": 12
+            },
+            {
+              "name": "tool_search",
+              "summaryChars": 41,
+              "summaryHash": "a00e30097a87190337163a87cfc95fe60a76e34b11f291c5335d6aee874e42db",
+              "schemaChars": 178,
+              "schemaHash": "e4131f1745f11f7060994c221237d1825eb7cc75884d323c722229034d52a8ef",
+              "propertiesCount": 2
+            },
+            {
+              "name": "tool_describe",
+              "summaryChars": 56,
+              "summaryHash": "a3d83adf8d50fc1c691d9170be4b7e6ee04cd236aadca5dc140e58b87ab21fc2",
+              "schemaChars": 125,
+              "schemaHash": "8b60055097c87990f29b27c1f82ecea48435ffb1163c486121a2189f118aa0a4",
+              "propertiesCount": 1
+            },
+            {
+              "name": "tool_call",
+              "summaryChars": 59,
+              "summaryHash": "e2cadd0b5a43a3f7b568f1c4951cf0a6b0a061608474db5881f38f674d844846",
+              "schemaChars": 210,
+              "schemaHash": "f48bfb0705c11b32ccbdfd456b791ce458604b1f51b1e31f61bc2d7b25ae07b9",
+              "propertiesCount": 2
+            }
+          ]
+        },
+        "currentTurn": {
+          "promptChars": 273,
+          "runtimeContextChars": 0
+        }
+      },
+      "finalPromptText": "ACTUATOR END-TO-END ACCEPTANCE. Use exec exactly once. Run exactly: /usr/bin/git -C /home/reckless-ideator/Difference-Engine status --short --branch . Do not mutate anything. Return exactly: STATUS=PASS ACTUATOR_END_TO_END=PASS only if exec actually returns the git output.",
+      "finalAssistantVisibleText": "STATUS=PASS ACTUATOR_END_TO_END=PASS",
+      "finalAssistantRawText": "STATUS=PASS ACTUATOR_END_TO_END=PASS",
+      "replayInvalid": true,
+      "livenessState": "working",
+      "stopReason": "stop",
+      "executionTrace": {
+        "winnerProvider": "pan-local",
+        "winnerModel": "pan-qwen",
+        "attempts": [
+          {
+            "provider": "pan-local",
+            "model": "pan-qwen",
+            "result": "success",
+            "stage": "assistant"
+          }
+        ],
+        "fallbackUsed": false,
+        "runner": "embedded"
+      },
+      "requestShaping": {
+        "thinking": "off"
+      },
+      "toolSummary": {
+        "calls": 1,
+        "tools": [
+          "exec"
+        ],
+        "failures": 0
+      },
+      "completion": {
+        "stopReason": "stop",
+        "finishReason": "stop"
+      },
+      "contextManagement": {
+        "lastTurnCompactions": 1
+      }
+    }
+  }
+}

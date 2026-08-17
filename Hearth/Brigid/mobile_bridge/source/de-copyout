@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+set -u
+
+TMPBASE="${XDG_RUNTIME_DIR:-/tmp}"
+TMP="$(mktemp "${TMPBASE}/de-copyout.XXXXXX")" || exit 1
+
+cleanup() {
+    rm -f "$TMP"
+}
+trap cleanup EXIT
+
+if [ "$#" -gt 1 ]; then
+    printf 'de-copyout: expected zero arguments or one readable file\n' >&2
+    exit 2
+fi
+
+if [ "$#" -eq 1 ]; then
+    if [ ! -f "$1" ] || [ ! -r "$1" ]; then
+        printf 'de-copyout: expected zero arguments or one readable file\n' >&2
+        exit 2
+    fi
+    cat -- "$1" > "$TMP" || exit $?
+else
+    cat > "$TMP" || exit $?
+fi
+
+wl-copy < "$TMP"
+COPY_RC=$?
+
+cat -- "$TMP" || exit $?
+
+exit "$COPY_RC"

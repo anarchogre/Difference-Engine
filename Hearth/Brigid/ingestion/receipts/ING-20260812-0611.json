@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:49:06.322950-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/census_v0.1.json",
+  "original_name": "census_v0.1.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0611",
+  "schema_version": "0.1.0",
+  "sha256": "9c55c16cd7ad6686f14d59eedd6a020a9f3f5879133361e0df2774e4b9bc20f8",
+  "size_bytes": 1735,
+  "source_class": "manual_batch"
+}

@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:57.976431-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/PR-0003_Continuous_Repository_Indexing.json",
+  "original_name": "PR-0003_Continuous_Repository_Indexing.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0559",
+  "schema_version": "0.1.0",
+  "sha256": "542637ec20c0b6f80e240f2e8bbbde1effce2450e653c995636e950ccbfd169b",
+  "size_bytes": 435,
+  "source_class": "manual_batch"
+}

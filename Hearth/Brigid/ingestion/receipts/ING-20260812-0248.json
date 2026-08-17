@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:18.904793-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-RC-GOLD/RC1-0003_Governance_Framework_GOLD_v1.2.0.json",
+  "original_name": "RC1-0003_Governance_Framework_GOLD_v1.2.0.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0248",
+  "schema_version": "0.1.0",
+  "sha256": "64cbb804a6624f56fa4bafc27431733f048c92a348d336a1f35271f13235bac3",
+  "size_bytes": 2172,
+  "source_class": "manual_batch"
+}

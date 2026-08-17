@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:48.095215-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/RC1-0004_Constitutional_Registry_GOLD_v1.2.0.json",
+  "original_name": "RC1-0004_Constitutional_Registry_GOLD_v1.2.0.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0493",
+  "schema_version": "0.1.0",
+  "sha256": "f634977863cf3f95c91a4e9e1fcc8c30e9d90910cc1860b70e672a87ef386b93",
+  "size_bytes": 2184,
+  "source_class": "manual_batch"
+}

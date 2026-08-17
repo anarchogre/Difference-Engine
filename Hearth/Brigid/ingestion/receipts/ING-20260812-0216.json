@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:16.082101-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Preservation-Points-RC-GOLD/PP-0046_Repository_Architecture.json",
+  "original_name": "PP-0046_Repository_Architecture.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0216",
+  "schema_version": "0.1.0",
+  "sha256": "605686ff5854907e2af5b913db1eeeb0e74fbb8c14841318a626641539dfa8b2",
+  "size_bytes": 1031,
+  "source_class": "manual_batch"
+}

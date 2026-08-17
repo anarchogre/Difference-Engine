@@ -1,0 +1,4 @@
+MISSION=None
+TASK=None
+MISSION_TYPE=NoneType
+TASK_TYPE=NoneType

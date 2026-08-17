@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:42.956905-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/CHANGELOG.md",
+  "original_name": "CHANGELOG.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0456",
+  "schema_version": "0.1.0",
+  "sha256": "f201555f0ec595a6d25af7c3f1a97943fa00d45d65050b1bac7ed1270fed31cd",
+  "size_bytes": 285,
+  "source_class": "manual_batch"
+}

@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0508",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:50.249845-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/STARTUP_PROCEDURE_v1.0.md",
+    "original_name": "STARTUP_PROCEDURE_v1.0.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0508",
+    "schema_version": "0.1.0",
+    "sha256": "d9730bd6ae7c5c1d54c19f68578cffe120c21421f8bb0b979c132bd50a1a33bf",
+    "size_bytes": 1342,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

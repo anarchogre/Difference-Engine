@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:45.855484-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/NAMING_CONVENTIONS.md",
+  "original_name": "NAMING_CONVENTIONS.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0477",
+  "schema_version": "0.1.0",
+  "sha256": "544e0370d0fd43ec4021942100f1f1c30f807ba448dd300450bc03fc92e7edd5",
+  "size_bytes": 330,
+  "source_class": "manual_batch"
+}

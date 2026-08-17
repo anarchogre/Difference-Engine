@@ -1,0 +1,47 @@
+BATCH CONVERSATION QUALIFICATION
+
+Conversation packages examined: 28
+Validation passed: 26
+Validation failed: 2
+
+Validation error counts:
+invalid_conversation_kind: 1
+missing_user_turn: 1
+no_assets: 1
+no_conversation_turns: 1
+
+FAILED OR SUSPICIOUS PACKAGES:
+DE-CONV-20260804-0001	turns=0	user=0	assistant=0	errors=['invalid_conversation_kind', 'no_conversation_turns', 'no_assets']	Kernel_and_Bootstrap_Load.md(1).txt
+DE-CONV-20260804-0004	turns=1	user=0	assistant=1	errors=[]	DifferenceEngine Gubmint Cheese.txt
+DE-CONV-20260804-0005	turns=1	user=0	assistant=1	errors=['missing_user_turn']	DifferenceEngine Gubmint Cheese.txt
+ING-20260804-0091	turns=0	user=0	assistant=0	errors=[]	Epistemic_Engine_Development.md
+
+ALL PACKAGE SUMMARIES:
+DE-CONV-20260804-0001	FAIL	turns=0	user=0	assistant=0	commands=0	Kernel_and_Bootstrap_Load.md(1).txt
+DE-CONV-20260804-0002	PASS	turns=138	user=77	assistant=61	commands=1111	Kernel_and_Bootstrap_Load.md(1).txt
+DE-CONV-20260804-0003	PASS	turns=138	user=77	assistant=61	commands=1111	Kernel_and_Bootstrap_Load.md(1).txt
+DE-CONV-20260804-0004	PASS	turns=1	user=0	assistant=1	commands=0	DifferenceEngine Gubmint Cheese.txt
+DE-CONV-20260804-0005	FAIL	turns=1	user=0	assistant=1	commands=0	DifferenceEngine Gubmint Cheese.txt
+ING-20260804-0079	PASS	turns=2	user=1	assistant=1	commands=0	Difference_Engine____Branch_IV____Operations.md.txt
+ING-20260804-0080	PASS	turns=12	user=11	assistant=1	commands=0	Project_Chat_Context.md.txt
+ING-20260804-0081	PASS	turns=18	user=16	assistant=2	commands=6	Bootstrap_BABBAGE_Initialization.md.txt
+ING-20260804-0082	PASS	turns=22	user=14	assistant=8	commands=1	Babbage_GPT_Initialization.md.txt
+ING-20260804-0083	PASS	turns=52	user=45	assistant=7	commands=2	Bootstrap_Initialization_and_Rules.md.txt
+ING-20260804-0084	PASS	turns=19	user=14	assistant=5	commands=5	Difference_Engine____Branch_II____Research.md.txt
+ING-20260804-0085	PASS	turns=30	user=20	assistant=10	commands=4	Difference_Engine____Branch_0____Origins.md.txt
+ING-20260804-0086	PASS	turns=57	user=46	assistant=11	commands=31	Categorization_of_Governance_Elements.md(1).txt
+ING-20260804-0087	PASS	turns=104	user=51	assistant=53	commands=160	Migration_Map_Creation.md.txt
+ING-20260804-0088	PASS	turns=71	user=49	assistant=22	commands=87	Difference_Engine____Branch_II____Research.md(1).txt
+ING-20260804-0089	PASS	turns=124	user=67	assistant=57	commands=99	File_Library_Access_Details.md.txt
+ING-20260804-0090	PASS	turns=66	user=37	assistant=29	commands=169	Summaries_for_the_steward.md.txt
+ING-20260804-0091	PASS	turns=0	user=0	assistant=0	commands=0	Epistemic_Engine_Development.md
+ING-20260804-0092	PASS	turns=162	user=88	assistant=74	commands=114	Workflow_and_Evidence_Consolidation.md.txt
+ING-20260804-0093	PASS	turns=233	user=113	assistant=120	commands=218	Babbage_Initialization_and_Parsing.md.txt
+ING-20260804-0094	PASS	turns=101	user=73	assistant=28	commands=164	Constitutional_Kernel_Initialization.md.txt
+ING-20260804-0095	PASS	turns=112	user=74	assistant=38	commands=162	Constitutional_Kernel_Load.md.txt
+ING-20260804-0096	PASS	turns=159	user=53	assistant=105	commands=51	Difference_Engine____Branch_III____Integration.md.txt
+ING-20260804-0097	PASS	turns=502	user=300	assistant=202	commands=362	Governance_Improvements_Implementation.md.txt
+ING-20260804-0098	PASS	turns=502	user=300	assistant=202	commands=362	Governance_Improvements_Implementation.md(1).txt
+ING-20260804-0099	PASS	turns=227	user=2	assistant=225	commands=27	Difference_Engine____Branch_0____Origins.txt
+ING-20260804-0100	PASS	turns=315	user=167	assistant=148	commands=1651	GPT_Plus_Integration_Roadmap.md.txt
+ING-20260804-0101	PASS	turns=330	user=176	assistant=154	commands=1665	GPT_Plus_Integration_Roadmap.md(1).txt

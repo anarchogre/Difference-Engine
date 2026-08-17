@@ -1,0 +1,30 @@
+FILE /home/reckless-ideator/Difference-Engine/workspace/operational/recovery/openclaw-actuator/pan-actuator-v4-20260813T111850/agent.json bytes=7720
+FILE /home/reckless-ideator/Difference-Engine/workspace/operational/recovery/openclaw-actuator/pan-actuator-v4-20260813T111850/agent.stderr bytes=1504
+FILE /home/reckless-ideator/.openclaw/agents/main/sessions/2e7e99b8-d5b4-4df8-a42e-417f994096af.jsonl bytes=18388
+
+=== AGENT RESULT SIGNALS ===
+      "text": "Request timed out before a response was generated. Please try again, or increase `agents.defaults.timeoutSeconds` in your config.",
+        "toolResultReducibleChars": 0,
+            "name": "exec",
+    "finalPromptText": "ACTUATOR MINIMAL ACCEPTANCE. Use exec exactly once. Run exactly: /usr/bin/git -C /home/reckless-ideator/Difference-Engine status --short --branch . Do not mutate anything. Return STATUS=PASS only if exec actually returns the git output.",
+    "timeoutPhase": "provider",
+    "fallbackReason": "gateway_timeout",
+EMBEDDED FALLBACK: Gateway agent timed out; running embedded agent with fresh session gateway-fallback-743be4f4-4323-4869-975c-7c171bdebd0b: GatewayTransportError: gateway timeout after 330000ms
+[33m[provider-transport-fetch][39m [36m[model-fetch] start provider=pan-local api=openai-completions model=pan-qwen method=POST url=http://127.0.0.1:18080/v1/chat/completions timeoutMs=600000 proxy=none policy=custom[39m
+[33m[provider-transport-fetch][39m [36m[model-fetch] response provider=pan-local api=openai-completions model=pan-qwen status=200 elapsedMs=1035 contentType=text/event-stream[39m
+[33m[agent/embedded][39m [33membedded run timeout: runId=gateway-fallback-743be4f4-4323-4869-975c-7c171bdebd0b sessionId=gateway-fallback-743be4f4-4323-4869-975c-7c171bdebd0b timeoutMs=300000[39m
+
+=== SESSION STRUCTURE ===
+L6 role=assistant TOOLCALL name=exec args={'command': '/usr/bin/git -C /home/reckless-ideator/Difference-Engine status --short --branch .'}
+L6 role=assistant stopReason=toolUse
+L7 role=toolResult TEXT=## master...origin/master [ahead 5]
+ D Repository/Governance/amendments.md
+ D Repository/Governance/bootstrap.md
+ D Repository/Governance/constitution.md
+ M ade/kernel/bootstrap_loader/artifacts.py
+ M ade/kernel/bootstrap_loader/validators.py
+ D inventory/reconciliation/DifferenceEngine.files
+ D inventory/reconciliation/FILE_PAIR_INDEX.report
+ D scripts/reconciliation/FILE_PAIR_INDEX.report
+ D "workspace/operational/Continue DifferenceEngine.md"
+ M workspace/operational/current/ACTIVE_MISSION.md

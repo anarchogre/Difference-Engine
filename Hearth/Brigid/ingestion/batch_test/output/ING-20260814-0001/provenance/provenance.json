@@ -1,0 +1,7 @@
+{
+  "artifact_id": "ING-20260814-0001",
+  "provenance_id": "PROV-ING-20260814-0001",
+  "relationship": "observed_from",
+  "source_path": "/home/reckless-ideator/Difference-Engine/workspace/operational/ingestion/batch_test/sources/first.txt",
+  "source_sha256": "a014a4c11df657a0206423566a360672d09656f5b8e2fdb2349dc7f51ba8d4e6"
+}

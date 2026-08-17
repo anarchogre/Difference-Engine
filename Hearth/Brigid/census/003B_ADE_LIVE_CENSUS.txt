@@ -1,0 +1,4 @@
+Root: /storage/emulated/0/ADE/ADE-Working-Repository-
+Directories: 59
+Files: 790
+Output: workspace/operational/census/ADE

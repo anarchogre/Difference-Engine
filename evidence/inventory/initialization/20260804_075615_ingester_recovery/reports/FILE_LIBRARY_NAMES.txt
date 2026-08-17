@@ -1,0 +1,201 @@
+#Household Briefing.docx
+ADE_ACTIVE_STATE_RESEARCH_BOOTSTRAP_v2.md
+ADE_REPOSITORY_FILES.txt
+ADE_REPOSITORY_TREE (1).txt
+ADE_REPOSITORY_TREE.txt
+ADE_REPOSITORY_TREE_FULL.txt
+ADR.template.md
+AIS_v0.1.md
+ARC-0001_Information_Architecture.md
+ARC.template.md
+Accountability Authority Graph.md
+Architecture_Decision_Record_Specification_v0.1.md
+Artifact Header.md
+Artifact_Lifecycle_Specification_v0.1.md
+Artifact_Schema_v0.1.md
+Asset_Schema_v0.1.md
+BABBAGE-001.md
+BOOTSTRAP III BABBAGE ACTIVATION.md
+BOOTSTRAP IV  - WP-001 CONTINUATION.md
+BOOTSTRAP-Difference-Engine-Branch-IV-Operations-ADE-Execution.md
+BOOTSTRAP_ACTIVE_STATE_SNAPSHOT.md
+BOOTSTRAP_CONTEXT_SNAPSHOT_Part_02.md
+Bootstrap Consistency Audit.md
+Bootstrap-RC2.md
+Branch_V_ Human_Interface.md
+CA_Execution_Chunking_Standard.md
+Canonical Evaluation Function.md
+Canonical_Promotion_Specification_v0.1.md
+Complete Epistemic Persona.md
+Completed Queue.md
+Concepts Queue.md
+Configuration_Management_Specification_v0.1.md
+Conservation_First_Archaeology.md
+Constitutional_Convergence_Report.md
+Conversation_Schema_v0.1.md
+DE - BABBAGE - Babbage v1.0 Acceptance Test.md
+DE - BABBAGE - Babbage v1.0 Activation.md
+DE - BABBAGE - Babbage v1.0 Certification.md
+DE - BABBAGE - Babbage v1.0 Completion Record.md
+DE - BABBAGE - Babbage v1.0 Declaration of Service.md
+DE - BABBAGE - Babbage v1.0 Operational Commission.md
+DE - BABBAGE - DOD - Definition Of Done.md
+DE - BABBAGE - Execution Law - Repository Feed.md
+DE - BABBAGE - Handoff Protocol.md
+DE - BABBAGE - Mission Protocol.md
+DE - BABBAGE - Preservation Protocol.md
+DE - BABBAGE - Versioning.md
+DE - Bootstrap Initialization Contract.md
+DE - Constitutional Amendment - Execution Law.md
+DE - Discussion Mode.md
+DE - Execution Mode.md
+DE - Mode Transition Protocol.md
+DE - Operational Readiness.md
+DE - Preservation Mode.md
+DE - Recovery Mode.md
+DE - Repository Map 8-1-26.md
+DE - So Close chat 5.md
+DE Difference Report.md
+DE Repository File Tree Structure 8-1-26.md
+DE Repository Structure 8-1-26 v1.0.md
+DOCUMENT_METADATA.md
+Developer_Guide_v0.1.md
+Difference Engine Branch IV Operations Bootstrap-RC1.0.0.md
+DifferenceEngine Gubmint Cheese.txt
+DifferenceEngine_Const2.md
+Difference_Engine_Constitutional_Amendment_Universal_Branch_Steward_Protocol_v1.0.md
+Difference_Engine_Steward_Governance_Master.md
+Event_Catalog_Specification_v0.1.md
+Event_Model_Specification_v0.1.md
+Event_Processing_Specification_v0.1.md
+Event_Routing_Specification_v0.1.md
+Event_Schema_Specification_v0.1.md
+FILE_NAMING.md
+FRAMEWORK_LOCK_7_31_26.md
+Facet Conversation.md
+Files on the Motorola G Power 21.md
+Foundation_Summit_001.md
+From Human Interface.md
+GOV-0001_Repository_Principles.md
+GOV-0002_Document_Lifecycle.md
+GOV.template.md
+Head_Steward_v0.9.md
+ICD-001 — Constitutional Architecture.md
+ICD-002 — Governance Philosophy.md
+ICD-003 — Artifact Lifecycle.md
+ICD-004 — Repository Topology.md
+Implementation Queue.md
+Implementation_Backlog_v0.1.md
+Implementation_Checklist_v0.1.md
+Implementation_Milestones_v0.1.md
+Implementation_Roadmap_v0.1.md
+Ingestion_Glossary_v0.1.md
+Ingestion_Pipeline_Specification_v0.1.md
+Ingestion_Report_Schema_v0.1.md
+Instituonal Knowledge Graph.md
+Instituonal Memory.md
+Institutional Governance Corpus.md
+Institutional Optimization Function.md
+Life Companion Constitution.md
+Life Companion Constitution.txt
+MARKDOWN_STYLE.md
+Mission Queue.md
+Mock Up Queue File From Operations.md
+Observability_Specification_v0.1.md
+Operational Reality.txt
+Operational_Readiness_Specification_v0.1.md
+Operator Profile.md
+Output_Package_Specificatiom_v0.1.md
+Output_Package_Specification_v0.1d
+PP-001 SMELTING BOOTSTRAP.md
+PP-001.md
+PUB.template.md
+Parser_Behavior_Specification_v0.1.md
+Parser_Development_Guide_v0.1.md
+Phase_tramsition_briefing_branch_proposals_and_addendums_v1.1.md
+Primitive Promotion Pipeline.md
+Primitive Queue.md
+Project Space BABBAGE.md
+Project Space Instructions.md
+Project Space Personalization Instructions.md
+Project Space Queued Items 8_1_26.md
+Project Space Session 3 Summary.md
+Promotion Queue.md
+Provenance_Specification_v0.1.md
+Publication_Specification_v0.1.md
+QUEUE - Review Repository Naming Convention.md
+QUEUE_Constitution_Reduction.md
+Quality_Assurance_Specification_v0.1.md
+Queue Architecture.md
+Queue_Candidate_Schema_v0.1.md
+Queue_Specification_v0.1.md
+README.md
+Rebuild Bootstrap 2 Constraints.md
+Reckless Ideator.md
+Reference_Schema_v0.1.md
+Repository Design Objective.md
+Repository Extraction Pipeline.md
+Repository Notation Standard v1.0.md
+Repository_Constitution_v0.1.md
+Repository_Index_Specification_v0.1.md
+Repository_Mapping_Specification_v0.1.md
+Repository_Maturity_Model_v0.1.md
+Repository_Relationship_Schema_v0.1.md
+Repository_Standards_v0.1.md
+Repository_Synchronization_Request.md
+Review Queue.md
+SESSION-STATE.md
+SIQ Suggested Implementation Queue.md
+SPEC.template.md
+Schema_Governance_Specification_v0.1.md
+Security_and_Integrity_Specification_v0.1.md
+Service_Contracts_v0.1.md
+Service_Development_Guide_v0.1.md
+Session Queue.md
+Temp.md
+Testing_Strategy_Specification_v0.1.md
+The_Difference_Engine.md
+Tool Queue.md
+Universal_Branch_Steward_Protocol_Constitutional_Amendment_v_1.1_Ratification Draft.md
+Validation_Specification_v0.1.md
+WRITING_GUIDELINES.md
+Workflow_API_Specification_v0.1.md
+Workflow_Audit_Specification_v0.1.md
+Workflow_Checkpointing_Specification_v0.1.md
+Workflow_Context_Specification_v0.1.md
+Workflow_Definition_Schema_v0.1.md
+Workflow_Execution_Specification_v0.1.md
+Workflow_Governance_Specification_v0.1.md
+Workflow_Metrics_Specification_v0.1.md
+Workflow_Orchestration_Specification_v0.1.md
+Workflow_Recovery_Specification_v0.1.md
+Workflow_Replay_Specification_v0.1.md
+Workflow_Reporting_Specification_v0.1.md
+Workflow_Service_Capability_Specification_v0.1.md
+Workflow_Service_Communication_Specification_v0.1.md
+Workflow_Service_Composition_Specification_v0.1.md
+Workflow_Service_Configuration_Specification_v0.1.md
+Workflow_Service_Contract_Specification_v0.1.md
+Workflow_Service_Coordination_Specification_v0.1.md
+Workflow_Service_Dependency_Specification_v0.1.md
+Workflow_Service_Discovery_Specification_v0.1.md
+Workflow_Service_Dispatch_Specification_v0.1.md
+Workflow_Service_Health_Specification_v0.1.md
+Workflow_Service_Lifecycle_Specification_v0.1.md
+Workflow_Service_Load_Balancing_Specification_v0.1.md
+Workflow_Service_Messaging_Specification_v0.1.md
+Workflow_Service_Registry_Specification_v0.1.md
+Workflow_Service_Resilience_Specification_v0.1.md
+Workflow_Service_Routing_Specification_v0.1.md
+Workflow_Service_Scaling_Specification_v0.1.md
+Workflow_Service_Scheduling_Specification_v0.1.md
+Workflow_State_Machine_Specification_v0.1.md
+Workflow_Versioning_Specification_v0.1.md
+Writergpt.md
+ids.py
+new_document.py
+round_2.md
+stewardship_proposed_amendments.md
+temp.md
+temp2.md
+templates.py

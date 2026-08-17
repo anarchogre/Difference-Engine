@@ -1,0 +1,8 @@
+hint: The '.githooks/pre-commit' hook was ignored because it's not set as executable.
+hint: You can disable this warning with `git config set advice.ignoredHook false`.
+[master 59720a4] Establish File Library governance and canonical index
+ 4 files changed, 332 insertions(+)
+ create mode 100644 workspace/operational/library/ARTIFACT_LIFECYCLE.md
+ create mode 100644 workspace/operational/library/CANONICAL_LIBRARY_INDEX.json
+ create mode 100644 workspace/operational/library/LIBRARY_GOVERNANCE.md
+ create mode 100644 workspace/operational/library/UPLOAD_STANDARD.md

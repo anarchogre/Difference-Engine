@@ -1,0 +1,18 @@
+status=CLOSED
+scope=FROZEN_HISTORICAL_PDF_SET
+total_pdf_artifacts=12
+conversation_bearing_candidates=11
+human_interface_exclusions=1
+unresolved=0
+promotion=NONE
+
+excluded_artifact=Inference and Linguistic Models.pdf
+excluded_native_chat_id=6a63c42f-0948-83ea-a343-a4e251456bbe
+excluded_disposition=HUMAN_INTERFACE
+excluded_relationship=DERIVED_OR_EXTRACTED_FROM
+excluded_exact_identity=NO
+
+finding=All twelve frozen historical PDF-native artifacts have semantic dispositions.
+finding=Eleven are conversation-bearing candidates established by structural inspection.
+finding=Inference and Linguistic Models.pdf is excluded from the conversation corpus.
+finding=Native ChatGPT provenance is provenance only and does not establish semantic conversation qualification.

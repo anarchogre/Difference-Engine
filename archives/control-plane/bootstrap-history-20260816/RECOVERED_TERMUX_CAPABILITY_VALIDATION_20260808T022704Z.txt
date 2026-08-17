@@ -1,0 +1,17 @@
+=== RECOVERED TERMUX CAPABILITY VALIDATION ===
+2026-08-07T21:27:04-05:00
+
+=== HOOK DIRECTORY ===
+d	700	
+f	700	pre-commit
+
+=== HOOK FILE TYPES ===
+pre-commit	a /data/data/com.termux/files/usr/bin/bash script, ASCII text executable
+
+=== HOOK SHA256 ===
+b7ba520d202e85577086655c6c97e002071ceed039946f1f9f6ef970e55329db  /home/reckless-ideator/phone-evacuation/moto-g-power-2021/termux-private-home/verified-extract/.local/libexec/DifferenceEngine-hooks/pre-commit
+
+=== PRIVATE/PUBLIC KEY MATCH ===
+PRIVATE_DERIVED_FP=SHA256:TllnOv6RpVeDv7r2G2uWSjlOel6gqLL+RmqIqSl+/Ys
+PUBLIC_FILE_FP=SHA256:TllnOv6RpVeDv7r2G2uWSjlOel6gqLL+RmqIqSl+/Ys
+KEYPAIR_MATCH=PASS

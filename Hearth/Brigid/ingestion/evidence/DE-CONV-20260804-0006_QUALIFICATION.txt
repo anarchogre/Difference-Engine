@@ -1,0 +1,10 @@
+DE-CONV-20260804-0006 QUALIFICATION
+
+Kind: conversation
+Turns: 110
+User: 81
+Assistant: 29
+Commands: 192
+Parser status: complete
+Validation passed: True
+Validation errors: []

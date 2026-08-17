@@ -1,0 +1,6 @@
+[BOOTSTRAP] Discovering repository...
+MISSION='Executable Infrastructure'
+TASK=None
+INITIALIZED_MISSION='Executable Infrastructure'
+INITIALIZED_TASK=None
+EXECUTION_MODE='Execution'

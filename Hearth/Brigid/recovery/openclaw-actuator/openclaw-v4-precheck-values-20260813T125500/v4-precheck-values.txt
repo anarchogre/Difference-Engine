@@ -1,0 +1,81 @@
+=== V4 PRECHECK RUNTIME ===
+
+=== V4 SESSION RUNTIME ===
+
+=== SOURCE FALLBACK ===
+}
+/** Estimates only the rendered prompt/system portion when history has already been accounted for. */
+function estimateRenderedLlmBoundaryTokenPressure(params) {
+	const systemTokens = typeof params.systemPrompt === "string" && params.systemPrompt.trim().length > 0 ? MESSAGE_BOUNDARY_OVERHEAD_TOKENS + estimateStringTokenPressure(params.systemPrompt) : 0;
+	const promptTokens = MESSAGE_BOUNDARY_OVERHEAD_TOKENS + estimateStringTokenPressure(params.prompt);
+	return Math.max(0, Math.ceil((systemTokens + promptTokens) * SAFETY_MARGIN));
+}
+function normalizeLlmBoundaryTokenPressure(pressure) {
+	if (!pressure || !Number.isFinite(pressure.estimatedPromptTokens)) return;
+	return {
+		estimatedPromptTokens: Math.max(0, Math.ceil(pressure.estimatedPromptTokens)),
+		source: pressure.source.trim() || "rendered_llm_boundary",
+		...typeof pressure.renderedChars === "number" && Number.isFinite(pressure.renderedChars) ? { renderedChars: Math.max(0, Math.ceil(pressure.renderedChars)) } : {}
+	};
+}
+/**
+* Decides whether a run should compact before submitting the prompt, and
+* whether reducible tool results can avoid or follow compaction. Rendered LLM
+* boundary pressure wins over local transcript estimates when supplied.
+*/
+function shouldPreemptivelyCompactBeforePrompt(params) {
+	let messagesForPressure = params.messages;
+	const llmBoundaryTokenPressure = normalizeLlmBoundaryTokenPressure(params.llmBoundaryTokenPressure);
+	let estimatedPromptTokens = llmBoundaryTokenPressure?.estimatedPromptTokens ?? estimateLlmBoundaryTokenPressure({
+		messages: params.messages,
+		systemPrompt: params.systemPrompt,
+		prompt: params.prompt
+	});
+	let pressureSource = llmBoundaryTokenPressure?.source ?? "transcript_estimate";
+	if (params.unwindowedMessages && params.unwindowedMessages !== params.messages) {
+		const unwindowedEstimatedPromptTokens = estimateLlmBoundaryTokenPressure({
+			messages: params.unwindowedMessages,
+			systemPrompt: params.systemPrompt,
+			prompt: params.prompt
+		});
+		if (unwindowedEstimatedPromptTokens > estimatedPromptTokens) {
+			estimatedPromptTokens = unwindowedEstimatedPromptTokens;
+			messagesForPressure = params.unwindowedMessages;
+			pressureSource = "unwindowed_transcript_estimate";
+		}
+	}
+	const contextTokenBudget = Math.max(1, Math.floor(params.contextTokenBudget));
+	const requestedReserveTokens = Math.max(0, Math.floor(params.reserveTokens));
+	const minPromptBudget = Math.min(MIN_PROMPT_BUDGET_TOKENS, Math.max(1, Math.floor(contextTokenBudget * MIN_PROMPT_BUDGET_RATIO)));
+	const effectiveReserveTokens = Math.min(requestedReserveTokens, Math.max(0, contextTokenBudget - minPromptBudget));
+	const promptBudgetBeforeReserve = Math.max(1, contextTokenBudget - effectiveReserveTokens);
+	const overflowTokens = Math.max(0, estimatedPromptTokens - promptBudgetBeforeReserve);
+	const toolResultPotential = estimateToolResultReductionPotential({
+		messages: messagesForPressure,
+		contextWindowTokens: params.contextTokenBudget,
+		maxCharsOverride: params.toolResultMaxChars
+	});
+	const overflowChars = overflowTokens * ESTIMATED_CHARS_PER_TOKEN;
+	const truncateOnlyThresholdChars = Math.max(overflowChars + TRUNCATION_ROUTE_BUFFER_TOKENS * ESTIMATED_CHARS_PER_TOKEN, Math.ceil(overflowChars * 1.5));
+	const toolResultReducibleChars = toolResultPotential.maxReducibleChars;
+	let route = "fits";
+	if (overflowTokens > 0) if (toolResultReducibleChars <= 0) route = "compact_only";
+	else if (toolResultReducibleChars >= truncateOnlyThresholdChars) route = "truncate_tool_results_only";
+	else route = "compact_then_truncate";
+	return {
+		route,
+		shouldCompact: route === "compact_only" || route === "compact_then_truncate",
+		estimatedPromptTokens,
+		pressureSource,
+		promptBudgetBeforeReserve,
+		overflowTokens,
+		toolResultReducibleChars,
+		effectiveReserveTokens
+	};
+}
+/** Formats the compact operator log line for one pre-prompt budget check. */
+function formatPrePromptPrecheckLog(params) {
+	const { result } = params;
+	return `[context-overflow-precheck] pre-prompt check sessionKey=${params.sessionKey ?? params.sessionId ?? "unknown"} provider=${params.provider}/${params.modelId} route=${result.route} estimatedPromptTokens=${result.estimatedPromptTokens} pressureSource=${result.pressureSource ?? "unknown"} promptBudgetBeforeReserve=${result.promptBudgetBeforeReserve} overflowTokens=${result.overflowTokens} toolResultReducibleChars=${result.toolResultReducibleChars} reserveTokens=${params.reserveTokens} effectiveReserveTokens=${result.effectiveReserveTokens} contextTokenBudget=${params.contextTokenBudget} messages=${params.messageCount} unwindowedMessages=${params.unwindowedMessageCount ?? params.messageCount} sessionFile=${params.sessionFile}`;
+}
+/** Converts the pre-prompt decision into the persisted session context-budget status record. */

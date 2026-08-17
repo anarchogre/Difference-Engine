@@ -1,0 +1,16 @@
+{
+  "artifact": {
+    "identifier": "AKS-ROADMAP-0003",
+    "title": "Post-Gate Alpha Engineering Roadmap",
+    "version": "1.0",
+    "phases": [
+      "Freeze Semantic Kernel",
+      "Engineer Proposition Model",
+      "Engineer Concept Model",
+      "Engineer Relationship Model",
+      "Engineer Evidence Model",
+      "Validate Semantic Decomposition Theorem",
+      "Resume Conformance and Repository Engineering"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:49:07.299103-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/interventions_template.json",
+  "original_name": "interventions_template.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0617",
+  "schema_version": "0.1.0",
+  "sha256": "0f78cda34fd7483a83a418887223a0667a7a2dc61cc5426a5cd01b3c99432787",
+  "size_bytes": 201,
+  "source_class": "manual_batch"
+}

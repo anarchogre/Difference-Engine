@@ -1,0 +1,69 @@
+=== PHONE EVACUATION PRESERVATION GATE ===
+2026-08-07T20:27:38-05:00
+
+=== SHARED STORAGE ===
+PATH=/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage
+FILES=6141
+BYTES=2527705808
+
+=== TERMUX HOME ===
+ARCHIVE=/home/reckless-ideator/phone-evacuation/moto-g-power-2021/termux-private-home/TH.tgz
+f9f85557c26921cde125b499fba3af5540254eec6e0cec38eddf228e876a11d9  /home/reckless-ideator/phone-evacuation/moto-g-power-2021/termux-private-home/TH.tgz
+GZIP=PASS
+TAR=PASS
+
+=== SHARED TOP LEVEL ===
+d	ADE
+d	ADE_DIFFERENCE_ENGINE
+d	ADE_UPLOAD
+d	Alarms
+d	Android
+d	Audiobooks
+d	CodeOnTheGoProjects
+d	DCIM
+d	DOCTRINE
+d	DifferenceEngine
+d	Documents
+d	Download
+d	FILE_LIBRARY_UPLOADS
+d	Files by Google
+d	Movies
+d	Music
+d	Notifications
+d	Pictures
+d	Podcasts
+d	Recordings
+d	Ringtones
+d	SUMMITS
+d	inventory
+f	BOOTSTRAP.md
+f	Custom_GPT_Design_Process.json
+f	DE DOCTRINE.zip
+f	DE DifferenceEngine Repo (sparse).zip
+f	DE INVENTORY.zip
+f	DE SUMMITS.zip
+f	DE Uploads From Phone.zip
+f	Difference Engine Assistant Charter (Draft).txt
+f	For Gemini.docx
+f	GPT Creation Injection 2..txt
+f	GPT Creation Injection 3.txt
+f	GPT Creation Injection.txt
+f	HEAD_STEWARD.md
+f	Project Summary_ The Difference Engine (1).txt
+f	THE DIFFERENCE ENGINE- SYSTEM SPECIFICATION & REVISED BOOTSTRAP PROTOCOL.docx
+f	ade.lst
+f	ade_de.lst
+f	repo_files.txt
+f	repo_tree.txt
+
+=== DIFFERENCE ENGINE / ADE CENSUS ===
+d	ADE
+d	ADE_DIFFERENCE_ENGINE
+d	ADE_UPLOAD
+d	CodeOnTheGoProjects/ADE
+d	DifferenceEngine
+d	DifferenceEngine/MemoryPalace
+d	DifferenceEngine/Phylactery
+d	DifferenceEngine/ade
+d	DifferenceEngine/workspace/operational/census/ADE
+d	FILE_LIBRARY_UPLOADS

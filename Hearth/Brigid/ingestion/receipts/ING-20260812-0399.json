@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:35.438019-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Workflow_Audit_Specification_v0.1.md",
+  "original_name": "Workflow_Audit_Specification_v0.1.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0399",
+  "schema_version": "0.1.0",
+  "sha256": "9baed3f30c6568ce7cb8e118ac00701e3314ae4c17ad3f80e201146b9fa42d0f",
+  "size_bytes": 5583,
+  "source_class": "manual_batch"
+}

@@ -1,0 +1,555 @@
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/proxy-BzhBz8iM.js
+HIT=2113: 	keepRecentTokens: 2e4
+2102: 	if (entry.type === "branch_summary") return asAgentMessage(createBranchSummaryMessage(entry.summary, entry.fromId, entry.timestamp));
+2103: 	if (entry.type === "compaction") return asAgentMessage(createCompactionSummaryMessage(entry.summary, entry.tokensBefore, entry.timestamp));
+2104: }
+2105: function getMessageFromEntryForCompaction(entry) {
+2106: 	if (entry.type === "compaction") return;
+2107: 	return getMessageFromEntry$1(entry);
+2108: }
+2109: /** Default compaction settings used by the harness. */
+2110: const DEFAULT_COMPACTION_SETTINGS = {
+2111: 	enabled: true,
+2112: 	reserveTokens: 16384,
+2113: 	keepRecentTokens: 2e4
+2114: };
+2115: /** Calculate total context tokens from provider usage. */
+2116: function calculateContextTokens(usage) {
+2117: 	if (usage.contextUsage?.state === "available") return usage.contextUsage.totalTokens;
+2118: 	return usage.totalTokens || usage.input + usage.output + usage.cacheRead + usage.cacheWrite;
+2119: }
+2120: function getAssistantUsage(msg) {
+2121: 	if (msg.role === "assistant" && "usage" in msg) {
+2122: 		const assistantMsg = msg;
+2123: 		if (assistantMsg.stopReason !== "aborted" && assistantMsg.stopReason !== "error" && assistantMsg.usage) return assistantMsg.usage;
+2124: 	}
+2125: }
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/proxy-BzhBz8iM.js
+HIT=2258: function findCutPoint(entries, startIndex, endIndex, keepRecentTokens) {
+2247: 	for (let i = entryIndex; i >= startIndex; i--) {
+2248: 		const entry = entries[i];
+2249: 		if (entry.type === "branch_summary" || entry.type === "custom_message") return i;
+2250: 		if (entry.type === "message") {
+2251: 			const role = entry.message.role;
+2252: 			if (role === "user" || role === "bashExecution") return i;
+2253: 		}
+2254: 	}
+2255: 	return -1;
+2256: }
+2257: /** Find the compaction cut point that keeps approximately the requested recent-token budget. */
+2258: function findCutPoint(entries, startIndex, endIndex, keepRecentTokens) {
+2259: 	const cutPoints = findValidCutPoints(entries, startIndex, endIndex);
+2260: 	if (cutPoints.length === 0) return {
+2261: 		firstKeptEntryIndex: startIndex,
+2262: 		turnStartIndex: -1,
+2263: 		isSplitTurn: false
+2264: 	};
+2265: 	let accumulatedTokens = 0;
+2266: 	let cutIndex = cutPoints[0];
+2267: 	for (let i = endIndex - 1; i >= startIndex; i--) {
+2268: 		const entry = entries[i];
+2269: 		if (entry.type !== "message") continue;
+2270: 		const messageTokens = estimateTokens(entry.message);
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/proxy-BzhBz8iM.js
+HIT=2272: 		if (accumulatedTokens >= keepRecentTokens) {
+2261: 		firstKeptEntryIndex: startIndex,
+2262: 		turnStartIndex: -1,
+2263: 		isSplitTurn: false
+2264: 	};
+2265: 	let accumulatedTokens = 0;
+2266: 	let cutIndex = cutPoints[0];
+2267: 	for (let i = endIndex - 1; i >= startIndex; i--) {
+2268: 		const entry = entries[i];
+2269: 		if (entry.type !== "message") continue;
+2270: 		const messageTokens = estimateTokens(entry.message);
+2271: 		accumulatedTokens += messageTokens;
+2272: 		if (accumulatedTokens >= keepRecentTokens) {
+2273: 			cutIndex = cutPoints[cutPoints.length - 1];
+2274: 			for (const cutPoint of cutPoints) if (cutPoint >= i) {
+2275: 				cutIndex = cutPoint;
+2276: 				break;
+2277: 			}
+2278: 			break;
+2279: 		}
+2280: 	}
+2281: 	while (cutIndex > startIndex) {
+2282: 		const prevEntry = entries[cutIndex - 1];
+2283: 		if (prevEntry.type === "compaction") break;
+2284: 		if (prevEntry.type === "message") break;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/proxy-BzhBz8iM.js
+HIT=2441: 	const cutPoint = findCutPoint(pathEntries, boundaryStart, boundaryEnd, settings.keepRecentTokens);
+2430: 	}
+2431: 	let previousSummary;
+2432: 	let boundaryStart = 0;
+2433: 	if (prevCompactionIndex >= 0) {
+2434: 		const prevCompaction = pathEntries[prevCompactionIndex];
+2435: 		previousSummary = prevCompaction.summary;
+2436: 		const firstKeptEntryIndex = pathEntries.findIndex((entry) => entry.id === prevCompaction.firstKeptEntryId);
+2437: 		boundaryStart = firstKeptEntryIndex >= 0 ? firstKeptEntryIndex : prevCompactionIndex + 1;
+2438: 	}
+2439: 	const boundaryEnd = pathEntries.length;
+2440: 	const tokensBefore = estimateContextTokens(buildSessionContext(pathEntries).messages).tokens;
+2441: 	const cutPoint = findCutPoint(pathEntries, boundaryStart, boundaryEnd, settings.keepRecentTokens);
+2442: 	const firstKeptEntry = pathEntries[cutPoint.firstKeptEntryIndex];
+2443: 	if (!firstKeptEntry?.id) return err(new CompactionError("invalid_session", "First kept entry has no UUID - session may need migration"));
+2444: 	const firstKeptEntryId = firstKeptEntry.id;
+2445: 	const historyEnd = cutPoint.isSplitTurn ? cutPoint.turnStartIndex : cutPoint.firstKeptEntryIndex;
+2446: 	const messagesToSummarize = [];
+2447: 	for (let i = boundaryStart; i < historyEnd; i++) {
+2448: 		const msg = getMessageFromEntryForCompaction(pathEntries[i]);
+2449: 		if (msg) messagesToSummarize.push(msg);
+2450: 	}
+2451: 	const turnPrefixMessages = [];
+2452: 	if (cutPoint.isSplitTurn) for (let i = cutPoint.turnStartIndex; i < cutPoint.firstKeptEntryIndex; i++) {
+2453: 		const msg = getMessageFromEntryForCompaction(pathEntries[i]);
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/plugin-sdk/config-schema.d.ts
+HIT=937:         keepRecentTokens: ZodOptional<ZodNumber>;
+926:           tailChars: ZodOptional<ZodNumber>;
+927:         }, $strict>>;
+928:         hardClear: ZodOptional<ZodObject<{
+929:           enabled: ZodOptional<ZodBoolean>;
+930:           placeholder: ZodOptional<ZodString>;
+931:         }, $strict>>;
+932:       }, $strict>>;
+933:       compaction: ZodOptional<ZodObject<{
+934:         mode: ZodOptional<ZodUnion<readonly [ZodLiteral<"default">, ZodLiteral<"safeguard">]>>;
+935:         provider: ZodOptional<ZodString>;
+936:         reserveTokens: ZodOptional<ZodNumber>;
+937:         keepRecentTokens: ZodOptional<ZodNumber>;
+938:         reserveTokensFloor: ZodOptional<ZodNumber>;
+939:         maxHistoryShare: ZodOptional<ZodNumber>;
+940:         customInstructions: ZodOptional<ZodString>;
+941:         identifierPolicy: ZodOptional<ZodUnion<readonly [ZodLiteral<"strict">, ZodLiteral<"off">, ZodLiteral<"custom">]>>;
+942:         identifierInstructions: ZodOptional<ZodString>;
+943:         recentTurnsPreserve: ZodOptional<ZodNumber>;
+944:         qualityGuard: ZodOptional<ZodObject<{
+945:           enabled: ZodOptional<ZodBoolean>;
+946:           maxRetries: ZodOptional<ZodNumber>;
+947:         }, $strict>>;
+948:         midTurnPrecheck: ZodOptional<ZodObject<{
+949:           enabled: ZodOptional<ZodBoolean>;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/plugin-sdk/config-schema.d.ts
+HIT=938:         reserveTokensFloor: ZodOptional<ZodNumber>;
+927:         }, $strict>>;
+928:         hardClear: ZodOptional<ZodObject<{
+929:           enabled: ZodOptional<ZodBoolean>;
+930:           placeholder: ZodOptional<ZodString>;
+931:         }, $strict>>;
+932:       }, $strict>>;
+933:       compaction: ZodOptional<ZodObject<{
+934:         mode: ZodOptional<ZodUnion<readonly [ZodLiteral<"default">, ZodLiteral<"safeguard">]>>;
+935:         provider: ZodOptional<ZodString>;
+936:         reserveTokens: ZodOptional<ZodNumber>;
+937:         keepRecentTokens: ZodOptional<ZodNumber>;
+938:         reserveTokensFloor: ZodOptional<ZodNumber>;
+939:         maxHistoryShare: ZodOptional<ZodNumber>;
+940:         customInstructions: ZodOptional<ZodString>;
+941:         identifierPolicy: ZodOptional<ZodUnion<readonly [ZodLiteral<"strict">, ZodLiteral<"off">, ZodLiteral<"custom">]>>;
+942:         identifierInstructions: ZodOptional<ZodString>;
+943:         recentTurnsPreserve: ZodOptional<ZodNumber>;
+944:         qualityGuard: ZodOptional<ZodObject<{
+945:           enabled: ZodOptional<ZodBoolean>;
+946:           maxRetries: ZodOptional<ZodNumber>;
+947:         }, $strict>>;
+948:         midTurnPrecheck: ZodOptional<ZodObject<{
+949:           enabled: ZodOptional<ZodBoolean>;
+950:         }, $strict>>;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts
+HIT=7:   keepRecentTokens?: number;
+1: import { j as Transport } from "./types-CFIUY_La.js";
+2: 
+3: //#region src/agents/sessions/settings-manager.d.ts
+4: interface CompactionSettings {
+5:   enabled?: boolean;
+6:   reserveTokens?: number;
+7:   keepRecentTokens?: number;
+8: }
+9: interface BranchSummarySettings {
+10:   reserveTokens?: number;
+11:   skipPrompt?: boolean;
+12: }
+13: interface ProviderRetrySettings {
+14:   timeoutMs?: number;
+15:   maxRetries?: number;
+16:   maxRetryDelayMs?: number;
+17: }
+18: interface RetrySettings {
+19:   enabled?: boolean;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts
+HIT=188:     keepRecentTokens: number;
+177:   getDefaultThinkingLevel(): "off" | "minimal" | "low" | "medium" | "high" | "xhigh" | "max" | undefined;
+178:   setDefaultThinkingLevel(level: "off" | "minimal" | "low" | "medium" | "high" | "xhigh" | "max"): void;
+179:   getTransport(): TransportSetting;
+180:   setTransport(transport: TransportSetting): void;
+181:   getCompactionEnabled(): boolean;
+182:   setCompactionEnabled(enabled: boolean): void;
+183:   getCompactionReserveTokens(): number;
+184:   getCompactionKeepRecentTokens(): number;
+185:   getCompactionSettings(): {
+186:     enabled: boolean;
+187:     reserveTokens: number;
+188:     keepRecentTokens: number;
+189:   };
+190:   getBranchSummarySettings(): {
+191:     reserveTokens: number;
+192:     skipPrompt: boolean;
+193:   };
+194:   getBranchSummarySkipPrompt(): boolean;
+195:   getRetryEnabled(): boolean;
+196:   setRetryEnabled(enabled: boolean): void;
+197:   getRetrySettings(): {
+198:     enabled: boolean;
+199:     maxRetries: number;
+200:     baseDelayMs: number;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/index-gVeC7XQ4.d.ts
+HIT=860:   keepRecentTokens: number;
+849: }
+850: /** Result of moving the active session-tree leaf. */
+851: interface NavigateTreeResult {
+852:   cancelled: boolean;
+853:   editorText?: string;
+854:   summaryEntry?: BranchSummaryEntry;
+855: }
+856: /** Settings that control automatic context compaction. */
+857: interface CompactionSettings$1 {
+858:   enabled: boolean;
+859:   reserveTokens: number;
+860:   keepRecentTokens: number;
+861: }
+862: /** Prepared compaction inputs exposed to hooks before a summary is generated. */
+863: interface CompactionPreparation$1 {
+864:   firstKeptEntryId: string;
+865:   messagesToSummarize: AgentMessage[];
+866:   turnPrefixMessages: AgentMessage[];
+867:   isSplitTurn: boolean;
+868:   tokensBefore: number;
+869:   previousSummary?: string;
+870:   fileOps: FileOperations$1;
+871:   settings: CompactionSettings$1;
+872: }
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/index-gVeC7XQ4.d.ts
+HIT=1219:   keepRecentTokens: number;
+1208:   tokensBefore: number;
+1209:   /** Optional implementation-specific details stored with the compaction entry. */
+1210:   details?: T;
+1211: }
+1212: /** Compaction thresholds and retention settings. */
+1213: interface CompactionSettings {
+1214:   /** Enable automatic compaction decisions. */
+1215:   enabled: boolean;
+1216:   /** Tokens reserved for summary prompt and output. */
+1217:   reserveTokens: number;
+1218:   /** Approximate recent-context tokens to keep after compaction. */
+1219:   keepRecentTokens: number;
+1220: }
+1221: /** Default compaction settings used by the harness. */
+1222: declare const DEFAULT_COMPACTION_SETTINGS: CompactionSettings;
+1223: /** Calculate total context tokens from provider usage. */
+1224: declare function calculateContextTokens(usage: Usage): number;
+1225: /** Return usage from the last successful assistant message in session entries. */
+1226: declare function getLastAssistantUsage(entries: SessionTreeEntry[]): Usage | undefined;
+1227: /** Estimated context-token usage for a message list. */
+1228: interface ContextUsageEstimate {
+1229:   /** Estimated total context tokens. */
+1230:   tokens: number;
+1231:   /** Tokens reported by the most recent assistant usage block. */
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/index-gVeC7XQ4.d.ts
+HIT=1256: declare function findCutPoint(entries: SessionTreeEntry[], startIndex: number, endIndex: number, keepRecentTokens: number): CutPointResult;
+1245: declare function findTurnStartIndex(entries: SessionTreeEntry[], entryIndex: number, startIndex: number): number;
+1246: /** Cut point selected for compaction. */
+1247: interface CutPointResult {
+1248:   /** Index of the first entry retained after compaction. */
+1249:   firstKeptEntryIndex: number;
+1250:   /** Index of the turn-start entry when the cut splits a turn, otherwise -1. */
+1251:   turnStartIndex: number;
+1252:   /** Whether the selected cut point splits an in-progress turn. */
+1253:   isSplitTurn: boolean;
+1254: }
+1255: /** Find the compaction cut point that keeps approximately the requested recent-token budget. */
+1256: declare function findCutPoint(entries: SessionTreeEntry[], startIndex: number, endIndex: number, keepRecentTokens: number): CutPointResult;
+1257: /** Generate or update a conversation summary for compaction. */
+1258: declare function generateSummary(currentMessages: AgentMessage[], model: Model, reserveTokens: number, apiKey: string | undefined, headers?: Record<string, string>, signal?: AbortSignal, customInstructions?: string, previousSummary?: string, thinkingLevel?: ThinkingLevel, streamFn?: StreamFn, runtime?: AgentCoreCompletionRuntimeDeps): Promise<Result<string, CompactionError>>;
+1259: /** Prepared inputs for a compaction run. */
+1260: interface CompactionPreparation {
+1261:   /** Entry id where retained history starts. */
+1262:   firstKeptEntryId: string;
+1263:   /** Messages summarized into the history summary. */
+1264:   messagesToSummarize: AgentMessage[];
+1265:   /** Prefix messages summarized separately when compaction splits a turn. */
+1266:   turnPrefixMessages: AgentMessage[];
+1267:   /** Whether compaction splits a turn. */
+1268:   isSplitTurn: boolean;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js
+HIT=3488: 		return this.settings.compaction?.keepRecentTokens ?? 2e4;
+3477: 	}
+3478: 	setCompactionEnabled(enabled) {
+3479: 		if (!this.globalSettings.compaction) this.globalSettings.compaction = {};
+3480: 		this.globalSettings.compaction.enabled = enabled;
+3481: 		this.markModified("compaction", "enabled");
+3482: 		this.save();
+3483: 	}
+3484: 	getCompactionReserveTokens() {
+3485: 		return this.settings.compaction?.reserveTokens ?? 16384;
+3486: 	}
+3487: 	getCompactionKeepRecentTokens() {
+3488: 		return this.settings.compaction?.keepRecentTokens ?? 2e4;
+3489: 	}
+3490: 	getCompactionSettings() {
+3491: 		return {
+3492: 			enabled: this.getCompactionEnabled(),
+3493: 			reserveTokens: this.getCompactionReserveTokens(),
+3494: 			keepRecentTokens: this.getCompactionKeepRecentTokens()
+3495: 		};
+3496: 	}
+3497: 	getBranchSummarySettings() {
+3498: 		return {
+3499: 			reserveTokens: this.settings.branchSummary?.reserveTokens ?? 16384,
+3500: 			skipPrompt: this.settings.branchSummary?.skipPrompt ?? false
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js
+HIT=3494: 			keepRecentTokens: this.getCompactionKeepRecentTokens()
+3483: 	}
+3484: 	getCompactionReserveTokens() {
+3485: 		return this.settings.compaction?.reserveTokens ?? 16384;
+3486: 	}
+3487: 	getCompactionKeepRecentTokens() {
+3488: 		return this.settings.compaction?.keepRecentTokens ?? 2e4;
+3489: 	}
+3490: 	getCompactionSettings() {
+3491: 		return {
+3492: 			enabled: this.getCompactionEnabled(),
+3493: 			reserveTokens: this.getCompactionReserveTokens(),
+3494: 			keepRecentTokens: this.getCompactionKeepRecentTokens()
+3495: 		};
+3496: 	}
+3497: 	getBranchSummarySettings() {
+3498: 		return {
+3499: 			reserveTokens: this.settings.branchSummary?.reserveTokens ?? 16384,
+3500: 			skipPrompt: this.settings.branchSummary?.skipPrompt ?? false
+3501: 		};
+3502: 	}
+3503: 	getBranchSummarySkipPrompt() {
+3504: 		return this.settings.branchSummary?.skipPrompt ?? false;
+3505: 	}
+3506: 	getRetryEnabled() {
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+HIT=865: 	"agents.defaults.compaction.keepRecentTokens": "Minimum token budget preserved from the most recent conversation window during compaction. Use higher values to protect immediate context continuity and lower values to keep more long-tail history.",
+854: 	"agents.defaults.pdfModel.primary": "Optional PDF model (provider/model) for the PDF analysis tool. Defaults to imageModel, then session model.",
+855: 	"agents.defaults.pdfModel.fallbacks": "Ordered fallback PDF models (provider/model).",
+856: 	"agents.defaults.pdfMaxBytesMb": "Maximum PDF file size in megabytes for the PDF tool (default: 10).",
+857: 	"agents.defaults.pdfMaxPages": "Maximum number of PDF pages to process for the PDF tool (default: 20).",
+858: 	"agents.defaults.imageMaxDimensionPx": "Max image side length in pixels when sanitizing transcript/tool-result image payloads (default: 1200).",
+859: 	"agents.defaults.imageQuality": "Image-tool media compression preference: \"auto\" adapts to provider/model limits and image count, \"efficient\" saves tokens and bytes, \"balanced\" keeps the current middle ground, and \"high\" preserves more detail for screenshots and document images.",
+860: 	"agents.defaults.cliBackends": "Optional CLI backends for text-only fallback (claude-cli, etc.).",
+861: 	"agents.defaults.compaction": "Compaction tuning for when context nears token limits, including history share, reserve headroom, and pre-compaction memory flush behavior. Use this when long-running sessions need stable continuity under tight context windows.",
+862: 	"agents.defaults.compaction.mode": "Compaction strategy mode: \"default\" uses baseline behavior, while \"safeguard\" applies stricter guardrails to preserve recent context. Keep \"default\" unless you observe aggressive history loss near limit boundaries.",
+863: 	"agents.defaults.compaction.provider": "Id of a registered compaction provider plugin used for summarization. When set and the provider is registered, its summarize() method is called instead of the built-in summarizeInStages pipeline. Falls back to built-in on provider failure. Leave unset to use the default built-in summarization.",
+864: 	"agents.defaults.compaction.reserveTokens": "Token headroom reserved for reply generation and tool output after compaction runs. Use higher reserves for verbose/tool-heavy sessions, and lower reserves when maximizing retained history matters more. When the active model context window is known, the effective reserve is capped to preserve usable prompt space.",
+865: 	"agents.defaults.compaction.keepRecentTokens": "Minimum token budget preserved from the most recent conversation window during compaction. Use higher values to protect immediate context continuity and lower values to keep more long-tail history.",
+866: 	"agents.defaults.compaction.reserveTokensFloor": "Minimum floor enforced for reserveTokens in embedded OpenClaw compaction paths (0 disables the floor guard). Use a non-zero floor to avoid over-aggressive compression under fluctuating token estimates.",
+867: 	"agents.defaults.compaction.maxHistoryShare": "Maximum fraction of total context budget allowed for retained history after compaction (range 0.1-0.9). Use lower shares for more generation headroom or higher shares for deeper historical continuity.",
+868: 	"agents.defaults.compaction.identifierPolicy": "Identifier-preservation policy for compaction summaries: \"strict\" prepends built-in opaque-identifier retention guidance (default), \"off\" disables this prefix, and \"custom\" uses identifierInstructions. Keep \"strict\" unless you have a specific compatibility need.",
+869: 	"agents.defaults.compaction.identifierInstructions": "Custom identifier-preservation instruction text used when identifierPolicy=\"custom\". Keep this explicit and safety-focused so compaction summaries do not rewrite opaque IDs, URLs, hosts, or ports.",
+870: 	"agents.defaults.compaction.recentTurnsPreserve": "Number of most recent user/assistant turns kept verbatim outside safeguard summarization (default: 3). Raise this to preserve exact recent dialogue context, or lower it to maximize compaction savings.",
+871: 	"agents.defaults.compaction.qualityGuard": "Quality-audit retry settings for safeguard compaction summaries. Safeguard mode enables this by default; set enabled: false to skip summary audits and regeneration.",
+872: 	"agents.defaults.compaction.qualityGuard.enabled": "Enables summary quality audits and regeneration retries for safeguard compaction. Default: true in safeguard mode.",
+873: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Maximum number of regeneration retries after a failed safeguard summary quality audit. Use small values to bound extra latency and token cost.",
+874: 	"agents.defaults.compaction.midTurnPrecheck": "Optional embedded OpenClaw tool-loop precheck that detects context pressure after a tool result is appended and before the next model call. When enabled, OpenClaw reuses existing precheck recovery to truncate tool results or compact before retrying.",
+875: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Enable structured mid-turn context pressure checks for embedded OpenClaw tool loops. Default: false. Keep disabled unless long tool-heavy sessions hit context overflow before normal turn-end compaction can run.",
+876: 	"agents.defaults.compaction.postIndexSync": "Controls post-compaction session memory reindex mode: \"off\", \"async\", or \"await\" (default: \"async\"). Use \"await\" for strongest freshness, \"async\" for lower compaction latency, and \"off\" only when session-memory sync is handled elsewhere.",
+877: 	"agents.defaults.compaction.postCompactionSections": "Opt-in AGENTS.md H2/H3 section names re-injected after compaction so the agent reruns critical startup guidance. Leave unset or set [] to disable reinjection. Explicitly set [\"Session Startup\", \"Red Lines\"] to enable the legacy default pair with fallback to older \"Every Session\"/\"Safety\" headings. Enabling this can duplicate project context already present in the compaction summary.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+HIT=866: 	"agents.defaults.compaction.reserveTokensFloor": "Minimum floor enforced for reserveTokens in embedded OpenClaw compaction paths (0 disables the floor guard). Use a non-zero floor to avoid over-aggressive compression under fluctuating token estimates.",
+855: 	"agents.defaults.pdfModel.fallbacks": "Ordered fallback PDF models (provider/model).",
+856: 	"agents.defaults.pdfMaxBytesMb": "Maximum PDF file size in megabytes for the PDF tool (default: 10).",
+857: 	"agents.defaults.pdfMaxPages": "Maximum number of PDF pages to process for the PDF tool (default: 20).",
+858: 	"agents.defaults.imageMaxDimensionPx": "Max image side length in pixels when sanitizing transcript/tool-result image payloads (default: 1200).",
+859: 	"agents.defaults.imageQuality": "Image-tool media compression preference: \"auto\" adapts to provider/model limits and image count, \"efficient\" saves tokens and bytes, \"balanced\" keeps the current middle ground, and \"high\" preserves more detail for screenshots and document images.",
+860: 	"agents.defaults.cliBackends": "Optional CLI backends for text-only fallback (claude-cli, etc.).",
+861: 	"agents.defaults.compaction": "Compaction tuning for when context nears token limits, including history share, reserve headroom, and pre-compaction memory flush behavior. Use this when long-running sessions need stable continuity under tight context windows.",
+862: 	"agents.defaults.compaction.mode": "Compaction strategy mode: \"default\" uses baseline behavior, while \"safeguard\" applies stricter guardrails to preserve recent context. Keep \"default\" unless you observe aggressive history loss near limit boundaries.",
+863: 	"agents.defaults.compaction.provider": "Id of a registered compaction provider plugin used for summarization. When set and the provider is registered, its summarize() method is called instead of the built-in summarizeInStages pipeline. Falls back to built-in on provider failure. Leave unset to use the default built-in summarization.",
+864: 	"agents.defaults.compaction.reserveTokens": "Token headroom reserved for reply generation and tool output after compaction runs. Use higher reserves for verbose/tool-heavy sessions, and lower reserves when maximizing retained history matters more. When the active model context window is known, the effective reserve is capped to preserve usable prompt space.",
+865: 	"agents.defaults.compaction.keepRecentTokens": "Minimum token budget preserved from the most recent conversation window during compaction. Use higher values to protect immediate context continuity and lower values to keep more long-tail history.",
+866: 	"agents.defaults.compaction.reserveTokensFloor": "Minimum floor enforced for reserveTokens in embedded OpenClaw compaction paths (0 disables the floor guard). Use a non-zero floor to avoid over-aggressive compression under fluctuating token estimates.",
+867: 	"agents.defaults.compaction.maxHistoryShare": "Maximum fraction of total context budget allowed for retained history after compaction (range 0.1-0.9). Use lower shares for more generation headroom or higher shares for deeper historical continuity.",
+868: 	"agents.defaults.compaction.identifierPolicy": "Identifier-preservation policy for compaction summaries: \"strict\" prepends built-in opaque-identifier retention guidance (default), \"off\" disables this prefix, and \"custom\" uses identifierInstructions. Keep \"strict\" unless you have a specific compatibility need.",
+869: 	"agents.defaults.compaction.identifierInstructions": "Custom identifier-preservation instruction text used when identifierPolicy=\"custom\". Keep this explicit and safety-focused so compaction summaries do not rewrite opaque IDs, URLs, hosts, or ports.",
+870: 	"agents.defaults.compaction.recentTurnsPreserve": "Number of most recent user/assistant turns kept verbatim outside safeguard summarization (default: 3). Raise this to preserve exact recent dialogue context, or lower it to maximize compaction savings.",
+871: 	"agents.defaults.compaction.qualityGuard": "Quality-audit retry settings for safeguard compaction summaries. Safeguard mode enables this by default; set enabled: false to skip summary audits and regeneration.",
+872: 	"agents.defaults.compaction.qualityGuard.enabled": "Enables summary quality audits and regeneration retries for safeguard compaction. Default: true in safeguard mode.",
+873: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Maximum number of regeneration retries after a failed safeguard summary quality audit. Use small values to bound extra latency and token cost.",
+874: 	"agents.defaults.compaction.midTurnPrecheck": "Optional embedded OpenClaw tool-loop precheck that detects context pressure after a tool result is appended and before the next model call. When enabled, OpenClaw reuses existing precheck recovery to truncate tool results or compact before retrying.",
+875: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Enable structured mid-turn context pressure checks for embedded OpenClaw tool loops. Default: false. Keep disabled unless long tool-heavy sessions hit context overflow before normal turn-end compaction can run.",
+876: 	"agents.defaults.compaction.postIndexSync": "Controls post-compaction session memory reindex mode: \"off\", \"async\", or \"await\" (default: \"async\"). Use \"await\" for strongest freshness, \"async\" for lower compaction latency, and \"off\" only when session-memory sync is handled elsewhere.",
+877: 	"agents.defaults.compaction.postCompactionSections": "Opt-in AGENTS.md H2/H3 section names re-injected after compaction so the agent reruns critical startup guidance. Leave unset or set [] to disable reinjection. Explicitly set [\"Session Startup\", \"Red Lines\"] to enable the legacy default pair with fallback to older \"Every Session\"/\"Safety\" headings. Enabling this can duplicate project context already present in the compaction summary.",
+878: 	"agents.defaults.compaction.timeoutSeconds": "Maximum time in seconds allowed for a single compaction operation before it is aborted (default: 180). Increase this for very large sessions that need more time to summarize, or decrease it to fail faster on unresponsive models.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+HIT=1805: 	"agents.defaults.compaction.keepRecentTokens": "Compaction Keep Recent Tokens",
+1794: 	"agents.defaults.pdfMaxPages": "PDF Max Pages",
+1795: 	"agents.defaults.imageMaxDimensionPx": "Image Max Dimension (px)",
+1796: 	"agents.defaults.imageQuality": "Image Quality",
+1797: 	"agents.defaults.humanDelay.mode": "Human Delay Mode",
+1798: 	"agents.defaults.humanDelay.minMs": "Human Delay Min (ms)",
+1799: 	"agents.defaults.humanDelay.maxMs": "Human Delay Max (ms)",
+1800: 	"agents.defaults.cliBackends": "CLI Backends",
+1801: 	"agents.defaults.compaction": "Compaction",
+1802: 	"agents.defaults.compaction.mode": "Compaction Mode",
+1803: 	"agents.defaults.compaction.provider": "Compaction Provider",
+1804: 	"agents.defaults.compaction.reserveTokens": "Compaction Reserve Tokens",
+1805: 	"agents.defaults.compaction.keepRecentTokens": "Compaction Keep Recent Tokens",
+1806: 	"agents.defaults.compaction.reserveTokensFloor": "Compaction Reserve Token Floor",
+1807: 	"agents.defaults.compaction.maxHistoryShare": "Compaction Max History Share",
+1808: 	"agents.defaults.compaction.identifierPolicy": "Compaction Identifier Policy",
+1809: 	"agents.defaults.compaction.identifierInstructions": "Compaction Identifier Instructions",
+1810: 	"agents.defaults.compaction.recentTurnsPreserve": "Compaction Preserve Recent Turns",
+1811: 	"agents.defaults.compaction.qualityGuard": "Compaction Quality Guard",
+1812: 	"agents.defaults.compaction.qualityGuard.enabled": "Compaction Quality Guard Enabled",
+1813: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Compaction Quality Guard Max Retries",
+1814: 	"agents.defaults.compaction.midTurnPrecheck": "Compaction Mid-turn Precheck",
+1815: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Compaction Mid-turn Precheck Enabled",
+1816: 	"agents.defaults.compaction.postIndexSync": "Compaction Post-Index Sync",
+1817: 	"agents.defaults.compaction.postCompactionSections": "Post-Compaction Context Sections",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+HIT=1806: 	"agents.defaults.compaction.reserveTokensFloor": "Compaction Reserve Token Floor",
+1795: 	"agents.defaults.imageMaxDimensionPx": "Image Max Dimension (px)",
+1796: 	"agents.defaults.imageQuality": "Image Quality",
+1797: 	"agents.defaults.humanDelay.mode": "Human Delay Mode",
+1798: 	"agents.defaults.humanDelay.minMs": "Human Delay Min (ms)",
+1799: 	"agents.defaults.humanDelay.maxMs": "Human Delay Max (ms)",
+1800: 	"agents.defaults.cliBackends": "CLI Backends",
+1801: 	"agents.defaults.compaction": "Compaction",
+1802: 	"agents.defaults.compaction.mode": "Compaction Mode",
+1803: 	"agents.defaults.compaction.provider": "Compaction Provider",
+1804: 	"agents.defaults.compaction.reserveTokens": "Compaction Reserve Tokens",
+1805: 	"agents.defaults.compaction.keepRecentTokens": "Compaction Keep Recent Tokens",
+1806: 	"agents.defaults.compaction.reserveTokensFloor": "Compaction Reserve Token Floor",
+1807: 	"agents.defaults.compaction.maxHistoryShare": "Compaction Max History Share",
+1808: 	"agents.defaults.compaction.identifierPolicy": "Compaction Identifier Policy",
+1809: 	"agents.defaults.compaction.identifierInstructions": "Compaction Identifier Instructions",
+1810: 	"agents.defaults.compaction.recentTurnsPreserve": "Compaction Preserve Recent Turns",
+1811: 	"agents.defaults.compaction.qualityGuard": "Compaction Quality Guard",
+1812: 	"agents.defaults.compaction.qualityGuard.enabled": "Compaction Quality Guard Enabled",
+1813: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Compaction Quality Guard Max Retries",
+1814: 	"agents.defaults.compaction.midTurnPrecheck": "Compaction Mid-turn Precheck",
+1815: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Compaction Mid-turn Precheck Enabled",
+1816: 	"agents.defaults.compaction.postIndexSync": "Compaction Post-Index Sync",
+1817: 	"agents.defaults.compaction.postCompactionSections": "Post-Compaction Context Sections",
+1818: 	"agents.defaults.compaction.timeoutSeconds": "Compaction Timeout (Seconds)",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/memory-state-B0GCV1Gi.d.ts
+HIT=228:   reserveTokensFloor: number;
+217: type MemoryCorpusSupplementRegistration = {
+218:   pluginId: string;
+219:   supplement: MemoryCorpusSupplement;
+220: };
+221: type MemoryPromptSupplementRegistration = {
+222:   pluginId: string;
+223:   builder: MemoryPromptSectionBuilder;
+224: };
+225: type MemoryFlushPlan = {
+226:   softThresholdTokens: number;
+227:   forceFlushTranscriptBytes: number;
+228:   reserveTokensFloor: number;
+229:   model?: string;
+230:   prompt: string;
+231:   systemPrompt: string;
+232:   relativePath: string;
+233: };
+234: type MemoryFlushPlanResolver = (params: {
+235:   cfg?: OpenClawConfig;
+236:   nowMs?: number;
+237: }) => MemoryFlushPlan | null;
+238: type RegisteredMemorySearchManager = MemorySearchManager;
+239: type MemoryRuntimeQmdConfig = {
+240:   command?: string;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+HIT=1557: To prevent this, increase your compaction buffer by setting \`agents.defaults.compaction.reserveTokensFloor\` to ${computeContextAwareReserveTokensFloor(contextWindowTokens)} or higher in your config.`;
+1546: 	const contextWindow = modelWindow ?? trustedSessionWindow;
+1547: 	const agentCap = resolveAgentContextTokensForHint({
+1548: 		cfg: params.cfg,
+1549: 		agentId: params.agentId
+1550: 	});
+1551: 	if (agentCap !== void 0 && contextWindow !== void 0) return Math.min(agentCap, contextWindow);
+1552: 	return agentCap ?? contextWindow;
+1553: }
+1554: function buildContextOverflowResetHint(contextWindowTokens) {
+1555: 	return `
+1556: 
+1557: To prevent this, increase your compaction buffer by setting \`agents.defaults.compaction.reserveTokensFloor\` to ${computeContextAwareReserveTokensFloor(contextWindowTokens)} or higher in your config.`;
+1558: }
+1559: function resolveAgentHeartbeatModelRaw(params) {
+1560: 	const defaultModel = normalizeOptionalString(params.cfg.agents?.defaults?.heartbeat?.model);
+1561: 	const agentId = normalizeLowercaseStringOrEmpty(params.agentId);
+1562: 	return (agentId ? normalizeOptionalString(params.cfg.agents?.list?.find((entry) => normalizeLowercaseStringOrEmpty(entry?.id) === agentId)?.heartbeat?.model) : void 0) ?? defaultModel;
+1563: }
+1564: function normalizeModelRefForCompare(ref) {
+1565: 	if (!ref) return;
+1566: 	const provider = normalizeLowercaseStringOrEmpty(ref.provider);
+1567: 	const model = normalizeLowercaseStringOrEmpty(ref.model);
+1568: 	return provider && model ? {
+1569: 		provider,
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+HIT=3138: 	const reserveTokens = Math.max(0, Math.floor(params.reserveTokensFloor));
+3127: 		asRecord(modelConfig?.params)
+3128: 	];
+3129: 	const serverCompaction = resolveBooleanParam(sources, "responsesServerCompaction");
+3130: 	if (!(provider === "openai" ? serverCompaction !== false : serverCompaction === true)) return;
+3131: 	return resolvePositiveIntegerParam(sources, "responsesCompactThreshold");
+3132: }
+3133: function resolveMemoryFlushGateState(params) {
+3134: 	if (!params.entry) return null;
+3135: 	const totalTokens = resolvePositiveTokenCount(params.tokenCount) ?? resolveFreshSessionTotalTokens(params.entry);
+3136: 	if (!totalTokens || totalTokens <= 0) return null;
+3137: 	const contextWindow = Math.max(1, Math.floor(params.contextWindowTokens));
+3138: 	const reserveTokens = Math.max(0, Math.floor(params.reserveTokensFloor));
+3139: 	const softThreshold = Math.max(0, Math.floor(params.softThresholdTokens));
+3140: 	const threshold = Math.max(0, contextWindow - reserveTokens - softThreshold, Math.floor(params.minimumThresholdTokens ?? 0));
+3141: 	if (threshold <= 0) return null;
+3142: 	return {
+3143: 		entry: params.entry,
+3144: 		totalTokens,
+3145: 		threshold
+3146: 	};
+3147: }
+3148: function shouldRunMemoryFlush(params) {
+3149: 	const state = resolveMemoryFlushGateState(params);
+3150: 	if (!state || state.totalTokens < state.threshold) return false;
+---

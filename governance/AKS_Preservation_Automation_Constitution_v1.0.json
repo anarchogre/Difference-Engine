@@ -1,0 +1,12 @@
+{
+  "principle": "AP-012",
+  "rules": [
+    "Automatic downloadable JSON artifacts for every Preservation Point.",
+    "JSON is canonical.",
+    "No ZIP by default.",
+    "No DOCX except human-consumption publications.",
+    "No PDF except publication-quality outputs.",
+    "Emit Preservation Point artifacts before continuing repository evolution.",
+    "Missing PP JSONs are repository integrity violations."
+  ]
+}

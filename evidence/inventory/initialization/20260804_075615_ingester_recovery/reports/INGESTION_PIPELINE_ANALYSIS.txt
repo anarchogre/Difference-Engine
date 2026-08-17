@@ -1,0 +1,95 @@
+===== TITLE =====
+# Contents
+
+===== HEADINGS =====
+# Contents
+# Ingestion Pipeline Specification
+# Purpose
+# Design Principles
+# Canonical Pipeline
+# Stage 1 — Artifact Intake
+# Stage 2 — Structural Parsing
+# Stage 3 — Asset Extraction
+# Stage 4 — Reference Extraction
+# Stage 5 — Queue Candidate Generation
+# Stage 6 — Validation
+# Stage 7 — Repository Mapping
+# Stage 8 — Review
+# Stage 9 — Canonical Promotion
+# Stage 10 — Publication
+# Stage 11 — Repository Index Update
+# Pipeline Guarantees
+# Pipeline Failures
+# Design Philosophy
+
+===== KEYWORDS =====
+3:# Ingestion Pipeline Specification
+11:# Purpose
+13:The Ingestion Pipeline Specification defines the canonical sequence of services that transform source artifacts into validated repository artifacts.
+15:The pipeline is deterministic.
+17:Each stage has a single responsibility.
+23:- One responsibility per stage.
+24:- Stages communicate through well-defined artifacts.
+25:- Every stage preserves provenance.
+26:- Every stage is independently testable.
+27:- Stages may be replaced without altering the pipeline contract.
+31:# Canonical Pipeline
+33:Artifact
+37:Artifact Intake
+53:Queue Candidate Generation
+57:Validation
+61:Repository Mapping
+69:Canonical Promotion
+81:# Stage 1 — Artifact Intake
+83:Purpose:
+85:Accept source artifacts.
+87:Outputs:
+89:- Artifact Record
+91:- Provenance Record
+95:# Stage 2 — Structural Parsing
+97:Purpose:
+101:Outputs:
+113:# Stage 3 — Asset Extraction
+115:Purpose:
+130:Assets retain provenance.
+134:# Stage 4 — Reference Extraction
+136:Purpose:
+144:# Stage 5 — Queue Candidate Generation
+146:Purpose:
+148:Generate provisional queue candidates.
+150:No promotion decisions occur.
+154:# Stage 6 — Validation
+156:Purpose:
+160:Validation records findings.
+162:Validation does not modify artifacts.
+166:# Stage 7 — Repository Mapping
+168:Purpose:
+172:Mapping identifies:
+174:- Related artifacts
+179:Mapping performs no modifications.
+183:# Stage 8 — Review
+185:Purpose:
+187:Evaluate queue candidates and mapping results.
+193:# Stage 9 — Canonical Promotion
+195:Purpose:
+199:Promotion preserves lineage.
+201:Promotion never destroys evidence.
+205:# Stage 10 — Publication
+207:Purpose:
+209:Publish canonical artifacts.
+215:# Stage 11 — Repository Index Update
+217:Purpose:
+223:- Artifact Index
+233:# Pipeline Guarantees
+235:The pipeline SHALL:
+238:- Preserve provenance.
+240:- Produce deterministic outputs.
+241:- Record every stage.
+245:# Pipeline Failures
+247:Failures SHALL:
+249:- Record the failure.
+251:- Preserve source artifacts.
+252:- Permit restart from the appropriate stage.
+258:The pipeline is a chain of custody.
+260:Each stage contributes information.
+262:No stage assumes authority beyond its responsibility.

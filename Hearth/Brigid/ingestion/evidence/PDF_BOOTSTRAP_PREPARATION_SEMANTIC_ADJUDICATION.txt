@@ -1,0 +1,8 @@
+status=CONVERSATION_BEARING_CANDIDATE
+file=Bootstrap Preparation Checklist.pdf
+chat_id=6a62dd8b-6a30-83ea-b3bf-385fea194b14
+chars=66502
+simple_dialogue_markers=0
+qualification_method=INDIVIDUAL_STRUCTURAL_INSPECTION
+evidence=multiple human requests and substantive ChatGPT responses survive flattened PDF extraction
+promotion=NONE

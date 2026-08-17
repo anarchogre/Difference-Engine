@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0547",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:56.110967-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/GAP_Specification_v1.0.json",
+    "original_name": "GAP_Specification_v1.0.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0547",
+    "schema_version": "0.1.0",
+    "sha256": "286d89bc91759e22015c3ef9274725bd3007a6dadb2b5deec1dff76245a93ee7",
+    "size_bytes": 448,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

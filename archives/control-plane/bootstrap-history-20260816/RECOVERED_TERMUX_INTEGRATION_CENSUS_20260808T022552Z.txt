@@ -1,0 +1,19 @@
+=== RECOVERED TERMUX INTEGRATION CENSUS ===
+2026-08-07T21:25:52-05:00
+
+=== SSH INVENTORY ===
+d	700	
+f	600	authorized_keys
+f	600	id_ed25519
+f	600	id_ed25519.pub
+f	600	known_hosts
+f	600	known_hosts.old
+
+=== PUBLIC KEY FINGERPRINTS ===
+256 SHA256:TllnOv6RpVeDv7r2G2uWSjlOel6gqLL+RmqIqSl+/Ys darth.panda@gmail.com (ED25519)
+
+=== GIT CONFIG ===
+[safe]
+
+=== RECOVERED HOOK / LIBEXEC PATHS ===
+d	libexec/DifferenceEngine-hooks

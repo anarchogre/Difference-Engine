@@ -1,0 +1,4 @@
+76254d505a541b48ee476ec746de0a612376f9c0966da8c1b9b33399c7c3ef23  workspace/operational/recovery/gpt-plus-integration/20260803T043919/test-contract-repair/backups/test_bootstrap_loader.py.before
+d411be76d99a97df8f15cfd302e00f8ea84c587e2742f947d0332f5d2ae90851  ade/kernel/tests/test_bootstrap_loader.py
+5421d39c664b755d4ed0f22f6baab198c7be9b7895a4a55e43a2185681f588c4  ade/kernel/tests/run_tests.py
+92778229e97f3d5f3c2b917e14cf88731405210cb5a00f3b0b82a4fe5d2e01f8  workspace/operational/recovery/gpt-plus-integration/20260803T043919/test-contract-repair/tests/deterministic-test-runner.txt

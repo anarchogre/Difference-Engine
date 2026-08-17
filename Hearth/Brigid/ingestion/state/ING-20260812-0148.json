@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0148",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:11.024918-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Engineering_Method_Update.json",
+    "original_name": "AKS_Engineering_Method_Update.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0148",
+    "schema_version": "0.1.0",
+    "sha256": "4ab3ae0d2b0f63c08841d6b8690b5d212dc05f72e7d3b9723e474be0bc56cb57",
+    "size_bytes": 583,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

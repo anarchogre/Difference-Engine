@@ -1,0 +1,16 @@
+=== RECOVERED PRE-COMMIT HOOK ===
+2026-08-07T21:29:10-05:00
+
+=== METADATA ===
+  File: /home/reckless-ideator/phone-evacuation/moto-g-power-2021/termux-private-home/verified-extract/.local/libexec/DifferenceEngine-hooks/pre-commit
+  size: 114       	Blocks: 8          IO Block: 4096   regular file
+Device: 259,6	Inode: 3683381     Links: 1
+Access: (0700/-rwx------)  Uid: ( 1000/reckless-ideator)   Gid: ( 1000/reckless-ideator)
+Access: 2026-08-07 21:27:04.069717109 -0500
+Modify: 2026-08-05 21:33:57.000000000 -0500
+Change: 2026-08-07 20:27:38.873550551 -0500
+ Birth: 2026-08-07 20:26:28.466333261 -0500
+
+=== CONTENT ===
+#!/data/data/com.termux/files/usr/bin/bash
+exec bash "$(git rev-parse --show-toplevel)/.githooks/pre-commit" "$@"

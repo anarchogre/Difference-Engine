@@ -1,0 +1,10 @@
+status=CONVERSATION_BEARING_CANDIDATE
+file=GitHub Access Limitations.pdf
+chat_id=6a63df62-ea3c-83ea-b933-f991dea37687
+chars=16779
+simple_dialogue_markers=0
+qualification_method=INDIVIDUAL_STRUCTURAL_INSPECTION
+human_turns=CONFIRMED
+assistant_turns=CONFIRMED
+evidence=human repository-management turn survives around line 202 followed by substantive ChatGPT repository-structure response
+promotion=NONE

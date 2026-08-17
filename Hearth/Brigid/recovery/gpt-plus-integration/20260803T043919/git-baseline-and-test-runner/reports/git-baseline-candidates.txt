@@ -1,0 +1,13 @@
+Repository/
+ade/
+architecture/
+inventory/
+queue/
+scripts/
+standards/
+workspace/
+.githooks/
+.gitinfo/
+.meta/
+.de/
+logs/

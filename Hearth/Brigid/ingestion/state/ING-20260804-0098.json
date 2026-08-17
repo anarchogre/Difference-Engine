@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260804-0098",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-04T18:01:46.711637-05:00",
+    "observed_path": "/storage/emulated/0/Download/Governance_Improvements_Implementation.md(1).txt",
+    "original_name": "Governance_Improvements_Implementation.md(1).txt",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260804-0098",
+    "schema_version": "0.1.0",
+    "sha256": "f0d08cbc34270a52c9502851ce02873832ee40f151cc91b4d6babcfe8200dfd0",
+    "size_bytes": 532170,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

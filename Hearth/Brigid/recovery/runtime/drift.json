@@ -1,0 +1,15 @@
+{
+  "degraded_checks": {
+    "drift_detection": true,
+    "file_library_verification": true,
+    "formal_test_runner": true,
+    "git_baseline": true,
+    "library_governance": true,
+    "project_configuration_verification": true,
+    "queue_recovery": false
+  },
+  "status": "DEGRADED",
+  "warnings": [
+    "DEGRADED: queue_recovery"
+  ]
+}

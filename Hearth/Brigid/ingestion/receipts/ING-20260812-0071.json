@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:06.866499-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-PRESERVATION-0020_Contradiction_Framework.json",
+  "original_name": "AKS-PRESERVATION-0020_Contradiction_Framework.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0071",
+  "schema_version": "0.1.0",
+  "sha256": "ab9af2b9b2552380e500383adb11267c58c15022a0a10f7387263d18569af283",
+  "size_bytes": 822,
+  "source_class": "manual_batch"
+}

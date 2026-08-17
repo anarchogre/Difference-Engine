@@ -1,0 +1,660 @@
+=== DEFAULT COMPACTION SETTINGS ===
+2090-		if (!prevCompaction.fromHook && prevCompaction.details) {
+2091-			const details = prevCompaction.details;
+2092-			if (Array.isArray(details.readFiles)) for (const f of details.readFiles) fileOps.read.add(f);
+2093-			if (Array.isArray(details.modifiedFiles)) for (const f of details.modifiedFiles) fileOps.edited.add(f);
+2094-		}
+2095-	}
+2096-	for (const msg of messages) extractFileOpsFromMessage(msg, fileOps);
+2097-	return fileOps;
+2098-}
+2099-function getMessageFromEntry$1(entry) {
+2100-	if (entry.type === "message") return entry.message;
+2101-	if (entry.type === "custom_message") return asAgentMessage(createCustomMessage(entry.customType, entry.content, entry.display, entry.details, entry.timestamp));
+2102-	if (entry.type === "branch_summary") return asAgentMessage(createBranchSummaryMessage(entry.summary, entry.fromId, entry.timestamp));
+2103-	if (entry.type === "compaction") return asAgentMessage(createCompactionSummaryMessage(entry.summary, entry.tokensBefore, entry.timestamp));
+2104-}
+2105-function getMessageFromEntryForCompaction(entry) {
+2106-	if (entry.type === "compaction") return;
+2107-	return getMessageFromEntry$1(entry);
+2108-}
+2109-/** Default compaction settings used by the harness. */
+2110:const DEFAULT_COMPACTION_SETTINGS = {
+2111-	enabled: true,
+2112-	reserveTokens: 16384,
+2113-	keepRecentTokens: 2e4
+2114-};
+2115-/** Calculate total context tokens from provider usage. */
+2116-function calculateContextTokens(usage) {
+2117-	if (usage.contextUsage?.state === "available") return usage.contextUsage.totalTokens;
+2118-	return usage.totalTokens || usage.input + usage.output + usage.cacheRead + usage.cacheWrite;
+2119-}
+2120-function getAssistantUsage(msg) {
+2121-	if (msg.role === "assistant" && "usage" in msg) {
+2122-		const assistantMsg = msg;
+2123-		if (assistantMsg.stopReason !== "aborted" && assistantMsg.stopReason !== "error" && assistantMsg.usage) return assistantMsg.usage;
+2124-	}
+2125-}
+2126-/** Return usage from the last successful assistant message in session entries. */
+2127-function getLastAssistantUsage(entries) {
+2128-	for (let i = entries.length - 1; i >= 0; i--) {
+2129-		const entry = entries[i];
+2130-		if (entry.type === "message") {
+2131-			const usage = getAssistantUsage(entry.message);
+2132-			if (usage) return usage;
+2133-		}
+2134-	}
+2135-}
+2136-function getLastAssistantUsageInfo(messages) {
+2137-	for (let i = messages.length - 1; i >= 0; i--) {
+2138-		const usage = getAssistantUsage(messages[i]);
+2139-		if (usage && usage.contextUsage?.state !== "unavailable") return {
+2140-			usage,
+2141-			index: i
+2142-		};
+2143-	}
+2144-}
+2145-/** Estimate context tokens for messages using provider usage when available. */
+--
+3277-	async appendMessage(message) {
+3278-		try {
+3279-			if (this.phase === "idle") await this.session.appendMessage(message);
+3280-			else this.pendingSessionWrites.push({
+3281-				type: "message",
+3282-				message
+3283-			});
+3284-		} catch (error) {
+3285-			throw normalizeHarnessError(error, "session");
+3286-		}
+3287-	}
+3288-	async compact(customInstructions) {
+3289-		if (this.phase !== "idle") throw new AgentHarnessError("busy", "compact() requires idle harness");
+3290-		this.phase = "compaction";
+3291-		try {
+3292-			const model = this.model;
+3293-			if (!model) throw new AgentHarnessError("invalid_state", "No model set for compaction");
+3294-			const auth = await this.getApiKeyAndHeaders?.(model);
+3295-			if (!auth) throw new AgentHarnessError("auth", "No auth available for compaction");
+3296-			const branchEntries = await this.session.getBranch();
+3297:			const preparationResult = prepareCompaction(branchEntries, DEFAULT_COMPACTION_SETTINGS);
+3298-			if (!preparationResult.ok) throw preparationResult.error;
+3299-			const preparation = preparationResult.value;
+3300-			if (!preparation) throw new AgentHarnessError("compaction", "Nothing to compact");
+3301-			const hookResult = await this.emitHook({
+3302-				type: "session_before_compact",
+3303-				preparation,
+3304-				branchEntries,
+3305-				customInstructions,
+3306-				signal: new AbortController().signal
+3307-			});
+3308-			if (hookResult?.cancel) throw new AgentHarnessError("compaction", "Compaction cancelled");
+3309-			const provided = hookResult?.compaction;
+3310-			const compactResult = provided ? {
+3311-				ok: true,
+3312-				value: provided
+3313-			} : await compact(preparation, model, auth.apiKey, auth.headers, customInstructions, void 0, this.thinkingLevel, void 0, this.runtime);
+3314-			if (!compactResult.ok) throw compactResult.error;
+3315-			const result = compactResult.value;
+3316-			const entryId = await this.session.appendCompaction(result.summary, result.firstKeptEntryId, result.tokensBefore, result.details, provided !== void 0);
+3317-			const entry = await this.session.getEntry(entryId);
+3318-			if (entry?.type === "compaction") await this.emitOwn({
+3319-				type: "session_compact",
+3320-				compactionEntry: entry,
+3321-				fromHook: provided !== void 0
+3322-			});
+3323-			return result;
+3324-		} catch (error) {
+3325-			throw normalizeHarnessError(error, "compaction");
+3326-		} finally {
+3327-			this.phase = "idle";
+3328-		}
+3329-	}
+3330-	async navigateTree(targetId, options) {
+3331-		if (this.phase !== "idle") throw new AgentHarnessError("busy", "navigateTree() requires idle harness");
+3332-		this.phase = "branch_summary";
+--
+4524-			return {
+4525-				type: "done",
+4526-				reason: proxyEvent.reason,
+4527-				message: partial
+4528-			};
+4529-		case "error":
+4530-			partial.stopReason = proxyEvent.reason;
+4531-			partial.errorMessage = proxyEvent.errorMessage;
+4532-			partial.usage = proxyEvent.usage;
+4533-			return {
+4534-				type: "error",
+4535-				reason: proxyEvent.reason,
+4536-				error: partial
+4537-			};
+4538-		default:
+4539-			console.warn(`Unhandled proxy event type: ${proxyEvent.type}`);
+4540-			return;
+4541-	}
+4542-}
+4543-//#endregion
+4544:export { err as $, getLastAssistantUsage as A, asAgentMessage as B, calculateContextTokens as C, findCutPoint as D, estimateTokens as E, buildSessionContext as F, createCustomMessage as G, convertToLlm as H, BRANCH_SUMMARY_PREFIX as I, BranchSummaryError as J, NodeExecutionEnv as K, BRANCH_SUMMARY_SUFFIX as L, shouldCompact as M, serializeConversation as N, findTurnStartIndex as O, Session as P, SessionError as Q, COMPACTION_SUMMARY_PREFIX as R, DEFAULT_COMPACTION_SETTINGS as S, estimateContextTokens as T, createBranchSummaryMessage as U, bashExecutionToText as V, createCompactionSummaryMessage as W, ExecutionError as X, CompactionError as Y, FileError as Z, substituteArgs as _, formatSize as a, runAgentLoop as at, generateBranchSummary as b, truncateTail as c, validateToolCall as ct, loadJsonlSessionMetadata as d, ok as et, uuidv7 as f, parseCommandArgs as g, formatPromptTemplateInvocation as h, GREP_MAX_LINE_LENGTH as i, agentLoopContinue as it, prepareCompaction as j, generateSummary as k, InMemorySessionStorage as l, resolveAgentCoreCompleteFn as lt, formatSkillInvocation as m, DEFAULT_MAX_BYTES as n, Agent as nt, truncateHead as o, runAgentLoopContinue as ot, CoreAgentHarness as p, AgentHarnessError as q, DEFAULT_MAX_LINES as r, agentLoop as rt, truncateLine as s, validateToolArguments as st, streamProxy as t, toError as tt, JsonlSessionStorage as u, resolveAgentCoreStreamFn as ut, collectEntriesForBranchSummary as v, compact as w, prepareBranchEntries as x, collectEntriesForBranchSummaryFromBranches as y, COMPACTION_SUMMARY_SUFFIX as z };
+
+=== RESERVE GETTER DEFINITIONS ===
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-163-  getLastChangelogVersion(): string | undefined;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-164-  setLastChangelogVersion(version: string): void;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-165-  getSessionDir(): string | undefined;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-166-  getDefaultProvider(): string | undefined;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-167-  getDefaultModel(): string | undefined;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-168-  setDefaultProvider(provider: string): void;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-169-  setDefaultModel(modelId: string): void;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-170-  setDefaultModelAndProvider(provider: string, modelId: string): void;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-171-  getSteeringMode(): "all" | "one-at-a-time";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-172-  setSteeringMode(mode: "all" | "one-at-a-time"): void;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-173-  getFollowUpMode(): "all" | "one-at-a-time";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-174-  setFollowUpMode(mode: "all" | "one-at-a-time"): void;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-175-  getTheme(): string | undefined;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-176-  setTheme(theme: string): void;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-177-  getDefaultThinkingLevel(): "off" | "minimal" | "low" | "medium" | "high" | "xhigh" | "max" | undefined;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-178-  setDefaultThinkingLevel(level: "off" | "minimal" | "low" | "medium" | "high" | "xhigh" | "max"): void;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-179-  getTransport(): TransportSetting;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-180-  setTransport(transport: TransportSetting): void;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-181-  getCompactionEnabled(): boolean;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-182-  setCompactionEnabled(enabled: boolean): void;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts:183:  getCompactionReserveTokens(): number;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-184-  getCompactionKeepRecentTokens(): number;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-185-  getCompactionSettings(): {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-186-    enabled: boolean;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-187-    reserveTokens: number;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-188-    keepRecentTokens: number;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-189-  };
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-190-  getBranchSummarySettings(): {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-191-    reserveTokens: number;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-192-    skipPrompt: boolean;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-193-  };
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-194-  getBranchSummarySkipPrompt(): boolean;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-195-  getRetryEnabled(): boolean;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-196-  setRetryEnabled(enabled: boolean): void;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-197-  getRetrySettings(): {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-198-    enabled: boolean;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-199-    maxRetries: number;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-200-    baseDelayMs: number;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-201-  };
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-202-  getHttpIdleTimeoutMs(): number;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-203-  setHttpIdleTimeoutMs(timeoutMs: number): void;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-204-  getProviderRetrySettings(): {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-205-    timeoutMs?: number;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-206-    maxRetries?: number;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-207-    maxRetryDelayMs: number;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-208-  };
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-209-  getHideThinkingBlock(): boolean;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-210-  setHideThinkingBlock(hide: boolean): void;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-211-  getShellPath(): string | undefined;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-212-  setShellPath(path: string | undefined): void;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-213-  getQuietStartup(): boolean;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-214-  setQuietStartup(quiet: boolean): void;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-215-  getShellCommandPrefix(): string | undefined;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-216-  setShellCommandPrefix(prefix: string | undefined): void;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-217-  getNpmCommand(): string[] | undefined;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/source-info-BzS4w6_z.d.ts-218-  setNpmCommand(command: string[] | undefined): void;
+--
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12726-			abortSessionForYield = () => {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12727-				yieldAbortSettled = abortActiveSession();
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12728-			};
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12729-			queueYieldInterruptForSession = () => {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12730-				queueSessionsYieldInterruptMessage(activeSession);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12731-			};
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12732-			const contextTokenBudgetForGuard = Math.max(1, Math.floor(params.contextTokenBudget ?? params.model.contextWindow ?? params.model.maxTokens ?? 2e5));
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12733-			const toolResultMaxCharsForGuard = resolveLiveToolResultMaxChars({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12734-				contextWindowTokens: contextTokenBudgetForGuard,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12735-				cfg: params.config,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12736-				agentId: sessionAgentId
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12737-			});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12738-			const midTurnPrecheckEnabled = params.config?.agents?.defaults?.compaction?.midTurnPrecheck?.enabled === true;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12739-			let pendingMidTurnPrecheckRequest = null;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12740-			const onMidTurnPrecheck = (request) => {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12741-				pendingMidTurnPrecheckRequest = request;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12742-			};
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12743-			const midTurnPrecheckOptions = midTurnPrecheckEnabled ? { midTurnPrecheck: {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12744-				enabled: true,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12745-				contextTokenBudget: contextTokenBudgetForGuard,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js:12746:				reserveTokens: () => settingsManager.getCompactionReserveTokens(),
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12747-				toolResultMaxChars: toolResultMaxCharsForGuard,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12748-				getSystemPrompt: () => systemPromptText,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12749-				getPrePromptMessageCount: () => prePromptMessageCount,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12750-				onMidTurnPrecheck
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12751-			} } : {};
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12752-			if (activeContextEngine?.info.ownsCompaction === true) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12753-				const selectedContextEngineId = activeContextEngine.info.id;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12754-				const contextEngineLoopRuntimeSettings = buildContextEngineRuntimeSettings({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12755-					contextEngineHost: OPENCLAW_EMBEDDED_CONTEXT_ENGINE_HOST,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12756-					provider: params.provider,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12757-					requestedModel: params.requestedModelId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12758-					resolvedModel: params.modelId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12759-					selectedContextEngineId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12760-					contextEngineSelectionSource: selectedContextEngineId === "legacy" ? "default" : "configured",
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12761-					promptTokenBudget: params.contextTokenBudget,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12762-					fallbackReason: params.fallbackReason,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12763-					degradedReason: params.degradedReason
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12764-				});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12765-				const removeContextEngineLoopHook = installContextEngineLoopHook({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12766-					agent: activeSession.agent,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12767-					contextEngine: activeContextEngine,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12768-					sessionId: params.sessionId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12769-					sessionKey: params.sessionKey,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12770-					sessionFile: params.sessionFile,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12771-					tokenBudget: params.contextTokenBudget,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12772-					modelId: params.modelId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12773-					...transcriptPolicy.repairToolUseResultPairing ? { repairAssembledMessages: (messages) => repairAttemptToolUseResultPairing(messages, isOpenAIResponsesApi) } : {},
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12774-					getPrePromptMessageCount: () => prePromptMessageCount,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12775-					onAfterTurnCheckpoint: (messageCount) => {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12776-						contextEngineAfterTurnCheckpoint = messageCount;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12777-					},
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12778-					getRuntimeContext: ({ messages, prePromptMessageCount: loopPrePromptMessageCount }) => buildAfterTurnRuntimeContext({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12779-						attempt: params,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12780-						workspaceDir: effectiveWorkspace,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12781-						cwd: effectiveCwd,
+--
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13201-					}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13202-					if (params.sessionKey && params.config && !isRawModelRun) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13203-						const activeSubagentPromptAddition = buildActiveSubagentSystemPromptAddition({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13204-							cfg: params.config,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13205-							controllerSessionKey: params.sessionKey,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13206-							hasSessionsYield: capabilityToolNames.has("sessions_yield")
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13207-						});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13208-						if (activeSubagentPromptAddition) setActiveSessionSystemPrompt(prependSystemPromptAddition({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13209-							systemPrompt: systemPromptText,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13210-							systemPromptAddition: activeSubagentPromptAddition
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13211-						}));
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13212-					}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13213-					const heartbeatSummary = params.config && sessionAgentId ? resolveHeartbeatSummaryForAgent(params.config, sessionAgentId) : void 0;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13214-					const truncated = limitHistoryTurns(filterHeartbeatTranscriptArtifacts(validated, heartbeatSummary?.ackMaxChars, heartbeatSummary?.prompt), getHistoryLimitFromSessionKey(params.sessionKey, params.config));
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13215-					const limited = transcriptPolicy.repairToolUseResultPairing ? repairAttemptToolUseResultPairing(truncated, isOpenAIResponsesApi) : truncated;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13216-					cacheTrace?.recordStage("session:limited", { messages: limited });
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13217-					if (limited.length > 0 || prior.length > 0) activeSession.agent.state.messages = limited;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13218-				}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13219-				if (activeContextEngine) try {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13220-					const preassemblyContextEngineMessagesForPrecheck = activeSession.messages.slice();
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js:13221:					const contextEngineAssembleReserveTokens = Math.max(0, Math.floor(settingsManager.getCompactionReserveTokens()));
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13222-					const contextEngineAssembleContextTokenBudget = Math.max(1, Math.floor(params.contextTokenBudget ?? params.model.contextWindow ?? params.model.maxTokens ?? 2e5));
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13223-					const contextEngineAssemblePromptBudget = Math.max(1, contextEngineAssembleContextTokenBudget - contextEngineAssembleReserveTokens);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13224-					const contextEngineAssembleRenderedPromptTokens = estimateRenderedLlmBoundaryTokenPressure({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13225-						systemPrompt: systemPromptText,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13226-						prompt: params.prompt ?? ""
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13227-					});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13228-					const contextEngineAssembleMessageBudget = Math.max(1, contextEngineAssemblePromptBudget - contextEngineAssembleRenderedPromptTokens);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13229-					const assembled = await assembleHarnessContextEngine({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13230-						contextEngine: activeContextEngine,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13231-						sessionId: params.sessionId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13232-						sessionKey: params.sessionKey,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13233-						messages: activeSession.messages,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13234-						tokenBudget: contextEngineAssembleMessageBudget,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13235-						availableTools: new Set(capabilityToolNames),
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13236-						citationsMode: params.config?.memory?.citations,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13237-						modelId: params.modelId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13238-						maxOutputTokens: contextEngineAssembleReserveTokens,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13239-						contextEngineHostSupport: OPENCLAW_EMBEDDED_CONTEXT_ENGINE_HOST,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13240-						providerId: params.provider,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13241-						requestedModelId: params.requestedModelId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13242-						fallbackReason: params.fallbackReason,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13243-						degradedReason: params.degradedReason,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13244-						...params.prompt !== void 0 ? { prompt: params.prompt } : {}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13245-					});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13246-					if (!assembled) throw new Error("context engine assemble returned no result");
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13247-					const assembledMessages = transcriptPolicy.repairToolUseResultPairing ? repairAttemptToolUseResultPairing(assembled.messages, isOpenAIResponsesApi) : assembled.messages;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13248-					if (assembledMessages !== activeSession.messages) activeSession.agent.state.messages = assembledMessages;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13249-					contextEnginePromptAuthority = assembled.promptAuthority ?? "assembled";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13250-					contextEngineAssemblySucceeded = true;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13251-					if (contextEnginePromptAuthority === "preassembly_may_overflow") unwindowedContextEngineMessagesForPrecheck = preassemblyContextEngineMessagesForPrecheck;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13252-					if (assembled.systemPromptAddition) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13253-						setActiveSessionSystemPrompt(prependSystemPromptAddition({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13254-							systemPrompt: systemPromptText,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13255-							systemPromptAddition: assembled.systemPromptAddition
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-13256-						}));
+--
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14049-						messages: activeSession.messages,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14050-						runtimeOnly: promptSubmission.runtimeOnly,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14051-						imageCount: imageResult.images.length
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14052-					});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14053-					if (promptSkipReason) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14054-						skipPromptSubmission = true;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14055-						const skipContext = `runId=${params.runId} sessionId=${params.sessionId} trigger=${params.trigger} provider=${params.provider}/${params.modelId}`;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14056-						if (promptSkipReason === "blank_user_prompt") log$2.warn(`embedded run prompt skipped: blank user prompt ${skipContext}`);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14057-						else log$2.info(`embedded run prompt skipped: empty prompt/history/images ${skipContext}`);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14058-						trajectoryRecorder?.recordEvent("prompt.skipped", {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14059-							reason: promptSkipReason,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14060-							prompt: promptForModel,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14061-							messages: activeSession.messages,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14062-							imagesCount: imageResult.images.length
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14063-						});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14064-					}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14065-					const msgCount = activeSession.messages.length;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14066-					const systemLen = systemPromptText?.length ?? 0;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14067-					const promptLen = effectivePrompt.length;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14068-					const sessionSummary = summarizeSessionContext(activeSession.messages);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js:14069:					const reserveTokens = settingsManager.getCompactionReserveTokens();
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14070-					emitTrustedDiagnosticEvent({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14071-						type: "context.assembled",
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14072-						runId: params.runId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14073-						...params.sessionKey && { sessionKey: params.sessionKey },
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14074-						...params.sessionId && { sessionId: params.sessionId },
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14075-						provider: params.provider,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14076-						model: params.modelId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14077-						...params.messageChannel ?? params.messageProvider ? { channel: params.messageChannel ?? params.messageProvider } : {},
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14078-						trigger: params.trigger,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14079-						messageCount: msgCount,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14080-						historyTextChars: sessionSummary.totalTextChars,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14081-						historyImageBlocks: sessionSummary.totalImageBlocks,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14082-						maxMessageTextChars: sessionSummary.maxMessageTextChars,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14083-						systemPromptChars: systemLen,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14084-						promptChars: promptLen,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14085-						promptImages: imageResult.images.length,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14086-						contextTokenBudget,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14087-						reserveTokens,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14088-						trace: freezeDiagnosticTraceContext(createChildDiagnosticTraceContext(runTrace))
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14089-					});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14090-					params.onExecutionPhase?.({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14091-						phase: "context_assembled",
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14092-						provider: params.provider,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14093-						model: params.modelId
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14094-					});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14095-					if (log$2.isEnabled("debug")) log$2.debug(`[context-diag] pre-prompt: sessionKey=${params.sessionKey ?? params.sessionId} messages=${msgCount} roleCounts=${sessionSummary.roleCounts} historyTextChars=${sessionSummary.totalTextChars} maxMessageTextChars=${sessionSummary.maxMessageTextChars} historyImageBlocks=${sessionSummary.totalImageBlocks} systemPromptChars=${systemLen} promptChars=${promptLen} promptImages=${imageResult.images.length} provider=${params.provider}/${params.modelId} sessionFile=${params.sessionFile}`);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14096-					const llmBoundaryPromptForPrecheck = normalizeCurrentPromptTextForLlmBoundary({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14097-						prompt: promptForModel,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14098-						...boundaryTimezone ? { timezone: boundaryTimezone } : {},
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14099-						...includeBoundaryTimestamp ? {} : { includeTimestamp: false },
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14100-						...typeof preparedUserTurnMessage?.timestamp === "number" ? { currentUserTimestamp: preparedUserTurnMessage.timestamp } : {}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14101-					});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14102-					if (!skipPromptSubmission && !isRawModelRun && hookRunner?.hasHooks("llm_input")) hookRunner.runLlmInput({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14103-						runId: params.runId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-14104-						sessionId: params.sessionId,
+--
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3464-		this.markModified("defaultThinkingLevel");
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3465-		this.save();
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3466-	}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3467-	getTransport() {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3468-		return this.settings.transport ?? "auto";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3469-	}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3470-	setTransport(transport) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3471-		this.globalSettings.transport = transport;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3472-		this.markModified("transport");
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3473-		this.save();
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3474-	}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3475-	getCompactionEnabled() {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3476-		return this.settings.compaction?.enabled ?? true;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3477-	}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3478-	setCompactionEnabled(enabled) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3479-		if (!this.globalSettings.compaction) this.globalSettings.compaction = {};
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3480-		this.globalSettings.compaction.enabled = enabled;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3481-		this.markModified("compaction", "enabled");
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3482-		this.save();
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3483-	}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js:3484:	getCompactionReserveTokens() {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3485-		return this.settings.compaction?.reserveTokens ?? 16384;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3486-	}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3487-	getCompactionKeepRecentTokens() {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3488-		return this.settings.compaction?.keepRecentTokens ?? 2e4;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3489-	}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3490-	getCompactionSettings() {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3491-		return {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3492-			enabled: this.getCompactionEnabled(),
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js:3493:			reserveTokens: this.getCompactionReserveTokens(),
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3494-			keepRecentTokens: this.getCompactionKeepRecentTokens()
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js-3495-		};
+
+=== COMPACTION SETTINGS SETTERS ===
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1818-	for (const entry of entries.toSorted(sortForActiveLeaf)) emitSubtree(entry);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1819-	return ordered;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1820-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1821-function buildSuccessorHeader(params) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1822-	return {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1823-		type: "session",
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1824-		version: 3,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1825-		id: params.sessionId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1826-		timestamp: params.timestamp,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1827-		cwd: params.previousHeader?.cwd || params.cwd,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1828-		parentSession: params.parentSession
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1829-	};
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1830-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1831-function resolveSuccessorSessionFile(params) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1832-	const fileTimestamp = params.timestamp.replace(/[:.]/g, "-");
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1833-	return path.join(path.dirname(params.sessionFile), `${fileTimestamp}_${params.sessionId}.jsonl`);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1834-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1835-//#endregion
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1836-//#region src/agents/agent-hooks/compaction-safeguard-runtime.ts
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1837-const registry$1 = createSessionManagerRuntimeRegistry();
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js:1838:const setCompactionSafeguardRuntime = registry$1.set;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1839-const getCompactionSafeguardRuntime = registry$1.get;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1840-/** Stores a human-readable compaction cancel reason on the session runtime state. */
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js:1841:function setCompactionSafeguardCancelReason(sessionManager, reason) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1842-	const current = getCompactionSafeguardRuntime(sessionManager);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1843-	const trimmed = reason?.trim();
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1844-	if (!current) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1845-		if (!trimmed) return;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js:1846:		setCompactionSafeguardRuntime(sessionManager, { cancelReason: trimmed });
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1847-		return;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1848-	}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1849-	const next = { ...current };
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1850-	if (trimmed) next.cancelReason = trimmed;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1851-	else delete next.cancelReason;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js:1852:	setCompactionSafeguardRuntime(sessionManager, next);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1853-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1854-/** Reads and clears the pending compaction cancel reason for one session manager. */
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1855-function consumeCompactionSafeguardCancelReason(sessionManager) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1856-	const current = getCompactionSafeguardRuntime(sessionManager);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1857-	const reason = current?.cancelReason?.trim();
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1858-	if (!reason) return null;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1859-	const next = { ...current };
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1860-	delete next.cancelReason;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js:1861:	setCompactionSafeguardRuntime(sessionManager, Object.keys(next).length > 0 ? next : null);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1862-	return reason;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1863-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1864-//#endregion
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1865-//#region src/auto-reply/reply/post-compaction-context.ts
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1866-const MAX_CONTEXT_CHARS = 1800;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1867-const DEFAULT_POST_COMPACTION_SECTIONS = ["Session Startup", "Red Lines"];
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1868-const LEGACY_POST_COMPACTION_SECTIONS = ["Every Session", "Safety"];
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1869-function matchesSectionSet(sectionNames, expectedSections) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1870-	if (sectionNames.length !== expectedSections.length) return false;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1871-	const counts = /* @__PURE__ */ new Map();
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1872-	for (const name of expectedSections) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1873-		const normalized = normalizeLowercaseStringOrEmpty(name);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1874-		counts.set(normalized, (counts.get(normalized) ?? 0) + 1);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1875-	}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1876-	for (const name of sectionNames) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1877-		const normalized = normalizeLowercaseStringOrEmpty(name);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1878-		const count = counts.get(normalized);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1879-		if (!count) return false;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1880-		if (count === 1) counts.delete(normalized);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1881-		else counts.set(normalized, count - 1);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1882-	}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1883-	return counts.size === 0;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1884-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1885-async function readPostCompactionContext(workspaceDir, options) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1886-	const cfg = options?.cfg;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1887-	const agentId = options?.agentId;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1888-	const effectiveNowMs = options?.nowMs;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1889-	const agentsPath = path.join(workspaceDir, "AGENTS.md");
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1890-	try {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-1891-		const opened = await openRootFile({
+--
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2699-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2700-/** Registers compaction hooks that summarize, preserve recent turns, and audit output quality. */
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2701-function compactionSafeguardExtension(api) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2702-	api.on("session_before_compact", async (event, ctx) => {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2703-		const { preparation, customInstructions: eventInstructions, signal } = event;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2704-		const rawTurnPrefixMessages = preparation.turnPrefixMessages ?? [];
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2705-		let baseMessagesToSummarize = stripRuntimeContextCustomMessages(preparation.messagesToSummarize);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2706-		let baseTurnPrefixMessages = stripRuntimeContextCustomMessages(rawTurnPrefixMessages);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2707-		let hasRealSummarizable = containsRealConversation(baseMessagesToSummarize);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2708-		let hasRealTurnPrefix = containsRealConversation(baseTurnPrefixMessages);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2709-		if (!hasRealSummarizable && !hasRealTurnPrefix) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2710-			const branchMessages = stripRuntimeContextCustomMessages(collectSessionBranchMessages(ctx.sessionManager));
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2711-			if (containsRealConversation(branchMessages)) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2712-				log.info("Compaction safeguard: using session branch messages after compaction preparation omitted real conversation content.");
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2713-				baseMessagesToSummarize = branchMessages;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2714-				baseTurnPrefixMessages = [];
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2715-				hasRealSummarizable = true;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2716-				hasRealTurnPrefix = false;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2717-			}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2718-		}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js:2719:		setCompactionSafeguardCancelReason(ctx.sessionManager, void 0);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2720-		if (!hasRealSummarizable && !hasRealTurnPrefix) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2721-			log.info("Compaction safeguard: no real conversation messages to summarize; writing compaction boundary to suppress re-trigger loop.");
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2722-			return { compaction: {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2723-				summary: buildStructuredFallbackSummary(preparation.previousSummary),
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2724-				firstKeptEntryId: preparation.firstKeptEntryId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2725-				tokensBefore: preparation.tokensBefore
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2726-			} };
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2727-		}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2728-		const { readFiles, modifiedFiles } = computeFileLists(preparation.fileOps);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2729-		const fileOpsSummary = formatFileOperations(readFiles, modifiedFiles);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2730-		const toolFailureSection = formatToolFailuresSection(collectToolFailures([...baseMessagesToSummarize, ...baseTurnPrefixMessages]));
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2731-		const runtime = getCompactionSafeguardRuntime(ctx.sessionManager);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2732-		const customInstructions = resolveCompactionInstructions(eventInstructions, runtime?.customInstructions);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2733-		const summarizationInstructions = {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2734-			identifierPolicy: runtime?.identifierPolicy,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2735-			identifierInstructions: runtime?.identifierInstructions
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2736-		};
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2737-		const identifierPolicy = runtime?.identifierPolicy ?? "strict";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2738-		const providerId = runtime?.provider;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2739-		const turnPrefixMessages = baseTurnPrefixMessages;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2740-		const recentTurnsPreserve = resolveRecentTurnsPreserve(runtime?.recentTurnsPreserve);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2741-		const { preservedMessages: providerPreservedMessages } = splitPreservedRecentTurns({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2742-			messages: baseMessagesToSummarize,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2743-			recentTurnsPreserve
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2744-		});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2745-		const preservedTurnsSection = formatPreservedTurnsSection(providerPreservedMessages);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2746-		const splitTurnSection = preparation.isSplitTurn ? formatSplitTurnContextSection(turnPrefixMessages) : "";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2747-		const structuredInstructions = buildCompactionStructureInstructions(customInstructions, summarizationInstructions);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2748-		if (providerId) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2749-			const compactionProvider = getCompactionProvider(providerId);
+--
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2767-					tokensBefore: preparation.tokensBefore,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2768-					details: {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2769-						readFiles,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2770-						modifiedFiles
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2771-					}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2772-				} };
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2773-				log.info("Compaction provider did not produce a result; falling back to LLM path.");
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2774-			} catch (err) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2775-				if (signal?.aborted) throw err;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2776-				if (!isAbortError(err) && isTimeoutError(err)) throw err;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2777-				log.warn(`Compaction provider path failed unexpectedly: ${err instanceof Error ? err.message : String(err)}`);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2778-			}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2779-			else log.warn(`Compaction provider "${providerId}" is configured but not registered. Falling back to LLM.`);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2780-		}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2781-		const model = ctx.model ?? runtime?.model;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2782-		if (!model) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2783-			if (!ctx.model && !runtime?.model && !missedModelWarningSessions.has(ctx.sessionManager)) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2784-				missedModelWarningSessions.add(ctx.sessionManager);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2785-				log.warn("[compaction-safeguard] Both ctx.model and runtime.model are undefined. Compaction summarization will not run. This indicates extensionRunner.initialize() was not called and model was not passed through runtime registry.");
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2786-			}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js:2787:			setCompactionSafeguardCancelReason(ctx.sessionManager, "Compaction safeguard could not resolve a summarization model.");
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2788-			return { cancel: true };
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2789-		}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2790-		const authResult = await resolveModelAuth(ctx, model);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2791-		if (!authResult.ok) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js:2792:			setCompactionSafeguardCancelReason(ctx.sessionManager, authResult.reason);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2793-			return { cancel: true };
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2794-		}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2795-		const apiKey = authResult.apiKey ?? "";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2796-		const authHeaders = authResult.headers;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2797-		try {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2798-			const modelContextWindow = resolveContextWindowTokens$1(model);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2799-			const contextWindowTokens = runtime?.contextWindowTokens ?? modelContextWindow;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2800-			let messagesToSummarize = baseMessagesToSummarize;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2801-			const headers = buildCompactionSummaryHeaders({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2802-				model,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2803-				messages: messagesToSummarize,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2804-				headers: authHeaders
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2805-			});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2806-			const qualityGuardEnabled = runtime?.qualityGuardEnabled ?? false;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2807-			const qualityGuardMaxRetries = resolveQualityGuardMaxRetries(runtime?.qualityGuardMaxRetries);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2808-			const maxHistoryShare = runtime?.maxHistoryShare ?? .5;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2809-			const tokensBefore = typeof preparation.tokensBefore === "number" && Number.isFinite(preparation.tokensBefore) ? preparation.tokensBefore : void 0;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2810-			let droppedSummary;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2811-			if (tokensBefore !== void 0) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2812-				const { newContentTokens, maxHistoryTokens, pruned } = await buildHistoryPrunePlanWithWorker({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2813-					messagesToSummarize,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2814-					turnPrefixMessages,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2815-					tokensBefore,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2816-					contextWindowTokens,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2817-					maxHistoryShare,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2818-					parts: 2,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2819-					signal
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2820-				});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2821-				if (newContentTokens > maxHistoryTokens && pruned) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2822-					if (pruned.droppedChunks > 0) {
+--
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2941-			const suffix = assembleSuffix({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2942-				splitTurnSection: lastSplitTurnSection,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2943-				preservedTurnsSection: preservedTurnsSectionLocal,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2944-				toolFailureSection,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2945-				fileOpsSummary,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2946-				workspaceContext
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2947-			});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2948-			summary = capCompactionSummaryPreservingSuffix(lastHistorySummary || summary, suffix);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2949-			return { compaction: {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2950-				summary,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2951-				firstKeptEntryId: preparation.firstKeptEntryId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2952-				tokensBefore: preparation.tokensBefore,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2953-				details: {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2954-					readFiles,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2955-					modifiedFiles
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2956-				}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2957-			} };
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2958-		} catch (error) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2959-			const message = formatErrorMessage(error);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2960-			log.warn(`Compaction summarization failed; cancelling compaction to preserve history: ${message}`);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js:2961:			setCompactionSafeguardCancelReason(ctx.sessionManager, `Compaction safeguard could not summarize the session: ${message}`);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2962-			return { cancel: true };
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2963-		}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2964-	});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2965-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2966-//#endregion
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2967-//#region src/agents/agent-hooks/context-pruning/tools.ts
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2968-/** Tool-name matching helpers for context-pruning eligibility. */
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2969-function normalizeGlob(value) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2970-	return normalizeLowercaseStringOrEmpty(value ?? "");
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2971-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2972-/** Build a deny-first allowlist predicate for context-prunable tool names. */
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2973-function makeToolPrunablePredicate(match) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2974-	const deny = compileGlobPatterns({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2975-		raw: match.deny,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2976-		normalize: normalizeGlob
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2977-	});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2978-	const allow = compileGlobPatterns({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2979-		raw: match.allow,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2980-		normalize: normalizeGlob
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2981-	});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2982-	return (toolName) => {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2983-		const normalized = normalizeGlob(toolName);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2984-		if (matchesAnyGlobPattern(normalized, deny)) return false;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2985-		if (allow.length === 0) return true;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2986-		return matchesAnyGlobPattern(normalized, allow);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2987-	};
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2988-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2989-//#endregion
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2990-//#region src/agents/agent-hooks/context-pruning/pruner.ts
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-2991-const IMAGE_CHAR_ESTIMATE = 8e3;
+--
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3406-		lastCacheTouchAt: readLastCacheTtlTimestamp(params.sessionManager, {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3407-			provider: params.provider,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3408-			modelId: params.modelId
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3409-		})
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3410-	});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3411-	return contextPruningExtension;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3412-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3413-function buildEmbeddedExtensionFactories(params) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3414-	const factories = [];
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3415-	if (resolveEffectiveCompactionMode(params.cfg) === "safeguard") {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3416-		const compactionCfg = params.cfg?.agents?.defaults?.compaction;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3417-		const qualityGuardCfg = compactionCfg?.qualityGuard;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3418-		const contextWindowInfo = resolveContextWindowInfo({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3419-			cfg: params.cfg,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3420-			provider: params.provider,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3421-			modelId: params.modelId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3422-			modelContextTokens: params.model?.contextTokens,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3423-			modelContextWindow: params.model?.contextWindow,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3424-			defaultTokens: DEFAULT_CONTEXT_TOKENS
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3425-		});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js:3426:		setCompactionSafeguardRuntime(params.sessionManager, {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3427-			maxHistoryShare: compactionCfg?.maxHistoryShare,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3428-			contextWindowTokens: contextWindowInfo.tokens,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/attempt.model-diagnostic-events-CfZQM0hs.js-3429-			identifierPolicy: compactionCfg?.identifierPolicy,

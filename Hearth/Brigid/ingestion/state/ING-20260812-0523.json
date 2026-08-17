@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0523",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:52.464331-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Instituonal Knowledge Graph.md",
+    "original_name": "Instituonal Knowledge Graph.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0523",
+    "schema_version": "0.1.0",
+    "sha256": "b458831af80466e7692ad80ccd564b6b8b61d4e0695f7b7bd6d7ca6e304a1f76",
+    "size_bytes": 873,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

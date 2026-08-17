@@ -1,0 +1,125 @@
+=== CURRENT MEMORY FLUSH CONFIG ===
+Config path not found: agents.defaults.compaction.memoryFlush. Run openclaw config validate to inspect config shape.
+
+=== PAN MODEL CONFIG ===
+{
+  "baseUrl": "http://127.0.0.1:18080/v1",
+  "apiKey": "__OPENCLAW_REDACTED__",
+  "api": "openai-completions",
+  "timeoutSeconds": 600,
+  "models": [
+    {
+      "id": "pan-qwen",
+      "name": "Pan Qwen 3.5 4B",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "contextWindow": 16384,
+      "maxTokens": 2048,
+      "compat": {
+        "supportsTools": true
+      },
+      "api": "openai-completions"
+    }
+  ]
+}
+
+=== MEMORY FLUSH PLAN IMPLEMENTATION ===
+77:function resolveMemoryFlushPlan(params) {
+140:export { registerMemoryRuntimeForPlugin as _, hasMemoryRuntime as a, listMemoryPromptSupplements as c, registerMemoryFlushPlanResolver as d, registerMemoryFlushPlanResolverForPlugin as f, registerMemoryRuntime as g, registerMemoryPromptSupplement as h, getMemoryRuntime as i, registerMemoryCapability as l, registerMemoryPromptSectionForPlugin as m, clearMemoryPluginState as n, listActiveMemoryPublicArtifacts as o, registerMemoryPromptSection as p, getMemoryCapabilityRegistration as r, listMemoryCorpusSupplements as s, buildMemoryPromptSection as t, registerMemoryCorpusSupplement as u, resolveMemoryFlushPlan as v, restoreMemoryPluginState as y };
+67-function listMemoryPromptSupplements() {
+68-	return [...memoryPluginState.promptSupplements];
+69-}
+70-/** @deprecated Use registerMemoryCapability(pluginId, { flushPlanResolver }) instead. */
+71-function registerMemoryFlushPlanResolver(resolver) {
+72-	registerMemoryFlushPlanResolverForPlugin(LEGACY_MEMORY_COMPAT_PLUGIN_ID, resolver);
+73-}
+74-function registerMemoryFlushPlanResolverForPlugin(pluginId, resolver) {
+75-	patchMemoryCapability(pluginId, { flushPlanResolver: resolver });
+76-}
+77:function resolveMemoryFlushPlan(params) {
+78-	return memoryPluginState.capability?.capability.flushPlanResolver?.(params) ?? null;
+79-}
+80-/** @deprecated Use registerMemoryCapability(pluginId, { runtime }) instead. */
+81-function registerMemoryRuntime(runtime) {
+82-	registerMemoryRuntimeForPlugin(LEGACY_MEMORY_COMPAT_PLUGIN_ID, runtime);
+83-}
+84-function registerMemoryRuntimeForPlugin(pluginId, runtime) {
+85-	patchMemoryCapability(pluginId, { runtime });
+86-}
+87-function getMemoryRuntime() {
+88-	return memoryPluginState.capability?.capability.runtime;
+89-}
+90-function hasMemoryRuntime() {
+91-	return getMemoryRuntime() !== void 0;
+92-}
+93-function cloneMemoryPublicArtifact(artifact) {
+94-	const agentIds = Array.isArray(artifact.agentIds) ? artifact.agentIds : [];
+95-	return {
+96-		...artifact,
+97-		agentIds: [...agentIds]
+98-	};
+99-}
+100-function isValidMemoryPublicArtifact(artifact) {
+101-	return typeof artifact?.kind === "string" && typeof artifact.workspaceDir === "string" && typeof artifact.relativePath === "string" && typeof artifact.absolutePath === "string" && typeof artifact.contentType === "string";
+102-}
+103-async function listActiveMemoryPublicArtifacts(params) {
+104-	const pluginId = memoryPluginState.capability?.pluginId;
+105-	const listed = await memoryPluginState.capability?.capability.publicArtifacts?.listArtifacts(params) ?? [];
+106-	if (!Array.isArray(listed)) {
+107-		log.warn(`ignoring public memory artifacts from plugin "${pluginId}": not an array`);
+108-		return [];
+109-	}
+110-	const artifacts = listed.filter(isValidMemoryPublicArtifact);
+111-	if (artifacts.length < listed.length) log.warn(`ignoring ${listed.length - artifacts.length} malformed public memory artifact(s) from plugin "${pluginId}": artifacts must include string kind, workspaceDir, relativePath, absolutePath, and contentType`);
+112-	return artifacts.map(cloneMemoryPublicArtifact).toSorted((left, right) => {
+113-		const workspaceOrder = left.workspaceDir.localeCompare(right.workspaceDir);
+114-		if (workspaceOrder !== 0) return workspaceOrder;
+115-		const relativePathOrder = left.relativePath.localeCompare(right.relativePath);
+116-		if (relativePathOrder !== 0) return relativePathOrder;
+117-		const kindOrder = left.kind.localeCompare(right.kind);
+118-		if (kindOrder !== 0) return kindOrder;
+119-		const contentTypeOrder = left.contentType.localeCompare(right.contentType);
+120-		if (contentTypeOrder !== 0) return contentTypeOrder;
+121-		const agentOrder = left.agentIds.join("\0").localeCompare(right.agentIds.join("\0"));
+122-		if (agentOrder !== 0) return agentOrder;
+
+=== SERVER THRESHOLD IMPLEMENTATION ===
+	for (const source of sources.toReversed()) {
+		const value = source?.[key];
+		if (typeof value === "number" && Number.isFinite(value) && value > 0) return Math.floor(value);
+	}
+}
+function resolveResponsesServerCompactionThreshold(params) {
+	const provider = params.provider?.trim();
+	const modelId = params.modelId?.trim();
+	if (!provider || !modelId) return;
+	const legacyKey = legacyModelKey(provider, modelId);
+	const providerConfig = params.cfg?.models?.providers?.[provider];
+	const modelConfig = params.cfg?.agents?.defaults?.models?.[modelKey(provider, modelId)] ?? (legacyKey ? params.cfg?.agents?.defaults?.models?.[legacyKey] : void 0);
+	const providerModelConfig = providerConfig?.models?.find((entry) => entry.id === modelId);
+	const sources = [
+		asRecord(providerConfig?.params),
+		asRecord(providerModelConfig?.params),
+		asRecord(params.cfg?.agents?.defaults?.params),
+		asRecord(modelConfig?.params)
+	];
+	const serverCompaction = resolveBooleanParam(sources, "responsesServerCompaction");
+	if (!(provider === "openai" ? serverCompaction !== false : serverCompaction === true)) return;
+	return resolvePositiveIntegerParam(sources, "responsesCompactThreshold");
+}
+function resolveMemoryFlushGateState(params) {
+	if (!params.entry) return null;
+	const totalTokens = resolvePositiveTokenCount(params.tokenCount) ?? resolveFreshSessionTotalTokens(params.entry);
+	if (!totalTokens || totalTokens <= 0) return null;
+	const contextWindow = Math.max(1, Math.floor(params.contextWindowTokens));
+	const reserveTokens = Math.max(0, Math.floor(params.reserveTokensFloor));
+	const softThreshold = Math.max(0, Math.floor(params.softThresholdTokens));
+	const threshold = Math.max(0, contextWindow - reserveTokens - softThreshold, Math.floor(params.minimumThresholdTokens ?? 0));

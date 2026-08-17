@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0654",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:49:13.490952-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Rebuild.md/PP-001 SMELTING BOOTSTRAP.md",
+    "original_name": "PP-001 SMELTING BOOTSTRAP.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0654",
+    "schema_version": "0.1.0",
+    "sha256": "01f1cf3868456916ec6730a98e69dd96cd8b1b5709b9dfd1f572a2ef22ff2afe",
+    "size_bytes": 4804,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

@@ -1,0 +1,20 @@
+10_Governance/ARC-0001_Information_Architecture.md
+10_Governance/ICD-003 — Artifact Lifecycle.md
+99_UTILITIES/Ingestion/Artifact_Lifecycle_Specification_v0.1.md
+99_UTILITIES/Ingestion/Artifact_Schema_v0.1.md
+99_UTILITIES/Ingestion/Asset_Schema_v0.1.md
+99_UTILITIES/Ingestion/Conversation_Schema_v0.1.md
+99_UTILITIES/Ingestion/Event_Schema_Specification_v0.1.md
+99_UTILITIES/Ingestion/Ingestion_Glossary_v0.1.md
+99_UTILITIES/Ingestion/Ingestion_Pipeline_Specification_v0.1.md
+99_UTILITIES/Ingestion/Ingestion_Report_Schema_v0.1.md
+99_UTILITIES/Ingestion/Parser_Behavior_Specification_v0.1.md
+99_UTILITIES/Ingestion/Parser_Development_Guide_v0.1.md
+99_UTILITIES/Ingestion/Provenance_Specification_v0.1.md
+99_UTILITIES/Ingestion/Queue_Candidate_Schema_v0.1.md
+99_UTILITIES/Ingestion/Reference_Schema_v0.1.md
+99_UTILITIES/Ingestion/Repository_Relationship_Schema_v0.1.md
+99_UTILITIES/Ingestion/Schema_Governance_Specification_v0.1.md
+99_UTILITIES/Ingestion/Workflow_Definition_Schema_v0.1.md
+Artifact Header.md
+Facet Conversation.md

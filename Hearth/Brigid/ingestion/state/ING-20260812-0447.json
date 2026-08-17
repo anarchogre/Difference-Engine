@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0447",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:41.756749-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Bootstrap-RC2.md",
+    "original_name": "Bootstrap-RC2.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0447",
+    "schema_version": "0.1.0",
+    "sha256": "3994624aa320bac6760021484ad1ed7e6cae0065da8129236e0c0cf4873949a9",
+    "size_bytes": 4623,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

@@ -1,0 +1,12 @@
+domain=phone_download
+candidate_hashes=18
+conversation_bearing_hashes=18
+rejected_hashes=0
+text_markdown_qualified=6
+json_single_conversations=7
+pdf_source_artifacts=3
+pdf_unique_chat_ids=2
+docx_conversation_fragments=1
+embedded_conversation_aggregates=1
+underlying_unique_conversations=UNRESOLVED
+promotion=NONE

@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0095",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:08.006387-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-PRINCIPLE-QUEUE-0003_Self_Representation.json",
+    "original_name": "AKS-PRINCIPLE-QUEUE-0003_Self_Representation.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0095",
+    "schema_version": "0.1.0",
+    "sha256": "2ed66915febd3b4b1e28f38f01d4efef84326658e38bd9ee3aa091b682c13b25",
+    "size_bytes": 505,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

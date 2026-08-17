@@ -1,0 +1,194 @@
+=== LOADER ===
+     1	"""
+     2	Bootstrap Loader.
+     3	"""
+     4	
+     5	from .discover import discover_repository
+     6	from .execution import enter_execution_mode
+     7	from .governance import load_governance
+     8	from .logging import log
+     9	from .mission import recover_mission
+    10	from .modes import activate_modes
+    11	from .queue import recover_queues
+    12	from .readiness import verify_readiness
+    13	from .recovery import recover_state
+    14	from .result import BootstrapResult
+    15	from .specifications import load_specifications
+    16	from .state import OperationalState
+    17	from .task import recover_task
+    18	from .validators import validate
+    19	
+    20	def initialize() -> BootstrapResult:
+    21	    log("Discovering repository...")
+    22	    root = discover_repository()
+    23	
+    24	    artifacts = load_governance(root)
+    25	    specifications = load_specifications(root)
+    26	
+    27	    validate(artifacts, specifications)
+    28	
+    29	    if not verify_readiness(root):
+    30	        raise RuntimeError("Operational Readiness failed.")
+    31	
+    32	    state = OperationalState(
+    33	        repository_root=root,
+    34	        governance_root=artifacts.constitution.parent,
+    35	        specification_root=specifications.root,
+    36	        execution_mode=activate_modes()["primary"],
+    37	        mission=recover_mission(),
+    38	        task=recover_task(),
+    39	    )
+    40	
+    41	    recover_queues()
+    42	    state = recover_state(state)
+    43	    state = enter_execution_mode(state)
+    44	
+    45	    return BootstrapResult(
+    46	        artifacts=artifacts,
+    47	        specifications=specifications,
+    48	        state=state,
+    49	    )
+
+=== MODULE ENTRYPOINT ===
+     1	from .main import main
+     2	
+     3	main()
+
+=== BOOTSTRAP TEST ===
+     1	from pathlib import Path
+     2	
+     3	from ade.kernel.bootstrap_loader.loader import initialize
+     4	from ade.kernel.bootstrap_loader.mission import recover_mission
+     5	from ade.kernel.bootstrap_loader.task import recover_task
+     6	
+     7	
+     8	def test_initialize() -> None:
+     9	    result = initialize()
+    10	    state = result.state
+    11	
+    12	    expected_mission = recover_mission()
+    13	    expected_task = recover_task()
+    14	
+    15	    assert expected_mission
+    16	    assert expected_task
+    17	
+    18	    assert state.execution_mode == "Execution"
+    19	    assert state.repository_root.is_dir()
+    20	    assert state.governance_root.is_dir()
+    21	    assert state.specification_root.is_dir()
+    22	
+    23	    assert state.mission == expected_mission
+    24	    assert state.task == expected_task
+    25	
+    26	    assert result.artifacts.constitution.is_file()
+    27	    assert result.artifacts.amendments.is_file()
+    28	    assert result.artifacts.bootstrap.is_file()
+    29	
+    30	    assert Path(
+    31	        "workspace/operational/current/"
+    32	        "ACTIVE_MISSION.md"
+    33	    ).is_file()
+    34	
+    35	    assert Path(
+    36	        "workspace/operational/current/"
+    37	        "ACTIVE_TASK.md"
+    38	    ).is_file()
+
+=== TEST RUNNER ===
+     1	"""
+     2	Repository-controlled deterministic test runner.
+     3	"""
+     4	
+     5	from __future__ import annotations
+     6	
+     7	import importlib
+     8	import inspect
+     9	import sys
+    10	import traceback
+    11	from pathlib import Path
+    12	from types import ModuleType
+    13	from typing import Callable
+    14	
+    15	
+    16	TEST_MODULES = (
+    17	    "ade.kernel.tests.test_bootstrap_loader",
+    18	)
+    19	
+    20	
+    21	def discover_tests(
+    22	    module: ModuleType,
+    23	) -> list[tuple[str, Callable[[], None]]]:
+    24	    tests: list[tuple[str, Callable[[], None]]] = []
+    25	
+    26	    for name, value in inspect.getmembers(
+    27	        module,
+    28	        inspect.isfunction,
+    29	    ):
+    30	        if name.startswith("test_"):
+    31	            tests.append(
+    32	                (
+    33	                    f"{module.__name__}.{name}",
+    34	                    value,
+    35	                )
+    36	            )
+    37	
+    38	    return tests
+    39	
+    40	
+    41	def run() -> int:
+    42	    passed = 0
+    43	    failed = 0
+    44	    discovered = 0
+    45	
+    46	    for module_name in TEST_MODULES:
+    47	        try:
+    48	            module = importlib.import_module(
+    49	                module_name
+    50	            )
+    51	        except Exception:
+    52	            failed += 1
+    53	            print(
+    54	                f"IMPORT_FAIL {module_name}"
+    55	            )
+    56	            traceback.print_exc()
+    57	            continue
+    58	
+    59	        tests = discover_tests(module)
+    60	        discovered += len(tests)
+    61	
+    62	        for test_name, test in tests:
+    63	            try:
+    64	                test()
+    65	            except Exception:
+    66	                failed += 1
+    67	                print(
+    68	                    f"FAIL {test_name}"
+    69	                )
+    70	                traceback.print_exc()
+    71	            else:
+    72	                passed += 1
+    73	                print(
+    74	                    f"PASS {test_name}"
+    75	                )
+    76	
+    77	    print(
+    78	        f"DISCOVERED={discovered}"
+    79	    )
+    80	    print(
+    81	        f"PASSED={passed}"
+    82	    )
+    83	    print(
+    84	        f"FAILED={failed}"
+    85	    )
+    86	
+    87	    if discovered == 0:
+    88	        return 2
+    89	
+    90	    if failed:
+    91	        return 1
+    92	
+    93	    return 0
+    94	
+    95	
+    96	if __name__ == "__main__":
+    97	    raise SystemExit(run())

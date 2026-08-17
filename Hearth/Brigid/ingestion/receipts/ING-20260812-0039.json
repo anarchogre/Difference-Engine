@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:05.547143-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-GOV-0007_Lineage_Change_Rationale.json",
+  "original_name": "AKS-GOV-0007_Lineage_Change_Rationale.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0039",
+  "schema_version": "0.1.0",
+  "sha256": "2615639a1fd4a717f8e453aeb40883a09f46fd924d82766faa91fcfd0e60f890",
+  "size_bytes": 394,
+  "source_class": "manual_batch"
+}

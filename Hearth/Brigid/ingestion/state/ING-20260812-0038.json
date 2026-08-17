@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0038",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:05.509170-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-GOV-0006_Representation_Revision.json",
+    "original_name": "AKS-GOV-0006_Representation_Revision.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0038",
+    "schema_version": "0.1.0",
+    "sha256": "6959efc99536fc5363408b9b7b45da8adb388353741d6724281f9b87389f6e16",
+    "size_bytes": 399,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

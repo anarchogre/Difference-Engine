@@ -1,0 +1,7 @@
+{
+  "artifact_id": "TEST-CHAT-0002",
+  "provenance_id": "PROV-TEST-CHAT-0002",
+  "relationship": "observed_from",
+  "source_path": "/home/reckless-ideator/Difference-Engine/workspace/operational/ingestion/chat_pipeline_test.txt",
+  "source_sha256": "175861ca94b25f17fcb482a23d4f2f9e59b4ec41c5b38e4de87cda558460873a"
+}

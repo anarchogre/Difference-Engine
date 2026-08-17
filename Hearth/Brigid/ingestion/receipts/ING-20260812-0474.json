@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:45.422600-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/MAJOR_PP_0003.json",
+  "original_name": "MAJOR_PP_0003.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0474",
+  "schema_version": "0.1.0",
+  "sha256": "11bb25d28b57c973bd1277898f514694c492a395e36177dc1da86029514f2237",
+  "size_bytes": 1258,
+  "source_class": "manual_batch"
+}

@@ -1,0 +1,56 @@
+--- workspace/operational/recovery/gpt-plus-integration/20260803T043919/mission-task-patch/backups/task.py.before	2026-08-03 04:54:23.866439424 -0500
++++ ade/kernel/bootstrap_loader/task.py	2026-08-03 04:54:24.023106106 -0500
+@@ -2,5 +2,53 @@
+ Task recovery.
+ """
+ 
++from pathlib import Path
++import re
++
++
++TASK_SOURCES = (
++    Path("workspace/operational/current/ACTIVE_TASK.md"),
++    Path("workspace/operational/current/COMPLETED_TASK_BLOCK.md"),
++    Path("workspace/operational/bootstrap/INITIALIZATION_ORDER.md"),
++    Path("workspace/operational/Continue DifferenceEngine.md"),
++)
++
++
++def _extract_task(text: str) -> str | None:
++    patterns = (
++        r"(?im)^current task\s*:?\s*(.+)$",
++        r"(?im)^active task\s*:?\s*(.+)$",
++        r"(?im)^next task\s*:?\s*(.+)$",
++        r"(?im)^immediate next\s*:?\s*(.+)$",
++        r"(?im)^#+\s*current task\s*$\s*(.+)$",
++        r"(?im)^#+\s*next task\s*$\s*(.+)$",
++    )
++
++    for pattern in patterns:
++        match = re.search(pattern, text)
++
++        if match:
++            value = match.group(1).strip()
++
++            if value:
++                return value
++
++    return None
++
++
+ def recover_task() -> str | None:
++    for path in TASK_SOURCES:
++        if not path.is_file():
++            continue
++
++        text = path.read_text(
++            encoding="utf-8",
++            errors="replace",
++        )
++
++        task = _extract_task(text)
++
++        if task:
++            return task
++
+     return None

@@ -1,0 +1,9 @@
+VERIFIER_ARTIFACTS=PASS
+STATUS=DEGRADED
+BLOCKERS=0
+WARNINGS=6
+FILE=workspace/operational/recovery/runtime/readiness.json SIZE=2862
+FILE=workspace/operational/recovery/runtime/readiness.txt SIZE=306
+FILE=workspace/operational/recovery/runtime/drift.json SIZE=508
+FILE=workspace/operational/recovery/runtime/blockers.json SIZE=72
+FILE=workspace/operational/recovery/runtime/verification.log SIZE=2450

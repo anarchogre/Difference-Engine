@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0168",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:12.371677-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Preservation_Automation_Constitution_v1.0.json",
+    "original_name": "AKS_Preservation_Automation_Constitution_v1.0.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0168",
+    "schema_version": "0.1.0",
+    "sha256": "f6bf0d2ec4e510a809d039fdd8a957f78d36b926231cc8084a4ff3a94e05cf57",
+    "size_bytes": 417,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

@@ -1,0 +1,32 @@
+ade/kernel/bootstrap_loader/bootstrap.py:5:from .artifacts import bootstrap
+ade/kernel/bootstrap_loader/bootstrap.py:7:def load_bootstrap(root):
+ade/kernel/bootstrap_loader/bootstrap.py:8:    return bootstrap(root)
+ade/kernel/bootstrap_loader/governance.py:5:from .artifacts import discover_artifacts
+ade/kernel/bootstrap_loader/result.py:7:from .artifacts import BootstrapArtifacts
+ade/kernel/bootstrap_loader/validators.py:5:from .artifacts import BootstrapArtifacts
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_API_v1.md:13:load_bootstrap()
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_PSEUDOCODE_v1.md:9:load_bootstrap()
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_PYTHON_MAPPING_v1.md:9:load_bootstrap()             -> bootstrap.py
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/logs/batch-4-summary.txt:18:    from .artifacts import bootstrap
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/logs/batch-4-summary.txt:19:ImportError: cannot import name 'bootstrap' from 'ade.kernel.bootstrap_loader.artifacts' (/storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/artifacts.py)
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/logs/batch-4-summary.txt:24:    from .artifacts import bootstrap
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/reports/bootstrap-execution-status.txt:10:    from .artifacts import bootstrap
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/tests/bootstrap-loader-direct.txt:3:    from .artifacts import bootstrap
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/reports/direct-execution-error.txt:3:    from .artifacts import bootstrap
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/reports/import-map.txt:5:ade/kernel/bootstrap_loader/bootstrap.py:5:from .artifacts import bootstrap
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/reports/import-map.txt:15:ade/kernel/bootstrap_loader/governance.py:5:from .artifacts import discover_artifacts
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/reports/import-map.txt:40:ade/kernel/bootstrap_loader/result.py:7:from .artifacts import BootstrapArtifacts
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/reports/import-map.txt:47:ade/kernel/bootstrap_loader/validators.py:5:from .artifacts import BootstrapArtifacts
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/reports/bootstrap-diagnosis.txt:17:    from .artifacts import bootstrap
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/reports/bootstrap-diagnosis.txt:18:ImportError: cannot import name 'bootstrap' from 'ade.kernel.bootstrap_loader.artifacts' (/storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/artifacts.py)
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/reports/bootstrap-diagnosis.txt:23:    from .artifacts import bootstrap
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/tests/bootstrap-loader-module.txt:5:    from .artifacts import bootstrap
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/tests/bootstrap-loader-module.txt:6:ImportError: cannot import name 'bootstrap' from 'ade.kernel.bootstrap_loader.artifacts' (/storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/artifacts.py)
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/extracts/bootstrap-loader-source.txt:6:from .artifacts import bootstrap
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/extracts/bootstrap-loader-source.txt:8:def load_bootstrap(root):
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/extracts/bootstrap-loader-source.txt:9:    return bootstrap(root)
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-discovery/reports/python-symbols.txt:9:FROM artifacts IMPORT bootstrap
+grep: workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-discovery/reports/bootstrap-reference-map.txt: input file is also the output
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-discovery/extracts/bootstrap-complete-source.txt:31:from .artifacts import bootstrap
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-discovery/extracts/bootstrap-complete-source.txt:33:def load_bootstrap(root):
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-discovery/extracts/bootstrap-complete-source.txt:34:    return bootstrap(root)

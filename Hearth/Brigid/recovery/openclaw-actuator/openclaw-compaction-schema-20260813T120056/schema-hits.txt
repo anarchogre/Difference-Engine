@@ -1,0 +1,488 @@
+PACKAGE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw
+MATCHED_FILES=404
+
+### /home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/proxy-BzhBz8iM.js
+778: 		cacheRead: 0,
+779: 		cacheWrite: 0
+780: 	},
+781: 	contextWindow: 0,
+782: 	maxTokens: 0
+783: };
+784: function createMutableAgentState(initialState) {
+---
+1186: 		this.code = code;
+1187: 	}
+1188: };
+1189: /** Error returned by compaction helpers. */
+1190: var CompactionError = class extends Error {
+1191: 	constructor(code, message, cause) {
+1192: 		super(message, cause === void 0 ? void 0 : { cause });
+---
+1193: 		this.name = "CompactionError";
+---
+1194: 		this.code = code;
+1195: 	}
+1196: };
+---
+1225: 	return isAbsolute(path) ? path : resolve(cwd, path);
+1226: }
+1227: /** Convert user-facing timeout seconds into a positive, timer-safe millisecond delay. */
+1228: function resolveExecTimeoutMs(timeoutSeconds) {
+1229: 	if (typeof timeoutSeconds !== "number" || !Number.isFinite(timeoutSeconds) || timeoutSeconds <= 0) return;
+1230: 	const milliseconds = Math.floor(timeoutSeconds * 1e3);
+1231: 	if (!Number.isFinite(milliseconds) || milliseconds <= 0) return 1;
+---
+1232: 	return Math.min(milliseconds, MAX_TIMER_TIMEOUT_MS);
+---
+1233: }
+---
+1688: function asAgentMessage(message) {
+1689: 	return message;
+1690: }
+1691: function normalizeCompactionSummaryTimestamp(timestamp) {
+1692: 	if (typeof timestamp === "number") return timestamp;
+1693: 	return parseSessionTimestampMs(timestamp) ?? 0;
+1694: }
+---
+1695: const COMPACTION_SUMMARY_PREFIX = `The conversation history before this point was compacted into the following summary:
+1696: 
+1697: <summary>
+1698: `;
+---
+1699: const COMPACTION_SUMMARY_SUFFIX = `
+1700: </summary>`;
+1701: const BRANCH_SUMMARY_PREFIX = `The following is a summary of a branch that this conversation came back from:
+1702: 
+---
+1722: 		timestamp: requireSessionTimestampMs(timestamp, "branch summary timestamp")
+1723: 	};
+1724: }
+1725: /** Build a persisted compaction summary message from the repository timestamp string. */
+1726: function createCompactionSummaryMessage(summary, tokensBefore, timestamp) {
+1727: 	return {
+1728: 		role: "compactionSummary",
+---
+1729: 		summary,
+---
+1730: 		tokensBefore,
+1731: 		timestamp: requireSessionTimestampMs(timestamp, "compaction summary timestamp")
+---
+1732: 	};
+1733: }
+1734: /** Build a custom transcript message that can be shown and replayed into context. */
+---
+1778: 				}],
+1779: 				timestamp: message.timestamp
+1780: 			};
+1781: 			case "compactionSummary": return {
+1782: 				role: "user",
+1783: 				content: [{
+1784: 					type: "text",
+---
+1785: 					text: COMPACTION_SUMMARY_PREFIX + message.summary + COMPACTION_SUMMARY_SUFFIX
+1786: 				}],
+1787: 				timestamp: normalizeCompactionSummaryTimestamp(message.timestamp)
+1788: 			};
+---
+1789: 			case "user":
+1790: 			case "assistant":
+---
+1799: function buildSessionContext(pathEntries) {
+1800: 	let thinkingLevel = "off";
+1801: 	let model = null;
+1802: 	let compaction = null;
+1803: 	for (const entry of pathEntries) if (entry.type === "thinking_level_change") thinkingLevel = entry.thinkingLevel;
+1804: 	else if (entry.type === "model_change") model = {
+1805: 		provider: entry.provider,
+---
+1809: 		provider: entry.message.provider,
+1810: 		modelId: entry.message.model
+1811: 	};
+1812: 	else if (entry.type === "compaction") compaction = entry;
+1813: 	const messages = [];
+1814: 	const appendMessage = (entry) => {
+1815: 		if (entry.type === "message") messages.push(entry.message);
+---
+1816: 		else if (entry.type === "custom_message") messages.push(asAgentMessage(createCustomMessage(entry.customType, entry.content, entry.display, entry.details, entry.timestamp)));
+1817: 		else if (entry.type === "branch_summary" && entry.summary) messages.push(asAgentMessage(createBranchSummaryMessage(entry.summary, entry.fromId, entry.timestamp)));
+1818: 	};
+1819: 	if (compaction) {
+1820: 		messages.push(asAgentMessage(createCompactionSummaryMessage(compaction.summary, compaction.tokensBefore, compaction.timestamp)));
+1821: 		const compactionIdx = pathEntries.findIndex((e) => e.type === "compaction" && e.id === compaction.id);
+1822: 		let foundFirstKept = false;
+---
+1823: 		for (let i = 0; i < compactionIdx; i++) {
+---
+1824: 			const entry = pathEntries[i];
+---
+1825: 			if (entry.id === compaction.firstKeptEntryId) foundFirstKept = true;
+1826: 			if (foundFirstKept) appendMessage(entry);
+---
+1827: 		}
+1828: 		for (let i = compactionIdx + 1; i < pathEntries.length; i++) appendMessage(pathEntries[i]);
+---
+1829: 	} else for (const entry of pathEntries) appendMessage(entry);
+1830: 	return {
+1831: 		messages,
+---
+1902: 			modelId
+1903: 		});
+1904: 	}
+1905: 	async appendCompaction(summary, firstKeptEntryId, tokensBefore, details, fromHook) {
+1906: 		return this.appendTypedEntry({
+1907: 			type: "compaction",
+1908: 			id: await this.storage.createEntryId(),
+---
+1909: 			parentId: await this.getAppendParentId(),
+1910: 			timestamp: (/* @__PURE__ */ new Date()).toISOString(),
+---
+1978: 	}
+1979: };
+1980: //#endregion
+1981: //#region packages/agent-core/src/harness/compaction/utils.ts
+1982: /** Create an empty file-operation accumulator. */
+1983: function createFileOps() {
+1984: 	return {
+---
+2041: 	const truncatedChars = text.length - maxChars;
+2042: 	return `${text.slice(0, maxChars)}\n\n[... ${truncatedChars} more characters truncated]`;
+2043: }
+2044: /** Extract text that compaction both estimates and includes in summary prompts. */
+2045: function getCompactionContentBlockText(block) {
+2046: 	if (block.type === "text" && block.text) return block.text;
+2047: 	if (block.type !== "toolResult" && block.type !== "tool_result") return "";
+---
+2048: 	if (block.text) return block.text;
+---
+2069: 		if (textParts.length > 0) parts.push(`[Assistant]: ${textParts.join("\n")}`);
+2070: 		if (toolCalls.length > 0) parts.push(`[Assistant tool calls]: ${toolCalls.join("; ")}`);
+2071: 	} else if (msg.role === "toolResult") {
+2072: 		const content = msg.content.map(getCompactionContentBlockText).join("");
+2073: 		if (content) parts.push(`[Tool result]: ${truncateForSummary(content, TOOL_RESULT_MAX_CHARS)}`);
+2074: 	}
+2075: 	return parts.join("\n\n");
+---
+2076: }
+2077: //#endregion
+2078: //#region packages/agent-core/src/harness/compaction/compaction.ts
+2079: function safeJsonStringify(value) {
+2080: 	try {
+2081: 		return JSON.stringify(value) ?? "undefined";
+---
+2083: 		return "[unserializable]";
+2084: 	}
+2085: }
+2086: function extractFileOperations(messages, entries, prevCompactionIndex) {
+2087: 	const fileOps = createFileOps();
+2088: 	if (prevCompactionIndex >= 0) {
+2089: 		const prevCompaction = entries[prevCompactionIndex];
+---
+2090: 		if (!prevCompaction.fromHook && prevCompaction.details) {
+2091: 			const details = prevCompaction.details;
+---
+2092: 			if (Array.isArray(details.readFiles)) for (const f of details.readFiles) fileOps.read.add(f);
+---
+2093: 			if (Array.isArray(details.modifiedFiles)) for (const f of details.modifiedFiles) fileOps.edited.add(f);
+---
+2094: 		}
+---
+2100: 	if (entry.type === "message") return entry.message;
+2101: 	if (entry.type === "custom_message") return asAgentMessage(createCustomMessage(entry.customType, entry.content, entry.display, entry.details, entry.timestamp));
+2102: 	if (entry.type === "branch_summary") return asAgentMessage(createBranchSummaryMessage(entry.summary, entry.fromId, entry.timestamp));
+2103: 	if (entry.type === "compaction") return asAgentMessage(createCompactionSummaryMessage(entry.summary, entry.tokensBefore, entry.timestamp));
+2104: }
+2105: function getMessageFromEntryForCompaction(entry) {
+2106: 	if (entry.type === "compaction") return;
+---
+2107: 	return getMessageFromEntry$1(entry);
+2108: }
+---
+2109: /** Default compaction settings used by the harness. */
+---
+2110: const DEFAULT_COMPACTION_SETTINGS = {
+2111: 	enabled: true,
+2112: 	reserveTokens: 16384,
+---
+2113: 	keepRecentTokens: 2e4
+---
+2114: };
+2115: /** Calculate total context tokens from provider usage. */
+---
+2116: function calculateContextTokens(usage) {
+---
+2165: 		lastUsageIndex: usageInfo.index
+2166: 	};
+2167: }
+2168: /** Return whether context usage exceeds the configured compaction threshold. */
+2169: function shouldCompact(contextTokens, contextWindow, settings) {
+2170: 	if (!settings.enabled) return false;
+2171: 	return contextTokens > contextWindow - settings.reserveTokens;
+---
+2172: }
+---
+2173: const IMAGE_BLOCK_CHARS = 4800;
+2174: function countContentBlockChars(content) {
+---
+2175: 	let chars = 0;
+2176: 	for (const block of content) if (block.type === "image") chars += IMAGE_BLOCK_CHARS;
+2177: 	else chars += getCompactionContentBlockText(block).length;
+2178: 	return chars;
+2179: }
+2180: /** Estimate token count for one message using a conservative character heuristic. */
+---
+2204: 			chars = harnessMessage.command.length + harnessMessage.output.length;
+2205: 			return Math.ceil(chars / 4);
+2206: 		case "branchSummary":
+2207: 		case "compactionSummary":
+2208: 			chars = harnessMessage.summary.length;
+2209: 			return Math.ceil(chars / 4);
+2210: 	}
+---
+2220: 					case "bashExecution":
+2221: 					case "custom":
+2222: 					case "branchSummary":
+2223: 					case "compactionSummary":
+2224: 					case "user":
+2225: 					case "assistant":
+2226: 						cutPoints.push(i);
+---
+2230: 				break;
+2231: 			case "thinking_level_change":
+2232: 			case "model_change":
+2233: 			case "compaction":
+2234: 			case "branch_summary":
+2235: 			case "custom":
+2236: 			case "custom_message":
+---
+2254: 	}
+2255: 	return -1;
+2256: }
+2257: /** Find the compaction cut point that keeps approximately the requested recent-token budget. */
+2258: function findCutPoint(entries, startIndex, endIndex, keepRecentTokens) {
+2259: 	const cutPoints = findValidCutPoints(entries, startIndex, endIndex);
+2260: 	if (cutPoints.length === 0) return {
+---
+2261: 		firstKeptEntryIndex: startIndex,
+---
+2269: 		if (entry.type !== "message") continue;
+2270: 		const messageTokens = estimateTokens(entry.message);
+2271: 		accumulatedTokens += messageTokens;
+2272: 		if (accumulatedTokens >= keepRecentTokens) {
+2273: 			cutIndex = cutPoints[cutPoints.length - 1];
+2274: 			for (const cutPoint of cutPoints) if (cutPoint >= i) {
+2275: 				cutIndex = cutPoint;
+---
+2280: 	}
+2281: 	while (cutIndex > startIndex) {
+2282: 		const prevEntry = entries[cutIndex - 1];
+2283: 		if (prevEntry.type === "compaction") break;
+2284: 		if (prevEntry.type === "message") break;
+2285: 		cutIndex--;
+2286: 	}
+---
+2381: 	if (streamFn) return (await streamFn(model, context, options)).result();
+2382: 	return await resolveAgentCoreCompleteFn(runtime)(model, context, options);
+2383: }
+2384: /** Runs one summarization completion and maps abort/error stops to CompactionError. */
+2385: async function runSummarizationCompletion(params) {
+2386: 	const summarizationMessages = [{
+2387: 		role: "user",
+---
+2395: 		systemPrompt: SUMMARIZATION_SYSTEM_PROMPT,
+2396: 		messages: summarizationMessages
+2397: 	}, createSummarizationOptions(params.model, params.maxTokens, params.apiKey, params.headers, params.signal, params.thinkingLevel), params.streamFn, params.runtime);
+2398: 	if (response.stopReason === "aborted") return err(new CompactionError("aborted", response.errorMessage || `${params.errorLabel} aborted`));
+2399: 	if (response.stopReason === "error") return err(new CompactionError("summarization_failed", `${params.errorLabel} failed: ${response.errorMessage || "Unknown error"}`));
+2400: 	return ok(response.content.filter((c) => c.type === "text").map((c) => c.text).join("\n"));
+2401: }
+---
+2402: /** Generate or update a conversation summary for compaction. */
+---
+2403: async function generateSummary(currentMessages, model, reserveTokens, apiKey, headers, signal, customInstructions, previousSummary, thinkingLevel, streamFn, runtime) {
+2404: 	const maxTokens = Math.min(Math.floor(.8 * reserveTokens), model.maxTokens > 0 ? model.maxTokens : Number.POSITIVE_INFINITY);
+2405: 	let basePrompt = previousSummary ? UPDATE_SUMMARIZATION_PROMPT : SUMMARIZATION_PROMPT;
+---
+2406: 	if (customInstructions) basePrompt = `${basePrompt}\n\nAdditional focus: ${customInstructions}`;
+---
+2407: 	let promptText = `<conversation>\n${serializeConversation(convertToLlm(currentMessages))}\n</conversation>\n\n`;
+---
+2420: 		errorLabel: "Summarization"
+2421: 	});
+2422: }
+2423: /** Prepare session entries for compaction, or return undefined when compaction is not applicable. */
+2424: function prepareCompaction(pathEntries, settings) {
+2425: 	if (pathEntries.length === 0 || pathEntries[pathEntries.length - 1].type === "compaction") return ok(void 0);
+2426: 	let prevCompactionIndex = -1;
+---
+2427: 	for (let i = pathEntries.length - 1; i >= 0; i--) if (pathEntries[i].type === "compaction") {
+---
+2428: 		prevCompactionIndex = i;
+---
+2429: 		break;
+---
+2430: 	}
+---
+2431: 	let previousSummary;
+---
+2432: 	let boundaryStart = 0;
+2433: 	if (prevCompactionIndex >= 0) {
+2434: 		const prevCompaction = pathEntries[prevCompactionIndex];
+2435: 		previousSummary = prevCompaction.summary;
+2436: 		const firstKeptEntryIndex = pathEntries.findIndex((entry) => entry.id === prevCompaction.firstKeptEntryId);
+---
+2437: 		boundaryStart = firstKeptEntryIndex >= 0 ? firstKeptEntryIndex : prevCompactionIndex + 1;
+---
+2438: 	}
+---
+2439: 	const boundaryEnd = pathEntries.length;
+---
+2440: 	const tokensBefore = estimateContextTokens(buildSessionContext(pathEntries).messages).tokens;
+---
+2441: 	const cutPoint = findCutPoint(pathEntries, boundaryStart, boundaryEnd, settings.keepRecentTokens);
+2442: 	const firstKeptEntry = pathEntries[cutPoint.firstKeptEntryIndex];
+2443: 	if (!firstKeptEntry?.id) return err(new CompactionError("invalid_session", "First kept entry has no UUID - session may need migration"));
+2444: 	const firstKeptEntryId = firstKeptEntry.id;
+---
+2445: 	const historyEnd = cutPoint.isSplitTurn ? cutPoint.turnStartIndex : cutPoint.firstKeptEntryIndex;
+2446: 	const messagesToSummarize = [];
+---
+2447: 	for (let i = boundaryStart; i < historyEnd; i++) {
+2448: 		const msg = getMessageFromEntryForCompaction(pathEntries[i]);
+2449: 		if (msg) messagesToSummarize.push(msg);
+2450: 	}
+2451: 	const turnPrefixMessages = [];
+---
+2452: 	if (cutPoint.isSplitTurn) for (let i = cutPoint.turnStartIndex; i < cutPoint.firstKeptEntryIndex; i++) {
+2453: 		const msg = getMessageFromEntryForCompaction(pathEntries[i]);
+2454: 		if (msg) turnPrefixMessages.push(msg);
+2455: 	}
+2456: 	const fileOps = extractFileOperations(messagesToSummarize, pathEntries, prevCompactionIndex);
+---
+2457: 	if (cutPoint.isSplitTurn) for (const msg of turnPrefixMessages) extractFileOpsFromMessage(msg, fileOps);
+2458: 	return ok({
+2459: 		firstKeptEntryId,
+---
+2480: - [Information needed to understand the retained recent work]
+2481: 
+2482: Be concise. Focus on what's needed to understand the kept suffix.`;
+2483: /** Generate compaction summary data from prepared session history. */
+2484: async function compact(preparation, model, apiKey, headers, customInstructions, signal, thinkingLevel, streamFn, runtime) {
+2485: 	const { firstKeptEntryId, messagesToSummarize, turnPrefixMessages, isSplitTurn, tokensBefore, previousSummary, fileOps, settings } = preparation;
+2486: 	if (!firstKeptEntryId) return err(new CompactionError("invalid_session", "First kept entry has no UUID - session may need migration"));
+---
+2487: 	let summary;
+2488: 	if (isSplitTurn && turnPrefixMessages.length > 0) {
+2489: 		const historyResult = messagesToSummarize.length > 0 ? await generateSummary(messagesToSummarize, model, settings.reserveTokens, apiKey, headers, signal, customInstructions, previousSummary, thinkingLevel, streamFn, runtime) : ok("No prior history.");
+---
+2490: 		if (!historyResult.ok) return err(historyResult.error);
+2491: 		const turnPrefixResult = await generateTurnPrefixSummary(turnPrefixMessages, model, settings.reserveTokens, apiKey, headers, signal, thinkingLevel, streamFn, runtime);
+2492: 		if (!turnPrefixResult.ok) return err(turnPrefixResult.error);
+---
+2493: 		summary = `${historyResult.value}\n\n---\n\n**Turn Context (split turn):**\n\n${turnPrefixResult.value}`;
+2494: 	} else {
+---
+2495: 		const summaryResult = await generateSummary(messagesToSummarize, model, settings.reserveTokens, apiKey, headers, signal, customInstructions, previousSummary, thinkingLevel, streamFn, runtime);
+2496: 		if (!summaryResult.ok) return err(summaryResult.error);
+2497: 		summary = summaryResult.value;
+2498: 	}
+---
+2508: 		}
+2509: 	});
+2510: }
+2511: async function generateTurnPrefixSummary(messages, model, reserveTokens, apiKey, headers, signal, thinkingLevel, streamFn, runtime) {
+2512: 	const maxTokens = Math.min(Math.floor(.5 * reserveTokens), model.maxTokens > 0 ? model.maxTokens : Number.POSITIVE_INFINITY);
+2513: 	return await runSummarizationCompletion({
+2514: 		promptText: `<conversation>\n${serializeConversation(convertToLlm(messages))}\n</conversation>\n\n${TURN_PREFIX_SUMMARIZATION_PROMPT}`,
+---
+2515: 		model,
+---
+2524: 	});
+2525: }
+2526: //#endregion
+2527: //#region packages/agent-core/src/harness/compaction/branch-summarization.ts
+2528: /** Collect entries that should be summarized before navigating to a different session tree entry. */
+2529: function collectEntriesForBranchSummaryFromBranches(oldBranch, targetBranch) {
+2530: 	const oldPath = new Set(oldBranch.map((entry) => entry.id));
+---
+2554: 			return entry.message;
+2555: 		case "custom_message": return asAgentMessage(createCustomMessage(entry.customType, entry.content, entry.display, entry.details, entry.timestamp));
+2556: 		case "branch_summary": return asAgentMessage(createBranchSummaryMessage(entry.summary, entry.fromId, entry.timestamp));
+2557: 		case "compaction": return asAgentMessage(createCompactionSummaryMessage(entry.summary, entry.tokensBefore, entry.timestamp));
+2558: 		case "thinking_level_change":
+2559: 		case "model_change":
+2560: 		case "custom":
+---
+2580: 		extractFileOpsFromMessage(message, fileOps);
+2581: 		const tokens = estimateTokens(message);
+2582: 		if (tokenBudget > 0 && totalTokens + tokens > tokenBudget) {
+2583: 			if (entry.type === "compaction" || entry.type === "branch_summary") {
+2584: 				if (totalTokens < tokenBudget * .9) {
+2585: 					messages.unshift(message);
+2586: 					totalTokens += tokens;
+---
+2631: Keep each section concise. Preserve exact file paths, function names, and error messages.`;
+2632: /** Generate a summary for abandoned branch entries. */
+2633: async function generateBranchSummary(entries, options) {
+2634: 	const { model, apiKey, headers, signal, customInstructions, replaceInstructions, reserveTokens = 16384 } = options;
+2635: 	const { messages, fileOps } = prepareBranchEntries(entries, (model.contextWindow || 128e3) - reserveTokens);
+2636: 	if (messages.length === 0) return ok({
+2637: 		summary: "No content to summarize",
+---
+2638: 		readFiles: [],
+---
+2841: 	if (error instanceof AgentHarnessError) return error;
+2842: 	const cause = toError(error);
+2843: 	if (cause instanceof SessionError) return new AgentHarnessError("session", cause.message, cause);
+2844: 	if (cause instanceof CompactionError) return new AgentHarnessError("compaction", cause.message, cause);
+2845: 	if (cause instanceof BranchSummaryError) return new AgentHarnessError("branch_summary", cause.message, cause);
+2846: 	return new AgentHarnessError(fallbackCode, cause.message, cause);
+2847: }
+---
+3287: 	}
+3288: 	async compact(customInstructions) {
+3289: 		if (this.phase !== "idle") throw new AgentHarnessError("busy", "compact() requires idle harness");
+3290: 		this.phase = "compaction";
+3291: 		try {
+3292: 			const model = this.model;
+3293: 			if (!model) throw new AgentHarnessError("invalid_state", "No model set for compaction");
+---
+3294: 			const auth = await this.getApiKeyAndHeaders?.(model);
+3295: 			if (!auth) throw new AgentHarnessError("auth", "No auth available for compaction");
+3296: 			const branchEntries = await this.session.getBranch();
+---
+3297: 			const preparationResult = prepareCompaction(branchEntries, DEFAULT_COMPACTION_SETTINGS);
+3298: 			if (!preparationResult.ok) throw preparationResult.error;
+---
+3299: 			const preparation = preparationResult.value;
+3300: 			if (!preparation) throw new AgentHarnessError("compaction", "Nothing to compact");
+---
+3301: 			const hookResult = await this.emitHook({
+3302: 				type: "session_before_compact",
+3303: 				preparation,
+---
+3305: 				customInstructions,
+3306: 				signal: new AbortController().signal
+3307: 			});
+3308: 			if (hookResult?.cancel) throw new AgentHarnessError("compaction", "Compaction cancelled");
+3309: 			const provided = hookResult?.compaction;
+3310: 			const compactResult = provided ? {
+3311: 				ok: true,
+---
+3312: 				value: provided
+---
+3313: 			} : await compact(preparation, model, auth.apiKey, auth.headers, customInstructions, void 0, this.thinkingLevel, void 0, this.runtime);
+3314: 			if (!compactResult.ok) throw compactResult.error;
+3315: 			const result = compactResult.value;
+3316: 			const entryId = await this.session.appendCompaction(result.summary, result.firstKeptEntryId, result.tokensBefore, result.details, provided !== void 0);
+3317: 			const entry = await this.session.getEntry(entryId);
+3318: 			if (entry?.type === "compaction") await this.emitOwn({
+3319: 				type: "session_compact",
+---
+3320: 				compactionEntry: entry,
+3321: 				fromHook: provided !== void 0
+---
+3322: 			});
+3323: 			return result;
+---
+
+OUTPUT_LIMIT_REACHED=YES

@@ -1,0 +1,10 @@
+status=CONVERSATION_BEARING_CANDIDATE
+file=ADE Workflow Automation Prompts.pdf
+chat_id=6a64c968-a09c-83ea-bb2a-cf52be1e5f26
+chars=12763
+simple_dialogue_markers=0
+qualification_method=INDIVIDUAL_STRUCTURAL_INSPECTION
+human_turns=CONFIRMED
+assistant_turns=CONFIRMED
+evidence=human turns survive around lines 196 and 260; substantive assistant continuation survives around line 288
+promotion=NONE

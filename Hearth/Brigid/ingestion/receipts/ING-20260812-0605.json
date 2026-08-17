@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:49:05.342923-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/SPEC-GOV-0001.json",
+  "original_name": "SPEC-GOV-0001.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0605",
+  "schema_version": "0.1.0",
+  "sha256": "f32448502d214e7ced0837b6193e25f254a0e3c05958576c8b4a55620ff4ffc1",
+  "size_bytes": 273,
+  "source_class": "manual_batch"
+}

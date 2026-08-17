@@ -1,0 +1,11 @@
+PYTEST_STATUS=1
+DIRECT_STATUS=1
+
+PYTEST OUTPUT
+/data/data/com.termux/files/usr/bin/python: No module named pytest
+
+DIRECT EXECUTION OUTPUT
+Traceback (most recent call last):
+  File "/storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/bootstrap.py", line 5, in <module>
+    from .artifacts import bootstrap
+ImportError: attempted relative import with no known parent package

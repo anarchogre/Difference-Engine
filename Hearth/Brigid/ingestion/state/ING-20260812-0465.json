@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0465",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:44.168576-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/IMPORT_POLICY(1).md",
+    "original_name": "IMPORT_POLICY(1).md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0465",
+    "schema_version": "0.1.0",
+    "sha256": "e886cd6f8784c75c0971535b6ebe6fb4da1c1c915cce2e85d44525f4cab90069",
+    "size_bytes": 113,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

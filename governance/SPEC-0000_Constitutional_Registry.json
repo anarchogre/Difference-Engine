@@ -1,0 +1,24 @@
+{
+  "spec_id": "SPEC-0000",
+  "title": "Constitutional Registry",
+  "version": "1.0",
+  "status": "Adopted",
+  "purpose": "Authoritative registry of constitutional specifications.",
+  "fields": [
+    "spec_id",
+    "title",
+    "version",
+    "status",
+    "layer",
+    "dependencies",
+    "supersedes",
+    "preservation_point",
+    "maturity_level"
+  ],
+  "maturity_levels": [
+    "L0",
+    "L1",
+    "L2",
+    "L3"
+  ]
+}

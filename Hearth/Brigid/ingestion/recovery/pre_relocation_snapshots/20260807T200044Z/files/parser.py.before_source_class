@@ -1,0 +1,7 @@
+from pathlib import Path
+
+from .registry import parser_for
+
+
+def parse(source: Path):
+    return parser_for(source)(source)

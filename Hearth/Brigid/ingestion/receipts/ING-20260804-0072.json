@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:02:05.623687-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Registry_Specification_v0.1.md",
+  "original_name": "Workflow_Service_Registry_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0072",
+  "schema_version": "0.1.0",
+  "sha256": "01022be4babc84ccdd5a4236c12b6a932f0a06286a5e0afc1c183256aecd1fb5",
+  "size_bytes": 6000,
+  "source_class": "manual_batch"
+}

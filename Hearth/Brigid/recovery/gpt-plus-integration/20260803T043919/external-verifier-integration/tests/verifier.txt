@@ -1,0 +1,8 @@
+[BOOTSTRAP] Discovering repository...
+STATUS=READY
+MISSION=GPT Plus Integration
+TASK=Recovery Standardization
+EXECUTION_MODE=Execution
+BLOCKERS=0
+WARNINGS=0
+OUTPUT=workspace/operational/recovery/runtime

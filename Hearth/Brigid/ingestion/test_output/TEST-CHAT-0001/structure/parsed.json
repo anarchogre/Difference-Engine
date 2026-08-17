@@ -1,0 +1,37 @@
+{
+  "commands": [
+    {
+      "number": 1,
+      "speaker": "user",
+      "text": "mkdir demo"
+    },
+    {
+      "number": 3,
+      "speaker": "user",
+      "text": "cat README.md"
+    }
+  ],
+  "kind": "conversation",
+  "turns": [
+    {
+      "number": 1,
+      "speaker": "user",
+      "text": "mkdir demo"
+    },
+    {
+      "number": 2,
+      "speaker": "assistant",
+      "text": "ok"
+    },
+    {
+      "number": 3,
+      "speaker": "user",
+      "text": "cat README.md"
+    },
+    {
+      "number": 4,
+      "speaker": "user",
+      "text": "TODO implement parser"
+    }
+  ]
+}

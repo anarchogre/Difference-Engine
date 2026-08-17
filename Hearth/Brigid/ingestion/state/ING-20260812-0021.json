@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0021",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:04.894548-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-ENDURANCE-C-REPORT-0001.json",
+    "original_name": "AKS-ENDURANCE-C-REPORT-0001.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0021",
+    "schema_version": "0.1.0",
+    "sha256": "9a8954880f44331ecd09d27452faac2154a7d2e7f5357e37a8a744f2387b3d78",
+    "size_bytes": 312,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

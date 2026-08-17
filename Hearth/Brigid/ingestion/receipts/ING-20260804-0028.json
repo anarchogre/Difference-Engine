@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:56.687100-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Parser_Development_Guide_v0.1.md",
+  "original_name": "Parser_Development_Guide_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0028",
+  "schema_version": "0.1.0",
+  "sha256": "9788de86c4cace2373622ac2305d2966faadc713ded38f27fd03f19f710d6172",
+  "size_bytes": 3015,
+  "source_class": "manual_batch"
+}

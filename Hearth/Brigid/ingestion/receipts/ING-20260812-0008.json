@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:04.468623-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-ARCHITECTURAL-PRINCIPLES-0001.json",
+  "original_name": "AKS-ARCHITECTURAL-PRINCIPLES-0001.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0008",
+  "schema_version": "0.1.0",
+  "sha256": "79f311f9fd7b99a77b9fc72fb8fed7a6e66ba2b8731a4ae6d56dfec243651f5f",
+  "size_bytes": 502,
+  "source_class": "manual_batch"
+}

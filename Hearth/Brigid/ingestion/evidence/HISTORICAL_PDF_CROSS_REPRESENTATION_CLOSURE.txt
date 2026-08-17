@@ -1,0 +1,23 @@
+status=HISTORICAL_PDF_CROSS_REPRESENTATION_RESOLVED
+promotion=NONE
+
+frozen_pdf_artifacts=12
+structured_json_representations_tested=8
+verified_txt_md_sources_tested=24
+
+pdf_json_coverage_ge_50=1
+pdf_verified24_coverage_ge_50=0
+
+known_related_pdf=Inference and Linguistic Models.pdf
+known_related_json=Inference_and_Linguistic_Models.json
+normalized_pdf_coverage_by_json_pct=69.00
+known_related_disposition=HUMAN_INTERFACE_DERIVED_OR_EXTRACTED_SOURCE
+conversation_corpus_disposition=EXCLUDED
+
+remaining_pdf_artifacts=11
+remaining_pdf_max_observed_cross_representation_coverage_pct=0.38
+
+finding=Eleven frozen PDF artifacts show no material content identity with the tested structured JSON representations or verified-24 txt/md corpus.
+finding=Matching or similar titles do not establish representation identity.
+finding=Inference and Linguistic Models is the sole material PDF-to-JSON relationship observed in this cross-representation test.
+finding=The eleven remaining PDF artifacts survive as distinct source identities under current evidence; semantic conversation qualification remains separate.

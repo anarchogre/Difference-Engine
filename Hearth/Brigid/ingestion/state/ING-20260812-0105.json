@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0105",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:08.520507-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-REL-0001_Relationship_Classification.json",
+    "original_name": "AKS-REL-0001_Relationship_Classification.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0105",
+    "schema_version": "0.1.0",
+    "sha256": "294b2f0a5d61d013f6a92bec4db6e154445da683367f211404595e5564a4bcf9",
+    "size_bytes": 921,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

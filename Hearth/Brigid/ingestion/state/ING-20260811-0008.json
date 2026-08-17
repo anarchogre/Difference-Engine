@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260811-0008",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-11T22:18:45.395171-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Branch I - Head Steward -  Cat Wrangler - Difference Engine.md",
+    "original_name": "Branch I - Head Steward -  Cat Wrangler - Difference Engine.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260811-0008",
+    "schema_version": "0.1.0",
+    "sha256": "b7122b68899e23016d7bfc52338127bea545a76c6e39c4b0128d6da3aa5d06b3",
+    "size_bytes": 148196,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

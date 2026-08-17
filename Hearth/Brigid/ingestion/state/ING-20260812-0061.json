@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0061",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:06.435074-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-PRESERVATION-0010_Semantic_Composition_Checkpoint.json",
+    "original_name": "AKS-PRESERVATION-0010_Semantic_Composition_Checkpoint.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0061",
+    "schema_version": "0.1.0",
+    "sha256": "3e5dfada04059c6fd12e3350648aa8695d6da64ca03432bc661d9303a704f46c",
+    "size_bytes": 486,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

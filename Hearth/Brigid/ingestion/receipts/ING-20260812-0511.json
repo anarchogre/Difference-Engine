@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:50.689327-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/VERSIONING_POLICY.md",
+  "original_name": "VERSIONING_POLICY.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0511",
+  "schema_version": "0.1.0",
+  "sha256": "706ccb81387af354ef0ab0624571e5b9e5ec45e038dd14ca3a28670498f0814a",
+  "size_bytes": 278,
+  "source_class": "manual_batch"
+}

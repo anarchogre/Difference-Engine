@@ -1,0 +1,79 @@
+HASH 09b52590f09055c5781e0ee9c6258b11adde31c13c6e12334352118cc4d9cb99
+SELECTED	ING-20260804-0080	turns=12	user=11	assistant=1	errors=[]	Project_Chat_Context.md.txt
+
+HASH 0a2619397bc7687c57fd8e08765062ea5b4eae141fd8902d71536a443fa5f657
+SELECTED	ING-20260804-0099	turns=227	user=2	assistant=225	errors=[]	Difference_Engine____Branch_0____Origins.txt
+
+HASH 1bb1d6b364864de9b346f27e67bb111153e65db14806a483406816602bfe2529
+FAILED	DE-CONV-20260804-0001	turns=0	user=0	assistant=0	errors=['invalid_conversation_kind', 'no_conversation_turns', 'no_assets']	Kernel_and_Bootstrap_Load.md(1).txt
+FAILED	DE-CONV-20260804-0002	turns=138	user=77	assistant=61	errors=[]	Kernel_and_Bootstrap_Load.md(1).txt
+SELECTED	DE-CONV-20260804-0003	turns=138	user=77	assistant=61	errors=[]	Kernel_and_Bootstrap_Load.md(1).txt
+
+HASH 3070b03ec60d697cef3c8051553adc27b34a141bda6cd3cda3f112edd81f53a7
+SELECTED	ING-20260804-0084	turns=19	user=14	assistant=5	errors=[]	Difference_Engine____Branch_II____Research.md.txt
+
+HASH 3765fbf5380a3006353f07da2ea82f06b37f200e09ce327c29deff99f5351c1f
+SELECTED	ING-20260804-0094	turns=101	user=73	assistant=28	errors=[]	Constitutional_Kernel_Initialization.md.txt
+
+HASH 41f9205e9dc88751d416f9884ef7c1c34f463dc3f622b94d95699f634beaa8cb
+SELECTED	ING-20260804-0086	turns=57	user=46	assistant=11	errors=[]	Categorization_of_Governance_Elements.md(1).txt
+
+HASH 5b0e93774638f5f0ade186de3769c6bf9fd440971965b101fe45b42b0eb80e83
+SELECTED	ING-20260804-0097	turns=502	user=300	assistant=202	errors=[]	Governance_Improvements_Implementation.md.txt
+
+HASH 64263a35738281b8c4288b32577feb928f45c47331c7fa2ab94027c4e50b36ec
+SELECTED	DE-CONV-20260804-0006	turns=110	user=81	assistant=29	errors=[]	Epistemic_Engine_Development.md
+FAILED	ING-20260804-0091	turns=0	user=0	assistant=0	errors=[]	Epistemic_Engine_Development.md
+
+HASH 66c819d2a969c4e161ae6b64f02951534385908813e86703c8c5a77c548c11af
+SELECTED	ING-20260804-0093	turns=233	user=113	assistant=120	errors=[]	Babbage_Initialization_and_Parsing.md.txt
+
+HASH 6ea1103958a3b5e513fafde16b80c107f2ef55c3b481065a5961d00f9baa37cc
+SELECTED	ING-20260804-0085	turns=30	user=20	assistant=10	errors=[]	Difference_Engine____Branch_0____Origins.md.txt
+
+HASH 71176b39c2ad2ac55bf71cb7b56460756f73c8d2821c62bfe0f4f2093f817805
+SELECTED	ING-20260804-0092	turns=162	user=88	assistant=74	errors=[]	Workflow_and_Evidence_Consolidation.md.txt
+
+HASH 734a6d8fde65b6c40eb9fe58a439f0f977babea6a950720c7016782cf2643b81
+SELECTED	ING-20260804-0088	turns=71	user=49	assistant=22	errors=[]	Difference_Engine____Branch_II____Research.md(1).txt
+
+HASH 7b142fadaa911b1b72cc274e371ad784e7d84de55a71d56f0d47e5eba4ed9b42
+SELECTED	ING-20260804-0082	turns=22	user=14	assistant=8	errors=[]	Babbage_GPT_Initialization.md.txt
+
+HASH 9a43ae30cb3d58bd59f243cc41bb28fa8ddd02e6c1a1620c92e71b9557b237c7
+SELECTED	ING-20260804-0096	turns=159	user=53	assistant=105	errors=[]	Difference_Engine____Branch_III____Integration.md.txt
+
+HASH a053bdf9d1710ff9973c940058990e1383806a68a0a0f6ddfe2aa8a9c5b5a566
+SELECTED	ING-20260804-0101	turns=330	user=176	assistant=154	errors=[]	GPT_Plus_Integration_Roadmap.md(1).txt
+
+HASH a48dcc6e2768ac9f9c23f4d4439fbd010c0fc427ece4b8de8f2d07cd6b80a6c1
+SELECTED	ING-20260804-0083	turns=52	user=45	assistant=7	errors=[]	Bootstrap_Initialization_and_Rules.md.txt
+
+HASH c3897397c4b8b9e1653ad977ad0249da1334595a5223913e7140e5191371ae10
+SELECTED	ING-20260804-0100	turns=315	user=167	assistant=148	errors=[]	GPT_Plus_Integration_Roadmap.md.txt
+
+HASH d1c9064bb50f0b6b29b34beafb8aebb9c31c0a02ba1f86b3c1338311ecda7bd9
+SELECTED	ING-20260804-0079	turns=2	user=1	assistant=1	errors=[]	Difference_Engine____Branch_IV____Operations.md.txt
+
+HASH dba3f90ff24cd051dd3dec204a7d6c3cf3f8232ed3c2a8fa6fb8bb7b224c4e0d
+SELECTED	ING-20260804-0090	turns=66	user=37	assistant=29	errors=[]	Summaries_for_the_steward.md.txt
+
+HASH e54a100d601a877e0f96cd1ba14677bc123f8a6bd4b1b30ccc6f9810ca0f68ac
+SELECTED	ING-20260804-0087	turns=104	user=51	assistant=53	errors=[]	Migration_Map_Creation.md.txt
+
+HASH e6260a8c5fbb44af9e6c95c05ba2cbe518b31d79029dc6982ebad14e4f6dda77
+FAILED	DE-CONV-20260804-0004	turns=1	user=0	assistant=1	errors=[]	DifferenceEngine Gubmint Cheese.txt
+FAILED	DE-CONV-20260804-0005	turns=1	user=0	assistant=1	errors=['missing_user_turn']	DifferenceEngine Gubmint Cheese.txt
+
+HASH e6ade85893a0e1c71e38ee13e681f9fd44823ba5b783262fc5ac4c92e29d51e8
+SELECTED	ING-20260804-0089	turns=124	user=67	assistant=57	errors=[]	File_Library_Access_Details.md.txt
+
+HASH f0d08cbc34270a52c9502851ce02873832ee40f151cc91b4d6babcfe8200dfd0
+SELECTED	ING-20260804-0098	turns=502	user=300	assistant=202	errors=[]	Governance_Improvements_Implementation.md(1).txt
+
+HASH fa0eeb17972874f3a991b0f767fbdc0d5dceceae5bfbeed4303782d601e376ea
+SELECTED	ING-20260804-0095	turns=112	user=74	assistant=38	errors=[]	Constitutional_Kernel_Load.md.txt
+
+HASH ff976445f55b32c13441e1fac0a8d24d9ad44c6c8c54f978edc7bd42f1d38806
+SELECTED	ING-20260804-0081	turns=18	user=16	assistant=2	errors=[]	Bootstrap_BABBAGE_Initialization.md.txt
+

@@ -1,0 +1,56 @@
+RUN=workspace/operational/recovery/gpt-plus-integration/20260803T043919
+RESET_STATUS=0
+DRY_RUN_STATUS=0
+VALIDATION_STATUS=0
+BASELINE_FILES=198
+PROPOSED_ADDS=198
+SENSITIVE_FILENAMES=0
+SENSITIVE_CONTENT_HITS=8
+
+LOCAL GIT IDENTITY
+
+GLOBAL GIT IDENTITY
+
+SENSITIVE FILENAME CANDIDATES
+
+SENSITIVE CONTENT CANDIDATES
+./inventory/reconciliation/REPOSITORY.diff:2044:+- API keys
+./inventory/reconciliation/REPOSITORY.diff:2045:+- Access tokens
+./inventory/reconciliation/REPOSITORY.diff:42533:-+- API keys
+./inventory/reconciliation/REPOSITORY.diff:42534:-+- Access tokens
+./scripts/reconciliation/REPOSITORY.diff:2044:+- API keys
+./scripts/reconciliation/REPOSITORY.diff:2045:+- Access tokens
+./scripts/reconciliation/REPOSITORY.diff:42533:-+- API keys
+./scripts/reconciliation/REPOSITORY.diff:42534:-+- Access tokens
+
+LARGEST BASELINE FILES
+2140411	./scripts/reconciliation/REPOSITORY.diff
+2140411	./inventory/reconciliation/REPOSITORY.diff
+75416	./scripts/reconciliation/FILE_PAIR_INDEX.report
+75416	./inventory/reconciliation/FILE_PAIR_INDEX.report
+52744	./scripts/reconciliation/DIFFERING_FILES.report
+52744	./inventory/reconciliation/DIFFERING_FILES.report
+40102	./scripts/reconciliation/RIGHT_FILES.report
+40102	./inventory/reconciliation/RIGHT_FILES.report
+35168	./scripts/reconciliation/LEFT_FILES.report
+35168	./inventory/reconciliation/LEFT_FILES.report
+31314	./inventory/reconciliation/FLU.sha256
+28118	./inventory/reconciliation/FULL_HASH_MANIFEST.sha256
+27964	./inventory/reconciliation/DE.sha256
+27664	./scripts/reconciliation/PATH_DRIFT.diff
+27664	./inventory/reconciliation/PATH_DRIFT.diff
+22381	./inventory/reconciliation/FILE_MANIFEST.tsv
+21976	./inventory/reconciliation/DE.paths
+17916	./inventory/reconciliation/FLU_only.files
+17916	./inventory/reconciliation/FILE_LIBRARY_UPLOADS.files
+16531	./.meta/CANONICAL_FILE_INDEX.lst
+16048	./inventory/reconciliation/LOCATION_DRIFT.files
+15754	./inventory/reconciliation/files.lst
+15754	./inventory/reconciliation/DifferenceEngine.files
+15754	./inventory/reconciliation/DE_only.files
+13195	./inventory/reconciliation/FLU.hashes
+12740	./inventory/reconciliation/FLU_ONLY.hashes
+12025	./inventory/reconciliation/DE.hashes
+11570	./inventory/reconciliation/DE_ONLY.hashes
+11446	./inventory/reconciliation/TREE_SNAPSHOT.txt
+10509	./ade/kernel/bootstrap_loader/verifier.py

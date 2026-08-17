@@ -1,0 +1,34 @@
+chars	path	top_level	recursive_signal_keys
+492294	Chatgpt/JSON/Master_Conversations_Unparsed_v1.json	artifact,status,purpose,parts	content:2,parts:1,source_file:2
+7595	Chatgpt/JSON/forensic_parser_workflow_start.json	source_text,parsed_summary,key_decisions,mission_statements	source_text:1
+7096	AKS/AKS-SPEC-0001_Draft_0.4_Canonical.json	artifact	
+3576	AKS/AKS-INVARIANTS-0001_Draft_0.1_Canonical.json	artifact	
+3339	AKS/AKS_Architecture_v0.1_Draft.json	aks_architecture_version,status,principles,operating_cycle,layer_model,repositories,operational_manual_outline,architectural_rules	
+3307	AKS/AKS_Constitution_v0.1_Draft.json	document,version,preamble,authority_hierarchy,fundamental_principles,repository_layers,canonical_truth,repository_evolution,drift,provenance_requirements,publication_policy,operator_duties	
+3245	AKS/AKS-SPEC-0002_Draft_0.1_Canonical.json	artifact	
+2440	AKS/AKS-THEOREMS-0001_Draft_0.1_Canonical.json	artifact	
+2259	AKS/AKS-INDEX-0001_Draft_0.1_Canonical.json	artifact	
+1756	AKS/AKS-CV-0001_Draft_0.2_Canonical.json	artifact	
+1735	Chatgpt/JSON/census_v0.1.json	artifact,version,status,summary,artifacts	
+1630	AKS/AKS-PRESERVATION-0025_Validation_Program_Transition.json	artifact	
+1614	AKS/AKS-THEOREM-0001_Inheritance_Conservation.json	artifact	
+1599	AKS/AKS_CPA_0001_Manifest_Draft.json	checkpoint_id,title,status,created_utc,phase,purpose,governing_principles,accepted_decisions,planned_package,next_objective	
+1591	AKS/AKS-PRESERVATION-0034_Engineering_Maturity_Snapshot.json	artifact	
+1524	AKS/AKS-PRESERVATION-0036_Necessary_Complexity_Snapshot.json	artifact	
+1505	AKS/AKS-PRESERVATION-0035_Architectural_Invariant_Assault.json	artifact	
+1436	AKS/AKS-PRESERVATION-0040_Boundary_Conditions_and_Self_Revision.json	artifact	
+1325	Chatgpt/JSON/MAJOR_PP_0002.json	preservation_point,version,status,title,summary,adopted_layers,runtime_engines,constitutional_invariants,outstanding_work	
+1296	AKS/AKS-PRESERVATION-0018_Governance_Dashboard.json	artifact	
+1288	AKS/AKS-PRESERVATION-0041_Emergent_Interaction_and_Dynamic_Equilibrium.json	artifact	
+1258	Chatgpt/JSON/MAJOR_PP_0003.json	preservation_point,title,version,status,date,summary,adopts,constitutional_rules,next_execution_phase	
+1257	Chatgpt/JSON/migration_manifest_v0.1.json	artifact,version,status,source_census,actions,approval_required,notes	
+1180	AKS/AKS-TRUTH-0001_Draft_0.1_Truth_State_Model.json	artifact	
+1161	Chatgpt/JSON/PR-0005_Architectural_Change_Preservation.json	artifact	
+1161	AKS/AKS-PRESERVATION-0042_Emergent_Behavior_and_Regulatory_Structures.json	artifact	
+1150	AKS/AKS-PRESERVATION-0039_First_Principle_Independence_Snapshot.json	artifact	
+1140	AKS/AKS-PRESERVATION-0033_Viking_Campaign_I.json	artifact	
+1081	AKS/AKS_Phylactery_PreFreeze_Baseline_v0.1.json	artifact,version,status,workflow,governance,pipeline,artifact_roles,checkpoint	
+1075	AKS/AKS-PRESERVATION-0017_Evidence_Refinement.json	artifact	
+1060	AKS/AKS-PRESERVATION-0038_First_Principles_Falsification_I.json	artifact	
+1043	Chatgpt/JSON/SPEC-1004_v1.0.0.json	id,version,status,title,purpose,inputs,outputs,confidence_dimensions,confidence_classes,normative_requirements,state_model	
+1015	AKS/AKS-PRESERVATION-0030_Endurance_Cycle_B.json	artifact	

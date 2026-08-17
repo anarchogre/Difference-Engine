@@ -1,0 +1,5 @@
+[BOOTSTRAP] Discovering repository...
+LOADER_COMPATIBILITY=PASS
+QUEUE_TYPE=QueueState
+MISSION=GPT Plus Integration
+TASK=Recovery Standardization

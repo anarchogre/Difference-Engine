@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:34.528959-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Schema_Governance_Specification_v0.1.md",
+  "original_name": "Schema_Governance_Specification_v0.1.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0392",
+  "schema_version": "0.1.0",
+  "sha256": "16c73d82b56b3cab5fc260cc1a9c455ba1aef44caaaf2e15102da3f6d44fcaa8",
+  "size_bytes": 2437,
+  "source_class": "manual_batch"
+}

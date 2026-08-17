@@ -1,0 +1,110 @@
+Repo Not Found             https://chatgpt.com/c/6a64282b-0498-83ea-aece-33604118a4ee
+
+
+
+
+                 ChatGPT
+
+
+
+
+1 of 4                                                                  7/24/26, 22:10
+Repo Not Found                                               https://chatgpt.com/c/6a64282b-0498-83ea-aece-33604118a4ee
+
+
+
+
+            I’ve got the exact URL now, so I’m checking the repository directly.
+
+
+            Received app response
+
+            Found it: anarchogre/ADE-Working-Repository- is a public repo, on main .
+
+            What do you want me to do next in it—list files, inspect a branch, or summarize the repo
+            contents?
+
+
+
+
+                                                                                     @GitHublist files
+
+
+
+            I’m listing the repository contents now.
+
+
+            Received app response
+
+            The fetch endpoint needs a file URL, so I’m switching to the repository listing endpoint
+            instead.
+
+
+
+
+2 of 4                                                                                                    7/24/26, 22:10
+Repo Not Found                                                            https://chatgpt.com/c/6a64282b-0498-83ea-aece-33604118a4ee
+
+
+
+            Received app response
+
+                       GitHub
+                       List repositories
+
+
+                 Request                                                                                   Copy
+
+                    {owner: "anarchogre", page_size: 50, page_offset: 0}
+
+
+
+                 Response                                                                                  Copy
+
+                    {re… {…}, err… null, err… null, err… null, jso…null, err… null, err… null, int… {…}, cla}
+
+
+
+
+            I hit a connector limitation while trying to enumerate the repo contents. The repo itself is
+            confirmed, but the listing actions I tried did not return the directory tree.
+
+            The cleanest next step is to fetch a specific path, like README.md , package.json , or a
+            folder path you care about, and I’ll work outward from there.
+
+
+
+
+                                                 @GitHubhttps://github.com/anarchogre/ADE-Working-
+                                                 Repository-/blob/main/CODE_OF_CONDUCT.md
+
+
+
+            Received app response
+
+            Here’s the file content from CODE_OF_CONDUCT.md :
+
+            ADE Code of Conduct
+            This repository values:
+             • Respect
+             • Evidence-based discussion
+             • Clear documentation
+             • Long-term preservation
+             • Constructive collaboration
+
+
+
+3 of 4                                                                                                                 7/24/26, 22:10
+Repo Not Found                                            https://chatgpt.com/c/6a64282b-0498-83ea-aece-33604118a4ee
+
+
+
+            Disagreements should improve understanding, not reduce it.
+
+                 Sources
+
+
+
+
+4 of 4                                                                                                 7/24/26, 22:10
+

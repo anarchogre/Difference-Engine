@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/plain",
+  "observed_at": "2026-08-12T04:24:51.668128-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Difference____Engine____Branch_V____Human_Imterfac.txt",
+  "original_name": "Difference____Engine____Branch_V____Human_Imterfac.txt",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0675",
+  "schema_version": "0.1.0",
+  "sha256": "cf1ee389ec7c33f7ba4a9b989568ab8685d1aa771222763da15151ec5691e191",
+  "size_bytes": 136277,
+  "source_class": "manual_batch"
+}

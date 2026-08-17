@@ -1,0 +1,37 @@
+Operational Reality
+
+This document describes the practical operating environment of the primary
+repository operator.
+
+Purpose:
+
+Design workflows that fit reality rather than ideal circumstances.
+
+Current assumptions include:
+
+mobile-first workflow
+
+touchscreen interaction
+
+Termux terminal
+
+frequent interruption
+
+incremental progress
+
+externalized memory
+
+high value on resumable work
+
+Repository processes should:
+
+preserve progress early and often;
+
+minimize repetitive typing;
+
+minimize context switching;
+
+prefer durable artifacts over conversational memory;
+
+reduce unnecessary cognitive burden.
+

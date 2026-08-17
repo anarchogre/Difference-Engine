@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:04.314730-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-ACP-Foundation-Gamma/CHANGELOG_v1.4.md",
+  "original_name": "CHANGELOG_v1.4.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0003",
+  "schema_version": "0.1.0",
+  "sha256": "a553e14dbf239a32975680d1ebed3c77cfed5c69620d1c31a191e50711be3936",
+  "size_bytes": 243,
+  "source_class": "manual_batch"
+}

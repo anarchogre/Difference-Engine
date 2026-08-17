@@ -1,0 +1,185 @@
+Free ChatGPT Plugins for ADE   https://chatgpt.com/c/6a64507b-5de4-83ea-8794-5a5578cbc497
+
+
+
+
+               ChatGPT
+
+
+
+
+1 of 8                                                                      7/25/26, 11:35
+Free ChatGPT Plugins for ADE   https://chatgpt.com/c/6a64507b-5de4-83ea-8794-5a5578cbc497
+
+
+
+
+2 of 8                                                                      7/25/26, 11:35
+Free ChatGPT Plugins for ADE   https://chatgpt.com/c/6a64507b-5de4-83ea-8794-5a5578cbc497
+
+
+
+
+3 of 8                                                                      7/25/26, 11:35
+Free ChatGPT Plugins for ADE   https://chatgpt.com/c/6a64507b-5de4-83ea-8794-5a5578cbc497
+
+
+
+
+4 of 8                                                                      7/25/26, 11:35
+Free ChatGPT Plugins for ADE                                    https://chatgpt.com/c/6a64507b-5de4-83ea-8794-5a5578cbc497
+
+
+
+
+            That narrows it down considerably.
+
+            If your criteria are:
+
+              •        Works with ChatGPT Free or Go
+              •        No paid subscription required to the plugin itself
+              •        Useful for ADE/AKS
+              •        No "free trial" that expects you to upgrade
+
+            Then my recommendations become much stricter.
+
+            Priority                Plugin           Truly usable free?           Recommendation
+
+                                    GitHub              Yes                       Install immediately.
+
+
+                                    SciSpace            Yes (limited but          Install if you'll be doing
+                                                     genuinely useful)            research.
+
+
+                         ☆          Figma               Yes (free starter plan)   Only when UI work begins.
+
+
+                         ☆          Dropbox             Yes                       Optional for external file
+                                                                                  storage.
+
+
+                       ☆☆           Notion              Yes (personal plan)       Only if you want a project
+                                                                                  wiki.
+
+
+                       ☆☆           Airtable            Yes                       Only if spreadsheets become
+                                                                                  limiting.
+
+
+                  ☆☆☆               Slack               Yes                       Only if collaborating with
+                                                                                  others.
+
+
+
+
+5 of 8                                                                                                          7/25/26, 11:35
+Free ChatGPT Plugins for ADE                                   https://chatgpt.com/c/6a64507b-5de4-83ea-8794-5a5578cbc497
+
+
+            Priority             Plugin             Truly usable free?              Recommendation
+
+                  ☆☆☆            Linear                 Yes                         Only if GitHub Issues no
+                                                                                    longer suffice.
+
+
+
+            My "no-subscription" ADE list
+            If I were trying to keep the stack as lean as possible:
+              1. GitHub
+              2. SciSpace
+
+            That's it.
+
+            Everything else is either:
+
+              • solving a problem you don't have yet,
+              • duplicating GitHub's capabilities, or
+              • introducing another place where project information can become fragmented.
+
+            One question, though: when you say "ChatGPT plugins," are you referring to the
+            Connectors/Plugins available under ChatGPT's Tools menu, or the Discover GPTs section
+            with custom GPTs? OpenAI has changed the terminology over time, and the
+            recommendations differ depending on which catalog you're looking at.
+
+
+
+
+                                                                         Yep, ok. Both are already installed.
+
+
+
+            Great. Then for ADE, the practical answer is very short:
+
+            GitHub and SciSpace are the only ones from that free/no-subscription lane that are clearly
+            worth keeping active.
+
+            If you want, I can turn that into a tighter “keep / ignore / later” ADE plugin policy.
+
+
+
+
+6 of 8                                                                                                          7/25/26, 11:35
+Free ChatGPT Plugins for ADE                                 https://chatgpt.com/c/6a64507b-5de4-83ea-8794-5a5578cbc497
+
+
+
+
+                                                                                          Excuse me?
+
+
+
+            Yeah, that message is understandably confusing.
+
+            From your screenshot, I can see:
+
+              • You're using the GitHub tool (the blue "GitHub" chip is active).
+              • After sending a message, ChatGPT returned "You've hit your limit. Please try again
+                 later."
+              • It doesn't specify which limit.
+
+            That message can mean a few different things:
+              1. ChatGPT usage limit (most common on Free/Go plans)
+                   • You may have hit a temporary cap on requests or on requests using tools.
+                   • The limit usually resets automatically after some time.
+              2. Tool-specific rate limit
+                   • The GitHub integration may have hit a request limit (either on the ChatGPT side
+                      or GitHub API side).
+                   • In that case, plain ChatGPT conversations may still work, but GitHub-assisted
+                      ones won't until the limit resets.
+
+
+
+7 of 8                                                                                                    7/25/26, 11:35
+Free ChatGPT Plugins for ADE                                     https://chatgpt.com/c/6a64507b-5de4-83ea-8794-5a5578cbc497
+
+
+              3. Temporary service issue
+                   • Occasionally the backend returns the generic "You've hit your limit" message
+                      even when it's actually a temporary service problem.
+
+            What I'd check
+              • Turn off the GitHub tool (tap the blue GitHub chip so it's no longer active) and send a
+                 normal message.
+                   • If that works, the issue is probably with the GitHub tool or its quota.
+                   • If it still fails, it's more likely a ChatGPT usage limit.
+              • Try starting a new chat without any tools enabled.
+              • Wait 15–60 minutes and try again if it persists.
+
+            One thing stands out
+            You mentioned you have a Go plan. If you're seeing this frequently while using GitHub, I'd
+            be interested in figuring out whether Go has a separate quota for tool invocations. OpenAI
+            doesn't publicly document all of those limits, and the UI isn't very specific.
+
+            If you'd like, I can help you narrow it down. Tell me:
+
+              • Does a normal chat (no GitHub, no SciSpace) still work?
+              • Or does every message give you the same "You've hit your limit" error?
+
+            That will tell us very quickly whether it's the GitHub tool or your overall ChatGPT usage.
+
+
+
+
+8 of 8                                                                                                        7/25/26, 11:35
+

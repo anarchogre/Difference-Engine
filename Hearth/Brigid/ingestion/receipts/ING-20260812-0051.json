@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:06.020190-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-IR-0001_Working_Model.json",
+  "original_name": "AKS-IR-0001_Working_Model.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0051",
+  "schema_version": "0.1.0",
+  "sha256": "c89139aeb828fd0342502d0d4abc674e32b10f40541201f10da170c781752bd2",
+  "size_bytes": 458,
+  "source_class": "manual_batch"
+}

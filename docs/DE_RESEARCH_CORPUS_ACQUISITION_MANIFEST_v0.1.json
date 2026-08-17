@@ -1,0 +1,303 @@
+{
+  "manifest_id": "DE_RESEARCH_CORPUS_ACQUISITION_MANIFEST",
+  "version": "0.1",
+  "date": "2026-08-13",
+  "status": "research_staging_not_canonical",
+  "principles": [
+    "search_before_create",
+    "evidence_before_interpretation",
+    "ingestion_does_not_equal_promotion",
+    "rights_before_bulk_download",
+    "provenance_preserved",
+    "deduplicate_intellectual_work_without_erasing_manifestations",
+    "metadata_global_fulltext_selective",
+    "resume_after_interruption"
+  ],
+  "rights_states": [
+    "REUSE_CLEAR",
+    "NONCOMMERCIAL_REUSE",
+    "TDM_ALLOWED",
+    "FREE_READ_UNCLEAR_REUSE",
+    "RESTRICTED",
+    "UNKNOWN"
+  ],
+  "sources": [
+    {
+      "id": "openalex",
+      "name": "OpenAlex",
+      "role": [
+        "global_metadata",
+        "citation_graph",
+        "oa_discovery",
+        "retraction_signal"
+      ],
+      "authority": "scholarly_metadata_aggregator",
+      "metadata_rights": "open",
+      "fulltext_policy": "record-specific; use OA/content fields and source rights",
+      "api": "https://api.openalex.org",
+      "docs": "https://developers.openalex.org/",
+      "priority": 1
+    },
+    {
+      "id": "crossref",
+      "name": "Crossref",
+      "role": [
+        "doi_identity",
+        "publisher_metadata",
+        "license_metadata",
+        "updates"
+      ],
+      "authority": "doi_registration_metadata",
+      "metadata_rights": "open",
+      "fulltext_policy": "metadata may contain links; destination rights control",
+      "api": "https://api.crossref.org",
+      "docs": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "priority": 1
+    },
+    {
+      "id": "unpaywall",
+      "name": "Unpaywall",
+      "role": [
+        "oa_resolver"
+      ],
+      "authority": "open_access_resolver",
+      "metadata_rights": "open_service",
+      "fulltext_policy": "returns OA locations; source rights control",
+      "api": "https://api.unpaywall.org/v2/",
+      "docs": "https://data.unpaywall.org/products/api",
+      "priority": 1
+    },
+    {
+      "id": "core",
+      "name": "CORE",
+      "role": [
+        "oa_metadata",
+        "oa_fulltext",
+        "repository_discovery"
+      ],
+      "authority": "open_access_aggregator",
+      "metadata_rights": "service_terms",
+      "fulltext_policy": "OA/provider-specific; preserve license and source",
+      "api": "https://api.core.ac.uk/",
+      "docs": "https://core.ac.uk/services/api",
+      "priority": 1
+    },
+    {
+      "id": "doaj",
+      "name": "Directory of Open Access Journals",
+      "role": [
+        "oa_journal_registry",
+        "article_metadata",
+        "source_quality_signal"
+      ],
+      "authority": "curated_oa_directory",
+      "metadata_rights": "CC0",
+      "fulltext_policy": "journal/article license controls",
+      "api": "https://doaj.org/api/",
+      "docs": "https://doaj.org/docs/faq/",
+      "priority": 1
+    },
+    {
+      "id": "opencitations",
+      "name": "OpenCitations",
+      "role": [
+        "citation_graph",
+        "forward_backward_expansion"
+      ],
+      "authority": "open_citation_index",
+      "metadata_rights": "open",
+      "fulltext_policy": "metadata only",
+      "api": "https://api.opencitations.net/index/v2",
+      "docs": "https://api.opencitations.net/index/v2",
+      "priority": 2
+    },
+    {
+      "id": "arxiv",
+      "name": "arXiv",
+      "role": [
+        "frontier_preprints",
+        "cs_ai_systems_math"
+      ],
+      "authority": "established_preprint_repository",
+      "metadata_rights": "bulk metadata supported",
+      "fulltext_policy": "bulk/TDM mechanisms supported; article licenses vary; redistribution not assumed",
+      "docs": "https://github.com/arXiv/arxiv-docs/blob/develop/source/help/bulk_data.md",
+      "priority": 1
+    },
+    {
+      "id": "acl_anthology",
+      "name": "ACL Anthology",
+      "role": [
+        "nlp",
+        "language_models",
+        "computational_linguistics"
+      ],
+      "authority": "professional_society_anthology",
+      "metadata_rights": "programmatic metadata available",
+      "fulltext_policy": "ACL materials 2016+ CC BY 4.0; older ACL materials CC BY-NC-SA 3.0; third-party rights vary",
+      "docs": "https://aclanthology.org/faq/",
+      "priority": 1
+    },
+    {
+      "id": "pmlr",
+      "name": "Proceedings of Machine Learning Research",
+      "role": [
+        "machine_learning",
+        "optimization",
+        "learning_theory"
+      ],
+      "authority": "peer_reviewed_proceedings_series",
+      "metadata_rights": "public",
+      "fulltext_policy": "freely available; authors retain copyright",
+      "docs": "https://proceedings.mlr.press/pmlr.html",
+      "priority": 1
+    },
+    {
+      "id": "acm",
+      "name": "ACM Digital Library",
+      "role": [
+        "computing",
+        "hci",
+        "systems",
+        "databases",
+        "software_engineering",
+        "ai",
+        "security"
+      ],
+      "authority": "professional_society_peer_reviewed",
+      "metadata_rights": "source-specific",
+      "fulltext_policy": "ACM states all publications are OA beginning 2026-01-01; article rights still preserve exact license metadata",
+      "docs": "https://www.acm.org/diversity-inclusion/equity-through-oa",
+      "priority": 1
+    },
+    {
+      "id": "usenix",
+      "name": "USENIX",
+      "role": [
+        "operating_systems",
+        "security",
+        "storage",
+        "networking",
+        "sre"
+      ],
+      "authority": "professional_society_peer_reviewed",
+      "metadata_rights": "public",
+      "fulltext_policy": "conference proceedings freely available under USENIX open-access policy",
+      "docs": "https://www.usenix.org/about",
+      "priority": 1
+    },
+    {
+      "id": "pmc_oa",
+      "name": "PubMed Central Open Access Subset",
+      "role": [
+        "biomedicine",
+        "neuroscience",
+        "behavior",
+        "development",
+        "health_informatics"
+      ],
+      "authority": "US_NLM_repository",
+      "metadata_rights": "public repository services",
+      "fulltext_policy": "only OA subset / authorized TDM channels; licenses vary",
+      "docs": "https://pmc.ncbi.nlm.nih.gov/tools/openftlist/",
+      "priority": 1
+    },
+    {
+      "id": "eric",
+      "name": "ERIC",
+      "role": [
+        "education",
+        "learning_science",
+        "special_education",
+        "teacher_practice",
+        "policy"
+      ],
+      "authority": "US_Department_of_Education_IES",
+      "metadata_rights": "public discovery",
+      "fulltext_policy": "fulltext only when ERIC/source indicates availability/permission",
+      "docs": "https://ies.ed.gov/use-work/education-research-database-eric",
+      "priority": 1
+    },
+    {
+      "id": "nist",
+      "name": "NIST Publications",
+      "role": [
+        "ai_risk",
+        "cybersecurity",
+        "privacy",
+        "standards",
+        "measurement",
+        "systems"
+      ],
+      "authority": "US_government_primary",
+      "metadata_rights": "public",
+      "fulltext_policy": "use NIST/public-access repository links and document-specific rights",
+      "docs": "https://www.nist.gov/open",
+      "priority": 1
+    },
+    {
+      "id": "rfc_editor",
+      "name": "RFC Editor",
+      "role": [
+        "internet_standards",
+        "networking",
+        "security",
+        "distributed_systems"
+      ],
+      "authority": "IETF_IAB_IRTF_archival_series",
+      "metadata_rights": "public",
+      "fulltext_policy": "RFCs freely downloadable/reproducible subject to IETF Trust terms; rsync mirror supported",
+      "docs": "https://www.rfc-editor.org/series/rfc-download/",
+      "priority": 1
+    },
+    {
+      "id": "w3c",
+      "name": "W3C Technical Reports",
+      "role": [
+        "web_standards",
+        "accessibility",
+        "interfaces",
+        "data",
+        "browser_platform"
+      ],
+      "authority": "standards_body",
+      "metadata_rights": "public",
+      "fulltext_policy": "preserve W3C document/license terms",
+      "docs": "https://www.w3.org/TR/",
+      "priority": 1
+    },
+    {
+      "id": "cisa",
+      "name": "CISA Resources",
+      "role": [
+        "cybersecurity",
+        "secure_by_design",
+        "supply_chain",
+        "resilience"
+      ],
+      "authority": "US_government_primary",
+      "metadata_rights": "public",
+      "fulltext_policy": "document/source-specific",
+      "docs": "https://www.cisa.gov/resources-tools/resources",
+      "priority": 2
+    },
+    {
+      "id": "zenodo",
+      "name": "Zenodo",
+      "role": [
+        "datasets",
+        "software",
+        "technical_reports",
+        "research_artifacts",
+        "reproducibility"
+      ],
+      "authority": "CERN_OpenAIRE_repository",
+      "metadata_rights": "CC0",
+      "fulltext_policy": "record-specific license; open and restricted records coexist",
+      "api": "https://zenodo.org/api/records/",
+      "docs": "https://developers.zenodo.org/",
+      "priority": 2
+    }
+  ],
+  "next_operation": "live_storage_census_then_topic_filtered_metadata_harvest"
+}

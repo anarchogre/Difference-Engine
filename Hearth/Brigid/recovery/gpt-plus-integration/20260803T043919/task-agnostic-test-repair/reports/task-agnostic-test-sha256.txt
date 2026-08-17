@@ -1,0 +1,4 @@
+d411be76d99a97df8f15cfd302e00f8ea84c587e2742f947d0332f5d2ae90851  workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-agnostic-test-repair/backups/test_bootstrap_loader.py.before
+7cdd75111ec8f9aa4f83eb12e4988f2626b79a9899a2f4759cfcba2cf7101549  ade/kernel/tests/test_bootstrap_loader.py
+92778229e97f3d5f3c2b917e14cf88731405210cb5a00f3b0b82a4fe5d2e01f8  workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-agnostic-test-repair/tests/test-runner.txt
+52106e1e76b83c6c74eac83c04e79daa8de2819768567141024a8b9002647c22  workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-agnostic-test-repair/tests/verifier.txt

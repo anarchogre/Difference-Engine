@@ -1,0 +1,98 @@
+{
+  "plugins": {
+    "entries": {
+      "llama-cpp": {
+        "enabled": true
+      }
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.7.1-2",
+    "lastTouchedAt": "2026-08-13T08:53:22.693Z"
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "llama-cpp": {
+        "baseUrl": "local://llama-cpp",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "pan-qwen",
+            "name": "Pan Qwen 3.5 4B",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 8192,
+            "maxTokens": 2048,
+            "params": {
+              "modelPath": "/home/reckless-ideator/.local/share/Difference-Engine/models/qwen3.5-4b/Qwen3.5-4B-Q4_K_M.gguf",
+              "contextSize": 8192
+            },
+            "compat": {
+              "supportsTools": true
+            }
+          }
+        ]
+      },
+      "pan-local": {
+        "baseUrl": "http://127.0.0.1:18080/v1",
+        "apiKey": "pan-local",
+        "api": "openai-completions",
+        "timeoutSeconds": 600,
+        "models": [
+          {
+            "id": "pan-qwen",
+            "name": "Pan Qwen 3.5 4B",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 16384,
+            "maxTokens": 2048,
+            "compat": {
+              "supportsTools": true
+            }
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "pan-local/pan-qwen"
+      },
+      "workspace": "/home/reckless-ideator/Difference-Engine",
+      "experimental": {
+        "localModelLean": true
+      }
+    }
+  },
+  "tools": {
+    "exec": {
+      "host": "gateway",
+      "mode": "auto"
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "auth": {
+      "mode": "token",
+      "token": "8568a4f56958cc88315c526831ad80d3ab101e5e6d466103"
+    }
+  }
+}

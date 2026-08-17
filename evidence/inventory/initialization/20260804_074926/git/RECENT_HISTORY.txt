@@ -1,0 +1,20 @@
+a081b55 (HEAD -> master, origin/master) Implement bootstrap service and repair governance mortar
+1837406 Establish canonical repository service specification
+1fbe284 Establish repository service catalog
+8ca1495 Record recovered repository service inventory
+145fad5 Establish canonical repository service contract
+b7a8f37 Establish construction grammar and stage transition contract
+de4ef31 Establish artifact delivery standard
+0e0d670 Complete drift detection phase and activate repository services
+7a62c87 (tag: repository-bootstrap-v1, tag: phase-4-start, tag: epoch-2-foundation-complete, tag: drift-detection-v1, tag: bootstrap-v1.0) Ignore generated drift runtime reports
+e324b78 Expand deterministic cross-domain drift detection
+5e9941d Complete File Library phase and activate drift detection
+095917b Repair File Library verifier variable shadowing
+273e2b8 Integrate File Library governance verification
+59720a4 Establish File Library governance and canonical index
+c155c1e Make bootstrap test follow canonical active state
+bd3a479 Complete recovery phase and activate File Library governance
+289b620 Integrate external recovery verification
+05e9cfe Verify external recovery infrastructure
+70f2c45 Add external recovery verification manifests
+66528a2 Establish recovered repository baseline

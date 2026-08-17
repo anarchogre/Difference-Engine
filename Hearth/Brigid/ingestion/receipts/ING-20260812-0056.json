@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:06.225601-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-PRESERVATION-0005_Foundation_Logic_Checkpoint.json",
+  "original_name": "AKS-PRESERVATION-0005_Foundation_Logic_Checkpoint.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0056",
+  "schema_version": "0.1.0",
+  "sha256": "7aabec8572ec1da29069ba17bc2af0441c6966d35b6edfdf4ef64e643783fd59",
+  "size_bytes": 447,
+  "source_class": "manual_batch"
+}

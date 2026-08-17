@@ -1,0 +1,65 @@
+===== TITLE =====
+# Output Package Specification
+
+===== HEADINGS =====
+# Output Package Specification
+# Purpose
+# Design Principles
+# Standard Output Package
+# Required Components
+## source/
+## metadata/
+## structure/
+## queues/
+## provenance/
+## reports/
+# Naming Rules
+# Extensibility
+# Design Philosophy
+
+===== KEYWORDS =====
+1:# Output Package Specification
+9:# Purpose
+11:The Output Package Specification defines the canonical directory structure produced by the ingestion pipeline.
+13:Every successful ingestion SHALL produce a complete, deterministic output package.
+19:- Consistent structure
+21:- Complete provenance
+22:- Immutable source preservation
+27:# Standard Output Package
+29:artifact-id/
+31:├── source/
+37:├── metadata/
+39:│   └── artifact.yaml
+43:├── structure/
+53:│   └── validation.md
+57:├── queues/
+59:│   ├── decision_queue.md
+61:│   ├── concept_queue.md
+63:│   ├── observation_queue.md
+65:│   ├── tool_queue.md
+67:│   ├── template_queue.md
+69:│   ├── visualization_queue.md
+71:│   ├── infrastructure_queue.md
+73:│   ├── cross_reference_queue.md
+75:│   ├── constitutional_queue.md
+77:│   ├── promotion_queue.md
+79:│   └── meta_improvement_queue.md
+83:├── provenance/
+89:└── reports/
+91:    └── ingestion_report.md
+95:# Required Components
+97:## source/
+99:Contains the original immutable artifact.
+103:## metadata/
+105:Contains normalized metadata.
+109:## structure/
+115:## queues/
+117:Contains generated queue candidates.
+121:## provenance/
+127:## reports/
+129:Contains human-readable processing reports.
+133:# Naming Rules
+139:Artifact identifiers SHALL be globally unique.
+147:Required directories SHALL NOT be omitted.
+153:Every output package should be understandable by both humans and machines.
+155:Directory structure is part of the interface.

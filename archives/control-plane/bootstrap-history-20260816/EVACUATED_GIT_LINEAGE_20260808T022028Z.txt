@@ -1,0 +1,91 @@
+=== CURRENT RAW HEAD ===
+ref: refs/heads/master
+b39d2138800c6df9df173321c30fb7ccfe157d71
+
+=== HEAD REFLOG TAIL ===
+0000000000000000000000000000000000000000 66528a2cb9e4b7c6a57823e8cb57a5f78131af27 Difference Engine <difference-engine@local.invalid> 1785752605 -0500	commit (initial): Establish recovered repository baseline
+66528a2cb9e4b7c6a57823e8cb57a5f78131af27 70f2c454e698fad743412f854ab5bc97c5915ab6 anarchogre <darth.panda@gmail.com> 1785773553 -0500	commit: Add external recovery verification manifests
+70f2c454e698fad743412f854ab5bc97c5915ab6 05e9cfee3f5efef911f71bd597ff35515c1f5833 anarchogre <darth.panda@gmail.com> 1785773731 -0500	commit: Verify external recovery infrastructure
+05e9cfee3f5efef911f71bd597ff35515c1f5833 289b620d9e4febe2bb49e574e6de5593bb09e3f1 anarchogre <darth.panda@gmail.com> 1785773891 -0500	commit: Integrate external recovery verification
+289b620d9e4febe2bb49e574e6de5593bb09e3f1 bd3a479e719410d6051b97a35e45b0d987b9d076 anarchogre <darth.panda@gmail.com> 1785774087 -0500	commit: Complete recovery phase and activate File Library governance
+bd3a479e719410d6051b97a35e45b0d987b9d076 c155c1e05006510b85f492c7354c21088680ab41 anarchogre <darth.panda@gmail.com> 1785774171 -0500	commit: Make bootstrap test follow canonical active state
+c155c1e05006510b85f492c7354c21088680ab41 59720a40d4cd4d80535e38816c5bcdcb70d08cee anarchogre <darth.panda@gmail.com> 1785774274 -0500	commit: Establish File Library governance and canonical index
+59720a40d4cd4d80535e38816c5bcdcb70d08cee 273e2b8e032b2ef05bc824bb87ba9c0af938566f anarchogre <darth.panda@gmail.com> 1785774423 -0500	commit: Integrate File Library governance verification
+273e2b8e032b2ef05bc824bb87ba9c0af938566f 095917ba38d62c0d22922db8960492a4b4b49028 anarchogre <darth.panda@gmail.com> 1785774693 -0500	commit: Repair File Library verifier variable shadowing
+095917ba38d62c0d22922db8960492a4b4b49028 5e9941de147a353c9a5c94a6b4e699f4bcac0272 anarchogre <darth.panda@gmail.com> 1785774789 -0500	commit: Complete File Library phase and activate drift detection
+5e9941de147a353c9a5c94a6b4e699f4bcac0272 e324b78dffb505642d784eb951348984be936088 anarchogre <darth.panda@gmail.com> 1785774958 -0500	commit: Expand deterministic cross-domain drift detection
+e324b78dffb505642d784eb951348984be936088 7a62c87d3f957a431e99820ec56a166b94c1cc13 anarchogre <darth.panda@gmail.com> 1785776055 -0500	commit: Ignore generated drift runtime reports
+7a62c87d3f957a431e99820ec56a166b94c1cc13 0e0d670cc5ec615dabca4bdf936edf9cc606fa2e anarchogre <darth.panda@gmail.com> 1785777583 -0500	commit: Complete drift detection phase and activate repository services
+0e0d670cc5ec615dabca4bdf936edf9cc606fa2e de4ef31832f736754fb83a1f92f4807ae7a6915e anarchogre <darth.panda@gmail.com> 1785778925 -0500	commit: Establish artifact delivery standard
+de4ef31832f736754fb83a1f92f4807ae7a6915e b7a8f379ffc8b4582cdf8eeb87734f7e45cd9193 anarchogre <darth.panda@gmail.com> 1785779127 -0500	commit: Establish construction grammar and stage transition contract
+b7a8f379ffc8b4582cdf8eeb87734f7e45cd9193 145fad5c64e8cf112675961e75870cdf1cd560e7 anarchogre <darth.panda@gmail.com> 1785779738 -0500	commit: Establish canonical repository service contract
+145fad5c64e8cf112675961e75870cdf1cd560e7 8ca149502c2bbd58f3d09edbfb432a1fcd220120 anarchogre <darth.panda@gmail.com> 1785780002 -0500	commit: Record recovered repository service inventory
+8ca149502c2bbd58f3d09edbfb432a1fcd220120 1fbe284c1206ed59dda20c0cc90d8e70592956ff anarchogre <darth.panda@gmail.com> 1785780391 -0500	commit: Establish repository service catalog
+1fbe284c1206ed59dda20c0cc90d8e70592956ff 18374066b10be7f361bc9207d3793f64600c1b87 anarchogre <darth.panda@gmail.com> 1785780639 -0500	commit: Establish canonical repository service specification
+18374066b10be7f361bc9207d3793f64600c1b87 a081b555ba5602ccc0c16011ebc1688d2cb31a58 anarchogre <darth.panda@gmail.com> 1785795578 -0500	commit: Implement bootstrap service and repair governance mortar
+a081b555ba5602ccc0c16011ebc1688d2cb31a58 04ce970ff32c90711d369c0025fc8e41fadb2d35 anarchogre <darth.panda@gmail.com> 1785982270 -0500	commit: Preserve mobile vocabulary integration evidence
+04ce970ff32c90711d369c0025fc8e41fadb2d35 02cfb89fbccdd44d927177488d703d7fb2099a48 anarchogre <darth.panda@gmail.com> 1785983823 -0500	commit: Record Termux Git hook recovery
+02cfb89fbccdd44d927177488d703d7fb2099a48 99d2a05cabbbe0b340663c13da28d12ed2592d40 anarchogre <darth.panda@gmail.com> 1785984186 -0500	commit: Record preservation point PP-006
+99d2a05cabbbe0b340663c13da28d12ed2592d40 0df5547cb0e4519d76041564f806edee919196b2 anarchogre <darth.panda@gmail.com> 1785984620 -0500	commit: Record Termux clipboard integration
+0df5547cb0e4519d76041564f806edee919196b2 519d30745ad5c4c62195b078f224a139f2bcacc8 anarchogre <darth.panda@gmail.com> 1785987426 -0500	commit: Draft Steward Core synchronization contract
+519d30745ad5c4c62195b078f224a139f2bcacc8 eb010b7e9c8e88d1ede35a3e170c7006f18bf170 anarchogre <darth.panda@gmail.com> 1785988123 -0500	commit: Request Head Steward review of Steward Core sync
+eb010b7e9c8e88d1ede35a3e170c7006f18bf170 a2b0e90d9113f929675332e610a58c68564d7b5c anarchogre <darth.panda@gmail.com> 1785990799 -0500	commit: Record Head Steward process review
+a2b0e90d9113f929675332e610a58c68564d7b5c 2553940e984d99908e09095d17cfef1b7c6d6437 anarchogre <darth.panda@gmail.com> 1785992638 -0500	commit: Classify Steward Core source authority
+2553940e984d99908e09095d17cfef1b7c6d6437 b39d2138800c6df9df173321c30fb7ccfe157d71 anarchogre <darth.panda@gmail.com> 1785993097 -0500	commit: Request Head Steward revision confirmation
+
+=== MASTER REFLOG TAIL ===
+0000000000000000000000000000000000000000 66528a2cb9e4b7c6a57823e8cb57a5f78131af27 Difference Engine <difference-engine@local.invalid> 1785752605 -0500	commit (initial): Establish recovered repository baseline
+66528a2cb9e4b7c6a57823e8cb57a5f78131af27 70f2c454e698fad743412f854ab5bc97c5915ab6 anarchogre <darth.panda@gmail.com> 1785773553 -0500	commit: Add external recovery verification manifests
+70f2c454e698fad743412f854ab5bc97c5915ab6 05e9cfee3f5efef911f71bd597ff35515c1f5833 anarchogre <darth.panda@gmail.com> 1785773731 -0500	commit: Verify external recovery infrastructure
+05e9cfee3f5efef911f71bd597ff35515c1f5833 289b620d9e4febe2bb49e574e6de5593bb09e3f1 anarchogre <darth.panda@gmail.com> 1785773891 -0500	commit: Integrate external recovery verification
+289b620d9e4febe2bb49e574e6de5593bb09e3f1 bd3a479e719410d6051b97a35e45b0d987b9d076 anarchogre <darth.panda@gmail.com> 1785774087 -0500	commit: Complete recovery phase and activate File Library governance
+bd3a479e719410d6051b97a35e45b0d987b9d076 c155c1e05006510b85f492c7354c21088680ab41 anarchogre <darth.panda@gmail.com> 1785774171 -0500	commit: Make bootstrap test follow canonical active state
+c155c1e05006510b85f492c7354c21088680ab41 59720a40d4cd4d80535e38816c5bcdcb70d08cee anarchogre <darth.panda@gmail.com> 1785774274 -0500	commit: Establish File Library governance and canonical index
+59720a40d4cd4d80535e38816c5bcdcb70d08cee 273e2b8e032b2ef05bc824bb87ba9c0af938566f anarchogre <darth.panda@gmail.com> 1785774423 -0500	commit: Integrate File Library governance verification
+273e2b8e032b2ef05bc824bb87ba9c0af938566f 095917ba38d62c0d22922db8960492a4b4b49028 anarchogre <darth.panda@gmail.com> 1785774693 -0500	commit: Repair File Library verifier variable shadowing
+095917ba38d62c0d22922db8960492a4b4b49028 5e9941de147a353c9a5c94a6b4e699f4bcac0272 anarchogre <darth.panda@gmail.com> 1785774789 -0500	commit: Complete File Library phase and activate drift detection
+5e9941de147a353c9a5c94a6b4e699f4bcac0272 e324b78dffb505642d784eb951348984be936088 anarchogre <darth.panda@gmail.com> 1785774958 -0500	commit: Expand deterministic cross-domain drift detection
+e324b78dffb505642d784eb951348984be936088 7a62c87d3f957a431e99820ec56a166b94c1cc13 anarchogre <darth.panda@gmail.com> 1785776055 -0500	commit: Ignore generated drift runtime reports
+7a62c87d3f957a431e99820ec56a166b94c1cc13 0e0d670cc5ec615dabca4bdf936edf9cc606fa2e anarchogre <darth.panda@gmail.com> 1785777583 -0500	commit: Complete drift detection phase and activate repository services
+0e0d670cc5ec615dabca4bdf936edf9cc606fa2e de4ef31832f736754fb83a1f92f4807ae7a6915e anarchogre <darth.panda@gmail.com> 1785778925 -0500	commit: Establish artifact delivery standard
+de4ef31832f736754fb83a1f92f4807ae7a6915e b7a8f379ffc8b4582cdf8eeb87734f7e45cd9193 anarchogre <darth.panda@gmail.com> 1785779127 -0500	commit: Establish construction grammar and stage transition contract
+b7a8f379ffc8b4582cdf8eeb87734f7e45cd9193 145fad5c64e8cf112675961e75870cdf1cd560e7 anarchogre <darth.panda@gmail.com> 1785779738 -0500	commit: Establish canonical repository service contract
+145fad5c64e8cf112675961e75870cdf1cd560e7 8ca149502c2bbd58f3d09edbfb432a1fcd220120 anarchogre <darth.panda@gmail.com> 1785780002 -0500	commit: Record recovered repository service inventory
+8ca149502c2bbd58f3d09edbfb432a1fcd220120 1fbe284c1206ed59dda20c0cc90d8e70592956ff anarchogre <darth.panda@gmail.com> 1785780391 -0500	commit: Establish repository service catalog
+1fbe284c1206ed59dda20c0cc90d8e70592956ff 18374066b10be7f361bc9207d3793f64600c1b87 anarchogre <darth.panda@gmail.com> 1785780639 -0500	commit: Establish canonical repository service specification
+18374066b10be7f361bc9207d3793f64600c1b87 a081b555ba5602ccc0c16011ebc1688d2cb31a58 anarchogre <darth.panda@gmail.com> 1785795578 -0500	commit: Implement bootstrap service and repair governance mortar
+a081b555ba5602ccc0c16011ebc1688d2cb31a58 04ce970ff32c90711d369c0025fc8e41fadb2d35 anarchogre <darth.panda@gmail.com> 1785982270 -0500	commit: Preserve mobile vocabulary integration evidence
+04ce970ff32c90711d369c0025fc8e41fadb2d35 02cfb89fbccdd44d927177488d703d7fb2099a48 anarchogre <darth.panda@gmail.com> 1785983823 -0500	commit: Record Termux Git hook recovery
+02cfb89fbccdd44d927177488d703d7fb2099a48 99d2a05cabbbe0b340663c13da28d12ed2592d40 anarchogre <darth.panda@gmail.com> 1785984186 -0500	commit: Record preservation point PP-006
+99d2a05cabbbe0b340663c13da28d12ed2592d40 0df5547cb0e4519d76041564f806edee919196b2 anarchogre <darth.panda@gmail.com> 1785984620 -0500	commit: Record Termux clipboard integration
+0df5547cb0e4519d76041564f806edee919196b2 519d30745ad5c4c62195b078f224a139f2bcacc8 anarchogre <darth.panda@gmail.com> 1785987426 -0500	commit: Draft Steward Core synchronization contract
+519d30745ad5c4c62195b078f224a139f2bcacc8 eb010b7e9c8e88d1ede35a3e170c7006f18bf170 anarchogre <darth.panda@gmail.com> 1785988123 -0500	commit: Request Head Steward review of Steward Core sync
+eb010b7e9c8e88d1ede35a3e170c7006f18bf170 a2b0e90d9113f929675332e610a58c68564d7b5c anarchogre <darth.panda@gmail.com> 1785990799 -0500	commit: Record Head Steward process review
+a2b0e90d9113f929675332e610a58c68564d7b5c 2553940e984d99908e09095d17cfef1b7c6d6437 anarchogre <darth.panda@gmail.com> 1785992638 -0500	commit: Classify Steward Core source authority
+2553940e984d99908e09095d17cfef1b7c6d6437 b39d2138800c6df9df173321c30fb7ccfe157d71 anarchogre <darth.panda@gmail.com> 1785993097 -0500	commit: Request Head Steward revision confirmation
+
+=== SEARCH RECORDED HEAD a081... ===
+/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/DifferenceEngine/.git/logs/refs/remotes/origin/master:1:0000000000000000000000000000000000000000 a081b555ba5602ccc0c16011ebc1688d2cb31a58 anarchogre <darth.panda@gmail.com> 1785796697 -0500	update by push
+/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/DifferenceEngine/.git/logs/refs/heads/master:20:18374066b10be7f361bc9207d3793f64600c1b87 a081b555ba5602ccc0c16011ebc1688d2cb31a58 anarchogre <darth.panda@gmail.com> 1785795578 -0500	commit: Implement bootstrap service and repair governance mortar
+/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/DifferenceEngine/.git/logs/refs/heads/master:21:a081b555ba5602ccc0c16011ebc1688d2cb31a58 04ce970ff32c90711d369c0025fc8e41fadb2d35 anarchogre <darth.panda@gmail.com> 1785982270 -0500	commit: Preserve mobile vocabulary integration evidence
+/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/DifferenceEngine/.git/logs/HEAD:20:18374066b10be7f361bc9207d3793f64600c1b87 a081b555ba5602ccc0c16011ebc1688d2cb31a58 anarchogre <darth.panda@gmail.com> 1785795578 -0500	commit: Implement bootstrap service and repair governance mortar
+/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/DifferenceEngine/.git/logs/HEAD:21:a081b555ba5602ccc0c16011ebc1688d2cb31a58 04ce970ff32c90711d369c0025fc8e41fadb2d35 anarchogre <darth.panda@gmail.com> 1785982270 -0500	commit: Preserve mobile vocabulary integration evidence
+/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/DifferenceEngine/.git/refs/remotes/origin/master:1:a081b555ba5602ccc0c16011ebc1688d2cb31a58
+
+=== SEARCH RECOVERED HEAD b39d... ===
+/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/DifferenceEngine/.git/logs/refs/heads/master:29:2553940e984d99908e09095d17cfef1b7c6d6437 b39d2138800c6df9df173321c30fb7ccfe157d71 anarchogre <darth.panda@gmail.com> 1785993097 -0500	commit: Request Head Steward revision confirmation
+/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/DifferenceEngine/.git/logs/HEAD:29:2553940e984d99908e09095d17cfef1b7c6d6437 b39d2138800c6df9df173321c30fb7ccfe157d71 anarchogre <darth.panda@gmail.com> 1785993097 -0500	commit: Request Head Steward revision confirmation
+/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/DifferenceEngine/.git/refs/heads/master:1:b39d2138800c6df9df173321c30fb7ccfe157d71
+
+=== REMOTE CONFIG ===
+	hooksPath = /data/data/com.termux/files/home/.local/libexec/DifferenceEngine-hooks
+	pager = cat
+[remote "origin"]
+	url = git@github.com:anarchogre/DifferenceEmgine.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[user]
+	name = anarchogre
+	email = darth.panda@gmail.com
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master

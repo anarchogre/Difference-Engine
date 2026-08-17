@@ -1,0 +1,150 @@
+./#Household Briefing.docx
+./10_Governance/ARC-0001_Information_Architecture.md
+./10_Governance/GOV-0001_Repository_Principles.md
+./10_Governance/GOV-0002_Document_Lifecycle.md
+./10_Governance/ICD-001 — Constitutional Architecture.md
+./10_Governance/ICD-002 — Governance Philosophy.md
+./10_Governance/ICD-003 — Artifact Lifecycle.md
+./10_Governance/ICD-004 — Repository Topology.md
+./10_Governance/README.md
+./99_UTILITIES/Conventions/DOCUMENT_METADATA.md
+./99_UTILITIES/Conventions/MARKDOWN_STYLE.md
+./99_UTILITIES/Conventions/WRITING_GUIDELINES.md
+./99_UTILITIES/Ingestion/AIS_v0.1.md
+./99_UTILITIES/Ingestion/Architecture_Decision_Record_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Artifact_Lifecycle_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Artifact_Schema_v0.1.md
+./99_UTILITIES/Ingestion/Asset_Schema_v0.1.md
+./99_UTILITIES/Ingestion/Canonical_Promotion_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Configuration_Management_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Conversation_Schema_v0.1.md
+./99_UTILITIES/Ingestion/Developer_Guide_v0.1.md
+./99_UTILITIES/Ingestion/Event_Catalog_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Event_Model_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Event_Processing_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Event_Routing_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Event_Schema_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Implementation_Backlog_v0.1.md
+./99_UTILITIES/Ingestion/Implementation_Checklist_v0.1.md
+./99_UTILITIES/Ingestion/Implementation_Milestones_v0.1.md
+./99_UTILITIES/Ingestion/Implementation_Roadmap_v0.1.md
+./99_UTILITIES/Ingestion/Ingestion_Glossary_v0.1.md
+./99_UTILITIES/Ingestion/Ingestion_Pipeline_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Ingestion_Report_Schema_v0.1.md
+./99_UTILITIES/Ingestion/Observability_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Operational_Readiness_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Output_Package_Specificatiom_v0.1.md
+./99_UTILITIES/Ingestion/Output_Package_Specification_v0.1d
+./99_UTILITIES/Ingestion/Parser_Behavior_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Parser_Development_Guide_v0.1.md
+./99_UTILITIES/Ingestion/Provenance_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Publication_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Quality_Assurance_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Queue_Candidate_Schema_v0.1.md
+./99_UTILITIES/Ingestion/Queue_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Reference_Schema_v0.1.md
+./99_UTILITIES/Ingestion/Repository_Constitution_v0.1.md
+./99_UTILITIES/Ingestion/Repository_Index_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Repository_Mapping_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Repository_Maturity_Model_v0.1.md
+./99_UTILITIES/Ingestion/Repository_Relationship_Schema_v0.1.md
+./99_UTILITIES/Ingestion/Repository_Standards_v0.1.md
+./99_UTILITIES/Ingestion/Schema_Governance_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Security_and_Integrity_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Service_Contracts_v0.1.md
+./99_UTILITIES/Ingestion/Service_Development_Guide_v0.1.md
+./99_UTILITIES/Ingestion/Testing_Strategy_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Validation_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_API_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Audit_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Checkpointing_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Context_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Definition_Schema_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Execution_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Governance_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Metrics_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Orchestration_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Recovery_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Replay_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Reporting_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Service_Capability_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Service_Communication_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Service_Composition_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Service_Configuration_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Service_Contract_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Service_Coordination_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Service_Dependency_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Service_Discovery_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Service_Dispatch_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Service_Health_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Service_Lifecycle_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Service_Load_Balancing_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Service_Messaging_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Service_Registry_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Service_Resilience_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Service_Routing_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Service_Scaling_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Service_Scheduling_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_State_Machine_Specification_v0.1.md
+./99_UTILITIES/Ingestion/Workflow_Versioning_Specification_v0.1.md
+./99_UTILITIES/Naming/FILE_NAMING.md
+./99_UTILITIES/README.md
+./99_UTILITIES/Scripts/README.md
+./99_UTILITIES/Scripts/ids.py
+./99_UTILITIES/Scripts/new_document.py
+./99_UTILITIES/Scripts/templates.py
+./99_UTILITIES/Templates/ADR.template.md
+./99_UTILITIES/Templates/ARC.template.md
+./99_UTILITIES/Templates/GOV.template.md
+./99_UTILITIES/Templates/PUB.template.md
+./99_UTILITIES/Templates/SPEC.template.md
+./ADE_ACTIVE_STATE_RESEARCH_BOOTSTRAP_v2.md
+./ADE_REPOSITORY_FILES.txt
+./ADE_REPOSITORY_TREE (1).txt
+./ADE_REPOSITORY_TREE.txt
+./ADE_REPOSITORY_TREE_FULL.txt
+./Accountability Authority Graph.md
+./Artifact Header.md
+./BOOTSTRAP-Difference-Engine-Branch-IV-Operations-ADE-Execution.md
+./BOOTSTRAP_ACTIVE_STATE_SNAPSHOT.md
+./BOOTSTRAP_CONTEXT_SNAPSHOT_Part_02.md
+./Bootstrap-RC2.md
+./Branch_V_ Human_Interface.md
+./Canonical Evaluation Function.md
+./Complete Epistemic Persona.md
+./Conservation_First_Archaeology.md
+./Constitutional_Convergence_Report.md
+./Difference Engine Branch IV Operations Bootstrap-RC1.0.0.md
+./DifferenceEngine Gubmint Cheese.txt
+./DifferenceEngine_Const2.md
+./Difference_Engine_Constitutional_Amendment_Universal_Branch_Steward_Protocol_v1.0.md
+./Difference_Engine_Steward_Governance_Master.md
+./FRAMEWORK_LOCK_7_31_26.md
+./Facet Conversation.md
+./Files on the Motorola G Power 21.md
+./Foundation_Summit_001.md
+./From Human Interface.md
+./Head_Steward_v0.9.md
+./Instituonal Knowledge Graph.md
+./Instituonal Memory.md
+./Institutional Governance Corpus.md
+./Institutional Optimization Function.md
+./Life Companion Constitution.md
+./Life Companion Constitution.txt
+./Mock Up Queue File From Operations.md
+./Operational Reality.txt
+./Operator Profile.md
+./Phase_tramsition_briefing_branch_proposals_and_addendums_v1.1.md
+./Primitive Promotion Pipeline.md
+./Rebuild.md/PP-001 SMELTING BOOTSTRAP.md
+./Rebuild.md/PP-001.md
+./Repository Design Objective.md
+./Repository Extraction Pipeline.md
+./Repository_Synchronization_Request.md
+./SESSION-STATE.md
+./The_Difference_Engine.md
+./Universal_Branch_Steward_Protocol_Constitutional_Amendment_v_1.1_Ratification Draft.md
+./Writergpt.md
+./round_2.md
+./stewardship_proposed_amendments.md
+./temp.md

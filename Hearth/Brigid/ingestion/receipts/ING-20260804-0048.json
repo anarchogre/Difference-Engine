@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:02:02.084381-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Audit_Specification_v0.1.md",
+  "original_name": "Workflow_Audit_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0048",
+  "schema_version": "0.1.0",
+  "sha256": "9baed3f30c6568ce7cb8e118ac00701e3314ae4c17ad3f80e201146b9fa42d0f",
+  "size_bytes": 5583,
+  "source_class": "manual_batch"
+}

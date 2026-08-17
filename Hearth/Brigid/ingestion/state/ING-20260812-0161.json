@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0161",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:11.888223-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Integrity_Architecture_v1.json",
+    "original_name": "AKS_Integrity_Architecture_v1.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0161",
+    "schema_version": "0.1.0",
+    "sha256": "d3c585eb53aa9b03c575251956a7e6b4a00a31a866f3a3abb43333af138b047b",
+    "size_bytes": 246,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

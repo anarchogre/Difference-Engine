@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0663",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:49:15.039902-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Rebuild.md/Session Queue.md",
+    "original_name": "Session Queue.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0663",
+    "schema_version": "0.1.0",
+    "sha256": "2e1ef124cdaa8ed121f7b8d4127f39b7d6e9dcca00591289da99d1b071d6ab5a",
+    "size_bytes": 352,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

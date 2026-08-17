@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0439",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:40.683739-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Accountability Authority Graph.md",
+    "original_name": "Accountability Authority Graph.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0439",
+    "schema_version": "0.1.0",
+    "sha256": "a4bec94b5f7101b26c248a241785fbbfd2f624fa353a976d9c4c9f7c414da5d2",
+    "size_bytes": 741,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

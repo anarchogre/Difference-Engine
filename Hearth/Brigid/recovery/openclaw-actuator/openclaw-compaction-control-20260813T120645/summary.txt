@@ -1,0 +1,47 @@
+EVIDENCE=/home/reckless-ideator/Difference-Engine/workspace/operational/recovery/openclaw-actuator/openclaw-compaction-control-20260813T120645/control-resolution.txt
+
+537:4986: 	const reserveTokensFloor = toNonNegativeInt(compaction?.reserveTokensFloor);
+538:4987: 	if (reserveTokens !== void 0) return Math.max(reserveTokens, reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS);
+539:4988: 	return reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS;
+550:HIT=4988: 	return reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS;
+552:4981: 	return isJsonObject(config?.agents?.defaults?.compaction) ? config.agents.defaults.compaction : void 0;
+557:4986: 	const reserveTokensFloor = toNonNegativeInt(compaction?.reserveTokensFloor);
+558:4987: 	if (reserveTokens !== void 0) return Math.max(reserveTokens, reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS);
+559:4988: 	return reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS;
+571:HIT=9: 	const raw = cfg?.agents?.defaults?.compaction?.reserveTokensFloor;
+579:8: function resolveCompactionReserveTokensFloor(cfg) {
+580:9: 	const raw = cfg?.agents?.defaults?.compaction?.reserveTokensFloor;
+592:HIT=28: 	let reserveTokensFloor = resolveCompactionReserveTokensFloor(params.cfg);
+601:28: 	let reserveTokensFloor = resolveCompactionReserveTokensFloor(params.cfg);
+607:34: 		reserveTokensFloor = Math.min(reserveTokensFloor, maxReserveTokens);
+609:36: 	let targetReserveTokens = Math.max(configuredReserveTokens ?? currentReserveTokens, reserveTokensFloor);
+613:HIT=34: 		reserveTokensFloor = Math.min(reserveTokensFloor, maxReserveTokens);
+616:28: 	let reserveTokensFloor = resolveCompactionReserveTokensFloor(params.cfg);
+622:34: 		reserveTokensFloor = Math.min(reserveTokensFloor, maxReserveTokens);
+624:36: 	let targetReserveTokens = Math.max(configuredReserveTokens ?? currentReserveTokens, reserveTokensFloor);
+634:HIT=36: 	let targetReserveTokens = Math.max(configuredReserveTokens ?? currentReserveTokens, reserveTokensFloor);
+635:28: 	let reserveTokensFloor = resolveCompactionReserveTokensFloor(params.cfg);
+641:34: 		reserveTokensFloor = Math.min(reserveTokensFloor, maxReserveTokens);
+643:36: 	let targetReserveTokens = Math.max(configuredReserveTokens ?? currentReserveTokens, reserveTokensFloor);
+655:HIT=432:   reserveTokensFloor?: number; /** Max share of context window for history during safeguard pruning (0.1–0.9, default 0.5). */
+664:432:   reserveTokensFloor?: number; /** Max share of context window for history during safeguard pruning (0.1–0.9, default 0.5). */
+676:HIT=485:   softThresholdTokens?: number;
+685:485:   softThresholdTokens?: number;
+697:HIT=938:         reserveTokensFloor: ZodOptional<ZodNumber>;
+706:938:         reserveTokensFloor: ZodOptional<ZodNumber>;
+718:HIT=962:           softThresholdTokens: ZodOptional<ZodNumber>;
+727:962:           softThresholdTokens: ZodOptional<ZodNumber>;
+739:HIT=79: 	const softThresholdTokens = normalizeNonNegativeInt(defaults?.softThresholdTokens) ?? 4e3;
+748:79: 	const softThresholdTokens = normalizeNonNegativeInt(defaults?.softThresholdTokens) ?? 4e3;
+750:81: 	const reserveTokensFloor = normalizeNonNegativeInt(cfg?.agents?.defaults?.compaction?.reserveTokensFloor) ?? 2e4;
+760:HIT=81: 	const reserveTokensFloor = normalizeNonNegativeInt(cfg?.agents?.defaults?.compaction?.reserveTokensFloor) ?? 2e4;
+767:79: 	const softThresholdTokens = normalizeNonNegativeInt(defaults?.softThresholdTokens) ?? 4e3;
+769:81: 	const reserveTokensFloor = normalizeNonNegativeInt(cfg?.agents?.defaults?.compaction?.reserveTokensFloor) ?? 2e4;
+776:88: 		softThresholdTokens,
+781:HIT=88: 		softThresholdTokens,
+783:81: 	const reserveTokensFloor = normalizeNonNegativeInt(cfg?.agents?.defaults?.compaction?.reserveTokensFloor) ?? 2e4;
+790:88: 		softThresholdTokens,
+792:90: 		reserveTokensFloor,
+802:HIT=90: 		reserveTokensFloor,
+809:88: 		softThresholdTokens,
+811:90: 		reserveTokensFloor,

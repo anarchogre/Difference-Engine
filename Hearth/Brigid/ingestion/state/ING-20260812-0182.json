@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0182",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:13.381440-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Stewards_Compass_v1.0.json",
+    "original_name": "AKS_Stewards_Compass_v1.0.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0182",
+    "schema_version": "0.1.0",
+    "sha256": "ba2f33a976ba26cf2700c2352ae84fe6d424251800a297648b660f4f27f66be0",
+    "size_bytes": 205,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

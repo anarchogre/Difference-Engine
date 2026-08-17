@@ -1,0 +1,50 @@
+RECORD_TYPE=Mobile Bridge Bootstrap Preflight
+HEAD=b39d2138800c6df9df173321c30fb7ccfe157d71
+ENTRY_POINT=ade.kernel.bootstrap_loader.loader.initialize
+PRESENT	ade/kernel/bootstrap_loader
+PRESENT	ade/kernel/tests/test_bootstrap_loader.py
+PRESENT	workspace/operational/bootstrap/BOOTSTRAP.md
+PRESENT	workspace/operational/current/ACTIVE_MISSION.md
+PRESENT	workspace/operational/current/ACTIVE_TASK.md
+--- PACKAGE FILES ---
+ade/kernel/bootstrap_loader/__init__.py
+ade/kernel/bootstrap_loader/__main__.py
+ade/kernel/bootstrap_loader/artifacts.py
+ade/kernel/bootstrap_loader/bootstrap.py
+ade/kernel/bootstrap_loader/config.py
+ade/kernel/bootstrap_loader/constants.py
+ade/kernel/bootstrap_loader/context.py
+ade/kernel/bootstrap_loader/contracts.py
+ade/kernel/bootstrap_loader/discover.py
+ade/kernel/bootstrap_loader/drift.py
+ade/kernel/bootstrap_loader/errors.py
+ade/kernel/bootstrap_loader/execution.py
+ade/kernel/bootstrap_loader/filesystem.py
+ade/kernel/bootstrap_loader/governance.py
+ade/kernel/bootstrap_loader/health.py
+ade/kernel/bootstrap_loader/loader.py
+ade/kernel/bootstrap_loader/logging.py
+ade/kernel/bootstrap_loader/main.py
+ade/kernel/bootstrap_loader/mission.py
+ade/kernel/bootstrap_loader/models.py
+ade/kernel/bootstrap_loader/modes.py
+ade/kernel/bootstrap_loader/paths.py
+ade/kernel/bootstrap_loader/queue.py
+ade/kernel/bootstrap_loader/readiness.py
+ade/kernel/bootstrap_loader/recovery.py
+ade/kernel/bootstrap_loader/result.py
+ade/kernel/bootstrap_loader/specifications.py
+ade/kernel/bootstrap_loader/state.py
+ade/kernel/bootstrap_loader/task.py
+ade/kernel/bootstrap_loader/validators.py
+ade/kernel/bootstrap_loader/verifier.py
+ade/kernel/bootstrap_loader/version.py
+--- TRACKED STATUS ---
+TRACKED	ade/kernel/bootstrap_loader
+TRACKED	ade/kernel/tests/test_bootstrap_loader.py
+TRACKED	workspace/operational/bootstrap/BOOTSTRAP.md
+TRACKED	workspace/operational/current/ACTIVE_MISSION.md
+TRACKED	workspace/operational/current/ACTIVE_TASK.md
+--- IMPORT PREFLIGHT ---
+LOADER_IMPORT=PASS
+INITIALIZE_CALLABLE=PASS

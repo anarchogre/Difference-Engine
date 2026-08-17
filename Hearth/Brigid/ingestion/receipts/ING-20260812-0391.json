@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:34.400946-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Repository_Standards_v0.1.md",
+  "original_name": "Repository_Standards_v0.1.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0391",
+  "schema_version": "0.1.0",
+  "sha256": "7c4805ea55151a1441b979f2a5483746670a9705799d1e6e4170da2d62248922",
+  "size_bytes": 4047,
+  "source_class": "manual_batch"
+}

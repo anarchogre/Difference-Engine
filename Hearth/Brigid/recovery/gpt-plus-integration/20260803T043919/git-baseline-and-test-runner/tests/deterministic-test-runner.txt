@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/storage/emulated/0/DifferenceEngine/ade/kernel/tests/run_tests.py", line 64, in run
+    test()
+    ~~~~^^
+  File "/storage/emulated/0/DifferenceEngine/ade/kernel/tests/test_bootstrap_loader.py", line 5, in test_initialize
+    assert state.execution_mode == "Execution"
+           ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'BootstrapResult' object has no attribute 'execution_mode'
+[BOOTSTRAP] Discovering repository...
+FAIL ade.kernel.tests.test_bootstrap_loader.test_initialize
+DISCOVERED=1
+PASSED=0
+FAILED=1

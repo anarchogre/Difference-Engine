@@ -1,0 +1,17 @@
+/storage/emulated/0/ADE/ADE-Working-Repository-
+/storage/emulated/0/ADE/ADE-Working-Repository-/.cg
+/storage/emulated/0/ADE/ADE-Working-Repository-/.git
+/storage/emulated/0/ADE/ADE-Working-Repository-/ADE_REPO_zips
+/storage/emulated/0/ADE/ADE-Working-Repository-/Archive
+/storage/emulated/0/ADE/ADE-Working-Repository-/CLAUDE START HERE
+/storage/emulated/0/ADE/ADE-Working-Repository-/Governance
+/storage/emulated/0/ADE/ADE-Working-Repository-/In ox
+/storage/emulated/0/ADE/ADE-Working-Repository-/Library
+/storage/emulated/0/ADE/ADE-Working-Repository-/PP
+/storage/emulated/0/ADE/ADE-Working-Repository-/Parser
+/storage/emulated/0/ADE/ADE-Working-Repository-/Publications
+/storage/emulated/0/ADE/ADE-Working-Repository-/RC
+/storage/emulated/0/ADE/ADE-Working-Repository-/Research
+/storage/emulated/0/ADE/ADE-Working-Repository-/Specifications
+/storage/emulated/0/ADE/ADE-Working-Repository-/Tools
+/storage/emulated/0/ADE/ADE-Working-Repository-/docs

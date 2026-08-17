@@ -1,0 +1,4 @@
+hint: The '.githooks/pre-commit' hook was ignored because it's not set as executable.
+hint: You can disable this warning with `git config set advice.ignoredHook false`.
+[master c155c1e] Make bootstrap test follow canonical active state
+ 1 file changed, 23 insertions(+), 2 deletions(-)

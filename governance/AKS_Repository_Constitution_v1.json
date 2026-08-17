@@ -1,0 +1,15 @@
+{
+  "name": "AKS Repository Constitution",
+  "version": "1.0",
+  "admission": "Canonical status is earned through validation.",
+  "challenge": "All canonical knowledge remains challengeable.",
+  "review": "Evidence is evaluated, not defended.",
+  "supersession": "History is preserved; nothing is silently deleted.",
+  "rights": [
+    "provenance",
+    "context",
+    "explainability",
+    "contradiction",
+    "historical preservation"
+  ]
+}

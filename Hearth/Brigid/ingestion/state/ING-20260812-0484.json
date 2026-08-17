@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0484",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:46.828055-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/PP-0058-Manifest.json",
+    "original_name": "PP-0058-Manifest.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0484",
+    "schema_version": "0.1.0",
+    "sha256": "7ceac0fd2062fee02d8df5c7d2882e0e2335ea0bd18a9070f8935e278ab4a8b9",
+    "size_bytes": 157,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

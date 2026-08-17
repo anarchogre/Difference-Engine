@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:51.573889-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Evidence_Transformation_Specification_v1.0.json",
+  "original_name": "Evidence_Transformation_Specification_v1.0.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0517",
+  "schema_version": "0.1.0",
+  "sha256": "e5c9b0eebeb37726ffda0b130ae0ca99e969e9856fe416e19d42d08adf096e3d",
+  "size_bytes": 401,
+  "source_class": "manual_batch"
+}

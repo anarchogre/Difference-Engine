@@ -19,3 +19,9 @@ Thumbs.db
 # Local logs
 logs/*.log
 workspace/operational/drift/runtime/
+
+# Difference Engine bulk/runtime boundary — 2026-08-16
+Hearth/Brigid/ingestion/output/
+Hearth/Brigid/ingestion/baselines/**/*.tar
+Hearth/Brigid/mobile_bridge/evidence/
+INGESTER_CODE.tar

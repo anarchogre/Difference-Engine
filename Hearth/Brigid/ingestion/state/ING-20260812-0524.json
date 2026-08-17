@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0524",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:52.612899-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Instituonal Memory.md",
+    "original_name": "Instituonal Memory.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0524",
+    "schema_version": "0.1.0",
+    "sha256": "0c762ed9217c01087eff1fee434f7219305ac2c2960bf8461aad3ca0ecfab956",
+    "size_bytes": 768,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

@@ -1,0 +1,17 @@
+{
+  "receipt": "DE-CONV-20260804-0005",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-04T17:33:20.531824-05:00",
+    "observed_path": "/storage/emulated/0/DifferenceEngine/workspace/operational/corpus/chatgpt/DifferenceEngine Gubmint Cheese.txt",
+    "original_name": "DifferenceEngine Gubmint Cheese.txt",
+    "parser_status": "complete",
+    "receipt_id": "DE-CONV-20260804-0005",
+    "schema_version": "0.1.0",
+    "sha256": "e6260a8c5fbb44af9e6c95c05ba2cbe518b31d79029dc6982ebad14e4f6dda77",
+    "size_bytes": 18668,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

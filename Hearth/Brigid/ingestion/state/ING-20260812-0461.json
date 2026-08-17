@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0461",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:43.624345-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/DECISION_POLICY.md",
+    "original_name": "DECISION_POLICY.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0461",
+    "schema_version": "0.1.0",
+    "sha256": "75ac0dfa3848d5460d24a81798f50ef6d179218678e0e01a35c3b87257d9fd06",
+    "size_bytes": 304,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

@@ -1,0 +1,17 @@
+{
+  "artifact": {
+    "identifier": "AKS-ROADMAP-0001",
+    "title": "Semantic Core Roadmap",
+    "version": "0.1-draft",
+    "status": "Living",
+    "next_milestones": [
+      "Finalize Proposition Model",
+      "Define Concept Model",
+      "Define Relationship Model",
+      "Define Evidence Model",
+      "Integrate Truth State Model",
+      "Prototype Knowledge Graph",
+      "Generate artifacts from proposition graph"
+    ]
+  }
+}

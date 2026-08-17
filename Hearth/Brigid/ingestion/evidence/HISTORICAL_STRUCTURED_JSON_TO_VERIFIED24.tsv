@@ -1,0 +1,3 @@
+identity	json_artifact	best_verified	json_coverage_pct	verified_coverage_pct	shared_8word_shingles
+AKS_HANDBOOK	AKS_AOS_1_0__All_Previous_data_and_conv.json	Workflow_and_Evidence_Consolidation.md.txt	0.00	0.00	0
+FORENSIC	Forensic_Parser_Workflow_full_chat.json	Governance_Improvements_Implementation.md.txt	0.03	0.01	5

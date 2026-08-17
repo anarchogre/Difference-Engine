@@ -1,0 +1,43 @@
+--- workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-agnostic-test-repair/backups/test_bootstrap_loader.py.before	2026-08-03 11:22:48.276779141 -0500
++++ ade/kernel/tests/test_bootstrap_loader.py	2026-08-03 11:22:48.296779143 -0500
+@@ -1,17 +1,38 @@
++from pathlib import Path
++
+ from ade.kernel.bootstrap_loader.loader import initialize
++from ade.kernel.bootstrap_loader.mission import recover_mission
++from ade.kernel.bootstrap_loader.task import recover_task
+ 
+ 
+ def test_initialize() -> None:
+     result = initialize()
+     state = result.state
+ 
++    expected_mission = recover_mission()
++    expected_task = recover_task()
++
++    assert expected_mission
++    assert expected_task
++
+     assert state.execution_mode == "Execution"
+     assert state.repository_root.is_dir()
+     assert state.governance_root.is_dir()
+     assert state.specification_root.is_dir()
+-    assert state.mission == "GPT Plus Integration"
+-    assert state.task == "Recovery Standardization"
++
++    assert state.mission == expected_mission
++    assert state.task == expected_task
+ 
+     assert result.artifacts.constitution.is_file()
+     assert result.artifacts.amendments.is_file()
+     assert result.artifacts.bootstrap.is_file()
++
++    assert Path(
++        "workspace/operational/current/"
++        "ACTIVE_MISSION.md"
++    ).is_file()
++
++    assert Path(
++        "workspace/operational/current/"
++        "ACTIVE_TASK.md"
++    ).is_file()

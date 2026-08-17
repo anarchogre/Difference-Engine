@@ -1,0 +1,18 @@
+[
+  {
+    "queue": "linux_command",
+    "value": "mkdir demo"
+  },
+  {
+    "queue": "linux_command",
+    "value": "cat README.md"
+  },
+  {
+    "queue": "implementation",
+    "value": "TODO implement parser"
+  },
+  {
+    "queue": "reference",
+    "value": "README.md"
+  }
+]

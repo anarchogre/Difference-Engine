@@ -1,0 +1,44 @@
+ade/kernel/bootstrap_loader/queue.py:5:def recover_queues() -> list[str]:
+ade/kernel/bootstrap_loader/loader.py:11:from .queue import recover_queues
+ade/kernel/bootstrap_loader/loader.py:41:    recover_queues()
+grep: ade/kernel/bootstrap_loader/__pycache__/loader.cpython-313.pyc: binary file matches
+grep: ade/kernel/bootstrap_loader/__pycache__/queue.cpython-313.pyc: binary file matches
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_DISCOVERY_v1.md:21:Active Queue
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_PSEUDOCODE_v1.md:23:recover_queues()
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_PYTHON_MAPPING_v1.md:23:recover_queues()             -> queue.py
+workspace/operational/bootstrap/BOOTSTRAP_vNext.md:50:- queue state;
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/logs/batch-6-summary.txt:68:IMPORT_FROM module=queue names=['recover_queues']
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/logs/batch-6-summary.txt:107:FUNCTION recover_queues args=[] defaults=0
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/logs/batch-6-summary.txt:160:PUBLIC= ['BootstrapResult', 'OperationalState', 'activate_modes', 'discover_repository', 'enter_execution_mode', 'initialize', 'load_governance', 'load_specifications', 'log', 'recover_mission', 'recover_queues', 'recover_state', 'recover_task', 'validate', 'verify_readiness']
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/logs/batch-6-summary.txt:164:PUBLIC= ['recover_queues']
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/reports/import-map.txt:23:ade/kernel/bootstrap_loader/loader.py:11:from .queue import recover_queues
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/extracts/bootstrap-loader-source.txt:16:def recover_queues() -> list[str]:
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/reports/interface-map.txt:65:IMPORT_FROM module=queue names=['recover_queues']
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/reports/interface-map.txt:104:FUNCTION recover_queues args=[] defaults=0
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/reports/runtime-import-map.txt:11:PUBLIC= ['BootstrapResult', 'OperationalState', 'activate_modes', 'discover_repository', 'enter_execution_mode', 'initialize', 'load_governance', 'load_specifications', 'log', 'recover_mission', 'recover_queues', 'recover_state', 'recover_task', 'validate', 'verify_readiness']
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/reports/runtime-import-map.txt:15:PUBLIC= ['recover_queues']
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/extracts/current-source.txt:47:from .queue import recover_queues
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/extracts/current-source.txt:77:    recover_queues()
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/extracts/current-source.txt:92:def recover_queues() -> list[str]:
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/backups/loader.py.before:11:from .queue import recover_queues
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/backups/loader.py.before:41:    recover_queues()
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/mission-task-recovery/extracts/recovery-source.txt:55:from .queue import recover_queues
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/mission-task-recovery/extracts/recovery-source.txt:85:    recover_queues()
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-vnext/artifacts/BOOTSTRAP_vNext.md:50:- queue state;
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-vnext/artifacts/BOOTSTRAP_MIGRATION_NOTES.md:49:- queue recovery does not yet recover complete operational queue state.
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-specification/artifacts/RECOVERY_SOP.md:21:9. Verify queue state.
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-specification/artifacts/RECOVERY_SOP.md:71:- active queues;
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-specification/artifacts/RECOVERY_VERIFIER_SPECIFICATION.md:108:- queue state incomplete;
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-1-closeout/artifacts/SIQ_GPT_PLUS_INTEGRATION.md:1:# Suggested Implementation Queue — GPT Plus Integration
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-1-closeout/artifacts/SIQ_GPT_PLUS_INTEGRATION.md:28:Recover active, accepted, suggested, and completed queues into bootstrap state.
+grep: workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-audit/reports/queue-reference-map.txt: input file is also the output
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-audit/extracts/queue-corpus.txt:3:# Suggested Implementation Queue — GPT Plus Integration
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-audit/extracts/queue-corpus.txt:30:Recover active, accepted, suggested, and completed queues into bootstrap state.
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-audit/extracts/queue-loader-source.txt:6:def recover_queues() -> list[str]:
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-audit/extracts/queue-loader-source.txt:54:from .queue import recover_queues
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-audit/extracts/queue-loader-source.txt:84:    recover_queues()
+workspace/operational/recovery/RECOVERY_SOP.md:21:9. Verify queue state.
+workspace/operational/recovery/RECOVERY_SOP.md:71:- active queues;
+workspace/operational/recovery/RECOVERY_VERIFIER_SPECIFICATION.md:108:- queue state incomplete;
+queue/SIQ_GPT_PLUS_INTEGRATION.md:1:# Suggested Implementation Queue — GPT Plus Integration
+queue/SIQ_GPT_PLUS_INTEGRATION.md:28:Recover active, accepted, suggested, and completed queues into bootstrap state.

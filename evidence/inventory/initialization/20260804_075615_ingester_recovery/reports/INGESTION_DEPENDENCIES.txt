@@ -1,0 +1,1144 @@
+INGESTION DEPENDENCY RECOVERY
+Generated: 2026-08-04T08:11:30-05:00
+
+===== AIS_v0.1.md =====
+13:AIS governs the ingestion process independent of implementation technology.
+20:- Normalize heterogeneous inputs.
+23:- Produce deterministic outputs.
+31:## 1. Preserve Before Interpreting
+37:## 2. Observation Before Inference
+39:Structural parsing precedes semantic interpretation.
+51:Equivalent inputs should produce equivalent structural outputs.
+63:Promotion into canonical repository artifacts requires review.
+69:Repository behavior is defined through service contracts rather than implementation details.
+73:## 8. Technology Independence
+75:This specification remains valid regardless of implementation language, AI model, scripting language, or automation platform.
+79:# Pipeline
+129:- Parser implementation
+
+===== Architecture_Decision_Record_Specification_v0.1.md =====
+37:- Processing pipelines
+40:- External dependencies
+42:Minor implementation details SHOULD NOT require ADRs.
+48:Each ADR SHALL exist in one of the following states:
+84:The context SHALL explain why a decision is required.
+109:Rationale SHALL outlive implementation details.
+133:- Required implementation changes
+141:# Dependencies
+150:Dependencies improve repository traceability.
+166:# Repository Integration
+
+===== Artifact_Lifecycle_Specification_v0.1.md =====
+174:- Required predecessor state exists.
+175:- Required records exist.
+
+===== Artifact_Schema_v0.1.md =====
+45:Required:
+67:Required:
+155:Artifacts MAY produce candidates for one or more processing queues.
+159:Promotion requires review.
+
+===== Asset_Schema_v0.1.md =====
+15:Assets are not independent evidence.
+31:# Required Fields
+128:Assets SHALL exist in one of the following states:
+
+===== Canonical_Promotion_Specification_v0.1.md =====
+41:# Promotion Inputs
+54:# Promotion Outputs
+56:Promotion SHALL produce:
+65:# Review Requirements
+67:Promotion SHALL require review.
+
+===== Configuration_Management_Specification_v0.1.md =====
+25:- Configuration is separate from implementation.
+47:The repository SHALL recognize the following configuration categories:
+67:- Follow approved schemas.
+69:- Avoid implementation-specific assumptions.
+96:Configuration versions SHALL be recorded independently from implementation versions.
+108:Configuration SHALL be validated before use.
+112:- Required fields
+115:- Dependency consistency
+159:Operational implementations SHOULD use dedicated secret management mechanisms.
+185:- Validation after recovery
+197:By separating configuration from implementation, the repository remains adaptable while preserving constitutional consistency.
+
+===== Conversation_Schema_v0.1.md =====
+43:Required fields:
+57:Required fields:
+185:Promotion requires later review.
+
+===== Developer_Guide_v0.1.md =====
+11:The Developer Guide provides implementation guidance for engineers building and maintaining the Repository Ingestion Framework.
+49:Every implementation decision SHOULD preserve:
+60:Implementation SHOULD proceed in the following order:
+122:- Integration tests
+131:Every implementation SHOULD include:
+134:- Inputs
+135:- Outputs
+136:- Dependencies
+139:Public interfaces SHOULD be documented before implementation is considered complete.
+145:Implementations SHOULD declare:
+151:Breaking changes SHOULD be documented before release.
+170:Before introducing new functionality, contributors SHOULD determine whether:
+173:- A new specification is required.
+174:- Existing schemas require revision.
+177:Implementation SHOULD follow governance, not replace it.
+185:Implementations realize the constitution.
+
+===== Event_Catalog_Specification_v0.1.md =====
+33:Event names SHOULD follow the pattern:
+56:| Artifact Rejected | Artifact rejected before ingestion |
+225:- Validate required metadata.
+
+===== Event_Model_Specification_v0.1.md =====
+56:The Repository SHALL support the following event categories:
+219:# Event Consumers
+221:Events MAY be consumed by:
+230:Consumers SHALL NOT modify historical events.
+248:- Required metadata
+
+===== Event_Processing_Specification_v0.1.md =====
+11:The Event Processing Specification defines how repository components consume, evaluate, and respond to events.
+33:- Event consumers
+44:Every event SHALL progress through the following stages:
+53:Each stage SHALL be independently observable.
+59:Consumers SHALL:
+72:Prior to processing, consumers SHALL verify:
+77:- Required metadata.
+86:Consumers MAY classify events according to:
+118:Consumers SHALL safely process duplicate events.
+120:Repeated processing of the same event SHALL NOT produce inconsistent repository state.
+128:Processing MAY produce:
+170:Where ordering is required:
+175:Where ordering is not required, parallel processing MAY be used.
+181:Each processing operation SHOULD produce a report containing:
+184:- Consumer
+204:- Consumer utilization
+210:# Repository Integration
+212:Event processing integrates with:
+222:Integration SHALL preserve repository consistency.
+232:By separating historical facts from operational behavior, the Repository Ingestion Framework preserves both institutional memory and implementation flexibility.
+
+===== Event_Routing_Specification_v0.1.md =====
+11:The Event Routing Specification defines how repository events are distributed between producers and consumers.
+23:- Producers are independent of consumers.
+33:- Event producers
+34:- Event consumers
+44:The Repository Ingestion Framework SHALL implement a publish-subscribe routing model.
+48:- Receive events from producers.
+49:- Determine interested consumers.
+53:Routing SHALL remain transparent to producers.
+57:# Event Producers
+59:Examples of producers include:
+69:Producers SHALL publish completed events only.
+73:# Event Consumers
+75:Examples of consumers include:
+85:Consumers SHALL NOT modify received events.
+111:Consumers SHALL explicitly declare:
+131:Delivery guarantees SHALL be documented by the implementation.
+164:Consumers MAY filter events using:
+205:# Repository Integration
+207:Event routing integrates with:
+
+===== Event_Schema_Specification_v0.1.md =====
+33:Every event SHALL contain the following fields.
+35:| Field | Required | Description |
+76:- Follow ISO-8601.
+229:- Required fields present.
+252:# Repository Integration
+254:Events SHALL integrate with:
+270:The Event Schema provides the structure that allows every operation to be recorded consistently, validated objectively, and understood long after the implementation that generated it has evolved.
+306:Every event SHALL contain the following fields.
+308:| Field | Required | Description |
+349:- Follow ISO-8601.
+502:- Required fields present.
+525:# Repository Integration
+527:Events SHALL integrate with:
+543:The Event Schema provides the structure that allows every operation to be recorded consistently, validated objectively, and understood long after the implementation that generated it has evolved.
+
+===== Implementation_Backlog_v0.1.md =====
+3:# Implementation Backlog
+13:The Implementation Backlog defines the canonical work items required to implement the Repository Ingestion Framework.
+17:Backlog items evolve as implementation progresses.
+24:- Work items should be independently testable.
+25:- Dependencies should be explicit.
+26:- Completion produces measurable capability.
+33:Each work item SHALL exist in one of the following states:
+48:Repository work SHALL use the following priorities:
+55:Priority reflects implementation value, not implementation difficulty.
+172:- Dependencies
+173:- Expected Outputs
+182:- Requirements are implemented.
+190:# Dependency Management
+192:Dependencies SHALL be recorded explicitly.
+194:Circular dependencies SHOULD be avoided.
+206:- Phase completion
+210:Implementation progress SHALL be evidence-based.
+
+===== Implementation_Checklist_v0.1.md =====
+3:# Implementation Checklist
+13:The Implementation Checklist provides a measurable readiness assessment for the Repository Ingestion Framework.
+15:Unlike the roadmap, which describes phases, and the backlog, which describes work items, the checklist records implementation completion.
+25:- Evidence is required.
+26:- Specifications drive implementation.
+33:Each checklist item SHALL have one of the following states:
+41:Verification SHALL be performed independently whenever practical.
+62:| Artifact Intake Service implemented | |
+168:| Integration tests | |
+190:The Repository Ingestion Framework is considered implementation-ready when:
+195:- All required tests pass.
+205:An implementation realizes intent.
+
+===== Implementation_Milestones_v0.1.md =====
+1:# Implementation Milestones
+11:The Implementation Milestones define measurable capability targets for the Repository Ingestion Framework.
+13:Unlike the roadmap, which describes implementation phases, milestones identify concrete achievements that demonstrate meaningful repository capability.
+25:- Repository integrity is maintained throughout implementation.
+166:- Canonical artifacts are produced through governance.
+226:- Intelligence outputs preserve provenance.
+234:Implementation progress SHOULD be evaluated using:
+
+===== Implementation_Roadmap_v0.1.md =====
+3:# Implementation Roadmap
+13:The Implementation Roadmap defines the recommended order for implementing the Repository Ingestion Framework.
+24:- Preserve working software at every stage.
+26:- Every milestone should produce a usable system.
+27:- Automation follows understanding.
+31:# Phase 0 — Foundation
+51:# Phase 1 — Artifact Intake
+70:# Phase 2 — Structural Parsing
+92:# Phase 3 — Queue Generation
+114:# Phase 4 — Validation
+132:# Phase 5 — Repository Mapping
+151:# Phase 6 — Governance
+169:# Phase 7 — Repository Services
+186:# Phase 8 — Automation
+204:# Phase 9 — Intelligence
+222:# Implementation Philosophy
+224:Each completed phase should improve repository capability.
+226:No phase should invalidate earlier work.
+
+===== Ingestion_Glossary_v0.1.md =====
+139:Publication follows promotion.
+155:Observations precede knowledge.
+175:Services are defined by contracts rather than implementations.
+191:Specifications guide implementation.
+
+===== Ingestion_Pipeline_Specification_v0.1.md =====
+3:# Ingestion Pipeline Specification
+13:The Ingestion Pipeline Specification defines the canonical sequence of services that transform source artifacts into validated repository artifacts.
+15:The pipeline is deterministic.
+17:Each stage has a single responsibility.
+23:- One responsibility per stage.
+24:- Stages communicate through well-defined artifacts.
+25:- Every stage preserves provenance.
+26:- Every stage is independently testable.
+27:- Stages may be replaced without altering the pipeline contract.
+31:# Canonical Pipeline
+81:# Stage 1 — Artifact Intake
+87:Outputs:
+95:# Stage 2 — Structural Parsing
+101:Outputs:
+113:# Stage 3 — Asset Extraction
+134:# Stage 4 — Reference Extraction
+144:# Stage 5 — Queue Candidate Generation
+154:# Stage 6 — Validation
+166:# Stage 7 — Repository Mapping
+183:# Stage 8 — Review
+193:# Stage 9 — Canonical Promotion
+205:# Stage 10 — Publication
+215:# Stage 11 — Repository Index Update
+233:# Pipeline Guarantees
+235:The pipeline SHALL:
+240:- Produce deterministic outputs.
+241:- Record every stage.
+245:# Pipeline Failures
+252:- Permit restart from the appropriate stage.
+258:The pipeline is a chain of custody.
+
+===== Ingestion_Report_Schema_v0.1.md =====
+13:The Ingestion Report Schema defines the standardized summary generated after every ingestion process.
+25:- Every ingestion produces a report.
+33:# Required Fields
+110:- Review Required
+138:# Output Summary
+142:- Output Package Location
+
+===== Observability_Specification_v0.1.md =====
+13:Observability enables operators to understand the internal state of the system through its externally visible outputs.
+118:- Dependency status
+133:- Processing stages
+134:- Stage duration
+135:- Dependencies
+165:- Required services become unavailable.
+178:- Storage requirements
+196:# Integration
+198:Observability components SHOULD integrate with:
+206:Integration improves institutional awareness.
+
+===== Operational_Readiness_Specification_v0.1.md =====
+11:The Operational Readiness Specification defines the minimum operational requirements that SHALL be satisfied before Repository Ingestion Framework components are considered suitable for production use.
+13:Implementation alone does not constitute operational readiness.
+61:- Pass required tests.
+62:- Produce deterministic outputs.
+74:- Produce execution reports.
+115:- Dependency verification
+127:- Dependencies
+135:Documentation SHALL remain synchronized with implementation.
+144:- Required tests pass.
+173:- Readiness requirements satisfied
+188:- Dependency updates
+
+===== Output_Package_Specificatiom_v0.1.md =====
+1:# Output Package Specification
+11:The Output Package Specification defines the canonical directory structure produced by the ingestion pipeline.
+13:Every successful ingestion SHALL produce a complete, deterministic output package.
+27:# Standard Output Package
+95:# Required Components
+145:Implementations MAY add additional directories.
+147:Required directories SHALL NOT be omitted.
+153:Every output package should be understandable by both humans and machines.
+
+===== Parser_Behavior_Specification_v0.1.md =====
+13:This specification governs behavior rather than implementation.
+34:- Produce deterministic output.
+38:# Parser Inputs
+52:# Parser Outputs
+54:The parser SHALL produce:
+157:A successful parse SHALL produce:
+163:- Validation-ready output.
+171:Knowledge is produced later.
+
+===== Parser_Development_Guide_v0.1.md =====
+11:The Parser Development Guide provides implementation guidance for creating artifact parsers within the Repository Ingestion Framework.
+24:- Produce deterministic output.
+50:# Parser Pipeline
+52:Each parser SHOULD perform the following sequence:
+64:# Supported Outputs
+66:Parsers MAY produce:
+74:Outputs SHALL conform to repository schemas.
+94:Given identical input and parser version:
+96:- Output SHALL be identical.
+117:Each parser execution SHOULD produce a report containing:
+126:- Output summary
+132:# Testing Requirements
+136:- Valid inputs
+137:- Invalid inputs
+152:- Follow repository schemas.
+153:- Implement existing service contracts.
+
+===== Provenance_Specification_v0.1.md =====
+45:Derived artifacts SHALL document how they were produced.
+84:Each processing stage SHALL append a transformation event.
+92:- Inputs
+93:- Outputs
+
+===== Publication_Specification_v0.1.md =====
+11:The Publication Specification defines how canonical artifacts are published into the repository after successful promotion.
+13:Publication is the final operational stage of the ingestion pipeline.
+24:- Maintain deterministic outputs.
+29:# Publication Inputs
+31:Publication SHALL require:
+41:# Publication Outputs
+43:Publication SHALL produce:
+125:The two SHALL remain independent.
+
+===== Quality_Assurance_Specification_v0.1.md =====
+11:The Quality Assurance (QA) Specification defines the policies and procedures used to ensure the Repository Ingestion Framework consistently produces reliable, reproducible, and specification-compliant results.
+13:Quality Assurance governs the implementation process.
+15:Quality Control verifies individual outputs.
+70:Each activity SHALL produce objective evidence.
+76:Repository artifacts SHOULD undergo review before approval.
+92:Verification SHALL confirm that implementations satisfy their governing specifications.
+106:Validation SHALL determine whether repository outputs satisfy their intended purpose.
+131:The repository SHALL recognize the following severity levels:
+170:Before publication, repository releases SHOULD verify:
+172:- All required tests pass.
+211:Quality is not inspected into the repository after implementation.
+
+===== Queue_Candidate_Schema_v0.1.md =====
+29:# Required Fields
+59:Queue candidates SHALL exist in one of the following states:
+
+===== Queue_Specification_v0.1.md =====
+22:- Accepted Inputs
+23:- Required Metadata
+24:- Review Requirement
+55:### Inputs
+65:Explicit decisions should be reviewed immediately following conversation ingestion.
+81:### Inputs
+236:Capture recommendations for improving the ingestion pipeline itself.
+258:Each queue item shall exist in one of the following states:
+
+===== Reference_Schema_v0.1.md =====
+31:# Required Fields
+88:References SHALL exist in one of the following states:
+122:Reference validity is not required for successful ingestion.
+142:Observation always precedes interpretation.
+
+===== Repository_Constitution_v0.1.md =====
+17:All specifications, schemas, services, implementations, and governance processes derive their authority from these principles.
+50:Equivalent inputs processed under equivalent conditions SHALL produce equivalent outputs.
+92:Repository decisions SHOULD retain sufficient documentation to support independent review.
+98:Repository capabilities SHALL be implemented as independent services wherever practical.
+110:Implementations SHALL conform to specifications.
+112:Specifications SHALL NOT be modified solely to accommodate implementation convenience.
+130:Knowledge SHALL outlive individual implementations, contributors, technologies, and development environments.
+153:Repository authority SHALL follow this order:
+160:6. Implementation Guides
+
+===== Repository_Index_Specification_v0.1.md =====
+35:The repository SHALL support the following logical indexes:
+155:Indexes SHALL be updated after:
+
+===== Repository_Mapping_Specification_v0.1.md =====
+29:# Mapping Inputs
+39:# Mapping Outputs
+41:Each mapping SHALL produce one or more relationship records.
+91:Multiple artifacts may be consolidated after review.
+132:Those actions require downstream review.
+152:Discovery before action.
+154:Relationships before restructuring.
+
+===== Repository_Maturity_Model_v0.1.md =====
+15:Maturity measures organizational capability rather than implementation size.
+37:- Level 4 — Integrated
+87:- Repository objects follow common standards.
+109:# Level 4 — Integrated
+163:Progression between maturity levels SHOULD require objective evidence.
+165:Advancement SHALL NOT be based solely on implementation effort.
+187:Assessment results SHOULD inform future implementation planning.
+
+===== Repository_Relationship_Schema_v0.1.md =====
+29:# Required Fields
+65:- Depends On
+66:- Dependency Of
+73:- Implements
+74:- Implemented By
+116:Relationships SHALL exist in one of the following states:
+
+===== Repository_Standards_v0.1.md =====
+11:The Repository Standards define the common conventions that SHALL be followed throughout the Repository Ingestion Framework.
+13:These standards promote consistency across specifications, schemas, services, implementations, and documentation.
+15:Where a conflict exists, the Repository Constitution takes precedence.
+21:- Consistency before convenience.
+22:- Explicitness before assumption.
+23:- Reproducibility before optimization.
+24:- Simplicity before complexity.
+25:- Standards before exceptions.
+45:Names SHOULD communicate purpose rather than implementation.
+90:Version changes SHALL follow repository governance.
+98:- Globally unique where required.
+103:Identifiers SHALL NOT encode implementation details.
+118:Normative documents SHOULD clearly distinguish requirements from guidance.
+122:# Requirement Language
+124:The following terminology SHALL be interpreted consistently:
+126:- SHALL — mandatory requirement
+194:Repository implementations SHOULD maintain:
+197:- Independent tests
+214:Governance applies equally to documentation and implementation.
+226:The Repository Standards provide the shared engineering discipline that allows independent components to function as a coherent whole.
+
+===== Schema_Governance_Specification_v0.1.md =====
+27:- Governance precedes implementation.
+35:Implementations SHALL conform to schemas.
+37:Schemas SHALL NOT conform to implementations.
+43:Every schema SHALL exist in one of the following states:
+100:Changed required elements.
+104:# Required Schema Metadata
+115:- Dependencies
+145:# Implementation Compatibility
+147:Implementations SHALL declare:
+160:- Required metadata.
+
+===== Security_and_Integrity_Specification_v0.1.md =====
+11:The Security and Integrity Specification defines the principles and requirements that protect repository evidence, preserve institutional knowledge, and maintain trust in the Repository Ingestion Framework.
+91:Operational implementations SHOULD authenticate:
+105:No implementation SHOULD assume unrestricted modification privileges.
+188:- Dependency risks
+
+===== Service_Contracts_v0.1.md =====
+11:Service Contracts define the responsibilities, inputs, outputs, guarantees, and limitations of each service within the ingestion framework.
+13:Implementations may vary, but service contracts SHALL remain stable.
+22:- Inputs
+23:- Outputs
+30:Services SHALL be independently testable.
+40:### Inputs
+51:### Outputs
+181:Promotion requires review.
+235:- Produce deterministic outputs
+254:Implementations fulfill behavior.
+256:Architecture depends on contracts, not technologies.
+
+===== Service_Development_Guide_v0.1.md =====
+11:The Service Development Guide provides implementation guidance for developing repository services.
+24:- Implement an approved service contract.
+25:- Produce deterministic outputs.
+44:Implementation details SHOULD remain internal.
+50:Every service execution SHOULD follow this sequence:
+53:2. Validate inputs.
+56:5. Validate outputs.
+62:# Inputs
+64:Service inputs SHOULD:
+67:- Include required identifiers.
+69:- Be validated before processing.
+71:Invalid inputs SHALL generate explicit errors.
+75:# Outputs
+77:Service outputs SHALL:
+84:Outputs SHALL be deterministic.
+90:Services SHOULD separate configuration from implementation.
+109:- Dependency Error
+128:- Output summary
+145:- Output summary
+151:# Testing Requirements
+157:- Integration tests
+165:# Dependencies
+169:- Minimize dependencies.
+170:- Declare all external dependencies.
+171:- Fail gracefully when dependencies are unavailable.
+180:- Implement existing contracts where possible.
+
+===== Testing_Strategy_Specification_v0.1.md =====
+13:Testing demonstrates that implementations conform to repository specifications.
+21:- Every implementation SHALL be testable.
+47:- Integration Tests
+69:Unit tests SHOULD execute independently.
+73:# Integration Testing
+75:Integration tests verify interactions between services.
+84:Integration tests SHALL verify interface compatibility.
+100:- Required fields
+106:Schema validation SHALL precede publication.
+112:Regression tests SHALL verify that existing functionality remains unchanged after modifications.
+140:4. Validate outputs.
+184:- Before merges
+185:- Before releases
+186:- After specification updates
+187:- After dependency updates
+197:- Required tests pass.
+206:Testing provides objective evidence that implementations satisfy the repository constitution.
+
+===== Validation_Specification_v0.1.md =====
+11:The Validation Specification defines the required checks performed on every ingested artifact before it proceeds through the ingestion pipeline.
+22:- Validation produces explicit results.
+67:- Queue records contain required metadata.
+80:- Output Package Specification
+86:Each validation SHALL produce:
+
+===== Workflow_API_Specification_v0.1.md =====
+23:- APIs are implementation-independent.
+45:API implementations SHOULD remain stateless.
+59:API versioning SHALL follow Semantic Versioning.
+86:Workflow resources SHOULD support the following operations where applicable:
+103:Deletion SHALL follow repository governance policies.
+123:# Request Requirements
+137:# Response Requirements
+163:Errors SHALL NOT expose sensitive implementation details.
+193:Definition changes SHALL follow governance approval.
+283:# Repository Integration
+285:Workflow APIs integrate with:
+303:The Workflow API is the canonical interface between repository capabilities and their consumers.
+305:By exposing stable, governed, and versioned contracts, the Repository Ingestion Framework enables independent implementation, interoperability, automation, and long-term evolution while preserving determinism, provenance, and institutional trust.
+
+===== Workflow_Audit_Specification_v0.1.md =====
+22:- Audit data is independently verifiable.
+68:| Field | Required | Description |
+98:The following SHALL generate audit records:
+159:Administrative operations SHALL require attribution.
+178:Audit records SHALL follow repository retention policies.
+228:- Required metadata
+238:# Repository Integration
+240:Workflow Auditing integrates with:
+262:Workflow auditing transforms operational activity into durable evidence, ensuring that every decision, execution, and governance action can be reconstructed, verified, and understood long after the original execution has completed.
+
+===== Workflow_Checkpointing_Specification_v0.1.md =====
+13:Checkpointing ensures that completed work does not require unnecessary repetition following interruption or failure.
+23:- Checkpoints are independently auditable.
+50:Every checkpoint SHALL contain the following fields.
+52:| Field | Required | Description |
+83:- Before workflow execution
+84:- After successful step completion
+85:- Before external dependencies
+86:- Before human review
+87:- Before publication
+90:- Immediately before archival
+103:- Operational requirements
+116:- Active dependencies
+169:Checkpoint records SHALL remain immutable after creation.
+185:Checkpoint retention SHALL follow repository governance policies.
+191:- Operational requirements
+192:- Regulatory requirements
+213:# Repository Integration
+215:Checkpointing integrates with:
+232:Workflow execution is a continuous process, but reliable execution depends upon preserving meaningful milestones.
+
+===== Workflow_Context_Specification_v0.1.md =====
+25:- Context is independently validatable.
+50:| Field | Required | Description |
+177:- Required identifiers
+188:# Repository Integration
+190:Workflow Context integrates with:
+210:Workflow Context provides the common frame of reference that allows independent services to cooperate while preserving provenance, determinism, and institutional memory.
+
+===== Workflow_Definition_Schema_v0.1.md =====
+24:- Definitions are independently validatable.
+25:- Definitions remain implementation-neutral.
+31:Every workflow definition SHALL contain the following fields.
+33:| Field | Required | Description |
+43:| Dependencies | No | Workflow-level dependencies |
+44:| Inputs | Yes | Required inputs |
+45:| Outputs | Yes | Produced outputs |
+86:Workflow definitions SHALL exist in one of the following states:
+122:- Expected Input
+123:- Expected Output
+129:# Dependencies
+131:Dependencies MAY define:
+133:- Required predecessor steps
+134:- External workflow dependencies
+135:- Required services
+136:- Required repository state
+138:Circular dependencies SHALL NOT be permitted.
+142:# Inputs
+144:Workflow inputs SHALL specify:
+146:- Input Name
+147:- Input Type
+148:- Required or Optional
+151:Inputs SHALL conform to approved schemas.
+155:# Outputs
+157:Workflow outputs SHALL specify:
+159:- Output Name
+160:- Output Type
+164:Outputs SHALL preserve provenance.
+197:- Required fields
+199:- Dependency integrity
+
+===== Workflow_Execution_Specification_v0.1.md =====
+46:Every workflow execution SHALL progress through the following stages:
+83:- Required inputs.
+84:- Dependency satisfaction.
+98:- Input normalization.
+99:- Dependency resolution.
+112:- Honor dependencies.
+132:Every step SHALL be independently observable.
+138:Following execution, the workflow engine SHALL verify:
+140:- Required outputs produced.
+166:- Dependencies are unavailable.
+167:- External approval is required.
+210:- Preserve completed outputs.
+219:Each workflow execution SHALL produce a report containing:
+258:- Dependency completion.
+259:- Output consistency.
+267:# Repository Integration
+269:Workflow execution integrates with:
+280:Execution SHALL preserve repository integrity at every stage.
+
+===== Workflow_Governance_Specification_v0.1.md =====
+55:Workflow governance SHALL recognize the following roles.
+88:Workflow governance SHALL follow the lifecycle:
+135:Approval SHALL precede publication.
+180:- Validation requirements
+204:# Audit Requirements
+268:- Required approvals
+274:Validation SHALL occur before publication.
+278:# Repository Integration
+280:Workflow Governance integrates with:
+
+===== Workflow_Metrics_Specification_v0.1.md =====
+22:- Metrics are implementation-independent.
+53:Workflow metrics SHALL be organized into the following categories:
+72:| Field | Required | Description |
+126:- Dependency failures
+280:# Repository Integration
+282:Workflow Metrics integrates with:
+
+===== Workflow_Orchestration_Specification_v0.1.md =====
+11:The Workflow Orchestration Specification defines how repository workflows are coordinated across independent services.
+62:Every workflow SHALL exist in one of the following states:
+84:4. Awaiting Dependencies
+120:Services SHALL remain independently executable.
+124:# Dependency Management
+126:Workflow steps MAY declare dependencies.
+128:Dependencies SHALL identify:
+130:- Required predecessor
+131:- Dependency type
+134:Execution SHALL wait until dependencies are satisfied.
+140:Independent workflow steps MAY execute concurrently.
+189:- Preserve completed stages.
+202:- Preserve completed outputs.
+219:- Pending dependencies
+231:- Dependency satisfaction
+235:Invalid workflows SHALL be rejected before execution.
+239:# Repository Integration
+241:Workflow orchestration integrates with:
+261:Orchestration enables the Repository Ingestion Framework to evolve as a collection of independent services while behaving as a coherent institutional system.
+
+===== Workflow_Recovery_Specification_v0.1.md =====
+13:Recovery enables workflows to resume safely after failures, interruptions, or planned suspensions without compromising institutional history.
+44:Recovery SHALL resume execution without repeating successfully completed work unless explicitly required by policy.
+56:- Produce an auditable recovery history.
+70:- External dependency restoration
+78:Recovery SHALL require:
+106:A recovery operation SHALL proceed through the following stages:
+116:Each stage SHALL generate appropriate execution events.
+125:- Required checkpoints exist.
+127:- Dependencies remain satisfiable.
+146:Context restoration SHALL be validated before execution resumes.
+167:Recovery SHALL resume from the next executable workflow step following the latest validated checkpoint.
+171:- The workflow explicitly requires replay.
+172:- Repository policy requires revalidation.
+190:Events SHALL integrate with the canonical Event Model.
+202:- Dependency failure
+209:# Audit Requirements
+251:- Dependency availability
+253:Validation SHALL complete before execution resumes.
+257:# Repository Integration
+259:Workflow Recovery integrates with:
+
+===== Workflow_Replay_Specification_v0.1.md =====
+45:Replay SHALL produce a new execution while maintaining a relationship to the original execution.
+83:Replay SHALL require:
+95:# Replay Inputs
+107:Replay inputs SHALL become part of execution history.
+118:- Dependency State
+133:5. Compare outputs where applicable.
+153:# Output Comparison
+161:- Produced metadata
+218:- Input completeness
+219:- Dependency availability
+234:- Output comparison results
+240:# Repository Integration
+242:Workflow Replay integrates with:
+262:It is the disciplined reconstruction of prior execution under controlled conditions to verify that institutional knowledge remains reproducible across time, implementations, and repository evolution.
+264:By treating replay as a governed capability rather than an ad hoc operation, the Repository Ingestion Framework ensures that every workflow can be independently verified without compromising the authenticity of historical records.
+
+===== Workflow_Reporting_Specification_v0.1.md =====
+22:- Reports are implementation-independent.
+86:| Field | Required | Description |
+171:Compliance reports SHALL support regulatory and organizational requirements.
+234:Reports SHALL follow repository retention policies.
+277:# Repository Integration
+279:Workflow Reporting integrates with:
+296:Repository operations produce authoritative records.
+
+===== Workflow_Service_Capability_Specification_v0.1.md =====
+13:Capabilities provide the semantic contract that allows workflow orchestration to select appropriate services independently of implementation details.
+21:- Capabilities are independently discoverable.
+24:- Capability definitions are implementation-neutral.
+67:| Field | Required | Description |
+74:| Input Schemas | Yes | Accepted schemas |
+75:| Output Schemas | Yes | Produced schemas |
+76:| Required Contracts | Yes | Required service contracts |
+78:| Preconditions | No | Required execution conditions |
+127:- Required inputs
+128:- Produced outputs
+130:- Validation requirements
+146:- Remain independently testable.
+254:- Dependent workflows
+261:# Audit Requirements
+277:# Repository Integration
+279:Workflow Service Capabilities integrate with:
+296:Services represent implementations.
+300:By governing capabilities as first-class repository assets, the Repository Ingestion Framework separates functional intent from implementation, enabling services to evolve independently while preserving deterministic workflow composition, discoverability, interoperability, and long-term architectural stability.
+
+===== Workflow_Service_Communication_Specification_v0.1.md =====
+24:- Communication is implementation-independent.
+48:Communication SHALL be explicit, validated, and independently auditable.
+69:| Field | Required | Description |
+105:Communication SHALL support the following patterns:
+129:Identity SHALL be validated before communication begins.
+201:Where ordering is required, communication SHALL preserve:
+204:- Dependency order
+223:- Dependency failure
+237:- Confidentiality where required
+256:Validation SHALL complete before message acceptance.
+277:# Audit Requirements
+311:# Repository Integration
+313:Workflow Service Communication integrates with:
+318:- Workflow Service Dependencies
+332:Communication is the architectural fabric that connects independent services into cohesive workflows.
+
+===== Workflow_Service_Composition_Specification_v0.1.md =====
+11:The Workflow Service Composition Specification defines the canonical model for combining independent workflow services into larger coordinated execution capabilities.
+13:Service Composition enables complex repository operations to be assembled from reusable, governed, and independently managed services while preserving determinism, provenance, and architectural integrity.
+20:- Services remain independently deployable.
+23:- Composition is independently testable.
+47:Composition defines cooperation rather than implementation.
+57:- Independent service evolution
+68:| Field | Required | Description |
+118:- Producer
+119:- Consumer
+138:- Completion dependencies
+152:- Dependency resolution
+154:Coordination SHALL preserve service independence.
+164:- Input boundaries
+165:- Output boundaries
+177:- Dependency failure
+243:- Dependency integrity
+247:Validation SHALL precede activation.
+268:# Audit Requirements
+292:- Dependency violations
+300:# Repository Integration
+302:Workflow Service Composition integrates with:
+310:- Workflow Service Dependencies
+325:By treating compositions as governed architectural assets rather than ad hoc implementations, the Repository Ingestion Framework enables scalable, reusable, and maintainable workflow architectures while preserving modularity, determinism, and long-term institutional knowledge.
+
+===== Workflow_Service_Configuration_Specification_v0.1.md =====
+13:Configuration provides the controlled mechanism by which service behavior is adapted to different repository environments without altering service implementation.
+22:- Configuration is independently validated.
+69:| Field | Required | Description |
+77:| Validation Rules | Yes | Parameter validation requirements |
+192:Lifecycle transitions SHALL follow repository governance.
+198:Activation SHALL require:
+230:- Required parameters
+232:- Compatibility requirements
+284:# Audit Requirements
+324:- Preserve confidentiality where required.
+330:# Repository Integration
+332:Workflow Service Configuration integrates with:
+337:- Workflow Service Dependencies
+350:Service behavior should evolve through governed configuration rather than uncontrolled implementation changes.
+
+===== Workflow_Service_Contract_Specification_v0.1.md =====
+13:Service contracts establish standardized expectations for communication, execution behavior, inputs, outputs, error handling, and lifecycle management.
+22:- Contracts are implementation-independent.
+46:A service contract defines the formal agreement between a service provider and its consumers.
+51:- Inputs
+52:- Outputs
+63:| Field | Required | Description |
+71:| Inputs | Yes | Accepted inputs |
+72:| Outputs | Yes | Produced outputs |
+73:| Preconditions | No | Required execution conditions |
+139:Lifecycle transitions SHALL follow repository governance policy.
+143:# Input Contract
+147:- Input name
+148:- Input type
+149:- Required or optional
+153:Inputs SHALL conform to approved schemas.
+157:# Output Contract
+161:- Output name
+162:- Output type
+165:- Provenance requirements
+167:Outputs SHALL preserve repository integrity.
+175:- Required workflow state
+176:- Required permissions
+178:- Dependency completion
+181:Services SHALL validate preconditions before execution.
+189:- Expected outputs
+210:Errors SHALL remain implementation-neutral.
+214:# Execution Requirements
+220:- Produce deterministic results.
+221:- Publish required events.
+244:Service contracts SHALL follow Semantic Versioning.
+
+===== Workflow_Service_Coordination_Specification_v0.1.md =====
+13:Service Coordination establishes deterministic collaboration between independently governed services while preserving execution integrity, repository consistency, provenance, and institutional accountability.
+69:| Field | Required | Description |
+77:| Synchronization Policy | Yes | State synchronization requirements |
+93:- Dependency-Driven Coordination
+123:- Consumer
+167:- Dependency ordering
+200:- Follow approved state machines
+218:- Dependency failure
+231:- Dependency revalidation
+236:Recovery SHALL integrate with the Workflow Recovery Specification.
+247:- Dependency requirements
+263:- Dependency readiness
+289:# Audit Requirements
+337:# Repository Integration
+339:Workflow Service Coordination integrates with:
+345:- Workflow Service Dependencies
+360:Independent services achieve institutional value through disciplined collaboration rather than direct coupling.
+
+===== Workflow_Service_Dependency_Specification_v0.1.md =====
+1:# Workflow Service Dependency Specification
+11:The Workflow Service Dependency Specification defines the canonical model for declaring, validating, governing, and monitoring dependencies between services participating in the Repository Ingestion Framework.
+13:Dependency management ensures that services interact predictably while maintaining deterministic execution, architectural integrity, and institutional governance.
+19:- Dependencies are explicit.
+20:- Dependencies are version-aware.
+21:- Dependencies are deterministic.
+22:- Dependencies are independently validatable.
+23:- Dependencies preserve provenance.
+24:- Circular dependencies are prohibited.
+43:# Dependency Definition
+45:A dependency is a formal relationship in which one service requires the capability, contract, resource, or availability of another service to perform its declared responsibilities.
+47:Dependencies SHALL be declared explicitly.
+51:# Dependency Objectives
+53:Dependency management SHALL provide:
+64:# Canonical Dependency Schema
+66:Every dependency declaration SHALL contain:
+68:| Field | Required | Description |
+70:| Dependency ID | Yes | Unique dependency identifier |
+71:| Consumer Service | Yes | Service requiring the dependency |
+72:| Provider Service | Yes | Service providing the dependency |
+73:| Dependency Type | Yes | Dependency classification |
+74:| Required Capability | Yes | Required capability identifier |
+75:| Required Contract | Yes | Required service contract |
+78:| Optional | Yes | Indicates whether dependency is optional |
+79:| Validation Rules | Yes | Dependency validation criteria |
+81:| Metadata | No | Supplemental dependency information |
+85:# Dependency Identifier
+87:Dependency identifiers SHALL:
+100:# Dependency Categories
+102:Supported dependency types include:
+
+===== Workflow_Service_Discovery_Specification_v0.1.md =====
+23:- Discovery is independently auditable.
+24:- Discovery is implementation-independent.
+46:Service Discovery is the controlled process of identifying services that satisfy the operational requirements of a workflow.
+60:- Dependency awareness
+77:Every stage SHALL be auditable.
+85:| Field | Required | Description |
+90:| Required Capability | Yes | Requested capability |
+91:| Required Contract | Yes | Required service contract |
+92:| Required Schema Version | Yes | Required schema version |
+130:When multiple compatible services exist, selection SHALL follow deterministic rules.
+139:Selection SHALL NOT depend upon runtime randomness.
+143:# Dependency Resolution
+145:Discovery SHALL verify service dependencies before selection.
+147:Dependencies MAY include:
+154:Unsatisfied dependencies SHALL prevent service selection.
+182:- Dependency failure
+192:Implementations MAY cache discovery results.
+199:- Be invalidated following registry updates.
+220:# Audit Requirements
+261:- Dependency integrity
+264:Validation SHALL complete before service selection.
+268:# Repository Integration
+270:Workflow Service Discovery integrates with:
+287:Workflow orchestration depends upon locating the correct service, not merely any available service.
+
+===== Workflow_Service_Dispatch_Specification_v0.1.md =====
+19:- Dispatch follows routing.
+47:Workflow Service Dispatch is the governed process of assigning an approved execution request to a specific service instance after routing, validation, and eligibility verification have completed.
+70:| Field | Required | Description |
+88:Dispatch SHALL occur only after:
+95:- Dependency validation
+160:- Dependency readiness
+168:Dispatch operations SHALL progress through the following lifecycle:
+244:- Dependency failure
+315:# Audit Requirements
+364:# Repository Integration
+366:Workflow Service Dispatch integrates with:
+
+===== Workflow_Service_Health_Specification_v0.1.md =====
+13:Service Health provides authoritative operational visibility that supports workflow execution, service discovery, dependency management, orchestration, and operational governance.
+23:- Health evaluations are independently verifiable.
+24:- Health information is implementation-independent.
+58:- Dependency awareness
+69:| Field | Required | Description |
+76:| Dependency Status | Yes | Dependency evaluation |
+87:Every service SHALL exist in one of the following health states:
+107:- Required dependencies are healthy.
+132:- Required capabilities are unavailable.
+146:Recovering services SHALL be reassessed before becoming Healthy.
+156:- Workflow execution SHALL follow governance policy.
+168:- Dependencies SHALL be evaluated accordingly.
+183:- Dependency health
+197:2. Dependency verification
+209:# Dependency Assessment
+211:Dependency evaluation SHALL verify:
+219:Dependency failures SHALL influence overall health status.
+233:- Dependency failures
+277:- Dependency consistency
+301:# Audit Requirements
+317:# Repository Integration
+319:Workflow Service Health integrates with:
+323:- Workflow Service Dependencies
+337:Reliable workflow execution depends upon reliable services.
+
+===== Workflow_Service_Lifecycle_Specification_v0.1.md =====
+48:Every registered service SHALL follow the canonical lifecycle.
+67:Every service SHALL exist in one of the following states:
+71:- Implemented
+109:- Dependency analysis
+117:# Implemented
+119:Implemented indicates that service development has been completed.
+121:Implementation SHALL:
+124:- Implement declared capabilities.
+128:Implementation SHALL precede testing.
+134:Tested indicates successful completion of required verification activities.
+139:- Integration testing
+190:- Dependencies
+204:- Publish required events.
+207:- Support audit requirements.
+266:| Designed | Implemented |
+267:| Implemented | Tested |
+287:- Compatibility requirements
+301:- Service Implemented
+315:# Audit Requirements
+358:Validation SHALL complete before transition approval.
+362:# Repository Integration
+364:Workflow Service Lifecycle integrates with:
+385:A governed lifecycle ensures that every service progresses through disciplined stages of conception, validation, operation, evolution, and retirement while preserving complete historical accountability.
+387:By treating service evolution as an institutional process rather than an implementation detail, the Repository Ingestion Framework enables sustainable growth, architectural consistency, and reproducible operations across the lifetime of the repository.
+
+===== Workflow_Service_Load_Balancing_Specification_v0.1.md =====
+22:- Execution affinity is preserved where required.
+69:| Field | Required | Description |
+76:| Health Requirements | Yes | Instance health criteria |
+79:| Validation Rules | Yes | Policy validation requirements |
+147:Health evaluation SHALL integrate with the Workflow Service Health Specification.
+174:- Dependency failures prevent execution.
+182:When retries are required, routing policies SHALL define whether execution SHALL:
+187:- Await dependency restoration
+200:- Dependency requirements
+257:# Audit Requirements
+284:Security validation SHALL occur before workload distribution.
+305:# Repository Integration
+307:Workflow Service Load Balancing integrates with:
+314:- Workflow Service Dependencies
+327:Load balancing is an architectural coordination capability rather than a networking implementation detail.
+
+===== Workflow_Service_Messaging_Specification_v0.1.md =====
+13:Messaging provides the standardized transport abstraction that enables reliable, deterministic, and auditable communication while remaining independent of specific messaging technologies or transport implementations.
+21:- Messaging is transport-independent.
+48:Messaging SHALL remain independent of any specific implementation technology.
+69:| Field | Required | Description |
+127:- Remain immutable after publication.
+129:Payload validation SHALL precede transmission.
+152:Messages SHALL progress through the following lifecycle:
+189:- Required fields
+209:The required delivery guarantee SHALL be explicitly declared.
+229:Where ordering requirements exist, messaging SHALL preserve:
+233:- Dependency ordering
+236:Ordering requirements SHALL be explicitly declared.
+248:- Archive requirements
+264:Duplicate processing SHALL be prevented whenever required by workflow policy.
+306:- Confidentiality where required
+332:# Audit Requirements
+366:# Repository Integration
+368:Workflow Service Messaging integrates with:
+374:- Workflow Service Dependencies
+387:Messaging is the standardized exchange mechanism upon which distributed workflow execution depends.
+389:By treating messages as immutable, versioned, schema-governed repository assets rather than transient transport artifacts, the Repository Ingestion Framework enables reproducible execution, reliable interoperability, comprehensive observability, and long-term architectural sustainability while remaining independent of specific messaging technologies.
+
+===== Workflow_Service_Registry_Specification_v0.1.md =====
+24:- Registry operations are independently auditable.
+69:| Field | Required | Description |
+78:| Supported Contracts | Yes | Implemented service contracts |
+81:| Dependencies | No | Required external services |
+162:- Accepted inputs
+163:- Produced outputs
+165:- Supported workflow stages
+171:# Dependency Declaration
+173:Services MAY declare dependencies upon:
+181:Dependency relationships SHALL remain acyclic wherever practical.
+219:New service registration SHALL require:
+254:- Dependency integrity
+277:# Repository Integration
+279:Workflow Service Registry integrates with:
+298:The Service Registry transforms a collection of independent implementations into a governed institutional ecosystem by providing a single authoritative source of truth for service identity, capability, compatibility, and lifecycle.
+
+===== Workflow_Service_Resilience_Specification_v0.1.md =====
+11:The Workflow Service Resilience Specification defines the canonical architecture for ensuring that workflow services continue operating correctly despite failures, resource constraints, dependency disruptions, and unexpected operational conditions.
+60:- Dependency isolation
+69:| Field | Required | Description |
+87:Services SHALL classify failures into one or more of the following categories:
+90:- Dependency Failure
+113:- Independent retry domains
+114:- Dependency isolation
+142:- Dependency invocation
+152:Services SHOULD implement circuit protection for unstable dependencies.
+187:- Dependency Re-resolution
+210:# Dependency Resilience
+212:Services SHALL evaluate dependency resilience by verifying:
+220:Dependency instability SHALL influence recovery decisions.
+259:- Dependency integrity
+264:Recovery SHALL complete only after successful validation.
+286:# Audit Requirements
+312:- Dependency failures
+320:# Repository Integration
+322:Workflow Service Resilience integrates with:
+328:- Workflow Service Dependencies
+343:By defining resilience as a governed architectural capability rather than an implementation-specific feature, the Repository Ingestion Framework ensures that services recover predictably, preserve repository integrity, maintain complete auditability, and continue supporting deterministic execution under adverse operational conditions.
+
+===== Workflow_Service_Routing_Specification_v0.1.md =====
+24:- Routing is independently auditable.
+49:Routing SHALL remain independent of transport technologies and implementation details.
+70:| Field | Required | Description |
+80:| Validation Rules | Yes | Routing validation requirements |
+110:- Dependency-Aware Routing
+129:- Dependency availability
+172:- Security requirements
+177:Policy evaluation SHALL complete before destination selection.
+203:- Dependency validation
+220:- Dependency availability
+260:# Audit Requirements
+308:# Repository Integration
+310:Workflow Service Routing integrates with:
+317:- Workflow Service Dependencies
+
+===== Workflow_Service_Scaling_Specification_v0.1.md =====
+69:| Field | Required | Description |
+156:Scaling decisions SHALL follow configured thresholds.
+167:- Be independently configurable.
+224:- Maintain workflow affinity where required.
+227:Load balancing mechanisms SHALL remain implementation-independent.
+246:# Dependency Considerations
+250:- Dependency capacity
+251:- Dependency compatibility
+256:Scaling SHALL NOT overwhelm dependent services.
+267:- Dependency readiness
+271:Validation SHALL precede scaling actions.
+292:# Audit Requirements
+299:- Capacity before scaling
+300:- Capacity after scaling
+330:- Require authorized administrative control.
+340:# Repository Integration
+342:Workflow Service Scaling integrates with:
+
+===== Workflow_Service_Scheduling_Specification_v0.1.md =====
+24:- Scheduling is independently auditable.
+69:| Field | Required | Description |
+94:- Dependency-Driven
+110:- Dependency availability
+145:Priority SHALL influence execution ordering but SHALL NOT bypass governance requirements.
+157:- Dependency-controlled
+179:# Dependency Scheduling
+181:Services dependent upon other services SHALL execute only after:
+183:- Dependency completion
+184:- Dependency validation
+185:- Dependency health verification
+186:- Dependency compatibility verification
+188:Dependency scheduling SHALL integrate with the Workflow Service Dependency Specification.
+214:- Dependency failures
+227:- Dependency completion
+242:- Dependency readiness
+254:- Produce a new schedule version.
+282:# Audit Requirements
+330:# Repository Integration
+332:Workflow Service Scheduling integrates with:
+338:- Workflow Service Dependencies
+
+===== Workflow_State_Machine_Specification_v0.1.md =====
+13:This specification standardizes workflow progression independently of implementation.
+42:Every workflow SHALL exist in exactly one of the following states:
+107:A workflow enters Waiting when execution cannot continue because it depends upon:
+113:- Required repository state
+136:Recovering indicates that execution is resuming after interruption.
+154:- All required steps executed.
+155:- Outputs validated.
+156:- Required events published.
+211:The following transitions are permitted:
+257:- Dependency satisfaction.
+278:# Repository Integration
+280:Workflow state management integrates with:
+
+===== Workflow_Versioning_Specification_v0.1.md =====
+49:- Dependencies
+50:- Inputs
+51:- Outputs
+79:Workflow versions SHALL follow Semantic Versioning.
+102:- Breaking input changes
+103:- Breaking output changes
+107:Major version changes MAY require migration.
+119:- New optional outputs
+167:Lifecycle transitions SHALL follow repository governance policies.
+177:- Each SHALL remain independently executable.
+179:- Each SHALL maintain independent provenance.
+191:| Forward Compatible | Newer definitions tolerate older inputs |
+192:| Incompatible | Migration required |
+265:- Dependency consistency
+287:# Repository Integration
+289:Workflow Versioning integrates with:
+

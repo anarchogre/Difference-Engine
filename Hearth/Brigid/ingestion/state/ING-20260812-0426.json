@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0426",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:38.973694-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Workflow_Service_Scaling_Specification_v0.1.md",
+    "original_name": "Workflow_Service_Scaling_Specification_v0.1.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0426",
+    "schema_version": "0.1.0",
+    "sha256": "ee2cc20d81a0fcb5335d44bf74c118ae63b3ab52e520fbaa183755560b37bb9b",
+    "size_bytes": 7950,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

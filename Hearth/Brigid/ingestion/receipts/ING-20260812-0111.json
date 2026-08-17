@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:08.841121-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-SIS-0001_Semantic_Integrity_Checklist.json",
+  "original_name": "AKS-SIS-0001_Semantic_Integrity_Checklist.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0111",
+  "schema_version": "0.1.0",
+  "sha256": "c41835e2c9cb35f102d139d69d840a2dea967afff44e6c1fc6e4199e9bb73a26",
+  "size_bytes": 469,
+  "source_class": "manual_batch"
+}

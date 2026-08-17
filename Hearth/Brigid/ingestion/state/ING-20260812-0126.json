@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0126",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:09.681549-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-TRUTH-0001_Draft_0.1_Truth_State_Model.json",
+    "original_name": "AKS-TRUTH-0001_Draft_0.1_Truth_State_Model.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0126",
+    "schema_version": "0.1.0",
+    "sha256": "677df5ef5689a8c9dc513ae2fc561a543dac4505a70560e73fabdcfa92367b8b",
+    "size_bytes": 1180,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260811-0034",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-11T22:18:49.040409-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/ADE_Workflow_Automation_Prompts.json",
+    "original_name": "ADE_Workflow_Automation_Prompts.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260811-0034",
+    "schema_version": "0.1.0",
+    "sha256": "7d3082ac903843a804be700ff7d0cd11c2f9b0a189c8ffe77011d3380ec136b0",
+    "size_bytes": 14211,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:32.412160-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Ingestion_Report_Schema_v0.1.md",
+  "original_name": "Ingestion_Report_Schema_v0.1.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0375",
+  "schema_version": "0.1.0",
+  "sha256": "325402b6af58f8040aeec390af30b5958bc206044d63e1d00364ff5ee2ac62c3",
+  "size_bytes": 2645,
+  "source_class": "manual_batch"
+}

@@ -1,0 +1,96 @@
+=== CLI_BUDGET LITERALS ===
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/embedded-agent-DGUuxGR2.js:3486:							if (log$1.isEnabled("debug")) log$1.debug(`[compaction-diag] decision diagId=${overflowDiagId} branch=compact isCompactionFailure=${isCompactionFailure} hasOversizedToolResults=unknown attempt=${overflowCompactionAttempts + 1} maxAttempts=${MAX_OVERFLOW_COMPACTION_ATTEMPTS}`);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/embedded-agent-DGUuxGR2.js:3655:						if ((isCompactionFailure || overflowCompactionAttempts >= MAX_OVERFLOW_COMPACTION_ATTEMPTS) && log$1.isEnabled("debug")) log$1.debug(`[compaction-diag] decision diagId=${overflowDiagId} branch=give_up isCompactionFailure=${isCompactionFailure} hasOversizedToolResults=unknown attempt=${overflowCompactionAttempts} maxAttempts=${MAX_OVERFLOW_COMPACTION_ATTEMPTS}`);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js:131:		trigger: "cli_budget"
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/compact-DLB4d8IL.js:482:		log.warn(`[compaction-diag] end runId=${runId} sessionKey=${params.sessionKey ?? params.sessionId} diagId=${diagId} trigger=${trigger} provider=${provider}/${modelId} attempt=${attempt} maxAttempts=${maxAttempts} outcome=failed reason=${failureReason}${detailSuffix} durationMs=${Date.now() - startedAt}`);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/compact-DLB4d8IL.js:1126:						log.debug(`[compaction-diag] start runId=${runId} sessionKey=${params.sessionKey ?? params.sessionId} diagId=${diagId} trigger=${trigger} provider=${provider}/${modelId} attempt=${attempt} maxAttempts=${maxAttempts} pre.messages=${preMetrics.messages} pre.historyTextChars=${preMetrics.historyTextChars} pre.toolResultChars=${preMetrics.toolResultChars} pre.estTokens=${preMetrics.estTokens ?? "unknown"}`);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/compact-DLB4d8IL.js:1127:						log.debug(`[compaction-diag] contributors diagId=${diagId} top=${JSON.stringify(preMetrics.contributors)}`);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/compact-DLB4d8IL.js:1224:					if (diagEnabled && preMetrics && postMetrics) log.debug(`[compaction-diag] end runId=${runId} sessionKey=${params.sessionKey ?? params.sessionId} diagId=${diagId} trigger=${trigger} provider=${provider}/${modelId} attempt=${attempt} maxAttempts=${maxAttempts} outcome=compacted reason=none durationMs=${Date.now() - compactStartedAt} retrying=false post.messages=${postMetrics.messages} post.historyTextChars=${postMetrics.historyTextChars} post.toolResultChars=${postMetrics.toolResultChars} post.estTokens=${postMetrics.estTokens ?? "unknown"} delta.messages=${postMetrics.messages - preMetrics.messages} delta.historyTextChars=${postMetrics.historyTextChars - preMetrics.historyTextChars} delta.toolResultChars=${postMetrics.toolResultChars - preMetrics.toolResultChars} delta.estTokens=${typeof preMetrics.estTokens === "number" && typeof postMetrics.estTokens === "number" ? postMetrics.estTokens - preMetrics.estTokens : "unknown"}`);
+
+=== CLI_BUDGET CONTEXT ===
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-101-			skillsSnapshot: params.skillsSnapshot,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-102-			senderIsOwner: params.senderIsOwner,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-103-			provider: params.provider,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-104-			modelId: params.model,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-105-			thinkLevel: params.thinkLevel,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-106-			extraSystemPrompt: params.extraSystemPrompt
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-107-		}),
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-108-		currentTokenCount: params.currentTokenCount,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-109-		tokenBudget: params.contextTokenBudget,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-110-		trigger: params.trigger
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-111-	};
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-112-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-113-async function compactCliTranscript(params) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-114-	const runtimeContext = buildCliCompactionRuntimeContext({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-115-		sessionKey: params.sessionKey,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-116-		messageChannel: params.messageChannel,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-117-		agentAccountId: params.agentAccountId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-118-		authProfileId: params.authProfileId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-119-		workspaceDir: params.workspaceDir,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-120-		cwd: params.cwd,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-121-		agentDir: params.agentDir,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-122-		cfg: params.cfg,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-123-		skillsSnapshot: params.skillsSnapshot,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-124-		senderIsOwner: params.senderIsOwner,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-125-		provider: params.provider,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-126-		model: params.model,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-127-		thinkLevel: params.thinkLevel,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-128-		extraSystemPrompt: params.extraSystemPrompt,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-129-		currentTokenCount: params.currentTokenCount,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-130-		contextTokenBudget: params.contextTokenBudget,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js:131:		trigger: "cli_budget"
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-132-	});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-133-	const runtimeSettings = buildContextEngineRuntimeSettings({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-134-		contextEngineHost: buildGenericCliContextEngineHostSupport({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-135-			backendId: params.provider,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-136-			capabilities: ["compact", "maintain"]
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-137-		}),
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-138-		provider: params.provider,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-139-		requestedModel: params.model,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-140-		resolvedModel: params.model,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-141-		selectedContextEngineId: params.contextEngine.info.id,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-142-		contextEngineSelectionSource: "configured",
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-143-		promptTokenBudget: params.contextTokenBudget
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-144-	});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-145-	let compactResult;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-146-	try {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-147-		compactResult = await compactContextEngineWithSafetyTimeout(params.contextEngine, {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-148-			sessionId: params.sessionId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-149-			sessionKey: params.sessionKey,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-150-			sessionFile: params.sessionFile,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-151-			tokenBudget: params.contextTokenBudget,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-152-			currentTokenCount: params.currentTokenCount,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-153-			force: true,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-154-			compactionTarget: "budget",
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-155-			runtimeContext,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-156-			runtimeSettings
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-157-		}, resolveCompactionTimeoutMs(params.cfg));
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-158-	} catch (error) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-159-		const reason = error instanceof Error ? error.message : String(error);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-160-		if (isBenignCliCompactionNoopReason(reason)) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-161-			log.info(`CLI transcript compaction skipped for ${params.provider}/${params.model}: ${reason}`);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-162-			return { compacted: false };
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-163-		}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-164-		log.warn(`CLI transcript compaction failed for ${params.provider}/${params.model}: ${reason}`);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-165-		return {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-166-			compacted: false,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-167-			failureReason: reason
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-168-		};
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-169-	}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-170-	if (!compactResult.compacted) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-171-		const reason = compactResult.reason ?? "nothing to compact";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-172-		if (isBenignCliCompactionNoopReason(reason)) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-173-			log.info(`CLI transcript compaction skipped for ${params.provider}/${params.model}: ${reason}`);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-174-			return { compacted: false };
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-175-		}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-176-		log.warn(`CLI transcript compaction did not reduce context for ${params.provider}/${params.model}: ${reason}`);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-177-		return {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-178-			compacted: false,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-179-			failureReason: compactResult.reason ?? "compaction did not reduce context"
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-180-		};
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-181-	}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-182-	try {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-183-		await cliCompactionDeps.runContextEngineMaintenance({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-184-			contextEngine: params.contextEngine,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-185-			sessionId: params.sessionId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-186-			sessionKey: params.sessionKey,

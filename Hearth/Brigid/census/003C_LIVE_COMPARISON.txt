@@ -1,0 +1,9 @@
+left_file_count: 2153
+right_file_count: 790
+left_unique_hash_count: 1659
+right_unique_hash_count: 604
+shared_hash_count: 1
+left_only_hash_count: 1658
+right_only_hash_count: 603
+shared_left_file_count: 59
+shared_right_file_count: 2

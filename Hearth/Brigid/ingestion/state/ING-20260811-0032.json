@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260811-0032",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-11T22:18:48.862261-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Inference_and_Linguistic_Models.json",
+    "original_name": "Inference_and_Linguistic_Models.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260811-0032",
+    "schema_version": "0.1.0",
+    "sha256": "3046b3927cbfba704db10596a8bbd7b410528e16ad2d0216a29f377d11f875cf",
+    "size_bytes": 73888,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0132",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:10.036586-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_CPA_0001_Manifest_Draft.json",
+    "original_name": "AKS_CPA_0001_Manifest_Draft.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0132",
+    "schema_version": "0.1.0",
+    "sha256": "520eeb599af329348dfcbeb4680d24f3740e0dbfd69bc00538f0d939a9b87c39",
+    "size_bytes": 1599,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

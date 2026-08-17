@@ -1,0 +1,8 @@
+workspace/operational/ingestion/baselines/MILESTONE_002_FROZEN/MILESTONE_002_BASELINE.tar: OK
+workspace/operational/ingestion/baselines/MILESTONE_002_FROZEN/evidence/BASELINE_STATE.txt: OK
+workspace/operational/ingestion/baselines/MILESTONE_002_FROZEN/evidence/BASELINE_REGRESSION.txt: OK
+workspace/operational/ingestion/baselines/MILESTONE_002_FROZEN/evidence/BASELINE_REGRESSION.exit: OK
+workspace/operational/ingestion/baselines/MILESTONE_002_FROZEN/evidence/BASELINE_REGRESSION_RETRY.txt: OK
+workspace/operational/ingestion/baselines/MILESTONE_002_FROZEN/evidence/BASELINE_REGRESSION_RETRY.exit: OK
+workspace/operational/ingestion/baselines/MILESTONE_002_FROZEN/evidence/BASELINE_REGRESSION_RETRY.sha256: OK
+workspace/operational/ingestion/baselines/MILESTONE_002_FROZEN/evidence/BASELINE_FREEZE_RECORD.txt: OK

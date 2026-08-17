@@ -1,0 +1,63 @@
+===== TITLE =====
+# Validation Specification
+
+===== HEADINGS =====
+# Validation Specification
+# Purpose
+# Validation Principles
+# Validation Levels
+## Level 1 — Artifact Integrity
+## Level 2 — Provenance
+## Level 3 — Structure
+## Level 4 — Queue Candidates
+## Level 5 — Specification Compliance
+# Validation Results
+# Result States
+# Failure Handling
+# Warning Conditions
+# Audit Trail
+# Design Philosophy
+
+===== KEYWORDS =====
+1:# Validation Specification
+9:# Purpose
+11:The Validation Specification defines the required checks performed on every ingested artifact before it proceeds through the ingestion pipeline.
+13:Validation ensures structural integrity, completeness, and specification compliance.
+17:# Validation Principles
+19:- Validation is deterministic.
+20:- Validation preserves evidence.
+21:- Validation never modifies source artifacts.
+22:- Validation produces explicit results.
+23:- Validation failures are recoverable.
+27:# Validation Levels
+29:## Level 1 — Artifact Integrity
+33:- Artifact exists.
+34:- Artifact ID assigned.
+36:- Metadata present.
+40:## Level 2 — Provenance
+44:- Provenance record exists.
+58:- References captured.
+62:## Level 4 — Queue Candidates
+66:- Queue candidate generation completed.
+67:- Queue records contain required metadata.
+68:- Queue assignments reference valid artifact IDs.
+76:- Artifact Schema
+78:- Queue Specification
+79:- Provenance Specification
+80:- Output Package Specification
+84:# Validation Results
+86:Each validation SHALL produce:
+88:- Validation ID
+89:- Artifact ID
+101:- Pass
+102:- Pass with Warnings
+104:- Failed
+108:# Failure Handling
+110:Validation failures SHALL:
+123:- Missing optional metadata.
+124:- Unresolved references.
+134:Every validation SHALL be recorded in the artifact's provenance history.
+136:Validation records SHALL be immutable.
+142:Validation answers one question:
+144:"Does this artifact conform to the repository specifications?"
+148:"Is this artifact correct?"

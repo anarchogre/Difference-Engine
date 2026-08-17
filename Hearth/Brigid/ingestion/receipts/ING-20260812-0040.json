@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:05.585626-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-GOV-0008_RSI_Metric_Separation.json",
+  "original_name": "AKS-GOV-0008_RSI_Metric_Separation.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0040",
+  "schema_version": "0.1.0",
+  "sha256": "d60d6112f6b1606d300423a51c668e0530d6546f15d6f5a7f071e8843fda8a04",
+  "size_bytes": 590,
+  "source_class": "manual_batch"
+}

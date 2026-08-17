@@ -1,0 +1,17 @@
+status=VERIFIED24_PATH_REBIND_RESOLVED
+promotion=NONE
+
+verified_records=24
+evacuated_paths_resolved=24
+sha256_matches=24
+missing=0
+hash_mismatches=0
+
+original_path_root=/storage/emulated/0
+rebound_path_root=/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage
+
+crosswalk=workspace/operational/ingestion/evidence/VERIFIED24_EVACUATED_PATH_REBIND.tsv
+
+finding=All 24 verified conversation artifacts were recovered from the evacuated phone filesystem.
+finding=All 24 recovered artifacts match their previously recorded SHA-256 values byte-for-byte.
+finding=The unresolved original Android paths represent path drift, not corpus loss.

@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0291",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:23.052498-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-RC-GOLD/RC1-0046_Repository_RC1_Final_Ratification_Record_GOLD_v1.2.0.json",
+    "original_name": "RC1-0046_Repository_RC1_Final_Ratification_Record_GOLD_v1.2.0.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0291",
+    "schema_version": "0.1.0",
+    "sha256": "c13186249962e10d28ba82cce1ebac423dc5b58e08977d3bff702831d52a8900",
+    "size_bytes": 2163,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

@@ -1,0 +1,5 @@
+[BOOTSTRAP] Discovering repository...
+PASS ade.kernel.tests.test_bootstrap_loader.test_initialize
+DISCOVERED=1
+PASSED=1
+FAILED=0

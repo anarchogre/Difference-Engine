@@ -1,0 +1,21 @@
+{
+  "headings": [
+    "Artifact Ingestion Specification (AIS)",
+    "Mission",
+    "Objectives",
+    "Core Principles",
+    "1. Preserve Before Interpreting",
+    "2. Observation Before Inference",
+    "3. Provenance Is Mandatory",
+    "4. Deterministic Processing",
+    "5. Queue-Based Processing",
+    "6. Human-Governed Promotion",
+    "7. Service-Oriented Architecture",
+    "8. Technology Independence",
+    "Pipeline",
+    "Scope",
+    "Out of Scope",
+    "Related Specifications"
+  ],
+  "title": "Artifact Ingestion Specification (AIS)"
+}

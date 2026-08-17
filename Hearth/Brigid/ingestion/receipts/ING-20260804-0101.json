@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/plain",
+  "observed_at": "2026-08-04T18:01:49.913575-05:00",
+  "observed_path": "/storage/emulated/0/Download/GPT_Plus_Integration_Roadmap.md(1).txt",
+  "original_name": "GPT_Plus_Integration_Roadmap.md(1).txt",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260804-0101",
+  "schema_version": "0.1.0",
+  "sha256": "a053bdf9d1710ff9973c940058990e1383806a68a0a0f6ddfe2aa8a9c5b5a566",
+  "size_bytes": 849618,
+  "source_class": "conversation"
+}

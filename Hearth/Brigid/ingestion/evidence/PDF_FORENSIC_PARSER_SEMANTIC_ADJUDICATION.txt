@@ -1,0 +1,10 @@
+status=CONVERSATION_BEARING_CANDIDATE
+file=Forensic Parser Workflow.pdf
+chat_id=6a60eabf-0cc0-83ea-81da-291e887bf3bf
+chars=156275
+simple_dialogue_markers=0
+qualification_method=INDIVIDUAL_STRUCTURAL_INSPECTION
+human_turns=CONFIRMED
+assistant_turns=CONFIRMED
+evidence=flattened ChatGPT export preserves multiple human requests, uploaded artifacts, recovery directives, and substantive assistant responses
+promotion=NONE

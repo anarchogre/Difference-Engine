@@ -1,0 +1,515 @@
+{
+  "0114c907c61cba7df38e6bb8cbf5b40a80aae5da9bee023a496589fd6cf07142": [
+    "Archive/Recovery/Chatgpt/JSON/Runtime_Manifest_v5.0.json",
+    "Archive/Snapshots/PP/PP-0007_Bundle_Manifest.json"
+  ],
+  "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b": [
+    "Archive/Evidence/OBS-0001/Derived/f.md",
+    "Archive/Evidence/OBS-0001/Notes/vhy.md",
+    "Archive/Evidence/OBS-0001/Sources/fhu.md",
+    "Archive/Evidence/OBS-0001/dfr.md",
+    "Archive/Evidence/fgh.md",
+    "Archive/Imports/Accepted/ghy.md",
+    "Archive/Imports/Parsing/ghy.md",
+    "Archive/Imports/Pending/ghy.md",
+    "Archive/Imports/Rejected/ghy.md",
+    "Archive/Imports/Review/ghy.md",
+    "Archive/Imports/df.md",
+    "Archive/Logs/Djt.md",
+    "Archive/Recovery/AKS/DOCX/df.md",
+    "Archive/Recovery/AKS/add.md",
+    "Archive/Recovery/Archives/Ju.md",
+    "Archive/Recovery/Archives/MISC/ghy.md",
+    "Archive/Recovery/Archives/TAR/ghy.md",
+    "Archive/Recovery/Archives/ZIP/ghy.md",
+    "Archive/Recovery/Audio/Sd.md",
+    "Archive/Recovery/Chatgpt/Exports/Ji.md",
+    "Archive/Recovery/Chatgpt/Hh.md",
+    "Archive/Recovery/Chatgpt/JSON/Se.md",
+    "Archive/Recovery/Chatgpt/Screenshots/aw.md",
+    "Archive/Recovery/Chatgpt/Shared Links/tujd",
+    "Archive/Recovery/Clinician Edition/ase.md",
+    "Archive/Recovery/Documents/DOCX/ghy.md",
+    "Archive/Recovery/Documents/Fg.md",
+    "Archive/Recovery/Documents/PDF/ghy.md",
+    "Archive/Recovery/Documents/PDT/ghy.md",
+    "Archive/Recovery/Documents/TXT/ghy.md",
+    "Archive/Recovery/Foundation Package Alpha/ap.md",
+    "Archive/Recovery/Images/JPG/ghy.md",
+    "Archive/Recovery/Images/PNG/ghy.md",
+    "Archive/Recovery/Images/U.md",
+    "Archive/Recovery/Images/WEBP/ghy.md",
+    "Archive/Recovery/Misc/Gh.md",
+    "Archive/Recovery/Presentations/Th.md",
+    "Archive/Recovery/Spreadsheets/Er.md",
+    "Archive/Recovery/Video/vd.md",
+    "Archive/Recovery/plh.md",
+    "Archive/Snapshots/Dfg.md",
+    "Archive/Snapshots/PP/ghy.md",
+    "Archive/dusty.md",
+    "CLAUDE START HERE/oh.md",
+    "Governance/placeholder.md",
+    "In ox/sd.md",
+    "Library/placeholder.md",
+    "PP/placeholder.md",
+    "Parser/placeholder.md",
+    "Publications/placeholder.md",
+    "RC/.gitkeep",
+    "Research/science.md",
+    "Specifications/scrooge.md",
+    "Tools/timesink.md",
+    "docs/README.md"
+  ],
+  "037272cedcd32e98fafac1c242552927fa00ad1155d29a219c140d92e3905322": [
+    "CLAUDE START HERE/STARTUP_PROCEDURE_v1.0.docx",
+    "STARTUP_PROCEDURE_v1.0.docx"
+  ],
+  "058e4fe2d3e0e9033a3978401ebfd13eecd19903b78bdad3746240031608799f": [
+    "Archive/Recovery/Documents/DOCX/DHP_Foundation_Handbook_v0.1.docx",
+    "CLAUDE START HERE/DHP_Foundation_Handbook_v0.1(1).docx"
+  ],
+  "0a7d3b0b7201f8386a00f07fb0d33dc8e2d5d73807f6cc15778d6a2c22996960": [
+    "Archive/Recovery/Clinician Edition/Clinician Edition Volume 1 v0.25.docx",
+    "CLAUDE START HERE/Clinician Edition Volume 1 v0.25.docx"
+  ],
+  "0e8ae1c83385768d8da3fe9ed8765e8051e67e2aef03682005288ea97f270d0d": [
+    "Archive/Recovery/AKS/AKS-AUDIT-0001_Foundation_Audit-2.json",
+    "Archive/Recovery/AKS/AKS-AUDIT-0001_Foundation_Audit.json"
+  ],
+  "0f10ab7067dd3e48d578369dc70bce0da737a24cfac21f68897e5403b04f084f": [
+    "CLAUDE START HERE/INDEX.md",
+    "INDEX.md"
+  ],
+  "11bb25d28b57c973bd1277898f514694c492a395e36177dc1da86029514f2237": [
+    "Archive/Recovery/Chatgpt/JSON/MAJOR_PP_0003.json",
+    "Archive/Snapshots/PP/MAJOR_PP_0003.json",
+    "CLAUDE START HERE/MAJOR_PP_0003.json"
+  ],
+  "13b5d2072ea28bf2a3a9e7717d22f3d91431cbf7bac20a0c967434b0ce9bd508": [
+    "CLAUDE START HERE/ROADMAP_v1.4.md",
+    "In ox/ROADMAP_v1.4.md"
+  ],
+  "13bbc8c0618cfcefb5757466facb2047021e2e0ae8374ecac7d0d8072a4ac64c": [
+    "Archive/Recovery/Documents/PDF/GitHub Access Limitations.pdf",
+    "CLAUDE START HERE/GitHub Access Limitations.pdf"
+  ],
+  "1685f28640e7c4478f46ea5ac266b64cd557558d4330ab257e8b7b1952c4ca5f": [
+    "Archive/Recovery/AKS/AKS-PRESERVATION-0042_Emergent_Behavior_and_Regulatory_Structures.json",
+    "CLAUDE START HERE/AKS-PRESERVATION-0042_Emergent_Behavior_and_Regulatory_Structures.json"
+  ],
+  "177fc8d9a3a48bb022f49181404b994484a8a6f05c03a6f4ad7ac574a4460df2": [
+    "AKS_Human_Centered_Repository_Philosophy_v1.0.json",
+    "Archive/Recovery/AKS/AKS_Human_Centered_Repository_Philosophy_v1.0.json",
+    "CLAUDE START HERE/AKS_Human_Centered_Repository_Philosophy_v1.0.json"
+  ],
+  "18d0ecf30d096b19e0121e41320d56e40e4929ab8344c282d72008738c4a3bd2": [
+    "CLAUDE START HERE/STATE_SNAPSHOT_PACKAGE.pdf",
+    "In ox/STATE_SNAPSHOT_PACKAGE.pdf"
+  ],
+  "1bb255bec02c8e014e57386473a882066d6ff7191a5eb15dc14a988490e8ab07": [
+    "ACTIVE_STATE_SNAPSHOT_v1.4.md",
+    "CLAUDE START HERE/ACTIVE_STATE_SNAPSHOT_v1.4.md"
+  ],
+  "204b601464b2cc98683e1c3bec88653eac7bc590aa9d135c5e9eb7604edc31e8": [
+    "Archive/Recovery/AKS/AKS-ROADMAP-0003_Post_Gate_Alpha-1.json",
+    "Archive/Recovery/AKS/AKS-ROADMAP-0003_Post_Gate_Alpha.json"
+  ],
+  "21521c5b2b118eb9ae2694b9b7d3dad09070b00fa848c724b0e17b192c639feb": [
+    "Archive/Recovery/Documents/PDF/Free ChatGPT Plugins for ADE.pdf",
+    "CLAUDE START HERE/Free ChatGPT Plugins for ADE-1.pdf",
+    "CLAUDE START HERE/Free ChatGPT Plugins for ADE.pdf"
+  ],
+  "222df17a80cdd8a947f9d4334efc0ad88bfe2b61cb6b5f5c9f55bdab3c2c49d3": [
+    "Archive/Recovery/Chatgpt/JSON/Runtime_Manifest_v6.0.json",
+    "Archive/Snapshots/PP/PP-0008_Bundle_Manifest.json",
+    "CLAUDE START HERE/PP-0008_Bundle_Manifest.json"
+  ],
+  "26b5a13a469d2585ca024135c7c1474967dc378061989d22d269f90c4da99a84": [
+    "AKS_Covenant_v1.0.json",
+    "Archive/Recovery/AKS/AKS_Covenant_v1.0.json",
+    "CLAUDE START HERE/AKS_Covenant_v1.0.json"
+  ],
+  "285659159ce0005d161dd79248667214274f1c95cf21907bf9a171faf9f26ef5": [
+    "ADE Workflow Automation Prompts-1.pdf",
+    "ADE Workflow Automation Prompts.pdf",
+    "Archive/Recovery/Documents/PDF/ADE Workflow Automation Prompts.pdf",
+    "CLAUDE START HERE/ADE Workflow Automation Prompts.pdf"
+  ],
+  "2a5586f03b5420c25f6a7694f41d29260157b586863ee91abeff48097cc98fc6": [
+    "Archive/Recovery/Chatgpt/JSON/Execution_Sprint_1.json",
+    "CLAUDE START HERE/Execution_Sprint_1.json"
+  ],
+  "2b65fc8a3fced28e06034df0b9727cc6d5fc848bccd0ae8ca7ab3c6832f45f26": [
+    "CLAUDE START HERE/RC1-0005_Validation_Framework_GOLD_v1.2.0.json",
+    "RC/RC1-0005_Validation_Framework_GOLD_v1.2.0.json"
+  ],
+  "2d8acd73c51f6c602d85d12b850fd60eb56099b56754a8b3eae41464c688cf82": [
+    "CLAUDE START HERE/INDEX_v1.4.md",
+    "In ox/INDEX_v1.4.md"
+  ],
+  "3046b3927cbfba704db10596a8bbd7b410528e16ad2d0216a29f377d11f875cf": [
+    "Archive/Recovery/Chatgpt/JSON/Inference_and_Linguistic_Models.json",
+    "CLAUDE START HERE/Inference_and_Linguistic_Models.json"
+  ],
+  "30a4e472639fd72e031bd27ff1b0d95048176c1c726b164a4b4f41e20d4cf2b3": [
+    "CLAUDE START HERE/CONTRIBUTING.md",
+    "CONTRIBUTING.md"
+  ],
+  "3252209105c671f3c980c6294f5c39ac22201b9b5ad592b6167754994adfbff3": [
+    "ADE_Constitution_v1.4-1.md",
+    "ADE_Constitution_v1.4.md",
+    "CLAUDE START HERE/ADE_Constitution_v1.4.md",
+    "In ox/ADE_Constitution_v1.4.md"
+  ],
+  "3461c196ad4e6a161ea54eb4dffb9d6bf7755a119810c6fa2bb9da457de69f3e": [
+    "Archive/Recovery/Documents/DOCX/Fourth Conversation .docx",
+    "CLAUDE START HERE/Fourth Conversation .docx"
+  ],
+  "3b2d56236cdab937835a582ab9e4b060d4148a0143e82832734a3e2f35402d1d": [
+    "Archive/Recovery/AKS/AKS-GATE-BETA-0001_Candidate-1.json",
+    "Archive/Recovery/AKS/AKS-GATE-BETA-0001_Candidate.json"
+  ],
+  "3b6a50a28ca3d6282baab01230e487a93fc6eff6e64fb105b2fe89724ea4ac08": [
+    "ADE_full_repo_context.txt",
+    "CLAUDE START HERE/ADE_full_repo_context.txt"
+  ],
+  "3b7df46c642041884cddd726d48a98c51a6c2018e383b081d28228c0f608be8b": [
+    "Archive/Recovery/Documents/DOCX/Seventh conversation .docx",
+    "CLAUDE START HERE/Seventh conversation .docx"
+  ],
+  "3d0be865e340475dea09ce11d79d4126ca12e5097d0637db7f68e6d9043f0bcc": [
+    "Archive/Recovery/Documents/DOCX/THE ACTIVE STATE SNAPSHOT.docx",
+    "CLAUDE START HERE/THE ACTIVE STATE SNAPSHOT.docx"
+  ],
+  "3da05f81c5c02a91f476e899db96d57ddac423841dd55fb76264023c945938ea": [
+    "Archive/Recovery/AKS/AKS-THEOREM-QUEUE-0001_Update-1.json",
+    "Archive/Recovery/AKS/AKS-THEOREM-QUEUE-0001_Update.json"
+  ],
+  "3e2a0ac4824a5fa406ed43ff3e2038989934bf8eeac62267b48b0c818589a7d6": [
+    "AKS_Companion_Narrative_Working_Draft_v0_2.json",
+    "Archive/Recovery/AKS/AKS_Companion_Narrative_Working_Draft_v0_2.json",
+    "CLAUDE START HERE/AKS_Companion_Narrative_Working_Draft_v0_2.json"
+  ],
+  "3ffb5d31931ef55ad79d7523a591541e74c404bafc3e6fe733d949d8bd317d8d": [
+    "CLAUDE START HERE/RC1-0001_Repository_Constitution_GOLD_v1.2.0.json",
+    "RC/RC1-0001_Repository_Constitution_GOLD_v1.2.0.json"
+  ],
+  "45f64f7bf3f2acc613bfabe052f751eade78eeb5655f4ece2797ee7bee01a020": [
+    "AKS_Gardener_Cultivation_Model_v1.0.json",
+    "Archive/Recovery/AKS/AKS_Gardener_Cultivation_Model_v1.0.json",
+    "CLAUDE START HERE/AKS_Gardener_Cultivation_Model_v1.0.json"
+  ],
+  "46c858ca0797ac18dd38e474e1248c4b7810c9b748028ccb2fa1b8a5f1801918": [
+    "CLAUDE START HERE/Repository documentation.",
+    "docs/Repository documentation."
+  ],
+  "482d69a868b37caf40beceb60d17d87dfd849373611f765b6d03f9664f4e635b": [
+    "Archive/Recovery/Chatgpt/JSON/ENV_Specification_v1.0-1.json",
+    "Archive/Recovery/Chatgpt/JSON/ENV_Specification_v1.0.json"
+  ],
+  "4e66fdb075e524406f0bf01cf43791bb258a90545cb61f34a34c52d99e6b33f5": [
+    "Archive/Recovery/Documents/PDF/GitHub PR Inspection.pdf",
+    "CLAUDE START HERE/GitHub PR Inspection.pdf"
+  ],
+  "53ea17ca86d6bc99ccb2dc041344487da3d832eb5502663c4164f6c9903f969c": [
+    "AKS_Living_Repository_Architecture_v1.0.json",
+    "Archive/Recovery/AKS/AKS_Living_Repository_Architecture_v1.0.json",
+    "CLAUDE START HERE/AKS_Living_Repository_Architecture_v1.0.json"
+  ],
+  "544d236dae0f888ff984166b7f6828fe2d258f5514bd2b37fe14a063716ccfed": [
+    "Archive/Recovery/Chatgpt/JSON/MAJOR_PP_0001.json",
+    "Archive/Snapshots/PP/MAJOR_PP_0001.json"
+  ],
+  "544e0370d0fd43ec4021942100f1f1c30f807ba448dd300450bc03fc92e7edd5": [
+    "CLAUDE START HERE/NAMING_CONVENTIONS.md",
+    "NAMING_CONVENTIONS.md"
+  ],
+  "57739d401d170ba08463d45abd86161c50c1edb72ec046193cb28a46f086a7f0": [
+    "Archive/Recovery/Chatgpt/JSON/forensic_parser_workflow_start.json",
+    "CLAUDE START HERE/forensic_parser_workflow_start.json"
+  ],
+  "5801ed6cb73fa0240eb051ca432f5a479cc59f2545d1ae78eb58e9916d5a9bb5": [
+    "CLAUDE START HERE/SECURITY.md",
+    "SECURITY.md"
+  ],
+  "59b71c9980f00a138e5af1980475c1e5b6c770b693562aefd3c831ce342895a9": [
+    "AKS_Companion_Narrative_Working_Draft_v0_2.docx",
+    "CLAUDE START HERE/AKS_Companion_Narrative_Working_Draft_v0_2.docx"
+  ],
+  "5a580e142baa9212b27eb44b7e6f3b744e04401bab1f0192c117f340bbce1bf2": [
+    "CLAUDE START HERE/FOUNDATION_GAMMA_PACKAGE_v1.3.pdf",
+    "In ox/FOUNDATION_GAMMA_PACKAGE_v1.3.pdf"
+  ],
+  "5eb24c8a5a989816dd5ee934915e7b26d69b82c71bc8bee707108ccb14f6e867": [
+    "Archive/Recovery/Chatgpt/JSON/BUR_Specification_v1.0-1.json",
+    "Archive/Recovery/Chatgpt/JSON/BUR_Specification_v1.0-2.json",
+    "Archive/Recovery/Chatgpt/JSON/BUR_Specification_v1.0.json"
+  ],
+  "622768b6602cb189fb2c9d380702a1995774feb752e800626fcab482f06c6588": [
+    "Archive/Recovery/Documents/DOCX/Third Conversation .docx",
+    "CLAUDE START HERE/Third Conversation .docx"
+  ],
+  "64cbb804a6624f56fa4bafc27431733f048c92a348d336a1f35271f13235bac3": [
+    "CLAUDE START HERE/RC1-0003_Governance_Framework_GOLD_v1.2.0.json",
+    "RC/RC1-0003_Governance_Framework_GOLD_v1.2.0.json"
+  ],
+  "6704b712baf1ca8e016014b984dec293306d2c8d5370a5d7a4317a42a86b0bd4": [
+    "AKS_Mission_Statement_v1.0.json",
+    "Archive/Recovery/AKS/AKS_Mission_Statement_v1.0.json",
+    "CLAUDE START HERE/AKS_Mission_Statement_v1.0.json"
+  ],
+  "699d6b8f2598983cb9de3dabe3dfb7a4a484d7df66275a28c956d844e7445bbb": [
+    "Archive/Recovery/Documents/PDF/Repo Not Found.pdf",
+    "CLAUDE START HERE/Repo Not Found.pdf"
+  ],
+  "6e4cae16db371e7aa71c59cad9b681a709a42a81d816736bbd070ef729495047": [
+    "Archive/Recovery/Documents/PDF/OAuth Error Investigation.pdf",
+    "CLAUDE START HERE/OAuth Error Investigation.pdf"
+  ],
+  "705533b8a98c0939370174a190595d0eae58afa02e642a016e540f06f1f93135": [
+    "ACP-0001_Foundation_Gamma_v1.4-1.md",
+    "ACP-0001_Foundation_Gamma_v1.4.md",
+    "CLAUDE START HERE/ACP-0001_Foundation_Gamma_v1.4.md",
+    "In ox/ACP-0001_Foundation_Gamma_v1.4.md"
+  ],
+  "706ccb81387af354ef0ab0624571e5b9e5ec45e038dd14ca3a28670498f0814a": [
+    "CLAUDE START HERE/VERSIONING_POLICY.md",
+    "VERSIONING_POLICY.md"
+  ],
+  "773a4f2475c5a271bd5ccc7f1e5df1e559d204e7cd0dd53c375b4b0226a70ab2": [
+    "Archive/Recovery/Chatgpt/JSON/Forensic_Parser_Workflow_full_chat.json",
+    "Archive/Recovery/Chatgpt/JSON/Forensic_Parser_Workflow_reverse_parse_901pm_7_23_26.json",
+    "CLAUDE START HERE/Forensic_Parser_Workflow_full_chat.json"
+  ],
+  "79db27459cf1e2c1c1fa8eb7eaa2a9ba53c76eb93550e1d6d8c8613b69f35352": [
+    "Archive/Snapshots/PP/PP-0058-Principles.json",
+    "CLAUDE START HERE/PP-0058-Principles.json"
+  ],
+  "7b5c77cf13382ec39be48a16281d1e2c839d74a10f458cff1e3ca2200d5fdc5e": [
+    "Archive/Recovery/Documents/DOCX/Master Conversations 18-20-part-2.docx",
+    "CLAUDE START HERE/Master Conversations 18-20-part-2.docx"
+  ],
+  "7ceac0fd2062fee02d8df5c7d2882e0e2335ea0bd18a9070f8935e278ab4a8b9": [
+    "Archive/Snapshots/PP/PP-0058-Manifest.json",
+    "CLAUDE START HERE/PP-0058-Manifest.json"
+  ],
+  "7e50b2e9448ec6c05224c98de06f20c57dfb16d33a4ddb5f3297d0eb1d52b840": [
+    "CLAUDE START HERE/PRINCIPLES.md",
+    "PRINCIPLES.md"
+  ],
+  "89c1e00bb310b377fa00689363f5f758d5e416fd076f5c30a49e00951bac9044": [
+    "Archive/Recovery/Documents/DOCX/First Conversation .docx",
+    "CLAUDE START HERE/First Conversation .docx"
+  ],
+  "8aa1aaf44396abb29bda2a9b44fba9e25bf8c42b6a15c23797bb5b3ac1ae15cb": [
+    "CLAUDE START HERE/MANIFEST.md",
+    "MANIFEST.md"
+  ],
+  "8f2cd1c855f3111f4f94b5323de7914bb0d0ff431a04fca54600731855b85ab1": [
+    "CLAUDE START HERE/RC1-0000_Master_Manifest_GOLD_MASTER_v1.2.0_FROZEN.json",
+    "RC/RC1-0000_Master_Manifest_GOLD_MASTER_v1.2.0_FROZEN.json"
+  ],
+  "8f8cb33ba711a1d9bb9cb445586cafbfbf3461d9ebdd0b26a609c0eb85d682c5": [
+    "Archive/Snapshots/PP/PP-0054_Phase_Shift_Living_Repository_v1.0.json",
+    "CLAUDE START HERE/PP-0054_Phase_Shift_Living_Repository_v1.0.json"
+  ],
+  "90dc12651a7d27e24a068e5146f01866ada6ee24745c52d04582df5332691d64": [
+    "CLAUDE START HERE/GLOSSARY.md",
+    "GLOSSARY.md"
+  ],
+  "91fad2d4d4f79d6e88b6e38a4ef633cc6b8b268370565ebcfa91285c2e3a7eda": [
+    "Archive/Recovery/Chatgpt/JSON/Traversal_Ledger_v0.1.json",
+    "CLAUDE START HERE/Traversal_Ledger_v0.1.json"
+  ],
+  "9e4b323a7618f641e2338b261516d83083e07fdb0fded7160ff8ec2a305e761f": [
+    "CLAUDE START HERE/BOOTSTRAP_v1.4.md",
+    "In ox/BOOTSTRAP_v1.4.md"
+  ],
+  "a452ecc97cb0caccbe74d910046385b907706c3405aa16dc82bdb30c7dcb891e": [
+    "CLAUDE START HERE/INDEX_v1.3.md",
+    "In ox/INDEX_v1.3.md"
+  ],
+  "a553e14dbf239a32975680d1ebed3c77cfed5c69620d1c31a191e50711be3936": [
+    "CLAUDE START HERE/CHANGELOG_v1.4.md",
+    "In ox/CHANGELOG_v1.4.md"
+  ],
+  "a9e23ae6ca1b97d766fa9839cdccbb7c6a418511a7d4f2a996e5e4ad386d3710": [
+    "CLAUDE START HERE/Foundation_Gamma_Revision_Package_v1.4.pdf",
+    "In ox/Foundation_Gamma_Revision_Package_v1.4.pdf"
+  ],
+  "a9ea576ff34bbacf171431a45e5eee0ac05b7ea5b2e173f4d20210c62ca6e32e": [
+    "CLAUDE START HERE/CONSTITUTIONAL_AMENDMENT_FULL_ARTIFACTS.md",
+    "CONSTITUTIONAL_AMENDMENT_FULL_ARTIFACTS.md"
+  ],
+  "aa576ca7a90c4cd2ae8424a8feab03cc152c55b5cd909ec8771ee09dbafcce21": [
+    "Archive/Recovery/Documents/DOCX/Fifth Conversation.docx",
+    "CLAUDE START HERE/Fifth Conversation.docx"
+  ],
+  "b0ff8673f4750d95941c9ab5cf5999d629ae47a8b898c36331a7bb09c47f93f9": [
+    "CLAUDE START HERE/REPOSITORY_CHARTER.md",
+    "REPOSITORY_CHARTER.md"
+  ],
+  "b13a2c1574432d34caacdcc9359a50ad5e9e42ab81eb01a105f1417b18e8a1dc": [
+    "Archive/Recovery/Chatgpt/JSON/Handbook_Project_Organization (1).json",
+    "Archive/Recovery/Chatgpt/JSON/Handbook_Project_Organization.json"
+  ],
+  "b64733e5bf732c5b96e867bb91147169d66623a2be3eca20151bfbf0698ac61a": [
+    "Archive/Recovery/Documents/PDF/Forensic Parser Workflow.pdf",
+    "CLAUDE START HERE/Forensic Parser Workflow-1.pdf",
+    "CLAUDE START HERE/Forensic Parser Workflow.pdf"
+  ],
+  "ba2f33a976ba26cf2700c2352ae84fe6d424251800a297648b660f4f27f66be0": [
+    "AKS_Stewards_Compass_v1.0.json",
+    "Archive/Recovery/AKS/AKS_Stewards_Compass_v1.0.json",
+    "CLAUDE START HERE/AKS_Stewards_Compass_v1.0.json"
+  ],
+  "bcebefca19551b273b299efe01d1137c27a06de33d7337d5b48be630020a2658": [
+    "Archive/Recovery/Documents/PDF/Bootstrap Preparation Checklist.pdf",
+    "CLAUDE START HERE/Bootstrap Preparation Checklist.pdf"
+  ],
+  "c598896a77ee9023a0eeaabd9facb07df66883973b303a73e674d11a3d42b614": [
+    "CLAUDE START HERE/REPOSITORY_STRUCTURE.md",
+    "REPOSITORY_STRUCTURE.md"
+  ],
+  "c748da55ab87629d3da3f0df1ea182670210a5c4a65ad0bc09906c8f366711c9": [
+    "Archive/Recovery/Documents/DOCX/Master Conversations 1-18-part-1.docx",
+    "CLAUDE START HERE/Master Conversations 1-18-part-1.docx"
+  ],
+  "c9f1355ad243238dd08a34a3b86917a6341c4997f38b4da0c9f5c1013f9b5980": [
+    "CLAUDE START HERE/RECOVERY_MANIFEST(1).md",
+    "RECOVERY_MANIFEST(1).md"
+  ],
+  "cbd10d195fb1136acf664904257654d2e0762785c8dda88298f75f3e9848d4d1": [
+    "Archive/Recovery/Documents/PDF/Inference and Linguistic Models.pdf",
+    "CLAUDE START HERE/Inference and Linguistic Models(1).pdf",
+    "CLAUDE START HERE/Inference and Linguistic Models.pdf"
+  ],
+  "cd4d35b29e3e8cc42f0258c333e8abdd5f5c94aa3e142392d4c6022629ca1894": [
+    "Archive/Recovery/Chatgpt/JSON/Master_Conversations_Unparsed_v1.json",
+    "CLAUDE START HERE/Master_Conversations_Unparsed_v1.json"
+  ],
+  "cec9c2bb9183b300270da95551202cc54e377ce646986623394ffa14cbde8a01": [
+    "Archive/Recovery/Documents/DOCX/Reconciliation_Doctrine_v1.0-1.docx",
+    "Archive/Recovery/Documents/DOCX/Reconciliation_Doctrine_v1.0.docx",
+    "CLAUDE START HERE/Reconciliation_Doctrine_v1.0-1.docx"
+  ],
+  "d14de71be14311c7c50864b4d0f28bf7b279e1de39d6e1a47202b13ad7310e01": [
+    "CLAUDE START HERE/ROADMAP_v1.3.md",
+    "In ox/ROADMAP_v1.3.md"
+  ],
+  "d440b6f1fbb33a6bdec5d8468b57a60b9aa2c454239f5655645e39fae547faf3": [
+    "Archive/Recovery/AKS/AKS-QUEUE-0008_Engineering_Culture_Preservation-1.json",
+    "Archive/Recovery/AKS/AKS-QUEUE-0008_Engineering_Culture_Preservation.json"
+  ],
+  "d8aff4f86d77611b3089f7b323aa801cea7a43486769e8ffe5a7cb8c6f353f8c": [
+    "CLAUDE START HERE/ROADMAP.md",
+    "ROADMAP.md"
+  ],
+  "d8d3f87d4d95ca495b6e9e1157827dfb12e27f992a0b45420f574064e4c474bc": [
+    "Archive/Recovery/Documents/DOCX/Sixth Conversation .docx",
+    "CLAUDE START HERE/Sixth Conversation .docx"
+  ],
+  "d92008e9524939967754476aad971ceee26e71f9c5d0d3155b63438817bbf615": [
+    "CLAUDE START HERE/LICENSE.md",
+    "LICENSE.md"
+  ],
+  "d9730bd6ae7c5c1d54c19f68578cffe120c21421f8bb0b979c132bd50a1a33bf": [
+    "CLAUDE START HERE/STARTUP_PROCEDURE_v1.0.md",
+    "STARTUP_PROCEDURE_v1.0.md"
+  ],
+  "def9231359b86dfedb9f2d4b2c583b87f2f51ef1562c54b28df3783f1677c2ee": [
+    "CLAUDE START HERE/README.md",
+    "README.md"
+  ],
+  "df2b12e074e867612eb9626e63c4068d2f70ab6cd0dec24dd771747e732aeeb3": [
+    "Archive/Recovery/Documents/PDF/Project Organization Strategy.pdf",
+    "CLAUDE START HERE/Project Organization Strategy-1.pdf",
+    "CLAUDE START HERE/Project Organization Strategy.pdf"
+  ],
+  "df893df3f33f7509b6cd267eab09548224ed57ab27a7058fbc3638a027051b71": [
+    "Archive/Snapshots/PP/PP-0008.json",
+    "CLAUDE START HERE/PP-0008.json"
+  ],
+  "dfcf436c45dc48aba87d53ed1711ef83718b2494eda1d1252dcbce854b7a9900": [
+    "CLAUDE START HERE/PLUGIN_POLICY.md",
+    "Governance/PLUGIN_POLICY.md"
+  ],
+  "e2878edfafe691ef94f5a8c361e79971a18dc5fd028180c9044bfdef92896ab2": [
+    "CLAUDE START HERE/EVIDENCE_STANDARD.md",
+    "EVIDENCE_STANDARD.md"
+  ],
+  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": [
+    ".cg/gradle-sync/sync.lock",
+    "Archive/Recovery/Chatgpt/JSON/chatgpt-conversation (2).json"
+  ],
+  "e552980cddab61e2040f58f50fec505a598d99405551bd45f736f862aa5a5fbc": [
+    "Archive/Recovery/Chatgpt/JSON/PR-0006_Canonical_Test_Requirement-1.json",
+    "Archive/Recovery/Chatgpt/JSON/PR-0006_Canonical_Test_Requirement-2.json"
+  ],
+  "e5baecc04ee8f4482e514ef718ae77ffff2e7f933550f3c606c7baa11471d4ee": [
+    "Archive/Snapshots/PP/PP-0004.json",
+    "CLAUDE START HERE/PP-0004.json"
+  ],
+  "e7a99c30f0988d6f400abd5572dbada23577c75fe181e0663d6b36bfe2816d89": [
+    "Archive/Recovery/Documents/PDF/Moving files in GitHub.pdf",
+    "CLAUDE START HERE/Moving files in GitHub-1.pdf",
+    "CLAUDE START HERE/Moving files in GitHub.pdf"
+  ],
+  "e7c9d218ddc5e34698489d514f4b0d5ca7ff20909564a622687b3a2de8f2ad89": [
+    "Archive/Recovery/Documents/DOCX/Project_Change_Log_v0.1-1.docx",
+    "Archive/Recovery/Documents/DOCX/Project_Change_Log_v0.1.docx"
+  ],
+  "e886cd6f8784c75c0971535b6ebe6fb4da1c1c915cce2e85d44525f4cab90069": [
+    "CLAUDE START HERE/IMPORT_POLICY(1).md",
+    "IMPORT_POLICY(1).md"
+  ],
+  "e99954813095869090e43917843baa973a97eeff034a4e756027cad196f6c478": [
+    "Archive/Recovery/Documents/PDF/AOS Repository.pdf",
+    "CLAUDE START HERE/AOS Repository.pdf"
+  ],
+  "ed0893a5adaf72d37bf07342724ab33063abdcdd8aa21a6132ee26f728f26148": [
+    "Archive/Recovery/Chatgpt/JSON/MAJOR_PP_0002.json",
+    "Archive/Snapshots/PP/MAJOR_PP_0002.json"
+  ],
+  "f201555f0ec595a6d25af7c3f1a97943fa00d45d65050b1bac7ed1270fed31cd": [
+    "CHANGELOG.md",
+    "CLAUDE START HERE/CHANGELOG.md"
+  ],
+  "f634977863cf3f95c91a4e9e1fcc8c30e9d90910cc1860b70e672a87ef386b93": [
+    "CLAUDE START HERE/RC1-0004_Constitutional_Registry_GOLD_v1.2.0.json",
+    "RC/RC1-0004_Constitutional_Registry_GOLD_v1.2.0.json"
+  ],
+  "f6d356ccb94ef0fcfe0a2a599247d2e1aa8fdaa78ca3d5a83d9c01adb38653cb": [
+    "CLAUDE START HERE/RC1-0002_Constitutional_Amendments_Ledger_GOLD_v1.2.0.json",
+    "RC/RC1-0002_Constitutional_Amendments_Ledger_GOLD_v1.2.0.json"
+  ],
+  "f7ca9fefe3707a9e8a8416d90501b433062b5f60d90b2fad48891b217462c19e": [
+    "Archive/Recovery/Documents/DOCX/Second Conversation .docx",
+    "CLAUDE START HERE/Second Conversation .docx"
+  ],
+  "faf1e90ec02b21437b395126ab222a0977084caaf28ceaadc127bd811ce27d06": [
+    "AKS_Longitudinal_Reasoning_v1.0.json",
+    "Archive/Recovery/AKS/AKS_Longitudinal_Reasoning_v1.0.json",
+    "CLAUDE START HERE/AKS_Longitudinal_Reasoning_v1.0.json"
+  ],
+  "fc4d8cd0604c57d6d781c90f816ca833541f6b97288ba439c80df8cfcb2a0072": [
+    "Archive/Snapshots/PP/PP-0058-MAJOR.json",
+    "CLAUDE START HERE/PP-0058-MAJOR.json"
+  ],
+  "fc5c8a07d883b57463cf0d465ab474d3e23e759acac10308317ca10895e4c496": [
+    "Archive/Recovery/Documents/DOCX/Handbook_Foundation_Package.docx",
+    "CLAUDE START HERE/Handbook_Foundation_Package(1).docx"
+  ],
+  "fd51437ed73944cbd8206c73616dd52493f1ebb2aaa71d62ba3a25423c848982": [
+    "Archive/Recovery/Chatgpt/JSON/Kernel_Manifest_v2.1.json",
+    "CLAUDE START HERE/Kernel_Manifest_v2.1.json"
+  ],
+  "fe738f138364b53a08b48250e223140d026d30c5f1c961a8e14066dce8e22597": [
+    "CLAUDE START HERE/CODE_OF_CONDUCT.md",
+    "CODE_OF_CONDUCT.md"
+  ],
+  "feeb8fda48ed25ef71c1c48b48aa37d47c07e2a0574e7d396e20f511e7821ee6": [
+    "Archive/Recovery/AKS/AKS-PRESERVATION-0011_Engineering_Test_Transition-2.json",
+    "Archive/Recovery/AKS/AKS-PRESERVATION-0011_Engineering_Test_Transition.json"
+  ]
+}

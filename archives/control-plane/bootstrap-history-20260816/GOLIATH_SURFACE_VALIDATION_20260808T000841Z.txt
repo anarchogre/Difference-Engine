@@ -1,0 +1,42 @@
+=== GOLIATH SURFACE VALIDATION ===
+2026-08-07T19:08:41-05:00
+
+=== KERNEL ===
+Linux The-Forge 6.19.8-surface-3 #3 SMP PREEMPT_DYNAMIC Sat May  9 09:37:30 UTC 2026 x86_64 GNU/Linux
+
+=== GRUB ENV ===
+saved_entry=0
+
+=== IPTSD ===
+  iptsd@dev-hidraw3.service                                                                                                                      loaded    active   running   Intel Precise Touch & Stylus Daemon
+
+=== TOUCH INPUT ===
+N: Name="IPTS 1B96:0979 Touchscreen"
+N: Name="IPTSD Virtual Touchscreen 1B96:0979"
+N: Name="IPTSD Virtual Stylus 1B96:0979"
+
+=== NETWORK ===
+enx2e734299bc0b:802-3-ethernet:activated
+lo:loopback:activated
+
+=== FAILED SYSTEMD UNITS ===
+  UNIT LOAD ACTIVE SUB DESCRIPTION
+
+0 loaded units listed.
+
+=== BOOT ERRORS ===
+Aug 07 18:35:43 The-Forge kernel: x86/cpu: SGX disabled or unsupported by BIOS.
+Aug 07 18:35:46 The-Forge kernel: ov9734 i2c-OVTI9734:00: failed to check HW configuration: -6
+Aug 07 18:35:49 The-Forge kernel: Bluetooth: hci0: unexpected event for opcode 0x0000
+Aug 07 18:35:49 The-Forge kernel: Bluetooth: hci0: unexpected event for opcode 0x0000
+Aug 07 18:35:58 The-Forge kernel: ipts 0000:00:16.4-3e8d0870-271a-4208-8eb5-9acb9402ae04: QUIESCE_IO: recv failed: -11
+Aug 07 18:35:58 The-Forge kernel: ipts 0000:00:16.4-3e8d0870-271a-4208-8eb5-9acb9402ae04: Failed to wait for flush: -11
+Aug 07 18:36:00 The-Forge kernel: ipts 0000:00:16.4-3e8d0870-271a-4208-8eb5-9acb9402ae04: GET_DEVICE_INFO: recv failed: -11
+Aug 07 18:36:00 The-Forge kernel: ipts 0000:00:16.4-3e8d0870-271a-4208-8eb5-9acb9402ae04: Failed to get device info: -11
+Aug 07 18:36:00 The-Forge kernel: ipts 0000:00:16.4-3e8d0870-271a-4208-8eb5-9acb9402ae04: Failed to switch modes: -11
+Aug 07 18:36:14 The-Forge gdm-password][6899]: gkr-pam: unable to locate daemon control file
+Aug 07 18:36:16 The-Forge systemd[7033]: Failed to start app-gnome-ubuntu\x2dreport\x2don\x2dupgrade-7673.scope - Application launched by gnome-session-service.
+Aug 07 18:36:23 The-Forge systemd[7033]: Failed to start snap.prompting-client.daemon.service - Service for snap application prompting-client.daemon.
+Aug 07 18:53:44 The-Forge kernel: surface_acpi_notify MSHW0091:00: ETWL(0x01, 0x02): RQST(2, 13, 1) error: 5
+Aug 07 18:53:44 The-Forge kernel: surface_acpi_notify MSHW0091:00: ETWL(0x01, 0x02): RQST(2, 13, 1) error: 5
+Aug 07 18:53:44 The-Forge kernel: surface_acpi_notify MSHW0091:00: ETWL(0x01, 0x02): RQST(2, 13, 1) error: 5

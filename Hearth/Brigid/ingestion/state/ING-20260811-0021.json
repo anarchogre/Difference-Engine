@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260811-0021",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-11T22:18:46.968236-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Difference_Engine____Branch_II____Research.md(1).txt",
+    "original_name": "Difference_Engine____Branch_II____Research.md(1).txt",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260811-0021",
+    "schema_version": "0.1.0",
+    "sha256": "734a6d8fde65b6c40eb9fe58a439f0f977babea6a950720c7016782cf2643b81",
+    "size_bytes": 108627,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

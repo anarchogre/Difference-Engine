@@ -1,0 +1,68 @@
+===== TITLE =====
+# Artifact Schema
+
+===== HEADINGS =====
+# Artifact Schema
+# Purpose
+# Artifact Hierarchy
+# Metadata
+# Provenance
+# Content
+# Structure
+# Assets
+# References
+# Queue Candidates
+# Validation
+# Lifecycle
+# Extension Model
+# Design Principles
+
+===== KEYWORDS =====
+1:# Artifact Schema
+9:# Purpose
+11:The Artifact Schema defines the canonical structural representation for all repository artifacts.
+13:Every ingested object SHALL conform to this schema prior to semantic processing.
+15:Specialized schemas extend this specification.
+19:# Artifact Hierarchy
+21:Artifact
+23:├── Metadata
+25:├── Provenance
+33:├── References
+35:├── Queue Candidates
+37:├── Validation
+43:# Metadata
+45:Required:
+47:- Artifact ID
+49:- Artifact Type
+57:Optional:
+65:# Provenance
+67:Required:
+69:- Source Artifact
+76:Every artifact SHALL preserve provenance.
+116:Reusable components extracted from the artifact.
+133:Assets SHALL retain provenance.
+137:# References
+139:Capture references to:
+141:- Repository artifacts
+149:References remain unresolved until Repository Mapping.
+153:# Queue Candidates
+155:Artifacts MAY produce candidates for one or more processing queues.
+157:Queue assignment is provisional.
+163:# Validation
+165:Every artifact SHALL validate:
+167:✓ Metadata complete
+169:✓ Provenance complete
+177:✓ References captured
+179:✓ Queue candidates generated
+185:Every artifact exists in one lifecycle state.
+191:- Queued
+203:Specialized schemas extend this specification.
+207:- Conversation Schema
+208:- PDF Schema
+209:- Image Schema
+210:- Research Paper Schema
+211:- Governance Document Schema
+212:- Observation Schema
+214:Extensions inherit this schema.
+220:Artifacts are immutable evidence.
+222:Derived products are separate artifacts.

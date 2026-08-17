@@ -1,0 +1,17 @@
+from ade.kernel.bootstrap_loader.loader import initialize
+
+
+def test_initialize() -> None:
+    result = initialize()
+    state = result.state
+
+    assert state.execution_mode == "Execution"
+    assert state.repository_root.is_dir()
+    assert state.governance_root.is_dir()
+    assert state.specification_root.is_dir()
+    assert state.mission == "GPT Plus Integration"
+    assert state.task == "Recovery Standardization"
+
+    assert result.artifacts.constitution.is_file()
+    assert result.artifacts.amendments.is_file()
+    assert result.artifacts.bootstrap.is_file()

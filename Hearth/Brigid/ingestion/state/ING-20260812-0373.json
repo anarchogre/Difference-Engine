@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0373",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:32.171125-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Ingestion_Glossary_v0.1.md",
+    "original_name": "Ingestion_Glossary_v0.1.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0373",
+    "schema_version": "0.1.0",
+    "sha256": "9d70ade0638bc4930375da2323b55d46b811f580e5e6042fd78293bbbc196fa6",
+    "size_bytes": 3957,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

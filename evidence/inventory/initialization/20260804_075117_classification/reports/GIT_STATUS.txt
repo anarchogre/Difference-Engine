@@ -1,0 +1,15 @@
+?? "BOOTSTRAP/BOOTSTRAP \342\200\224 Foundational Reduction Continuation.md"
+?? BOOTSTRAP/BST-CBD-OPS_Operational_Bedrock_and_Ingester_Execution_v0.1.0.md
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Architectural Philosophy And Meta Synthsis.md"
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Computational Bedrock.md"
+?? "BOOTSTRAP/Bootstrap vNext \342\200\224 Candidate Constitutional Bootstrap Additions.md"
+?? BOOTSTRAP/Branches/
+?? BOOTSTRAP/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md
+?? "BOOTSTRAP/Load The Constitutional Kernel.md"
+?? "BOOTSTRAP/Recover Existing Injestion Files.md"
+?? evidence/
+?? governance/
+?? inventory/initialization/
+?? workspace/operational/current/state-model-candidates.lst
+?? workspace/operational/current/state-references.clean.out
+?? workspace/operational/current/state-references.out

@@ -1,0 +1,22 @@
+{
+  "version": "v1.1",
+  "articles": {
+    "Admission": "Canonical knowledge requires validation.",
+    "Challenge": "Every CKO remains challengeable.",
+    "Review": "Evidence over advocacy.",
+    "Supersession": "Nothing is silently deleted.",
+    "Rights": [
+      "Provenance",
+      "Context",
+      "Explainability",
+      "Contradiction",
+      "History"
+    ],
+    "Audit": "Constitutional compliance is periodically reviewed."
+  },
+  "dependencies": [
+    "Repository Invariants",
+    "Reasoning Contracts",
+    "CKO Schema"
+  ]
+}

@@ -1,0 +1,852 @@
+ADE-Working-Repository-/.cg/editor/breakpoints.json
+ADE-Working-Repository-/.cg/editor/openedFiles.json.bak
+ADE-Working-Repository-/.cg/gradle-sync/project.pb
+ADE-Working-Repository-/.cg/gradle-sync/sync.lock
+ADE-Working-Repository-/.cg/gradle-sync/sync.pb
+ADE-Working-Repository-/.git/COMMIT_EDITMSG
+ADE-Working-Repository-/.git/FETCH_HEAD
+ADE-Working-Repository-/.git/HEAD
+ADE-Working-Repository-/.git/ORIG_HEAD
+ADE-Working-Repository-/.git/config
+ADE-Working-Repository-/.git/index
+ADE-Working-Repository-/.git/logs/HEAD
+ADE-Working-Repository-/.git/logs/refs/heads/main
+ADE-Working-Repository-/.git/logs/refs/remotes/origin/main
+ADE-Working-Repository-/.git/objects/06/89a69ade0fc89afef27b0f784e4a97e3687eab
+ADE-Working-Repository-/.git/objects/14/d9d1ad3733848b195d4b10ffa3ad765db55aa4
+ADE-Working-Repository-/.git/objects/32/08ccae89f587d09e24fb4ef97227547ad702ce
+ADE-Working-Repository-/.git/objects/93/f79ec2c6c352fdcf555dfecdfaf27d9910f337
+ADE-Working-Repository-/.git/objects/ea/811ff019ee193089466e989b44d79066923499
+ADE-Working-Repository-/.git/objects/pack/pack-33e66ff2a706f66df39996c1b6bfb2337dd4ba0d.idx
+ADE-Working-Repository-/.git/objects/pack/pack-33e66ff2a706f66df39996c1b6bfb2337dd4ba0d.pack
+ADE-Working-Repository-/.git/objects/pack/pack-33e66ff2a706f66df39996c1b6bfb2337dd4ba0d.rev
+ADE-Working-Repository-/.git/objects/pack/pack-a43bfdb3d40bc444bbb44892041c87ebcd787d72.idx
+ADE-Working-Repository-/.git/objects/pack/pack-a43bfdb3d40bc444bbb44892041c87ebcd787d72.pack
+ADE-Working-Repository-/.git/refs/heads/main
+ADE-Working-Repository-/.git/refs/remotes/origin/main
+ADE-Working-Repository-/.gitignore
+ADE-Working-Repository-/ACP-0001_Foundation_Gamma_v1.4-1.md
+ADE-Working-Repository-/ACP-0001_Foundation_Gamma_v1.4.md
+ADE-Working-Repository-/ACTIVE_STATE_SNAPSHOT_v1.4.md
+ADE-Working-Repository-/ACTIVE_STATE_SNAPSHOT_v1.4_REVISED.md
+ADE-Working-Repository-/ACTIVE_STATE_SNAPSHOT_v1.4_REVISION.md
+ADE-Working-Repository-/ADE Workflow Automation Prompts-1.pdf
+ADE-Working-Repository-/ADE Workflow Automation Prompts.pdf
+ADE-Working-Repository-/ADE_Constitution_v1.1.md
+ADE-Working-Repository-/ADE_Constitution_v1.2.md
+ADE-Working-Repository-/ADE_Constitution_v1.4-1.md
+ADE-Working-Repository-/ADE_Constitution_v1.4.md
+ADE-Working-Repository-/ADE_Workflow_Automation_Prompts.json
+ADE-Working-Repository-/ADE_full_repo_context.txt
+ADE-Working-Repository-/AKS_Companion_Narrative_Working_Draft_v0_2.docx
+ADE-Working-Repository-/AKS_Companion_Narrative_Working_Draft_v0_2.json
+ADE-Working-Repository-/AKS_Covenant_v1.0.json
+ADE-Working-Repository-/AKS_Gardener_Cultivation_Model_v1.0.json
+ADE-Working-Repository-/AKS_Human_Centered_Repository_Philosophy_v1.0.json
+ADE-Working-Repository-/AKS_Inference_Linguistic_Preservation_Package.zip
+ADE-Working-Repository-/AKS_Living_Repository_Architecture_v1.0.json
+ADE-Working-Repository-/AKS_Longitudinal_Reasoning_v1.0.json
+ADE-Working-Repository-/AKS_Mission_Statement_v1.0.json
+ADE-Working-Repository-/AKS_Stewards_Compass_v1.0.json
+ADE-Working-Repository-/Archive/Archive_Evidence.zip
+ADE-Working-Repository-/Archive/Archive_Imports.zip
+ADE-Working-Repository-/Archive/Archive_Logs.zip
+ADE-Working-Repository-/Archive/Archive_Recovery.zip
+ADE-Working-Repository-/Archive/Archive_Snapshots.zip
+ADE-Working-Repository-/Archive/Evidence/OBS-0001/Derived/f.md
+ADE-Working-Repository-/Archive/Evidence/OBS-0001/Notes/vhy.md
+ADE-Working-Repository-/Archive/Evidence/OBS-0001/Sources/fhu.md
+ADE-Working-Repository-/Archive/Evidence/OBS-0001/dfr.md
+ADE-Working-Repository-/Archive/Evidence/fgh.md
+ADE-Working-Repository-/Archive/Imports/Accepted/ghy.md
+ADE-Working-Repository-/Archive/Imports/Parsing/ghy.md
+ADE-Working-Repository-/Archive/Imports/Pending/ghy.md
+ADE-Working-Repository-/Archive/Imports/Rejected/ghy.md
+ADE-Working-Repository-/Archive/Imports/Review/ghy.md
+ADE-Working-Repository-/Archive/Imports/df.md
+ADE-Working-Repository-/Archive/Logs/Djt.md
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ARCH-0007_Domain_Separation.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ARCHITECTURAL-PRINCIPLES-0001.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-AUDIT-0001_Foundation_Audit-2.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-AUDIT-0001_Foundation_Audit.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-AXIOM-0001_Identity_Independence.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-CONSTRAINT-0001_Universal_Constraint_Model.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-CV-0001_Draft_0.2_Canonical.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-CV-0001_Draft_0.3_Vocabulary_Update.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-DECISION-0001_Template.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-DECISION-0002_Kernel_Validation_Layer.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-DECISION-0003_Theorem_Workflow.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-DECISION-0004_Kernel_Freeze.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-EDU-SYN-0001.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ENDURANCE-B-REPORT-0001.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ENDURANCE-C-REPORT-0001.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ENTITY-0001_Draft_0.1_Universal_Entity_Model.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ENTITY-0001_Draft_0.2_Update.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ENTITY-0001_Draft_0.3_Update.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ENTITY-0001_Repository_Grade_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-EVID-0001_Evidence_Quality_Classification.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-FOUNDATION-ROADMAP-0002.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-FOUNDATION-SPRINT-0001.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-FRENZY-0001_Validation_Backlog.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GATE-ALPHA-0001_Candidate.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GATE-ALPHA-0002_Declaration.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GATE-BETA-0001_Candidate-1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GATE-BETA-0001_Candidate.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-0002_Evidence_Driven_Evolution.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-0003_Preservation_Discipline.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-0004_Dependency_Review_Status.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-0005_Contradiction_Resolution_Status.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-0006_Representation_Revision.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-0007_Lineage_Change_Rationale.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-0008_RSI_Metric_Separation.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-0009_Behavior_First_Validation.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-0011_Preservation_JSON_Rule.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-GOV-CP-0001.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-INDEX-0001_Draft_0.1_Canonical.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-INDEX-0001_Draft_0.2_Update.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-INVARIANTS-0001_Draft_0.1_Canonical.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-IR-0001_Working_Model.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PATTERN-0001_Artifact_Family.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PHASE-0006_Escalated_Verification.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PIPELINE-0001.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0004_Inheritance_Conservation_Checkpoint.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0005_Foundation_Logic_Checkpoint.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0006_Kernel_Constraint_Checkpoint.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0007_Theorem_Queue_Checkpoint.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0008_Foundation_Audit_Checkpoint.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0009_Gate_Alpha.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0010_Semantic_Composition_Checkpoint.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0011_Engineering_Test_Transition-2.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0011_Engineering_Test_Transition.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0012_Behavior_Architecture.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0013_Repository_Maturity.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0014_Proposition_Completion.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0016_Relationship_Classification.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0017_Evidence_Refinement.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0018_Governance_Dashboard.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0019_Dependency_Review_Status.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0020_Contradiction_Framework.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0021_Semantic_Conservation.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0022_Replay_Queue.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0023_Scale_Simulation.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0024_Evidence_Sufficiency.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0025_Validation_Program_Transition.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0026_Phase_Transition.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0027_Methodical_Progression.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0029_Endurance_Cycle_A.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0030_Endurance_Cycle_B.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0031_Gate_Beta_PreAudit.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0032_Engineering_Reproducibility.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0033_Viking_Campaign_I.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0034_Engineering_Maturity_Snapshot.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0035_Architectural_Invariant_Assault.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0036_Necessary_Complexity_Snapshot.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0037_First_Principles_Extraction_I.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0038_First_Principles_Falsification_I.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0039_First_Principle_Independence_Snapshot.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0040_Boundary_Conditions_and_Self_Revision.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0041_Emergent_Interaction_and_Dynamic_Equilibrium.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRESERVATION-0042_Emergent_Behavior_and_Regulatory_Structures.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRINCIPLE-QUEUE-0001_Knowledge_Composition.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRINCIPLE-QUEUE-0002_Pipeline_Determinism.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PRINCIPLE-QUEUE-0003_Self_Representation.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PROP-0001_Draft_0.1_Proposition_Model.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-PROP-0002_P021_Canonical_Granularity.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-QUEUE-0003_Semantic_Conservation.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-QUEUE-0004_Repository_Replay.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-QUEUE-0005_Evidence_Sufficiency_Check.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-QUEUE-0006_Architectural_Stability_Principle.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-QUEUE-0007_Validation_Outcome_Classification.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-QUEUE-0008_Engineering_Culture_Preservation-1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-QUEUE-0008_Engineering_Culture_Preservation.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-REL-0001_Relationship_Classification.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-RML-0001.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ROADMAP-0001_Draft_0.1_Semantic_Core_Roadmap.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ROADMAP-0003_Post_Gate_Alpha-1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-ROADMAP-0003_Post_Gate_Alpha.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-SIS-0001_Semantic_Integrity_Checklist.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-SPEC-0001_Draft_0.4_Canonical.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-SPEC-0002_Draft_0.1_Canonical.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-SPEC-0004_Draft_0.1_Canonical_Knowledge_Model.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-SPEC-0005_Draft_0.1_Semantic_Kernel_Architecture.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-SPECSTATE-0001_Template.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-TEST-0001_EXECUTION_0002.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-TEST-0003_EXECUTION_0001.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-TEST-0004_EXECUTION_0001.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-TEST-0007_EXECUTION_0001.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-TEST-FAMILY-0001.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-THEOREM-0001_Inheritance_Conservation.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-THEOREM-QUEUE-0001_Update-1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-THEOREM-QUEUE-0001_Update.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-THEOREMS-0001_Draft_0.1_Canonical.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS-TRUTH-0001_Draft_0.1_Truth_State_Model.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_AOS_1_0__All_Previous_data_and_conv.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_AOS_Repository.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Architecture_Manifest_v1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Architecture_v0.1_Draft.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Author_Statement_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Benediction_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_CPA_0001_Foundation_Update.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_CPA_0001_Manifest_Draft.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Canonical_Knowledge_Object_Schema_v1.1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Communication_Architecture_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Communication_Architecture_v1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Companion_Narrative_Working_Draft_v0_2.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Conformance_Preparation.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Constitution_v0.1_Draft.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Contributor_Provenance_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Covenant_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Culture_Architecture_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Dependency_Graph_Specification_v1.1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Design_Philosophy_v1.1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Developmental_Framework_v1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Engineering_Method_Update.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Final_Observation_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Forensic_Checkpoint_0001.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Foundational_Theory_v1.1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Gardener_Cultivation_Model_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Gardener_Principle_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Governing_Principles_v1.1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Hope_Architecture_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Human_Centered_Repository_Philosophy_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Implementation_Roadmap_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Integrity_Architecture_v1.1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Legacy_Architecture_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Living_Repository_Architecture_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Longitudinal_Reasoning_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_MetaArchitecture_Update.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Mission_Statement_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Phylactery_PreFreeze_Baseline_v0.1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Preservation_Automation_Constitution_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Publication_Front_Matter_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Reasoning_Contracts_v1.1-1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Reasoning_Manifest_v1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Repository_Constitution_v1.1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Repository_Invariants_v1.1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Repository_Voice_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Roadmap_v2.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Runtime_Specification_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_SPEC_Roadmap_Update.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Stewards_Compass_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Stewards_Oath_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Stewardship_Architecture_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Style_Profile_Model_v1.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_Validation_Queue.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_repository_layers.json
+ADE-Working-Repository-/Archive/Recovery/AKS/AKS_workflow_vNext.json
+ADE-Working-Repository-/Archive/Recovery/AKS/DOCX/AKS_Archive_Program_Roadmap_v0.1.docx
+ADE-Working-Repository-/Archive/Recovery/AKS/DOCX/AKS_Archive_Volume_II_Architecture_Blueprint_v0.1.docx
+ADE-Working-Repository-/Archive/Recovery/AKS/DOCX/AKS_Archive_Volume_I_Governance_Methodology_v0.1.docx
+ADE-Working-Repository-/Archive/Recovery/AKS/DOCX/AKS_Checkpoint_v0.2.docx
+ADE-Working-Repository-/Archive/Recovery/AKS/DOCX/AKS_Curation_Protocol_v0.1.docx
+ADE-Working-Repository-/Archive/Recovery/AKS/DOCX/AKS_Governing_Constitution_v1.0.docx
+ADE-Working-Repository-/Archive/Recovery/AKS/DOCX/AKS_Project_Ledger_v0.1.docx
+ADE-Working-Repository-/Archive/Recovery/AKS/DOCX/AOS_Operating_Doctrine_v1.0.docx
+ADE-Working-Repository-/Archive/Recovery/AKS/DOCX/df.md
+ADE-Working-Repository-/Archive/Recovery/AKS/add.md
+ADE-Working-Repository-/Archive/Recovery/Archives/Ju.md
+ADE-Working-Repository-/Archive/Recovery/Archives/MISC/ghy.md
+ADE-Working-Repository-/Archive/Recovery/Archives/TAR/ghy.md
+ADE-Working-Repository-/Archive/Recovery/Archives/ZIP/ghy.md
+ADE-Working-Repository-/Archive/Recovery/Audio/Sd.md
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/Exports/Ji.md
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/Hh.md
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/AKS_archive_manifest_v1_seed.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/AKS_manifest_v0.1.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/ALT_Specification_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/AUDIT_STATE_PP0001.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/BUR_Specification_v1.0-1.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/BUR_Specification_v1.0-2.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/BUR_Specification_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/CA-0003.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/CA-0004.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/CNF-0001.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/CTX_Specification_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/ENT_Specification_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/ENV_Specification_v1.0-1.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/ENV_Specification_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/EXECUTION_QUEUE_PP0001.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Evidence_Transformation_Specification_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Execution_Queue_PP0005.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Execution_Queue_PP0006.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Execution_Sprint_1.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Execution_Sprint_1_Update.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Execution_State_v0.2.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Forensic_Parser_Workflow.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Forensic_Parser_Workflow_full_chat.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Forensic_Parser_Workflow_reverse_parse_901pm_7_23_26.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/GAP_Specification_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Handbook_Project_Organization (1).json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Handbook_Project_Organization.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Inference_and_Linguistic_Models.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Kernel_Manifest_v2.1.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Kernel_Manifest_v2.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/MAJOR_PP_0001.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/MAJOR_PP_0002.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/MAJOR_PP_0003.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Master_Conversations_Unparsed_v1.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/OBS_Specification_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/OUT_Specification_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PAT_Specification_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-0001_Automatic_Transition_Preservation.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-0002_Incremental_Canonical_Preservation.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-0003_Continuous_Repository_Indexing.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-0004_Conservation_of_Architectural_Work.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-0005_Architectural_Change_Preservation.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-0006_Canonical_Test_Requirement-1.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-0006_Canonical_Test_Requirement-2.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-INDEX-0001_Draft_0.1_Canonical.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-INDEX-0001_Draft_0.2_Canonical.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/PR-INDEX-0001_Draft_0.3_Update.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/QST_Specification_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/REL_Specification_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/REV-0001.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/REV-0002.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/REV-0005.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/REV-0006.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Repository_State_PP0004.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Repository_State_PP0005.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Repository_State_PP0006.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Repository_State_PP0007.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Repository_State_PP0008.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Runtime_Manifest_v2.2.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Runtime_Manifest_v3.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Runtime_Manifest_v4.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Runtime_Manifest_v5.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Runtime_Manifest_v6.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-0000_Constitutional_Registry.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-0001_Machine_State_Model.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-0002_Error_Exception_Framework.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-0003_v1.0.1.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-0004_v1.0.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-0005_v1.0.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-0006_v1.0.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-1004_v1.0.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-1005_v1.0.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-2010_v1.0.0-1.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-4002_v1.0.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-4003_v1.0.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-4004_v1.0.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-4005_v1.0.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-4006_v1.0.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-5011_v1.0.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-5012_v1.0.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-5013_v1.0.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-5014_v1.0.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-5015_v1.0.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-6001_v1.0.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-7001_v1.0.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/SPEC-GOV-0001.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Se.md
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/TRN_Specification_v1.0.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/Traversal_Ledger_v0.1.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/VAL-0001.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/VAL-0004.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/VAL-0005.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/census_v0.1.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/chatgpt-conversation (2).json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/confidence_framework.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/cross_reference_index_seed.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/decisions_template.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/entities_template.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/forensic_parser_workflow_start.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/interventions_template.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/master_index_template.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/master_manifest_v0.2.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/migration_manifest_v0.1.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/negative_evidence_template.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/observations_schema.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/observations_seed.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/pattern_schema.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/patterns_seed.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/questions_template.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/relationship_schema.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/relationships_seed.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/repository_structure.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/sources_template.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/strengths_template.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/JSON/timeline_template.json
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/Screenshots/aw.md
+ADE-Working-Repository-/Archive/Recovery/Chatgpt/Shared Links/tujd
+ADE-Working-Repository-/Archive/Recovery/Clinician Edition/Clinician Edition Volume 1 v0.25.docx
+ADE-Working-Repository-/Archive/Recovery/Clinician Edition/Clinician_Edition_v0.5_Working_Draft.docx
+ADE-Working-Repository-/Archive/Recovery/Clinician Edition/ase.md
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/AKS Internal Storage.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/AKS Repository Synchronization Directive — Library Normalization.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Canonical_Object_Standard_v1.0.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Clinician_Edition_v0.5_Working_Draft.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/DHP_Foundation_Handbook_v0.1.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/DHP_Recovery_Checkpoint_RC-0001.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Eighteenth conversation - final.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Eighth conversation .docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Eleventh conversation .docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Engineering Methodology.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Evidence_Standard_v1.0.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Fifteenth conversation.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Fifth Conversation.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/First Conversation .docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Fourteenth conversation .docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Fourth Conversation .docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Governance_Manual_v1.0.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Handbook_Foundation_Package.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Last chat before starting new project.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Master Conversations 1-18-part-1.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Master Conversations 1-18.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Master Conversations 18-20-part-2.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Master_Handbook_v0.2.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Nineteenth conversation  (1).docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Ninth Conversation .docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Observation_Register_v0.1.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Observation_Standard_v1.0.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Preservation_Principles_v1.0.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Project_Change_Log_v0.1-1.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Project_Change_Log_v0.1.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Project_Ledger_Specification_v1.0.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Provenance_Standard_v1.0.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Publication_Doctrine_v1.0.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Reconciliation_Doctrine_v1.0-1.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Reconciliation_Doctrine_v1.0.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Recovery_Checkpoint_v1.0.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Recovery_Doctrine_v1.0.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Second Conversation .docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Seventeenth conversation .docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Seventh conversation .docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Sixteenth conversation .docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Sixth Conversation .docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Standing_Orders_v1.0.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Stewardship_Manual_v1.0.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/THE ACTIVE STATE SNAPSHOT.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Tenth conversation .docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Third Conversation .docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Thirteenth conversation .docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Twelfth conversation .docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Twenty conversation .docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/Versioning_Standard_v1.0.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/forensic parser workflow start.docx
+ADE-Working-Repository-/Archive/Recovery/Documents/DOCX/ghy.md
+ADE-Working-Repository-/Archive/Recovery/Documents/Fg.md
+ADE-Working-Repository-/Archive/Recovery/Documents/PDF/ADE Workflow Automation Prompts.pdf
+ADE-Working-Repository-/Archive/Recovery/Documents/PDF/AOS Repository.pdf
+ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Bootstrap Preparation Checklist.pdf
+ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Forensic Parser Workflow.pdf
+ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Free ChatGPT Plugins for ADE.pdf
+ADE-Working-Repository-/Archive/Recovery/Documents/PDF/GitHub Access Limitations.pdf
+ADE-Working-Repository-/Archive/Recovery/Documents/PDF/GitHub PR Inspection.pdf
+ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Inference and Linguistic Models.pdf
+ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Moving files in GitHub.pdf
+ADE-Working-Repository-/Archive/Recovery/Documents/PDF/OAuth Error Investigation.pdf
+ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Project Organization Strategy.pdf
+ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Repo Not Found.pdf
+ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Rowan_Learns_Words_v0.1.pdf
+ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Rowan_Today_Field_Guide_Mom_v3.0.pdf
+ADE-Working-Repository-/Archive/Recovery/Documents/PDF/Rowan_Today_Mom_Edition_v1.0.pdf
+ADE-Working-Repository-/Archive/Recovery/Documents/PDF/ghy.md
+ADE-Working-Repository-/Archive/Recovery/Documents/PDT/ghy.md
+ADE-Working-Repository-/Archive/Recovery/Documents/TXT/ghy.md
+ADE-Working-Repository-/Archive/Recovery/Foundation Package Alpha/FPA-0000-Manifest.json
+ADE-Working-Repository-/Archive/Recovery/Foundation Package Alpha/FPA-0001-CanonicalVocabulary.json
+ADE-Working-Repository-/Archive/Recovery/Foundation Package Alpha/FPA-0002-SpecificationFramework.json
+ADE-Working-Repository-/Archive/Recovery/Foundation Package Alpha/FPA-0003-CanonicalArtifactOntology.json
+ADE-Working-Repository-/Archive/Recovery/Foundation Package Alpha/FPA-0004-ProductionState.json
+ADE-Working-Repository-/Archive/Recovery/Foundation Package Alpha/Foundation_Package_Alpha_JSONs.zip
+ADE-Working-Repository-/Archive/Recovery/Foundation Package Alpha/ap.md
+ADE-Working-Repository-/Archive/Recovery/Images/JPG/ghy.md
+ADE-Working-Repository-/Archive/Recovery/Images/PNG/ghy.md
+ADE-Working-Repository-/Archive/Recovery/Images/U.md
+ADE-Working-Repository-/Archive/Recovery/Images/WEBP/ghy.md
+ADE-Working-Repository-/Archive/Recovery/Misc/Gh.md
+ADE-Working-Repository-/Archive/Recovery/Presentations/Th.md
+ADE-Working-Repository-/Archive/Recovery/Spreadsheets/Er.md
+ADE-Working-Repository-/Archive/Recovery/Video/vd.md
+ADE-Working-Repository-/Archive/Recovery/plh.md
+ADE-Working-Repository-/Archive/Snapshots/Dfg.md
+ADE-Working-Repository-/Archive/Snapshots/PP/MAJOR_PP_0001.json
+ADE-Working-Repository-/Archive/Snapshots/PP/MAJOR_PP_0002.json
+ADE-Working-Repository-/Archive/Snapshots/PP/MAJOR_PP_0003.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0004.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0005.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0005_Bundle_Manifest.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0006.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0006_Bundle_Manifest.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0007.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0007_Bundle_Manifest.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0008.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0008_Bundle_Manifest.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0044_Provenance_Before_Path.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0045_Fingerprints_Endure.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0046_Repository_Architecture.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0047_Epistemic_Engineering.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0048_Conservative_Synthesis.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0049_Developmental_Framework_Foundation.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0050_Communication_Architecture.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0051_Constitutional_Epistemics_v1.1.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0052_Human_Centered_Stewardship_v1.0.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0052_Minor.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0052_Recovery_Manifest.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0053_Minor.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0053_Policy_Manifest.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0053_Repository_Voice_and_Stewardship_v1.0.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054A_manifest.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Governance_Manifest.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Minor.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Phase_Shift_Living_Repository_v1.0.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Summary.xlsx
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0054_Synthesis.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Intervention_Failures.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Intervention_Failures.xlsx
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Interventions.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Knowledge_Model.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Manifest.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0055_Repository_Corpus_Ingestion.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0056_Minor.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0056_Minor_Execution_Transition.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0057_Major.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0058-MAJOR.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0058-Manifest.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP-0058-Principles.json
+ADE-Working-Repository-/Archive/Snapshots/PP/PP0001_MANIFEST.json
+ADE-Working-Repository-/Archive/Snapshots/PP/ghy.md
+ADE-Working-Repository-/Archive/dusty.md
+ADE-Working-Repository-/Archive_INDEX.md
+ADE-Working-Repository-/Archive_README.md
+ADE-Working-Repository-/Archives (1).zip
+ADE-Working-Repository-/Archives.zip
+ADE-Working-Repository-/CATALOG.md
+ADE-Working-Repository-/CHANGELOG.md
+ADE-Working-Repository-/CLAUDE START HERE/ACP-0001_Foundation_Gamma_v1.4.md
+ADE-Working-Repository-/CLAUDE START HERE/ACTIVE_STATE_SNAPSHOT_v1.4.md
+ADE-Working-Repository-/CLAUDE START HERE/ADE Workflow Automation Prompts.pdf
+ADE-Working-Repository-/CLAUDE START HERE/ADE_Constitution_v1.4.md
+ADE-Working-Repository-/CLAUDE START HERE/ADE_full_repo_context.txt
+ADE-Working-Repository-/CLAUDE START HERE/AKS-INVARIANTS-0001_Draft_0.1.json
+ADE-Working-Repository-/CLAUDE START HERE/AKS-PRESERVATION-0042_Emergent_Behavior_and_Regulatory_Structures.json
+ADE-Working-Repository-/CLAUDE START HERE/AKS_Companion_Narrative_Working_Draft_v0_2.docx
+ADE-Working-Repository-/CLAUDE START HERE/AKS_Companion_Narrative_Working_Draft_v0_2.json
+ADE-Working-Repository-/CLAUDE START HERE/AKS_Covenant_v1.0.json
+ADE-Working-Repository-/CLAUDE START HERE/AKS_Gardener_Cultivation_Model_v1.0.json
+ADE-Working-Repository-/CLAUDE START HERE/AKS_Human_Centered_Repository_Philosophy_v1.0.json
+ADE-Working-Repository-/CLAUDE START HERE/AKS_Living_Repository_Architecture_v1.0.json
+ADE-Working-Repository-/CLAUDE START HERE/AKS_Longitudinal_Reasoning_v1.0.json
+ADE-Working-Repository-/CLAUDE START HERE/AKS_Mission_Statement_v1.0.json
+ADE-Working-Repository-/CLAUDE START HERE/AKS_Stewards_Compass_v1.0.json
+ADE-Working-Repository-/CLAUDE START HERE/AOS Repository.pdf
+ADE-Working-Repository-/CLAUDE START HERE/ARTIFACT_POLICY.md
+ADE-Working-Repository-/CLAUDE START HERE/AUTOMATION_POLICY.md
+ADE-Working-Repository-/CLAUDE START HERE/BLUEPRINT_v2.0_RESTORATION.md
+ADE-Working-Repository-/CLAUDE START HERE/BOOTSTRAP_v1.4.md
+ADE-Working-Repository-/CLAUDE START HERE/Bootstrap Preparation Checklist(1).pdf
+ADE-Working-Repository-/CLAUDE START HERE/Bootstrap Preparation Checklist.pdf
+ADE-Working-Repository-/CLAUDE START HERE/CHANGELOG.md
+ADE-Working-Repository-/CLAUDE START HERE/CHANGELOG_v1.4.md
+ADE-Working-Repository-/CLAUDE START HERE/CLAUDE_FOUNDATIONAL_ROADMAP.txt
+ADE-Working-Repository-/CLAUDE START HERE/CODE_OF_CONDUCT.md
+ADE-Working-Repository-/CLAUDE START HERE/CONSTITUTIONAL_AMENDMENT_FULL_ARTIFACTS.md
+ADE-Working-Repository-/CLAUDE START HERE/CONTRIBUTING.md
+ADE-Working-Repository-/CLAUDE START HERE/Claude Network Drop Protocol .txt
+ADE-Working-Repository-/CLAUDE START HERE/Clinician Edition Volume 1 v0.25.docx
+ADE-Working-Repository-/CLAUDE START HERE/Clinician_Edition_v0.5_Working_Draft.docx
+ADE-Working-Repository-/CLAUDE START HERE/Clinician_Edition_v1.0_Master_Assembly_Manuscript.docx
+ADE-Working-Repository-/CLAUDE START HERE/DECISION_POLICY.md
+ADE-Working-Repository-/CLAUDE START HERE/DHP_Foundation_Handbook_v0.1(1).docx
+ADE-Working-Repository-/CLAUDE START HERE/EVIDENCE_STANDARD.md
+ADE-Working-Repository-/CLAUDE START HERE/Execution_Sprint_1.json
+ADE-Working-Repository-/CLAUDE START HERE/FOUNDATION_GAMMA_PACKAGE_v1.3.pdf
+ADE-Working-Repository-/CLAUDE START HERE/Fifth Conversation.docx
+ADE-Working-Repository-/CLAUDE START HERE/First Conversation .docx
+ADE-Working-Repository-/CLAUDE START HERE/Forensic Parser Workflow-1.pdf
+ADE-Working-Repository-/CLAUDE START HERE/Forensic Parser Workflow.pdf
+ADE-Working-Repository-/CLAUDE START HERE/Forensic_Parser_Workflow_full_chat.json
+ADE-Working-Repository-/CLAUDE START HERE/Foundation_Gamma_Revision_Package_v1.4.pdf
+ADE-Working-Repository-/CLAUDE START HERE/Foundation_Gamma_v1.4_Final_Revision_Notes.docx
+ADE-Working-Repository-/CLAUDE START HERE/Foundation_Gamma_v1.4_Revised_Package.docx
+ADE-Working-Repository-/CLAUDE START HERE/Fourth Conversation .docx
+ADE-Working-Repository-/CLAUDE START HERE/Free ChatGPT Plugins for ADE-1.pdf
+ADE-Working-Repository-/CLAUDE START HERE/Free ChatGPT Plugins for ADE.pdf
+ADE-Working-Repository-/CLAUDE START HERE/GLOSSARY.md
+ADE-Working-Repository-/CLAUDE START HERE/GitHub Access Limitations.pdf
+ADE-Working-Repository-/CLAUDE START HERE/GitHub PR Inspection.pdf
+ADE-Working-Repository-/CLAUDE START HERE/Handbook_Foundation_Package(1).docx
+ADE-Working-Repository-/CLAUDE START HERE/Handbook_Project_Organization(1).txt
+ADE-Working-Repository-/CLAUDE START HERE/IMPORT_POLICY(1).md
+ADE-Working-Repository-/CLAUDE START HERE/INDEX.md
+ADE-Working-Repository-/CLAUDE START HERE/INDEX_v1.3.md
+ADE-Working-Repository-/CLAUDE START HERE/INDEX_v1.4.md
+ADE-Working-Repository-/CLAUDE START HERE/INDEX_v1.4_REVISED.md
+ADE-Working-Repository-/CLAUDE START HERE/INDEX_v1.4_REVISION.md
+ADE-Working-Repository-/CLAUDE START HERE/Inference and Linguistic Models(1).pdf
+ADE-Working-Repository-/CLAUDE START HERE/Inference and Linguistic Models.pdf
+ADE-Working-Repository-/CLAUDE START HERE/Inference_and_Linguistic_Models.json
+ADE-Working-Repository-/CLAUDE START HERE/KNOWLEDGE_MANAGEMENT.md
+ADE-Working-Repository-/CLAUDE START HERE/Kernel_Manifest_v2.1.json
+ADE-Working-Repository-/CLAUDE START HERE/LICENSE.md
+ADE-Working-Repository-/CLAUDE START HERE/Last_chat_before_starting_new_project.docx.md
+ADE-Working-Repository-/CLAUDE START HERE/MAJOR_PP_0003.json
+ADE-Working-Repository-/CLAUDE START HERE/MANIFEST.md
+ADE-Working-Repository-/CLAUDE START HERE/Master Conversations 1-18-part-1.docx
+ADE-Working-Repository-/CLAUDE START HERE/Master Conversations 1-18.docx
+ADE-Working-Repository-/CLAUDE START HERE/Master Conversations 18-20-part-2.docx
+ADE-Working-Repository-/CLAUDE START HERE/Master_Conversations_1-18-part-1.docx.md
+ADE-Working-Repository-/CLAUDE START HERE/Master_Conversations_18-20-part-2.docx.md
+ADE-Working-Repository-/CLAUDE START HERE/Master_Conversations_Unparsed_v1.json
+ADE-Working-Repository-/CLAUDE START HERE/Moving files in GitHub-1.pdf
+ADE-Working-Repository-/CLAUDE START HERE/Moving files in GitHub.pdf
+ADE-Working-Repository-/CLAUDE START HERE/NAMING_CONVENTIONS.md
+ADE-Working-Repository-/CLAUDE START HERE/OAuth Error Investigation.pdf
+ADE-Working-Repository-/CLAUDE START HERE/PLUGIN_POLICY.md
+ADE-Working-Repository-/CLAUDE START HERE/PP-0004.json
+ADE-Working-Repository-/CLAUDE START HERE/PP-0008.json
+ADE-Working-Repository-/CLAUDE START HERE/PP-0008_Bundle_Manifest.json
+ADE-Working-Repository-/CLAUDE START HERE/PP-0054_Phase_Shift_Living_Repository_v1.0.json
+ADE-Working-Repository-/CLAUDE START HERE/PP-0058-MAJOR.json
+ADE-Working-Repository-/CLAUDE START HERE/PP-0058-Manifest.json
+ADE-Working-Repository-/CLAUDE START HERE/PP-0058-Principles.json
+ADE-Working-Repository-/CLAUDE START HERE/PRINCIPLES.md
+ADE-Working-Repository-/CLAUDE START HERE/PROJECT_LIFECYCLE.md
+ADE-Working-Repository-/CLAUDE START HERE/Project Organization Strategy-1.pdf
+ADE-Working-Repository-/CLAUDE START HERE/Project Organization Strategy.pdf
+ADE-Working-Repository-/CLAUDE START HERE/QUALITY_STANDARD.md
+ADE-Working-Repository-/CLAUDE START HERE/RC1-0000_Master_Manifest_GOLD_MASTER_v1.2.0_FROZEN.json
+ADE-Working-Repository-/CLAUDE START HERE/RC1-0001_Repository_Constitution_GOLD_v1.2.0.json
+ADE-Working-Repository-/CLAUDE START HERE/RC1-0002_Constitutional_Amendments_Ledger_GOLD_v1.2.0.json
+ADE-Working-Repository-/CLAUDE START HERE/RC1-0003_Governance_Framework_GOLD_v1.2.0.json
+ADE-Working-Repository-/CLAUDE START HERE/RC1-0004_Constitutional_Registry_GOLD_v1.2.0.json
+ADE-Working-Repository-/CLAUDE START HERE/RC1-0005_Validation_Framework_GOLD_v1.2.0.json
+ADE-Working-Repository-/CLAUDE START HERE/README.md
+ADE-Working-Repository-/CLAUDE START HERE/RECOVERY_MANIFEST(1).md
+ADE-Working-Repository-/CLAUDE START HERE/RECOVERY_POLICY.md
+ADE-Working-Repository-/CLAUDE START HERE/REPOSITORY_CHARTER.md
+ADE-Working-Repository-/CLAUDE START HERE/REPOSITORY_GOVERNANCE.md
+ADE-Working-Repository-/CLAUDE START HERE/REPOSITORY_STRUCTURE.md
+ADE-Working-Repository-/CLAUDE START HERE/ROADMAP.md
+ADE-Working-Repository-/CLAUDE START HERE/ROADMAP_v1.3.md
+ADE-Working-Repository-/CLAUDE START HERE/ROADMAP_v1.4.md
+ADE-Working-Repository-/CLAUDE START HERE/ROADMAP_v1.4_REVISED.md
+ADE-Working-Repository-/CLAUDE START HERE/ROADMAP_v1.4_REVISION.md
+ADE-Working-Repository-/CLAUDE START HERE/ROADMAP_v2.0_RESTORATION.md
+ADE-Working-Repository-/CLAUDE START HERE/Reconciliation_Doctrine_v1.0-1.docx
+ADE-Working-Repository-/CLAUDE START HERE/Repo Not Found.pdf
+ADE-Working-Repository-/CLAUDE START HERE/Repository documentation.
+ADE-Working-Repository-/CLAUDE START HERE/SECURITY.md
+ADE-Working-Repository-/CLAUDE START HERE/STARTUP_PROCEDURE_v1.0.docx
+ADE-Working-Repository-/CLAUDE START HERE/STARTUP_PROCEDURE_v1.0.md
+ADE-Working-Repository-/CLAUDE START HERE/STATE_SNAPSHOT_PACKAGE.pdf
+ADE-Working-Repository-/CLAUDE START HERE/SYSTEM_BOOTSTRAP_v2.0_CHATGPT.md
+ADE-Working-Repository-/CLAUDE START HERE/Second Conversation .docx
+ADE-Working-Repository-/CLAUDE START HERE/Seventh conversation .docx
+ADE-Working-Repository-/CLAUDE START HERE/Sixth Conversation .docx
+ADE-Working-Repository-/CLAUDE START HERE/THE ACTIVE STATE SNAPSHOT.docx
+ADE-Working-Repository-/CLAUDE START HERE/THE DIFFERENCE ENGINE- SYSTEM SPECIFICATION & REVISED BOOTSTRAP PROTOCOL (1).docx
+ADE-Working-Repository-/CLAUDE START HERE/THE DIFFERENCE ENGINE- SYSTEM SPECIFICATION & REVISED BOOTSTRAP PROTOCOL.docx
+ADE-Working-Repository-/CLAUDE START HERE/Third Conversation .docx
+ADE-Working-Repository-/CLAUDE START HERE/Traversal_Ledger_v0.1.json
+ADE-Working-Repository-/CLAUDE START HERE/UPDATE FIRST PJT INSTRCT CONS  LAWS FOR CLAUDE.txt
+ADE-Working-Repository-/CLAUDE START HERE/VERSIONING_POLICY.md
+ADE-Working-Repository-/CLAUDE START HERE/forensic_parser_workflow_start.json
+ADE-Working-Repository-/CLAUDE START HERE/oh.md
+ADE-Working-Repository-/CODE_OF_CONDUCT.md
+ADE-Working-Repository-/CONSTITUTIONAL_AMENDMENT_FULL_ARTIFACTS.md
+ADE-Working-Repository-/CONTRIBUTING.md
+ADE-Working-Repository-/Claude.zip
+ADE-Working-Repository-/Docs.zip
+ADE-Working-Repository-/EVIDENCE_STANDARD.md
+ADE-Working-Repository-/GLOSSARY.md
+ADE-Working-Repository-/Governance.zip
+ADE-Working-Repository-/Governance/PLUGIN_POLICY.md
+ADE-Working-Repository-/Governance/placeholder.md
+ADE-Working-Repository-/IMPORT_POLICY(1).md
+ADE-Working-Repository-/INDEX.md
+ADE-Working-Repository-/In ox/ACP-0001_Foundation_Gamma_v1.4.md
+ADE-Working-Repository-/In ox/ADE_Constitution_v1.4.md
+ADE-Working-Repository-/In ox/BOOTSTRAP_v1.3.md
+ADE-Working-Repository-/In ox/BOOTSTRAP_v1.4.md
+ADE-Working-Repository-/In ox/CHANGELOG_v1.3.md
+ADE-Working-Repository-/In ox/CHANGELOG_v1.4.md
+ADE-Working-Repository-/In ox/FOUNDATION_GAMMA_PACKAGE_v1.3.pdf
+ADE-Working-Repository-/In ox/Foundation_Gamma_Revision_Package_v1.4.pdf
+ADE-Working-Repository-/In ox/INDEX_v1.3.md
+ADE-Working-Repository-/In ox/INDEX_v1.4.md
+ADE-Working-Repository-/In ox/ROADMAP_v1.3.md
+ADE-Working-Repository-/In ox/ROADMAP_v1.4.md
+ADE-Working-Repository-/In ox/STATE_SNAPSHOT_PACKAGE.pdf
+ADE-Working-Repository-/In ox/sd.md
+ADE-Working-Repository-/Inbox.zip
+ADE-Working-Repository-/LICENSE.md
+ADE-Working-Repository-/Library.zip
+ADE-Working-Repository-/Library/placeholder.md
+ADE-Working-Repository-/Loose repo tree files.zip
+ADE-Working-Repository-/MANIFEST.md
+ADE-Working-Repository-/NAMING_CONVENTIONS.md
+ADE-Working-Repository-/PP.zip
+ADE-Working-Repository-/PP/placeholder.md
+ADE-Working-Repository-/PRINCIPLES.md
+ADE-Working-Repository-/Parser.zip
+ADE-Working-Repository-/Parser/placeholder.md
+ADE-Working-Repository-/Publications/placeholder.md
+ADE-Working-Repository-/Pubs.zip
+ADE-Working-Repository-/RC/.gitkeep
+ADE-Working-Repository-/RC/RC1-0000_Master_Manifest_GOLD_MASTER_v1.2.0_FROZEN.json
+ADE-Working-Repository-/RC/RC1-0001_Repository_Constitution_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0002_Constitutional_Amendments_Ledger_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0003_Governance_Framework_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0004_Constitutional_Registry_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0005_Validation_Framework_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0006_Specification_Framework_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0007_Specification_Volume_I_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0008_Specification_Volume_II_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0009_Specification_Volume_III_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0010_Specification_Volume_IV_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0011_Specification_Volume_V_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0012_Specification_Volume_VI_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0013_Specification_Volume_VII_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0014_Specification_Volume_VIII_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0015_Specification_Volume_IX_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0016_Specification_Volume_X_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0017_Specification_Volume_XI_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0018_Specification_Volume_XII_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0019_Publication_Manifest_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0020_Repository_Certification_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0021_Repository_Release_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0022_Repository_Preservation_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0023_Repository_Freeze_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0024_Repository_Archive_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0025_Repository_Final_Certification_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0026_Repository_Release_Closure_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0027_Repository_Completion_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0028_Repository_Ratification_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0029_Repository_Canonical_Release_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0030_Repository_Publication_Completion_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0031_Repository_RC1_Closure_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0032_Repository_Preservation_Point_Index_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0033_Repository_Publication_Ledger_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0034_Repository_Final_Preservation_Point_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0035_Repository_Canonical_Archive_Index_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0036_Repository_Certification_Evidence_Register_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0037_Repository_Immutable_Release_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0038_Repository_Release_Seal_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0039_Repository_Golden_Archive_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0040_Repository_RC1_Completion_Certificate_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0041_Repository_RC1_Transition_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0042_Repository_RC1_Governance_Handoff_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0043_Repository_RC1_Successor_Initialization_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0044_Repository_RC1_Legacy_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0045_Repository_RC1_Canonical_Closure_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0046_Repository_RC1_Final_Ratification_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0047_Repository_RC1_Canonical_Baseline_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0048_Repository_RC1_Release_Continuity_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0049_Repository_RC1_Successor_Baseline_Certificate_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0050_Repository_RC1_Continuity_Charter_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0051_Repository_RC1_Governance_Continuation_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0052_Repository_RC1_Stewardship_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0053_Repository_RC1_Successor_Governance_Charter_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0054_Repository_RC1_Perpetual_Governance_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0055_Repository_RC1_Legacy_Continuity_Register_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0056_Repository_RC1_Repository_Continuity_Ledger_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0057_Repository_RC1_Canonical_Continuity_Index_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0058_Repository_RC1_Canonical_Preservation_Register_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0059_Repository_RC1_Constitutional_Archive_Register_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0060_Repository_RC1_Constitutional_Preservation_Ledger_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0061_Repository_RC1_Constitutional_Integrity_Register_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0062_Repository_RC1_Constitutional_Certification_Register_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0063_Repository_RC1_Constitutional_Ratification_Register_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0064_Repository_RC1_Constitutional_Finalization_Register_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0065_Repository_RC1_Constitutional_Closure_Register_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0066_Repository_RC1_Constitutional_Archive_Closure_Certificate_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0067_Repository_RC1_Canonical_Repository_Freeze_Certificate_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0068_Repository_RC1_Canonical_Repository_Seal_Certificate_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0069_Repository_RC1_Canonical_Repository_Completion_Certificate_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0070_Repository_RC1_Canonical_Publication_Completion_Ledger_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0071_Repository_RC1_Canonical_Repository_Acceptance_Certificate_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0072_Repository_RC1_Canonical_Repository_Release_Certificate_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0073_Repository_RC1_Canonical_Repository_Distribution_Certificate_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0074_Repository_RC1_Canonical_Repository_Delivery_Certificate_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0075_Repository_RC1_Canonical_Repository_Receipt_Certificate_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0076_Repository_RC1_Canonical_Repository_Verification_Certificate_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0077_Repository_RC1_Canonical_Repository_Validation_Certificate_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0078_Repository_RC1_Canonical_Repository_Compliance_Certificate_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0079_Repository_RC1_Canonical_Repository_Conformance_Certificate_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0080_Repository_RC1_Canonical_Repository_Certification_Ledger_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0081_Repository_RC1_Canonical_Repository_Certification_Archive_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0082_Repository_RC1_Canonical_Repository_Certification_Index_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0083_Repository_RC1_Canonical_Repository_Certification_Manifest_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0084_Repository_RC1_Canonical_Repository_Certification_Register_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0085_Repository_RC1_Canonical_Repository_Certification_Summary_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0086_Repository_RC1_Canonical_Repository_Certification_Digest_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0087_Repository_RC1_Canonical_Repository_Certification_Seal_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0088_Repository_RC1_Canonical_Repository_Certification_Attestation_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0089_Repository_RC1_Canonical_Repository_Certification_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0090_Repository_RC1_Canonical_Repository_Certification_Dossier_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0091_Repository_RC1_Canonical_Repository_Certification_Portfolio_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0092_Repository_RC1_Canonical_Repository_Certification_Compendium_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0093_Repository_RC1_Canonical_Repository_Certification_Archive_Register_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0094_Repository_RC1_Canonical_Repository_Certification_Master_Register_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0095_Repository_RC1_Canonical_Repository_Certification_Master_Archive_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0096_Repository_RC1_Canonical_Repository_Certification_Master_Compendium_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0097_Repository_RC1_Canonical_Repository_Certification_Master_Ledger_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0098_Repository_RC1_Canonical_Repository_Certification_Master_Index_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0099_Repository_RC1_Canonical_Repository_Certification_Master_Catalog_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0100_Repository_RC1_Canonical_Repository_Centennial_Preservation_Record_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0101_Repository_RC1_Canonical_Repository_Centennial_Continuity_Register_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC/RC1-0102_Repository_RC1_Canonical_Repository_Centennial_Preservation_Ledger_GOLD_v1.2.0.json
+ADE-Working-Repository-/RC1.zip
+ADE-Working-Repository-/README.md
+ADE-Working-Repository-/RECOVERY_MANIFEST(1).md
+ADE-Working-Repository-/REPOSITORY_CHARTER.md
+ADE-Working-Repository-/REPOSITORY_STRUCTURE.md
+ADE-Working-Repository-/REPOSITORY_TREE.txt
+ADE-Working-Repository-/REPOSITORY_TREE_FULL.txt
+ADE-Working-Repository-/ROADMAP.md
+ADE-Working-Repository-/Reaearch.zip
+ADE-Working-Repository-/Research/science.md
+ADE-Working-Repository-/SECURITY.md
+ADE-Working-Repository-/STARTUP_PROCEDURE_v1.0.docx
+ADE-Working-Repository-/STARTUP_PROCEDURE_v1.0.md
+ADE-Working-Repository-/Specifications.zip
+ADE-Working-Repository-/Specifications/ALT_Specification_v1.0.json
+ADE-Working-Repository-/Specifications/BUR_Specification_v1.0-2.json
+ADE-Working-Repository-/Specifications/BUR_Specification_v1.0.json
+ADE-Working-Repository-/Specifications/CTX_Specification_v1.0.json
+ADE-Working-Repository-/Specifications/ENT_Specification_v1.0.json
+ADE-Working-Repository-/Specifications/ENV_Specification_v1.0.json
+ADE-Working-Repository-/Specifications/Evidence_Transformation_Specification_v1.0.json
+ADE-Working-Repository-/Specifications/FPA-0002-SpecificationFramework.json
+ADE-Working-Repository-/Specifications/GAP_Specification_v1.0.json
+ADE-Working-Repository-/Specifications/OBS_Specification_v1.0.json
+ADE-Working-Repository-/Specifications/OUT_Specification_v1.0.json
+ADE-Working-Repository-/Specifications/PAT_Specification_v1.0.json
+ADE-Working-Repository-/Specifications/Project_Ledger_Specification_v1.0.docx
+ADE-Working-Repository-/Specifications/QST_Specification_v1.0.json
+ADE-Working-Repository-/Specifications/REL_Specification_v1.0.json
+ADE-Working-Repository-/Specifications/SPEC-0000_Constitutional_Registry.json
+ADE-Working-Repository-/Specifications/SPEC-0001_Machine_State_Model.json
+ADE-Working-Repository-/Specifications/SPEC-0002_Error_Exception_Framework.json
+ADE-Working-Repository-/Specifications/SPEC-0003_v1.0.1.json
+ADE-Working-Repository-/Specifications/SPEC-0004_v1.0.0.json
+ADE-Working-Repository-/Specifications/SPEC-0005_v1.0.0.json
+ADE-Working-Repository-/Specifications/SPEC-0006_v1.0.0.json
+ADE-Working-Repository-/Specifications/SPEC-1004_v1.0.0.json
+ADE-Working-Repository-/Specifications/SPEC-1005_v1.0.0.json
+ADE-Working-Repository-/Specifications/SPEC-2010_v1.0.0.json
+ADE-Working-Repository-/Specifications/SPEC-4002_v1.0.0.json
+ADE-Working-Repository-/Specifications/SPEC-4003_v1.0.0.json
+ADE-Working-Repository-/Specifications/SPEC-4004_v1.0.0.json
+ADE-Working-Repository-/Specifications/SPEC-4005_v1.0.0.json
+ADE-Working-Repository-/Specifications/SPEC-4006_v1.0.0.json
+ADE-Working-Repository-/Specifications/SPEC-5011_v1.0.0.json
+ADE-Working-Repository-/Specifications/SPEC-5012_v1.0.0.json
+ADE-Working-Repository-/Specifications/SPEC-5013_v1.0.0.json
+ADE-Working-Repository-/Specifications/SPEC-5014_v1.0.0.json
+ADE-Working-Repository-/Specifications/SPEC-5015_v1.0.0.json
+ADE-Working-Repository-/Specifications/SPEC-6001_v1.0.0.json
+ADE-Working-Repository-/Specifications/SPEC-7001_v1.0.0.json
+ADE-Working-Repository-/Specifications/SPEC-GOV-0001.json
+ADE-Working-Repository-/Specifications/THE DIFFERENCE ENGINE- SYSTEM SPECIFICATION & REVISED BOOTSTRAP PROTOCOL.docx
+ADE-Working-Repository-/Specifications/TRN_Specification_v1.0.json
+ADE-Working-Repository-/Specifications/scrooge.md
+ADE-Working-Repository-/Specs.zip
+ADE-Working-Repository-/Tools.zip
+ADE-Working-Repository-/Tools/timesink.md
+ADE-Working-Repository-/VERSIONING_POLICY.md
+ADE-Working-Repository-/bootstrap_download.md
+ADE-Working-Repository-/docs/README.md
+ADE-Working-Repository-/docs/Repository documentation.
+THE ACTIVE STATE SNAPSHOT.docx

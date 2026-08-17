@@ -1,0 +1,29 @@
+status=HUMAN_INTERFACE_SOURCE_RELATIONSHIP_RESOLVED
+promotion=NONE
+
+json_artifact=Inference_and_Linguistic_Models.json
+json_messages=41
+json_text_chars=65476
+
+pdf_artifact=Inference and Linguistic Models.pdf
+pdf_text_chars=9233
+pdf_native_chat_id=6a63c42f-0948-83ea-a343-a4e251456bbe
+
+json_8word_coverage_pct=4.48
+pdf_8word_coverage_pct=37.67
+matching_json_messages=9
+
+dominant_json_message_1=37
+dominant_json_message_2=39
+dominant_json_message_3=41
+dominant_pdf_coverage_pct_approx=33.36
+observed_total_pdf_coverage_pct=37.67
+
+relationship=DERIVED_OR_EXTRACTED_FROM
+exact_identity=NO
+conversation_corpus_disposition=EXCLUDED
+source_stream=HUMAN_INTERFACE
+
+finding=Observed PDF overlap is concentrated strongly in assistant messages 37, 39, and 41 of the larger JSON source.
+finding=The PDF and JSON are related Human Interface source artifacts but are not exact representations of one another.
+finding=Native ChatGPT provenance does not establish semantic conversation-corpus membership.

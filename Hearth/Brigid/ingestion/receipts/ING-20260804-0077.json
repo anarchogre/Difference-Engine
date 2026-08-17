@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:02:06.323465-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_State_Machine_Specification_v0.1.md",
+  "original_name": "Workflow_State_Machine_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0077",
+  "schema_version": "0.1.0",
+  "sha256": "3de4f8bc79964d006de92b926f9ba915f8ba1b55d6a2e3ce76433226791e6526",
+  "size_bytes": 5195,
+  "source_class": "manual_batch"
+}

@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0029",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:05.177084-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-FRENZY-0001_Validation_Backlog.json",
+    "original_name": "AKS-FRENZY-0001_Validation_Backlog.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0029",
+    "schema_version": "0.1.0",
+    "sha256": "5f2e6441936137507e583684ab6a1cfb4fb73c9be95738ef528effd7e16c38ed",
+    "size_bytes": 644,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

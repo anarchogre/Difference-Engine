@@ -1,0 +1,122 @@
+
+===== queue/SIQ_GPT_PLUS_INTEGRATION.md =====
+# Suggested Implementation Queue — GPT Plus Integration
+
+## SIQ-GPI-001
+
+Title: File Library Verification
+
+Status: Suggested  
+Priority: High
+
+Implement a canonical File Library manifest and verification process.
+
+## SIQ-GPI-002
+
+Title: ChatGPT Project Configuration Verification
+
+Status: Suggested  
+Priority: High
+
+Represent Project instructions, branch role, and expected project configuration as verifiable repository artifacts.
+
+## SIQ-GPI-003
+
+Title: Complete Queue Recovery
+
+Status: Suggested  
+Priority: High
+
+Recover active, accepted, suggested, and completed queues into bootstrap state.
+
+## SIQ-GPI-004
+
+Title: Git Baseline
+
+Status: Suggested  
+Priority: Critical
+
+Create a deliberate initial repository commit after scope and exclusions are verified.
+
+## SIQ-GPI-005
+
+Title: Formal Test Runner
+
+Status: Suggested  
+Priority: Medium
+
+Install or replace pytest dependency with a repository-controlled deterministic test runner.
+
+## SIQ-GPI-006
+
+Title: Drift Detector
+
+Status: Suggested  
+Priority: High
+
+Implement cross-document and implementation drift detection.
+
+## SIQ-GPI-007
+
+Title: Recovery Verifier CLI Integration
+
+Status: Suggested  
+Priority: Medium
+
+Expose the verifier through the canonical `de` command interface.
+
+===== queue/completed/Q-001A-REPOSITORY-RECONCILIATION.md =====
+Mission Complete
+
+Repository reconciliation substantially complete.
+
+Remaining work transferred to Standards.
+
+===== workspace/operational/current/QUEUE.md =====
+# Queue
+
+## Immediate
+
+- Complete repository reconciliation.
+- Reconcile DifferenceEngine.
+- Reconcile FILE_LIBRARY_UPLOADS.
+- Reconcile ChatGPT File Library.
+- Reconcile GitHub repository.
+- Establish canonical repository.
+- Implement automatic terminal session capture.
+- Initialize Git after reconciliation.
+- Rename GitHub repository to DifferenceEngine.
+
+## High
+
+- de bootstrap
+- de doctor
+- de reconcile
+- de snapshot
+- de status
+- de git
+
+## Deferred
+
+- Artifact generation.
+- GitHub Actions.
+- CI/CD.
+- Publication automation.# Next Mission
+
+Repository Reconciliation
+
+Objectives
+
+1. Recover canonical repository topology.
+2. Eliminate repository drift.
+3. Validate operational workspace.
+4. Reconcile GitHub.
+5. Ratify repository constitution.
+6. Resume implementation.
+
+Constraints
+
+- No architectural redesign.
+- No duplicate operational artifacts.
+- Update operational state before creating new operational artifacts.
+- Five-command execution blocks.

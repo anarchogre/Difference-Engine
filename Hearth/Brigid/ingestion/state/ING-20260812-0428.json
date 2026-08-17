@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0428",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:39.235735-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Workflow_State_Machine_Specification_v0.1.md",
+    "original_name": "Workflow_State_Machine_Specification_v0.1.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0428",
+    "schema_version": "0.1.0",
+    "sha256": "3de4f8bc79964d006de92b926f9ba915f8ba1b55d6a2e3ce76433226791e6526",
+    "size_bytes": 5195,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

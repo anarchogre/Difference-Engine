@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:07.465811-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-PRESERVATION-0034_Engineering_Maturity_Snapshot.json",
+  "original_name": "AKS-PRESERVATION-0034_Engineering_Maturity_Snapshot.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0084",
+  "schema_version": "0.1.0",
+  "sha256": "5fd12044a185b77007210f0359620d8472ac520fafd8bf76f1df2a4ebe1b065c",
+  "size_bytes": 1591,
+  "source_class": "manual_batch"
+}

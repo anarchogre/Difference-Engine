@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:54.469648-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Implementation_Roadmap_v0.1.md",
+  "original_name": "Implementation_Roadmap_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0020",
+  "schema_version": "0.1.0",
+  "sha256": "9bf7a07074b94414046d562e7696593e2db26035186ee4a481182a6280936e0d",
+  "size_bytes": 3856,
+  "source_class": "manual_batch"
+}

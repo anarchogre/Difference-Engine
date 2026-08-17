@@ -1,0 +1,5 @@
+/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/ADE/ADE-Working-Repository-/Archive/Archive_Recovery.zip
+/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/ADE_DIFFERENCE_ENGINE/ADE-Working-Repository-/Archive/Archive_Recovery.zip
+/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/census_recovery_archive.py
+/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/RECOVERY_CANDIDATE_CENSUS.json
+/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download/RECOVERY_CANDIDATE_CENSUS.md

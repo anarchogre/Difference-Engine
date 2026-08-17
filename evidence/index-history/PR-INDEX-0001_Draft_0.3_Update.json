@@ -1,0 +1,13 @@
+{
+  "artifact": {
+    "identifier": "PR-INDEX-0001",
+    "version": "0.3-draft",
+    "append": [
+      {
+        "id": "PR-0005",
+        "title": "Architectural Change Preservation",
+        "status": "Active"
+      }
+    ]
+  }
+}

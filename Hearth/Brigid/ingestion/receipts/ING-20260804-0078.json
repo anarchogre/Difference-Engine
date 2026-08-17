@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:02:06.396713-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Versioning_Specification_v0.1.md",
+  "original_name": "Workflow_Versioning_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0078",
+  "schema_version": "0.1.0",
+  "sha256": "e7d2de995256ab6051b1da975565e9d394558681db04c899f8904f5195b7e80c",
+  "size_bytes": 5941,
+  "source_class": "manual_batch"
+}

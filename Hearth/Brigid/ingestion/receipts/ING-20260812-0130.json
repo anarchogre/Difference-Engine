@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:09.917955-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Benediction_v1.0.json",
+  "original_name": "AKS_Benediction_v1.0.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0130",
+  "schema_version": "0.1.0",
+  "sha256": "493601e0304ed38d0c323985d4d342e11c764e01069f185c828b5c82ae0615ea",
+  "size_bytes": 85,
+  "source_class": "manual_batch"
+}

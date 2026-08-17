@@ -1,0 +1,30 @@
+=== REPOSITORY HOOK CENSUS ===
+2026-08-07T21:30:01-05:00
+
+=== HOOK DIRECTORY ===
+d	700	
+f	600	pre-commit
+f	600	pre-push
+
+=== PRE-COMMIT METADATA ===
+  File: /home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/DifferenceEngine/.githooks/pre-commit
+  size: 123       	Blocks: 8          IO Block: 4096   regular file
+Device: 259,6	Inode: 3678460     Links: 1
+Access: (0600/-rw-------)  Uid: ( 1000/reckless-ideator)   Gid: ( 1000/reckless-ideator)
+Access: 2026-08-07 21:04:56.801009512 -0500
+Modify: 2026-08-07 20:00:40.052559982 -0500
+Change: 2026-08-07 20:00:40.052644989 -0500
+ Birth: 2026-08-07 20:00:40.052559982 -0500
+/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/DifferenceEngine/.githooks/pre-commit: a /data/data/com.termux/files/usr/bin/bash script, ASCII text executable
+69c059b1087cd05ddc0baffedfc0b9c22a8cd61a9f0eb62701244b86d519de67  /home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/DifferenceEngine/.githooks/pre-commit
+LINES=8
+
+=== PRE-COMMIT CONTENT ===
+#!/data/data/com.termux/files/usr/bin/bash
+
+echo
+echo "DifferenceEngine pre-commit"
+
+git diff --cached --name-only
+
+exit 0

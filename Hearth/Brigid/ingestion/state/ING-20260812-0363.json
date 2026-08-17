@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0363",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:30.966669-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Developer_Guide_v0.1.md",
+    "original_name": "Developer_Guide_v0.1.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0363",
+    "schema_version": "0.1.0",
+    "sha256": "cf82b71016d0cdba5a31009077e2261af027752b91774b6c4c591b9e2c228724",
+    "size_bytes": 3581,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

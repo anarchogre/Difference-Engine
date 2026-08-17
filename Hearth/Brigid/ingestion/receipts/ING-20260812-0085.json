@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:07.513940-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-PRESERVATION-0035_Architectural_Invariant_Assault.json",
+  "original_name": "AKS-PRESERVATION-0035_Architectural_Invariant_Assault.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0085",
+  "schema_version": "0.1.0",
+  "sha256": "58957ee4dc45a1a3d68d31b64f917d2b06bd0cd7672fb955909444fb4667fb09",
+  "size_bytes": 1505,
+  "source_class": "manual_batch"
+}

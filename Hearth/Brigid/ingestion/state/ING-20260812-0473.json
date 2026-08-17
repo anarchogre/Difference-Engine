@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0473",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:45.281522-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/LICENSE.md",
+    "original_name": "LICENSE.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0473",
+    "schema_version": "0.1.0",
+    "sha256": "d92008e9524939967754476aad971ceee26e71f9c5d0d3155b63438817bbf615",
+    "size_bytes": 126,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

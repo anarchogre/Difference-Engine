@@ -1,0 +1,6 @@
+Verification directory: /data/data/com.termux/files/home/storage/shared/DifferenceEngine/evidence/ingestion/acceptance/20260804_134507
+Regression exit status: 1
+
+/data/data/com.termux/files/usr/bin/python: No module named pytest
+
+Conversation sources found:

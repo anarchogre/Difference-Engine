@@ -1,0 +1,85 @@
+INGESTER MILESTONE LOCK
+Created: 2026-08-04T12:22:00-05:00
+Git HEAD: a081b55
+
+=== FILES ===
+INGESTER_CONTRACT_v0.1.md
+__init__.py
+assets.py
+batch.py
+cli.py
+discover.py
+ids.py
+index.py
+intake.py
+manifest.py
+output.py
+parser.py
+parsers/__init__.py
+parsers/chatgpt.py
+parsers/conversation.py
+parsers/markdown.py
+pipeline.py
+provenance.py
+queues.py
+receipt.py
+recover.py
+references.py
+registry.py
+report.py
+resume.py
+stages.py
+state.py
+tests/run_all.py
+tests/test_chat_pipeline.py
+tests/test_conversation_parser.py
+tests/test_intake.py
+tests/test_markdown_parser.py
+tests/test_pipeline.py
+validation.py
+
+=== SHA256 ===
+16e7d04692042997627af50ae1e60e11456c9175e00a92ee7478cce715455857  ade/services/ingestion/INGESTER_CONTRACT_v0.1.md
+0888cfd8becc73ec27b66b78acd54487c1966ef4b7d3537b83f2e474fd53fb47  ade/services/ingestion/__init__.py
+4597de25194a8e76fae7e9537465d84fb95ad2cee01d50bdd27ea2ae304c436e  ade/services/ingestion/assets.py
+79f406e86c00413ef0a9a5095c43aadaa28629fd700071c824aa6cdd8197608a  ade/services/ingestion/batch.py
+88f39ba37b65c19a53a1d83c6d01edbdb26cde64507b8194f4161750ff44b3de  ade/services/ingestion/cli.py
+606cd1ed8dd226a56492b108f111af7953d1c1037fef1f429cc7bc9639823913  ade/services/ingestion/discover.py
+afa5701910517dd863e08704e41804b08426be9b8757be51b6636c4c53e28967  ade/services/ingestion/ids.py
+2d0ae271c005a77fd0c29435f37119db6388c909388698d5bfcfc791ff4116dd  ade/services/ingestion/index.py
+160d0b878d6c93f427fc229b4b1865ad8c2717e15ed3da0c372646e9deb6e415  ade/services/ingestion/intake.py
+f384c99ab6cb5e3a88f5742dbffe35332be9524d2aea256b8f7622a79b7e342a  ade/services/ingestion/manifest.py
+dc0ce05f8bc57bc05a2e6a12b18a1ebf1b3acfbf941a6fd730c54575b7bec3ef  ade/services/ingestion/output.py
+57531c180a5be4e525bd1ef2bc699b6bd69346aad5b8f6f3936214ad1a2c8c16  ade/services/ingestion/parser.py
+6c5e0c77f8943165c79fca82bce89eef69d89bbdf67ac674ba06c3d08702fdb0  ade/services/ingestion/parsers/__init__.py
+a361110ee6266eaf3c7afe359a79c0e877b6e7ba2bb585b80085b2dc567222be  ade/services/ingestion/parsers/chatgpt.py
+780d3bfa9c30a76aa3d677abcd765fa01937f59ac2f5ed28c7550484753d2461  ade/services/ingestion/parsers/conversation.py
+a81a6865c52dd11c9f961c45944e6c40f6d78eb4627251b57242af8f3d7d9c35  ade/services/ingestion/parsers/markdown.py
+68893d9cb37e10c4209969788cfec7174fe78005d03e6d5bfb0c017d4dba1508  ade/services/ingestion/pipeline.py
+862ad3ba472782881fab7d1844e5df9b92a9947f6935f29bf1a410dcbe2145cf  ade/services/ingestion/provenance.py
+ab82985683c123d85dd2cf72663667722b3180832ed6a5708f26402c87a6e0e3  ade/services/ingestion/queues.py
+a0fd57e014b550c4b9b53e4d1e86bcbc4f71e68d31bc36b18440579aae4d2d4e  ade/services/ingestion/receipt.py
+2b00239b16fda1407004c2a1c63964d988e23f3995fe86e3478995ded79011dc  ade/services/ingestion/recover.py
+ee348d1c46311eb532488a904cb93a0ac47413fd6941f842ede049e215ab4d9e  ade/services/ingestion/references.py
+aeda222eac923f5e99ce6c03b62e2c411544aed0c038222f3b1a7485c2c14e73  ade/services/ingestion/registry.py
+98ec9f6d2a8cbba886a77f2e305655d41d1682908674181d08ac1567dc1209bc  ade/services/ingestion/report.py
+d6da15ae597dfb5595211b54d54b86f691313b21198e7eeabb260b3270a904cd  ade/services/ingestion/resume.py
+c9b6f3d5463e77010de6403bad5b607fd5a71ce5e64e8d07c08c4b4acf467f09  ade/services/ingestion/stages.py
+48ef372914f84b351a3d37cca44b4f09e258f296caaf0ec153d427beac7f8dc1  ade/services/ingestion/state.py
+be63a9e6de3274c75b9caf6c8256320785cfb8eed220931842b8d8231b011dc4  ade/services/ingestion/tests/run_all.py
+2c4e8338a4b31e376353dd07c437f77f80f51f999ac06c0a43f75fa0b2031c9f  ade/services/ingestion/tests/test_chat_pipeline.py
+51f356553c06ee016353e20b45aa41d3326aefdc0a6e2b90a9becee4c0779499  ade/services/ingestion/tests/test_conversation_parser.py
+f3dca53cc6b602a909b061764a0e7c008b7c94bff3992fddce0d7517c17d76d5  ade/services/ingestion/tests/test_intake.py
+26a1eaa6f568169261884d8186032349d214450c87da27d319e6cfb626a51efc  ade/services/ingestion/tests/test_markdown_parser.py
+eb6c4e55f60d0576a9c48b1eefc107657a08541f07e0c1e52315988180f8d367  ade/services/ingestion/tests/test_pipeline.py
+e116c57be4b79485208d310b092a514892866a5fa7dfbae28845a53a9de090b0  ade/services/ingestion/validation.py
+
+=== TESTS ===
+PASS
+PASS
+PASS
+workspace/operational/ingestion/test_output/TEST-PIPELINE-0003
+PASS
+PASS
+workspace/operational/ingestion/test_output/TEST-CHAT-0002
+ALL PASS

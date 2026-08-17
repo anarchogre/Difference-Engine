@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0201",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:14.852412-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Foundation-Package-Alpha/FPA-0004-ProductionState.json",
+    "original_name": "FPA-0004-ProductionState.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0201",
+    "schema_version": "0.1.0",
+    "sha256": "f9717bcff7ed60abce6ea5bd986a6f5c6ab5f08ff2136b3d77cc8c7406819af9",
+    "size_bytes": 948,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

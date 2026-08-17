@@ -1,0 +1,15 @@
+===== ade/kernel/bootstrap_loader/artifacts.py =====
+FROM dataclasses IMPORT dataclass
+FROM pathlib IMPORT Path
+FROM filesystem IMPORT require
+CLASS BootstrapArtifacts
+FUNCTION discover_artifacts
+
+===== ade/kernel/bootstrap_loader/bootstrap.py =====
+FROM artifacts IMPORT bootstrap
+FUNCTION load_bootstrap
+
+===== ade/kernel/tests/test_bootstrap_loader.py =====
+FROM ade.kernel.bootstrap_loader.loader IMPORT initialize
+FUNCTION test_initialize
+

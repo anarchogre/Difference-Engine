@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0648",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:49:12.468166-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Rebuild.md/Completed Queue.md",
+    "original_name": "Completed Queue.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0648",
+    "schema_version": "0.1.0",
+    "sha256": "ad903ae9fcaadd1e3b7b0596355d0b508b3a9b1de7a1b904ee44d31070334c52",
+    "size_bytes": 277,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

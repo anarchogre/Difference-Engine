@@ -1,0 +1,56 @@
+=== MODULE SIZES ===
+21346	drift.py
+14492	verifier.py
+2856	queue.py
+1600	mission.py
+1379	loader.py
+1238	task.py
+570	artifacts.py
+447	bootstrap.py
+429	discover.py
+369	validators.py
+361	paths.py
+342	modes.py
+334	result.py
+309	state.py
+301	readiness.py
+240	models.py
+218	config.py
+210	specifications.py
+195	execution.py
+186	errors.py
+185	context.py
+172	main.py
+168	filesystem.py
+163	contracts.py
+162	constants.py
+148	recovery.py
+135	governance.py
+128	logging.py
+120	health.py
+53	version.py
+33	__init__.py
+31	__main__.py
+
+=== ENTRYPOINT REFERENCES ===
+ade/kernel/bootstrap_loader/__main__.py:1:from .main import main
+ade/kernel/bootstrap_loader/main.py:5:from .loader import initialize
+ade/kernel/bootstrap_loader/main.py:7:def main():
+ade/kernel/bootstrap_loader/main.py:11:if __name__ == "__main__":
+ade/kernel/bootstrap_loader/loader.py:5:from .discover import discover_repository
+ade/kernel/bootstrap_loader/loader.py:6:from .execution import enter_execution_mode
+ade/kernel/bootstrap_loader/loader.py:7:from .governance import load_governance
+ade/kernel/bootstrap_loader/loader.py:8:from .logging import log
+ade/kernel/bootstrap_loader/loader.py:9:from .mission import recover_mission
+ade/kernel/bootstrap_loader/loader.py:10:from .modes import activate_modes
+ade/kernel/bootstrap_loader/loader.py:11:from .queue import recover_queues
+ade/kernel/bootstrap_loader/loader.py:12:from .readiness import verify_readiness
+ade/kernel/bootstrap_loader/loader.py:13:from .recovery import recover_state
+ade/kernel/bootstrap_loader/loader.py:14:from .result import BootstrapResult
+ade/kernel/bootstrap_loader/loader.py:15:from .specifications import load_specifications
+ade/kernel/bootstrap_loader/loader.py:16:from .state import OperationalState
+ade/kernel/bootstrap_loader/loader.py:17:from .task import recover_task
+ade/kernel/bootstrap_loader/loader.py:18:from .validators import validate
+ade/kernel/bootstrap_loader/bootstrap.py:1:from pathlib import Path
+ade/kernel/bootstrap_loader/bootstrap.py:3:from .artifacts import BootstrapArtifacts
+ade/kernel/bootstrap_loader/bootstrap.py:4:from .artifacts import discover_artifacts

@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:30.725647-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Configuration_Management_Specification_v0.1.md",
+  "original_name": "Configuration_Management_Specification_v0.1.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0361",
+  "schema_version": "0.1.0",
+  "sha256": "cb516390740a2b2b56b726de591ba147a3f9b4bf334f6044b38af45f72306b63",
+  "size_bytes": 3723,
+  "source_class": "manual_batch"
+}

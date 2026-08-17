@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0466",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:44.304606-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/INDEX.md",
+    "original_name": "INDEX.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0466",
+    "schema_version": "0.1.0",
+    "sha256": "0f10ab7067dd3e48d578369dc70bce0da737a24cfac21f68897e5403b04f084f",
+    "size_bytes": 573,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

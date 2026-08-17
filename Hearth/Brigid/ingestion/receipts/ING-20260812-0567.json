@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:59.228849-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/QST_Specification_v1.0.json",
+  "original_name": "QST_Specification_v1.0.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0567",
+  "schema_version": "0.1.0",
+  "sha256": "9f13d94cde3c217d84beb964ab78329e3051cfc15546c36313a3e5484f16bd19",
+  "size_bytes": 433,
+  "source_class": "manual_batch"
+}

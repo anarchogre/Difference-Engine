@@ -1,0 +1,20 @@
+FILE: BOOTSTRAP/BST-CBD-OPS_Operational_Bedrock_and_Ingester_Execution_v0.1.0.md
+
+1:# Operational Bedrock and Ingester Execution Bootstrap
+3:ID: BST-CBD-OPS
+4:Version: 0.1.0
+5:Status: Execution Bootstrap
+6:Scope: Computational Bedrock → Operations → Conversation Ingester
+7:Authority: Human operator instruction under the active Constitutional Kernel
+15:# 0. Bootstrap Status
+33:# 1. Initialization Sequence
+68:Current Mission:
+74:Blockers:
+77:Next Operation:
+83:# Operational Bedrock Constitutional Candidates Addendum
+85:ID: ADD-CBD-0001
+86:Version: 0.1.0
+87:Status: Experimental Addendum
+88:Authority: None beyond preserved candidate status
+90:Purpose: Preserve constitutional proposals recovered during Operational Bedrock reduction without silently incorporating them into the execution bootstrap.
+94:# 1. Governance Notice

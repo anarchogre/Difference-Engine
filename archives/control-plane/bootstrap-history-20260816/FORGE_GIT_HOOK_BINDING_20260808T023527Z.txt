@@ -1,0 +1,20 @@
+=== FORGE GIT HOOK BINDING ===
+2026-08-07T21:35:27-05:00
+
+=== CONFIGURED HOOK PATH ===
+/home/reckless-ideator/.local/libexec/DifferenceEngine-hooks
+
+=== WRAPPER ===
+-rwx------ 700 /home/reckless-ideator/.local/libexec/DifferenceEngine-hooks/pre-commit
+613897cef6347544d7d9537c31cf05620d6da9ffa6cf13b6fcff3393db9f492b  /home/reckless-ideator/.local/libexec/DifferenceEngine-hooks/pre-commit
+#!/usr/bin/env bash
+set -e
+exec bash "$(git rev-parse --show-toplevel)/.githooks/pre-commit" "$@"
+
+=== REPOSITORY HOOK ===
+69c059b1087cd05ddc0baffedfc0b9c22a8cd61a9f0eb62701244b86d519de67  /home/reckless-ideator/DifferenceEngine/.githooks/pre-commit
+
+=== MANUAL HOOK TEST ===
+
+DifferenceEngine pre-commit
+HOOK_TEST=PASS

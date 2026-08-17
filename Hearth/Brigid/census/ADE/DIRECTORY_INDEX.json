@@ -1,0 +1,179 @@
+[
+  {
+    "path": ".cg"
+  },
+  {
+    "path": ".cg/editor"
+  },
+  {
+    "path": ".cg/gradle-sync"
+  },
+  {
+    "path": "ADE_REPO_zips"
+  },
+  {
+    "path": "Archive"
+  },
+  {
+    "path": "Archive/Evidence"
+  },
+  {
+    "path": "Archive/Evidence/OBS-0001"
+  },
+  {
+    "path": "Archive/Evidence/OBS-0001/Derived"
+  },
+  {
+    "path": "Archive/Evidence/OBS-0001/Notes"
+  },
+  {
+    "path": "Archive/Evidence/OBS-0001/Sources"
+  },
+  {
+    "path": "Archive/Imports"
+  },
+  {
+    "path": "Archive/Imports/Accepted"
+  },
+  {
+    "path": "Archive/Imports/Parsing"
+  },
+  {
+    "path": "Archive/Imports/Pending"
+  },
+  {
+    "path": "Archive/Imports/Rejected"
+  },
+  {
+    "path": "Archive/Imports/Review"
+  },
+  {
+    "path": "Archive/Logs"
+  },
+  {
+    "path": "Archive/Recovery"
+  },
+  {
+    "path": "Archive/Recovery/AKS"
+  },
+  {
+    "path": "Archive/Recovery/AKS/DOCX"
+  },
+  {
+    "path": "Archive/Recovery/Archives"
+  },
+  {
+    "path": "Archive/Recovery/Archives/MISC"
+  },
+  {
+    "path": "Archive/Recovery/Archives/TAR"
+  },
+  {
+    "path": "Archive/Recovery/Archives/ZIP"
+  },
+  {
+    "path": "Archive/Recovery/Audio"
+  },
+  {
+    "path": "Archive/Recovery/Chatgpt"
+  },
+  {
+    "path": "Archive/Recovery/Chatgpt/Exports"
+  },
+  {
+    "path": "Archive/Recovery/Chatgpt/JSON"
+  },
+  {
+    "path": "Archive/Recovery/Chatgpt/Screenshots"
+  },
+  {
+    "path": "Archive/Recovery/Chatgpt/Shared Links"
+  },
+  {
+    "path": "Archive/Recovery/Clinician Edition"
+  },
+  {
+    "path": "Archive/Recovery/Documents"
+  },
+  {
+    "path": "Archive/Recovery/Documents/DOCX"
+  },
+  {
+    "path": "Archive/Recovery/Documents/PDF"
+  },
+  {
+    "path": "Archive/Recovery/Documents/PDT"
+  },
+  {
+    "path": "Archive/Recovery/Documents/TXT"
+  },
+  {
+    "path": "Archive/Recovery/Foundation Package Alpha"
+  },
+  {
+    "path": "Archive/Recovery/Images"
+  },
+  {
+    "path": "Archive/Recovery/Images/JPG"
+  },
+  {
+    "path": "Archive/Recovery/Images/PNG"
+  },
+  {
+    "path": "Archive/Recovery/Images/WEBP"
+  },
+  {
+    "path": "Archive/Recovery/Misc"
+  },
+  {
+    "path": "Archive/Recovery/Presentations"
+  },
+  {
+    "path": "Archive/Recovery/Spreadsheets"
+  },
+  {
+    "path": "Archive/Recovery/Video"
+  },
+  {
+    "path": "Archive/Snapshots"
+  },
+  {
+    "path": "Archive/Snapshots/PP"
+  },
+  {
+    "path": "CLAUDE START HERE"
+  },
+  {
+    "path": "Governance"
+  },
+  {
+    "path": "In ox"
+  },
+  {
+    "path": "Library"
+  },
+  {
+    "path": "PP"
+  },
+  {
+    "path": "Parser"
+  },
+  {
+    "path": "Publications"
+  },
+  {
+    "path": "RC"
+  },
+  {
+    "path": "Research"
+  },
+  {
+    "path": "Specifications"
+  },
+  {
+    "path": "Tools"
+  },
+  {
+    "path": "docs"
+  }
+]

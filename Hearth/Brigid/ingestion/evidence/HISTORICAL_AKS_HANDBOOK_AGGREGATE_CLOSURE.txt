@@ -1,0 +1,42 @@
+status=AKS_HANDBOOK_AGGREGATE_IDENTITY_RESOLVED
+promotion=NONE
+
+structured_artifact_family=AKS_HANDBOOK
+representative_artifact=AKS_AOS_1_0__All_Previous_data_and_conv.json
+structured_messages=55
+json_words=20114
+json_8word_shingles=19999
+
+historical_conversations_materially_contained=4
+
+conversation_1=First Conversation .docx
+conversation_1_historical_coverage_pct=100.00
+conversation_1_json_word_start=951
+conversation_1_json_word_end=1652
+
+conversation_2=Second Conversation .docx
+conversation_2_historical_coverage_pct=99.74
+conversation_2_json_word_start=1827
+conversation_2_json_word_end=8274
+
+conversation_3=Third Conversation .docx
+conversation_3_historical_coverage_pct=99.45
+conversation_3_json_word_start=9806
+conversation_3_json_word_end=11363
+
+conversation_4=Fourth Conversation .docx
+conversation_4_historical_coverage_pct=99.22
+conversation_4_json_word_start=12368
+conversation_4_json_word_end=19134
+
+json_coverage_by_conversations_1_4_pct=55.09
+shared_conversations_1_4_8word_shingles=11018
+remaining_json_material_pct_approx=44.91
+remaining_json_material_identity=UNRESOLVED
+
+ordering=FIRST_THEN_SECOND_THEN_THIRD_THEN_FOURTH
+additional_underlying_conversation_count=NOT_ESTABLISHED
+
+finding=The AKS/Handbook structured JSON family is an ordered aggregate representation containing historical Conversations 1 through 4.
+finding=The family must not be counted as an additional standalone conversation identity merely because it has a distinct structured JSON representation.
+finding=Approximately 44.91 percent of the JSON shingle space is not explained by Conversations 1 through 4 and remains unresolved.

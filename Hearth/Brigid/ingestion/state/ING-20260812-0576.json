@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0576",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:49:00.645982-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/Repository_State_PP0007.json",
+    "original_name": "Repository_State_PP0007.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0576",
+    "schema_version": "0.1.0",
+    "sha256": "1f126351197941a1adeccef8fcd33bebac5d687b24564c6fb12c5088d69d2433",
+    "size_bytes": 286,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

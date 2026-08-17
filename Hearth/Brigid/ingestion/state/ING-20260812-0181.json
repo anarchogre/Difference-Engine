@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0181",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:13.306785-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_SPEC_Roadmap_Update.json",
+    "original_name": "AKS_SPEC_Roadmap_Update.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0181",
+    "schema_version": "0.1.0",
+    "sha256": "f4850fe4a62567c7d64a5fa18eccc6a04d6e2274fa00c6074745efa657b132d7",
+    "size_bytes": 824,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

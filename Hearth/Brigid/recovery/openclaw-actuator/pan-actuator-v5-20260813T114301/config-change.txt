@@ -1,0 +1,1 @@
+Error: Config validation failed: agents.defaults.compaction: Unrecognized key: "enabled"

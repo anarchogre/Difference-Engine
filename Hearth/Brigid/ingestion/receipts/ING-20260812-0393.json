@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:34.656508-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Security_and_Integrity_Specification_v0.1.md",
+  "original_name": "Security_and_Integrity_Specification_v0.1.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0393",
+  "schema_version": "0.1.0",
+  "sha256": "1aa662e2e55364f23b2867e28f32ff1d5f1af701bab53540ebc3f75e54d564a8",
+  "size_bytes": 3814,
+  "source_class": "manual_batch"
+}

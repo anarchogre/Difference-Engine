@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0057",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:06.267082-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-PRESERVATION-0006_Kernel_Constraint_Checkpoint.json",
+    "original_name": "AKS-PRESERVATION-0006_Kernel_Constraint_Checkpoint.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0057",
+    "schema_version": "0.1.0",
+    "sha256": "b458e8178f0a4f7c16b80bf6ce0b66cd16388679af63dc11e55a2182e944480a",
+    "size_bytes": 417,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

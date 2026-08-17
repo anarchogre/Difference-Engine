@@ -1,0 +1,43 @@
+identity	historical_docx	json_coverage_pct	historical_coverage_pct	shared_8word_shingles	json_in_historical	historical_in_json
+AKS_HANDBOOK	Eighteenth conversation - final.docx	0.16	0.12	32	False	False
+AKS_HANDBOOK	Eighth conversation .docx	0.00	0.00	0	False	False
+AKS_HANDBOOK	Eleventh conversation .docx	0.00	0.00	0	False	False
+AKS_HANDBOOK	Fifteenth conversation.docx	0.00	0.00	0	False	False
+AKS_HANDBOOK	Fifth Conversation.docx	0.00	0.00	0	False	False
+AKS_HANDBOOK	First Conversation .docx	3.47	100.00	694	False	True
+AKS_HANDBOOK	Fourteenth conversation .docx	0.00	0.00	0	False	False
+AKS_HANDBOOK	Fourth Conversation .docx	17.90	99.22	3579	False	False
+AKS_HANDBOOK	Last chat before starting new project.docx	0.22	1.26	43	False	False
+AKS_HANDBOOK	Nineteenth conversation  (1).docx	0.00	0.00	0	False	False
+AKS_HANDBOOK	Ninth Conversation .docx	0.00	0.00	0	False	False
+AKS_HANDBOOK	Second Conversation .docx	27.37	99.74	5474	False	False
+AKS_HANDBOOK	Seventeenth conversation .docx	0.01	0.01	1	False	False
+AKS_HANDBOOK	Seventh conversation .docx	0.00	0.00	0	False	False
+AKS_HANDBOOK	Sixteenth conversation .docx	0.00	0.00	0	False	False
+AKS_HANDBOOK	Sixth Conversation .docx	0.00	0.00	0	False	False
+AKS_HANDBOOK	Tenth conversation .docx	0.00	0.00	0	False	False
+AKS_HANDBOOK	Third Conversation .docx	6.36	99.45	1271	False	False
+AKS_HANDBOOK	Thirteenth conversation .docx	0.00	0.00	0	False	False
+AKS_HANDBOOK	Twelfth conversation .docx	0.00	0.00	0	False	False
+AKS_HANDBOOK	Twenty conversation .docx	0.00	0.00	0	False	False
+FORENSIC	Eighteenth conversation - final.docx	0.01	0.01	2	False	False
+FORENSIC	Eighth conversation .docx	0.00	0.00	0	False	False
+FORENSIC	Eleventh conversation .docx	0.00	0.00	0	False	False
+FORENSIC	Fifteenth conversation.docx	0.00	0.00	0	False	False
+FORENSIC	Fifth Conversation.docx	0.00	0.00	0	False	False
+FORENSIC	First Conversation .docx	0.00	0.00	0	False	False
+FORENSIC	Fourteenth conversation .docx	0.00	0.00	0	False	False
+FORENSIC	Fourth Conversation .docx	0.00	0.00	0	False	False
+FORENSIC	Last chat before starting new project.docx	0.00	0.00	0	False	False
+FORENSIC	Nineteenth conversation  (1).docx	0.00	0.00	0	False	False
+FORENSIC	Ninth Conversation .docx	0.00	0.00	0	False	False
+FORENSIC	Second Conversation .docx	0.00	0.00	0	False	False
+FORENSIC	Seventeenth conversation .docx	0.00	0.00	0	False	False
+FORENSIC	Seventh conversation .docx	0.00	0.00	0	False	False
+FORENSIC	Sixteenth conversation .docx	0.00	0.00	0	False	False
+FORENSIC	Sixth Conversation .docx	0.00	0.00	0	False	False
+FORENSIC	Tenth conversation .docx	0.00	0.00	0	False	False
+FORENSIC	Third Conversation .docx	0.00	0.00	0	False	False
+FORENSIC	Thirteenth conversation .docx	0.00	0.00	0	False	False
+FORENSIC	Twelfth conversation .docx	0.00	0.00	0	False	False
+FORENSIC	Twenty conversation .docx	0.00	0.00	0	False	False

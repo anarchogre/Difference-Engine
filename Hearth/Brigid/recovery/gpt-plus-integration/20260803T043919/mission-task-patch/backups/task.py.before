@@ -1,0 +1,6 @@
+"""
+Task recovery.
+"""
+
+def recover_task() -> str | None:
+    return None

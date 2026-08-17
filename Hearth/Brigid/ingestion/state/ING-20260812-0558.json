@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0558",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:57.821095-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/PR-0002_Incremental_Canonical_Preservation.json",
+    "original_name": "PR-0002_Incremental_Canonical_Preservation.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0558",
+    "schema_version": "0.1.0",
+    "sha256": "c0eaf338cb2b77ccb3053bce3b8d71de1a4c2f16913d92770a927f1fa9d1e3c0",
+    "size_bytes": 782,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

@@ -1,0 +1,140 @@
+{
+  "artifacts": {
+    "amendments": "/home/reckless-ideator/DifferenceEngine/Repository/Governance/amendments.md",
+    "bootstrap": "/home/reckless-ideator/DifferenceEngine/Repository/Governance/bootstrap.md",
+    "constitution": "/home/reckless-ideator/DifferenceEngine/Repository/Governance/constitution.md"
+  },
+  "blockers": [],
+  "degraded_checks": {
+    "drift_detection": true,
+    "file_library_verification": true,
+    "formal_test_runner": true,
+    "git_baseline": true,
+    "library_governance": true,
+    "project_configuration_verification": true,
+    "queue_recovery": false
+  },
+  "drift_summary": {
+    "blocking": 0,
+    "domains": {
+      "repository": 1
+    },
+    "findings": [
+      {
+        "classification": "working_state",
+        "detail": "Working tree contains 56 changed path(s).",
+        "domain": "repository",
+        "severity": "informational",
+        "subject": "Git working tree"
+      }
+    ],
+    "informational": 1,
+    "total": 1,
+    "warnings": 0
+  },
+  "execution_mode": "Execution",
+  "external_verification_status": {
+    "file_library": {
+      "externally_verified": true,
+      "manifest_exists": true,
+      "required_artifacts": 12,
+      "status": "verified",
+      "verified_artifacts": 12
+    },
+    "project_configuration": {
+      "externally_verified": true,
+      "manifest_exists": true,
+      "status": "verified",
+      "verification_basis": [
+        "project instructions loaded",
+        "repository-first governance active",
+        "Babbage execution role active",
+        "six execution offices declared",
+        "phone-first Termux constraints loaded"
+      ]
+    },
+    "schema_version": "1.1",
+    "verified_at": "2026-08-03T11:14:00-05:00"
+  },
+  "governance_root": "/home/reckless-ideator/DifferenceEngine/Repository/Governance",
+  "library_governance_status": {
+    "artifacts": 12,
+    "unique_identifiers": true,
+    "unique_names": true,
+    "verified": true
+  },
+  "missing_artifacts": [],
+  "mission": "Repository Reconciliation",
+  "queue_state": {
+    "active": 0,
+    "completed": 1,
+    "deferred": 0,
+    "implementation": 0,
+    "suggested": 1,
+    "unknown": 2
+  },
+  "repository_root": "/home/reckless-ideator/DifferenceEngine",
+  "specification_root": "/home/reckless-ideator/DifferenceEngine/specifications",
+  "status": "DEGRADED",
+  "task": "Operational State Reconciliation",
+  "timestamp": "2026-08-08T18:44:57.044585+00:00",
+  "verified_artifacts": [
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/home/reckless-ideator/DifferenceEngine/Repository/Governance/constitution.md",
+      "size": 8507
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/home/reckless-ideator/DifferenceEngine/Repository/Governance/amendments.md",
+      "size": 1103
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/home/reckless-ideator/DifferenceEngine/Repository/Governance/bootstrap.md",
+      "size": 395
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/home/reckless-ideator/DifferenceEngine/workspace/operational/bootstrap/BOOTSTRAP_vNext.md",
+      "size": 2491
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/home/reckless-ideator/DifferenceEngine/workspace/operational/current/ACTIVE_MISSION.md",
+      "size": 206
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/home/reckless-ideator/DifferenceEngine/workspace/operational/current/ACTIVE_TASK.md",
+      "size": 416
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/home/reckless-ideator/DifferenceEngine/workspace/operational/recovery/RECOVERY_SOP.md",
+      "size": 2839
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/home/reckless-ideator/DifferenceEngine/workspace/operational/recovery/RECOVERY_CHECKLIST.md",
+      "size": 1393
+    },
+    {
+      "exists": true,
+      "is_file": true,
+      "path": "/home/reckless-ideator/DifferenceEngine/workspace/operational/recovery/RECOVERY_VERIFIER_SPECIFICATION.md",
+      "size": 2291
+    }
+  ],
+  "warnings": [
+    "DEGRADED: queue_recovery"
+  ]
+}

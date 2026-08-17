@@ -1,0 +1,8 @@
+=== COMMAND ===
+de-copyout is /home/reckless-ideator/.local/bin/de-copyout
+
+=== PROCESSES ===
+
+=== USER UNITS ===
+
+=== SHELL HOOKS ===

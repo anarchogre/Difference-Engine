@@ -1,0 +1,7 @@
+RUN=20260803T043919
+PWD=/data/data/com.termux/files/home/storage/shared/DifferenceEngine
+DATE=2026-08-03T04:39:19-05:00
+HOST=Linux localhost 4.19.157-perf+ #1 SMP PREEMPT Wed Feb 1 12:41:12 CST 2023 aarch64 Android
+SHELL=/data/data/com.termux/files/usr/bin/bash
+GIT=git version 2.54.0
+PYTHON=Python 3.13.13

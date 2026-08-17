@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:06.308596-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-PRESERVATION-0007_Theorem_Queue_Checkpoint.json",
+  "original_name": "AKS-PRESERVATION-0007_Theorem_Queue_Checkpoint.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0058",
+  "schema_version": "0.1.0",
+  "sha256": "729a9ce666bf3d123a281f0507a096893bcec85e5a50b2a5e47c92238e1a586a",
+  "size_bytes": 376,
+  "source_class": "manual_batch"
+}

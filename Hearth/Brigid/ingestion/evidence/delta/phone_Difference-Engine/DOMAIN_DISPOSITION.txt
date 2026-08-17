@@ -1,0 +1,8 @@
+domain=phone_differenceengine
+in_scope_files=1128
+conversation_candidates=1
+verified_candidate_hashes=1
+unverified_candidate_hashes=0
+conversation_delta=NONE_DETECTED
+excluded_generated_test_material=true
+promotion=NONE

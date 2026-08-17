@@ -1,0 +1,26 @@
+Verified manifest entries: 24
+New packages emitted: 23
+
+workspace/operational/ingestion/output/ING-20260804-0079
+workspace/operational/ingestion/output/ING-20260804-0080
+workspace/operational/ingestion/output/ING-20260804-0081
+workspace/operational/ingestion/output/ING-20260804-0082
+workspace/operational/ingestion/output/ING-20260804-0083
+workspace/operational/ingestion/output/ING-20260804-0084
+workspace/operational/ingestion/output/ING-20260804-0085
+workspace/operational/ingestion/output/ING-20260804-0086
+workspace/operational/ingestion/output/ING-20260804-0087
+workspace/operational/ingestion/output/ING-20260804-0088
+workspace/operational/ingestion/output/ING-20260804-0089
+workspace/operational/ingestion/output/ING-20260804-0090
+workspace/operational/ingestion/output/ING-20260804-0091
+workspace/operational/ingestion/output/ING-20260804-0092
+workspace/operational/ingestion/output/ING-20260804-0093
+workspace/operational/ingestion/output/ING-20260804-0094
+workspace/operational/ingestion/output/ING-20260804-0095
+workspace/operational/ingestion/output/ING-20260804-0096
+workspace/operational/ingestion/output/ING-20260804-0097
+workspace/operational/ingestion/output/ING-20260804-0098
+workspace/operational/ingestion/output/ING-20260804-0099
+workspace/operational/ingestion/output/ING-20260804-0100
+workspace/operational/ingestion/output/ING-20260804-0101

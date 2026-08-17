@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0507",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:50.105894-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/SECURITY.md",
+    "original_name": "SECURITY.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0507",
+    "schema_version": "0.1.0",
+    "sha256": "5801ed6cb73fa0240eb051ca432f5a479cc59f2545d1ae78eb58e9916d5a9bb5",
+    "size_bytes": 244,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

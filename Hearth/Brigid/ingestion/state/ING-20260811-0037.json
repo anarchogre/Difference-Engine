@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260811-0037",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-11T22:18:49.310794-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/Forensic_Parser_Workflow_reverse_parse_901pm_7_23_26.json",
+    "original_name": "Forensic_Parser_Workflow_reverse_parse_901pm_7_23_26.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260811-0037",
+    "schema_version": "0.1.0",
+    "sha256": "773a4f2475c5a271bd5ccc7f1e5df1e559d204e7cd0dd53c375b4b0226a70ab2",
+    "size_bytes": 138106,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

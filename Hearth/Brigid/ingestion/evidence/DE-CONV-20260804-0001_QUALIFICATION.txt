@@ -1,0 +1,28 @@
+CONVERSATION INGESTION QUALIFICATION
+
+Package: workspace/operational/ingestion/output/DE-CONV-20260804-0001
+Source: Kernel_and_Bootstrap_Load.md(1).txt
+Source bytes: 212180
+Source SHA-256: 1bb1d6b364864de9b346f27e67bb111153e65db14806a483406816602bfe2529
+Receipt hash: 1bb1d6b364864de9b346f27e67bb111153e65db14806a483406816602bfe2529
+Hash match: True
+
+Parsed kind: markdown
+Recovered turns/messages: 0
+Assets: 0
+References: 0
+Queue candidates: 0
+
+Validation: {'errors': ['invalid_conversation_kind', 'no_conversation_turns', 'no_assets'], 'passed': False}
+
+Manifest keys:
+asset_count
+command_count
+kind
+provenance
+queue_count
+receipt
+reference_count
+title
+turn_count
+validation

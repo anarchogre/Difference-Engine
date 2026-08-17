@@ -1,0 +1,26 @@
+--- workspace/operational/recovery/gpt-plus-integration/20260803T043919/formal-test-runner-integration/backups/verifier.py.before	2026-08-03 05:19:06.106587084 -0500
++++ ade/kernel/bootstrap_loader/verifier.py	2026-08-03 05:19:06.216587095 -0500
+@@ -182,12 +182,22 @@
+         and drift_summary["warnings"] == 0
+     )
+ 
++    formal_test_runner_path = (
++        repository_root
++        / "ade/kernel/tests/run_tests.py"
++    )
++
++    formal_test_runner_ok = (
++        formal_test_runner_path.is_file()
++        and formal_test_runner_path.stat().st_size > 0
++    )
++
+     degraded = {
+         "file_library_verification": False,
+         "project_configuration_verification": False,
+         "queue_recovery": queue_recovery_ok,
+         "git_baseline": has_commit,
+-        "formal_test_runner": False,
++        "formal_test_runner": formal_test_runner_ok,
+         "drift_detection": drift_detection_ok,
+     }
+ 

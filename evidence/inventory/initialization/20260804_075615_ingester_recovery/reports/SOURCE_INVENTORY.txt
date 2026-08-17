@@ -1,0 +1,23 @@
+INGESTER RECOVERY SOURCE INVENTORY
+Generated: 2026-08-04T07:56:15-05:00
+
+PRESENT  architecture/parser/PARSER_ARCHITECTURE_v1.md
+  bytes: 0
+  lines: 0
+  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+PRESENT  architecture/formatter/UNIVERSAL_FORMATTER_ARCHITECTURE_v1.md
+  bytes: 0
+  lines: 0
+  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+PRESENT  architecture/artifacterator/UNIVERSAL_ARTIFACTERATOR_ARCHITECTURE_v1.md
+  bytes: 0
+  lines: 0
+  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+PRESENT  BOOTSTRAP/Recover Existing Injestion Files.md
+  bytes: 549
+  lines: 9
+  sha256: c6573a9c74d41e94198b96dd0173dcd5a6896d5279d6b558e150f7be7e8761be
+PRESENT  BOOTSTRAP/BST-CBD-OPS_Operational_Bedrock_and_Ingester_Execution_v0.1.0.md
+  bytes: 2704
+  lines: 107
+  sha256: 31a6c22535fa65d081a21b1c65349e92834c5cb1be0cabcf19bb4bf8b1b42db5

@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:41.889262-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CA_Execution_Chunking_Standard.md",
+  "original_name": "CA_Execution_Chunking_Standard.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0448",
+  "schema_version": "0.1.0",
+  "sha256": "bc2ba238a6d4d1528ba37dc0de5023970d21a050c5494803e5d71ebb2d805152",
+  "size_bytes": 1848,
+  "source_class": "manual_batch"
+}

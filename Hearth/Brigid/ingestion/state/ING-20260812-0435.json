@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0435",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:40.150126-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Templates/GOV.template.md",
+    "original_name": "GOV.template.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0435",
+    "schema_version": "0.1.0",
+    "sha256": "d2440337c059fc47ba5161f2a053310b128b7c85abc7b5932d13a34acfaa200a",
+    "size_bytes": 545,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

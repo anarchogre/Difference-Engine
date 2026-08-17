@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:53.061076-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/.cg/editor/breakpoints.json",
+  "original_name": "breakpoints.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0527",
+  "schema_version": "0.1.0",
+  "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "size_bytes": 2,
+  "source_class": "manual_batch"
+}

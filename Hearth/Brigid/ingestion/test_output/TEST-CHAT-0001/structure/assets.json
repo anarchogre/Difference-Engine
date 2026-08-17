@@ -1,0 +1,26 @@
+[
+  {
+    "asset_type": "conversation_turn",
+    "value": "mkdir demo"
+  },
+  {
+    "asset_type": "conversation_turn",
+    "value": "ok"
+  },
+  {
+    "asset_type": "conversation_turn",
+    "value": "cat README.md"
+  },
+  {
+    "asset_type": "conversation_turn",
+    "value": "TODO implement parser"
+  },
+  {
+    "asset_type": "command",
+    "value": "mkdir demo"
+  },
+  {
+    "asset_type": "command",
+    "value": "cat README.md"
+  }
+]

@@ -1,0 +1,5 @@
+TOTAL=1
+BLOCKING=0
+WARNINGS=0
+INFORMATIONAL=1
+informational|repository|working_state|Git working tree|Working tree contains 1 changed path(s).

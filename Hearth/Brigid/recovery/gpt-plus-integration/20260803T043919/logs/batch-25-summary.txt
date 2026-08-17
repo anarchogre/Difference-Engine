@@ -1,0 +1,41 @@
+RUN=workspace/operational/recovery/gpt-plus-integration/20260803T043919
+VALIDATION_STATUS=0
+COMMIT_STATUS=0
+TEST_STATUS=0
+VERIFIER_STATUS=2
+
+MANIFEST VALIDATION
+EXTERNAL_MANIFEST_VALIDATION=PASS
+FILE_LIBRARY_ARTIFACTS=12
+EXECUTION_ROLES=6
+FILE_LIBRARY_STATUS=pending
+PROJECT_CONFIGURATION_STATUS=pending
+
+COMMIT
+hint: The '.githooks/pre-commit' hook was ignored because it's not set as executable.
+hint: You can disable this warning with `git config set advice.ignoredHook false`.
+[master 70f2c45] Add external recovery verification manifests
+ 3 files changed, 113 insertions(+)
+ create mode 100644 workspace/operational/integration/EXTERNAL_VERIFICATION_STATUS.json
+ create mode 100644 workspace/operational/integration/FILE_LIBRARY_MANIFEST.json
+ create mode 100644 workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json
+
+TESTS
+[BOOTSTRAP] Discovering repository...
+PASS ade.kernel.tests.test_bootstrap_loader.test_initialize
+DISCOVERED=1
+PASSED=1
+FAILED=0
+
+VERIFIER
+[BOOTSTRAP] Discovering repository...
+STATUS=DEGRADED
+MISSION=GPT Plus Integration
+TASK=Recovery Standardization
+EXECUTION_MODE=Execution
+BLOCKERS=0
+WARNINGS=2
+OUTPUT=workspace/operational/recovery/runtime
+
+GIT STATUS
+## master

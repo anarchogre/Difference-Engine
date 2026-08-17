@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260804-0089",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-04T18:01:40.034178-05:00",
+    "observed_path": "/storage/emulated/0/Download/File_Library_Access_Details.md.txt",
+    "original_name": "File_Library_Access_Details.md.txt",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260804-0089",
+    "schema_version": "0.1.0",
+    "sha256": "e6ade85893a0e1c71e38ee13e681f9fd44823ba5b783262fc5ac4c92e29d51e8",
+    "size_bytes": 124070,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

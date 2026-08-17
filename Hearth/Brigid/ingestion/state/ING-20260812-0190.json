@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0190",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:13.983679-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_workflow_vNext.json",
+    "original_name": "AKS_workflow_vNext.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0190",
+    "schema_version": "0.1.0",
+    "sha256": "88eb2337d60e3c78186b2662332f4a1464af3791ab1d161dade4dd187a949b5e",
+    "size_bytes": 366,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

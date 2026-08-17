@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0509",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:50.395266-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/SYSTEM_BOOTSTRAP_v2.0_CHATGPT.md",
+    "original_name": "SYSTEM_BOOTSTRAP_v2.0_CHATGPT.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0509",
+    "schema_version": "0.1.0",
+    "sha256": "b426cb626bad898ee2c8fabc06a0e7047554146450f9f2316b6140aebf5bf984",
+    "size_bytes": 2260,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

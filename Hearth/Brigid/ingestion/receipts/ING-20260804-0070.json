@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:02:05.201394-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Load_Balancing_Specification_v0.1.md",
+  "original_name": "Workflow_Service_Load_Balancing_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0070",
+  "schema_version": "0.1.0",
+  "sha256": "9d5c49c616a7b5ed98fb3ed612ac0942de408b4be6acd01726ceaf3bc0857f5a",
+  "size_bytes": 7731,
+  "source_class": "manual_batch"
+}

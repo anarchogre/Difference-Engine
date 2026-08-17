@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260811-0042",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-11T22:18:49.906636-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Migration_Map_Creation.md.txt",
+    "original_name": "Migration_Map_Creation.md.txt",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260811-0042",
+    "schema_version": "0.1.0",
+    "sha256": "e54a100d601a877e0f96cd1ba14677bc123f8a6bd4b1b30ccc6f9810ca0f68ac",
+    "size_bytes": 85282,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

@@ -1,0 +1,1 @@
+Config path not found: agents.defaults.compaction. Run openclaw config validate to inspect config shape.

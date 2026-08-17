@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/plain",
+  "observed_at": "2026-08-04T18:01:42.481274-05:00",
+  "observed_path": "/storage/emulated/0/Download/Babbage_Initialization_and_Parsing.md.txt",
+  "original_name": "Babbage_Initialization_and_Parsing.md.txt",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260804-0093",
+  "schema_version": "0.1.0",
+  "sha256": "66c819d2a969c4e161ae6b64f02951534385908813e86703c8c5a77c548c11af",
+  "size_bytes": 187192,
+  "source_class": "conversation"
+}

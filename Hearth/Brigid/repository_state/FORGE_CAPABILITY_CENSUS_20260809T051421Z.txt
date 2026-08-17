@@ -1,0 +1,394 @@
+=== IDENTITY ===
+Sun Aug  9 05:14:21 AM UTC 2026
+Ubuntu 26.04 LTS
+Linux The-Forge 6.19.8-surface-3 #3 SMP PREEMPT_DYNAMIC Sat May  9 09:37:30 UTC 2026 x86_64 GNU/Linux
+Desktop=XFCE
+Session=x11
+DisplayManager=/usr/sbin/lightdm
+
+=== CAPACITY ===
+CPU(s):                                  8
+On-line CPU(s) list:                     0-7
+Model name:                              Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+Thread(s) per core:                      2
+Core(s) per socket:                      4
+CPU(s) scaling MHz:                      67%
+CPU max MHz:                             3400.0000
+CPU min MHz:                             400.0000
+NUMA node0 CPU(s):                       0-7
+               total        used        free      shared  buff/cache   available
+Mem:           7.2Gi       2.7Gi       3.0Gi       513Mi       2.1Gi       4.5Gi
+Swap:          4.0Gi          0B       4.0Gi
+NAME      TYPE SIZE USED PRIO
+/swap.img file   4G   0B   -1
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p6  136G   18G  111G  14% /
+
+=== GRAPHICS ===
+00:02.0 VGA compatible controller: Intel Corporation Kaby Lake-R GT2 [UHD Graphics 620] (rev 07)
+	Subsystem: Microsoft Corporation Device 0025
+	Kernel driver in use: i915
+	Kernel modules: i915
+
+=== DEVELOPMENT CAPABILITIES ===
+git          /usr/bin/git
+python3      /usr/bin/python3
+pip          MISSING
+pipx         MISSING
+node         MISSING
+npm          MISSING
+cargo        MISSING
+rustc        MISSING
+gcc          MISSING
+g++          MISSING
+cmake        MISSING
+make         MISSING
+sqlite3      MISSING
+podman       MISSING
+docker       MISSING
+flatpak      MISSING
+snap         /usr/bin/snap
+
+=== MANUALLY INSTALLED APT PACKAGES ===
+dash
+diffutils
+efibootmgr
+findutils
+git
+gnome-browser-connector
+grep
+grub-efi-amd64
+grub-efi-amd64-signed
+gzip
+hostname
+ibus-table-cangjie3
+ibus-table-cangjie5
+ibus-table-cangjie-big
+init
+iptsd
+language-pack-en
+language-pack-en-base
+language-pack-gnome-en
+language-pack-gnome-en-base
+libchewing3
+libchewing3-data
+libm17n-0
+libmarisa1
+libopencc1.1
+libopencc-data
+libotf1
+libpinyin15
+libpinyin-data
+lightdm
+linux-generic-hwe-24.04
+linux-headers-surface
+linux-image-surface
+m17n-db
+ncurses-base
+ncurses-bin
+shim-signed
+ubuntu-desktop-minimal
+ubuntu-minimal
+ubuntu-standard
+ubuntu-wallpapers
+wbritish
+wl-clipboard
+wpasupplicant
+xubuntu-desktop-minimal
+ydotool
+
+=== SNAPS ===
+Name                       Version                         Rev    Tracking         Publisher       Notes
+bare                       1.0                             5      latest/stable    canonical**     base
+chatgpt-desktop-linux      1.0.2                           3      latest/stable    hackerwasii     -
+chlogr                     0.3.6                           88     latest/stable    christianhelle  -
+chromium                   150.0.7871.128                  3499   latest/stable    canonical**     -
+core18                     20260204                        2999   latest/stable    canonical**     base
+core20                     20260410                        2866   latest/stable    canonical**     base
+core22                     20260225                        2411   latest/stable    canonical**     base
+core24                     20260410                        1643   latest/stable    canonical**     base
+cups                       2.4.19-2                        1238   latest/stable    openprinting**  -
+desktop-security-center    0+git.25daa58                   151    1/stable/…       canonical**     -
+ffmpeg-2404                7.1.5                           149    latest/stable    snapcrafters*   -
+firefox                    153.0.3-1                       8736   latest/stable/…  mozilla**       -
+firmware-updater           0+git.5645b80                   226    1/stable/…       canonical**     -
+gnome-3-28-1804            3.28.0-19-g98f9e67.98f9e67      198    latest/stable    canonical**     -
+gnome-46-2404              0+git.f1cd5fa-sdk0+git.ca9c59c  153    latest/stable/…  canonical**     -
+gtk-common-themes          0.1-81-g442e511                 1535   latest/stable/…  canonical**     -
+htop                       3.5.2                           6250   latest/stable    maxiberta*      -
+krecorder                  26.04.3                         56     latest/stable    kde**           -
+lxqt-support-core24        6.10.1                          16     latest/stable    kyuyrii         -
+mesa-2404                  25.2.8-snap288                  1839   latest/stable/…  canonical**     -
+prompting-client           0+git.33cd821                   222    1/stable/…       canonical**     -
+snap-store                 0+git.10310e85                  1367   2/stable/…       canonical**     -
+snapd                      2.75.2                          26865  latest/stable    canonical**     snapd
+snapd-desktop-integration  0.9                             391    latest/stable/…  canonical**     -
+
+=== FLATPAKS ===
+
+=== ENABLED SERVICES ===
+UNIT FILE                                      STATE   PRESET
+snap-bare-5.mount                              enabled enabled
+snap-chatgpt\x2ddesktop\x2dlinux-3.mount       enabled enabled
+snap-chlogr-88.mount                           enabled enabled
+snap-chromium-3499.mount                       enabled enabled
+snap-core18-2999.mount                         enabled enabled
+snap-core20-2866.mount                         enabled enabled
+snap-core22-2411.mount                         enabled enabled
+snap-core24-1587.mount                         enabled enabled
+snap-core24-1643.mount                         enabled enabled
+snap-cups-1238.mount                           enabled enabled
+snap-desktop\x2dsecurity\x2dcenter-150.mount   enabled enabled
+snap-desktop\x2dsecurity\x2dcenter-151.mount   enabled enabled
+snap-ffmpeg\x2d2404-149.mount                  enabled enabled
+snap-firefox-8107.mount                        enabled enabled
+snap-firefox-8736.mount                        enabled enabled
+snap-firmware\x2dupdater-226.mount             enabled enabled
+snap-gnome\x2d3\x2d28\x2d1804-198.mount        enabled enabled
+snap-gnome\x2d46\x2d2404-153.mount             enabled enabled
+snap-gtk\x2dcommon\x2dthemes-1535.mount        enabled enabled
+snap-htop-6250.mount                           enabled enabled
+snap-krecorder-56.mount                        enabled enabled
+snap-lxqt\x2dsupport\x2dcore24-16.mount        enabled enabled
+snap-mesa\x2d2404-1165.mount                   enabled enabled
+snap-mesa\x2d2404-1839.mount                   enabled enabled
+snap-prompting\x2dclient-204.mount             enabled enabled
+snap-prompting\x2dclient-222.mount             enabled enabled
+snap-snap\x2dstore-1367.mount                  enabled enabled
+snap-snapd-26865.mount                         enabled enabled
+snap-snapd\x2ddesktop\x2dintegration-361.mount enabled enabled
+snap-snapd\x2ddesktop\x2dintegration-391.mount enabled enabled
+apport-autoreport.path                         enabled enabled
+cups.path                                      enabled enabled
+tpm-udev.path                                  enabled enabled
+accounts-daemon.service                        enabled enabled
+anacron.service                                enabled enabled
+apparmor.service                               enabled enabled
+apport.service                                 enabled enabled
+avahi-daemon.service                           enabled enabled
+bluetooth.service                              enabled enabled
+chrony.service                                 enabled enabled
+cloud-config.service                           enabled enabled
+cloud-final.service                            enabled enabled
+cloud-init-local.service                       enabled enabled
+cloud-init-main.service                        enabled enabled
+cloud-init-network.service                     enabled enabled
+console-setup.service                          enabled enabled
+cron.service                                   enabled enabled
+cups-browsed.service                           enabled enabled
+cups.service                                   enabled enabled
+dmesg.service                                  enabled enabled
+e2scrub_reap.service                           enabled enabled
+getty@.service                                 enabled enabled
+gpu-manager.service                            enabled enabled
+grub-initrd-fallback.service                   enabled enabled
+grub2-common.service                           enabled enabled
+kdump-tools.service                            enabled enabled
+keyboard-setup.service                         enabled enabled
+lightdm.service                                enabled enabled
+ModemManager.service                           enabled enabled
+netplan-configure.service                      enabled enabled
+networkd-dispatcher.service                    enabled enabled
+NetworkManager-dispatcher.service              enabled enabled
+NetworkManager-wait-online.service             enabled enabled
+NetworkManager.service                         enabled enabled
+openvpn.service                                enabled enabled
+power-profiles-daemon.service                  enabled enabled
+rsyslog.service                                enabled enabled
+secureboot-db.service                          enabled enabled
+setvtrgb.service                               enabled enabled
+snap.cups.cups-browsed.service                 enabled enabled
+snap.cups.cupsd.service                        enabled enabled
+snapd.apparmor.service                         enabled enabled
+snapd.autoimport.service                       enabled enabled
+snapd.core-fixup.service                       enabled enabled
+snapd.recovery-chooser-trigger.service         enabled enabled
+snapd.seeded.service                           enabled enabled
+snapd.service                                  enabled enabled
+snapd.system-shutdown.service                  enabled enabled
+ssl-cert.service                               enabled enabled
+sssd.service                                   enabled enabled
+switcheroo-control.service                     enabled enabled
+sysstat.service                                enabled enabled
+systemd-oomd.service                           enabled enabled
+systemd-pstore.service                         enabled enabled
+systemd-resolved.service                       enabled enabled
+thermald.service                               enabled enabled
+ua-reboot-cmds.service                         enabled enabled
+ubuntu-advantage.service                       enabled enabled
+udisks2.service                                enabled enabled
+ufw.service                                    enabled enabled
+unattended-upgrades.service                    enabled enabled
+wpa_supplicant.service                         enabled enabled
+apport-forward.socket                          enabled enabled
+avahi-daemon.socket                            enabled enabled
+cloud-init-hotplugd.socket                     enabled enabled
+cups.socket                                    enabled enabled
+polkit-agent-helper.socket                     enabled enabled
+snapd.socket                                   enabled enabled
+sssd-autofs.socket                             enabled enabled
+sssd-nss.socket                                enabled enabled
+sssd-pac.socket                                enabled enabled
+sssd-pam.socket                                enabled enabled
+sssd-ssh.socket                                enabled enabled
+sssd-sudo.socket                               enabled enabled
+systemd-oomd.socket                            enabled enabled
+systemd-resolved-monitor.socket                enabled enabled
+systemd-resolved-varlink.socket                enabled enabled
+uuidd.socket                                   enabled enabled
+remote-fs.target                               enabled enabled
+anacron.timer                                  enabled enabled
+apport-autoreport.timer                        enabled enabled
+apt-daily-upgrade.timer                        enabled enabled
+apt-daily.timer                                enabled enabled
+dpkg-db-backup.timer                           enabled enabled
+e2scrub_all.timer                              enabled enabled
+fstrim.timer                                   enabled enabled
+fwupd-refresh.timer                            enabled enabled
+logrotate.timer                                enabled enabled
+man-db.timer                                   enabled enabled
+motd-news.timer                                enabled enabled
+snapd.snap-repair.timer                        enabled enabled
+sysstat-collect.timer                          enabled enabled
+sysstat-rotate.timer                           enabled enabled
+sysstat-summary.timer                          enabled enabled
+ua-timer.timer                                 enabled enabled
+update-notifier-download.timer                 enabled enabled
+update-notifier-motd.timer                     enabled enabled
+
+127 unit files listed.
+
+=== ACTIVE DESKTOP PROCESSES ===
+    PID COMMAND         %CPU %MEM STAT
+   7789 firefox         29.0  7.0 Rl
+   8060 Isolated Web Co 27.8  6.4 Sl
+   8948 ptyxis           3.8  3.0 Rl
+   7982 Privileged Cont  2.0  2.4 Sl
+   1948 Xorg             5.7  1.6 Ssl+
+   8065 WebExtensions    0.1  1.4 Sl
+   3680 xfwm4            2.0  1.2 Sl
+   9590 snapd-desktop-i  0.1  1.2 Sl
+   8247 Web Content      0.0  0.9 Sl
+   8179 Web Content      0.0  0.9 Sl
+   8175 Web Content      0.0  0.9 Sl
+   4833 evolution-alarm  0.0  0.8 Sl
+   4468 xfdesktop        0.6  0.7 Sl
+   1594 snapd            0.9  0.7 Ssl
+   8168 Utility Process  0.0  0.6 Sl
+   7991 RDD Process      0.0  0.6 Sl
+   5111 evolution-sourc  0.0  0.6 Ssl
+   7953 Socket Process   0.0  0.6 Sl
+   4473 wrapper-2.0      1.8  0.6 Sl
+   3623 ibus-ui-gtk3     0.2  0.5 Sl
+    419 systemd-journal  0.0  0.5 S<s
+   4784 nm-applet        0.2  0.5 Sl
+   4496 wrapper-2.0      0.0  0.5 Sl
+   4448 xfce4-panel      0.2  0.5 Sl
+
+=== LARGE TOP-LEVEL INSTALL AREAS ===
+120K	/var/lib/ucf
+140K	/var/lib/doc-base
+156K	/var/lib/dracut
+204K	/var/lib/upower
+216K	/var/lib/cloud
+1.1M	/var/lib/systemd
+2.0M	/var/lib/fwupd
+2.2M	/var/lib/lightdm
+3.6M	/var/lib/command-not-found
+4.2M	/var/lib/aspell
+5.0M	/var/lib/ubuntu-advantage
+15M	/usr/include
+21M	/var/lib/swcatalog
+44M	/usr/sbin
+53M	/var/lib/kdump
+69M	/var/lib/dpkg
+79M	/usr/libexec
+156M	/var/lib/apt
+293M	/usr/bin
+418M	/usr/src
+1.3G	/usr/share
+3.3G	/usr/lib
+3.9G	/var/lib/snapd
+4.2G	/var/lib
+5.3G	/usr
+
+=== REPOSITORY ===
+/home/reckless-ideator/DifferenceEngine
+master
+ M ade/kernel/bootstrap_loader/artifacts.py
+ M ade/kernel/bootstrap_loader/validators.py
+ M workspace/operational/current/ACTIVE_MISSION.md
+ M workspace/operational/current/ACTIVE_TASK.md
+ M workspace/operational/current/MISSION.md
+ M workspace/operational/current/OPERATIONAL_LAWS.md
+ M workspace/operational/current/REPOSITORY_STATE.md
+ M workspace/operational/current/RESUME.md
+ M workspace/operational/mobile_bridge/source/de-bridge-watch
+ M workspace/operational/mobile_bridge/source/de-copyout
+?? "BOOTSTRAP/BOOTSTRAP - CONTINUE - INGESTER EPOCH v1.0 - 8-4-26-1300.md"
+?? "BOOTSTRAP/BOOTSTRAP \342\200\224 Foundational Reduction Continuation.md"
+?? BOOTSTRAP/BST-CBD-OPS_Operational_Bedrock_and_Ingester_Execution_v0.1.0.md
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Architectural Philosophy And Meta Synthsis.md"
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Computational Bedrock.md"
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Session Continuation Bootstrap - Epoch II - Repository Archaeology - Into - Constitutional Synthesis.md"
+?? "BOOTSTRAP/Bootstrap - Epoch II \342\200\224 Post Milestone 002 - Constitutional Kernel - Operational Bootstrap.md"
+?? "BOOTSTRAP/Bootstrap vNext \342\200\224 Candidate Constitutional Bootstrap Additions.md"
+?? BOOTSTRAP/Branches/
+?? "BOOTSTRAP/Computational Bedrock Bootstrap Ingester Recovery Continuation.md"
+?? BOOTSTRAP/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md
+?? "BOOTSTRAP/Load The Constitutional Kernel.md"
+?? "BOOTSTRAP/Recover Existing Injestion Files.md"
+?? BOOTSTRAP_BRANCHES.txt
+?? BOOTSTRAP_FILES.txt
+?? BOOTSTRAP_FOLDER.txt
+?? BOOTSTRAP_TOP.txt
+?? CONVERSATION_CORPUS_VERIFIED.json
+?? ENTRY_POINTS.txt
+?? INGESTER_CODE.tar
+?? INGESTION_FILES.txt
+?? META_CHANGELOG.md
+?? MILESTONE_002_CONVERSATION_CORPUS.md
+?? PHONE_ACTIVE_STATE.txt
+?? REPOSITORY_STATUS.txt
+?? REPOSITORY_TREE_20260808T172025Z.txt
+?? ade/services/
+?? ade/tests/
+?? architecture/services/
+?? discover_conversations.py
+?? "evidence/Branch 0 - Origins - Computational Bedrock Reduction.md"
+?? "evidence/Branch II - Research - Computational Bedrock \342\200\224 Cross-Branch Synthesis for Discussion.md"
+?? "evidence/Branch IV - Operations - Computational Bedrock.md"
+?? "evidence/Branch V - Human Interface - Computational Bedrock.md"
+?? evidence/CORE_INTERFACE_PANE_REQUIREMENT_CANDIDATE.md
+?? evidence/MEMORY_PALACE_SIMONIDES_PANE_CANDIDATE.md
+?? evidence/ingestion/
+?? governance/
+?? inventory/initialization/
+?? queue/ingestion/
+?? workspace/operational/census/
+?? workspace/operational/corpus/
+?? workspace/operational/current/state-model-candidates.lst
+?? workspace/operational/current/state-references.clean.out
+?? workspace/operational/current/state-references.out
+?? workspace/operational/identity/
+?? workspace/operational/ingestion/baselines/
+?? workspace/operational/ingestion/batch_test/
+?? workspace/operational/ingestion/chat_pipeline_test.txt
+?? workspace/operational/ingestion/chat_test.txt
+?? workspace/operational/ingestion/discover_conversation_delta.py
+?? workspace/operational/ingestion/discover_conversations.py
+?? workspace/operational/ingestion/evidence/
+?? workspace/operational/ingestion/inbox/
+?? workspace/operational/ingestion/locks/
+?? workspace/operational/ingestion/markdown_conversation_test.md
+?? workspace/operational/ingestion/output/
+?? workspace/operational/ingestion/parser_tests/
+?? workspace/operational/ingestion/receipts/
+?? workspace/operational/ingestion/recovery/
+?? workspace/operational/ingestion/reports/
+?? workspace/operational/ingestion/roadmap/
+?? workspace/operational/ingestion/state/
+?? workspace/operational/ingestion/test_output/
+?? workspace/operational/ingestion/test_receipts/
+?? workspace/operational/recovery/queue-standard/
+?? workspace/operational/repository_state/

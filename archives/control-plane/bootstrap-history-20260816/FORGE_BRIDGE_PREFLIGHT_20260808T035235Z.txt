@@ -1,0 +1,28 @@
+=== FORGE BRIDGE PREFLIGHT ===
+DATE_UTC=2026-08-08T03:52:35Z
+SESSION_TYPE=wayland
+DESKTOP=ubuntu:GNOME
+DISPLAY=:0
+WAYLAND_DISPLAY=wayland-0
+
+=== TERMINAL ===
+TERM=xterm-256color
+PARENT=ptyxis-agent
+
+=== CLIPBOARD / INPUT ===
+ABSENT  wl-copy
+ABSENT  wl-paste
+ABSENT  xclip
+ABSENT  xsel
+ABSENT  wtype
+ABSENT  ydotool
+ABSENT  xdotool
+PRESENT gdbus      /usr/bin/gdbus
+PRESENT dbus-send  /usr/bin/dbus-send
+PRESENT python3    /usr/bin/python3
+
+=== GNOME SHELL ===
+GNOME Shell 50.1
+
+=== FIREFOX ===
+Mozilla Firefox 149.0.2

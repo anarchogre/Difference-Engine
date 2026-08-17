@@ -1,0 +1,11 @@
+{
+  "artifact": {
+    "identifier": "PR-0003",
+    "title": "Continuous Repository Indexing",
+    "version": "1.0",
+    "status": "Active",
+    "artifact_class": "Project Rule",
+    "statement": "Every new or revised canonical artifact shall be appended to AKS-INDEX-0001 during the same preservation checkpoint in which the artifact is preserved.",
+    "rationale": "No canonical artifact officially exists until it is indexed."
+  }
+}

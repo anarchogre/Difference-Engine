@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260811-0043",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-11T22:18:50.012221-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Project_Chat_Context.md.txt",
+    "original_name": "Project_Chat_Context.md.txt",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260811-0043",
+    "schema_version": "0.1.0",
+    "sha256": "09b52590f09055c5781e0ee9c6258b11adde31c13c6e12334352118cc4d9cb99",
+    "size_bytes": 1931,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

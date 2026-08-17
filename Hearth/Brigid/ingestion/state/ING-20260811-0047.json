@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260811-0047",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-11T22:18:50.405563-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Workflow_and_Evidence_Consolidation.md(1).txt",
+    "original_name": "Workflow_and_Evidence_Consolidation.md(1).txt",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260811-0047",
+    "schema_version": "0.1.0",
+    "sha256": "71176b39c2ad2ac55bf71cb7b56460756f73c8d2821c62bfe0f4f2093f817805",
+    "size_bytes": 145946,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

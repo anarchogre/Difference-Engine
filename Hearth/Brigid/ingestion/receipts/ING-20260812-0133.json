@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:10.096277-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Canonical_Knowledge_Object_Schema_v1.1.json",
+  "original_name": "AKS_Canonical_Knowledge_Object_Schema_v1.1.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0133",
+  "schema_version": "0.1.0",
+  "sha256": "f06e6128d528c5d5ed389d8231150428d12a2817e6402d514bc747228ed0f5e2",
+  "size_bytes": 567,
+  "source_class": "manual_batch"
+}

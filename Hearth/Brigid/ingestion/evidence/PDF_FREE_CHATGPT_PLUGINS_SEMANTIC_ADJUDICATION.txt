@@ -1,0 +1,10 @@
+status=CONVERSATION_BEARING_CANDIDATE
+file=Free ChatGPT Plugins for ADE.pdf
+chat_id=6a64507b-5de4-83ea-8794-5a5578cbc497
+chars=7456
+simple_dialogue_markers=0
+qualification_method=INDIVIDUAL_STRUCTURAL_INSPECTION
+human_turns=CONFIRMED
+assistant_turns=CONFIRMED
+evidence=human turn "Excuse me?" survives at approximately line 128 with substantive assistant response immediately following
+promotion=NONE

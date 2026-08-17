@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:37.135307-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Workflow_Service_Composition_Specification_v0.1.md",
+  "original_name": "Workflow_Service_Composition_Specification_v0.1.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0412",
+  "schema_version": "0.1.0",
+  "sha256": "7b3cde76a9df98c6a6ea2740222d835c526cd2eff7fea4f62494f7d27a2d817b",
+  "size_bytes": 6431,
+  "source_class": "manual_batch"
+}

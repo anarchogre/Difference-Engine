@@ -1,0 +1,12 @@
+domain	path	role
+ade_recovery	/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/ADE	frozen_baseline
+ade_de_recovery	/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/ADE_DIFFERENCE_ENGINE	frozen_replica_source
+phone_download	/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Download	live_delta_source
+phone_downloads	/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/Downloads	live_delta_source
+file_library_uploads	/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/FILE_LIBRARY_UPLOADS	live_delta_source
+phone_differenceengine	/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage/DifferenceEngine	live_delta_source
+phone_shared_root	/home/reckless-ideator/phone-evacuation/moto-g-power-2021/internal-shared-storage	loose_delta_source
+forge_differenceengine	/home/reckless-ideator/DifferenceEngine	current_repository_source
+chatgpt_file_library	non_filesystem:file_library	external_delta_source
+chatgpt_project_sources	non_filesystem:project_sources	external_delta_source
+current_chat_sources	non_filesystem:conversation_uploads	current_session_source

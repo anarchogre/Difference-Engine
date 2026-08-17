@@ -1,0 +1,372 @@
+{
+  "qualified_source_count": 24,
+  "sources": [
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 1,
+        "commands": 0,
+        "errors": [],
+        "package": "ING-20260804-0080",
+        "path": "/storage/emulated/0/Download/Project_Chat_Context.md.txt",
+        "qualified": true,
+        "source": "Project_Chat_Context.md.txt",
+        "turns": 12,
+        "user": 11
+      },
+      "sha256": "09b52590f09055c5781e0ee9c6258b11adde31c13c6e12334352118cc4d9cb99"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 225,
+        "commands": 27,
+        "errors": [],
+        "package": "ING-20260804-0099",
+        "path": "/storage/emulated/0/Download/Difference_Engine____Branch_0____Origins.txt",
+        "qualified": true,
+        "source": "Difference_Engine____Branch_0____Origins.txt",
+        "turns": 227,
+        "user": 2
+      },
+      "sha256": "0a2619397bc7687c57fd8e08765062ea5b4eae141fd8902d71536a443fa5f657"
+    },
+    {
+      "attempt_count": 3,
+      "selected": {
+        "assistant": 61,
+        "commands": 1111,
+        "errors": [],
+        "package": "DE-CONV-20260804-0003",
+        "path": "/storage/emulated/0/DifferenceEngine/workspace/operational/ingestion/inbox/Kernel_and_Bootstrap_Load.md(1).txt",
+        "qualified": true,
+        "source": "Kernel_and_Bootstrap_Load.md(1).txt",
+        "turns": 138,
+        "user": 77
+      },
+      "sha256": "1bb1d6b364864de9b346f27e67bb111153e65db14806a483406816602bfe2529"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 5,
+        "commands": 5,
+        "errors": [],
+        "package": "ING-20260804-0084",
+        "path": "/storage/emulated/0/Download/Difference_Engine____Branch_II____Research.md.txt",
+        "qualified": true,
+        "source": "Difference_Engine____Branch_II____Research.md.txt",
+        "turns": 19,
+        "user": 14
+      },
+      "sha256": "3070b03ec60d697cef3c8051553adc27b34a141bda6cd3cda3f112edd81f53a7"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 28,
+        "commands": 164,
+        "errors": [],
+        "package": "ING-20260804-0094",
+        "path": "/storage/emulated/0/Download/Constitutional_Kernel_Initialization.md.txt",
+        "qualified": true,
+        "source": "Constitutional_Kernel_Initialization.md.txt",
+        "turns": 101,
+        "user": 73
+      },
+      "sha256": "3765fbf5380a3006353f07da2ea82f06b37f200e09ce327c29deff99f5351c1f"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 11,
+        "commands": 31,
+        "errors": [],
+        "package": "ING-20260804-0086",
+        "path": "/storage/emulated/0/Download/Categorization_of_Governance_Elements.md(1).txt",
+        "qualified": true,
+        "source": "Categorization_of_Governance_Elements.md(1).txt",
+        "turns": 57,
+        "user": 46
+      },
+      "sha256": "41f9205e9dc88751d416f9884ef7c1c34f463dc3f622b94d95699f634beaa8cb"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 202,
+        "commands": 362,
+        "errors": [],
+        "package": "ING-20260804-0097",
+        "path": "/storage/emulated/0/Download/Governance_Improvements_Implementation.md.txt",
+        "qualified": true,
+        "source": "Governance_Improvements_Implementation.md.txt",
+        "turns": 502,
+        "user": 300
+      },
+      "sha256": "5b0e93774638f5f0ade186de3769c6bf9fd440971965b101fe45b42b0eb80e83"
+    },
+    {
+      "attempt_count": 2,
+      "selected": {
+        "assistant": 29,
+        "commands": 192,
+        "errors": [],
+        "package": "DE-CONV-20260804-0006",
+        "path": "/storage/emulated/0/Download/Epistemic_Engine_Development.md",
+        "qualified": true,
+        "source": "Epistemic_Engine_Development.md",
+        "turns": 110,
+        "user": 81
+      },
+      "sha256": "64263a35738281b8c4288b32577feb928f45c47331c7fa2ab94027c4e50b36ec"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 120,
+        "commands": 218,
+        "errors": [],
+        "package": "ING-20260804-0093",
+        "path": "/storage/emulated/0/Download/Babbage_Initialization_and_Parsing.md.txt",
+        "qualified": true,
+        "source": "Babbage_Initialization_and_Parsing.md.txt",
+        "turns": 233,
+        "user": 113
+      },
+      "sha256": "66c819d2a969c4e161ae6b64f02951534385908813e86703c8c5a77c548c11af"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 10,
+        "commands": 4,
+        "errors": [],
+        "package": "ING-20260804-0085",
+        "path": "/storage/emulated/0/Download/Difference_Engine____Branch_0____Origins.md.txt",
+        "qualified": true,
+        "source": "Difference_Engine____Branch_0____Origins.md.txt",
+        "turns": 30,
+        "user": 20
+      },
+      "sha256": "6ea1103958a3b5e513fafde16b80c107f2ef55c3b481065a5961d00f9baa37cc"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 74,
+        "commands": 114,
+        "errors": [],
+        "package": "ING-20260804-0092",
+        "path": "/storage/emulated/0/Download/Workflow_and_Evidence_Consolidation.md.txt",
+        "qualified": true,
+        "source": "Workflow_and_Evidence_Consolidation.md.txt",
+        "turns": 162,
+        "user": 88
+      },
+      "sha256": "71176b39c2ad2ac55bf71cb7b56460756f73c8d2821c62bfe0f4f2093f817805"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 22,
+        "commands": 87,
+        "errors": [],
+        "package": "ING-20260804-0088",
+        "path": "/storage/emulated/0/Download/Difference_Engine____Branch_II____Research.md(1).txt",
+        "qualified": true,
+        "source": "Difference_Engine____Branch_II____Research.md(1).txt",
+        "turns": 71,
+        "user": 49
+      },
+      "sha256": "734a6d8fde65b6c40eb9fe58a439f0f977babea6a950720c7016782cf2643b81"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 8,
+        "commands": 1,
+        "errors": [],
+        "package": "ING-20260804-0082",
+        "path": "/storage/emulated/0/Download/Babbage_GPT_Initialization.md.txt",
+        "qualified": true,
+        "source": "Babbage_GPT_Initialization.md.txt",
+        "turns": 22,
+        "user": 14
+      },
+      "sha256": "7b142fadaa911b1b72cc274e371ad784e7d84de55a71d56f0d47e5eba4ed9b42"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 105,
+        "commands": 51,
+        "errors": [],
+        "package": "ING-20260804-0096",
+        "path": "/storage/emulated/0/Download/Difference_Engine____Branch_III____Integration.md.txt",
+        "qualified": true,
+        "source": "Difference_Engine____Branch_III____Integration.md.txt",
+        "turns": 159,
+        "user": 53
+      },
+      "sha256": "9a43ae30cb3d58bd59f243cc41bb28fa8ddd02e6c1a1620c92e71b9557b237c7"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 154,
+        "commands": 1665,
+        "errors": [],
+        "package": "ING-20260804-0101",
+        "path": "/storage/emulated/0/Download/GPT_Plus_Integration_Roadmap.md(1).txt",
+        "qualified": true,
+        "source": "GPT_Plus_Integration_Roadmap.md(1).txt",
+        "turns": 330,
+        "user": 176
+      },
+      "sha256": "a053bdf9d1710ff9973c940058990e1383806a68a0a0f6ddfe2aa8a9c5b5a566"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 7,
+        "commands": 2,
+        "errors": [],
+        "package": "ING-20260804-0083",
+        "path": "/storage/emulated/0/Download/Bootstrap_Initialization_and_Rules.md.txt",
+        "qualified": true,
+        "source": "Bootstrap_Initialization_and_Rules.md.txt",
+        "turns": 52,
+        "user": 45
+      },
+      "sha256": "a48dcc6e2768ac9f9c23f4d4439fbd010c0fc427ece4b8de8f2d07cd6b80a6c1"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 148,
+        "commands": 1651,
+        "errors": [],
+        "package": "ING-20260804-0100",
+        "path": "/storage/emulated/0/Download/GPT_Plus_Integration_Roadmap.md.txt",
+        "qualified": true,
+        "source": "GPT_Plus_Integration_Roadmap.md.txt",
+        "turns": 315,
+        "user": 167
+      },
+      "sha256": "c3897397c4b8b9e1653ad977ad0249da1334595a5223913e7140e5191371ae10"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 1,
+        "commands": 0,
+        "errors": [],
+        "package": "ING-20260804-0079",
+        "path": "/storage/emulated/0/Download/Difference_Engine____Branch_IV____Operations.md.txt",
+        "qualified": true,
+        "source": "Difference_Engine____Branch_IV____Operations.md.txt",
+        "turns": 2,
+        "user": 1
+      },
+      "sha256": "d1c9064bb50f0b6b29b34beafb8aebb9c31c0a02ba1f86b3c1338311ecda7bd9"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 29,
+        "commands": 169,
+        "errors": [],
+        "package": "ING-20260804-0090",
+        "path": "/storage/emulated/0/Download/Summaries_for_the_steward.md.txt",
+        "qualified": true,
+        "source": "Summaries_for_the_steward.md.txt",
+        "turns": 66,
+        "user": 37
+      },
+      "sha256": "dba3f90ff24cd051dd3dec204a7d6c3cf3f8232ed3c2a8fa6fb8bb7b224c4e0d"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 53,
+        "commands": 160,
+        "errors": [],
+        "package": "ING-20260804-0087",
+        "path": "/storage/emulated/0/Download/Migration_Map_Creation.md.txt",
+        "qualified": true,
+        "source": "Migration_Map_Creation.md.txt",
+        "turns": 104,
+        "user": 51
+      },
+      "sha256": "e54a100d601a877e0f96cd1ba14677bc123f8a6bd4b1b30ccc6f9810ca0f68ac"
+    },
+    {
+      "attempt_count": 2,
+      "selected": null,
+      "sha256": "e6260a8c5fbb44af9e6c95c05ba2cbe518b31d79029dc6982ebad14e4f6dda77"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 57,
+        "commands": 99,
+        "errors": [],
+        "package": "ING-20260804-0089",
+        "path": "/storage/emulated/0/Download/File_Library_Access_Details.md.txt",
+        "qualified": true,
+        "source": "File_Library_Access_Details.md.txt",
+        "turns": 124,
+        "user": 67
+      },
+      "sha256": "e6ade85893a0e1c71e38ee13e681f9fd44823ba5b783262fc5ac4c92e29d51e8"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 202,
+        "commands": 362,
+        "errors": [],
+        "package": "ING-20260804-0098",
+        "path": "/storage/emulated/0/Download/Governance_Improvements_Implementation.md(1).txt",
+        "qualified": true,
+        "source": "Governance_Improvements_Implementation.md(1).txt",
+        "turns": 502,
+        "user": 300
+      },
+      "sha256": "f0d08cbc34270a52c9502851ce02873832ee40f151cc91b4d6babcfe8200dfd0"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 38,
+        "commands": 162,
+        "errors": [],
+        "package": "ING-20260804-0095",
+        "path": "/storage/emulated/0/Download/Constitutional_Kernel_Load.md.txt",
+        "qualified": true,
+        "source": "Constitutional_Kernel_Load.md.txt",
+        "turns": 112,
+        "user": 74
+      },
+      "sha256": "fa0eeb17972874f3a991b0f767fbdc0d5dceceae5bfbeed4303782d601e376ea"
+    },
+    {
+      "attempt_count": 1,
+      "selected": {
+        "assistant": 2,
+        "commands": 6,
+        "errors": [],
+        "package": "ING-20260804-0081",
+        "path": "/storage/emulated/0/Download/Bootstrap_BABBAGE_Initialization.md.txt",
+        "qualified": true,
+        "source": "Bootstrap_BABBAGE_Initialization.md.txt",
+        "turns": 18,
+        "user": 16
+      },
+      "sha256": "ff976445f55b32c13441e1fac0a8d24d9ad44c6c8c54f978edc7bd42f1d38806"
+    }
+  ],
+  "unique_source_count": 25,
+  "unresolved_source_count": 1
+}

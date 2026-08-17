@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0498",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:48.803632-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/REPOSITORY_CHARTER.md",
+    "original_name": "REPOSITORY_CHARTER.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0498",
+    "schema_version": "0.1.0",
+    "sha256": "b0ff8673f4750d95941c9ab5cf5999d629ae47a8b898c36331a7bb09c47f93f9",
+    "size_bytes": 640,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

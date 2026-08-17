@@ -1,0 +1,119 @@
+=== TRACKED BOOTSTRAP IMPLEMENTATION CANDIDATES ===
+ade/kernel/bootstrap_loader/__init__.py
+ade/kernel/bootstrap_loader/__main__.py
+ade/kernel/bootstrap_loader/artifacts.py
+ade/kernel/bootstrap_loader/bootstrap.py
+ade/kernel/bootstrap_loader/config.py
+ade/kernel/bootstrap_loader/constants.py
+ade/kernel/bootstrap_loader/context.py
+ade/kernel/bootstrap_loader/contracts.py
+ade/kernel/bootstrap_loader/discover.py
+ade/kernel/bootstrap_loader/drift.py
+ade/kernel/bootstrap_loader/errors.py
+ade/kernel/bootstrap_loader/execution.py
+ade/kernel/bootstrap_loader/filesystem.py
+ade/kernel/bootstrap_loader/governance.py
+ade/kernel/bootstrap_loader/health.py
+ade/kernel/bootstrap_loader/loader.py
+ade/kernel/bootstrap_loader/logging.py
+ade/kernel/bootstrap_loader/main.py
+ade/kernel/bootstrap_loader/mission.py
+ade/kernel/bootstrap_loader/models.py
+ade/kernel/bootstrap_loader/modes.py
+ade/kernel/bootstrap_loader/paths.py
+ade/kernel/bootstrap_loader/queue.py
+ade/kernel/bootstrap_loader/readiness.py
+ade/kernel/bootstrap_loader/recovery.py
+ade/kernel/bootstrap_loader/result.py
+ade/kernel/bootstrap_loader/specifications.py
+ade/kernel/bootstrap_loader/state.py
+ade/kernel/bootstrap_loader/task.py
+ade/kernel/bootstrap_loader/validators.py
+ade/kernel/bootstrap_loader/verifier.py
+ade/kernel/bootstrap_loader/version.py
+ade/kernel/tests/test_bootstrap_loader.py
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_API_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONFIGURATION_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONTRACT_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_DEPENDENCIES_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_DISCOVERY_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_ERRORS_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_FILE_LAYOUT_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_GLOSSARY_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_IMPLEMENTATION_PLAN_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_INTERFACE_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_LIFECYCLE_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_MODULES_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_OUTPUT_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_PSEUDOCODE_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_PYTHON_MAPPING_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_SEQUENCE_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_SPECIFICATION_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_STATE_MACHINE_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_TEST_PLAN_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_WORKFLOW_v1.md
+architecture/bootstrap_loader/README.md
+workspace/operational/services/specifications/bootstrap/BOOTSTRAP_SERVICE.md
+
+=== INITIALIZATION SYMBOLS ===
+HEAD:ade/kernel/bootstrap_loader/artifacts.py:11:class BootstrapArtifacts:
+HEAD:ade/kernel/bootstrap_loader/context.py:10:class BootstrapContext:
+HEAD:ade/kernel/bootstrap_loader/drift.py:25:    "ade/kernel/bootstrap_loader/artifacts.py": (
+HEAD:ade/kernel/bootstrap_loader/drift.py:29:    "ade/kernel/bootstrap_loader/bootstrap.py": (
+HEAD:ade/kernel/bootstrap_loader/drift.py:32:    "ade/kernel/bootstrap_loader/mission.py": (
+HEAD:ade/kernel/bootstrap_loader/drift.py:35:    "ade/kernel/bootstrap_loader/task.py": (
+HEAD:ade/kernel/bootstrap_loader/drift.py:38:    "ade/kernel/bootstrap_loader/queue.py": (
+HEAD:ade/kernel/bootstrap_loader/drift.py:43:    "ade/kernel/bootstrap_loader/verifier.py": (
+HEAD:ade/kernel/bootstrap_loader/errors.py:5:class BootstrapError(Exception):
+HEAD:ade/kernel/bootstrap_loader/errors.py:8:class ReadinessError(BootstrapError):
+HEAD:ade/kernel/bootstrap_loader/loader.py:20:def initialize() -> BootstrapResult:
+HEAD:ade/kernel/bootstrap_loader/result.py:12:class BootstrapResult:
+HEAD:ade/kernel/tests/run_tests.py:17:    "ade.kernel.tests.test_bootstrap_loader",
+HEAD:ade/kernel/tests/test_bootstrap_loader.py:3:from ade.kernel.bootstrap_loader.loader import initialize
+HEAD:ade/kernel/tests/test_bootstrap_loader.py:4:from ade.kernel.bootstrap_loader.mission import recover_mission
+HEAD:ade/kernel/tests/test_bootstrap_loader.py:5:from ade.kernel.bootstrap_loader.task import recover_task
+
+=== BOOTSTRAP SERVICE SPEC ===
+4a1b311ee3019abeb8458d5d46baab089196be996e24258ca4debf156899d4cd  /home/reckless-ideator/DifferenceEngine/workspace/operational/services/specifications/bootstrap/BOOTSTRAP_SERVICE.md
+# Bootstrap Service Specification
+
+Status: Candidate
+Identifier: DE-SVC-001
+Authority: Operations
+
+## Purpose
+
+Recover deterministic executable repository state.
+
+## Inputs
+
+- repository root
+
+## Outputs
+
+- bootstrap context
+- recovered mission
+- recovered task
+- repository artifacts
+- readiness state
+
+## Dependencies
+
+- Constitution
+- Bootstrap
+- Active Mission
+- Active Task
+- Recovery subsystem
+
+## Validation
+
+Repository initializes.
+
+Readiness executes.
+
+Formal tests pass.
+
+## Lifecycle
+
+Validated
+

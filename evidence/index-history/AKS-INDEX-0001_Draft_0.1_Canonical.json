@@ -1,0 +1,70 @@
+{
+  "artifact": {
+    "identifier": "AKS-INDEX-0001",
+    "title": "Master Canonical Artifact Index",
+    "version": "0.1-draft",
+    "status": "Living Index",
+    "artifact_class": "Index",
+    "purpose": "Authoritative catalog of canonical AKS artifacts and their repository locations.",
+    "append_policy": "Append new canonical artifacts; never remove historical entries.",
+    "entries": [
+      {
+        "id": "PR-0001",
+        "title": "Automatic Transition Preservation",
+        "class": "Project Rule",
+        "status": "Active",
+        "location": "00_Project_Governance/PR Rules"
+      },
+      {
+        "id": "PR-0002",
+        "title": "Incremental Canonical Preservation",
+        "class": "Project Rule",
+        "status": "Active",
+        "location": "00_Project_Governance/PR Rules"
+      },
+      {
+        "id": "AKS-CV-0001",
+        "title": "Canonical Vocabulary",
+        "class": "Vocabulary",
+        "status": "Draft 0.2",
+        "location": "01_Canonical_Vocabulary/AKS-CV-0001"
+      },
+      {
+        "id": "AKS-SPEC-0001",
+        "title": "Canonical Artifact Ontology",
+        "class": "Specification",
+        "status": "Draft 0.4",
+        "location": "02_Specifications/AKS-SPEC-0001"
+      },
+      {
+        "id": "AKS-SPEC-0002",
+        "title": "Canonical Evolution and Change Control",
+        "class": "Specification",
+        "status": "Draft 0.1",
+        "location": "02_Specifications/AKS-SPEC-0002"
+      },
+      {
+        "id": "AKS-THEOREMS-0001",
+        "title": "Derived Engineering Theorems",
+        "class": "Theorem Collection",
+        "status": "Draft 0.1",
+        "location": "03_Proofs_Theorems/AKS-THEOREMS-0001"
+      },
+      {
+        "id": "AKS-INVARIANTS-0001",
+        "title": "Architectural Invariants",
+        "class": "Invariant Collection",
+        "status": "Draft 0.1",
+        "location": "04_Invariants/AKS-INVARIANTS-0001"
+      }
+    ],
+    "next_reserved_identifiers": {
+      "Specification": "AKS-SPEC-0003",
+      "Vocabulary": "AKS-CV-0002",
+      "Theorem": "AKS-THEOREMS-0002",
+      "Invariant": "AKS-INVARIANTS-0002",
+      "Index": "AKS-INDEX-0002"
+    },
+    "maintenance_rule": "Update this index at every preservation checkpoint defined by PR-0002."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:02:02.695387-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Definition_Schema_v0.1.md",
+  "original_name": "Workflow_Definition_Schema_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0051",
+  "schema_version": "0.1.0",
+  "sha256": "492dfb9cec58b2cbc7d2858475e516853e9ea79a6c6f777e3f7e22289ec37e5f",
+  "size_bytes": 4406,
+  "source_class": "manual_batch"
+}

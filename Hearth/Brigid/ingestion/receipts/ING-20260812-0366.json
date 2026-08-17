@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:31.326443-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Event_Processing_Specification_v0.1.md",
+  "original_name": "Event_Processing_Specification_v0.1.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0366",
+  "schema_version": "0.1.0",
+  "sha256": "90426200742ed006555aa4fb77668b06826ebeedf678eaf5a068044a6532959b",
+  "size_bytes": 4143,
+  "source_class": "manual_batch"
+}

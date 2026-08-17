@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-14T00:24:18.934581-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine/workspace/operational/ingestion/service/tests/fixtures/AIS_v0.1.md",
+  "original_name": "AIS_v0.1.md",
+  "parser_status": "complete",
+  "receipt_id": "TEST-PIPELINE-0003",
+  "schema_version": "0.1.0",
+  "sha256": "08a9dc7946b0271b204c1bb088045a39a9f423c5081c21d35c443a71945d421b",
+  "size_bytes": 2627,
+  "source_class": "file_library_upload"
+}

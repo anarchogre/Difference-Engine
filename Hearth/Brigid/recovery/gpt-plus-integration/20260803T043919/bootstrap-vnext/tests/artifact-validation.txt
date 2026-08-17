@@ -1,0 +1,2 @@
+ARTIFACT_VALIDATION=PASS
+FILE=workspace/operational/bootstrap/BOOTSTRAP_vNext.md SIZE=2491

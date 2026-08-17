@@ -1,0 +1,2 @@
+212180	1bb1d6b364864de9b346f27e67bb111153e65db14806a483406816602bfe2529	./workspace/operational/ingestion/inbox/Kernel_and_Bootstrap_Load.md(1).txt
+18668	e6260a8c5fbb44af9e6c95c05ba2cbe518b31d79029dc6982ebad14e4f6dda77	./workspace/operational/corpus/chatgpt/DifferenceEngine Gubmint Cheese.txt

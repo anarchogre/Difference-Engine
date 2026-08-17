@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:02:03.983714-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Capability_Specification_v0.1.md",
+  "original_name": "Workflow_Service_Capability_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0059",
+  "schema_version": "0.1.0",
+  "sha256": "785a23af3af1a5a2697e9f553299361a4340f981c8c7f888e00340fbe2b91635",
+  "size_bytes": 6332,
+  "source_class": "manual_batch"
+}

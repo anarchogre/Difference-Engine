@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:27.063847-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-RC-GOLD/RC1-0084_Repository_RC1_Canonical_Repository_Certification_Register_GOLD_v1.2.0.json",
+  "original_name": "RC1-0084_Repository_RC1_Canonical_Repository_Certification_Register_GOLD_v1.2.0.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0329",
+  "schema_version": "0.1.0",
+  "sha256": "77bdcf802d686f289f2a3abeda588d11f5153dfe01c85c7cb1f9dd58aca159d6",
+  "size_bytes": 2223,
+  "source_class": "manual_batch"
+}

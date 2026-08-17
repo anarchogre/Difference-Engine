@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:06.999211-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-PRESERVATION-0023_Scale_Simulation.json",
+  "original_name": "AKS-PRESERVATION-0023_Scale_Simulation.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0074",
+  "schema_version": "0.1.0",
+  "sha256": "07f57750c28e43251a00a33115d2e59b33eb46d03ff336773500fbb24cd7809f",
+  "size_bytes": 763,
+  "source_class": "manual_batch"
+}

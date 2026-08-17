@@ -1,0 +1,1 @@
+Updated agents.defaults.compaction.reserveTokens. No gateway restart needed.

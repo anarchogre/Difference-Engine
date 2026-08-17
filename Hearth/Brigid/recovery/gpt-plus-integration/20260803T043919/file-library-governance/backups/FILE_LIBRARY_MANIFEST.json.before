@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1",
+  "status": "verified",
+  "authority": "Operations",
+  "purpose": "Define the canonical File Library recovery set.",
+  "project": "The Difference Engine",
+  "verified_at": "2026-08-03T11:14:00-05:00",
+  "verification_method": "ChatGPT File Library search and current project uploads",
+  "canonical_artifacts": [
+    {
+      "name": "Babbage_GPT_Initialization.md.txt",
+      "required": true,
+      "verified": true,
+      "classification": "bootstrap"
+    },
+    {
+      "name": "The_Difference_Engine(7).md",
+      "required": true,
+      "verified": true,
+      "classification": "project"
+    },
+    {
+      "name": "Universal_Branch_Steward_Protocol_Constitutional_Amendment_v_1.1_Ratification Draft.md",
+      "source_upload_name": "Universal_Branch_Steward_Protocol_Constitutional_Amendment_v_1.1_Ratification Draft(12).md",
+      "required": true,
+      "verified": true,
+      "classification": "governance"
+    },
+    {
+      "name": "Operational Doctrine.txt",
+      "required": true,
+      "verified": true,
+      "classification": "doctrine"
+    },
+    {
+      "name": "Operational Reality.txt",
+      "source_upload_name": "Operational Reality(1).txt",
+      "required": true,
+      "verified": true,
+      "classification": "operational-reality"
+    },
+    {
+      "name": "Operator Profile.md",
+      "required": true,
+      "verified": true,
+      "classification": "operator-context"
+    },
+    {
+      "name": "FRAMEWORK_LOCK_7_31_26.md",
+      "required": true,
+      "verified": true,
+      "classification": "framework-lock"
+    },
+    {
+      "name": "REPOSITORY_TREE.txt",
+      "required": true,
+      "verified": true,
+      "classification": "inventory"
+    },
+    {
+      "name": "REPOSITORY_FILES.txt",
+      "required": true,
+      "verified": true,
+      "classification": "inventory"
+    },
+    {
+      "name": "REPOSITORY_TREE_FULL.txt",
+      "required": true,
+      "verified": true,
+      "classification": "inventory"
+    },
+    {
+      "name": "SIQ Suggested Implementation Queue.md",
+      "required": true,
+      "verified": true,
+      "classification": "queue"
+    },
+    {
+      "name": "Project Space Queued Items 8_1_26.md",
+      "required": true,
+      "verified": true,
+      "classification": "queue"
+    }
+  ]
+}

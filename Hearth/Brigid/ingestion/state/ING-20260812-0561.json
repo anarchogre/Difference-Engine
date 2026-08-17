@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0561",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:58.293352-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/PR-0005_Architectural_Change_Preservation.json",
+    "original_name": "PR-0005_Architectural_Change_Preservation.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0561",
+    "schema_version": "0.1.0",
+    "sha256": "878b84bcd409a664c4a8edcabfa9f442a670e84dd5d8ecc0dccbd516da9b4f3f",
+    "size_bytes": 1161,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

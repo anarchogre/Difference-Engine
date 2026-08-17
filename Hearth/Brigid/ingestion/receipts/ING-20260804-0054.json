@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:02:03.542202-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Metrics_Specification_v0.1.md",
+  "original_name": "Workflow_Metrics_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0054",
+  "schema_version": "0.1.0",
+  "sha256": "5686b69049d6c5b8f069e754d91e8b2c2791cfc4b5a7d17476d3b4c0988bd258",
+  "size_bytes": 6356,
+  "source_class": "manual_batch"
+}

@@ -1,0 +1,58 @@
+===== TITLE =====
+# Conversation Schema
+
+===== HEADINGS =====
+# Conversation Schema
+# Purpose
+# Schema Overview
+# Metadata
+# Provenance
+# Participants
+# Structure
+# References
+# Structural Assets
+## Markdown
+## Code
+## Visualizations
+## Prompts
+## File Structures
+# Queue Candidates
+# Validation
+# Parser Responsibilities
+# Design Philosophy
+
+===== KEYWORDS =====
+1:# Conversation Schema
+9:# Purpose
+11:The Conversation Schema defines the canonical structural representation of conversational artifacts.
+15:Conversation parsers SHALL target this schema regardless of source platform.
+19:# Schema Overview
+21:Conversation Artifact
+25:├── Provenance
+31:├── References
+35:├── Queue Candidates
+37:└── Validation
+45:- Artifact ID
+55:# Provenance
+59:- Source Artifact
+83:Each conversational turn shall include:
+85:- Turn ID
+86:- Speaker
+90:- References
+96:# References
+98:Capture references to:
+102:- Repository Artifacts
+108:References remain unresolved until Repository Mapping.
+164:# Queue Candidates
+166:Structural parsing SHALL populate candidate queues without interpretation.
+168:Possible queues include:
+177:- Cross-Reference
+183:Queue assignment is structural only.
+189:# Validation
+191:Every parsed conversation shall validate:
+197:✓ Provenance complete
+199:✓ References captured
+203:✓ Queue candidates generated
+213:- Preserve provenance
+214:- Preserve reusable artifacts
+231:A conversation is evidence.

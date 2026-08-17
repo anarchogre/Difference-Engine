@@ -1,0 +1,11 @@
+status=CONVERSATION_BEARING_CANDIDATE
+native_chat_id=6a69710c-5c1c-83ea-9e89-588a79de956b
+representation_1=Branch Management Assistance.pdf
+representation_2=Difference __ Engine __ Head Steward __ Cat Wrangler.pdf
+underlying_native_conversations=1
+human_turns=CONFIRMED
+assistant_turns=CONFIRMED
+qualification_method=INDIVIDUAL_STRUCTURAL_INSPECTION
+evidence=human stewardship decision survives around extracted line 235 followed by substantive assistant Project Steward reasoning and generated Branch Steward Charter beginning around line 252
+artifact_relationship=CONVERSATION_CONTAINS_OR_GENERATES_GOVERNANCE_ARTIFACTS
+promotion=NONE

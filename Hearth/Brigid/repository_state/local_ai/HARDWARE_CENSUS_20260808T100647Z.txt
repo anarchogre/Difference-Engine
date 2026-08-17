@@ -1,0 +1,309 @@
+============================================================
+DIFFERENCE ENGINE — LOCAL AI HARDWARE CENSUS
+============================================================
+timestamp_utc=20260808T100647Z
+hostname=The-Forge
+report=/home/reckless-ideator/DifferenceEngine/workspace/operational/repository_state/local_ai/HARDWARE_CENSUS_20260808T100647Z.txt
+
+=== OPERATING SYSTEM ===
+PRETTY_NAME="Ubuntu 26.04 LTS"
+NAME="Ubuntu"
+VERSION_ID="26.04"
+VERSION="26.04 LTS (Resolute Raccoon)"
+VERSION_CODENAME=resolute
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=resolute
+LOGO=ubuntu-logo
+
+Linux The-Forge 6.19.8-surface-3 #3 SMP PREEMPT_DYNAMIC Sat May  9 09:37:30 UTC 2026 x86_64 GNU/Linux
+
+=== MACHINE IDENTITY ===
+sys_vendor: Microsoft Corporation
+product_name: Surface Laptop 2
+product_version: 124000000000000000000000D:F B:         F:U C:   P:C1 S:   
+board_name: Surface Laptop 2
+bios_version: 140.178.768
+
+=== CPU ===
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           39 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  8
+On-line CPU(s) list:                     0-7
+Vendor ID:                               GenuineIntel
+Model name:                              Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz
+CPU family:                              6
+Model:                                   142
+Thread(s) per core:                      2
+Core(s) per socket:                      4
+Socket(s):                               1
+Stepping:                                10
+CPU(s) scaling MHz:                      50%
+CPU max MHz:                             3400.0000
+CPU min MHz:                             400.0000
+BogoMIPS:                                3600.00
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp vnmi md_clear flush_l1d arch_capabilities
+Virtualization:                          VT-x
+L1d cache:                               128 KiB (4 instances)
+L1i cache:                               128 KiB (4 instances)
+L2 cache:                                1 MiB (4 instances)
+L3 cache:                                6 MiB (1 instance)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-7
+Vulnerability Gather data sampling:      Vulnerable
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             KVM: Mitigation: Split huge pages
+Vulnerability L1tf:                      Mitigation; PTE Inversion; VMX conditional cache flushes, SMT vulnerable
+Vulnerability Mds:                       Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerability Meltdown:                  Mitigation; PTI
+Vulnerability Mmio stale data:           Mitigation; Clear CPU buffers; SMT vulnerable
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Mitigation; IBRS
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; IBRS; IBPB conditional; STIBP conditional; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                     Mitigation; Microcode
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspace
+
+=== CPU FLAGS ===
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb pti ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp vnmi md_clear flush_l1d arch_capabilities
+
+=== CPU CACHE ===
+NAME ONE-SIZE ALL-SIZE WAYS TYPE        LEVEL SETS PHY-LINE COHERENCY-SIZE
+L1d       32K     128K    8 Data            1   64        1             64
+L1i       32K     128K    8 Instruction     1   64        1             64
+L2       256K       1M    4 Unified         2 1024        1             64
+L3         6M       6M   12 Unified         3 8192        1             64
+
+=== MEMORY ===
+               total        used        free      shared  buff/cache   available
+Mem:           7.2Gi       4.0Gi       1.2Gi       717Mi       2.4Gi       3.1Gi
+Swap:          4.0Gi          0B       4.0Gi
+
+MemTotal:        7529080 kB
+MemAvailable:    3295060 kB
+SwapTotal:       4194300 kB
+SwapFree:        4194300 kB
+
+=== SWAP / ZRAM ===
+NAME      TYPE SIZE USED PRIO
+/swap.img file   4G   0B   -1
+
+
+=== STORAGE DEVICES ===
+NAME        MODEL                      SIZE TYPE FSTYPE   ROTA TRAN   MOUNTPOINTS
+loop0                                    4K loop squashfs    0        /snap/bare/5
+loop1                                 66.8M loop squashfs    0        /snap/core24/1587
+loop2                                 66.8M loop squashfs    0        /snap/core24/1643
+loop3                                 19.6M loop squashfs    0        /snap/desktop-security-center/150
+loop4                                273.7M loop squashfs    0        /snap/firefox/8107
+loop5                                   20M loop squashfs    0        /snap/desktop-security-center/151
+loop6                                 16.5M loop squashfs    0        /snap/firmware-updater/226
+loop7                                 91.7M loop squashfs    0        /snap/gtk-common-themes/1535
+loop8                                606.1M loop squashfs    0        /snap/gnome-46-2404/153
+loop9                                  395M loop squashfs    0        /snap/mesa-2404/1165
+loop10                                 402M loop squashfs    0        /snap/mesa-2404/1839
+loop11                                18.8M loop squashfs    0        /snap/prompting-client/204
+loop12                                18.8M loop squashfs    0        /snap/prompting-client/222
+loop13                                49.3M loop squashfs    0        /snap/snapd/26865
+loop14                                 580K loop squashfs    0        /snap/snapd-desktop-integration/361
+loop15                                15.7M loop squashfs    0        /snap/snap-store/1367
+nvme0n1     Skhynix BC501 NVMe 256GB 238.5G disk             0 nvme   
+├─nvme0n1p1                            100M part vfat        0 nvme   /boot/efi
+├─nvme0n1p2                             16M part             0 nvme   
+├─nvme0n1p3                           91.4G part ntfs        0 nvme   
+├─nvme0n1p4                              8G part vfat        0 nvme   
+├─nvme0n1p5                            522M part ntfs        0 nvme   
+└─nvme0n1p6                          138.5G part ext4        0 nvme   /
+
+=== FILESYSTEM CAPACITY ===
+Filesystem     Type      Size  Used Avail Use% Mounted on
+tmpfs          tmpfs     1.5G  3.0M  1.5G   1% /run
+/dev/nvme0n1p6 ext4      136G   16G  114G  12% /
+tmpfs          tmpfs     3.6G  4.0K  3.6G   1% /dev/shm
+efivarfs       efivarfs  236K  116K  116K  50% /sys/firmware/efi/efivars
+none           tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none           tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+/dev/nvme0n1p1 vfat       96M   36M   61M  38% /boot/efi
+tmpfs          tmpfs     3.6G  8.0K  3.6G   1% /tmp
+tmpfs          tmpfs     736M  4.0M  732M   1% /run/user/1000
+
+=== GPU / DISPLAY HARDWARE ===
+00:02.0 VGA compatible controller [0300]: Intel Corporation Kaby Lake-R GT2 [UHD Graphics 620] [8086:5917] (rev 07)
+	Subsystem: Microsoft Corporation Device [1414:0025]
+	Kernel driver in use: i915
+	Kernel modules: i915
+00:04.0 Signal processing controller [1180]: Intel Corporation Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem [8086:1903] (rev 08)
+
+=== DRM DEVICES ===
+
+=== OPENGL ===
+glxinfo: NOT INSTALLED
+
+=== VULKAN ===
+vulkaninfo: NOT INSTALLED
+
+=== KERNEL MODULES — GPU / SURFACE ===
+mei_pxp                16384  0
+mei_hdcp               28672  0
+ipts                   36864  0
+surface_gpe            16384  0
+surface_platform_profile    16384  0
+i915                 4169728  19
+drm_buddy              28672  1 i915
+ttm                   110592  1 i915
+platform_profile       20480  2 surface_platform_profile,processor_thermal_soc_slider
+drm_display_helper    262144  1 i915
+cec                    81920  2 drm_display_helper,i915
+mei_me                 53248  3
+mei                   167936  7 mei_hdcp,mei_pxp,mei_me,ipts
+i2c_algo_bit           12288  1 i915
+surface_acpi_notify    24576  0
+surfacepro3_button     12288  0
+surface_kbd            12288  0
+surface_aggregator_registry    16384  0
+video                  77824  1 i915
+surface_hid_core       12288  1 surface_kbd
+hid                   258048  8 i2c_hid,surface_kbd,hid_multitouch,snd_soc_sdca,hid_generic,ipts,surface_hid_core
+surface_aggregator    163840  5 surface_acpi_notify,surface_kbd,surface_platform_profile,surface_hid_core,surface_aggregator_registry
+crc_itu_t              12288  1 surface_aggregator
+
+=== CPU FREQUENCY ===
+/sys/devices/system/cpu/cpu0/cpufreq/scaling_available_governors:performance powersave
+/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq:1100850
+/sys/devices/system/cpu/cpu0/cpufreq/scaling_driver:intel_pstate
+/sys/devices/system/cpu/cpu0/cpufreq/scaling_governor:powersave
+/sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq:3400000
+/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq:400000
+/sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed:<unsupported>
+
+=== THERMAL ZONES ===
+thermal_zone0 INT3400 Thermal 20000
+thermal_zone1 GEN1 37950
+thermal_zone2 GEN7 38850
+thermal_zone3 pch_skylake 40000
+thermal_zone4 B0D4 46000
+thermal_zone5 x86_pkg_temp 46000
+
+=== BATTERY / POWER ===
+--- ADP1 ---
+type=Mains
+--- BAT1 ---
+type=Battery
+status=Discharging
+capacity=80
+energy_full=42630000
+energy_full_design=45200000
+power_now=12171000
+voltage_now=7945000
+
+=== CURRENT LOAD ===
+ 05:06:48 up 9 min,  1 user,  load average: 3.18, 2.78, 1.55
+
+    PID COMMAND         %CPU %MEM
+   5700 Isolated Web Co 47.3 13.8
+   6704 Isolated Web Co 10.9  8.7
+   4971 firefox         67.9  8.3
+   6217 Isolated Web Co 12.1  4.6
+   6515 Isolated Web Co 16.4  4.6
+   3489 gnome-shell     20.3  3.7
+   5164 Privileged Cont  4.5  2.6
+   6364 Isolated Web Co  2.5  2.6
+   4882 ptyxis           1.8  1.5
+   5372 WebExtensions    0.2  1.4
+   4604 gjs              0.2  1.2
+   6604 Isolated Web Co  0.1  1.1
+   6746 Web Content      0.1  0.9
+   6737 Web Content      0.0  0.9
+   6910 Web Content      0.1  0.9
+   3749 evolution-alarm  0.0  0.8
+   5692 Utility Process  0.0  0.7
+   5174 RDD Process      0.0  0.7
+   5145 Socket Process   0.0  0.6
+
+=== COMPILATION TOOLCHAIN ===
+gcc: NOT INSTALLED
+g++: NOT INSTALLED
+clang: NOT INSTALLED
+cmake: NOT INSTALLED
+make: NOT INSTALLED
+git: git version 2.53.0
+python3: Python 3.14.4
+
+=== EXISTING LOCAL-AI SOFTWARE ===
+llama-cli=ABSENT
+llama-server=ABSENT
+ollama=ABSENT
+python3=/usr/bin/python3
+whisper-cli=ABSENT
+whisper-server=ABSENT
+
+=== REPOSITORY DETECTION ===
+DifferenceEngine=/home/reckless-ideator/DifferenceEngine
+447M	/home/reckless-ideator/DifferenceEngine
+b39d2138800c6df9df173321c30fb7ccfe157d71
+ M workspace/operational/current/ACTIVE_MISSION.md
+ M workspace/operational/current/ACTIVE_TASK.md
+ M workspace/operational/current/MISSION.md
+ M workspace/operational/current/OPERATIONAL_LAWS.md
+ M workspace/operational/current/REPOSITORY_STATE.md
+ M workspace/operational/current/RESUME.md
+ M workspace/operational/current/WORKFLOW.md
+?? "BOOTSTRAP/BOOTSTRAP - CONTINUE - INGESTER EPOCH v1.0 - 8-4-26-1300.md"
+?? "BOOTSTRAP/BOOTSTRAP \342\200\224 Foundational Reduction Continuation.md"
+?? BOOTSTRAP/BST-CBD-OPS_Operational_Bedrock_and_Ingester_Execution_v0.1.0.md
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Architectural Philosophy And Meta Synthsis.md"
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Computational Bedrock.md"
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Session Continuation Bootstrap - Epoch II - Repository Archaeology - Into - Constitutional Synthesis.md"
+?? "BOOTSTRAP/Bootstrap - Epoch II \342\200\224 Post Milestone 002 - Constitutional Kernel - Operational Bootstrap.md"
+?? "BOOTSTRAP/Bootstrap vNext \342\200\224 Candidate Constitutional Bootstrap Additions.md"
+?? BOOTSTRAP/Branches/
+?? "BOOTSTRAP/Computational Bedrock Bootstrap Ingester Recovery Continuation.md"
+?? BOOTSTRAP/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md
+?? "BOOTSTRAP/Load The Constitutional Kernel.md"
+?? "BOOTSTRAP/Recover Existing Injestion Files.md"
+?? BOOTSTRAP_BRANCHES.txt
+?? BOOTSTRAP_FILES.txt
+?? BOOTSTRAP_FOLDER.txt
+?? BOOTSTRAP_TOP.txt
+?? CONVERSATION_CORPUS_VERIFIED.json
+?? ENTRY_POINTS.txt
+?? INGESTER_CODE.tar
+?? INGESTION_FILES.txt
+?? MILESTONE_002_CONVERSATION_CORPUS.md
+?? PHONE_ACTIVE_STATE.txt
+?? REPOSITORY_STATUS.txt
+?? ade/services/
+?? ade/tests/
+?? architecture/services/
+?? discover_conversations.py
+?? "evidence/Branch 0 - Origins - Computational Bedrock Reduction.md"
+?? "evidence/Branch II - Research - Computational Bedrock \342\200\224 Cross-Branch Synthesis for Discussion.md"
+?? "evidence/Branch IV - Operations - Computational Bedrock.md"
+?? "evidence/Branch V - Human Interface - Computational Bedrock.md"
+?? evidence/CORE_INTERFACE_PANE_REQUIREMENT_CANDIDATE.md
+?? evidence/MEMORY_PALACE_SIMONIDES_PANE_CANDIDATE.md
+?? evidence/ingestion/
+?? governance/
+?? inventory/initialization/
+?? queue/ingestion/
+?? workspace/operational/census/
+?? workspace/operational/corpus/
+?? workspace/operational/current/state-model-candidates.lst
+?? workspace/operational/current/state-references.clean.out
+?? workspace/operational/current/state-references.out
+?? workspace/operational/identity/
+?? workspace/operational/ingestion/
+?? workspace/operational/mobile_bridge/
+?? workspace/operational/repository_state/

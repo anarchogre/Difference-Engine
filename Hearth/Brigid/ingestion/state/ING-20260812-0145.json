@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0145",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:10.832889-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Design_Philosophy_v1.1.json",
+    "original_name": "AKS_Design_Philosophy_v1.1.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0145",
+    "schema_version": "0.1.0",
+    "sha256": "ac2dab7c0a9cb797392d7ffd51eed739395276b873d57696adc782a0b1f3c831",
+    "size_bytes": 230,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

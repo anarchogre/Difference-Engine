@@ -1,0 +1,132 @@
+Operational Reality
+
+Status: Active
+Scope: Difference Engine Operations
+Last Major Reality Transition: Mobile-primary -> Surface / Forge-primary
+
+Purpose:
+
+Describe the actual operating environment of the primary repository operator.
+
+Design workflows for reality rather than an idealized environment.
+
+Primary Execution Environment
+
+Primary machine:
+
+The Forge
+
+Current execution surface:
+
+Surface-class laptop running Linux.
+
+Primary repository:
+
+/home/reckless-ideator/DifferenceEngine
+
+Primary execution tools:
+
+Linux shell
+Git
+Python 3
+ChatGPT
+Repository-native tools and scripts
+
+The Android / Termux environment is no longer the primary Difference Engine
+execution environment.
+
+The phone remains relevant as:
+
+a historical execution environment;
+
+a recovery source;
+
+an evacuated-data source;
+
+a secondary mobile execution surface where necessary.
+
+Current Source Reality
+
+The live repository filesystem is the strongest currently available source
+for operational state.
+
+ChatGPT Project Sources, File Library surfaces, uploaded-source indexing,
+and related collaboration surfaces may be incomplete, stale, degraded, or
+temporarily unreliable.
+
+Do not infer repository state from those surfaces when live repository
+evidence is available.
+
+Preserve provenance when moving information between:
+
+repository;
+
+ChatGPT conversations;
+
+Project Sources;
+
+File Library;
+
+phone storage;
+
+recovery archives.
+
+Operational Constraints
+
+Frequent interruption remains normal.
+
+Cognitive load remains operationally significant.
+
+Work must be resumable.
+
+Progress must be preserved early.
+
+Terminal output should be bounded.
+
+Large reports should be written to durable evidence files instead of dumped
+into the terminal.
+
+Command blocks should be coherent and sized for reliable execution.
+
+Avoid giant monolithic execution blocks.
+
+When an error or crash occurs:
+
+stop;
+
+recover the exact execution boundary;
+
+reduce to one operation;
+
+verify;
+
+continue.
+
+Repository processes should:
+
+preserve progress early and often;
+
+minimize repetitive typing;
+
+minimize context switching;
+
+prefer durable artifacts over conversational memory;
+
+reduce unnecessary cognitive burden;
+
+retain provenance;
+
+support deterministic recovery.
+
+Operational Priority
+
+Repository reality outranks conversational reconstruction.
+
+Evidence outranks memory.
+
+Recovery precedes redesign.
+
+Conversation archaeology is currently active and load-bearing.
+
+Do not derail active archaeology to repair unrelated infrastructure unless
+the failure blocks the recovery mission.

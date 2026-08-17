@@ -1,0 +1,24 @@
+status=DOCX_ARTIFACT_IDENTITY_RESOLVED
+candidate_docx_artifacts=25
+
+numbered_individual_conversations=20
+numbered_master_coverage=20_of_20
+
+distinct_pre_branch0_origins_prelude=1
+prelude_artifact=Last chat before starting new project.docx
+
+master_aggregate_artifacts=3
+master_1_18_variants=2
+master_18_20_variants=1
+
+master_1_18_part1_vs_M1_source_coverage_pct=99.78
+master_1_18_vs_M1_source_coverage_pct=99.78
+master_1_18_part1_vs_1_18_source_coverage_pct=99.97
+master_1_18_part1_vs_1_18_target_coverage_pct=100.00
+master_18_20_part2_vs_M2_source_coverage_pct=99.70
+
+forensic_parser_workflow_start_docx_json_source_text=EXACT_NORMALIZED_IDENTITY
+
+unexplained_docx_candidates=0
+forensic_parser_workflow_start_conversation_identity=OPEN
+promotion=NONE

@@ -1,0 +1,10 @@
+--- workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-heading-repair/backups/task.py.before	2026-08-03 04:57:43.663125994 -0500
++++ ade/kernel/bootstrap_loader/task.py	2026-08-03 04:57:43.779792672 -0500
+@@ -21,6 +21,7 @@
+         r"(?im)^next task\s*:?\s*(.+)$",
+         r"(?im)^immediate next\s*:?\s*(.+)$",
+         r"(?im)^#+\s*current task\s*$\s*(.+)$",
++        r"(?im)^#+\s*active task\s*$\s*(.+)$",
+         r"(?im)^#+\s*next task\s*$\s*(.+)$",
+     )
+ 

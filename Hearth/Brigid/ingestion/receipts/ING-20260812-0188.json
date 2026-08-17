@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:13.831834-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_manifest_v0.1.json",
+  "original_name": "AKS_manifest_v0.1.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0188",
+  "schema_version": "0.1.0",
+  "sha256": "4b6b17943579e0333684eda41dd16ca4ebc41007ce46fa9708928d9c73ae906c",
+  "size_bytes": 242,
+  "source_class": "manual_batch"
+}

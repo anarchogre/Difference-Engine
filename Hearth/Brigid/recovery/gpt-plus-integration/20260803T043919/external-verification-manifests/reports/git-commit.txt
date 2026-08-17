@@ -1,0 +1,7 @@
+hint: The '.githooks/pre-commit' hook was ignored because it's not set as executable.
+hint: You can disable this warning with `git config set advice.ignoredHook false`.
+[master 70f2c45] Add external recovery verification manifests
+ 3 files changed, 113 insertions(+)
+ create mode 100644 workspace/operational/integration/EXTERNAL_VERIFICATION_STATUS.json
+ create mode 100644 workspace/operational/integration/FILE_LIBRARY_MANIFEST.json
+ create mode 100644 workspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json

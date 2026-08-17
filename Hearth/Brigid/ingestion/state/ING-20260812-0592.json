@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0592",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:49:03.199812-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/SPEC-2010_v1.0.0-1.json",
+    "original_name": "SPEC-2010_v1.0.0-1.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0592",
+    "schema_version": "0.1.0",
+    "sha256": "575a631ac058be0211e7606a1afc0d83a6ab6aa40c728f14cccdd92d17677074",
+    "size_bytes": 320,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

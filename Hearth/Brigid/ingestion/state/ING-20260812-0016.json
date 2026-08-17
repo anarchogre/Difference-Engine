@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0016",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:04.726511-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-DECISION-0002_Kernel_Validation_Layer.json",
+    "original_name": "AKS-DECISION-0002_Kernel_Validation_Layer.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0016",
+    "schema_version": "0.1.0",
+    "sha256": "6a99c5482557d01a0d259684ed2e4c800634bb1fc56d384aa3ab257e15640a2e",
+    "size_bytes": 339,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

@@ -1,0 +1,5 @@
+from ade.kernel.bootstrap_loader.loader import initialize
+
+def test_initialize():
+    state = initialize()
+    assert state.execution_mode == "Execution"

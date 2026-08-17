@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0112",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:08.895253-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-SPEC-0001_Draft_0.4_Canonical.json",
+    "original_name": "AKS-SPEC-0001_Draft_0.4_Canonical.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0112",
+    "schema_version": "0.1.0",
+    "sha256": "9e612930ce25e2c507d98aa49dec8cc79763812a4033225c4ce50a6c3de8ad76",
+    "size_bytes": 7096,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

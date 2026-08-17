@@ -1,0 +1,24 @@
+===== bootstrap.py =====
+"""
+Bootstrap loading.
+"""
+
+from .artifacts import bootstrap
+
+def load_bootstrap(root):
+    return bootstrap(root)
+
+===== queue.py =====
+"""
+Queue recovery.
+"""
+
+def recover_queues() -> list[str]:
+    return []
+
+===== test_bootstrap_loader.py =====
+from ade.kernel.bootstrap_loader.loader import initialize
+
+def test_initialize():
+    state = initialize()
+    assert state.execution_mode == "Execution"

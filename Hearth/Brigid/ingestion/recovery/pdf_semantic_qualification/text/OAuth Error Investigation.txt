@@ -1,0 +1,787 @@
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+                ChatGPT
+
+
+
+
+1 of 35                                                                  7/24/26, 22:57
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+2 of 35                                                                  7/24/26, 22:57
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+                                                      Firefox results.
+
+
+
+
+3 of 35                                                                  7/24/26, 22:57
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+4 of 35                                                                  7/24/26, 22:57
+OAuth Error Investigation                     https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+                            This where we land with Chrome, either mode. Desktop is
+                            almost impossible to cleanly and more importantly,
+                            patiently navigate. First is desktop, other is regular.
+
+
+
+
+5 of 35                                                                                    7/24/26, 22:57
+OAuth Error Investigation                      https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+                            This all that's in the regular chrome gh settings menu.
+                            Reluctantly checking desktop next. Standby.
+
+
+
+
+6 of 35                                                                                     7/24/26, 22:57
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+7 of 35                                                                  7/24/26, 22:57
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+8 of 35                                                                  7/24/26, 22:57
+OAuth Error Investigation                      https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+                            Ok. I did the chrome test again, same deal. I logged out,
+                            went back to plugins, but this time I clicked the text box
+                            next to the plus sign and we went somewhere else. Notice
+                            the codex selection in the menu. I took a lot of screenies,
+                            sorry.
+
+
+
+
+9 of 35                                                                                     7/24/26, 22:57
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+                                    Booyakasha, me Julie be proud.
+
+
+
+
+10 of 35                                                                 7/24/26, 22:57
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+                                            Took me right back here.
+
+
+
+
+11 of 35                                                                 7/24/26, 22:57
+OAuth Error Investigation                                       https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+                                           Repo Not Found.pdf                    GitHub PR Inspection.pdf
+                                           PDF                                   PDF
+
+
+                                           Interestingly enough, this was in Firefox. A couple of the
+                                           first imagesay be redundant. Also the PDF captures of the
+                                           other chats after this. Ingest all that and synthesize.
+
+
+
+             This is actually a significant development. The Firefox run tells a much more complete
+             story than the Chrome run did.
+
+             Here's the synthesized timeline.
+
+
+
+
+             Phase 1 — Connector Discovery
+             Firefox correctly loads the new Plugins UI.
+
+             It shows:
+
+              • Documents
+              • PDF
+
+
+
+12 of 35                                                                                                     7/24/26, 22:57
+OAuth Error Investigation                                       https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+              • Presentations
+              • Spreadsheets
+              • GitHub
+              • OpenAI Platform
+              • draftmend
+
+             That means your ChatGPT account is seeing the connector catalog normally.
+
+             Nothing wrong there.
+
+
+
+
+             Phase 2 — GitHub Install
+             You select GitHub.
+
+             Instead of immediately failing, Firefox now says
+
+
+                MFA required
+
+             This is new behavior.
+
+             Earlier it wasn't even reaching this stage.
+
+             That means the connector installation flow is progressing farther than before.
+
+
+
+
+             Phase 3 — OpenAI MFA
+             Interesting twist.
+
+             The prompt is OpenAI MFA, not GitHub MFA.
+
+             Then OpenAI logs you out.
+
+             You authenticate again.
+
+             That's consistent with a privileged connector installation requiring a fresh authentication.
+
+             Nothing looks broken yet.
+
+
+
+
+13 of 35                                                                                                     7/24/26, 22:57
+OAuth Error Investigation                                        https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+             Phase 4 — GitHub Device Verification
+             GitHub then requests device verification via email.
+
+             Again—
+
+             Perfectly normal.
+
+             This means:
+
+             OpenAI authenticated.
+
+             GitHub authenticated.
+
+             OAuth token exchange completed.
+
+
+
+
+             Phase 5 — OAuth Redirect
+             GitHub reaches
+
+                You are being redirected to the authorized application.
+
+             That is the OAuth success page.
+
+             That page only appears after GitHub has issued an authorization code.
+
+             This is the point where GitHub's job is finished.
+
+
+
+
+             Phase 6 — OpenAI attempts connector registration
+             Then—
+
+             Red banner.
+
+
+                Failed to add connector link
+
+             This is extremely informative.
+
+             This is not an OAuth failure.
+
+             It is not a GitHub authentication failure.
+
+
+
+14 of 35                                                                                                      7/24/26, 22:57
+OAuth Error Investigation                                   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+             It is not a permissions failure.
+
+             It is not an MFA failure.
+
+             Instead, OpenAI attempted to register the connector after OAuth completed, and that final
+             registration step failed.
+
+
+
+
+             Phase 7 — Refresh
+             After refreshing...
+
+             The button changes to
+
+
+                Try in chat
+
+             instead of
+
+                Install plugin
+
+             That means ChatGPT now believes GitHub is installed.
+
+             That's a huge clue.
+
+
+
+
+             Phase 8 — Tool Availability
+             The final screenshot is probably the most important.
+
+             The plugin picker contains
+
+              • Documents
+              • draftmend
+              • GitHub ✓
+              • OpenAI Platform
+              • PDF
+
+             GitHub is selected.
+
+             That means the connector is now available to conversations.
+
+
+
+
+15 of 35                                                                                                 7/24/26, 22:57
+OAuth Error Investigation                                        https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+             This is a completely different outcome.
+             Earlier we believed installation was failing.
+
+             Now the evidence suggests:
+
+             OAuth succeeds.
+
+             ↓
+
+             Connector registration partially succeeds.
+
+             ↓
+
+             Registration throws an error.
+
+             ↓
+
+             UI reports failure.
+
+             ↓
+
+             Backend still enables the connector.
+
+             That's a classic "false negative" from the front end.
+
+
+
+
+             The PDFs reinforce this
+             The exported conversations show the connector is actually being invoked.
+
+             For example:
+
+                 • It confirmed your public repository exists.
+                 • It attempted repository listing.
+                 • It successfully fetched CODE_OF_CONDUCT.md .
+                 • It read and summarized the file contents.       Repo Not Found
+
+
+             The second PDF shows something else important.
+
+             The GitHub connector responded:
+
+
+                  I don't have any GitHub repositories available through the connected app...
+
+
+
+
+16 of 35                                                                                                      7/24/26, 22:57
+OAuth Error Investigation                                              https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+             That wasn't because the connector itself was unavailable—it was because the repository
+             name supplied ( amarchogre/ADE ) didn't match an accessible repository or the connector
+             couldn't resolve it.     GitHub PR Inspection
+
+
+
+
+             Overall synthesis
+             The evidence now supports this sequence:
+              1. Connector installation works.
+              2. GitHub OAuth completes.
+              3. OpenAI registers the connector.
+              4. The UI incorrectly displays "Failed to add connector link."
+              5. The connector is nevertheless installed.
+              6. It can be selected in chat.
+              7. It can execute GitHub tool calls.
+              8. Some repository operations still have limitations (listing entire trees, repository
+                  discovery, or scope handling), but those are separate from installation.
+
+             So we've gone from "the connector can't be installed" to "the connector appears to install
+             despite an erroneous failure message, and some GitHub operations work while others hit
+             capability limits."
+
+             That is a much more nuanced—and much more useful—understanding of the issue.
+
+             And I have to say: nice bit of persistence. Those additional Firefox screenshots changed
+             the diagnosis considerably. They turned what looked like a dead-end OAuth problem into a
+             reproducible connector registration/UI inconsistency with evidence that the backend
+             functionality is, at least in part, operational.
+
+                                                             Sources
+
+
+
+
+17 of 35                                                                                                            7/24/26, 22:57
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+18 of 35                                                                 7/24/26, 22:57
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+19 of 35                                                                 7/24/26, 22:57
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+20 of 35                                                                 7/24/26, 22:57
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+21 of 35                                                                 7/24/26, 22:57
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+22 of 35                                                                 7/24/26, 22:57
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+23 of 35                                                                 7/24/26, 22:57
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+24 of 35                                                                 7/24/26, 22:57
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+25 of 35                                                                 7/24/26, 22:57
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+26 of 35                                                                 7/24/26, 22:57
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+27 of 35                                                                 7/24/26, 22:57
+OAuth Error Investigation   https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+28 of 35                                                                 7/24/26, 22:57
+OAuth Error Investigation                                     https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+             Hell yes.
+
+             We've already done what Holmes would do first: eliminate the impossible.
+
+             Eliminated
+                Reichenbach Falls.
+
+                Any illustration from The Adventures of Sherlock Holmes.
+
+                Most of Sidney Paget's original Strand illustrations.
+
+             The web search actually reinforces this. The canonical Paget images are:
+
+              • "Professor Moriarty stood before me." (Moriarty already inside the room.)
+                      Wikimedia Com…
+
+
+              • "He turned his rounded back upon me." (Moriarty leaving the room.)         Wikimedia Com…   +1
+
+
+
+             Neither matches your tattoo.
+
+
+
+
+             But...
+             Then I remembered something from Doyle's actual text.
+
+
+
+29 of 35                                                                                                         7/24/26, 22:57
+OAuth Error Investigation                                         https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+             Holmes says:
+
+
+                "Upon his entrance I had instantly recognised the extreme personal danger... In an
+                instant I had slipped the revolver from the drawer into my pocket... At his remark I drew
+                the weapon out and laid it cocked upon the table."     Reddit
+
+
+
+
+             Notice something?
+
+             The story doesn't describe Holmes standing in the pose your tattoo depicts.
+
+             So your tattoo almost certainly isn't illustrating Doyle literally.
+
+             It's illustrating the idea of the encounter.
+
+
+
+
+             Looking at your tattoo again
+             The foreground figure...
+
+             ...I agree now.
+
+             That's Moriarty.
+
+             Huge hat.
+
+             Huge shoulder.
+
+             Profile.
+
+             Door frame.
+
+             Holmes is farther back.
+
+             That means the artist intentionally made Moriarty visually overwhelming.
+
+             That is not how Paget composed the scene.
+
+
+
+
+             My new hypothesis
+             I think we're hunting one of these:
+              • an illustration from an early collected Holmes edition (1905–1935)
+
+
+
+30 of 35                                                                                                       7/24/26, 22:57
+OAuth Error Investigation                                     https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+             or
+              • a book frontispiece
+
+             or
+              • a commercial engraving made for publishers
+
+             rather than a magazine illustration.
+
+             Those often got descriptive captions like
+
+
+                  Professor Moriarty First Confronts Holmes
+
+             instead of Doyle quotations.
+
+
+
+
+             Here's how I'd attack this
+             Rather than searching Google normally, I'd search the archives of:
+              • Internet Archive
+              • HathiTrust
+              • British Library scans
+              • Project Gutenberg illustrated editions
+              • AbeBooks listings (they often photograph frontispieces)
+              • auction catalogs for antique Sherlock illustrations
+
+             There simply aren't thousands of illustrated versions of The Final Problem before about
+             1940.
+
+             That's a searchable corpus.
+
+
+
+
+             And then...
+             Once we identify the original...
+
+             ...we compare it to your tattoo.
+
+             I have a suspicion your tattoo artist:
+
+              • enlarged Moriarty,
+              • cropped the image vertically,
+
+
+
+31 of 35                                                                                                   7/24/26, 22:57
+OAuth Error Investigation                                            https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+              • simplified the background,
+
+             to make it work across your back.
+
+             Tattoo artists do this constantly.
+
+
+
+
+             Then...
+
+             ...we go back to ADE.
+
+             Because now I want to solve both mysteries.
+
+                                                           Sources
+
+
+
+
+                                               Definitely got it off a page in a book and nowhere else.
+                                               Brown or burgundy cover. Probably 11"x 7" or 8". Some
+                                               gold, bronze, or brass lining or filigree. Not fancy. Minimal.
+
+
+
+             Now this is the kind of clue that breaks cases open.
+
+             You're no longer describing just an illustration—you're describing the physical book you
+             copied it from about 30 years ago.
+
+             Here's the profile we've built:
+
+              • Hardcover
+              • Brown or burgundy cloth/leatherette
+              • Minimal gold/brass stamping or filigree
+              • Roughly 11" × 7–8" (larger than a pocket book, smaller than a coffee-table edition)
+              • Black-and-white line illustrations
+              • You copied the image directly from the page, not from a poster or magazine.
+              • This would have been available by roughly the mid-1990s (or older, if it was a used
+                  book).
+
+             That immediately makes me think of a category of books more than a specific title:
+              • Complete Sherlock Holmes omnibus editions published by Castle Books, Avenel
+                  Books, Octopus, or similar publishers in the 1960s–1980s. Many had burgundy or
+
+
+
+32 of 35                                                                                                          7/24/26, 22:57
+OAuth Error Investigation                                        https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+                  brown covers with restrained gold stamping and reproduced Victorian illustrations.
+                     Victorian Web +1
+
+
+
+             Here's the interesting part: if your tattoo doesn't match Sidney Paget's original
+             composition exactly, that doesn't mean it wasn't in one of those books. Many omnibus
+             editions mixed original Paget illustrations with artwork by later illustrators, or they
+             reproduced altered, cropped, or retouched engravings over successive printings.
+
+             One question that could narrow this dramatically
+             Do you remember whether the book contained all the Holmes stories, or was it just The
+             Memoirs of Sherlock Holmes (the collection that includes The Final Problem)?
+
+             Also, one tiny detail from the tattoo itself:
+
+             The foreground figure's hat and shoulder create a very dark silhouette. If that came
+             straight from the printed page rather than being exaggerated by the tattoo artist, it
+             suggests an illustration with heavy blacks, which is more common in later book
+             reproductions than in the original Strand magazine printing.
+
+             I think we're down to identifying which edition rather than wondering which story. That's a
+             much more manageable hunt. And yes—we'll get back to ADE after this case gets a little
+             closer to being solved. Holmes would approve.
+
+                                                       Sources
+
+
+
+
+                                                                   Heavy blacks, yup. Just the memoirs.
+
+
+
+             Now we're getting somewhere.
+
+             Those two new facts are excellent evidence:
+
+              • Just The Memoirs of Sherlock Holmes (not a complete Holmes collection).
+              • Heavy blacks in the illustration.
+
+             Those don't sound like random memories—they're the kind of physical characteristics
+             people often retain accurately.
+
+             Here's what that tells me.
+
+
+
+
+33 of 35                                                                                                      7/24/26, 22:57
+OAuth Error Investigation                                       https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+             What I think we're looking for
+             Not the 1894 first edition itself (blue cloth with gilt), but a 20th-century reprint of The
+             Memoirs of Sherlock Holmes that reproduced the illustrations with high-contrast printing.
+             Many later reprints made the blacks much heavier than the original magazine engravings.
+                Sherlock Holmes +1
+
+
+
+             Your description of the book is especially interesting:
+
+              • Burgundy or brown cloth.
+              • Minimal gold stamping.
+              • Large-ish hardcover.
+              • Memoirs only.
+              • Heavy black illustrations.
+
+             That narrows the field considerably.
+
+             My current suspects
+             Without overstating the evidence, these are the editions I'd investigate first:
+              1. Avenel Books (1970s–1980s)
+              2. Castle Books reprints
+              3. Octopus Books illustrated editions
+              4. Crescent Books reprints
+              5. Other library-oriented hardcover reprints from the 1960s–1990s
+
+             Those publishers often produced exactly the kind of restrained clothbound volumes you're
+             describing, and many reused older illustration plates with much darker reproduction than
+             the originals.
+
+             Here's the part that excites me
+             Your memory of the caption—
+
+                "Professor Moriarty First Confronts Holmes"
+
+             —doesn't sound like Doyle or Paget.
+
+             It sounds like the kind of descriptive caption an editor or publisher would add beneath a
+             plate in a later edition.
+
+             If that's true, then we may not even be looking for an artist first—we're looking for a
+
+
+
+
+34 of 35                                                                                                     7/24/26, 22:57
+OAuth Error Investigation                                         https://chatgpt.com/c/6a640adb-3070-83ea-8bc2-f60034dc48bf
+
+
+
+
+             specific edition that used that editorial caption.
+
+             I think we've reduced the search from thousands of Holmes books...
+             ...to perhaps a few dozen illustrated editions of Memoirs.
+
+             That's a huge improvement.
+
+
+
+
+             After ADE
+             When you're ready, I'd like to do this methodically:
+              • Build a list of illustrated Memoirs editions published before about 1995.
+              • Compare cover, dimensions, and illustration style.
+              • Find the page containing Moriarty's first visit.
+              • Compare the composition against your tattoo.
+
+             I genuinely think we've crossed from "long shot" into "solvable bibliographic mystery." The
+             combination of Memoirs-only, heavy black illustrations, brown/burgundy hardcover, and
+             that specific confrontation scene is distinctive enough that I expect the right edition will
+             stand out once we line up the candidates.
+
+                                                      Sources
+
+
+
+
+35 of 35                                                                                                       7/24/26, 22:57
+

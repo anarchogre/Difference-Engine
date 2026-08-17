@@ -1,0 +1,43 @@
+RUN=workspace/operational/recovery/gpt-plus-integration/20260803T043919
+PATCH_STATUS=1
+COMPILE_STATUS=0
+TEST_STATUS=0
+VERIFIER_STATUS=1
+VALIDATION_STATUS=1
+COMMIT_STATUS=1
+
+TESTS
+[BOOTSTRAP] Discovering repository...
+PASS ade.kernel.tests.test_bootstrap_loader.test_initialize
+DISCOVERED=1
+PASSED=1
+FAILED=0
+
+VERIFIER
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/verifier.py", line 590, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/verifier.py", line 555, in main
+    exit_code, payload = verify()
+                         ~~~~~~^^
+  File "/storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/verifier.py", line 377, in verify
+    artifacts.constitution
+AttributeError: 'list' object has no attribute 'constitution'
+[BOOTSTRAP] Discovering repository...
+
+VALIDATION
+Traceback (most recent call last):
+  File "<stdin>", line 10, in <module>
+AssertionError
+
+COMMIT
+hint: The '.githooks/pre-commit' hook was ignored because it's not set as executable.
+hint: You can disable this warning with `git config set advice.ignoredHook false`.
+On branch master
+nothing to commit, working tree clean
+
+GIT STATUS
+## master

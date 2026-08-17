@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:02:02.304317-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Checkpointing_Specification_v0.1.md",
+  "original_name": "Workflow_Checkpointing_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0049",
+  "schema_version": "0.1.0",
+  "sha256": "b152c9005bdf63f252a27f6418291a79b3bbbd456fc6e3f1088af82c2423a769",
+  "size_bytes": 5214,
+  "source_class": "manual_batch"
+}

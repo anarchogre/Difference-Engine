@@ -1,0 +1,892 @@
+.
+├── .cg
+│   ├── editor
+│   │   ├── breakpoints.json
+│   │   └── openedFiles.json.bak
+│   └── gradle-sync
+│       ├── project.pb
+│       ├── sync.lock
+│       └── sync.pb
+├── .git
+│   ├── COMMIT_EDITMSG
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── ORIG_HEAD
+│   ├── branches
+│   ├── config
+│   ├── hooks
+│   ├── index
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       │   └── main
+│   │       └── remotes
+│   │           └── origin
+│   │               └── main
+│   ├── objects
+│   │   ├── 06
+│   │   │   └── 89a69ade0fc89afef27b0f784e4a97e3687eab
+│   │   ├── 14
+│   │   │   └── d9d1ad3733848b195d4b10ffa3ad765db55aa4
+│   │   ├── 32
+│   │   │   └── 08ccae89f587d09e24fb4ef97227547ad702ce
+│   │   ├── 93
+│   │   │   └── f79ec2c6c352fdcf555dfecdfaf27d9910f337
+│   │   ├── ea
+│   │   │   └── 811ff019ee193089466e989b44d79066923499
+│   │   ├── info
+│   │   └── pack
+│   │       ├── pack-33e66ff2a706f66df39996c1b6bfb2337dd4ba0d.idx
+│   │       ├── pack-33e66ff2a706f66df39996c1b6bfb2337dd4ba0d.pack
+│   │       ├── pack-33e66ff2a706f66df39996c1b6bfb2337dd4ba0d.rev
+│   │       ├── pack-a43bfdb3d40bc444bbb44892041c87ebcd787d72.idx
+│   │       └── pack-a43bfdb3d40bc444bbb44892041c87ebcd787d72.pack
+│   └── refs
+│       ├── heads
+│       │   └── main
+│       ├── remotes
+│       │   └── origin
+│       │       └── main
+│       └── tags
+├── .gitignore
+├── ACP-0001_Foundation_Gamma_v1.4-1.md
+├── ACP-0001_Foundation_Gamma_v1.4.md
+├── ACTIVE_STATE_SNAPSHOT_v1.4.md
+├── ACTIVE_STATE_SNAPSHOT_v1.4_REVISED.md
+├── ACTIVE_STATE_SNAPSHOT_v1.4_REVISION.md
+├── ADE Workflow Automation Prompts-1.pdf
+├── ADE Workflow Automation Prompts.pdf
+├── ADE_Constitution_v1.1.md
+├── ADE_Constitution_v1.2.md
+├── ADE_Constitution_v1.4-1.md
+├── ADE_Constitution_v1.4.md
+├── ADE_REPO_zips
+│   ├── Archives.zip
+│   ├── Claude.zip
+│   ├── Docs.zip
+│   ├── Governance.zip
+│   ├── Inbox.zip
+│   ├── Library.zip
+│   ├── Loose repo tree files.zip
+│   ├── PP.zip
+│   ├── Parser.zip
+│   ├── Pubs.zip
+│   ├── RC1.zip
+│   ├── Reaearch.zip
+│   ├── Specs.zip
+│   └── Tools.zip
+├── ADE_Workflow_Automation_Prompts.json
+├── ADE_full_repo_context.txt
+├── AKS_Companion_Narrative_Working_Draft_v0_2.docx
+├── AKS_Companion_Narrative_Working_Draft_v0_2.json
+├── AKS_Covenant_v1.0.json
+├── AKS_Gardener_Cultivation_Model_v1.0.json
+├── AKS_Human_Centered_Repository_Philosophy_v1.0.json
+├── AKS_Inference_Linguistic_Preservation_Package.zip
+├── AKS_Living_Repository_Architecture_v1.0.json
+├── AKS_Longitudinal_Reasoning_v1.0.json
+├── AKS_Mission_Statement_v1.0.json
+├── AKS_Stewards_Compass_v1.0.json
+├── Archive
+│   ├── Archive_Evidence.zip
+│   ├── Archive_Imports.zip
+│   ├── Archive_Logs.zip
+│   ├── Archive_Recovery.zip
+│   ├── Archive_Snapshots.zip
+│   ├── Evidence
+│   │   ├── OBS-0001
+│   │   │   ├── Derived
+│   │   │   │   └── f.md
+│   │   │   ├── Notes
+│   │   │   │   └── vhy.md
+│   │   │   ├── Sources
+│   │   │   │   └── fhu.md
+│   │   │   └── dfr.md
+│   │   └── fgh.md
+│   ├── Imports
+│   │   ├── Accepted
+│   │   │   └── ghy.md
+│   │   ├── Parsing
+│   │   │   └── ghy.md
+│   │   ├── Pending
+│   │   │   └── ghy.md
+│   │   ├── Rejected
+│   │   │   └── ghy.md
+│   │   ├── Review
+│   │   │   └── ghy.md
+│   │   └── df.md
+│   ├── Logs
+│   │   └── Djt.md
+│   ├── Recovery
+│   │   ├── AKS
+│   │   │   ├── AKS-ARCH-0007_Domain_Separation.json
+│   │   │   ├── AKS-ARCHITECTURAL-PRINCIPLES-0001.json
+│   │   │   ├── AKS-AUDIT-0001_Foundation_Audit-2.json
+│   │   │   ├── AKS-AUDIT-0001_Foundation_Audit.json
+│   │   │   ├── AKS-AXIOM-0001_Identity_Independence.json
+│   │   │   ├── AKS-CONSTRAINT-0001_Universal_Constraint_Model.json
+│   │   │   ├── AKS-CV-0001_Draft_0.2_Canonical.json
+│   │   │   ├── AKS-CV-0001_Draft_0.3_Vocabulary_Update.json
+│   │   │   ├── AKS-DECISION-0001_Template.json
+│   │   │   ├── AKS-DECISION-0002_Kernel_Validation_Layer.json
+│   │   │   ├── AKS-DECISION-0003_Theorem_Workflow.json
+│   │   │   ├── AKS-DECISION-0004_Kernel_Freeze.json
+│   │   │   ├── AKS-EDU-SYN-0001.json
+│   │   │   ├── AKS-ENDURANCE-B-REPORT-0001.json
+│   │   │   ├── AKS-ENDURANCE-C-REPORT-0001.json
+│   │   │   ├── AKS-ENTITY-0001_Draft_0.1_Universal_Entity_Model.json
+│   │   │   ├── AKS-ENTITY-0001_Draft_0.2_Update.json
+│   │   │   ├── AKS-ENTITY-0001_Draft_0.3_Update.json
+│   │   │   ├── AKS-ENTITY-0001_Repository_Grade_v1.0.json
+│   │   │   ├── AKS-EVID-0001_Evidence_Quality_Classification.json
+│   │   │   ├── AKS-FOUNDATION-ROADMAP-0002.json
+│   │   │   ├── AKS-FOUNDATION-SPRINT-0001.json
+│   │   │   ├── AKS-FRENZY-0001_Validation_Backlog.json
+│   │   │   ├── AKS-GATE-ALPHA-0001_Candidate.json
+│   │   │   ├── AKS-GATE-ALPHA-0002_Declaration.json
+│   │   │   ├── AKS-GATE-BETA-0001_Candidate-1.json
+│   │   │   ├── AKS-GATE-BETA-0001_Candidate.json
+│   │   │   ├── AKS-GOV-0002_Evidence_Driven_Evolution.json
+│   │   │   ├── AKS-GOV-0003_Preservation_Discipline.json
+│   │   │   ├── AKS-GOV-0004_Dependency_Review_Status.json
+│   │   │   ├── AKS-GOV-0005_Contradiction_Resolution_Status.json
+│   │   │   ├── AKS-GOV-0006_Representation_Revision.json
+│   │   │   ├── AKS-GOV-0007_Lineage_Change_Rationale.json
+│   │   │   ├── AKS-GOV-0008_RSI_Metric_Separation.json
+│   │   │   ├── AKS-GOV-0009_Behavior_First_Validation.json
+│   │   │   ├── AKS-GOV-0011_Preservation_JSON_Rule.json
+│   │   │   ├── AKS-GOV-CP-0001.json
+│   │   │   ├── AKS-INDEX-0001_Draft_0.1_Canonical.json
+│   │   │   ├── AKS-INDEX-0001_Draft_0.2_Update.json
+│   │   │   ├── AKS-INVARIANTS-0001_Draft_0.1_Canonical.json
+│   │   │   ├── AKS-IR-0001_Working_Model.json
+│   │   │   ├── AKS-PATTERN-0001_Artifact_Family.json
+│   │   │   ├── AKS-PHASE-0006_Escalated_Verification.json
+│   │   │   ├── AKS-PIPELINE-0001.json
+│   │   │   ├── AKS-PRESERVATION-0004_Inheritance_Conservation_Checkpoint.json
+│   │   │   ├── AKS-PRESERVATION-0005_Foundation_Logic_Checkpoint.json
+│   │   │   ├── AKS-PRESERVATION-0006_Kernel_Constraint_Checkpoint.json
+│   │   │   ├── AKS-PRESERVATION-0007_Theorem_Queue_Checkpoint.json
+│   │   │   ├── AKS-PRESERVATION-0008_Foundation_Audit_Checkpoint.json
+│   │   │   ├── AKS-PRESERVATION-0009_Gate_Alpha.json
+│   │   │   ├── AKS-PRESERVATION-0010_Semantic_Composition_Checkpoint.json
+│   │   │   ├── AKS-PRESERVATION-0011_Engineering_Test_Transition-2.json
+│   │   │   ├── AKS-PRESERVATION-0011_Engineering_Test_Transition.json
+│   │   │   ├── AKS-PRESERVATION-0012_Behavior_Architecture.json
+│   │   │   ├── AKS-PRESERVATION-0013_Repository_Maturity.json
+│   │   │   ├── AKS-PRESERVATION-0014_Proposition_Completion.json
+│   │   │   ├── AKS-PRESERVATION-0016_Relationship_Classification.json
+│   │   │   ├── AKS-PRESERVATION-0017_Evidence_Refinement.json
+│   │   │   ├── AKS-PRESERVATION-0018_Governance_Dashboard.json
+│   │   │   ├── AKS-PRESERVATION-0019_Dependency_Review_Status.json
+│   │   │   ├── AKS-PRESERVATION-0020_Contradiction_Framework.json
+│   │   │   ├── AKS-PRESERVATION-0021_Semantic_Conservation.json
+│   │   │   ├── AKS-PRESERVATION-0022_Replay_Queue.json
+│   │   │   ├── AKS-PRESERVATION-0023_Scale_Simulation.json
+│   │   │   ├── AKS-PRESERVATION-0024_Evidence_Sufficiency.json
+│   │   │   ├── AKS-PRESERVATION-0025_Validation_Program_Transition.json
+│   │   │   ├── AKS-PRESERVATION-0026_Phase_Transition.json
+│   │   │   ├── AKS-PRESERVATION-0027_Methodical_Progression.json
+│   │   │   ├── AKS-PRESERVATION-0029_Endurance_Cycle_A.json
+│   │   │   ├── AKS-PRESERVATION-0030_Endurance_Cycle_B.json
+│   │   │   ├── AKS-PRESERVATION-0031_Gate_Beta_PreAudit.json
+│   │   │   ├── AKS-PRESERVATION-0032_Engineering_Reproducibility.json
+│   │   │   ├── AKS-PRESERVATION-0033_Viking_Campaign_I.json
+│   │   │   ├── AKS-PRESERVATION-0034_Engineering_Maturity_Snapshot.json
+│   │   │   ├── AKS-PRESERVATION-0035_Architectural_Invariant_Assault.json
+│   │   │   ├── AKS-PRESERVATION-0036_Necessary_Complexity_Snapshot.json
+│   │   │   ├── AKS-PRESERVATION-0037_First_Principles_Extraction_I.json
+│   │   │   ├── AKS-PRESERVATION-0038_First_Principles_Falsification_I.json
+│   │   │   ├── AKS-PRESERVATION-0039_First_Principle_Independence_Snapshot.json
+│   │   │   ├── AKS-PRESERVATION-0040_Boundary_Conditions_and_Self_Revision.json
+│   │   │   ├── AKS-PRESERVATION-0041_Emergent_Interaction_and_Dynamic_Equilibrium.json
+│   │   │   ├── AKS-PRESERVATION-0042_Emergent_Behavior_and_Regulatory_Structures.json
+│   │   │   ├── AKS-PRINCIPLE-QUEUE-0001_Knowledge_Composition.json
+│   │   │   ├── AKS-PRINCIPLE-QUEUE-0002_Pipeline_Determinism.json
+│   │   │   ├── AKS-PRINCIPLE-QUEUE-0003_Self_Representation.json
+│   │   │   ├── AKS-PROP-0001_Draft_0.1_Proposition_Model.json
+│   │   │   ├── AKS-PROP-0002_P021_Canonical_Granularity.json
+│   │   │   ├── AKS-QUEUE-0003_Semantic_Conservation.json
+│   │   │   ├── AKS-QUEUE-0004_Repository_Replay.json
+│   │   │   ├── AKS-QUEUE-0005_Evidence_Sufficiency_Check.json
+│   │   │   ├── AKS-QUEUE-0006_Architectural_Stability_Principle.json
+│   │   │   ├── AKS-QUEUE-0007_Validation_Outcome_Classification.json
+│   │   │   ├── AKS-QUEUE-0008_Engineering_Culture_Preservation-1.json
+│   │   │   ├── AKS-QUEUE-0008_Engineering_Culture_Preservation.json
+│   │   │   ├── AKS-REL-0001_Relationship_Classification.json
+│   │   │   ├── AKS-RML-0001.json
+│   │   │   ├── AKS-ROADMAP-0001_Draft_0.1_Semantic_Core_Roadmap.json
+│   │   │   ├── AKS-ROADMAP-0003_Post_Gate_Alpha-1.json
+│   │   │   ├── AKS-ROADMAP-0003_Post_Gate_Alpha.json
+│   │   │   ├── AKS-SIS-0001_Semantic_Integrity_Checklist.json
+│   │   │   ├── AKS-SPEC-0001_Draft_0.4_Canonical.json
+│   │   │   ├── AKS-SPEC-0002_Draft_0.1_Canonical.json
+│   │   │   ├── AKS-SPEC-0004_Draft_0.1_Canonical_Knowledge_Model.json
+│   │   │   ├── AKS-SPEC-0005_Draft_0.1_Semantic_Kernel_Architecture.json
+│   │   │   ├── AKS-SPECSTATE-0001_Template.json
+│   │   │   ├── AKS-TEST-0001_EXECUTION_0002.json
+│   │   │   ├── AKS-TEST-0003_EXECUTION_0001.json
+│   │   │   ├── AKS-TEST-0004_EXECUTION_0001.json
+│   │   │   ├── AKS-TEST-0007_EXECUTION_0001.json
+│   │   │   ├── AKS-TEST-FAMILY-0001.json
+│   │   │   ├── AKS-THEOREM-0001_Inheritance_Conservation.json
+│   │   │   ├── AKS-THEOREM-QUEUE-0001_Update-1.json
+│   │   │   ├── AKS-THEOREM-QUEUE-0001_Update.json
+│   │   │   ├── AKS-THEOREMS-0001_Draft_0.1_Canonical.json
+│   │   │   ├── AKS-TRUTH-0001_Draft_0.1_Truth_State_Model.json
+│   │   │   ├── AKS_AOS_1_0__All_Previous_data_and_conv.json
+│   │   │   ├── AKS_AOS_Repository.json
+│   │   │   ├── AKS_Architecture_Manifest_v1.json
+│   │   │   ├── AKS_Architecture_v0.1_Draft.json
+│   │   │   ├── AKS_Author_Statement_v1.0.json
+│   │   │   ├── AKS_Benediction_v1.0.json
+│   │   │   ├── AKS_CPA_0001_Foundation_Update.json
+│   │   │   ├── AKS_CPA_0001_Manifest_Draft.json
+│   │   │   ├── AKS_Canonical_Knowledge_Object_Schema_v1.1.json
+│   │   │   ├── AKS_Communication_Architecture_v1.0.json
+│   │   │   ├── AKS_Communication_Architecture_v1.json
+│   │   │   ├── AKS_Companion_Narrative_Working_Draft_v0_2.json
+│   │   │   ├── AKS_Conformance_Preparation.json
+│   │   │   ├── AKS_Constitution_v0.1_Draft.json
+│   │   │   ├── AKS_Contributor_Provenance_v1.0.json
+│   │   │   ├── AKS_Covenant_v1.0.json
+│   │   │   ├── AKS_Culture_Architecture_v1.0.json
+│   │   │   ├── AKS_Dependency_Graph_Specification_v1.1.json
+│   │   │   ├── AKS_Design_Philosophy_v1.1.json
+│   │   │   ├── AKS_Developmental_Framework_v1.json
+│   │   │   ├── AKS_Engineering_Method_Update.json
+│   │   │   ├── AKS_Final_Observation_v1.0.json
+│   │   │   ├── AKS_Forensic_Checkpoint_0001.json
+│   │   │   ├── AKS_Foundational_Theory_v1.1.json
+│   │   │   ├── AKS_Gardener_Cultivation_Model_v1.0.json
+│   │   │   ├── AKS_Gardener_Principle_v1.0.json
+│   │   │   ├── AKS_Governing_Principles_v1.1.json
+│   │   │   ├── AKS_Hope_Architecture_v1.0.json
+│   │   │   ├── AKS_Human_Centered_Repository_Philosophy_v1.0.json
+│   │   │   ├── AKS_Implementation_Roadmap_v1.0.json
+│   │   │   ├── AKS_Integrity_Architecture_v1.1.json
+│   │   │   ├── AKS_Legacy_Architecture_v1.0.json
+│   │   │   ├── AKS_Living_Repository_Architecture_v1.0.json
+│   │   │   ├── AKS_Longitudinal_Reasoning_v1.0.json
+│   │   │   ├── AKS_MetaArchitecture_Update.json
+│   │   │   ├── AKS_Mission_Statement_v1.0.json
+│   │   │   ├── AKS_Phylactery_PreFreeze_Baseline_v0.1.json
+│   │   │   ├── AKS_Preservation_Automation_Constitution_v1.0.json
+│   │   │   ├── AKS_Publication_Front_Matter_v1.0.json
+│   │   │   ├── AKS_Reasoning_Contracts_v1.1-1.json
+│   │   │   ├── AKS_Reasoning_Manifest_v1.json
+│   │   │   ├── AKS_Repository_Constitution_v1.1.json
+│   │   │   ├── AKS_Repository_Invariants_v1.1.json
+│   │   │   ├── AKS_Repository_Voice_v1.0.json
+│   │   │   ├── AKS_Roadmap_v2.json
+│   │   │   ├── AKS_Runtime_Specification_v1.0.json
+│   │   │   ├── AKS_SPEC_Roadmap_Update.json
+│   │   │   ├── AKS_Stewards_Compass_v1.0.json
+│   │   │   ├── AKS_Stewards_Oath_v1.0.json
+│   │   │   ├── AKS_Stewardship_Architecture_v1.0.json
+│   │   │   ├── AKS_Style_Profile_Model_v1.json
+│   │   │   ├── AKS_Validation_Queue.json
+│   │   │   ├── AKS_repository_layers.json
+│   │   │   ├── AKS_workflow_vNext.json
+│   │   │   ├── DOCX
+│   │   │   │   ├── AKS_Archive_Program_Roadmap_v0.1.docx
+│   │   │   │   ├── AKS_Archive_Volume_II_Architecture_Blueprint_v0.1.docx
+│   │   │   │   ├── AKS_Archive_Volume_I_Governance_Methodology_v0.1.docx
+│   │   │   │   ├── AKS_Checkpoint_v0.2.docx
+│   │   │   │   ├── AKS_Curation_Protocol_v0.1.docx
+│   │   │   │   ├── AKS_Governing_Constitution_v1.0.docx
+│   │   │   │   ├── AKS_Project_Ledger_v0.1.docx
+│   │   │   │   ├── AOS_Operating_Doctrine_v1.0.docx
+│   │   │   │   └── df.md
+│   │   │   └── add.md
+│   │   ├── Archives
+│   │   │   ├── Ju.md
+│   │   │   ├── MISC
+│   │   │   │   └── ghy.md
+│   │   │   ├── TAR
+│   │   │   │   └── ghy.md
+│   │   │   └── ZIP
+│   │   │       └── ghy.md
+│   │   ├── Audio
+│   │   │   └── Sd.md
+│   │   ├── Chatgpt
+│   │   │   ├── Exports
+│   │   │   │   └── Ji.md
+│   │   │   ├── Hh.md
+│   │   │   ├── JSON
+│   │   │   │   ├── AKS_archive_manifest_v1_seed.json
+│   │   │   │   ├── AKS_manifest_v0.1.json
+│   │   │   │   ├── ALT_Specification_v1.0.json
+│   │   │   │   ├── AUDIT_STATE_PP0001.json
+│   │   │   │   ├── BUR_Specification_v1.0-1.json
+│   │   │   │   ├── BUR_Specification_v1.0-2.json
+│   │   │   │   ├── BUR_Specification_v1.0.json
+│   │   │   │   ├── CA-0003.json
+│   │   │   │   ├── CA-0004.json
+│   │   │   │   ├── CNF-0001.json
+│   │   │   │   ├── CTX_Specification_v1.0.json
+│   │   │   │   ├── ENT_Specification_v1.0.json
+│   │   │   │   ├── ENV_Specification_v1.0-1.json
+│   │   │   │   ├── ENV_Specification_v1.0.json
+│   │   │   │   ├── EXECUTION_QUEUE_PP0001.json
+│   │   │   │   ├── Evidence_Transformation_Specification_v1.0.json
+│   │   │   │   ├── Execution_Queue_PP0005.json
+│   │   │   │   ├── Execution_Queue_PP0006.json
+│   │   │   │   ├── Execution_Sprint_1.json
+│   │   │   │   ├── Execution_Sprint_1_Update.json
+│   │   │   │   ├── Execution_State_v0.2.json
+│   │   │   │   ├── Forensic_Parser_Workflow.json
+│   │   │   │   ├── Forensic_Parser_Workflow_full_chat.json
+│   │   │   │   ├── Forensic_Parser_Workflow_reverse_parse_901pm_7_23_26.json
+│   │   │   │   ├── GAP_Specification_v1.0.json
+│   │   │   │   ├── Handbook_Project_Organization (1).json
+│   │   │   │   ├── Handbook_Project_Organization.json
+│   │   │   │   ├── Inference_and_Linguistic_Models.json
+│   │   │   │   ├── Kernel_Manifest_v2.1.json
+│   │   │   │   ├── Kernel_Manifest_v2.json
+│   │   │   │   ├── MAJOR_PP_0001.json
+│   │   │   │   ├── MAJOR_PP_0002.json
+│   │   │   │   ├── MAJOR_PP_0003.json
+│   │   │   │   ├── Master_Conversations_Unparsed_v1.json
+│   │   │   │   ├── OBS_Specification_v1.0.json
+│   │   │   │   ├── OUT_Specification_v1.0.json
+│   │   │   │   ├── PAT_Specification_v1.0.json
+│   │   │   │   ├── PR-0001_Automatic_Transition_Preservation.json
+│   │   │   │   ├── PR-0002_Incremental_Canonical_Preservation.json
+│   │   │   │   ├── PR-0003_Continuous_Repository_Indexing.json
+│   │   │   │   ├── PR-0004_Conservation_of_Architectural_Work.json
+│   │   │   │   ├── PR-0005_Architectural_Change_Preservation.json
+│   │   │   │   ├── PR-0006_Canonical_Test_Requirement-1.json
+│   │   │   │   ├── PR-0006_Canonical_Test_Requirement-2.json
+│   │   │   │   ├── PR-INDEX-0001_Draft_0.1_Canonical.json
+│   │   │   │   ├── PR-INDEX-0001_Draft_0.2_Canonical.json
+│   │   │   │   ├── PR-INDEX-0001_Draft_0.3_Update.json
+│   │   │   │   ├── QST_Specification_v1.0.json
+│   │   │   │   ├── REL_Specification_v1.0.json
+│   │   │   │   ├── REV-0001.json
+│   │   │   │   ├── REV-0002.json
+│   │   │   │   ├── REV-0005.json
+│   │   │   │   ├── REV-0006.json
+│   │   │   │   ├── Repository_State_PP0004.json
+│   │   │   │   ├── Repository_State_PP0005.json
+│   │   │   │   ├── Repository_State_PP0006.json
+│   │   │   │   ├── Repository_State_PP0007.json
+│   │   │   │   ├── Repository_State_PP0008.json
+│   │   │   │   ├── Runtime_Manifest_v2.2.json
+│   │   │   │   ├── Runtime_Manifest_v3.0.json
+│   │   │   │   ├── Runtime_Manifest_v4.0.json
+│   │   │   │   ├── Runtime_Manifest_v5.0.json
+│   │   │   │   ├── Runtime_Manifest_v6.0.json
+│   │   │   │   ├── SPEC-0000_Constitutional_Registry.json
+│   │   │   │   ├── SPEC-0001_Machine_State_Model.json
+│   │   │   │   ├── SPEC-0002_Error_Exception_Framework.json
+│   │   │   │   ├── SPEC-0003_v1.0.1.json
+│   │   │   │   ├── SPEC-0004_v1.0.0.json
+│   │   │   │   ├── SPEC-0005_v1.0.0.json
+│   │   │   │   ├── SPEC-0006_v1.0.0.json
+│   │   │   │   ├── SPEC-1004_v1.0.0.json
+│   │   │   │   ├── SPEC-1005_v1.0.0.json
+│   │   │   │   ├── SPEC-2010_v1.0.0-1.json
+│   │   │   │   ├── SPEC-4002_v1.0.0.json
+│   │   │   │   ├── SPEC-4003_v1.0.0.json
+│   │   │   │   ├── SPEC-4004_v1.0.0.json
+│   │   │   │   ├── SPEC-4005_v1.0.0.json
+│   │   │   │   ├── SPEC-4006_v1.0.0.json
+│   │   │   │   ├── SPEC-5011_v1.0.0.json
+│   │   │   │   ├── SPEC-5012_v1.0.0.json
+│   │   │   │   ├── SPEC-5013_v1.0.0.json
+│   │   │   │   ├── SPEC-5014_v1.0.0.json
+│   │   │   │   ├── SPEC-5015_v1.0.0.json
+│   │   │   │   ├── SPEC-6001_v1.0.0.json
+│   │   │   │   ├── SPEC-7001_v1.0.0.json
+│   │   │   │   ├── SPEC-GOV-0001.json
+│   │   │   │   ├── Se.md
+│   │   │   │   ├── TRN_Specification_v1.0.json
+│   │   │   │   ├── Traversal_Ledger_v0.1.json
+│   │   │   │   ├── VAL-0001.json
+│   │   │   │   ├── VAL-0004.json
+│   │   │   │   ├── VAL-0005.json
+│   │   │   │   ├── census_v0.1.json
+│   │   │   │   ├── chatgpt-conversation (2).json
+│   │   │   │   ├── confidence_framework.json
+│   │   │   │   ├── cross_reference_index_seed.json
+│   │   │   │   ├── decisions_template.json
+│   │   │   │   ├── entities_template.json
+│   │   │   │   ├── forensic_parser_workflow_start.json
+│   │   │   │   ├── interventions_template.json
+│   │   │   │   ├── master_index_template.json
+│   │   │   │   ├── master_manifest_v0.2.json
+│   │   │   │   ├── migration_manifest_v0.1.json
+│   │   │   │   ├── negative_evidence_template.json
+│   │   │   │   ├── observations_schema.json
+│   │   │   │   ├── observations_seed.json
+│   │   │   │   ├── pattern_schema.json
+│   │   │   │   ├── patterns_seed.json
+│   │   │   │   ├── questions_template.json
+│   │   │   │   ├── relationship_schema.json
+│   │   │   │   ├── relationships_seed.json
+│   │   │   │   ├── repository_structure.json
+│   │   │   │   ├── sources_template.json
+│   │   │   │   ├── strengths_template.json
+│   │   │   │   └── timeline_template.json
+│   │   │   ├── Screenshots
+│   │   │   │   └── aw.md
+│   │   │   └── Shared Links
+│   │   │       └── tujd
+│   │   ├── Clinician Edition
+│   │   │   ├── Clinician Edition Volume 1 v0.25.docx
+│   │   │   ├── Clinician_Edition_v0.5_Working_Draft.docx
+│   │   │   └── ase.md
+│   │   ├── Documents
+│   │   │   ├── DOCX
+│   │   │   │   ├── AKS Internal Storage.docx
+│   │   │   │   ├── AKS Repository Synchronization Directive — Library Normalization.docx
+│   │   │   │   ├── Canonical_Object_Standard_v1.0.docx
+│   │   │   │   ├── Clinician_Edition_v0.5_Working_Draft.docx
+│   │   │   │   ├── DHP_Foundation_Handbook_v0.1.docx
+│   │   │   │   ├── DHP_Recovery_Checkpoint_RC-0001.docx
+│   │   │   │   ├── Eighteenth conversation - final.docx
+│   │   │   │   ├── Eighth conversation .docx
+│   │   │   │   ├── Eleventh conversation .docx
+│   │   │   │   ├── Engineering Methodology.docx
+│   │   │   │   ├── Evidence_Standard_v1.0.docx
+│   │   │   │   ├── Fifteenth conversation.docx
+│   │   │   │   ├── Fifth Conversation.docx
+│   │   │   │   ├── First Conversation .docx
+│   │   │   │   ├── Fourteenth conversation .docx
+│   │   │   │   ├── Fourth Conversation .docx
+│   │   │   │   ├── Governance_Manual_v1.0.docx
+│   │   │   │   ├── Handbook_Foundation_Package.docx
+│   │   │   │   ├── Last chat before starting new project.docx
+│   │   │   │   ├── Master Conversations 1-18-part-1.docx
+│   │   │   │   ├── Master Conversations 1-18.docx
+│   │   │   │   ├── Master Conversations 18-20-part-2.docx
+│   │   │   │   ├── Master_Handbook_v0.2.docx
+│   │   │   │   ├── Nineteenth conversation  (1).docx
+│   │   │   │   ├── Ninth Conversation .docx
+│   │   │   │   ├── Observation_Register_v0.1.docx
+│   │   │   │   ├── Observation_Standard_v1.0.docx
+│   │   │   │   ├── Preservation_Principles_v1.0.docx
+│   │   │   │   ├── Project_Change_Log_v0.1-1.docx
+│   │   │   │   ├── Project_Change_Log_v0.1.docx
+│   │   │   │   ├── Project_Ledger_Specification_v1.0.docx
+│   │   │   │   ├── Provenance_Standard_v1.0.docx
+│   │   │   │   ├── Publication_Doctrine_v1.0.docx
+│   │   │   │   ├── Reconciliation_Doctrine_v1.0-1.docx
+│   │   │   │   ├── Reconciliation_Doctrine_v1.0.docx
+│   │   │   │   ├── Recovery_Checkpoint_v1.0.docx
+│   │   │   │   ├── Recovery_Doctrine_v1.0.docx
+│   │   │   │   ├── Second Conversation .docx
+│   │   │   │   ├── Seventeenth conversation .docx
+│   │   │   │   ├── Seventh conversation .docx
+│   │   │   │   ├── Sixteenth conversation .docx
+│   │   │   │   ├── Sixth Conversation .docx
+│   │   │   │   ├── Standing_Orders_v1.0.docx
+│   │   │   │   ├── Stewardship_Manual_v1.0.docx
+│   │   │   │   ├── THE ACTIVE STATE SNAPSHOT.docx
+│   │   │   │   ├── Tenth conversation .docx
+│   │   │   │   ├── Third Conversation .docx
+│   │   │   │   ├── Thirteenth conversation .docx
+│   │   │   │   ├── Twelfth conversation .docx
+│   │   │   │   ├── Twenty conversation .docx
+│   │   │   │   ├── Versioning_Standard_v1.0.docx
+│   │   │   │   ├── forensic parser workflow start.docx
+│   │   │   │   └── ghy.md
+│   │   │   ├── Fg.md
+│   │   │   ├── PDF
+│   │   │   │   ├── ADE Workflow Automation Prompts.pdf
+│   │   │   │   ├── AOS Repository.pdf
+│   │   │   │   ├── Bootstrap Preparation Checklist.pdf
+│   │   │   │   ├── Forensic Parser Workflow.pdf
+│   │   │   │   ├── Free ChatGPT Plugins for ADE.pdf
+│   │   │   │   ├── GitHub Access Limitations.pdf
+│   │   │   │   ├── GitHub PR Inspection.pdf
+│   │   │   │   ├── Inference and Linguistic Models.pdf
+│   │   │   │   ├── Moving files in GitHub.pdf
+│   │   │   │   ├── OAuth Error Investigation.pdf
+│   │   │   │   ├── Project Organization Strategy.pdf
+│   │   │   │   ├── Repo Not Found.pdf
+│   │   │   │   ├── Rowan_Learns_Words_v0.1.pdf
+│   │   │   │   ├── Rowan_Today_Field_Guide_Mom_v3.0.pdf
+│   │   │   │   ├── Rowan_Today_Mom_Edition_v1.0.pdf
+│   │   │   │   └── ghy.md
+│   │   │   ├── PDT
+│   │   │   │   └── ghy.md
+│   │   │   └── TXT
+│   │   │       └── ghy.md
+│   │   ├── Foundation Package Alpha
+│   │   │   ├── FPA-0000-Manifest.json
+│   │   │   ├── FPA-0001-CanonicalVocabulary.json
+│   │   │   ├── FPA-0002-SpecificationFramework.json
+│   │   │   ├── FPA-0003-CanonicalArtifactOntology.json
+│   │   │   ├── FPA-0004-ProductionState.json
+│   │   │   ├── Foundation_Package_Alpha_JSONs.zip
+│   │   │   └── ap.md
+│   │   ├── Images
+│   │   │   ├── JPG
+│   │   │   │   └── ghy.md
+│   │   │   ├── PNG
+│   │   │   │   └── ghy.md
+│   │   │   ├── U.md
+│   │   │   └── WEBP
+│   │   │       └── ghy.md
+│   │   ├── Misc
+│   │   │   └── Gh.md
+│   │   ├── Presentations
+│   │   │   └── Th.md
+│   │   ├── Spreadsheets
+│   │   │   └── Er.md
+│   │   ├── Video
+│   │   │   └── vd.md
+│   │   └── plh.md
+│   ├── Snapshots
+│   │   ├── Dfg.md
+│   │   └── PP
+│   │       ├── MAJOR_PP_0001.json
+│   │       ├── MAJOR_PP_0002.json
+│   │       ├── MAJOR_PP_0003.json
+│   │       ├── PP-0004.json
+│   │       ├── PP-0005.json
+│   │       ├── PP-0005_Bundle_Manifest.json
+│   │       ├── PP-0006.json
+│   │       ├── PP-0006_Bundle_Manifest.json
+│   │       ├── PP-0007.json
+│   │       ├── PP-0007_Bundle_Manifest.json
+│   │       ├── PP-0008.json
+│   │       ├── PP-0008_Bundle_Manifest.json
+│   │       ├── PP-0044_Provenance_Before_Path.json
+│   │       ├── PP-0045_Fingerprints_Endure.json
+│   │       ├── PP-0046_Repository_Architecture.json
+│   │       ├── PP-0047_Epistemic_Engineering.json
+│   │       ├── PP-0048_Conservative_Synthesis.json
+│   │       ├── PP-0049_Developmental_Framework_Foundation.json
+│   │       ├── PP-0050_Communication_Architecture.json
+│   │       ├── PP-0051_Constitutional_Epistemics_v1.1.json
+│   │       ├── PP-0052_Human_Centered_Stewardship_v1.0.json
+│   │       ├── PP-0052_Minor.json
+│   │       ├── PP-0052_Recovery_Manifest.json
+│   │       ├── PP-0053_Minor.json
+│   │       ├── PP-0053_Policy_Manifest.json
+│   │       ├── PP-0053_Repository_Voice_and_Stewardship_v1.0.json
+│   │       ├── PP-0054A_manifest.json
+│   │       ├── PP-0054_Governance_Manifest.json
+│   │       ├── PP-0054_Minor.json
+│   │       ├── PP-0054_Phase_Shift_Living_Repository_v1.0.json
+│   │       ├── PP-0054_Summary.xlsx
+│   │       ├── PP-0054_Synthesis.json
+│   │       ├── PP-0055_Intervention_Failures.json
+│   │       ├── PP-0055_Intervention_Failures.xlsx
+│   │       ├── PP-0055_Interventions.json
+│   │       ├── PP-0055_Knowledge_Model.json
+│   │       ├── PP-0055_Manifest.json
+│   │       ├── PP-0055_Repository_Corpus_Ingestion.json
+│   │       ├── PP-0056_Minor.json
+│   │       ├── PP-0056_Minor_Execution_Transition.json
+│   │       ├── PP-0057_Major.json
+│   │       ├── PP-0058-MAJOR.json
+│   │       ├── PP-0058-Manifest.json
+│   │       ├── PP-0058-Principles.json
+│   │       ├── PP0001_MANIFEST.json
+│   │       └── ghy.md
+│   └── dusty.md
+├── Archive_INDEX.md
+├── Archive_README.md
+├── CATALOG.md
+├── CHANGELOG.md
+├── CLAUDE START HERE
+│   ├── ACP-0001_Foundation_Gamma_v1.4.md
+│   ├── ACTIVE_STATE_SNAPSHOT_v1.4.md
+│   ├── ADE Workflow Automation Prompts.pdf
+│   ├── ADE_Constitution_v1.4.md
+│   ├── ADE_full_repo_context.txt
+│   ├── AKS-INVARIANTS-0001_Draft_0.1.json
+│   ├── AKS-PRESERVATION-0042_Emergent_Behavior_and_Regulatory_Structures.json
+│   ├── AKS_Companion_Narrative_Working_Draft_v0_2.docx
+│   ├── AKS_Companion_Narrative_Working_Draft_v0_2.json
+│   ├── AKS_Covenant_v1.0.json
+│   ├── AKS_Gardener_Cultivation_Model_v1.0.json
+│   ├── AKS_Human_Centered_Repository_Philosophy_v1.0.json
+│   ├── AKS_Living_Repository_Architecture_v1.0.json
+│   ├── AKS_Longitudinal_Reasoning_v1.0.json
+│   ├── AKS_Mission_Statement_v1.0.json
+│   ├── AKS_Stewards_Compass_v1.0.json
+│   ├── AOS Repository.pdf
+│   ├── ARTIFACT_POLICY.md
+│   ├── AUTOMATION_POLICY.md
+│   ├── BLUEPRINT_v2.0_RESTORATION.md
+│   ├── BOOTSTRAP_v1.4.md
+│   ├── Bootstrap Preparation Checklist(1).pdf
+│   ├── Bootstrap Preparation Checklist.pdf
+│   ├── CHANGELOG.md
+│   ├── CHANGELOG_v1.4.md
+│   ├── CLAUDE_FOUNDATIONAL_ROADMAP.txt
+│   ├── CODE_OF_CONDUCT.md
+│   ├── CONSTITUTIONAL_AMENDMENT_FULL_ARTIFACTS.md
+│   ├── CONTRIBUTING.md
+│   ├── Claude Network Drop Protocol .txt
+│   ├── Clinician Edition Volume 1 v0.25.docx
+│   ├── Clinician_Edition_v0.5_Working_Draft.docx
+│   ├── Clinician_Edition_v1.0_Master_Assembly_Manuscript.docx
+│   ├── DECISION_POLICY.md
+│   ├── DHP_Foundation_Handbook_v0.1(1).docx
+│   ├── EVIDENCE_STANDARD.md
+│   ├── Execution_Sprint_1.json
+│   ├── FOUNDATION_GAMMA_PACKAGE_v1.3.pdf
+│   ├── Fifth Conversation.docx
+│   ├── First Conversation .docx
+│   ├── Forensic Parser Workflow-1.pdf
+│   ├── Forensic Parser Workflow.pdf
+│   ├── Forensic_Parser_Workflow_full_chat.json
+│   ├── Foundation_Gamma_Revision_Package_v1.4.pdf
+│   ├── Foundation_Gamma_v1.4_Final_Revision_Notes.docx
+│   ├── Foundation_Gamma_v1.4_Revised_Package.docx
+│   ├── Fourth Conversation .docx
+│   ├── Free ChatGPT Plugins for ADE-1.pdf
+│   ├── Free ChatGPT Plugins for ADE.pdf
+│   ├── GLOSSARY.md
+│   ├── GitHub Access Limitations.pdf
+│   ├── GitHub PR Inspection.pdf
+│   ├── Handbook_Foundation_Package(1).docx
+│   ├── Handbook_Project_Organization(1).txt
+│   ├── IMPORT_POLICY(1).md
+│   ├── INDEX.md
+│   ├── INDEX_v1.3.md
+│   ├── INDEX_v1.4.md
+│   ├── INDEX_v1.4_REVISED.md
+│   ├── INDEX_v1.4_REVISION.md
+│   ├── Inference and Linguistic Models(1).pdf
+│   ├── Inference and Linguistic Models.pdf
+│   ├── Inference_and_Linguistic_Models.json
+│   ├── KNOWLEDGE_MANAGEMENT.md
+│   ├── Kernel_Manifest_v2.1.json
+│   ├── LICENSE.md
+│   ├── Last_chat_before_starting_new_project.docx.md
+│   ├── MAJOR_PP_0003.json
+│   ├── MANIFEST.md
+│   ├── Master Conversations 1-18-part-1.docx
+│   ├── Master Conversations 1-18.docx
+│   ├── Master Conversations 18-20-part-2.docx
+│   ├── Master_Conversations_1-18-part-1.docx.md
+│   ├── Master_Conversations_18-20-part-2.docx.md
+│   ├── Master_Conversations_Unparsed_v1.json
+│   ├── Moving files in GitHub-1.pdf
+│   ├── Moving files in GitHub.pdf
+│   ├── NAMING_CONVENTIONS.md
+│   ├── OAuth Error Investigation.pdf
+│   ├── PLUGIN_POLICY.md
+│   ├── PP-0004.json
+│   ├── PP-0008.json
+│   ├── PP-0008_Bundle_Manifest.json
+│   ├── PP-0054_Phase_Shift_Living_Repository_v1.0.json
+│   ├── PP-0058-MAJOR.json
+│   ├── PP-0058-Manifest.json
+│   ├── PP-0058-Principles.json
+│   ├── PRINCIPLES.md
+│   ├── PROJECT_LIFECYCLE.md
+│   ├── Project Organization Strategy-1.pdf
+│   ├── Project Organization Strategy.pdf
+│   ├── QUALITY_STANDARD.md
+│   ├── RC1-0000_Master_Manifest_GOLD_MASTER_v1.2.0_FROZEN.json
+│   ├── RC1-0001_Repository_Constitution_GOLD_v1.2.0.json
+│   ├── RC1-0002_Constitutional_Amendments_Ledger_GOLD_v1.2.0.json
+│   ├── RC1-0003_Governance_Framework_GOLD_v1.2.0.json
+│   ├── RC1-0004_Constitutional_Registry_GOLD_v1.2.0.json
+│   ├── RC1-0005_Validation_Framework_GOLD_v1.2.0.json
+│   ├── README.md
+│   ├── RECOVERY_MANIFEST(1).md
+│   ├── RECOVERY_POLICY.md
+│   ├── REPOSITORY_CHARTER.md
+│   ├── REPOSITORY_GOVERNANCE.md
+│   ├── REPOSITORY_STRUCTURE.md
+│   ├── ROADMAP.md
+│   ├── ROADMAP_v1.3.md
+│   ├── ROADMAP_v1.4.md
+│   ├── ROADMAP_v1.4_REVISED.md
+│   ├── ROADMAP_v1.4_REVISION.md
+│   ├── ROADMAP_v2.0_RESTORATION.md
+│   ├── Reconciliation_Doctrine_v1.0-1.docx
+│   ├── Repo Not Found.pdf
+│   ├── Repository documentation.
+│   ├── SECURITY.md
+│   ├── STARTUP_PROCEDURE_v1.0.docx
+│   ├── STARTUP_PROCEDURE_v1.0.md
+│   ├── STATE_SNAPSHOT_PACKAGE.pdf
+│   ├── SYSTEM_BOOTSTRAP_v2.0_CHATGPT.md
+│   ├── Second Conversation .docx
+│   ├── Seventh conversation .docx
+│   ├── Sixth Conversation .docx
+│   ├── THE ACTIVE STATE SNAPSHOT.docx
+│   ├── THE DIFFERENCE ENGINE- SYSTEM SPECIFICATION & REVISED BOOTSTRAP PROTOCOL (1).docx
+│   ├── THE DIFFERENCE ENGINE- SYSTEM SPECIFICATION & REVISED BOOTSTRAP PROTOCOL.docx
+│   ├── Third Conversation .docx
+│   ├── Traversal_Ledger_v0.1.json
+│   ├── UPDATE FIRST PJT INSTRCT CONS  LAWS FOR CLAUDE.txt
+│   ├── VERSIONING_POLICY.md
+│   ├── forensic_parser_workflow_start.json
+│   └── oh.md
+├── CODE_OF_CONDUCT.md
+├── CONSTITUTIONAL_AMENDMENT_FULL_ARTIFACTS.md
+├── CONTRIBUTING.md
+├── EVIDENCE_STANDARD.md
+├── GLOSSARY.md
+├── Governance
+│   ├── PLUGIN_POLICY.md
+│   └── placeholder.md
+├── IMPORT_POLICY(1).md
+├── INDEX.md
+├── In ox
+│   ├── ACP-0001_Foundation_Gamma_v1.4.md
+│   ├── ADE_Constitution_v1.4.md
+│   ├── BOOTSTRAP_v1.3.md
+│   ├── BOOTSTRAP_v1.4.md
+│   ├── CHANGELOG_v1.3.md
+│   ├── CHANGELOG_v1.4.md
+│   ├── FOUNDATION_GAMMA_PACKAGE_v1.3.pdf
+│   ├── Foundation_Gamma_Revision_Package_v1.4.pdf
+│   ├── INDEX_v1.3.md
+│   ├── INDEX_v1.4.md
+│   ├── ROADMAP_v1.3.md
+│   ├── ROADMAP_v1.4.md
+│   ├── STATE_SNAPSHOT_PACKAGE.pdf
+│   └── sd.md
+├── LICENSE.md
+├── Library
+│   └── placeholder.md
+├── MANIFEST.md
+├── NAMING_CONVENTIONS.md
+├── PP
+│   └── placeholder.md
+├── PRINCIPLES.md
+├── Parser
+│   └── placeholder.md
+├── Publications
+│   └── placeholder.md
+├── RC
+│   ├── .gitkeep
+│   ├── RC1-0000_Master_Manifest_GOLD_MASTER_v1.2.0_FROZEN.json
+│   ├── RC1-0001_Repository_Constitution_GOLD_v1.2.0.json
+│   ├── RC1-0002_Constitutional_Amendments_Ledger_GOLD_v1.2.0.json
+│   ├── RC1-0003_Governance_Framework_GOLD_v1.2.0.json
+│   ├── RC1-0004_Constitutional_Registry_GOLD_v1.2.0.json
+│   ├── RC1-0005_Validation_Framework_GOLD_v1.2.0.json
+│   ├── RC1-0006_Specification_Framework_GOLD_v1.2.0.json
+│   ├── RC1-0007_Specification_Volume_I_GOLD_v1.2.0.json
+│   ├── RC1-0008_Specification_Volume_II_GOLD_v1.2.0.json
+│   ├── RC1-0009_Specification_Volume_III_GOLD_v1.2.0.json
+│   ├── RC1-0010_Specification_Volume_IV_GOLD_v1.2.0.json
+│   ├── RC1-0011_Specification_Volume_V_GOLD_v1.2.0.json
+│   ├── RC1-0012_Specification_Volume_VI_GOLD_v1.2.0.json
+│   ├── RC1-0013_Specification_Volume_VII_GOLD_v1.2.0.json
+│   ├── RC1-0014_Specification_Volume_VIII_GOLD_v1.2.0.json
+│   ├── RC1-0015_Specification_Volume_IX_GOLD_v1.2.0.json
+│   ├── RC1-0016_Specification_Volume_X_GOLD_v1.2.0.json
+│   ├── RC1-0017_Specification_Volume_XI_GOLD_v1.2.0.json
+│   ├── RC1-0018_Specification_Volume_XII_GOLD_v1.2.0.json
+│   ├── RC1-0019_Publication_Manifest_GOLD_v1.2.0.json
+│   ├── RC1-0020_Repository_Certification_Record_GOLD_v1.2.0.json
+│   ├── RC1-0021_Repository_Release_Record_GOLD_v1.2.0.json
+│   ├── RC1-0022_Repository_Preservation_Record_GOLD_v1.2.0.json
+│   ├── RC1-0023_Repository_Freeze_Record_GOLD_v1.2.0.json
+│   ├── RC1-0024_Repository_Archive_Record_GOLD_v1.2.0.json
+│   ├── RC1-0025_Repository_Final_Certification_GOLD_v1.2.0.json
+│   ├── RC1-0026_Repository_Release_Closure_GOLD_v1.2.0.json
+│   ├── RC1-0027_Repository_Completion_Record_GOLD_v1.2.0.json
+│   ├── RC1-0028_Repository_Ratification_Record_GOLD_v1.2.0.json
+│   ├── RC1-0029_Repository_Canonical_Release_Record_GOLD_v1.2.0.json
+│   ├── RC1-0030_Repository_Publication_Completion_GOLD_v1.2.0.json
+│   ├── RC1-0031_Repository_RC1_Closure_Record_GOLD_v1.2.0.json
+│   ├── RC1-0032_Repository_Preservation_Point_Index_GOLD_v1.2.0.json
+│   ├── RC1-0033_Repository_Publication_Ledger_GOLD_v1.2.0.json
+│   ├── RC1-0034_Repository_Final_Preservation_Point_GOLD_v1.2.0.json
+│   ├── RC1-0035_Repository_Canonical_Archive_Index_GOLD_v1.2.0.json
+│   ├── RC1-0036_Repository_Certification_Evidence_Register_GOLD_v1.2.0.json
+│   ├── RC1-0037_Repository_Immutable_Release_Record_GOLD_v1.2.0.json
+│   ├── RC1-0038_Repository_Release_Seal_Record_GOLD_v1.2.0.json
+│   ├── RC1-0039_Repository_Golden_Archive_Record_GOLD_v1.2.0.json
+│   ├── RC1-0040_Repository_RC1_Completion_Certificate_GOLD_v1.2.0.json
+│   ├── RC1-0041_Repository_RC1_Transition_Record_GOLD_v1.2.0.json
+│   ├── RC1-0042_Repository_RC1_Governance_Handoff_GOLD_v1.2.0.json
+│   ├── RC1-0043_Repository_RC1_Successor_Initialization_GOLD_v1.2.0.json
+│   ├── RC1-0044_Repository_RC1_Legacy_Record_GOLD_v1.2.0.json
+│   ├── RC1-0045_Repository_RC1_Canonical_Closure_GOLD_v1.2.0.json
+│   ├── RC1-0046_Repository_RC1_Final_Ratification_Record_GOLD_v1.2.0.json
+│   ├── RC1-0047_Repository_RC1_Canonical_Baseline_Record_GOLD_v1.2.0.json
+│   ├── RC1-0048_Repository_RC1_Release_Continuity_Record_GOLD_v1.2.0.json
+│   ├── RC1-0049_Repository_RC1_Successor_Baseline_Certificate_GOLD_v1.2.0.json
+│   ├── RC1-0050_Repository_RC1_Continuity_Charter_GOLD_v1.2.0.json
+│   ├── RC1-0051_Repository_RC1_Governance_Continuation_Record_GOLD_v1.2.0.json
+│   ├── RC1-0052_Repository_RC1_Stewardship_Record_GOLD_v1.2.0.json
+│   ├── RC1-0053_Repository_RC1_Successor_Governance_Charter_GOLD_v1.2.0.json
+│   ├── RC1-0054_Repository_RC1_Perpetual_Governance_Record_GOLD_v1.2.0.json
+│   ├── RC1-0055_Repository_RC1_Legacy_Continuity_Register_GOLD_v1.2.0.json
+│   ├── RC1-0056_Repository_RC1_Repository_Continuity_Ledger_GOLD_v1.2.0.json
+│   ├── RC1-0057_Repository_RC1_Canonical_Continuity_Index_GOLD_v1.2.0.json
+│   ├── RC1-0058_Repository_RC1_Canonical_Preservation_Register_GOLD_v1.2.0.json
+│   ├── RC1-0059_Repository_RC1_Constitutional_Archive_Register_GOLD_v1.2.0.json
+│   ├── RC1-0060_Repository_RC1_Constitutional_Preservation_Ledger_GOLD_v1.2.0.json
+│   ├── RC1-0061_Repository_RC1_Constitutional_Integrity_Register_GOLD_v1.2.0.json
+│   ├── RC1-0062_Repository_RC1_Constitutional_Certification_Register_GOLD_v1.2.0.json
+│   ├── RC1-0063_Repository_RC1_Constitutional_Ratification_Register_GOLD_v1.2.0.json
+│   ├── RC1-0064_Repository_RC1_Constitutional_Finalization_Register_GOLD_v1.2.0.json
+│   ├── RC1-0065_Repository_RC1_Constitutional_Closure_Register_GOLD_v1.2.0.json
+│   ├── RC1-0066_Repository_RC1_Constitutional_Archive_Closure_Certificate_GOLD_v1.2.0.json
+│   ├── RC1-0067_Repository_RC1_Canonical_Repository_Freeze_Certificate_GOLD_v1.2.0.json
+│   ├── RC1-0068_Repository_RC1_Canonical_Repository_Seal_Certificate_GOLD_v1.2.0.json
+│   ├── RC1-0069_Repository_RC1_Canonical_Repository_Completion_Certificate_GOLD_v1.2.0.json
+│   ├── RC1-0070_Repository_RC1_Canonical_Publication_Completion_Ledger_GOLD_v1.2.0.json
+│   ├── RC1-0071_Repository_RC1_Canonical_Repository_Acceptance_Certificate_GOLD_v1.2.0.json
+│   ├── RC1-0072_Repository_RC1_Canonical_Repository_Release_Certificate_GOLD_v1.2.0.json
+│   ├── RC1-0073_Repository_RC1_Canonical_Repository_Distribution_Certificate_GOLD_v1.2.0.json
+│   ├── RC1-0074_Repository_RC1_Canonical_Repository_Delivery_Certificate_GOLD_v1.2.0.json
+│   ├── RC1-0075_Repository_RC1_Canonical_Repository_Receipt_Certificate_GOLD_v1.2.0.json
+│   ├── RC1-0076_Repository_RC1_Canonical_Repository_Verification_Certificate_GOLD_v1.2.0.json
+│   ├── RC1-0077_Repository_RC1_Canonical_Repository_Validation_Certificate_GOLD_v1.2.0.json
+│   ├── RC1-0078_Repository_RC1_Canonical_Repository_Compliance_Certificate_GOLD_v1.2.0.json
+│   ├── RC1-0079_Repository_RC1_Canonical_Repository_Conformance_Certificate_GOLD_v1.2.0.json
+│   ├── RC1-0080_Repository_RC1_Canonical_Repository_Certification_Ledger_GOLD_v1.2.0.json
+│   ├── RC1-0081_Repository_RC1_Canonical_Repository_Certification_Archive_GOLD_v1.2.0.json
+│   ├── RC1-0082_Repository_RC1_Canonical_Repository_Certification_Index_GOLD_v1.2.0.json
+│   ├── RC1-0083_Repository_RC1_Canonical_Repository_Certification_Manifest_GOLD_v1.2.0.json
+│   ├── RC1-0084_Repository_RC1_Canonical_Repository_Certification_Register_GOLD_v1.2.0.json
+│   ├── RC1-0085_Repository_RC1_Canonical_Repository_Certification_Summary_GOLD_v1.2.0.json
+│   ├── RC1-0086_Repository_RC1_Canonical_Repository_Certification_Digest_GOLD_v1.2.0.json
+│   ├── RC1-0087_Repository_RC1_Canonical_Repository_Certification_Seal_GOLD_v1.2.0.json
+│   ├── RC1-0088_Repository_RC1_Canonical_Repository_Certification_Attestation_GOLD_v1.2.0.json
+│   ├── RC1-0089_Repository_RC1_Canonical_Repository_Certification_Record_GOLD_v1.2.0.json
+│   ├── RC1-0090_Repository_RC1_Canonical_Repository_Certification_Dossier_GOLD_v1.2.0.json
+│   ├── RC1-0091_Repository_RC1_Canonical_Repository_Certification_Portfolio_GOLD_v1.2.0.json
+│   ├── RC1-0092_Repository_RC1_Canonical_Repository_Certification_Compendium_GOLD_v1.2.0.json
+│   ├── RC1-0093_Repository_RC1_Canonical_Repository_Certification_Archive_Register_GOLD_v1.2.0.json
+│   ├── RC1-0094_Repository_RC1_Canonical_Repository_Certification_Master_Register_GOLD_v1.2.0.json
+│   ├── RC1-0095_Repository_RC1_Canonical_Repository_Certification_Master_Archive_GOLD_v1.2.0.json
+│   ├── RC1-0096_Repository_RC1_Canonical_Repository_Certification_Master_Compendium_GOLD_v1.2.0.json
+│   ├── RC1-0097_Repository_RC1_Canonical_Repository_Certification_Master_Ledger_GOLD_v1.2.0.json
+│   ├── RC1-0098_Repository_RC1_Canonical_Repository_Certification_Master_Index_GOLD_v1.2.0.json
+│   ├── RC1-0099_Repository_RC1_Canonical_Repository_Certification_Master_Catalog_GOLD_v1.2.0.json
+│   ├── RC1-0100_Repository_RC1_Canonical_Repository_Centennial_Preservation_Record_GOLD_v1.2.0.json
+│   ├── RC1-0101_Repository_RC1_Canonical_Repository_Centennial_Continuity_Register_GOLD_v1.2.0.json
+│   └── RC1-0102_Repository_RC1_Canonical_Repository_Centennial_Preservation_Ledger_GOLD_v1.2.0.json
+├── README.md
+├── RECOVERY_MANIFEST(1).md
+├── REPOSITORY_CHARTER.md
+├── REPOSITORY_STRUCTURE.md
+├── REPOSITORY_TREE.txt
+├── REPOSITORY_TREE_FULL.txt
+├── ROADMAP.md
+├── Research
+│   └── science.md
+├── SECURITY.md
+├── STARTUP_PROCEDURE_v1.0.docx
+├── STARTUP_PROCEDURE_v1.0.md
+├── Specifications
+│   └── scrooge.md
+├── Tools
+│   └── timesink.md
+├── VERSIONING_POLICY.md
+├── bootstrap_download.md
+└── docs
+    ├── README.md
+    └── Repository documentation.
+
+81 directories, 809 files

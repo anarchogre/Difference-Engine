@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260804-0083",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-04T18:01:36.345439-05:00",
+    "observed_path": "/storage/emulated/0/Download/Bootstrap_Initialization_and_Rules.md.txt",
+    "original_name": "Bootstrap_Initialization_and_Rules.md.txt",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260804-0083",
+    "schema_version": "0.1.0",
+    "sha256": "a48dcc6e2768ac9f9c23f4d4439fbd010c0fc427ece4b8de8f2d07cd6b80a6c1",
+    "size_bytes": 16045,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/plain",
+  "observed_at": "2026-08-04T11:54:20.734684-05:00",
+  "observed_path": "/storage/emulated/0/DifferenceEngine/workspace/operational/ingestion/chat_test.txt",
+  "original_name": "chat_test.txt",
+  "parser_status": "not_started",
+  "receipt_id": "TEST-CHAT-0001",
+  "schema_version": "0.1.0",
+  "sha256": "175861ca94b25f17fcb482a23d4f2f9e59b4ec41c5b38e4de87cda558460873a",
+  "size_bytes": 78,
+  "source_class": "conversation"
+}

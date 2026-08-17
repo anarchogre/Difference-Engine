@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0215",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:15.997709-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Preservation-Points-RC-GOLD/PP-0045_Fingerprints_Endure.json",
+    "original_name": "PP-0045_Fingerprints_Endure.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0215",
+    "schema_version": "0.1.0",
+    "sha256": "8dc90cb5f1f4d9a0096d1ff654f999c4a427bd2a6c4ba5e61c1a8583bb73e048",
+    "size_bytes": 1081,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

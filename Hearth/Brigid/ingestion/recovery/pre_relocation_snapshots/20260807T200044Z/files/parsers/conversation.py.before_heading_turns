@@ -1,0 +1,57 @@
+from dataclasses import dataclass
+import re
+from pathlib import Path
+
+
+@dataclass(frozen=True)
+class Turn:
+    number: int
+    speaker: str
+    text: str
+
+
+COMMAND = re.compile(
+    r"^\s*(\$|>|>>>|python\b|git\b|find\b|grep\b|sed\b|cat\b|mkdir\b|cp\b|mv\b|rm\b|tree\b|ls\b)"
+)
+
+SPEAKER = re.compile(
+    r"^(User|Assistant|System):\s*(.*)$"
+)
+
+
+def parse_conversation(source: Path):
+    turns = []
+
+    for line in source.read_text(
+        encoding="utf-8",
+        errors="replace",
+    ).splitlines():
+
+        m = SPEAKER.match(line)
+
+        if m:
+            speaker = m.group(1).lower()
+            text = m.group(2)
+
+        else:
+            speaker = "unknown"
+            text = line
+
+        turns.append(
+            Turn(
+                number=len(turns) + 1,
+                speaker=speaker,
+                text=text,
+            )
+        )
+
+    commands = [
+        t
+        for t in turns
+        if COMMAND.match(t.text)
+    ]
+
+    return {
+        "turns": turns,
+        "commands": commands,
+    }

@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/plain",
+  "observed_at": "2026-08-04T18:01:35.819720-05:00",
+  "observed_path": "/storage/emulated/0/Download/Babbage_GPT_Initialization.md.txt",
+  "original_name": "Babbage_GPT_Initialization.md.txt",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260804-0082",
+  "schema_version": "0.1.0",
+  "sha256": "7b142fadaa911b1b72cc274e371ad784e7d84de55a71d56f0d47e5eba4ed9b42",
+  "size_bytes": 14078,
+  "source_class": "conversation"
+}

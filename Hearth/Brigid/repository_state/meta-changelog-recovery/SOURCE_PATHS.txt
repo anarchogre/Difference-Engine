@@ -1,0 +1,22 @@
+BOOTSTRAP/Bootstrap - Epoch II — Post Milestone 002 - Constitutional Kernel - Operational Bootstrap.md
+MILESTONE_002_CONVERSATION_CORPUS.md
+evidence/HUMAN_INTERFACE_LANGUAGE_FORMS_REVIEW_CLOSURE.md
+workspace/operational/corpus/chatgpt/Foundation_Summit_001.md
+workspace/operational/ingestion/evidence/HISTORICAL_AKS_HANDBOOK_AGGREGATE_CLOSURE.txt
+workspace/operational/ingestion/evidence/HISTORICAL_AKS_HANDBOOK_JSON_IDENTITY_CLOSURE.txt
+workspace/operational/ingestion/evidence/HISTORICAL_DOCX_IDENTITY_CLOSURE.txt
+workspace/operational/ingestion/evidence/HISTORICAL_FORENSIC_JSON_IDENTITY_CLOSURE.txt
+workspace/operational/ingestion/evidence/HISTORICAL_FORENSIC_START_AOS_RELATIONSHIP_CLOSURE.txt
+workspace/operational/ingestion/evidence/HISTORICAL_JSON_WRAPPER_FRONTIER_CLOSURE.txt
+workspace/operational/ingestion/evidence/HISTORICAL_PDF_CROSS_REPRESENTATION_CLOSURE.txt
+workspace/operational/ingestion/evidence/HISTORICAL_PDF_IDENTITY_CLOSURE.txt
+workspace/operational/ingestion/evidence/MILESTONE_002_CONVERSATION_CORPUS.md
+workspace/operational/ingestion/evidence/PHONE_DOWNLOAD_PDF_IDENTITY_CLOSURE.txt
+workspace/operational/ingestion/evidence/VERIFIED24_EVACUATED_PATH_REBIND_CLOSURE.txt
+workspace/operational/ingestion/output/ING-20260804-0019/source/Implementation_Milestones_v0.1.md
+workspace/operational/ingestion/reports/MILESTONE_001_SUMMARY.md
+workspace/operational/mobile_bridge/BRIDGE_VALIDATION_CLOSURE.md
+workspace/operational/mobile_bridge/evidence/FORGE_BRIDGE_CLOSURE_20260808T104838Z.txt
+workspace/operational/mobile_bridge/source/CHANGELOG.md
+workspace/operational/preservation/PP-0001.md
+workspace/operational/preservation/PP-006.md

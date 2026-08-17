@@ -1,0 +1,25 @@
+RUN=workspace/operational/recovery/gpt-plus-integration/20260803T043919
+UNITTEST_STATUS=5
+MODULE_STATUS=1
+COMPILE_STATUS=0
+
+UNITTEST RESULT
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.001s
+
+NO TESTS RAN
+
+MODULE RESULT
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/bootstrap.py", line 5, in <module>
+    from .artifacts import bootstrap
+ImportError: cannot import name 'bootstrap' from 'ade.kernel.bootstrap_loader.artifacts' (/storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/artifacts.py)
+
+DIRECT EXECUTION RESULT
+Traceback (most recent call last):
+  File "/storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/bootstrap.py", line 5, in <module>
+    from .artifacts import bootstrap
+ImportError: attempted relative import with no known parent package

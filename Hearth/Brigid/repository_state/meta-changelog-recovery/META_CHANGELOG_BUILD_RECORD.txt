@@ -1,0 +1,7 @@
+META_CHANGELOG_BUILD_RECORD
+head=977fcbb5cf8403d0e9e0e3c8cc50a705478c1974
+sources=22
+git_events=30
+meta_sha256=24c8a5064faeb67dbda3f61b6d7a647817807f2e82b06f7b6927a355c8949e11
+archive_sha256=29b252ce90f0db8f6f39bcde3fe65cd44bcadf0b8460f5d8f291aba14c12f0f7
+promotion=NONE

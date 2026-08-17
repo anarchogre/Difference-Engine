@@ -1,0 +1,16 @@
+{
+  "commands": [],
+  "kind": "conversation",
+  "turns": [
+    {
+      "number": 1,
+      "speaker": "user",
+      "text": "three"
+    },
+    {
+      "number": 2,
+      "speaker": "assistant",
+      "text": "four"
+    }
+  ]
+}

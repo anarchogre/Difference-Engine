@@ -1,0 +1,85 @@
+RUN=workspace/operational/recovery/gpt-plus-integration/20260803T043919
+PATCH_STATUS=0
+COMPILE_STATUS=0
+TEST_STATUS=0
+VERIFIER_STATUS=0
+VALIDATION_STATUS=0
+COMMIT_STATUS=0
+
+TESTS
+[BOOTSTRAP] Discovering repository...
+PASS ade.kernel.tests.test_bootstrap_loader.test_initialize
+DISCOVERED=1
+PASSED=1
+FAILED=0
+
+VERIFIER
+[BOOTSTRAP] Discovering repository...
+STATUS=READY
+MISSION=GPT Plus Integration
+TASK=File Library Governance
+EXECUTION_MODE=Execution
+BLOCKERS=0
+WARNINGS=0
+OUTPUT=workspace/operational/recovery/runtime
+
+VALIDATION
+VARIABLE_SHADOWING_REPAIR=PASS
+STATUS=READY
+ARTIFACTS=12
+LIBRARY_GOVERNANCE=True
+
+PATCH
+--- workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair-final/backups/verifier.py.before	2026-08-03 11:31:30.166831133 -0500
++++ ade/kernel/bootstrap_loader/verifier.py	2026-08-03 11:31:30.273497810 -0500
+@@ -271,35 +271,35 @@
+                 )
+             )
+ 
+-            artifacts = library_index.get(
++            library_artifacts = library_index.get(
+                 "artifacts",
+                 [],
+             )
+ 
+             identifiers = [
+                 artifact.get("id")
+-                for artifact in artifacts
++                for artifact in library_artifacts
+             ]
+ 
+             names = [
+                 artifact.get("canonical_name")
+-                for artifact in artifacts
++                for artifact in library_artifacts
+             ]
+ 
+             library_governance_ok = (
+-                bool(artifacts)
++                bool(library_artifacts)
+                 and len(identifiers)
+                 == len(set(identifiers))
+                 and len(names)
+                 == len(set(names))
+                 and all(
+                     artifact.get("verified") is True
+-                    for artifact in artifacts
++                    for artifact in library_artifacts
+                 )
+             )
+ 
+             library_governance_status = {
+-                "artifacts": len(artifacts),
++                "artifacts": len(library_artifacts),
+                 "unique_identifiers": (
+                     len(identifiers)
+                     == len(set(identifiers))
+
+COMMIT
+hint: The '.githooks/pre-commit' hook was ignored because it's not set as executable.
+hint: You can disable this warning with `git config set advice.ignoredHook false`.
+[master 095917b] Repair File Library verifier variable shadowing
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+GIT STATUS
+## master

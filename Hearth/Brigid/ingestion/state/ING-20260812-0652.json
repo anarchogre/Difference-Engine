@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0652",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:49:13.150315-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Rebuild.md/DE Repository Structure 8-1-26 v1.0.md",
+    "original_name": "DE Repository Structure 8-1-26 v1.0.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0652",
+    "schema_version": "0.1.0",
+    "sha256": "3f18b49ce152ec61ab267a2b10bbc282a1b40ce1bf4ad1037ecb2cd21d9fa4dc",
+    "size_bytes": 3668,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

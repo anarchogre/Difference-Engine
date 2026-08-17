@@ -1,0 +1,33 @@
+from pathlib import Path
+
+from .conversation import parse_conversation
+from .markdown import parse_markdown
+
+
+CHAT_MARKERS = (
+    "User:",
+    "Assistant:",
+    "::::",
+    "||||",
+)
+
+
+def parse_chatgpt(source: Path):
+    text = source.read_text(
+        encoding="utf-8",
+        errors="replace",
+    )
+
+    if any(marker in text for marker in CHAT_MARKERS):
+        parsed = parse_conversation(source)
+
+        return {
+            "kind": "conversation",
+            "turns": parsed["turns"],
+            "commands": parsed["commands"],
+        }
+
+    return {
+        "kind": "markdown",
+        "document": parse_markdown(source),
+    }

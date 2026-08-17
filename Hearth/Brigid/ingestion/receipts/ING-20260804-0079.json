@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/plain",
+  "observed_at": "2026-08-04T18:01:33.760281-05:00",
+  "observed_path": "/storage/emulated/0/Download/Difference_Engine____Branch_IV____Operations.md.txt",
+  "original_name": "Difference_Engine____Branch_IV____Operations.md.txt",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260804-0079",
+  "schema_version": "0.1.0",
+  "sha256": "d1c9064bb50f0b6b29b34beafb8aebb9c31c0a02ba1f86b3c1338311ecda7bd9",
+  "size_bytes": 500,
+  "source_class": "conversation"
+}

@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260814-0001",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-14T00:24:18.956854-05:00",
+    "observed_path": "/tmp/difference-engine-json-pipeline-g9u4xiy2/fixture.json",
+    "original_name": "fixture.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260814-0001",
+    "schema_version": "0.1.0",
+    "sha256": "e018ac23036a7848e8826482686c3ed45fa2776a741e4caceb9b18f1a7762555",
+    "size_bytes": 149,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

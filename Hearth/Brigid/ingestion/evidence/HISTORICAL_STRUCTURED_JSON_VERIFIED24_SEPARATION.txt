@@ -1,0 +1,24 @@
+status=STRUCTURED_JSON_SEPARATE_FROM_VERIFIED24
+promotion=NONE
+
+structured_identities_tested=2
+verified_txt_md_sources_tested=24
+
+identity_1=AKS_HANDBOOK
+representative_artifact_1=AKS_AOS_1_0__All_Previous_data_and_conv.json
+best_verified_1=Workflow_and_Evidence_Consolidation.md.txt
+json_coverage_pct_1=0.00
+verified_coverage_pct_1=0.00
+shared_8word_shingles_1=0
+
+identity_2=FORENSIC
+representative_artifact_2=Forensic_Parser_Workflow_full_chat.json
+best_verified_2=Governance_Improvements_Implementation.md.txt
+json_coverage_pct_2=0.03
+verified_coverage_pct_2=0.01
+shared_8word_shingles_2=5
+
+finding=Neither recovered structured JSON identity shows material content identity with the verified-24 txt/md corpus.
+finding=AKS/Handbook has zero observed 8-word-shingle overlap with its best verified-24 candidate.
+finding=Forensic has only five shared 8-word shingles with its best verified-24 candidate, insufficient to support representation identity.
+finding=Historical-21 cross-representation comparison remains required before either identity may be counted as an additional underlying conversation.

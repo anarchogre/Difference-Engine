@@ -1,0 +1,114 @@
+=== SETTINGS MANAGER CONTEXT ===
+	setLastChangelogVersion(version) {
+		this.globalSettings.lastChangelogVersion = version;
+		this.markModified("lastChangelogVersion");
+		this.save();
+	}
+	getSessionDir() {
+		const sessionDir = this.settings.sessionDir;
+		if (!sessionDir) return sessionDir;
+		if (sessionDir === "~") return homedir();
+		if (sessionDir.startsWith("~/")) return join(homedir(), sessionDir.slice(2));
+		return sessionDir;
+	}
+	getDefaultProvider() {
+		return this.settings.defaultProvider;
+	}
+	getDefaultModel() {
+		return this.settings.defaultModel;
+	}
+	setDefaultProvider(provider) {
+		this.globalSettings.defaultProvider = provider;
+		this.markModified("defaultProvider");
+		this.save();
+	}
+	setDefaultModel(modelId) {
+		this.globalSettings.defaultModel = modelId;
+		this.markModified("defaultModel");
+		this.save();
+	}
+	setDefaultModelAndProvider(provider, modelId) {
+		this.globalSettings.defaultProvider = provider;
+		this.globalSettings.defaultModel = modelId;
+		this.markModified("defaultProvider");
+		this.markModified("defaultModel");
+		this.save();
+	}
+	getSteeringMode() {
+		return this.settings.steeringMode || "one-at-a-time";
+	}
+	setSteeringMode(mode) {
+		this.globalSettings.steeringMode = mode;
+		this.markModified("steeringMode");
+		this.save();
+	}
+	getFollowUpMode() {
+		return this.settings.followUpMode || "one-at-a-time";
+	}
+	setFollowUpMode(mode) {
+		this.globalSettings.followUpMode = mode;
+		this.markModified("followUpMode");
+		this.save();
+	}
+	getTheme() {
+		return this.settings.theme;
+	}
+	setTheme(theme) {
+		this.globalSettings.theme = theme;
+		this.markModified("theme");
+		this.save();
+	}
+	getDefaultThinkingLevel() {
+		return this.settings.defaultThinkingLevel;
+	}
+	setDefaultThinkingLevel(level) {
+		this.globalSettings.defaultThinkingLevel = level;
+		this.markModified("defaultThinkingLevel");
+		this.save();
+	}
+	getTransport() {
+		return this.settings.transport ?? "auto";
+	}
+	setTransport(transport) {
+		this.globalSettings.transport = transport;
+		this.markModified("transport");
+		this.save();
+	}
+	getCompactionEnabled() {
+		return this.settings.compaction?.enabled ?? true;
+	}
+	setCompactionEnabled(enabled) {
+		if (!this.globalSettings.compaction) this.globalSettings.compaction = {};
+		this.globalSettings.compaction.enabled = enabled;
+		this.markModified("compaction", "enabled");
+		this.save();
+	}
+	getCompactionReserveTokens() {
+		return this.settings.compaction?.reserveTokens ?? 16384;
+	}
+	getCompactionKeepRecentTokens() {
+		return this.settings.compaction?.keepRecentTokens ?? 2e4;
+	}
+	getCompactionSettings() {
+		return {
+			enabled: this.getCompactionEnabled(),
+			reserveTokens: this.getCompactionReserveTokens(),
+			keepRecentTokens: this.getCompactionKeepRecentTokens()
+		};
+	}
+	getBranchSummarySettings() {
+		return {
+			reserveTokens: this.settings.branchSummary?.reserveTokens ?? 16384,
+			skipPrompt: this.settings.branchSummary?.skipPrompt ?? false
+		};
+	}
+	getBranchSummarySkipPrompt() {
+		return this.settings.branchSummary?.skipPrompt ?? false;
+	}
+	getRetryEnabled() {
+		return this.settings.retry?.enabled ?? true;
+	}
+	setRetryEnabled(enabled) {
+		if (!this.globalSettings.retry) this.globalSettings.retry = {};
+
+=== COMPACTION OVERRIDES IN OPENCLAW STATE ===

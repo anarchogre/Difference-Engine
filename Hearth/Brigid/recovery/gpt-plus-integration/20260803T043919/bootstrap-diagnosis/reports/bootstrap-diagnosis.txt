@@ -1,0 +1,29 @@
+UNITTEST_STATUS=5
+MODULE_STATUS=1
+COMPILE_STATUS=0
+
+UNITTEST
+
+----------------------------------------------------------------------
+Ran 0 tests in 0.001s
+
+NO TESTS RAN
+
+MODULE EXECUTION
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/bootstrap.py", line 5, in <module>
+    from .artifacts import bootstrap
+ImportError: cannot import name 'bootstrap' from 'ade.kernel.bootstrap_loader.artifacts' (/storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/artifacts.py)
+
+DIRECT EXECUTION
+Traceback (most recent call last):
+  File "/storage/emulated/0/DifferenceEngine/ade/kernel/bootstrap_loader/bootstrap.py", line 5, in <module>
+    from .artifacts import bootstrap
+ImportError: attempted relative import with no known parent package
+
+INCOMPLETE IMPLEMENTATION
+ade/kernel/bootstrap_loader/discover.py:20:            raise FileNotFoundError(marker)
+ade/kernel/bootstrap_loader/filesystem.py:9:        raise FileNotFoundError(path)
+ade/kernel/bootstrap_loader/loader.py:30:        raise RuntimeError("Operational Readiness failed.")

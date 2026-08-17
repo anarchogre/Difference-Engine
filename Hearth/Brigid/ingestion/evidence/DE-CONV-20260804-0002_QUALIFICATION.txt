@@ -1,0 +1,15 @@
+CONVERSATION INGESTION QUALIFICATION
+
+Package: workspace/operational/ingestion/output/DE-CONV-20260804-0002
+Source: Kernel_and_Bootstrap_Load.md(1).txt
+Hash match: True
+Parsed kind: conversation
+Recovered turns: 138
+Recovered commands: 1111
+Validation passed: True
+Validation errors: []
+Receipt parser status: not_started
+
+Speaker counts:
+assistant: 61
+user: 77

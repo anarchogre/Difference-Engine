@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/plain",
+  "observed_at": "2026-08-04T18:01:47.407151-05:00",
+  "observed_path": "/storage/emulated/0/Download/Difference_Engine____Branch_0____Origins.txt",
+  "original_name": "Difference_Engine____Branch_0____Origins.txt",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260804-0099",
+  "schema_version": "0.1.0",
+  "sha256": "0a2619397bc7687c57fd8e08765062ea5b4eae141fd8902d71536a443fa5f657",
+  "size_bytes": 670325,
+  "source_class": "conversation"
+}

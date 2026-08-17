@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:02:04.814339-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Workflow_Service_Health_Specification_v0.1.md",
+  "original_name": "Workflow_Service_Health_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0068",
+  "schema_version": "0.1.0",
+  "sha256": "e698fb80a81b20b3a53d5246bec585db5f8cd9ef10212bdac8a37165670debb7",
+  "size_bytes": 7215,
+  "source_class": "manual_batch"
+}

@@ -1,0 +1,62 @@
+=== WHITESPACE INSPECTION ===
+2026-08-07T21:39:26-05:00
+
+=== EXACT LINES 45-62 ===
+1e30ef899f1e3d3de26d78db3668ad2459e3e9c87babd8037d4da8b12b40675d\tBOO\
+TSTRAP/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md | governance/k\
+ernel/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md\t511\t# Uncerta\
+inty Procedure\r$
+1e30ef899f1e3d3de26d78db3668ad2459e3e9c87babd8037d4da8b12b40675d\tBOO\
+TSTRAP/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md | governance/k\
+ernel/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md\t524\t# Guiding\
+ Question\r$
+1e30ef899f1e3d3de26d78db3668ad2459e3e9c87babd8037d4da8b12b40675d\tBOO\
+TSTRAP/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md | governance/k\
+ernel/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md\t530\t# Final A\
+uthority\r$
+b392e310bbba832ca2757fba815f4b5e3a9fc2b8b7a348ecf732376ddae2007a\twor\
+kspace/operational/integration/EXTERNAL_VERIFICATION_STATUS.json\t9\t\
+"    ""status"": ""verified"""\r$
+b392e310bbba832ca2757fba815f4b5e3a9fc2b8b7a348ecf732376ddae2007a\twor\
+kspace/operational/integration/EXTERNAL_VERIFICATION_STATUS.json\t21\
+\t"    ""status"": ""verified"""\r$
+5f55925976446211b2e3cc2678c98b787fb167e63c3b1a435239d8e3d7575301\twor\
+kspace/operational/integration/FILE_LIBRARY_MANIFEST.json\t3\t"  ""st\
+atus"": ""verified"","\r$
+5f55925976446211b2e3cc2678c98b787fb167e63c3b1a435239d8e3d7575301\twor\
+kspace/operational/integration/FILE_LIBRARY_MANIFEST.json\t4\t"  ""au\
+thority"": ""Operations"","\r$
+54dc0a913accc03d6b5d4e3e5afa4dd4338638299d1bafdf64e5319df85834f3\twor\
+kspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json\t3\
+\t"  ""status"": ""candidate"","\r$
+54dc0a913accc03d6b5d4e3e5afa4dd4338638299d1bafdf64e5319df85834f3\twor\
+kspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json\t4\
+\t"  ""authority"": ""Operations"","\r$
+54dc0a913accc03d6b5d4e3e5afa4dd4338638299d1bafdf64e5319df85834f3\twor\
+kspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json\t6\
+\t"  ""required_configuration"": {"\r$
+54dc0a913accc03d6b5d4e3e5afa4dd4338638299d1bafdf64e5319df85834f3\twor\
+kspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json\t2\
+0\t"  ""execution_roles"": ["\r$
+54dc0a913accc03d6b5d4e3e5afa4dd4338638299d1bafdf64e5319df85834f3\twor\
+kspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json\t2\
+1\t"    ""Head Steward"","\r$
+54dc0a913accc03d6b5d4e3e5afa4dd4338638299d1bafdf64e5319df85834f3\twor\
+kspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json\t2\
+8\t"  ""active_execution_partner"": ""Babbage"","\r$
+54dc0a913accc03d6b5d4e3e5afa4dd4338638299d1bafdf64e5319df85834f3\twor\
+kspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json\t2\
+9\t"  ""active_mission"": ""GPT Plus Integration"","\r$
+54dc0a913accc03d6b5d4e3e5afa4dd4338638299d1bafdf64e5319df85834f3\twor\
+kspace/operational/integration/PROJECT_CONFIGURATION_MANIFEST.json\t3\
+0\t"  ""active_task"": ""Recovery Standardization"""\r$
+
+=== INTRODUCING COMMIT ===
+519d30745ad5c4c62195b078f224a139f2bcacc8 Draft Steward Core synchronization contract
+
+=== CURRENT FILE SHA256 ===
+831f4dec24ac4d1d3de8dbaea577adc9be43860f7ecf7b7cb27a81da378bd70e  /home/reckless-ideator/DifferenceEngine/evidence/STEWARD_CORE_SYNC_UNIQUE_DECISIONS.tsv
+
+=== REFERENCES TO FILE NAME ===
+
+=== REFERENCES TO CURRENT SHA256 ===

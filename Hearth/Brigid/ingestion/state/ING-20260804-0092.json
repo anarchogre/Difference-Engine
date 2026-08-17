@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260804-0092",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-04T18:01:41.991732-05:00",
+    "observed_path": "/storage/emulated/0/Download/Workflow_and_Evidence_Consolidation.md.txt",
+    "original_name": "Workflow_and_Evidence_Consolidation.md.txt",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260804-0092",
+    "schema_version": "0.1.0",
+    "sha256": "71176b39c2ad2ac55bf71cb7b56460756f73c8d2821c62bfe0f4f2093f817805",
+    "size_bytes": 145946,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

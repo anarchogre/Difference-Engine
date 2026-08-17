@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:36.348092-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Workflow_Orchestration_Specification_v0.1.md",
+  "original_name": "Workflow_Orchestration_Specification_v0.1.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0406",
+  "schema_version": "0.1.0",
+  "sha256": "305da80317c8fe0fe4eb70d7c80132e6399d108cba1709fa09bc722a140e7ce9",
+  "size_bytes": 4655,
+  "source_class": "manual_batch"
+}

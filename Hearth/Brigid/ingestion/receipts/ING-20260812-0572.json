@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:49:00.009792-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/REV-0006.json",
+  "original_name": "REV-0006.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0572",
+  "schema_version": "0.1.0",
+  "sha256": "486a1c5fad3071c889536f57bc3546b9a23584bf7300894a3dba130278cd1d3a",
+  "size_bytes": 218,
+  "source_class": "manual_batch"
+}

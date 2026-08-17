@@ -1,0 +1,4 @@
+[BOOTSTRAP] Discovering repository...
+INITIALIZE=PASS
+RESULT_TYPE=BootstrapResult
+RESULT=BootstrapResult(artifacts=BootstrapArtifacts(constitution=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/constitution.md'), amendments=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/amendments.md'), bootstrap=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/bootstrap.md')), specifications=Specifications(root=PosixPath('/storage/emulated/0/DifferenceEngine/specifications')), state=OperationalState(repository_root=PosixPath('/storage/emulated/0/DifferenceEngine'), governance_root=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance'), specification_root=PosixPath('/storage/emulated/0/DifferenceEngine/specifications'), execution_mode='Execution', mission=None, task=None))

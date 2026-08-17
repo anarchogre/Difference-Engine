@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/plain",
+  "observed_at": "2026-08-14T00:24:18.949328-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine/workspace/operational/ingestion/batch_test/sources/second.txt",
+  "original_name": "second.txt",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260814-0002",
+  "schema_version": "0.1.0",
+  "sha256": "0a8b86b859573b0754efd02be6664caf4fa29806b2010095679b326156de0ec2",
+  "size_bytes": 29,
+  "source_class": "conversation"
+}

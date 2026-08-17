@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260811-0014",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-11T22:18:46.072005-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Construction_Research_and_Analysis.md.txt",
+    "original_name": "Construction_Research_and_Analysis.md.txt",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260811-0014",
+    "schema_version": "0.1.0",
+    "sha256": "07f8c7ee462b266379c52675542872e1cbb0a75c71916fbd13a24d3996bf5050",
+    "size_bytes": 9380,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

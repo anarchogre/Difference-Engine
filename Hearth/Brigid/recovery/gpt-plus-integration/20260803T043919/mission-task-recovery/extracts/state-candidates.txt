@@ -1,0 +1,52 @@
+
+===== Repository/Governance/bootstrap.md =====
+# Bootstrap Loader Specification
+
+Status: Draft
+
+Purpose
+
+Load the Difference Engine deterministically.
+
+Responsibilities
+
+- Discover repository.
+- Locate Constitution.
+- Locate Bootstrap.
+- Load canonical specifications.
+- Activate operational modes.
+- Verify operational readiness.
+- Recover active mission.
+- Recover active task.
+- Enter Execution Mode.
+
+Output
+
+Operational execution state.
+
+===== workspace/operational/bootstrap/BOOTSTRAP.md =====
+Bootstrap v1.0
+
+Status
+
+Canonical
+
+Purpose
+
+Initialize the Difference Engine deterministically.
+
+Authority
+
+Bootstrap Loader
+
+Initialization Contract
+
+Active
+
+Operational Status
+
+Locked
+
+Promotion
+
+Canonical

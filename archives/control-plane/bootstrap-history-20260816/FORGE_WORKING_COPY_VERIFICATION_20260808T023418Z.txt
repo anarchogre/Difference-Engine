@@ -1,0 +1,43 @@
+=== FORGE WORKING COPY VERIFICATION ===
+2026-08-07T21:34:29-05:00
+
+=== RSYNC LOG TAIL ===
+
+Number of files: 4,205 (reg: 2,800, dir: 1,405)
+Number of created files: 4,204 (reg: 2,800, dir: 1,404)
+Number of deleted files: 0
+Number of regular files transferred: 2,800
+Total file size: 401,980,880 bytes
+Total transferred file size: 401,980,880 bytes
+Literal data: 401,980,880 bytes
+Matched data: 0 bytes
+File list size: 196,586
+File list generation time: 0.001 seconds
+File list transfer time: 0.000 seconds
+Total bytes sent: 402,344,665
+Total bytes received: 59,579
+
+sent 402,344,665 bytes  received 59,579 bytes  114,972,641.14 bytes/sec
+total size is 401,980,880  speedup is 1.00
+
+=== HEADS ===
+SOURCE=b39d2138800c6df9df173321c30fb7ccfe157d71
+DESTINATION=b39d2138800c6df9df173321c30fb7ccfe157d71
+
+=== FILE COUNTS ===
+SOURCE_FILES=2800
+DEST_FILES=2800
+
+=== BYTE COUNTS ===
+SOURCE_BYTES=401980880
+DEST_BYTES=401980880
+
+=== MANIFEST HASHES ===
+f5b75f5f515e8d30ef63bd794be8db282fe48806a9c6c783043cdc4625bfc2ad  /home/reckless-ideator/migration-evidence/FORGE_COPY_SOURCE_SHA256_20260808T023418Z.txt
+f5b75f5f515e8d30ef63bd794be8db282fe48806a9c6c783043cdc4625bfc2ad  /home/reckless-ideator/migration-evidence/FORGE_COPY_DEST_SHA256_20260808T023418Z.txt
+
+=== CONTENT COMPARISON ===
+FILE_CONTENTS=PASS
+
+=== WORKTREE STATUS MATCH ===
+WORKTREE_STATUS=PASS

@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0154",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:11.417250-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Gardener_Principle_v1.0.json",
+    "original_name": "AKS_Gardener_Principle_v1.0.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0154",
+    "schema_version": "0.1.0",
+    "sha256": "bb5e4ea29550af3e5c2dea78624d914bb677fe416190632375e3a8bcde6cf9be",
+    "size_bytes": 92,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

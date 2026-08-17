@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:57.226532-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Publication_Specification_v0.1.md",
+  "original_name": "Publication_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0030",
+  "schema_version": "0.1.0",
+  "sha256": "827453486f2b40479ae26e01b6551510e3efd09e96fe6f92854e150fb2967571",
+  "size_bytes": 2318,
+  "source_class": "manual_batch"
+}

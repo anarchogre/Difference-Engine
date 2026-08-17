@@ -1,0 +1,4 @@
+RECOVERY_ARTIFACT_VALIDATION=PASS
+FILE=workspace/operational/recovery/RECOVERY_SOP.md SIZE=2839
+FILE=workspace/operational/recovery/RECOVERY_CHECKLIST.md SIZE=1393
+FILE=workspace/operational/recovery/RECOVERY_VERIFIER_SPECIFICATION.md SIZE=2291

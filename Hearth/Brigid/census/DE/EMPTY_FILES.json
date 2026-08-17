@@ -1,0 +1,415 @@
+[
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": ".gitinfo/branches.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": ".gitinfo/history/branches.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "architecture/artifacterator/UNIVERSAL_ARTIFACTERATOR_ARCHITECTURE_v1.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "architecture/formatter/UNIVERSAL_FORMATTER_ARCHITECTURE_v1.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "architecture/parser/PARSER_ARCHITECTURE_v1.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "inventory/initialization/20260804_075615_ingester_recovery/source/architecture__artifacterator__UNIVERSAL_ARTIFACTERATOR_ARCHITECTURE_v1.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "inventory/initialization/20260804_075615_ingester_recovery/source/architecture__formatter__UNIVERSAL_FORMATTER_ARCHITECTURE_v1.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "inventory/initialization/20260804_075615_ingester_recovery/source/architecture__parser__PARSER_ARCHITECTURE_v1.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".lst",
+    "path": "inventory/reconciliation/GIT_CONFIG.lst",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".report",
+    "path": "inventory/reconciliation/ONLY_DE.report",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".report",
+    "path": "inventory/reconciliation/ONLY_FLU.report",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".report",
+    "path": "inventory/reconciliation/ONLY_IN.report",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".files",
+    "path": "inventory/reconciliation/common.files",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".lst",
+    "path": "inventory/reports/ade_de_dirs.lst",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".report",
+    "path": "scripts/reconciliation/ONLY_DE.report",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".report",
+    "path": "scripts/reconciliation/ONLY_FLU.report",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".report",
+    "path": "scripts/reconciliation/ONLY_IN.report",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "standards/v1/ARTIFACT_STANDARD_v1.0.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "standards/v1/HEADER_STANDARD_v1.0.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "standards/v1/IDENTIFIER_STANDARD_v1.0.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "standards/v1/MARKDOWN_STANDARD_v1.0.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "standards/v1/QUEUE_STANDARD_v1.0.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "standards/v1/REPOSITORY_LAYOUT_STANDARD_v1.0.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "standards/v1/ROUTING_STANDARD_v1.0.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "standards/v1/TERMUX_OPERATOR_STANDARD_v1.0.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "workspace/delete from de cgptfl.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "workspace/operational/corpus/chatgpt/DifferenceEngine_Const2.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "workspace/operational/corpus/chatgpt/From Human Interface.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "workspace/operational/corpus/chatgpt/Repository Extraction Pipeline.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".md",
+    "path": "workspace/operational/corpus/chatgpt/Writergpt.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".out",
+    "path": "workspace/operational/current/state-references.clean.out",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/active-state-patch/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".lst",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-audit/reports/operational-files.lst",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-patch/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-patch/tests/module-execution.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/cross-domain-drift-detector/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/drift-detector/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verifier-integration/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/formal-test-runner-integration/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".lst",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-and-test-runner/reports/binary-files.lst",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".lst",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-and-test-runner/reports/large-files.lst",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-and-test-runner/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-preflight/reports/git-reset.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-preflight/reports/sensitive-filename-candidates.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair-final/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".diff",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair-retry/reports/verifier.py.diff",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair-retry/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".diff",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair/reports/verifier.py.diff",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-verifier-integration/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/mission-task-patch/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-implementation/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-verifier/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/reports/git-branches.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-agnostic-test-repair/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-heading-repair/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/test-contract-repair/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": true,
+    "extension": ".txt",
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/verifier-integration/tests/compileall.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  }
+]

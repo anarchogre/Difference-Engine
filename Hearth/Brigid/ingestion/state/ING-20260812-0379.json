@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0379",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:32.898989-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Parser_Behavior_Specification_v0.1.md",
+    "original_name": "Parser_Behavior_Specification_v0.1.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0379",
+    "schema_version": "0.1.0",
+    "sha256": "5e3dc72e2bd714d03db9505f4e325e3ce25b46e6d0112e4d79d9e189e635e1bc",
+    "size_bytes": 2747,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

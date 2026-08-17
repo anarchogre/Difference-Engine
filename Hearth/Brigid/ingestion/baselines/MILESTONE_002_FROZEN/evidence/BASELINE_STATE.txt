@@ -1,0 +1,46 @@
+repository_root=/storage/emulated/0/DifferenceEngine
+head=a081b555ba5602ccc0c16011ebc1688d2cb31a58
+branch=master
+python=Python 3.13.13
+platform=Linux localhost 4.19.157-perf+ #1 SMP PREEMPT Wed Feb 1 12:41:12 CST 2023 aarch64 Android
+## master...origin/master
+?? "BOOTSTRAP/BOOTSTRAP - CONTINUE - INGESTER EPOCH v1.0 - 8-4-26-1300.md"
+?? "BOOTSTRAP/BOOTSTRAP \342\200\224 Foundational Reduction Continuation.md"
+?? BOOTSTRAP/BST-CBD-OPS_Operational_Bedrock_and_Ingester_Execution_v0.1.0.md
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Architectural Philosophy And Meta Synthsis.md"
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Computational Bedrock.md"
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Session Continuation Bootstrap - Epoch II - Repository Archaeology - Into - Constitutional Synthesis.md"
+?? "BOOTSTRAP/Bootstrap - Epoch II \342\200\224 Post Milestone 002 - Constitutional Kernel - Operational Bootstrap.md"
+?? "BOOTSTRAP/Bootstrap vNext \342\200\224 Candidate Constitutional Bootstrap Additions.md"
+?? BOOTSTRAP/Branches/
+?? "BOOTSTRAP/Computational Bedrock Bootstrap Ingester Recovery Continuation.md"
+?? BOOTSTRAP/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md
+?? "BOOTSTRAP/Load The Constitutional Kernel.md"
+?? "BOOTSTRAP/Recover Existing Injestion Files.md"
+?? BOOTSTRAP_BRANCHES.txt
+?? BOOTSTRAP_FILES.txt
+?? BOOTSTRAP_FOLDER.txt
+?? BOOTSTRAP_TOP.txt
+?? CONVERSATION_CORPUS_VERIFIED.json
+?? ENTRY_POINTS.txt
+?? INGESTER_CODE.tar
+?? INGESTION_FILES.txt
+?? MILESTONE_002_CONVERSATION_CORPUS.md
+?? PHONE_ACTIVE_STATE.txt
+?? REPOSITORY_STATUS.txt
+?? ade/services/
+?? ade/tests/
+?? architecture/services/
+?? discover_conversations.py
+?? evidence/
+?? governance/
+?? inventory/initialization/
+?? queue/ingestion/
+?? workspace/operational/census/
+?? workspace/operational/corpus/
+?? workspace/operational/current/state-model-candidates.lst
+?? workspace/operational/current/state-references.clean.out
+?? workspace/operational/current/state-references.out
+?? workspace/operational/identity/
+?? workspace/operational/ingestion/
+?? workspace/operational/repository_state/

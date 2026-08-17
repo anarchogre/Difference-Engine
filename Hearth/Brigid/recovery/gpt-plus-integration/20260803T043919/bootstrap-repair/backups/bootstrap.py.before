@@ -1,0 +1,8 @@
+"""
+Bootstrap loading.
+"""
+
+from .artifacts import bootstrap
+
+def load_bootstrap(root):
+    return bootstrap(root)

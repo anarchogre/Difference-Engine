@@ -1,0 +1,45 @@
+{
+  "artifact": "Specification Roadmap",
+  "timestamp": "2026-07-22T19:52:06.421004+00:00",
+  "tiers": {
+    "0": [
+      "Constitution",
+      "First Principles",
+      "Engineering Philosophy"
+    ],
+    "1": [
+      "Canonical Artifact Ontology",
+      "Relationship Ontology",
+      "Universal Lifecycle Model"
+    ],
+    "2": [
+      "Governance",
+      "ADR",
+      "Versioning",
+      "Authority",
+      "Conformance",
+      "Drift"
+    ],
+    "3": [
+      "Repository",
+      "Manifest",
+      "Baseline",
+      "Package",
+      "Dependencies"
+    ],
+    "4": [
+      "Validation",
+      "Audit",
+      "Integrity",
+      "Recovery",
+      "Migration"
+    ],
+    "5": [
+      "Publications",
+      "Guides",
+      "Commentary",
+      "Training"
+    ]
+  },
+  "next_spec": "AKS-SPEC-0001 Canonical Artifact Ontology"
+}

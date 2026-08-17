@@ -1,0 +1,3467 @@
+[
+  {
+    "path": ".de"
+  },
+  {
+    "path": ".de/artifacts"
+  },
+  {
+    "path": ".de/cache"
+  },
+  {
+    "path": ".de/commands"
+  },
+  {
+    "path": ".de/exports"
+  },
+  {
+    "path": ".de/index"
+  },
+  {
+    "path": ".de/logs"
+  },
+  {
+    "path": ".de/plugins"
+  },
+  {
+    "path": ".de/registry"
+  },
+  {
+    "path": ".de/reports"
+  },
+  {
+    "path": ".de/state"
+  },
+  {
+    "path": ".de/tmp"
+  },
+  {
+    "path": ".githooks"
+  },
+  {
+    "path": ".gitinfo"
+  },
+  {
+    "path": ".gitinfo/history"
+  },
+  {
+    "path": ".gitinfo/snapshots"
+  },
+  {
+    "path": ".meta"
+  },
+  {
+    "path": "BOOTSTRAP"
+  },
+  {
+    "path": "BOOTSTRAP/Branches"
+  },
+  {
+    "path": "DOCTRINE"
+  },
+  {
+    "path": "MISSIONS"
+  },
+  {
+    "path": "MemoryPalace"
+  },
+  {
+    "path": "Phylactery"
+  },
+  {
+    "path": "QUEUES"
+  },
+  {
+    "path": "Repository"
+  },
+  {
+    "path": "Repository/Entities"
+  },
+  {
+    "path": "Repository/Governance"
+  },
+  {
+    "path": "Repository/Observations"
+  },
+  {
+    "path": "Repository/Patterns"
+  },
+  {
+    "path": "Repository/Preservation"
+  },
+  {
+    "path": "Repository/Publications"
+  },
+  {
+    "path": "Repository/Relationships"
+  },
+  {
+    "path": "Repository/Specifications"
+  },
+  {
+    "path": "Repository/Validation"
+  },
+  {
+    "path": "SESSION"
+  },
+  {
+    "path": "SUMMITS"
+  },
+  {
+    "path": "ade"
+  },
+  {
+    "path": "ade/cli"
+  },
+  {
+    "path": "ade/distribution"
+  },
+  {
+    "path": "ade/ingestion"
+  },
+  {
+    "path": "ade/kernel"
+  },
+  {
+    "path": "ade/kernel/bootstrap_loader"
+  },
+  {
+    "path": "ade/kernel/bootstrap_loader/__pycache__"
+  },
+  {
+    "path": "ade/kernel/tests"
+  },
+  {
+    "path": "ade/kernel/tests/__pycache__"
+  },
+  {
+    "path": "ade/objects"
+  },
+  {
+    "path": "ade/publication"
+  },
+  {
+    "path": "ade/schema"
+  },
+  {
+    "path": "ade/services"
+  },
+  {
+    "path": "ade/services/census"
+  },
+  {
+    "path": "ade/services/census/__pycache__"
+  },
+  {
+    "path": "ade/services/census/models"
+  },
+  {
+    "path": "ade/services/census/models/__pycache__"
+  },
+  {
+    "path": "ade/services/census/output"
+  },
+  {
+    "path": "ade/services/ingestion"
+  },
+  {
+    "path": "ade/services/ingestion/__pycache__"
+  },
+  {
+    "path": "ade/services/ingestion/parsers"
+  },
+  {
+    "path": "ade/services/ingestion/parsers/__pycache__"
+  },
+  {
+    "path": "ade/services/ingestion/tests"
+  },
+  {
+    "path": "ade/services/ingestion/tests/__pycache__"
+  },
+  {
+    "path": "ade/tests"
+  },
+  {
+    "path": "ade/tests/census"
+  },
+  {
+    "path": "ade/tests/census/__pycache__"
+  },
+  {
+    "path": "ade/validation"
+  },
+  {
+    "path": "ade/workflows"
+  },
+  {
+    "path": "architecture"
+  },
+  {
+    "path": "architecture/artifacterator"
+  },
+  {
+    "path": "architecture/bootstrap_loader"
+  },
+  {
+    "path": "architecture/formatter"
+  },
+  {
+    "path": "architecture/parser"
+  },
+  {
+    "path": "archives"
+  },
+  {
+    "path": "docs"
+  },
+  {
+    "path": "evidence"
+  },
+  {
+    "path": "evidence/ingestion"
+  },
+  {
+    "path": "evidence/ingestion/acceptance"
+  },
+  {
+    "path": "evidence/ingestion/acceptance/20260804_134507"
+  },
+  {
+    "path": "governance"
+  },
+  {
+    "path": "governance/kernel"
+  },
+  {
+    "path": "inventory"
+  },
+  {
+    "path": "inventory/history"
+  },
+  {
+    "path": "inventory/initialization"
+  },
+  {
+    "path": "inventory/initialization/20260804_074926"
+  },
+  {
+    "path": "inventory/initialization/20260804_074926/git"
+  },
+  {
+    "path": "inventory/initialization/20260804_074926/manifests"
+  },
+  {
+    "path": "inventory/initialization/20260804_074926/reports"
+  },
+  {
+    "path": "inventory/initialization/20260804_075117_classification"
+  },
+  {
+    "path": "inventory/initialization/20260804_075117_classification/manifests"
+  },
+  {
+    "path": "inventory/initialization/20260804_075117_classification/reports"
+  },
+  {
+    "path": "inventory/initialization/20260804_075615_ingester_recovery"
+  },
+  {
+    "path": "inventory/initialization/20260804_075615_ingester_recovery/reports"
+  },
+  {
+    "path": "inventory/initialization/20260804_075615_ingester_recovery/source"
+  },
+  {
+    "path": "inventory/reconciliation"
+  },
+  {
+    "path": "inventory/reports"
+  },
+  {
+    "path": "logs"
+  },
+  {
+    "path": "logs/operations"
+  },
+  {
+    "path": "logs/reconciliation"
+  },
+  {
+    "path": "logs/sessions"
+  },
+  {
+    "path": "queue"
+  },
+  {
+    "path": "queue/active"
+  },
+  {
+    "path": "queue/archive"
+  },
+  {
+    "path": "queue/blocked"
+  },
+  {
+    "path": "queue/completed"
+  },
+  {
+    "path": "queue/discussion"
+  },
+  {
+    "path": "queue/implementation"
+  },
+  {
+    "path": "queue/ingestion"
+  },
+  {
+    "path": "queue/research"
+  },
+  {
+    "path": "queue/review"
+  },
+  {
+    "path": "queue/roadmap"
+  },
+  {
+    "path": "queue/someday"
+  },
+  {
+    "path": "scripts"
+  },
+  {
+    "path": "scripts/lib"
+  },
+  {
+    "path": "scripts/reconciliation"
+  },
+  {
+    "path": "specifications"
+  },
+  {
+    "path": "specifications/artifacts"
+  },
+  {
+    "path": "specifications/parser"
+  },
+  {
+    "path": "specifications/repository"
+  },
+  {
+    "path": "standards"
+  },
+  {
+    "path": "standards/v1"
+  },
+  {
+    "path": "standards/v1/supporting"
+  },
+  {
+    "path": "standards/vi"
+  },
+  {
+    "path": "stewards"
+  },
+  {
+    "path": "templates"
+  },
+  {
+    "path": "tools"
+  },
+  {
+    "path": "workspace"
+  },
+  {
+    "path": "workspace/operational"
+  },
+  {
+    "path": "workspace/operational/bootstrap"
+  },
+  {
+    "path": "workspace/operational/contracts"
+  },
+  {
+    "path": "workspace/operational/corpus"
+  },
+  {
+    "path": "workspace/operational/corpus/chatgpt"
+  },
+  {
+    "path": "workspace/operational/current"
+  },
+  {
+    "path": "workspace/operational/doctrine"
+  },
+  {
+    "path": "workspace/operational/drift"
+  },
+  {
+    "path": "workspace/operational/drift/runtime"
+  },
+  {
+    "path": "workspace/operational/history"
+  },
+  {
+    "path": "workspace/operational/ingestion"
+  },
+  {
+    "path": "workspace/operational/ingestion/batch_test"
+  },
+  {
+    "path": "workspace/operational/ingestion/batch_test/output"
+  },
+  {
+    "path": "workspace/operational/ingestion/batch_test/output/ING-20260804-0001"
+  },
+  {
+    "path": "workspace/operational/ingestion/batch_test/output/ING-20260804-0001/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/batch_test/output/ING-20260804-0001/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/batch_test/output/ING-20260804-0001/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/batch_test/output/ING-20260804-0001/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/batch_test/output/ING-20260804-0001/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/batch_test/output/ING-20260804-0001/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/batch_test/output/ING-20260804-0002"
+  },
+  {
+    "path": "workspace/operational/ingestion/batch_test/output/ING-20260804-0002/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/batch_test/output/ING-20260804-0002/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/batch_test/output/ING-20260804-0002/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/batch_test/output/ING-20260804-0002/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/batch_test/output/ING-20260804-0002/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/batch_test/output/ING-20260804-0002/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/batch_test/receipts"
+  },
+  {
+    "path": "workspace/operational/ingestion/batch_test/sources"
+  },
+  {
+    "path": "workspace/operational/ingestion/evidence"
+  },
+  {
+    "path": "workspace/operational/ingestion/inbox"
+  },
+  {
+    "path": "workspace/operational/ingestion/locks"
+  },
+  {
+    "path": "workspace/operational/ingestion/output"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0001"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0001/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0001/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0001/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0001/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0001/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0001/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0002"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0002/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0002/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0002/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0002/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0002/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0002/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0003"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0003/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0003/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0003/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0003/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0003/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0003/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0004"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0004/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0004/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0004/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0004/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0004/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0004/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0005"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0005/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0005/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0005/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0005/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0005/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0005/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0006"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0006/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0006/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0006/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0006/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0006/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/DE-CONV-20260804-0006/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0002"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0002/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0002/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0002/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0002/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0002/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0002/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0003"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0003/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0003/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0003/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0003/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0003/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0003/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0004"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0004/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0004/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0004/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0004/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0004/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0004/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0005"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0005/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0005/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0005/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0005/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0005/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0005/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0006"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0006/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0006/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0006/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0006/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0006/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0006/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0007"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0007/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0007/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0007/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0007/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0007/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0007/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0008"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0008/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0008/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0008/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0008/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0008/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0008/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0009"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0009/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0009/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0009/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0009/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0009/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0009/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0010"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0010/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0010/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0010/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0010/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0010/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0010/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0011"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0011/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0011/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0011/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0011/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0011/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0011/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0012"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0012/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0012/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0012/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0012/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0012/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0012/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0013"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0013/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0013/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0013/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0013/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0013/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0013/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0014"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0014/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0014/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0014/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0014/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0014/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0014/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0015"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0015/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0015/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0015/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0015/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0015/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0015/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0016"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0016/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0016/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0016/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0016/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0016/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0016/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0017"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0017/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0017/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0017/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0017/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0017/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0017/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0018"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0018/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0018/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0018/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0018/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0018/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0018/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0019"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0019/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0019/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0019/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0019/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0019/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0019/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0020"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0020/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0020/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0020/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0020/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0020/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0020/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0021"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0021/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0021/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0021/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0021/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0021/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0021/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0022"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0022/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0022/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0022/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0022/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0022/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0022/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0023"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0023/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0023/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0023/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0023/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0023/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0023/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0024"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0024/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0024/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0024/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0024/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0024/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0024/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0025"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0025/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0025/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0025/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0025/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0025/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0025/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0026"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0026/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0026/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0026/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0026/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0026/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0026/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0027"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0027/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0027/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0027/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0027/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0027/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0027/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0028"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0028/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0028/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0028/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0028/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0028/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0028/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0029"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0029/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0029/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0029/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0029/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0029/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0029/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0030"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0030/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0030/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0030/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0030/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0030/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0030/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0031"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0031/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0031/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0031/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0031/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0031/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0031/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0032"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0032/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0032/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0032/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0032/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0032/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0032/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0033"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0033/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0033/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0033/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0033/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0033/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0033/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0034"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0034/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0034/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0034/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0034/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0034/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0034/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0035"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0035/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0035/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0035/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0035/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0035/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0035/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0036"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0036/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0036/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0036/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0036/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0036/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0036/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0037"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0037/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0037/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0037/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0037/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0037/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0037/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0038"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0038/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0038/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0038/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0038/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0038/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0038/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0039"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0039/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0039/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0039/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0039/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0039/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0039/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0040"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0040/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0040/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0040/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0040/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0040/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0040/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0041"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0041/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0041/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0041/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0041/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0041/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0041/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0042"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0042/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0042/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0042/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0042/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0042/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0042/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0043"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0043/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0043/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0043/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0043/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0043/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0043/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0044"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0044/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0044/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0044/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0044/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0044/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0044/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0045"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0045/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0045/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0045/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0045/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0045/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0045/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0046"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0046/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0046/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0046/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0046/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0046/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0046/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0047"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0047/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0047/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0047/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0047/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0047/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0047/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0048"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0048/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0048/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0048/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0048/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0048/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0048/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0049"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0049/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0049/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0049/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0049/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0049/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0049/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0050"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0050/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0050/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0050/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0050/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0050/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0050/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0051"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0051/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0051/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0051/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0051/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0051/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0051/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0052"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0052/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0052/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0052/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0052/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0052/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0052/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0053"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0053/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0053/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0053/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0053/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0053/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0053/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0054"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0054/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0054/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0054/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0054/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0054/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0054/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0055"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0055/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0055/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0055/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0055/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0055/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0055/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0056"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0056/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0056/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0056/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0056/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0056/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0056/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0057"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0057/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0057/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0057/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0057/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0057/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0057/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0058"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0058/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0058/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0058/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0058/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0058/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0058/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0059"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0059/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0059/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0059/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0059/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0059/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0059/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0060"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0060/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0060/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0060/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0060/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0060/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0060/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0061"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0061/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0061/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0061/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0061/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0061/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0061/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0062"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0062/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0062/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0062/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0062/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0062/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0062/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0063"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0063/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0063/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0063/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0063/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0063/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0063/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0064"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0064/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0064/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0064/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0064/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0064/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0064/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0065"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0065/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0065/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0065/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0065/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0065/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0065/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0066"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0066/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0066/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0066/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0066/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0066/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0066/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0067"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0067/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0067/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0067/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0067/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0067/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0067/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0068"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0068/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0068/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0068/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0068/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0068/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0068/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0069"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0069/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0069/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0069/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0069/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0069/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0069/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0070"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0070/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0070/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0070/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0070/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0070/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0070/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0071"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0071/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0071/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0071/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0071/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0071/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0071/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0072"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0072/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0072/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0072/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0072/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0072/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0072/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0073"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0073/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0073/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0073/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0073/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0073/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0073/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0074"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0074/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0074/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0074/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0074/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0074/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0074/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0075"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0075/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0075/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0075/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0075/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0075/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0075/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0076"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0076/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0076/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0076/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0076/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0076/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0076/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0077"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0077/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0077/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0077/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0077/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0077/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0077/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0078"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0078/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0078/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0078/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0078/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0078/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0078/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0079"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0079/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0079/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0079/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0079/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0079/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0079/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0080"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0080/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0080/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0080/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0080/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0080/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0080/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0081"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0081/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0081/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0081/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0081/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0081/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0081/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0082"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0082/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0082/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0082/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0082/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0082/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0082/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0083"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0083/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0083/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0083/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0083/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0083/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0083/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0084"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0084/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0084/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0084/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0084/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0084/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0084/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0085"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0085/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0085/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0085/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0085/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0085/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0085/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0086"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0086/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0086/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0086/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0086/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0086/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0086/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0087"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0087/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0087/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0087/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0087/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0087/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0087/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0088"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0088/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0088/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0088/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0088/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0088/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0088/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0089"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0089/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0089/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0089/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0089/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0089/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0089/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0090"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0090/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0090/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0090/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0090/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0090/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0090/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0091"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0091/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0091/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0091/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0091/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0091/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0091/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0092"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0092/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0092/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0092/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0092/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0092/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0092/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0093"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0093/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0093/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0093/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0093/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0093/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0093/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0094"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0094/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0094/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0094/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0094/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0094/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0094/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0095"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0095/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0095/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0095/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0095/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0095/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0095/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0096"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0096/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0096/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0096/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0096/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0096/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0096/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0097"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0097/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0097/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0097/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0097/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0097/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0097/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0098"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0098/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0098/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0098/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0098/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0098/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0098/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0099"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0099/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0099/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0099/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0099/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0099/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0099/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0100"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0100/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0100/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0100/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0100/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0100/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0100/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0101"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0101/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0101/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0101/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0101/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0101/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-20260804-0101/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-LOCAL-0001"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-LOCAL-0001/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-LOCAL-0001/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-LOCAL-0001/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-LOCAL-0001/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-LOCAL-0001/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/output/ING-LOCAL-0001/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/parser_tests"
+  },
+  {
+    "path": "workspace/operational/ingestion/receipts"
+  },
+  {
+    "path": "workspace/operational/ingestion/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/reports/PP-INGESTER-001"
+  },
+  {
+    "path": "workspace/operational/ingestion/roadmap"
+  },
+  {
+    "path": "workspace/operational/ingestion/state"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-CHAT-0001"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-CHAT-0001/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-CHAT-0001/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-CHAT-0001/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-CHAT-0001/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-CHAT-0001/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-CHAT-0001/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-CHAT-0002"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-CHAT-0002/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-CHAT-0002/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-CHAT-0002/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-CHAT-0002/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-CHAT-0002/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-CHAT-0002/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-0002"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-0002/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-0002/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-0002/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-0002/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-0002/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-0002/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-0003"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-0003/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-0003/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-0003/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-0003/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-0003/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-0003/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-MD-CONV"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-MD-CONV/metadata"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-MD-CONV/provenance"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-MD-CONV/queues"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-MD-CONV/reports"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-MD-CONV/source"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_output/TEST-PIPELINE-MD-CONV/structure"
+  },
+  {
+    "path": "workspace/operational/ingestion/test_receipts"
+  },
+  {
+    "path": "workspace/operational/integration"
+  },
+  {
+    "path": "workspace/operational/library"
+  },
+  {
+    "path": "workspace/operational/preservation"
+  },
+  {
+    "path": "workspace/operational/recovery"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/active-state-patch"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/active-state-patch/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/active-state-patch/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/active-state-patch/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/active-state-patch/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-audit"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-audit/extracts"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-audit/hashes"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-audit/inputs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-audit/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/extracts"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-discovery"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-discovery/extracts"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-discovery/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-discovery/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-discovery/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-patch"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-patch/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-patch/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-patch/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-patch/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/extracts"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-vnext"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-vnext/artifacts"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-vnext/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-vnext/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-vnext/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-vnext/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/cross-domain-drift-detector"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/cross-domain-drift-detector/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/cross-domain-drift-detector/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/cross-domain-drift-detector/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/cross-domain-drift-detector/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/drift-detector"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/drift-detector/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/drift-detector/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/drift-detector/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/drift-detector/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verification"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verification-manifests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verification-manifests/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verification-manifests/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verification-manifests/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verification-manifests/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verification/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verification/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verification/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verification/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verifier-integration"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verifier-integration/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verifier-integration/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verifier-integration/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verifier-integration/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/file-library-governance"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/file-library-governance/artifacts"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/file-library-governance/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/file-library-governance/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/file-library-governance/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/file-library-governance/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/formal-test-runner-integration"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/formal-test-runner-integration/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/formal-test-runner-integration/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/formal-test-runner-integration/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/formal-test-runner-integration/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-and-test-runner"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-and-test-runner/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-and-test-runner/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-and-test-runner/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-and-test-runner/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-preflight"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-preflight/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-preflight/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-preflight/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline-preflight/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/git-baseline/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/hashes"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair-final"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair-final/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair-final/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair-final/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair-final/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair-retry"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair-retry/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair-retry/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair-retry/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair-retry/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-shadowing-repair/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-verifier-integration"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-verifier-integration/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-verifier-integration/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-verifier-integration/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/library-verifier-integration/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/manifests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/mission-task-patch"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/mission-task-patch/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/mission-task-patch/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/mission-task-patch/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/mission-task-patch/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/mission-task-recovery"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/mission-task-recovery/extracts"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/mission-task-recovery/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/mission-task-recovery/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/mission-task-recovery/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-1-closeout"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-1-closeout/artifacts"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-1-closeout/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-1-closeout/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-1-closeout/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-2-closeout"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-2-closeout/artifacts"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-2-closeout/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-2-closeout/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-2-closeout/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-3-closeout"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-3-closeout/artifacts"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-3-closeout/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-3-closeout/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/phase-3-closeout/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-audit"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-audit/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-audit/extracts"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-audit/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-audit/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-audit/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-implementation"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-implementation/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-implementation/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-implementation/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-implementation/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-specification"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-specification/artifacts"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-specification/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-specification/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-specification/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-verifier"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-verifier/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-verifier/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-verifier/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/recovery-verifier/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/repository-service-inventory"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/repository-service-inventory/extracts"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/repository-service-inventory/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/repository-service-inventory/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/repository-service-inventory/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-agnostic-test-repair"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-agnostic-test-repair/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-agnostic-test-repair/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-agnostic-test-repair/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-agnostic-test-repair/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-heading-repair"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-heading-repair/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-heading-repair/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-heading-repair/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-heading-repair/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/test-contract-repair"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/test-contract-repair/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/test-contract-repair/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/test-contract-repair/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/test-contract-repair/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/verifier-integration"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/verifier-integration/backups"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/verifier-integration/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/verifier-integration/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/gpt-plus-integration/20260803T043919/verifier-integration/tests"
+  },
+  {
+    "path": "workspace/operational/recovery/mortar"
+  },
+  {
+    "path": "workspace/operational/recovery/mortar/20260803T153259"
+  },
+  {
+    "path": "workspace/operational/recovery/mortar/20260803T153259/evidence"
+  },
+  {
+    "path": "workspace/operational/recovery/mortar/20260803T153259/logs"
+  },
+  {
+    "path": "workspace/operational/recovery/mortar/20260803T153259/reports"
+  },
+  {
+    "path": "workspace/operational/recovery/runtime"
+  },
+  {
+    "path": "workspace/operational/repository_state"
+  },
+  {
+    "path": "workspace/operational/services"
+  },
+  {
+    "path": "workspace/operational/services/contracts"
+  },
+  {
+    "path": "workspace/operational/services/specifications"
+  },
+  {
+    "path": "workspace/operational/services/specifications/bootstrap"
+  },
+  {
+    "path": "workspace/operational/standards"
+  },
+  {
+    "path": "{"
+  }
+]

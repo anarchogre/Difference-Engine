@@ -1,0 +1,3 @@
+TEST_CONTRACT_VALIDATION=PASS
+FILE=ade/kernel/tests/test_bootstrap_loader.py
+SIZE=571

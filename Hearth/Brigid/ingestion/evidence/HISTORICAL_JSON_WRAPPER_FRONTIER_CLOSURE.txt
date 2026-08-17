@@ -1,0 +1,22 @@
+status=JSON_WRAPPER_FRONTIER_RESOLVED_UNDER_CURRENT_TESTS
+promotion=NONE
+
+substantive_non_top_level_message_json=33
+
+recognized_conversation_bearing_wrappers=2
+resolved_wrapper=Master_Conversations_Unparsed_v1.json
+resolved_wrapper_disposition=NUMBERED_CONVERSATION_MASTER_AGGREGATE
+open_wrapper=forensic_parser_workflow_start.json
+open_wrapper_source_text_chars=5564
+
+no_signal_json=31
+no_signal_max_string_ge_1000=0
+no_signal_max_string_ge_500=0
+no_signal_role_or_speaker_files=0
+
+tests_applied=recursive_known_keys|hidden_string_payloads|role_and_speaker_signals
+
+finding=Master_Conversations_Unparsed_v1.json is a resolved staging wrapper for the recovered numbered master corpus.
+finding=forensic_parser_workflow_start.json remains the sole observed unresolved conversation-bearing wrapper in this frontier.
+finding=The remaining 31 substantive JSON artifacts showed no conversation structure under the current three structural tests.
+finding=Absence of observed conversation structure is not proof that the 31 artifacts are semantically non-conversational.

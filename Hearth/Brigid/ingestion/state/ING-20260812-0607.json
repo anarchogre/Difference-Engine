@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0607",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:49:05.669833-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/Traversal_Ledger_v0.1.json",
+    "original_name": "Traversal_Ledger_v0.1.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0607",
+    "schema_version": "0.1.0",
+    "sha256": "91fad2d4d4f79d6e88b6e38a4ef633cc6b8b268370565ebcfa91285c2e3a7eda",
+    "size_bytes": 698,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

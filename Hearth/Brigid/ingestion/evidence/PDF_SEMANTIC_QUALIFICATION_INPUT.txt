@@ -1,0 +1,25 @@
+PDF SEMANTIC QUALIFICATION INPUT
+
+source=workspace/operational/ingestion/evidence/HISTORICAL_PDF_IDENTITY_CLOSURE.txt
+source_sha256=1be76d74a94ec217553d2d1d12c2225bef8bdd64e352e7081c6cc43be997d70b
+
+status=PDF_NATIVE_IDENTITY_RESOLVED
+promotion=NONE
+
+frozen_pdf_artifacts=12
+frozen_unique_artifact_hashes=12
+frozen_native_chat_ids=12
+frozen_missing_chat_ids=0
+
+phone_download_pdf_artifacts=3
+phone_download_native_chat_ids=2
+
+cross_set_overlap_ids=0
+known_distinct_pdf_native_chat_ids=14
+
+phone_additional_chat_id_1=6a69710c-5c1c-83ea-9e89-588a79de956b
+phone_additional_chat_id_2=6a6c76a3-5fb0-83ea-bb21-842dbf8ab82a
+
+finding=All 12 frozen PDF candidates resolve to distinct native ChatGPT conversation IDs.
+finding=The two phone-download native IDs do not occur among the frozen 12.
+finding=PDF artifact identity is resolved; semantic cross-representation identity remains subject to corpus comparison.

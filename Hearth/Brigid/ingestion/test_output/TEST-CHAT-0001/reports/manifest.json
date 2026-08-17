@@ -1,0 +1,21 @@
+{
+  "asset_count": 6,
+  "command_count": 2,
+  "kind": "conversation",
+  "provenance": {
+    "artifact_id": "TEST-CHAT-0001",
+    "provenance_id": "PROV-TEST-CHAT-0001",
+    "relationship": "observed_from",
+    "source_path": "/storage/emulated/0/DifferenceEngine/workspace/operational/ingestion/chat_test.txt",
+    "source_sha256": "175861ca94b25f17fcb482a23d4f2f9e59b4ec41c5b38e4de87cda558460873a"
+  },
+  "queue_count": 4,
+  "receipt": "TEST-CHAT-0001",
+  "reference_count": 1,
+  "title": "",
+  "turn_count": 4,
+  "validation": {
+    "errors": [],
+    "passed": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0673",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-12T04:24:51.125828-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Difference_Engine____Branch_III____Integration.txt",
+    "original_name": "Difference_Engine____Branch_III____Integration.txt",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0673",
+    "schema_version": "0.1.0",
+    "sha256": "e3e1f2f5b80db46a0942efa1a1fb20e7bba0060a487f6c764000cac292ef7280",
+    "size_bytes": 702026,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

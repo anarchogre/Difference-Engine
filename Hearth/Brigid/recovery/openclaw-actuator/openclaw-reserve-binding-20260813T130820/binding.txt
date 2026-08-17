@@ -1,0 +1,364 @@
+=== CURRENT AGENT COMPACTION CONFIG ===
+Config path not found: agents.defaults.compaction. Run openclaw config validate to inspect config shape.
+
+=== AUTO-COMPACTION GUARD BINDING ===
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-106-import { a as compareHarnessSupport, i as buildAgentHarnessSupportContext } from "./thinking-runtime-rftFo2fO.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-107-import { a as getOrCreateSessionMcpRuntime } from "./agent-bundle-mcp-runtime--G82BMQs.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-108-import { i as getPluginToolMeta } from "./tools-V54L2wjJ.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-109-import { r as materializeBundleMcpToolsForRun } from "./agent-bundle-mcp-materialize-D9l-gQ5S.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-110-import "./agent-bundle-mcp-tools-CYL4t7pb.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-111-import { n as OPENCLAW_EMBEDDED_CONTEXT_ENGINE_HOST, r as assertContextEngineHostSupport } from "./host-compat-BibWlia2.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-112-import { a as finalizeHarnessContextEngineTurn, c as runContextEngineMaintenance, d as runAgentEndSideEffects, f as buildContextEngineRuntimeSettings, n as bootstrapHarnessContextEngine, t as assembleHarnessContextEngine } from "./context-engine-lifecycle-Bv52xohg.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-113-import { n as extractModelCompat, o as resolveToolCallArgumentsEncoding } from "./provider-model-compat-oFdXQWLa.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-114-import { n as normalizeGoogleApiBaseUrl } from "./google-api-base-url-UBNiBOzj.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-115-import { i as resolveGroupToolPolicy } from "./agent-tools.policy-YD9HuYgO.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-116-import { t as resolveConversationCapabilityProfile } from "./conversation-capability-profile-1DyyogtK.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-117-import { t as isAcpRuntimeSpawnAvailable } from "./availability-B3_LYAnc.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-118-import { o as normalizeHeartbeatToolResponse } from "./heartbeat-tool-response-DeOnAqhX.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-119-import { t as filterHeartbeatTranscriptArtifacts } from "./heartbeat-filter-D5izsPiV.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-120-import { r as diagnosticErrorMessage, t as diagnosticErrorCategory } from "./diagnostic-error-metadata-yrw7ASmg.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-121-import { n as resolveDiagnosticModelContentCapturePolicy } from "./diagnostic-llm-content-CU_-DTjY.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-122-import { C as consumeStructuredReplaySafeToolCall, O as isEmbeddedMode, S as consumePreExecutionBlockedToolCall, h as CODE_MODE_WAIT_TOOL_NAME, l as recordStructuredReplayTrustForToolCall, m as CODE_MODE_EXEC_TOOL_NAME, x as consumeAdjustedParamsForToolCall } from "./agent-tools.before-tool-call-C95DXQXZ.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-123-import { r as resolveHeartbeatSummaryForAgent } from "./heartbeat-summary-DTfvdWN-.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-124-import { t as getMachineDisplayName } from "./machine-name-DaF-eeRE.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-125-import { n as resolveRuntimeOsLabel, t as resolveOsSummary } from "./os-summary-CVk_nSu8.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-126-import { _ as supportsModelTools, d as mergeTransportHeaders, h as hasOnlyAssistantReasoningContent, p as sanitizeTransportPayloadText } from "./openai-transport-stream-B0WkSqXp.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-127-import { t as log$2 } from "./logger-rC_P-huq.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-128-import { u as createCodexNativeWebSearchWrapper } from "./proxy-ndumgUwZ.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-129-import { n as buildAgentHookContextIdentityFields, t as buildAgentHookContextChannelFields } from "./hook-agent-context-DPPRzCBU.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-130-import { s as resolveSkillsPromptForRun } from "./workspace-BgZV1_od.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-131-import { i as resolveEmbeddedRunSkillEntries, n as mapSandboxSkillUsagePaths, r as resolveSandboxSkillRuntimeInputs, t as mapSandboxSkillEntriesForPrompt } from "./sandbox-skills-Cc765-ge.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-132-import { n as applySkillEnvOverridesFromSnapshot, t as applySkillEnvOverrides } from "./env-overrides-K88qrVfF.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-133-import { n as redactConfigObject } from "./redact-snapshot-C_BFfSrJ.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-134-import { t as resolveCommitHash } from "./git-commit-5O2wyffX.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-135-import { a as sanitizeSupportSnapshotValue, t as redactPathForSupport } from "./diagnostic-support-redaction-CoIT5wwp.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-136-import { t as sanitizeDiagnosticPayload } from "./payload-redaction-BU7N7gsY.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-137-import { t as safeJsonStringify } from "./safe-json-CY5cd4H1.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-138-import { t as isReasoningTagProvider } from "./provider-utils-BuEi1iF_.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-139-import { t as createBundleLspToolRuntime } from "./agent-bundle-lsp-runtime-BHqxGSMJ.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-140-import { B as stripStaleAssistantUsageBeforeLatestCompaction, C as buildEmbeddedMessageActionDiscoveryInput, E as buildEmbeddedExtensionFactories, G as wrapAnthropicStreamWithRecovery, H as dropReasoningFromHistory, I as isCacheTtlEligibleProvider, J as createPreparedEmbeddedAgentSettingsManager, K as isZeroUsageEmptyStopAssistantTurn, L as readLastCacheTtlTimestamp, M as rotateTranscriptAfterCompaction, P as shouldRotateCompactionTranscript, R as logRuntimeToolSchemaQuarantine, S as validateReplayTurns, T as limitHistoryTurns, U as dropThinkingBlocks, V as assessLastAssistantMessage, W as stripThinkingBlocksFromMessage, _ as prewarmSessionFile, b as normalizeAssistantReplayContent, c as collectCoreBuiltinToolNames, d as applySystemPromptToSession, f as buildEmbeddedSystemPrompt, g as resolveEmbeddedAgentStreamFn, h as resolveEmbeddedAgentBaseStreamFn, i as mapThinkingLevelForProvider, l as collectRegisteredToolNames, m as resolveEmbeddedAgentApiKey, n as flushPendingToolResultsAfterIdle, o as AGENT_RESERVED_TOOL_NAMES, p as describeEmbeddedAgentStreamStrategy, q as consumeEmbeddedToolSendReceipt, r as mapThinkingLevel, s as collectAllowedToolNames, t as wrapStreamFnWithDiagnosticModelCallEvents, u as toSessionToolAllowlist, v as trackSessionManagerAccess, w as getHistoryLimitFromSessionKey, x as sanitizeSessionHistory, y as createEmbeddedAgentResourceLoader, z as guardSessionManager } from "./attempt.model-diagnostic-events-CfZQM0hs.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js:141:import { a as resolveEffectiveCompactionMode, i as isSilentOverflowProneModel, n as applyAgentAutoCompactionGuard, r as applyAgentCompactionSettingsFromConfig } from "./agent-settings-axYuScuh.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-142-import { d as listChannelSupportedActions, f as resolveChannelMessageToolHints, g as getChannelAgentToolMeta, m as resolveChannelReactionGuidance, w as REQUIRED_PARAM_GROUPS } from "./gateway-CvsJ0gY0.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-143-import { n as isToolResultError, r as readToolResultDetails } from "./tool-result-error-Bz7hBpM1.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-144-import { a as toClientToolDefinitions, n as createClientToolNameConflictError, o as toToolDefinitions, r as findClientToolNameConflicts, t as splitSdkTools } from "./tool-split-BONVLU1k.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-145-import { n as resolveProcessToolScopeKey, t as createOpenClawCodingTools } from "./agent-tools-BD8WL7ny.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-146-import { f as isStrictAgenticSupportedProviderModel, p as stripProviderPrefix } from "./openclaw-tools-KulZ1cdH.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-147-import { C as isLocalModelLeanEnabled, S as filterLocalModelLeanTools, T as shouldCatalogToolForLocalModelLean, _ as projectToolSearchTargetTranscriptMessages, b as resolveToolSearchConfig, d as buildToolSchemaDirectoryPrompt, f as clearToolSearchCatalog, g as estimateToolSchemaDirectoryToolNames, i as TOOL_SEARCH_RAW_TOOL_NAME, l as applyToolSchemaDirectoryCatalog, m as createToolSearchCatalogRef, n as TOOL_DESCRIBE_RAW_TOOL_NAME, p as collectUniqueCatalogToolNames, r as TOOL_SEARCH_CODE_MODE_TOOL_NAME, s as addClientToolsToToolSearchCatalog, t as TOOL_CALL_RAW_TOOL_NAME, u as applyToolSearchCatalog, w as resolveLocalModelLeanPreserveToolNames, x as applyLocalModelLeanToolSearchDefaults, y as resolveToolSearchCatalogTool } from "./tool-search-B8B4Spes.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-148-import { t as resolveToolLoopDetectionConfig } from "./tool-loop-detection-config-CmS_1rXy.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-149-import { c as resolveMainSessionAlias, s as resolveInternalSessionKey } from "./sessions-helpers-CsMNowOZ.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-150-import { n as replaceWithEffectiveCronCreatorToolAllowlist } from "./cron-tool-C9qaFGtt.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-151-import { m as mediaUrlsFromGeneratedAttachments } from "./subagent-announce-origin-DPSebzOW.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-152-import { t as sanitizeForPromptLiteral } from "./sanitize-for-prompt-DSJzLJDI.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-153-import { a as hasCommittedMessagingToolDeliveryEvidence, c as hasMessagingToolDeliveryEvidence, m as normalizeAcceptedSessionSpawnResult, p as hasAcceptedSessionSpawn } from "./delivery-evidence-Du4oIHR6.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-154-import { a as hasReplyPayloadContent } from "./payload-C0zJd_02.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-155-import { b as resolveBootstrapTotalMaxChars, d as normalizeOpenAIResponsesToolCallIds, l as downgradeOpenAIFunctionCallReasoningPairs, n as validateAnthropicTurns, o as isMessagingToolDuplicateNormalized, r as validateGeminiTurns, s as normalizeTextForComparison, u as downgradeOpenAIReasoningBlocks, v as resolveBootstrapMaxChars, y as resolveBootstrapPromptTruncationWarningMode } from "./embedded-agent-helpers-DZZ4Y-Tw.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-156-import { i as scanFenceSpans } from "./fences-wZj5bese.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-157-import { M as formatToolAggregate } from "./streaming-CfpqgwBH.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-158-import { m as resolveSendableOutboundReplyParts, s as hasOutboundReplyContent } from "./reply-payload-C3J477-H.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-159-import { f as parseReplyDirectives } from "./payloads-DYHv5qoG.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-160-import { d as buildTextObservationFields, f as shouldSuppressRawErrorConsoleSuffix, g as abortable, m as MissingAgentHarnessError, u as buildApiErrorObservationFields } from "./model-fallback-BPQMpbqN.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-161-import { a as extractAssistantVisibleText, d as promoteThinkingTagsToBlocks, f as sanitizeAssistantVisibleStreamText, i as extractAssistantThinking, l as inferToolMetaFromArgs, n as extractAssistantCommentaryText, o as extractThinkingFromTaggedStream, r as extractAssistantText, s as extractThinkingFromTaggedText, t as THINKING_TAG_SCAN_RE, u as isAssistantMessage } from "./embedded-agent-utils-CjKqpAOm.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-162-import { o as parseInteractiveParam, s as parseJsonMessageParam } from "./message-action-dispatch-CZZYL7XG.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-163-import { t as registerProviderStreamForModel } from "./provider-stream-CqSx37Uy.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-164-import { S as prependAgentSteeringPrompt, g as releasePendingAgentSteeringItems, t as ackPendingAgentSteeringItems, u as leasePendingAgentSteeringItems } from "./subagent-registry-DexSZ4w1.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-165-import { n as buildSubagentList } from "./subagent-list-DS5VECFa.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-166-import { a as listControlledSubagentRuns } from "./subagent-control-CXT-voKm.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-167-import { o as resolveSandboxContext } from "./sandbox-DtTssSMH.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-168-import { r as listActiveProcessSessionReferences } from "./compaction-runtime-context--DEAWi6X.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-169-import { a as buildBootstrapPromptWarningNotice, i as buildBootstrapPromptWarning, o as buildBootstrapTruncationReportMeta, r as buildBootstrapInjectionStats, t as analyzeBootstrapBudget } from "./bootstrap-budget-DFC5I5_X.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-170-import { i as makeBootstrapWarn, n as buildBootstrapContextForFiles, o as resolveBootstrapFilesForRun, r as hasCompletedBootstrapTurn, s as resolveContextInjectionMode, t as FULL_BOOTSTRAP_COMPLETED_CUSTOM_TYPE } from "./bootstrap-files-CUlAj8PH.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-171-import { t as resolveHeartbeatPromptForSystemPrompt } from "./heartbeat-system-prompt-vL22Vy4o.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-172-import { t as isHeartbeatLifecycleRunKind } from "./bootstrap-mode-DiBGJeJJ.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-173-import { n as isPrimaryBootstrapRun, r as resolveWorkspaceBootstrapRouting, t as buildSystemPromptReport } from "./system-prompt-report-jSGxzBCq.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-174-import { i as resolveCodeModeConfig, n as applyCodeModeCatalog, r as createCodeModeTools, t as addClientToolsToCodeModeCatalog } from "./code-mode-D5mNEiYV.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-175-import { a as resolveUserTimezone } from "./date-time-CcWivhrg.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-176-import { r as resolveOpenClawReferencePaths } from "./docs-path-DunqWXDr.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-177-import { a as isMessagingToolSendAction, o as isMessagingToolTargetEvidenceAction, r as isMessagingTool } from "./embedded-agent-messaging-AJZX3UxO.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-178-import { t as collectTextContentBlocks } from "./content-blocks-DRK0dze4.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-179-import { a as extractMessagingToolSendResult, c as extractToolErrorMessage, d as filterToolResultMediaUrls, h as sanitizeToolResult, i as extractMessagingToolSend, l as extractToolResultMediaArtifact, m as sanitizeToolArgs, n as collectMessagingMediaUrlsFromRecord, o as extractMessagingToolSourceReplyPayload, p as isToolResultTimedOut, r as collectMessagingMediaUrlsFromToolResult, s as extractToolErrorCode, t as buildToolLifecycleErrorResult, u as extractToolResultText$1 } from "./embedded-agent-subscribe.tools-CfJXhZwg.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-180-import { n as isDeliveredMessageToolOnlySourceReplyResult, r as isDeliveredMessagingToolResult } from "./embedded-agent-message-tool-source-reply-DCkkwTMd.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-181-import { i as summarizeToolValidationError, t as createToolValidationErrorSummary } from "./tool-error-summary-DDV0ZoKC.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-182-import { a as isSameToolMutationAction, t as buildToolMutationState } from "./tool-mutation-BfXv6cQw.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-183-import { t as EmbeddedBlockChunker } from "./embedded-agent-block-chunker-C6r0hPGr.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-184-import { i as runAgentHarnessBeforeAgentFinalizeHook } from "./lifecycle-hook-helpers-BwL6869q.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-185-import { i as resolveAgentPromptSurfaceForSessionKey, n as appendModelIdentitySystemPrompt, r as buildModelIdentityPromptLine } from "./system-prompt-config-DmMYFhnb.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-186-import { t as collectRuntimeChannelCapabilities } from "./runtime-capabilities-C1Q8Fvg0.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-187-import { n as filterRuntimeCompatibleTools } from "./tool-schema-projection-BtVCT_Zc.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-188-import { n as normalizeAgentRuntimeTools, t as logAgentRuntimeToolDiagnostics } from "./tools-CNtLHh2f.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-189-import { a as resolveLiveToolResultAggregateMaxChars, c as truncateOversizedToolResultsInMessages, f as formatContextLimitTruncationNotice, o as resolveLiveToolResultMaxChars, u as truncateOversizedToolResultsInSessionManager } from "./tool-result-truncation-rzMcqvvu.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-190-import { n as rewriteTranscriptEntriesInSessionManager } from "./transcript-rewrite-BHL7q_3D.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-191-import { t as buildSystemPromptParams } from "./system-prompt-params-CGngRDsr.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-192-import { a as estimateLlmBoundaryTokenPressure, c as shouldPreemptivelyCompactBeforePrompt, i as buildPrePromptContextBudgetStatus, l as collectReplaySafeToolNames, n as runAgentCleanupStep, o as estimateRenderedLlmBoundaryTokenPressure, r as PREEMPTIVE_OVERFLOW_ERROR_TEXT, s as formatPrePromptPrecheckLog, t as buildEmbeddedAttemptToolRunContext, u as isAgentToolReplaySafe } from "./attempt.tool-run-context-CuQsIXnb.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-193-import { c as shouldAllowProviderOwnedThinkingReplay, s as resolveTranscriptPolicy } from "./tool-result-middleware-D2HOtSKh.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-194-import { a as resolvePreparedExtraParams, i as resolveExtraParams, n as resolveAgentTransportOverride, o as isGooglePromptCacheEligible, r as resolveExplicitSettingsTransport, s as resolveCacheRetention, t as applyExtraParamsToAgent } from "./extra-params-cce1g0up.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-195-import { a as prependSystemPromptAddition, c as resolvePromptBuildHookResult, d as shouldInjectHeartbeatPrompt, f as shouldWarnOnOrphanedUserRepair, i as mergeOrphanedTrailingUserPrompt, l as resolvePromptModeForSession, n as buildAfterTurnRuntimeContextFromUsage, o as resolveAttemptFsWorkspaceOnly, s as resolveAttemptMediaTaskSystemPromptAddition, t as buildAfterTurnRuntimeContext, u as resolvePromptSubmissionSkipReason } from "./attempt.prompt-helpers-kaS3UZwL.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-196-import { t as applyFinalEffectiveToolPolicy } from "./effective-tool-policy-CRZGJ2R3.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-197-import { r as resolveEmbeddedSandboxInfoExecPolicy, t as buildEmbeddedSandboxInfo } from "./sandbox-info-DMlJwv6b.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-198-import { a as markSessionUserTurnsSent, i as hasSessionUserTurnBeenSent, n as cloneToolResultPromptProjectionState, r as getEmbeddedSessionPromptState } from "./session-prompt-state-CdZoV6gd.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-199-import { a as shouldCreateBundleMcpRuntimeForAttempt, i as shouldCreateBundleLspRuntimeForAttempt, n as mergeForcedEmbeddedAttemptToolsAllow, r as resolveEmbeddedAttemptToolConstructionPlan, t as applyEmbeddedAttemptToolsAllow } from "./attempt-tool-construction-plan-B_ioY5W5.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-200-import { n as formatZonedTimestamp } from "./format-datetime-DO2rqkXr.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-201-import "./tool-loop-detection-QRwz_WH8.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-202-import { i as shouldPersistCompletedBootstrapTurn, n as composeSystemPromptWithHookContext, r as resolveAttemptSpawnWorkspaceDir, t as appendAttemptCacheTtlIfNeeded } from "./attempt.thread-helpers-3p-FPxbh.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-203-import { n as extractBalancedJsonPrefix } from "./balanced-json-cZHIw6Jd.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-204-import { t as detectAndLoadPromptImages } from "./images-N3-JCBA2.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-205-import { n as buildRuntimeContextCustomMessage, r as resolveRuntimeContextPromptParts, t as buildCurrentInboundPrompt } from "./runtime-context-prompt-CPXhfSov.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-206-import fs, { createReadStream, readFileSync, statSync } from "node:fs";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-207-import path from "node:path";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-208-import fs$1 from "node:fs/promises";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-209-import os from "node:os";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-210-import crypto, { createHash, randomUUID } from "node:crypto";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-211-import { isDeepStrictEqual } from "node:util";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-212-import { AsyncLocalStorage } from "node:async_hooks";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-213-import { StringDecoder } from "node:string_decoder";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-214-import { onLlmRequestActivity } from "@openclaw/ai/internal/runtime";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-215-import { ensureSystemPromptCacheBoundary, sanitizeSurrogates, stripSystemPromptCacheBoundary } from "@openclaw/ai/internal/shared";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-216-//#region src/auto-reply/handoff-summarizer.ts
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-217-/**
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-218-* Builds the recovery briefing injected as the first user-side turn after a
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-219-* model failover. The user role is used (not assistant) so the new model
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-220-* treats the content as input rather than its own prior output.
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-221-*/
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-222-function buildHierarchyReinforcementMessage(snapshot) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-223-	return {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-224-		role: "user",
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-225-		content: [
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-226-			"[SYSTEM HANDOFF] The previous model is no longer active and a fallback model is now active.",
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-227-			"You are the new LEADER (Orchestrator). Do not perform tasks already delegated to subordinates.",
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-228-			"",
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-229-			"ACTIVE SUBORDINATE UNITS:",
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-230-			snapshot.activeSubagents.map((s) => `- Subagent ${s.sessionId} (${s.role ?? "leaf"}): ${s.lastStatus ?? "running"}`).join("\n") || "None active.",
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-231-			"",
+--
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12482-						sessionFile: contextParams.sessionFile,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12483-						reason: contextParams.reason,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12484-						sessionManager: contextParams.sessionManager,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12485-						runtimeContext: contextParams.runtimeContext,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12486-						runtimeSettings: contextParams.runtimeSettings,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12487-						config: params.config,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12488-						agentId: sessionAgentId
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12489-					}),
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12490-					warn: (message) => log$2.warn(message)
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12491-				});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12492-				await prepareSessionManagerForRun({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12493-					sessionManager,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12494-					sessionFile: params.sessionFile,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12495-					hadSessionFile,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12496-					sessionId: params.sessionId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12497-					cwd: effectiveCwd
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12498-				});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12499-			});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12500-			const settingsManager = createPreparedEmbeddedAgentSettingsManager({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12501-				cwd: effectiveCwd,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12502-				agentDir,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12503-				cfg: params.config,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12504-				pluginMetadataSnapshot: getCurrentAttemptPluginMetadataSnapshot(),
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12505-				contextTokenBudget: params.contextTokenBudget
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12506-			});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12507-			const autoCompactionGuardArgs = {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12508-				settingsManager,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12509-				contextEngineInfo: activeContextEngine?.info,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12510-				compactionMode: resolveEffectiveCompactionMode(params.config),
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12511-				silentOverflowProneProvider: isSilentOverflowProneModel({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12512-					provider: params.provider,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12513-					modelId: params.modelId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12514-					baseUrl: params.model.baseUrl ?? void 0
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12515-				})
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12516-			};
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js:12517:			applyAgentAutoCompactionGuard(autoCompactionGuardArgs);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12518-			const resourceLoader = createEmbeddedAgentResourceLoader({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12519-				cwd: effectiveCwd,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12520-				agentDir,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12521-				settingsManager,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12522-				extensionFactories: buildEmbeddedExtensionFactories({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12523-					cfg: params.config,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12524-					sessionManager,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12525-					provider: params.provider,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12526-					modelId: params.modelId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12527-					model: params.model,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12528-					runId: params.runId
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12529-				})
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12530-			});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12531-			await resourceLoader.reload();
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12532-			applyAgentCompactionSettingsFromConfig({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12533-				settingsManager,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12534-				cfg: params.config,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12535-				contextTokenBudget: params.contextTokenBudget
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12536-			});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js:12537:			applyAgentAutoCompactionGuard(autoCompactionGuardArgs);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12538-			prepStages.mark("session-resource-loader");
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12539-			const hookRunner = getGlobalHookRunner();
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12540-			const { customTools } = splitSdkTools({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12541-				tools: effectiveTools,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12542-				sandboxEnabled: Boolean(sandbox?.enabled),
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12543-				toolHookContext: catalogToolHookContext
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12544-			});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12545-			const clientToolCallSlots = [];
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12546-			const clientToolCallSlotIndexes = /* @__PURE__ */ new Map();
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12547-			const reserveClientToolCallSlot = (toolCallId, toolName) => {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12548-				if (clientToolCallSlotIndexes.has(toolCallId)) return;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12549-				clientToolCallSlotIndexes.set(toolCallId, clientToolCallSlots.length);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12550-				clientToolCallSlots.push({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12551-					toolCallId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12552-					name: toolName,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12553-					completed: false
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12554-				});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12555-			};
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12556-			const clientToolLoopDetection = resolveToolLoopDetectionConfig({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12557-				cfg: params.config,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12558-				agentId: sessionAgentId
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12559-			});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12560-			const builtinToolNames = new Set(uncompactedEffectiveTools.flatMap((tool) => {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12561-				const name = (tool.name ?? "").trim();
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12562-				return name ? [name] : [];
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12563-			}));
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12564-			const coreBuiltinToolNames = collectCoreBuiltinToolNames(uncompactedEffectiveTools, { isPluginTool: (tool) => Boolean(getPluginToolMeta(tool)) });
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12565-			const replaySafetyOptions = { declaredReplaySafe: (candidate) => {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12566-				const pluginMeta = getPluginToolMeta(candidate);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12567-				if (pluginMeta) return pluginMeta.replaySafe === true;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12568-				return getChannelAgentToolMeta(candidate) ? false : void 0;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12569-			} };
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12570-			const isReplaySafeTool = (tool) => isAgentToolReplaySafe(tool, replaySafetyOptions);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12571-			const replaySafeTools = new Set(uncompactedEffectiveTools.filter(isReplaySafeTool));
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12572-			const replaySafeToolNames = collectReplaySafeToolNames(uncompactedEffectiveTools, replaySafetyOptions);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12573-			const clientToolNameConflicts = findClientToolNameConflicts({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12574-				tools: clientTools ?? [],
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12575-				existingToolNames: [...deferredDirectoryToolsCallable ? builtinToolNames : coreBuiltinToolNames, ...AGENT_RESERVED_TOOL_NAMES]
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12576-			});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12577-			if (clientToolNameConflicts.length > 0) throw createClientToolNameConflictError(clientToolNameConflicts);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12578-			let clientToolDefs = clientTools ? toClientToolDefinitions(clientTools, {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12579-				reserve: reserveClientToolCallSlot,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12580-				complete: (toolCallId, toolName, toolParams) => {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12581-					reserveClientToolCallSlot(toolCallId, toolName);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12582-					const slotIndex = clientToolCallSlotIndexes.get(toolCallId);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12583-					if (slotIndex === void 0) return;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12584-					const slot = clientToolCallSlots[slotIndex];
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12585-					if (!slot) return;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12586-					slot.name = toolName;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12587-					slot.params = toolParams;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12588-					slot.completed = true;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12589-				},
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12590-				discard: (toolCallId) => {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12591-					const slotIndex = clientToolCallSlotIndexes.get(toolCallId);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12592-					if (slotIndex === void 0) return;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12593-					const slot = clientToolCallSlots[slotIndex];
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12594-					if (slot) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12595-						slot.completed = false;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12596-						slot.params = void 0;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12597-					}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12598-				}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12599-			}, {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12600-				agentId: sessionAgentId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12601-				sessionKey: sandboxSessionKey,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12602-				config: toolSearchRuntimeConfig,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12603-				sessionId: params.sessionId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12604-				runId: params.runId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12605-				loopDetection: clientToolLoopDetection,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12606-				onToolOutcome: params.onToolOutcome,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12607-				allocateToolOutcomeOrdinal: params.allocateToolOutcomeOrdinal
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12608-			}) : [];
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12609-			const clientToolSearch = codeModeControlsEnabledForRun ? addClientToolsToCodeModeCatalog({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12610-				tools: clientToolDefs,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12611-				config: params.config,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12612-				sessionId: params.sessionId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12613-				sessionKey: sandboxSessionKey,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12614-				agentId: sessionAgentId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12615-				runId: params.runId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12616-				catalogRef: toolSearchCatalogRef
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12617-			}) : addClientToolsToToolSearchCatalog({
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12618-				tools: clientToolDefs,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12619-				config: toolSearchRuntimeConfig,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12620-				sessionId: params.sessionId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12621-				sessionKey: sandboxSessionKey,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12622-				agentId: sessionAgentId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12623-				runId: params.runId,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12624-				catalogRef: toolSearchCatalogRef
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12625-			});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12626-			clientToolDefs = clientToolSearch.tools;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/selection-JInn13lc.js-12627-			if (clientToolSearch.compacted) log$2.info(codeModeControlsEnabledForRun ? `code-mode: cataloged ${clientToolSearch.catalogToolCount} client tools behind exec/wait` : `tool-search: cataloged ${clientToolSearch.catalogToolCount} client tools behind compact prompt surface`);
+--
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-1-import { t as createSubsystemLogger } from "./subsystem-C3fiUGN1.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-2-import { a as normalizeOptionalAgentRuntimeId } from "./agent-runtime-id-DiL2DId7.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-3-import { o as resolveContextEngine } from "./registry-CAWC0LBH.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-4-import { t as SessionManager } from "./session-manager-BC-U4J87.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-5-import { A as compactWithSafetyTimeout, j as resolveCompactionTimeoutMs, k as compactContextEngineWithSafetyTimeout } from "./diagnostic-DhwkYT4X.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-6-import { i as resolveCliBackendConfig } from "./cli-backends-blVNpctb.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-7-import { i as buildGenericCliContextEngineHostSupport } from "./host-compat-BibWlia2.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-8-import { t as ensureContextEnginesInitialized } from "./init-B7EVAsOz.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-9-import { c as runContextEngineMaintenance, f as buildContextEngineRuntimeSettings } from "./context-engine-lifecycle-Bv52xohg.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-10-import { n as isRecoverableNativeHarnessBindingFailure, t as maybeCompactAgentHarnessSession } from "./compaction-DiGBGVZl.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-11-import { J as createPreparedEmbeddedAgentSettingsManager } from "./attempt.model-diagnostic-events-CfZQM0hs.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js:12:import { a as resolveEffectiveCompactionMode, n as applyAgentAutoCompactionGuard } from "./agent-settings-axYuScuh.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-13-import { t as buildEmbeddedCompactionRuntimeContext } from "./compaction-runtime-context--DEAWi6X.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-14-import { o as resolveLiveToolResultMaxChars } from "./tool-result-truncation-rzMcqvvu.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-15-import { c as shouldPreemptivelyCompactBeforePrompt } from "./attempt.tool-run-context-CuQsIXnb.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-16-import { t as ensureSelectedAgentHarnessPlugin } from "./runtime-plugin-BLmQLMt1.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-17-import { n as classifyCompactionReason } from "./compact-reasons-ByJlIe1a.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-18-import { n as recordCliCompactionInStore, t as clearCliSessionInStore } from "./session-store-QMAG1JNr.js";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-19-//#region src/agents/command/cli-compaction.ts
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-20-const CODEX_APP_SERVER_OWNS_AUTO_COMPACTION_REASON = "codex app-server owns automatic compaction";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-21-const log = createSubsystemLogger("agents/cli-compaction");
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-22-const cliCompactionDeps = {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-23-	openSessionManager: (sessionFile) => SessionManager.open(sessionFile),
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-24-	ensureContextEnginesInitialized,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-25-	resolveContextEngine,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-26-	createPreparedEmbeddedAgentSettingsManager,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js:27:	applyAgentAutoCompactionGuard,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-28-	shouldPreemptivelyCompactBeforePrompt,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-29-	resolveLiveToolResultMaxChars,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-30-	runContextEngineMaintenance,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-31-	ensureSelectedAgentHarnessPlugin,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-32-	maybeCompactAgentHarnessSession,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-33-	clearCliSessionInStore,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-34-	resolveCliBackendConfig,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-35-	recordCliCompactionInStore
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-36-};
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-37-/** Overrides CLI compaction dependencies for focused tests. */
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-38-function setCliCompactionTestDeps(overrides) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-39-	Object.assign(cliCompactionDeps, overrides);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-40-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-41-/** Restores production CLI compaction dependencies after tests. */
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-42-function resetCliCompactionTestDeps() {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-43-	Object.assign(cliCompactionDeps, {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-44-		openSessionManager: (sessionFile) => SessionManager.open(sessionFile),
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-45-		ensureContextEnginesInitialized,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-46-		resolveContextEngine,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-47-		createPreparedEmbeddedAgentSettingsManager,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js:48:		applyAgentAutoCompactionGuard,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-49-		shouldPreemptivelyCompactBeforePrompt,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-50-		resolveLiveToolResultMaxChars,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-51-		runContextEngineMaintenance,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-52-		ensureSelectedAgentHarnessPlugin,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-53-		maybeCompactAgentHarnessSession,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-54-		clearCliSessionInStore,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-55-		resolveCliBackendConfig,
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-56-		recordCliCompactionInStore
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-57-	});
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-58-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-59-function resolvePositiveInteger(value) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-60-	if (typeof value !== "number" || !Number.isFinite(value) || value <= 0) return;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-61-	return Math.floor(value);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-62-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-63-function getSessionBranchMessages(sessionManager) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-64-	return sessionManager.getBranch().flatMap((entry) => entry.type === "message" && typeof entry.message === "object" && entry.message !== null ? [entry.message] : []);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-65-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-66-function resolveSessionTokenSnapshot(sessionEntry) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-67-	return resolvePositiveInteger(sessionEntry?.totalTokensFresh === false ? void 0 : sessionEntry?.totalTokens);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-68-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-69-function isNativeHarnessCompactionSession(sessionEntry, provider) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-70-	const harnessId = sessionEntry?.agentHarnessId?.trim().toLowerCase();
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-71-	if (!harnessId || normalizeOptionalAgentRuntimeId(harnessId) === "openclaw") return false;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-72-	const providerId = provider.trim().toLowerCase();
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-73-	return harnessId === providerId || harnessId === "copilot" && providerId === "github-copilot" || harnessId === "codex" && (providerId === "codex" || providerId === "openai");
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-74-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-75-function isUnsupportedNativeHarnessCompaction(result) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-76-	return result?.ok === false && result.failure?.reason === "unsupported_harness_compaction";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-77-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-78-function isBenignCliCompactionNoopReason(reason) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-79-	const classification = classifyCompactionReason(reason);
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-80-	return classification === "below_threshold" || classification === "already_compacted_recently";
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-81-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-82-function isIntentionalNativeAutoCompactionSkip(result) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-83-	return result?.ok === true && !result.compacted && result.reason === CODEX_APP_SERVER_OWNS_AUTO_COMPACTION_REASON;
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-84-}
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-85-function readAgentIdFromSessionKey(sessionKey) {
+/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/cli-compaction-CF7Yb1P6.js-86-	const parts = sessionKey.trim().split(":");

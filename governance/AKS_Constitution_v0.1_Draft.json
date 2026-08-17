@@ -1,0 +1,103 @@
+{
+  "document": "AKS Constitution",
+  "version": "0.1-draft",
+  "preamble": "AKS preserves knowledge with integrity, traceability, reproducibility, and long-term maintainability. Evidence remains independent of interpretation. AKS is domain-independent; repositories implement the framework.",
+  "authority_hierarchy": [
+    "AKS Constitution",
+    "Governance Documents",
+    "Operational Manual",
+    "Methodology Repository",
+    "Canonical Specifications",
+    "Repository Standards",
+    "Repository Content",
+    "Publications"
+  ],
+  "fundamental_principles": [
+    "Evidence precedes interpretation.",
+    "Original sources are preserved.",
+    "Provenance is never intentionally obscured.",
+    "Canonical objects are derived from evidence.",
+    "Analysis is reproducible.",
+    "Publications never replace evidence.",
+    "Repository evolution is traceable.",
+    "Architectural changes are explicitly documented."
+  ],
+  "repository_layers": [
+    {
+      "layer": 0,
+      "name": "Source Preservation",
+      "description": "Immutable original evidence."
+    },
+    {
+      "layer": 1,
+      "name": "Canonical Objects",
+      "description": "Normalized evidence objects."
+    },
+    {
+      "layer": 2,
+      "name": "Knowledge Graph",
+      "description": "Relationships among canonical objects."
+    },
+    {
+      "layer": 3,
+      "name": "Analysis",
+      "description": "Reproducible reasoning derived from canonical objects."
+    },
+    {
+      "layer": 4,
+      "name": "Publications",
+      "description": "Human-readable outputs derived from lower layers."
+    }
+  ],
+  "canonical_truth": [
+    "Original evidence",
+    "Canonical objects",
+    "Explicit relationships"
+  ],
+  "repository_evolution": {
+    "allowed": true,
+    "mechanism": "Architecture Decision Records (ADR)",
+    "rule": "Major architectural changes require an ADR."
+  },
+  "drift": {
+    "structural": "Changes affecting architecture, schemas, identifiers, workflows, or organization.",
+    "semantic": "Changes affecting definitions, terminology, or meaning.",
+    "policy": "Monitor, document accepted drift, correct undesired drift."
+  },
+  "provenance_requirements": [
+    "Originating source",
+    "Extraction method",
+    "Confidence",
+    "Relationships",
+    "Revision history"
+  ],
+  "publication_policy": "Publications are derived artifacts and shall remain reproducible from repository evidence.",
+  "operator_duties": [
+    "Preserve evidence",
+    "Avoid premature conclusions",
+    "Separate observation from interpretation",
+    "Document uncertainty",
+    "Maintain version history",
+    "Perform audits"
+  ],
+  "adr_schema": [
+    "Identifier",
+    "Title",
+    "Status",
+    "Rationale",
+    "Alternatives",
+    "Affected components",
+    "Consequences",
+    "Superseded decisions"
+  ],
+  "methodology_rule": "Operational Manual and Methodology implement but may not contradict the Constitution.",
+  "framework_scope": "AKS is domain-independent; repositories extend but do not redefine it.",
+  "amendment_requirements": [
+    "Demonstrated operational need",
+    "New version",
+    "ADR generated",
+    "Previous versions retained",
+    "Reason documented"
+  ],
+  "closing_principle": "Preserve knowledge so it remains understandable, auditable, reproducible, and trustworthy across time."
+}

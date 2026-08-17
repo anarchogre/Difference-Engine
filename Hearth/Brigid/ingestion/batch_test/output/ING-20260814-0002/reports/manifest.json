@@ -1,0 +1,21 @@
+{
+  "asset_count": 2,
+  "command_count": 0,
+  "kind": "conversation",
+  "provenance": {
+    "artifact_id": "ING-20260814-0002",
+    "provenance_id": "PROV-ING-20260814-0002",
+    "relationship": "observed_from",
+    "source_path": "/home/reckless-ideator/Difference-Engine/workspace/operational/ingestion/batch_test/sources/second.txt",
+    "source_sha256": "0a8b86b859573b0754efd02be6664caf4fa29806b2010095679b326156de0ec2"
+  },
+  "queue_count": 0,
+  "receipt": "ING-20260814-0002",
+  "reference_count": 0,
+  "title": "",
+  "turn_count": 2,
+  "validation": {
+    "errors": [],
+    "passed": true
+  }
+}

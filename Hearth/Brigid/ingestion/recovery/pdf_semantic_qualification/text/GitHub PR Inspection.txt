@@ -1,0 +1,54 @@
+GitHub PR Inspection                                          https://chatgpt.com/c/6a642757-94f4-83ea-9bfb-62d178690f51
+
+
+
+
+               ChatGPT
+
+
+                                          @GitHub Inspect PRs, triage issues, debug failing checks,
+                                          and prepare code changes for review
+
+
+
+            I’ll inspect the connected GitHub repos, then I can surface the most relevant PRs/issues
+            and check any failing workflows.
+
+
+            Received app response
+
+            I don’t have any GitHub repositories available through the connected app right now, so I
+            can’t inspect PRs or issues yet.
+
+            Connect the GitHub app to the repo you want me to work on, or send the repository full
+            name like owner/name , and I’ll dig into the open PRs, issues, and failing checks.
+
+
+
+
+                                                                            @GitHubamarchogre/ADE
+
+
+
+            I’m pulling the repo metadata first, then I’ll inspect the active PRs and open issues so I can
+            prioritize what needs attention.
+
+
+
+
+            I couldn’t find amarchogre/ADE through the GitHub connection, so I can’t inspect it yet.
+
+            The repo name may be slightly off, or the app may not be installed on that account. Send
+            the exact owner/repo again, and I’ll continue from there.
+
+
+
+
+1 of 2                                                                                                       7/24/26, 22:11
+GitHub PR Inspection   https://chatgpt.com/c/6a642757-94f4-83ea-9bfb-62d178690f51
+
+
+
+
+2 of 2                                                              7/24/26, 22:11
+

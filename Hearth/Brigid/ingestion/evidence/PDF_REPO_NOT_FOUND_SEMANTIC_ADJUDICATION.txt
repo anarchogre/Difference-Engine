@@ -1,0 +1,10 @@
+status=CONVERSATION_BEARING_CANDIDATE
+file=Repo Not Found.pdf
+chat_id=6a64282b-0498-83ea-aece-33604118a4ee
+chars=3156
+simple_dialogue_markers=0
+qualification_method=INDIVIDUAL_STRUCTURAL_INSPECTION
+human_turns=CONFIRMED
+assistant_turns=CONFIRMED
+evidence=human GitHub connector turn survives around line 30 followed immediately by substantive assistant execution; additional human turn survives around line 78
+promotion=NONE

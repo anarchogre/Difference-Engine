@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:16.592553-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Preservation-Points-RC-GOLD/PP-0052_Human_Centered_Stewardship_v1.0.json",
+  "original_name": "PP-0052_Human_Centered_Stewardship_v1.0.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0222",
+  "schema_version": "0.1.0",
+  "sha256": "07effbafb13d63c7226b30cf527370c2b812d646d2f6030f5ce4b69bb0362da2",
+  "size_bytes": 440,
+  "source_class": "manual_batch"
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "asset_type": "conversation_turn",
+    "value": "one"
+  },
+  {
+    "asset_type": "conversation_turn",
+    "value": "two"
+  }
+]

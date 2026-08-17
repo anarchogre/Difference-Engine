@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/plain",
+  "observed_at": "2026-08-04T18:01:34.800547-05:00",
+  "observed_path": "/storage/emulated/0/Download/Bootstrap_BABBAGE_Initialization.md.txt",
+  "original_name": "Bootstrap_BABBAGE_Initialization.md.txt",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260804-0081",
+  "schema_version": "0.1.0",
+  "sha256": "ff976445f55b32c13441e1fac0a8d24d9ad44c6c8c54f978edc7bd42f1d38806",
+  "size_bytes": 9357,
+  "source_class": "conversation"
+}

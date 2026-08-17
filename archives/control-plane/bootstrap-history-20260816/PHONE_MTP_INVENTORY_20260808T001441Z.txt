@@ -1,0 +1,13 @@
+=== PHONE MTP INVENTORY ===
+2026-08-07T19:14:43-05:00
+
+=== MTP URI ===
+mtp://motorola_moto_g_power__2021__ZY22BQZ88B/
+
+=== GVFS MOUNT ===
+
+
+=== PHONE ROOT ===
+MTP_MOUNT_NOT_FOUND
+
+=== EXPECTED CRITICAL NAMES ===

@@ -1,0 +1,34 @@
+status=PHONE_DOWNLOAD_PDF_IDENTITY_RESOLVED
+promotion=NONE
+
+branch_head_steward_native_chat_id=6a69710c-5c1c-83ea-9e89-588a79de956b
+branch_head_steward_representation_1=Branch Management Assistance.pdf
+branch_head_steward_representation_2=Difference __ Engine __ Head Steward __ Cat Wrangler.pdf
+branch_management_coverage_by_cat_wrangler_pct=86.59
+cat_wrangler_coverage_by_branch_management_pct=49.05
+branch_head_steward_underlying_native_conversations=1
+branch_head_steward_relationship=DIFFERENT_LENGTH_SNAPSHOTS_OF_ONE_NATIVE_CONVERSATION
+
+categorization_native_chat_id=6a6c76a3-5fb0-83ea-bb21-842dbf8ab82a
+categorization_pdf=Categorization of Governance Elements.pdf
+categorization_verified_txt=Categorization_of_Governance_Elements.md(1).txt
+
+categorization_pdf_words=2614
+categorization_verified_txt_words=6416
+categorization_matching_blocks=51
+categorization_ordered_matched_words=1412
+categorization_pdf_sequence_coverage_pct=54.02
+categorization_txt_sequence_coverage_pct=22.01
+categorization_shared_txt_span_pct=99.81
+categorization_first_alignment=START_TO_START
+categorization_last_alignment=NEAR_END_TO_NEAR_END
+
+categorization_relationship=SAME_LONGITUDINAL_SOURCE_FAMILY
+categorization_exact_identity=NO
+categorization_underlying_source_identity=STRONGLY_SUPPORTED_SAME
+categorization_preferred_complete_representation=VERIFIED_TXT
+categorization_pdf_native_id_role=PROVENANCE
+
+finding=Branch Management Assistance and Cat Wrangler are two PDF snapshots of one native ChatGPT conversation.
+finding=Categorization PDF and verified txt preserve substantial ordered content from beginning through end despite divergent representation size and formatting.
+finding=Categorization should not be double-counted as an additional underlying conversation under current evidence.

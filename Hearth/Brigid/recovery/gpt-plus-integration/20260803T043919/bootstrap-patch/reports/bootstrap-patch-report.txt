@@ -1,0 +1,50 @@
+COMPILE_STATUS=0
+IMPORT_STATUS=0
+MODULE_STATUS=0
+PACKAGE_STATUS=0
+INITIALIZE_STATUS=0
+
+PATCH
+--- workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-patch/backups/bootstrap.py.before	2026-08-03 04:50:43.256417447 -0500
++++ ade/kernel/bootstrap_loader/bootstrap.py	2026-08-03 04:50:43.279750782 -0500
+@@ -1,8 +1,17 @@
+-"""
+-Bootstrap loading.
+-"""
++from pathlib import Path
+ 
+-from .artifacts import bootstrap
++from .artifacts import BootstrapArtifacts
++from .artifacts import discover_artifacts
+ 
+-def load_bootstrap(root):
+-    return bootstrap(root)
++
++def load_bootstrap(
++    root: Path,
++) -> BootstrapArtifacts:
++    """
++    Load the bootstrap artifact set for a repository root.
++
++    This module preserves the historical load_bootstrap interface
++    while delegating artifact discovery to the canonical
++    discover_artifacts implementation.
++    """
++    return discover_artifacts(root)
+
+IMPORT SMOKE
+IMPORT_LOAD_BOOTSTRAP=PASS
+IMPORT_INITIALIZE=PASS
+LOAD_BOOTSTRAP=PASS
+ARTIFACT_TYPE=BootstrapArtifacts
+ARTIFACTS=BootstrapArtifacts(constitution=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/constitution.md'), amendments=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/amendments.md'), bootstrap=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/bootstrap.md'))
+
+PACKAGE EXECUTION
+[BOOTSTRAP] Discovering repository...
+OperationalState(repository_root=PosixPath('/storage/emulated/0/DifferenceEngine'), governance_root=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance'), specification_root=PosixPath('/storage/emulated/0/DifferenceEngine/specifications'), execution_mode='Execution', mission=None, task=None)
+
+INITIALIZE SMOKE
+[BOOTSTRAP] Discovering repository...
+INITIALIZE=PASS
+RESULT_TYPE=BootstrapResult
+RESULT=BootstrapResult(artifacts=BootstrapArtifacts(constitution=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/constitution.md'), amendments=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/amendments.md'), bootstrap=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/bootstrap.md')), specifications=Specifications(root=PosixPath('/storage/emulated/0/DifferenceEngine/specifications')), state=OperationalState(repository_root=PosixPath('/storage/emulated/0/DifferenceEngine'), governance_root=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance'), specification_root=PosixPath('/storage/emulated/0/DifferenceEngine/specifications'), execution_mode='Execution', mission=None, task=None))

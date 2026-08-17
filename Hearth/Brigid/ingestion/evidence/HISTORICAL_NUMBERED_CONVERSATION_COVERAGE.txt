@@ -1,0 +1,17 @@
+status=RESOLVED
+numbered_conversations=20
+represented_in_master_corpus=20
+exact_containment=16
+variant_containment=4
+
+conversation_08_combined_pct=99.70
+conversation_09_combined_pct=98.69
+conversation_11_combined_pct=94.37
+conversation_18_combined_pct=99.67
+
+master_1=Master_Conversations_1-18-part-1.docx.md
+master_2=Master_Conversations_18-20-part-2.docx.md
+
+finding=All twenty numbered historical conversations are represented in the recovered master corpus.
+operator_evidence=Last chat before starting new project is distinct and precedes Branch 0 Origins.
+promotion=NONE

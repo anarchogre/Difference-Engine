@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0352",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:29.657698-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Conventions/DOCUMENT_METADATA.md",
+    "original_name": "DOCUMENT_METADATA.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0352",
+    "schema_version": "0.1.0",
+    "sha256": "608a63a8f98297f1b0f4cb32c7ff20324779a48e866db662952af98ee208ffa8",
+    "size_bytes": 1121,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

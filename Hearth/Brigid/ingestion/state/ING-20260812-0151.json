@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0151",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:11.219349-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Foundational_Theory_v1.1.json",
+    "original_name": "AKS_Foundational_Theory_v1.1.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0151",
+    "schema_version": "0.1.0",
+    "sha256": "e1b3d7b0c5c7387bfc850d929477fa27cc1f7023581a6fbf7525ac8f0117094f",
+    "size_bytes": 273,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

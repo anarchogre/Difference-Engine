@@ -1,0 +1,17 @@
+{
+  "artifact": {
+    "identifier": "AKS-INDEX-0001",
+    "version": "0.2-draft",
+    "new_entries": [
+      {
+        "id": "PR-0004",
+        "location": "00_Project_Governance/PR Rules"
+      },
+      {
+        "id": "PR-INDEX-0001",
+        "location": "00_Project_Governance/Master Index"
+      }
+    ],
+    "note": "Append these entries to the master index under PR-0003."
+  }
+}

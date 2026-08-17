@@ -1,0 +1,3 @@
+HASH	e6260a8c5fbb44af9e6c95c05ba2cbe518b31d79029dc6982ebad14e4f6dda77
+18668	./workspace/operational/corpus/chatgpt/DifferenceEngine Gubmint Cheese.txt
+18668	/data/data/com.termux/files/home/storage/shared/FILE_LIBRARY_UPLOADS/DifferenceEngine Gubmint Cheese.txt

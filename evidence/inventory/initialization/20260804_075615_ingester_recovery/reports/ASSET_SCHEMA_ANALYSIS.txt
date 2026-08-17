@@ -1,0 +1,59 @@
+===== TITLE =====
+# Asset Schema
+
+===== HEADINGS =====
+# Asset Schema
+# Purpose
+# Design Principles
+# Required Fields
+# Optional Fields
+# Supported Asset Types
+# Asset Content
+# Provenance
+# Validation
+# Lifecycle
+# Relationship to Artifacts
+# Design Philosophy
+
+===== KEYWORDS =====
+1:# Asset Schema
+9:# Purpose
+11:The Asset Schema defines the canonical representation of reusable assets extracted from repository artifacts.
+13:Assets are repository objects derived from artifacts.
+15:Assets are not independent evidence.
+17:They retain lineage to their parent artifact.
+23:- Assets are extracted, not authored.
+24:- Assets retain complete provenance.
+25:- Assets are reusable.
+26:- Assets are immutable.
+27:- Assets never replace their parent artifact.
+31:# Required Fields
+33:Every asset SHALL contain:
+35:- Asset ID
+36:- Parent Artifact ID
+37:- Asset Type
+40:- Provenance Record
+41:- Extraction Timestamp
+46:# Optional Fields
+48:Assets MAY include:
+54:- Related Asset IDs
+60:# Supported Asset Types
+87:Additional asset types MAY be defined through future specifications.
+91:# Asset Content
+93:Asset content SHALL preserve the extracted structure.
+101:# Provenance
+103:Every asset SHALL retain:
+105:- Parent Artifact ID
+107:- Extraction Method
+111:Assets SHALL never lose their lineage.
+115:# Validation
+117:A valid asset SHALL:
+119:- Reference an existing parent artifact.
+120:- Declare an asset type.
+121:- Preserve provenance.
+128:Assets SHALL exist in one of the following states:
+133:- Referenced
+136:Assets SHALL NOT be deleted solely because the parent artifact changes.
+144:Assets expose reusable components of that evidence.
+146:Multiple assets MAY originate from a single artifact.
+154:Assets preserve utility.

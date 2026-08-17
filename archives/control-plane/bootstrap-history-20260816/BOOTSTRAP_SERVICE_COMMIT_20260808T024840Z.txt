@@ -1,0 +1,28 @@
+=== BOOTSTRAP SERVICE COMMIT ===
+commit a081b555ba5602ccc0c16011ebc1688d2cb31a58
+Author:     anarchogre <darth.panda@gmail.com>
+AuthorDate: Mon Aug 3 17:19:38 2026 -0500
+Commit:     anarchogre <darth.panda@gmail.com>
+CommitDate: Mon Aug 3 17:19:38 2026 -0500
+
+    Implement bootstrap service and repair governance mortar
+
+ ...OTSTRAP - Load the Difference Engine project.md |   37 +
+ Repository/Governance/amendments.md                |   71 +-
+ Repository/Governance/constitution.md              |  444 ++-
+ .../evidence/repository-mortar-hits.txt            | 3090 ++++++++++++++++++++
+ .../20260803T153259/logs/recovery-summary.txt      |  163 ++
+ workspace/operational/recovery/mortar/LATEST       |    1 +
+ .../specifications/SERVICE_SPECIFICATION.md        |   17 +-
+ .../specifications/bootstrap/BOOTSTRAP_SERVICE.md  |   42 +
+ 8 files changed, 3831 insertions(+), 34 deletions(-)
+
+=== FILES CHANGED ===
+A	BOOTSTRAP/BOOTSTRAP - Load the Difference Engine project.md
+M	Repository/Governance/amendments.md
+M	Repository/Governance/constitution.md
+A	workspace/operational/recovery/mortar/20260803T153259/evidence/repository-mortar-hits.txt
+A	workspace/operational/recovery/mortar/20260803T153259/logs/recovery-summary.txt
+A	workspace/operational/recovery/mortar/LATEST
+M	workspace/operational/services/specifications/SERVICE_SPECIFICATION.md
+A	workspace/operational/services/specifications/bootstrap/BOOTSTRAP_SERVICE.md

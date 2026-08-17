@@ -1,0 +1,30 @@
+ADE-Working-Repository-/ADE_REPO_zips/Archives.zip
+ADE-Working-Repository-/ADE_REPO_zips/Claude.zip
+ADE-Working-Repository-/ADE_REPO_zips/Docs.zip
+ADE-Working-Repository-/ADE_REPO_zips/Governance.zip
+ADE-Working-Repository-/ADE_REPO_zips/Inbox.zip
+ADE-Working-Repository-/ADE_REPO_zips/Library.zip
+ADE-Working-Repository-/ADE_REPO_zips/Loose repo tree files.zip
+ADE-Working-Repository-/ADE_REPO_zips/PP.zip
+ADE-Working-Repository-/ADE_REPO_zips/Parser.zip
+ADE-Working-Repository-/ADE_REPO_zips/Pubs.zip
+ADE-Working-Repository-/ADE_REPO_zips/RC1.zip
+ADE-Working-Repository-/ADE_REPO_zips/Reaearch.zip
+ADE-Working-Repository-/ADE_REPO_zips/Specs.zip
+ADE-Working-Repository-/ADE_REPO_zips/Tools.zip
+	ADE-Working-Repository-/Archives (1).zip
+	ADE-Working-Repository-/Archives.zip
+	ADE-Working-Repository-/Claude.zip
+	ADE-Working-Repository-/Docs.zip
+	ADE-Working-Repository-/Governance.zip
+	ADE-Working-Repository-/Inbox.zip
+	ADE-Working-Repository-/Library.zip
+	ADE-Working-Repository-/Loose repo tree files.zip
+	ADE-Working-Repository-/PP.zip
+	ADE-Working-Repository-/Parser.zip
+	ADE-Working-Repository-/Pubs.zip
+	ADE-Working-Repository-/RC1.zip
+	ADE-Working-Repository-/Reaearch.zip
+	ADE-Working-Repository-/Specifications.zip
+	ADE-Working-Repository-/Specs.zip
+	ADE-Working-Repository-/Tools.zip

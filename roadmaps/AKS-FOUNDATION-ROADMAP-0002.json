@@ -1,0 +1,14 @@
+{
+  "artifact": {
+    "identifier": "AKS-FOUNDATION-ROADMAP-0002",
+    "title": "Post-Gate Alpha Execution Plan",
+    "sequence": [
+      "Freeze AKS-ENTITY-0001",
+      "Freeze AKS-AXIOM-0001",
+      "Freeze AKS-THEOREM-0001",
+      "Begin AKS-PROP-0002",
+      "Implement Concept, Relationship, and Evidence models",
+      "Declare Gate Beta"
+    ]
+  }
+}

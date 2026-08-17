@@ -1,0 +1,78 @@
+=== PHONE EVACUATION PREFLIGHT ===
+2026-08-07T19:13:20-05:00
+
+=== USB ===
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 001 Device 003: ID 1286:204c Marvell Semiconductor, Inc. Bluetooth and Wireless LAN Composite
+Bus 001 Device 005: ID 22b8:2e24 Motorola PCS moto g power (2021)
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+
+=== ACTIVE NETWORK ===
+enx2e734299bc0b:ethernet:connected:Wired connection 1
+lo:loopback:connected (externally):lo
+wlp2s0:wifi:disconnected:
+p2p-dev-wlp2s0:wifi-p2p:disconnected:
+
+=== ROUTES ===
+default via 10.87.192.250 dev enx2e734299bc0b proto dhcp src 10.87.192.67 metric 100 
+10.87.192.0/24 dev enx2e734299bc0b proto kernel scope link src 10.87.192.67 metric 100 
+
+=== USB/MTP VOLUMES ===
+Drive(0): Skhynix BC501 NVMe 256GB
+  Type: GProxyDrive (GProxyVolumeMonitorUDisks2)
+  ids:
+   unix-device: '/dev/nvme0n1'
+  themed icons:  [drive-harddisk-solidstate]  [drive-harddisk]  [drive]  [drive-harddisk-solidstate-symbolic]  [drive-harddisk-symbolic]  [drive-symbolic]
+  symbolic themed icons:  [drive-harddisk-solidstate-symbolic]  [drive-harddisk-symbolic]  [drive-symbolic]  [drive-harddisk-solidstate]  [drive-harddisk]  [drive]
+  is_removable=0
+  is_media_removable=0
+  has_media=1
+  is_media_check_automatic=1
+  can_poll_for_media=0
+  can_eject=0
+  can_start=0
+  can_stop=0
+  start_stop_type=shutdown
+  sort_key=00coldplug/00fixed/nvme0
+  Volume(0): 98 GB Volume
+    Type: GProxyVolume (GProxyVolumeMonitorUDisks2)
+    ids:
+     class: 'device'
+     unix-device: '/dev/nvme0n1p3'
+     uuid: 'E8B45BA8B45B7850'
+    uuid=E8B45BA8B45B7850
+    themed icons:  [drive-harddisk-solidstate]  [drive-harddisk]  [drive]  [drive-harddisk-solidstate-symbolic]  [drive-harddisk-symbolic]  [drive-symbolic]
+    symbolic themed icons:  [drive-harddisk-solidstate-symbolic]  [drive-harddisk-symbolic]  [drive-symbolic]  [drive-harddisk-solidstate]  [drive-harddisk]  [drive]
+    can_mount=1
+    can_eject=0
+    should_automount=0
+    sort_key=gvfs.time_detected_usec.1786145777211954
+  Volume(1): UBUNTU_INST
+    Type: GProxyVolume (GProxyVolumeMonitorUDisks2)
+    ids:
+     class: 'device'
+     unix-device: '/dev/nvme0n1p4'
+     uuid: '345F-C811'
+     label: 'UBUNTU_INST'
+    uuid=345F-C811
+    themed icons:  [drive-harddisk-solidstate]  [drive-harddisk]  [drive]  [drive-harddisk-solidstate-symbolic]  [drive-harddisk-symbolic]  [drive-symbolic]
+    symbolic themed icons:  [drive-harddisk-solidstate-symbolic]  [drive-harddisk-symbolic]  [drive-symbolic]  [drive-harddisk-solidstate]  [drive-harddisk]  [drive]
+    can_mount=1
+    can_eject=0
+    should_automount=0
+    sort_key=gvfs.time_detected_usec.1786147893541989
+Volume(0): moto g power (2021)
+  Type: GProxyVolume (GProxyVolumeMonitorMTP)
+  ids:
+   unix-device: '/dev/bus/usb/001/005'
+  activation_root=mtp://motorola_moto_g_power__2021__ZY22BQZ88B/
+  themed icons:  [phone]
+  symbolic themed icons:  [phone-symbolic]  [phone]
+  can_mount=1
+  can_eject=0
+  should_automount=1
+
+=== ADB PRESENT ===
+
+=== SSH PRESENT ===
+/usr/bin/ssh

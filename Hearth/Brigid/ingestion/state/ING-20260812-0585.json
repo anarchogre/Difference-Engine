@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0585",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:49:02.074397-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/SPEC-0002_Error_Exception_Framework.json",
+    "original_name": "SPEC-0002_Error_Exception_Framework.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0585",
+    "schema_version": "0.1.0",
+    "sha256": "da8c39536493f19b0ff5bb46bc155bdf776c0a1ca7a3cbcc6fe871c3c0a979d9",
+    "size_bytes": 492,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

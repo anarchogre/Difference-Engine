@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0641",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:49:11.285084-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Primitive Promotion Pipeline.md",
+    "original_name": "Primitive Promotion Pipeline.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0641",
+    "schema_version": "0.1.0",
+    "sha256": "a489be9f0033068483c02ab08c2cef945a5c531e72e39294c0e15779ded6187e",
+    "size_bytes": 212,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

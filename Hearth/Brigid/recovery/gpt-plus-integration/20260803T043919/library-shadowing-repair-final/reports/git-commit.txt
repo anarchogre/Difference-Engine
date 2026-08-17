@@ -1,0 +1,4 @@
+hint: The '.githooks/pre-commit' hook was ignored because it's not set as executable.
+hint: You can disable this warning with `git config set advice.ignoredHook false`.
+[master 095917b] Repair File Library verifier variable shadowing
+ 1 file changed, 6 insertions(+), 6 deletions(-)

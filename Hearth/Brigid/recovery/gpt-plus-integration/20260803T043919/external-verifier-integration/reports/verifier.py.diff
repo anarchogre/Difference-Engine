@@ -1,0 +1,63 @@
+--- workspace/operational/recovery/gpt-plus-integration/20260803T043919/external-verifier-integration/backups/verifier.py.before	2026-08-03 11:18:07.926751212 -0500
++++ ade/kernel/bootstrap_loader/verifier.py	2026-08-03 11:18:08.033417890 -0500
+@@ -192,9 +192,48 @@
+         and formal_test_runner_path.stat().st_size > 0
+     )
+ 
++    external_status_path = (
++        repository_root
++        / "workspace/operational/integration/"
++        "EXTERNAL_VERIFICATION_STATUS.json"
++    )
++
++    file_library_verification_ok = False
++    project_configuration_verification_ok = False
++    external_verification_status = {}
++
++    if external_status_path.is_file():
++        try:
++            external_verification_status = json.loads(
++                external_status_path.read_text(
++                    encoding="utf-8",
++                )
++            )
++
++            file_library_verification_ok = bool(
++                external_verification_status
++                .get("file_library", {})
++                .get("externally_verified", False)
++            )
++
++            project_configuration_verification_ok = bool(
++                external_verification_status
++                .get("project_configuration", {})
++                .get("externally_verified", False)
++            )
++
++        except Exception as error:
++            warnings.append(
++                "DEGRADED: external_verification_status_invalid"
++            )
++
+     degraded = {
+-        "file_library_verification": False,
+-        "project_configuration_verification": False,
++        "file_library_verification": (
++            file_library_verification_ok
++        ),
++        "project_configuration_verification": (
++            project_configuration_verification_ok
++        ),
+         "queue_recovery": queue_recovery_ok,
+         "git_baseline": has_commit,
+         "formal_test_runner": formal_test_runner_ok,
+@@ -247,6 +286,9 @@
+         },
+         "verified_artifacts": verified_artifacts,
+         "missing_artifacts": missing_artifacts,
++        "external_verification_status": (
++            external_verification_status
++        ),
+         "queue_state": {
+             "suggested": len(
+                 queue_state.suggested

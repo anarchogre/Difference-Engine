@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0455",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:42.823113-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/BOOTSTRAP_v1.4.md",
+    "original_name": "BOOTSTRAP_v1.4.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0455",
+    "schema_version": "0.1.0",
+    "sha256": "9e4b323a7618f641e2338b261516d83083e07fdb0fded7160ff8ec2a305e761f",
+    "size_bytes": 263,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:57.665148-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/JSON-Unsorted/PR-0001_Automatic_Transition_Preservation.json",
+  "original_name": "PR-0001_Automatic_Transition_Preservation.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0557",
+  "schema_version": "0.1.0",
+  "sha256": "2f1b712adcfb7b67a4087d03827a12a9e540f4cdf2a313fe07f41fd4d9c6ebc0",
+  "size_bytes": 459,
+  "source_class": "manual_batch"
+}

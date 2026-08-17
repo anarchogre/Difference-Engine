@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:59.004275-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Repository_Mapping_Specification_v0.1.md",
+  "original_name": "Repository_Mapping_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0037",
+  "schema_version": "0.1.0",
+  "sha256": "76d30001c9960dfa52164ed54d578995b6e29c754cc60bd58e55ea4978c802e1",
+  "size_bytes": 2261,
+  "source_class": "manual_batch"
+}

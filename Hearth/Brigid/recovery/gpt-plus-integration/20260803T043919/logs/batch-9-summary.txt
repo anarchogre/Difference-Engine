@@ -1,0 +1,145 @@
+RUN=workspace/operational/recovery/gpt-plus-integration/20260803T043919
+COMPILE_STATUS=0
+SMOKE_STATUS=0
+
+RECOVERY RESULT
+[BOOTSTRAP] Discovering repository...
+MISSION='Executable Infrastructure'
+TASK=None
+INITIALIZED_MISSION='Executable Infrastructure'
+INITIALIZED_TASK=None
+EXECUTION_MODE='Execution'
+
+MISSION PATCH
+--- workspace/operational/recovery/gpt-plus-integration/20260803T043919/mission-task-patch/backups/mission.py.before	2026-08-03 04:54:23.846439422 -0500
++++ ade/kernel/bootstrap_loader/mission.py	2026-08-03 04:54:23.983106102 -0500
+@@ -2,5 +2,71 @@
+ Mission recovery.
+ """
+ 
++from pathlib import Path
++import re
++
++
++MISSION_SOURCES = (
++    Path("workspace/operational/current/ACTIVE_MISSION.md"),
++    Path("workspace/operational/current/COMPLETED_TASK_BLOCK.md"),
++    Path("workspace/operational/bootstrap/INITIALIZATION_ORDER.md"),
++    Path("workspace/operational/Continue DifferenceEngine.md"),
++)
++
++
++def _extract_mission(text: str) -> str | None:
++    patterns = (
++        r"(?im)^current mission\s*:?\s*(.+)$",
++        r"(?im)^active mission\s*:?\s*(.+)$",
++        r"(?im)^mission\s*:?\s*(.+)$",
++        r"(?im)^#+\s*current mission\s*$\s*(.+)$",
++        r"(?im)^#+\s*active mission\s*$\s*(.+)$",
++    )
++
++    for pattern in patterns:
++        match = re.search(pattern, text)
++
++        if match:
++            value = match.group(1).strip()
++
++            if value:
++                return value
++
++    return None
++
++
+ def recover_mission() -> str | None:
++    for path in MISSION_SOURCES:
++        if not path.is_file():
++            continue
++
++        text = path.read_text(
++            encoding="utf-8",
++            errors="replace",
++        )
++
++        mission = _extract_mission(text)
++
++        if mission:
++            return mission
++
++    fallback = Path(
++        "workspace/operational/current/"
++        "COMPLETED_TASK_BLOCK.md"
++    )
++
++    if fallback.is_file():
++        text = fallback.read_text(
++            encoding="utf-8",
++            errors="replace",
++        )
++
++        match = re.search(
++            r"(?im)^(.+?)\s+remains the active mission\.$",
++            text,
++        )
++
++        if match:
++            return match.group(1).strip()
++
+     return None
+
+TASK PATCH
+--- workspace/operational/recovery/gpt-plus-integration/20260803T043919/mission-task-patch/backups/task.py.before	2026-08-03 04:54:23.866439424 -0500
++++ ade/kernel/bootstrap_loader/task.py	2026-08-03 04:54:24.023106106 -0500
+@@ -2,5 +2,53 @@
+ Task recovery.
+ """
+ 
++from pathlib import Path
++import re
++
++
++TASK_SOURCES = (
++    Path("workspace/operational/current/ACTIVE_TASK.md"),
++    Path("workspace/operational/current/COMPLETED_TASK_BLOCK.md"),
++    Path("workspace/operational/bootstrap/INITIALIZATION_ORDER.md"),
++    Path("workspace/operational/Continue DifferenceEngine.md"),
++)
++
++
++def _extract_task(text: str) -> str | None:
++    patterns = (
++        r"(?im)^current task\s*:?\s*(.+)$",
++        r"(?im)^active task\s*:?\s*(.+)$",
++        r"(?im)^next task\s*:?\s*(.+)$",
++        r"(?im)^immediate next\s*:?\s*(.+)$",
++        r"(?im)^#+\s*current task\s*$\s*(.+)$",
++        r"(?im)^#+\s*next task\s*$\s*(.+)$",
++    )
++
++    for pattern in patterns:
++        match = re.search(pattern, text)
++
++        if match:
++            value = match.group(1).strip()
++
++            if value:
++                return value
++
++    return None
++
++
+ def recover_task() -> str | None:
++    for path in TASK_SOURCES:
++        if not path.is_file():
++            continue
++
++        text = path.read_text(
++            encoding="utf-8",
++            errors="replace",
++        )
++
++        task = _extract_task(text)
++
++        if task:
++            return task
++
+     return None

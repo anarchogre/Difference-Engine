@@ -1,0 +1,18 @@
+{
+  "blocking": 0,
+  "domains": {
+    "repository": 1
+  },
+  "findings": [
+    {
+      "classification": "working_state",
+      "detail": "Working tree contains 1 changed path(s).",
+      "domain": "repository",
+      "severity": "informational",
+      "subject": "Git working tree"
+    }
+  ],
+  "informational": 1,
+  "total": 1,
+  "warnings": 0
+}

@@ -1,0 +1,28 @@
+{
+  "artifact": {
+    "identifier": "PR-INDEX-0001",
+    "version": "0.2-draft",
+    "entries": [
+      {
+        "id": "PR-0001",
+        "title": "Automatic Transition Preservation",
+        "status": "Active"
+      },
+      {
+        "id": "PR-0002",
+        "title": "Incremental Canonical Preservation",
+        "status": "Active"
+      },
+      {
+        "id": "PR-0003",
+        "title": "Continuous Repository Indexing",
+        "status": "Active"
+      },
+      {
+        "id": "PR-0004",
+        "title": "Conservation of Architectural Work",
+        "status": "Active"
+      }
+    ]
+  }
+}

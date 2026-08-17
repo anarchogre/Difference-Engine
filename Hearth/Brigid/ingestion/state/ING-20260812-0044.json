@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0044",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:05.740469-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-GOV/000_Governance/AKS-GOV-CP-0001.json",
+    "original_name": "AKS-GOV-CP-0001.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0044",
+    "schema_version": "0.1.0",
+    "sha256": "93281620d531fe93cf920184f8242f94280cd1a33b83609cfb29e46be0ad6d22",
+    "size_bytes": 885,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

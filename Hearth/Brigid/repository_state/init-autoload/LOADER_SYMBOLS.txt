@@ -1,0 +1,134 @@
+2:===== ade/kernel/bootstrap_loader/loader.py =====
+4:Bootstrap Loader.
+7:from .discover import discover_repository
+9:from .governance import load_governance
+14:from .readiness import verify_readiness
+16:from .result import BootstrapResult
+17:from .specifications import load_specifications
+22:def initialize() -> BootstrapResult:
+23:    log("Discovering repository...")
+24:    root = discover_repository()
+26:    artifacts = load_governance(root)
+27:    specifications = load_specifications(root)
+29:    validate(artifacts, specifications)
+31:    if not verify_readiness(root):
+32:        raise RuntimeError("Operational Readiness failed.")
+36:        governance_root=artifacts.constitution.parent,
+47:    return BootstrapResult(
+48:        artifacts=artifacts,
+53:===== ade/kernel/bootstrap_loader/artifacts.py =====
+55:Canonical artifact discovery.
+64:class BootstrapArtifacts:
+67:    bootstrap: Path
+69:def discover_artifacts(root: Path) -> BootstrapArtifacts:
+70:    governance = root / "Repository" / "Governance"
+72:    return BootstrapArtifacts(
+73:        constitution=require(governance / "constitution.md"),
+74:        amendments=require(governance / "amendments.md"),
+75:        bootstrap=require(governance / "bootstrap.md"),
+78:===== ade/kernel/bootstrap_loader/governance.py =====
+80:Governance loading.
+83:from .artifacts import discover_artifacts
+85:def load_governance(root):
+86:    return discover_artifacts(root)
+88:===== ade/kernel/bootstrap_loader/verifier.py =====
+103:from .loader import initialize
+114:    Path("Repository/Governance/constitution.md"),
+115:    Path("Repository/Governance/amendments.md"),
+116:    Path("Repository/Governance/bootstrap.md"),
+117:    Path("workspace/operational/bootstrap/BOOTSTRAP_vNext.md"),
+139:def _path_result(
+154:def verify(
+165:    verified_artifacts: list[dict[str, Any]] = []
+166:    missing_artifacts: list[str] = []
+169:        result = initialize()
+171:        payload = {
+179:                    "BOOTSTRAP_INITIALIZATION_FAILED: "
+186:        return 3, payload
+189:    artifacts = result.artifacts
+194:        verified_artifacts.append(item)
+197:            missing_artifacts.append(str(path))
+199:    if missing_artifacts:
+201:            f"MISSING_ARTIFACT: {path}"
+202:            for path in missing_artifacts
+210:    if not state.governance_root.is_dir():
+212:            "GOVERNANCE_ROOT_MISSING"
+295:            external_verification_status = json.loads(
+324:    library_governance_path = (
+327:        "LIBRARY_GOVERNANCE.md"
+330:    upload_standard_path = (
+333:        "UPLOAD_STANDARD.md"
+336:    artifact_lifecycle_path = (
+339:        "ARTIFACT_LIFECYCLE.md"
+342:    library_governance_ok = False
+343:    library_governance_status = {}
+351:                library_governance_path,
+352:                upload_standard_path,
+353:                artifact_lifecycle_path,
+356:            library_index = json.loads(
+362:            library_artifacts = library_index.get(
+363:                "artifacts",
+368:                artifact.get("id")
+369:                for artifact in library_artifacts
+373:                artifact.get("canonical_name")
+374:                for artifact in library_artifacts
+377:            library_governance_ok = (
+378:                bool(library_artifacts)
+384:                    artifact.get("verified") is True
+385:                    for artifact in library_artifacts
+389:            library_governance_status = {
+390:                "artifacts": len(library_artifacts),
+399:                "verified": library_governance_ok,
+404:            "DEGRADED: library_governance_invalid"
+407:        library_governance_status = {
+421:        "library_governance": (
+422:            library_governance_ok
+446:    payload = {
+454:        "governance_root": str(
+455:            state.governance_root
+463:        "artifacts": {
+465:                artifacts.constitution
+468:                artifacts.amendments
+470:            "bootstrap": str(
+471:                artifacts.bootstrap
+474:        "verified_artifacts": verified_artifacts,
+475:        "missing_artifacts": missing_artifacts,
+479:        "library_governance_status": (
+480:            library_governance_status
+508:    return exit_code, payload
+511:def write_reports(
+512:    payload: dict[str, Any],
+520:    readiness_json = (
+521:        output_root / "readiness.json"
+523:    readiness_txt = (
+524:        output_root / "readiness.txt"
+536:    readiness_json.write_text(
+538:            payload,
+546:    readiness_txt.write_text(
+549:                f"STATUS={payload['status']}",
+552:                    f"{payload.get('repository_root')}"
+555:                    "GOVERNANCE="
+556:                    f"{payload.get('governance_root')}"
+560:                    f"{payload.get('specification_root')}"
+564:                    f"{payload.get('mission')}"
+568:                    f"{payload.get('task')}"
+572:                    f"{payload.get('execution_mode')}"
+576:                    f"{len(payload.get('blockers', []))}"
+580:                    f"{len(payload.get('warnings', []))}"
+591:                "status": payload["status"],
+592:                "warnings": payload.get(
+596:                "degraded_checks": payload.get(
+611:                "status": payload["status"],
+612:                "blockers": payload.get(
+616:                "missing_artifacts": payload.get(
+617:                    "missing_artifacts",
+630:            payload,
+638:def main() -> int:
+643:    exit_code, payload = verify()
+645:        payload,
+650:        f"STATUS={payload['status']}"
+653:        f"MISSION={payload.get('mission')}"
+656:        f"TASK={payload.get('task')}"
+660:        f"{payload.get('execution_mode')}"
+664:        f"{len(payload.get('blockers', []))}"
+668:        f"{len(payload.get('warnings', []))}"

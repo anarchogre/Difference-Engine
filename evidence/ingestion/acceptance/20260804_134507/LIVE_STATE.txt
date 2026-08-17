@@ -1,0 +1,87 @@
+MILESTONE 001 LIVE VERIFICATION
+Generated: 2026-08-04T13:45:07-05:00
+Root: /data/data/com.termux/files/home/storage/shared/DifferenceEngine
+
+=== GIT ===
+Branch: master
+HEAD: a081b55
+Changed paths: 21
+
+=== INGESTER IMPLEMENTATION ===
+kernel/bootstrap_loader/__init__.py
+kernel/bootstrap_loader/__main__.py
+kernel/bootstrap_loader/artifacts.py
+kernel/bootstrap_loader/bootstrap.py
+kernel/bootstrap_loader/config.py
+kernel/bootstrap_loader/constants.py
+kernel/bootstrap_loader/context.py
+kernel/bootstrap_loader/contracts.py
+kernel/bootstrap_loader/discover.py
+kernel/bootstrap_loader/drift.py
+kernel/bootstrap_loader/errors.py
+kernel/bootstrap_loader/execution.py
+kernel/bootstrap_loader/filesystem.py
+kernel/bootstrap_loader/governance.py
+kernel/bootstrap_loader/health.py
+kernel/bootstrap_loader/loader.py
+kernel/bootstrap_loader/logging.py
+kernel/bootstrap_loader/main.py
+kernel/bootstrap_loader/mission.py
+kernel/bootstrap_loader/models.py
+kernel/bootstrap_loader/modes.py
+kernel/bootstrap_loader/paths.py
+kernel/bootstrap_loader/queue.py
+kernel/bootstrap_loader/readiness.py
+kernel/bootstrap_loader/recovery.py
+kernel/bootstrap_loader/result.py
+kernel/bootstrap_loader/specifications.py
+kernel/bootstrap_loader/state.py
+kernel/bootstrap_loader/task.py
+kernel/bootstrap_loader/validators.py
+kernel/bootstrap_loader/verifier.py
+kernel/bootstrap_loader/version.py
+kernel/tests/run_tests.py
+kernel/tests/test_bootstrap_loader.py
+services/ingestion/__init__.py
+services/ingestion/assets.py
+services/ingestion/batch.py
+services/ingestion/cli.py
+services/ingestion/discover.py
+services/ingestion/ids.py
+services/ingestion/index.py
+services/ingestion/intake.py
+services/ingestion/manifest.py
+services/ingestion/output.py
+services/ingestion/parser.py
+services/ingestion/parsers/__init__.py
+services/ingestion/parsers/chatgpt.py
+services/ingestion/parsers/conversation.py
+services/ingestion/parsers/markdown.py
+services/ingestion/pipeline.py
+services/ingestion/provenance.py
+services/ingestion/queues.py
+services/ingestion/receipt.py
+services/ingestion/recover.py
+services/ingestion/references.py
+services/ingestion/registry.py
+services/ingestion/report.py
+services/ingestion/resume.py
+services/ingestion/stages.py
+services/ingestion/state.py
+services/ingestion/tests/run_all.py
+services/ingestion/tests/test_chat_pipeline.py
+services/ingestion/tests/test_conversation_parser.py
+services/ingestion/tests/test_intake.py
+services/ingestion/tests/test_markdown_parser.py
+services/ingestion/tests/test_pipeline.py
+services/ingestion/validation.py
+
+=== TEST DISCOVERY ===
+ade/kernel/tests/test_bootstrap_loader.py
+ade/services/ingestion/tests/test_chat_pipeline.py
+ade/services/ingestion/tests/test_conversation_parser.py
+ade/services/ingestion/tests/test_intake.py
+ade/services/ingestion/tests/test_markdown_parser.py
+ade/services/ingestion/tests/test_pipeline.py
+
+=== CONVERSATION SOURCE SEARCH ===

@@ -1,0 +1,130 @@
+=== DIFFERENCE ENGINE INITIALIZATION CENSUS ===
+2026-08-07T21:46:17-05:00
+
+=== REPOSITORY ===
+ROOT=/home/reckless-ideator/DifferenceEngine
+HEAD=b39d2138800c6df9df173321c30fb7ccfe157d71
+BRANCH=master
+
+=== TRACKED BOOTSTRAP / KERNEL / STATE ENTRY POINTS ===
+BOOTSTRAP/BOOTSTRAP - Load the Difference Engine project.md
+Repository/Governance/bootstrap.md
+ade/kernel/bootstrap_loader/__init__.py
+ade/kernel/bootstrap_loader/__main__.py
+ade/kernel/bootstrap_loader/artifacts.py
+ade/kernel/bootstrap_loader/bootstrap.py
+ade/kernel/bootstrap_loader/config.py
+ade/kernel/bootstrap_loader/constants.py
+ade/kernel/bootstrap_loader/context.py
+ade/kernel/bootstrap_loader/contracts.py
+ade/kernel/bootstrap_loader/discover.py
+ade/kernel/bootstrap_loader/drift.py
+ade/kernel/bootstrap_loader/errors.py
+ade/kernel/bootstrap_loader/execution.py
+ade/kernel/bootstrap_loader/filesystem.py
+ade/kernel/bootstrap_loader/governance.py
+ade/kernel/bootstrap_loader/health.py
+ade/kernel/bootstrap_loader/loader.py
+ade/kernel/bootstrap_loader/logging.py
+ade/kernel/bootstrap_loader/main.py
+ade/kernel/bootstrap_loader/mission.py
+ade/kernel/bootstrap_loader/models.py
+ade/kernel/bootstrap_loader/modes.py
+ade/kernel/bootstrap_loader/paths.py
+ade/kernel/bootstrap_loader/queue.py
+ade/kernel/bootstrap_loader/readiness.py
+ade/kernel/bootstrap_loader/recovery.py
+ade/kernel/bootstrap_loader/result.py
+ade/kernel/bootstrap_loader/specifications.py
+ade/kernel/bootstrap_loader/state.py
+ade/kernel/bootstrap_loader/task.py
+ade/kernel/bootstrap_loader/validators.py
+ade/kernel/bootstrap_loader/verifier.py
+ade/kernel/bootstrap_loader/version.py
+ade/kernel/tests/run_tests.py
+ade/kernel/tests/test_bootstrap_loader.py
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_API_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONFIGURATION_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONTRACT_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_DEPENDENCIES_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_DISCOVERY_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_ERRORS_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_FILE_LAYOUT_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_GLOSSARY_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_IMPLEMENTATION_PLAN_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_INTERFACE_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_LIFECYCLE_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_MODULES_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_OUTPUT_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_PSEUDOCODE_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_PYTHON_MAPPING_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_SEQUENCE_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_SPECIFICATION_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_STATE_MACHINE_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_TEST_PLAN_v1.md
+architecture/bootstrap_loader/BOOTSTRAP_LOADER_WORKFLOW_v1.md
+architecture/bootstrap_loader/README.md
+workspace/operational/bootstrap/BOOTSTRAP.md
+workspace/operational/bootstrap/BOOTSTRAP_vNext.md
+workspace/operational/bootstrap/INITIALIZATION_ORDER.md
+workspace/operational/services/specifications/bootstrap/BOOTSTRAP_SERVICE.md
+
+=== ROOT CANDIDATES ===
+BOOTSTRAP_BRANCHES.txt
+BOOTSTRAP_FILES.txt
+BOOTSTRAP_FOLDER.txt
+BOOTSTRAP_TOP.txt
+ENTRY_POINTS.txt
+PHONE_ACTIVE_STATE.txt
+REPOSITORY_STATUS.txt
+
+=== BOOTSTRAP DIRECTORY ===
+BOOTSTRAP - CONTINUE - INGESTER EPOCH v1.0 - 8-4-26-1300.md
+BOOTSTRAP - Load the Difference Engine project.md
+BOOTSTRAP — Foundational Reduction Continuation.md
+BST-CBD-OPS_Operational_Bedrock_and_Ingester_Execution_v0.1.0.md
+Bootstrap - Difference Engine - Architectural Philosophy And Meta Synthsis.md
+Bootstrap - Difference Engine - Computational Bedrock.md
+Bootstrap - Difference Engine - Session Continuation Bootstrap - Epoch II - Repository Archaeology - Into - Constitutional Synthesis.md
+Bootstrap - Epoch II — Post Milestone 002 - Constitutional Kernel - Operational Bootstrap.md
+Bootstrap vNext — Candidate Constitutional Bootstrap Additions.md
+Branches/BST-B0-ORG_Origins_v0.1.0.md
+Branches/BST-B2-RES_Research_v0.1.0.md
+Branches/BST-B4-OPS_Operations_v0.1.0.md
+Branches/BST-B5-HUI_Human_Interface_v0.1.0.md
+Branches/BST-CBD_Computational_Bedrock_v0.1.0.md
+Computational Bedrock Bootstrap Ingester Recovery Continuation.md
+KRN-0001_Common_Constitutional_Kernel_v0.1.0.md
+Load The Constitutional Kernel.md
+Recover Existing Injestion Files.md
+
+=== INITIALIZATION INVENTORY ===
+20260804_074926/INITIALIZATION_REPORT.txt
+verify_state.sh
+
+=== UNTRACKED INITIALIZATION CANDIDATES ===
+?? "BOOTSTRAP/BOOTSTRAP - CONTINUE - INGESTER EPOCH v1.0 - 8-4-26-1300.md"
+?? "BOOTSTRAP/BOOTSTRAP \342\200\224 Foundational Reduction Continuation.md"
+?? BOOTSTRAP/BST-CBD-OPS_Operational_Bedrock_and_Ingester_Execution_v0.1.0.md
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Architectural Philosophy And Meta Synthsis.md"
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Computational Bedrock.md"
+?? "BOOTSTRAP/Bootstrap - Difference Engine - Session Continuation Bootstrap - Epoch II - Repository Archaeology - Into - Constitutional Synthesis.md"
+?? "BOOTSTRAP/Bootstrap - Epoch II \342\200\224 Post Milestone 002 - Constitutional Kernel - Operational Bootstrap.md"
+?? "BOOTSTRAP/Bootstrap vNext \342\200\224 Candidate Constitutional Bootstrap Additions.md"
+?? BOOTSTRAP/Branches/
+?? "BOOTSTRAP/Computational Bedrock Bootstrap Ingester Recovery Continuation.md"
+?? BOOTSTRAP/KRN-0001_Common_Constitutional_Kernel_v0.1.0.md
+?? "BOOTSTRAP/Load The Constitutional Kernel.md"
+?? "BOOTSTRAP/Recover Existing Injestion Files.md"
+?? BOOTSTRAP_BRANCHES.txt
+?? BOOTSTRAP_FILES.txt
+?? BOOTSTRAP_FOLDER.txt
+?? BOOTSTRAP_TOP.txt
+?? ENTRY_POINTS.txt
+?? PHONE_ACTIVE_STATE.txt
+?? REPOSITORY_STATUS.txt
+?? inventory/initialization/
+?? workspace/operational/current/state-model-candidates.lst
+?? workspace/operational/current/state-references.clean.out
+?? workspace/operational/current/state-references.out
+?? workspace/operational/repository_state/

@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:06.392534-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-PRESERVATION-0009_Gate_Alpha.json",
+  "original_name": "AKS-PRESERVATION-0009_Gate_Alpha.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0060",
+  "schema_version": "0.1.0",
+  "sha256": "8d700de52b05b59e4a309068c34849584b8b4eb240711eded86761f050a77593",
+  "size_bytes": 424,
+  "source_class": "manual_batch"
+}

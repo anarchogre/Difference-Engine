@@ -1,0 +1,62 @@
+EVIDENCE=/home/reckless-ideator/Difference-Engine/workspace/operational/recovery/openclaw-actuator/openclaw-compaction-paths-20260813T120824/path-resolution.txt
+
+169:924:           maxChars: ZodOptional<ZodNumber>;
+170:925:           headChars: ZodOptional<ZodNumber>;
+171:926:           tailChars: ZodOptional<ZodNumber>;
+173:928:         hardClear: ZodOptional<ZodObject<{
+174:929:           enabled: ZodOptional<ZodBoolean>;
+175:930:           placeholder: ZodOptional<ZodString>;
+178:933:       compaction: ZodOptional<ZodObject<{
+179:934:         mode: ZodOptional<ZodUnion<readonly [ZodLiteral<"default">, ZodLiteral<"safeguard">]>>;
+180:935:         provider: ZodOptional<ZodString>;
+181:936:         reserveTokens: ZodOptional<ZodNumber>;
+182:937:         keepRecentTokens: ZodOptional<ZodNumber>;
+183:938:         reserveTokensFloor: ZodOptional<ZodNumber>;
+184:939:         maxHistoryShare: ZodOptional<ZodNumber>;
+185:940:         customInstructions: ZodOptional<ZodString>;
+186:941:         identifierPolicy: ZodOptional<ZodUnion<readonly [ZodLiteral<"strict">, ZodLiteral<"off">, ZodLiteral<"custom">]>>;
+187:942:         identifierInstructions: ZodOptional<ZodString>;
+188:943:         recentTurnsPreserve: ZodOptional<ZodNumber>;
+189:944:         qualityGuard: ZodOptional<ZodObject<{
+190:945:           enabled: ZodOptional<ZodBoolean>;
+191:946:           maxRetries: ZodOptional<ZodNumber>;
+193:948:         midTurnPrecheck: ZodOptional<ZodObject<{
+194:949:           enabled: ZodOptional<ZodBoolean>;
+196:951:         postIndexSync: ZodOptional<ZodEnum<{
+200:FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/plugin-sdk/config-schema.d.ts
+201:HIT=962:           softThresholdTokens: ZodOptional<ZodNumber>;
+202:948:         midTurnPrecheck: ZodOptional<ZodObject<{
+203:949:           enabled: ZodOptional<ZodBoolean>;
+205:951:         postIndexSync: ZodOptional<ZodEnum<{
+210:956:         postCompactionSections: ZodOptional<ZodArray<ZodString>>;
+211:957:         model: ZodOptional<ZodString>;
+212:958:         timeoutSeconds: ZodOptional<ZodNumber>;
+213:959:         memoryFlush: ZodOptional<ZodObject<{
+214:960:           enabled: ZodOptional<ZodBoolean>;
+215:961:           model: ZodOptional<ZodString>;
+216:962:           softThresholdTokens: ZodOptional<ZodNumber>;
+217:963:           forceFlushTranscriptBytes: ZodOptional<ZodUnion<readonly [ZodNumber, ZodString]>>;
+218:964:           prompt: ZodOptional<ZodString>;
+219:965:           systemPrompt: ZodOptional<ZodString>;
+221:967:         truncateAfterCompaction: ZodOptional<ZodBoolean>;
+222:968:         maxActiveTranscriptBytes: ZodOptional<ZodUnion<readonly [ZodNumber, ZodString]>>;
+223:969:         notifyUser: ZodOptional<ZodBoolean>;
+225:971:       runRetries: ZodOptional<ZodObject<{
+226:972:         base: ZodOptional<ZodNumber>;
+227:973:         perProfile: ZodOptional<ZodNumber>;
+228:974:         min: ZodOptional<ZodNumber>;
+229:975:         max: ZodOptional<ZodNumber>;
+233:FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/extensions/memory-core/index.js
+234:HIT=79: 	const softThresholdTokens = normalizeNonNegativeInt(defaults?.softThresholdTokens) ?? 4e3;
+247:77: 	const defaults = cfg?.agents?.defaults?.compaction?.memoryFlush;
+249:79: 	const softThresholdTokens = normalizeNonNegativeInt(defaults?.softThresholdTokens) ?? 4e3;
+251:81: 	const reserveTokensFloor = normalizeNonNegativeInt(cfg?.agents?.defaults?.compaction?.reserveTokensFloor) ?? 2e4;
+258:88: 		softThresholdTokens,
+260:90: 		reserveTokensFloor,
+266:FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/extensions/memory-core/index.js
+267:HIT=81: 	const reserveTokensFloor = normalizeNonNegativeInt(cfg?.agents?.defaults?.compaction?.reserveTokensFloor) ?? 2e4;
+278:77: 	const defaults = cfg?.agents?.defaults?.compaction?.memoryFlush;
+280:79: 	const softThresholdTokens = normalizeNonNegativeInt(defaults?.softThresholdTokens) ?? 4e3;
+282:81: 	const reserveTokensFloor = normalizeNonNegativeInt(cfg?.agents?.defaults?.compaction?.reserveTokensFloor) ?? 2e4;
+289:88: 		softThresholdTokens,
+291:90: 		reserveTokensFloor,

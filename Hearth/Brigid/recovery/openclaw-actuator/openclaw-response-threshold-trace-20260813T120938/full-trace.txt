@@ -1,0 +1,1429 @@
+=== CURRENT COMPACTION CONFIG ===
+Config path not found: agents.defaults.compaction. Run openclaw config validate to inspect config shape.
+
+=== RESPONSES THRESHOLD SOURCE TRACE ===
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/openai-transport-stream-B0WkSqXp.js
+HIT=234: 		compactThreshold: parsePositiveInteger(options.extraParams?.responsesCompactThreshold) ?? resolveOpenAIResponsesCompactThreshold(model),
+216: 	if (!reasoning || typeof reasoning !== "object" || Array.isArray(reasoning)) return;
+217: 	if (reasoning.effort === "none") delete payloadObj.reasoning;
+218: }
+219: /** Strip returned-item metadata rejected by strict Responses-compatible endpoints. */
+220: function stripInputItemStatuses(input) {
+221: 	if (!Array.isArray(input)) return;
+222: 	for (const item of input) if (item && typeof item === "object" && !Array.isArray(item)) delete item.status;
+223: }
+224: /** Resolve payload mutation policy for one OpenAI Responses-style model endpoint. */
+225: function resolveOpenAIResponsesPayloadPolicy(model, options = {}) {
+226: 	const capabilities = resolveOpenAIResponsesPayloadCapabilities(model);
+227: 	const storeMode = options.storeMode ?? "provider-policy";
+228: 	const explicitStore = storeMode === "preserve" ? void 0 : storeMode === "disable" ? capabilities.supportsResponsesStoreField ? false : void 0 : capabilities.allowsResponsesStore ? true : void 0;
+229: 	const isResponsesApi = isOpenAIResponsesApi(normalizeLowercaseString(model.api));
+230: 	const shouldStripDisabledReasoningPayload = isResponsesApi && (!capabilities.usesKnownNativeOpenAIRoute || !supportsOpenAIReasoningEffort(model, "none"));
+231: 	const shouldStripInputStatus = isResponsesApi && !capabilities.usesKnownNativeOpenAIRoute;
+232: 	return {
+233: 		allowsServiceTier: capabilities.allowsOpenAIServiceTier,
+234: 		compactThreshold: parsePositiveInteger(options.extraParams?.responsesCompactThreshold) ?? resolveOpenAIResponsesCompactThreshold(model),
+235: 		explicitStore,
+236: 		shouldStripDisabledReasoningPayload,
+237: 		shouldStripInputStatus,
+238: 		shouldStripPromptCache: options.enablePromptCacheStripping === true && capabilities.shouldStripResponsesPromptCache,
+239: 		shouldStripStore: explicitStore !== true && readCompatPayloadBoolean(model.compat, "supportsStore") === false && isResponsesApi,
+240: 		useServerCompaction: options.enableServerCompaction === true && shouldEnableOpenAIResponsesServerCompaction(explicitStore, model.provider, options.extraParams)
+241: 	};
+242: }
+243: /** Mutate a Responses request payload according to the resolved endpoint policy. */
+244: function applyOpenAIResponsesPayloadPolicy(payloadObj, policy) {
+245: 	if (policy.explicitStore !== void 0) payloadObj.store = policy.explicitStore;
+246: 	if (policy.shouldStripStore) delete payloadObj.store;
+247: 	if (policy.shouldStripPromptCache) {
+248: 		delete payloadObj.prompt_cache_key;
+249: 		delete payloadObj.prompt_cache_retention;
+250: 	}
+251: 	if (policy.useServerCompaction && payloadObj.context_management === void 0) payloadObj.context_management = [{
+252: 		type: "compaction",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+HIT=866: 	"agents.defaults.compaction.reserveTokensFloor": "Minimum floor enforced for reserveTokens in embedded OpenClaw compaction paths (0 disables the floor guard). Use a non-zero floor to avoid over-aggressive compression under fluctuating token estimates.",
+848: 	"agents.defaults.musicGenerationModel.primary": "Optional music-generation model (provider/model) used by the shared music generation capability.",
+849: 	"agents.defaults.musicGenerationModel.fallbacks": "Ordered fallback music-generation models (provider/model).",
+850: 	"agents.defaults.voiceModel.primary": "Optional voice model (provider/model) used by speech, transcription, and realtime voice capabilities.",
+851: 	"agents.defaults.voiceModel.fallbacks": "Ordered fallback voice models (provider/model).",
+852: 	"agents.defaults.voiceModel.timeoutMs": "Default provider request timeout in milliseconds for voice model operations when the caller supports timeouts.",
+853: 	"agents.defaults.mediaGenerationAutoProviderFallback": "When true (default), shared image, music, and video generation automatically appends other auth-backed provider defaults after explicit primary/fallback refs. Set false to disable implicit cross-provider fallback while keeping explicit fallbacks.",
+854: 	"agents.defaults.pdfModel.primary": "Optional PDF model (provider/model) for the PDF analysis tool. Defaults to imageModel, then session model.",
+855: 	"agents.defaults.pdfModel.fallbacks": "Ordered fallback PDF models (provider/model).",
+856: 	"agents.defaults.pdfMaxBytesMb": "Maximum PDF file size in megabytes for the PDF tool (default: 10).",
+857: 	"agents.defaults.pdfMaxPages": "Maximum number of PDF pages to process for the PDF tool (default: 20).",
+858: 	"agents.defaults.imageMaxDimensionPx": "Max image side length in pixels when sanitizing transcript/tool-result image payloads (default: 1200).",
+859: 	"agents.defaults.imageQuality": "Image-tool media compression preference: \"auto\" adapts to provider/model limits and image count, \"efficient\" saves tokens and bytes, \"balanced\" keeps the current middle ground, and \"high\" preserves more detail for screenshots and document images.",
+860: 	"agents.defaults.cliBackends": "Optional CLI backends for text-only fallback (claude-cli, etc.).",
+861: 	"agents.defaults.compaction": "Compaction tuning for when context nears token limits, including history share, reserve headroom, and pre-compaction memory flush behavior. Use this when long-running sessions need stable continuity under tight context windows.",
+862: 	"agents.defaults.compaction.mode": "Compaction strategy mode: \"default\" uses baseline behavior, while \"safeguard\" applies stricter guardrails to preserve recent context. Keep \"default\" unless you observe aggressive history loss near limit boundaries.",
+863: 	"agents.defaults.compaction.provider": "Id of a registered compaction provider plugin used for summarization. When set and the provider is registered, its summarize() method is called instead of the built-in summarizeInStages pipeline. Falls back to built-in on provider failure. Leave unset to use the default built-in summarization.",
+864: 	"agents.defaults.compaction.reserveTokens": "Token headroom reserved for reply generation and tool output after compaction runs. Use higher reserves for verbose/tool-heavy sessions, and lower reserves when maximizing retained history matters more. When the active model context window is known, the effective reserve is capped to preserve usable prompt space.",
+865: 	"agents.defaults.compaction.keepRecentTokens": "Minimum token budget preserved from the most recent conversation window during compaction. Use higher values to protect immediate context continuity and lower values to keep more long-tail history.",
+866: 	"agents.defaults.compaction.reserveTokensFloor": "Minimum floor enforced for reserveTokens in embedded OpenClaw compaction paths (0 disables the floor guard). Use a non-zero floor to avoid over-aggressive compression under fluctuating token estimates.",
+867: 	"agents.defaults.compaction.maxHistoryShare": "Maximum fraction of total context budget allowed for retained history after compaction (range 0.1-0.9). Use lower shares for more generation headroom or higher shares for deeper historical continuity.",
+868: 	"agents.defaults.compaction.identifierPolicy": "Identifier-preservation policy for compaction summaries: \"strict\" prepends built-in opaque-identifier retention guidance (default), \"off\" disables this prefix, and \"custom\" uses identifierInstructions. Keep \"strict\" unless you have a specific compatibility need.",
+869: 	"agents.defaults.compaction.identifierInstructions": "Custom identifier-preservation instruction text used when identifierPolicy=\"custom\". Keep this explicit and safety-focused so compaction summaries do not rewrite opaque IDs, URLs, hosts, or ports.",
+870: 	"agents.defaults.compaction.recentTurnsPreserve": "Number of most recent user/assistant turns kept verbatim outside safeguard summarization (default: 3). Raise this to preserve exact recent dialogue context, or lower it to maximize compaction savings.",
+871: 	"agents.defaults.compaction.qualityGuard": "Quality-audit retry settings for safeguard compaction summaries. Safeguard mode enables this by default; set enabled: false to skip summary audits and regeneration.",
+872: 	"agents.defaults.compaction.qualityGuard.enabled": "Enables summary quality audits and regeneration retries for safeguard compaction. Default: true in safeguard mode.",
+873: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Maximum number of regeneration retries after a failed safeguard summary quality audit. Use small values to bound extra latency and token cost.",
+874: 	"agents.defaults.compaction.midTurnPrecheck": "Optional embedded OpenClaw tool-loop precheck that detects context pressure after a tool result is appended and before the next model call. When enabled, OpenClaw reuses existing precheck recovery to truncate tool results or compact before retrying.",
+875: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Enable structured mid-turn context pressure checks for embedded OpenClaw tool loops. Default: false. Keep disabled unless long tool-heavy sessions hit context overflow before normal turn-end compaction can run.",
+876: 	"agents.defaults.compaction.postIndexSync": "Controls post-compaction session memory reindex mode: \"off\", \"async\", or \"await\" (default: \"async\"). Use \"await\" for strongest freshness, \"async\" for lower compaction latency, and \"off\" only when session-memory sync is handled elsewhere.",
+877: 	"agents.defaults.compaction.postCompactionSections": "Opt-in AGENTS.md H2/H3 section names re-injected after compaction so the agent reruns critical startup guidance. Leave unset or set [] to disable reinjection. Explicitly set [\"Session Startup\", \"Red Lines\"] to enable the legacy default pair with fallback to older \"Every Session\"/\"Safety\" headings. Enabling this can duplicate project context already present in the compaction summary.",
+878: 	"agents.defaults.compaction.timeoutSeconds": "Maximum time in seconds allowed for a single compaction operation before it is aborted (default: 180). Increase this for very large sessions that need more time to summarize, or decrease it to fail faster on unresponsive models.",
+879: 	"agents.defaults.compaction.model": "Optional provider/model or configured bare alias used only for compaction summarization. Bare aliases resolve before dispatch; a configured literal model ID wins if it collides with an alias. Leave unset to keep using the primary agent model.",
+880: 	"agents.defaults.compaction.truncateAfterCompaction": "When enabled, rotates the active session JSONL file after compaction so future turns load only the summary and unsummarized tail while the previous full transcript remains archived. Prevents unbounded active transcript growth in long-running sessions. Default: false.",
+881: 	"agents.defaults.compaction.maxActiveTranscriptBytes": "Triggers normal local compaction when the active session transcript reaches this size (bytes or strings like \"20mb\"). Requires truncateAfterCompaction so successful compaction can rotate to a smaller successor transcript; set to 0 or leave unset to disable. This never splits raw transcript bytes.",
+882: 	"agents.defaults.compaction.notifyUser": "When enabled, sends brief context-maintenance notices to the user: when compaction starts and completes (for example, '🧹 Compacting context...' and '🧹 Compaction complete'), and when a pre-compaction memory flush is exhausted so the reply continues in a degraded state (for example, '⚠️ Memory maintenance temporarily failed; continuing your reply.'). Disabled by default to keep context maintenance silent and non-intrusive.",
+883: 	"agents.defaults.compaction.memoryFlush": "Pre-compaction memory flush settings that run an agentic memory write before heavy compaction. Keep enabled for long sessions so salient context is persisted before aggressive trimming.",
+884: 	"agents.defaults.compaction.memoryFlush.enabled": "Enables pre-compaction memory flush before the runtime performs stronger history reduction near token limits. Keep enabled unless you intentionally disable memory side effects in constrained environments.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+HIT=886: 	"agents.defaults.compaction.memoryFlush.softThresholdTokens": "Threshold distance to compaction (in tokens) that triggers pre-compaction memory flush execution. Use earlier thresholds for safer persistence, or tighter thresholds for lower flush frequency.",
+868: 	"agents.defaults.compaction.identifierPolicy": "Identifier-preservation policy for compaction summaries: \"strict\" prepends built-in opaque-identifier retention guidance (default), \"off\" disables this prefix, and \"custom\" uses identifierInstructions. Keep \"strict\" unless you have a specific compatibility need.",
+869: 	"agents.defaults.compaction.identifierInstructions": "Custom identifier-preservation instruction text used when identifierPolicy=\"custom\". Keep this explicit and safety-focused so compaction summaries do not rewrite opaque IDs, URLs, hosts, or ports.",
+870: 	"agents.defaults.compaction.recentTurnsPreserve": "Number of most recent user/assistant turns kept verbatim outside safeguard summarization (default: 3). Raise this to preserve exact recent dialogue context, or lower it to maximize compaction savings.",
+871: 	"agents.defaults.compaction.qualityGuard": "Quality-audit retry settings for safeguard compaction summaries. Safeguard mode enables this by default; set enabled: false to skip summary audits and regeneration.",
+872: 	"agents.defaults.compaction.qualityGuard.enabled": "Enables summary quality audits and regeneration retries for safeguard compaction. Default: true in safeguard mode.",
+873: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Maximum number of regeneration retries after a failed safeguard summary quality audit. Use small values to bound extra latency and token cost.",
+874: 	"agents.defaults.compaction.midTurnPrecheck": "Optional embedded OpenClaw tool-loop precheck that detects context pressure after a tool result is appended and before the next model call. When enabled, OpenClaw reuses existing precheck recovery to truncate tool results or compact before retrying.",
+875: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Enable structured mid-turn context pressure checks for embedded OpenClaw tool loops. Default: false. Keep disabled unless long tool-heavy sessions hit context overflow before normal turn-end compaction can run.",
+876: 	"agents.defaults.compaction.postIndexSync": "Controls post-compaction session memory reindex mode: \"off\", \"async\", or \"await\" (default: \"async\"). Use \"await\" for strongest freshness, \"async\" for lower compaction latency, and \"off\" only when session-memory sync is handled elsewhere.",
+877: 	"agents.defaults.compaction.postCompactionSections": "Opt-in AGENTS.md H2/H3 section names re-injected after compaction so the agent reruns critical startup guidance. Leave unset or set [] to disable reinjection. Explicitly set [\"Session Startup\", \"Red Lines\"] to enable the legacy default pair with fallback to older \"Every Session\"/\"Safety\" headings. Enabling this can duplicate project context already present in the compaction summary.",
+878: 	"agents.defaults.compaction.timeoutSeconds": "Maximum time in seconds allowed for a single compaction operation before it is aborted (default: 180). Increase this for very large sessions that need more time to summarize, or decrease it to fail faster on unresponsive models.",
+879: 	"agents.defaults.compaction.model": "Optional provider/model or configured bare alias used only for compaction summarization. Bare aliases resolve before dispatch; a configured literal model ID wins if it collides with an alias. Leave unset to keep using the primary agent model.",
+880: 	"agents.defaults.compaction.truncateAfterCompaction": "When enabled, rotates the active session JSONL file after compaction so future turns load only the summary and unsummarized tail while the previous full transcript remains archived. Prevents unbounded active transcript growth in long-running sessions. Default: false.",
+881: 	"agents.defaults.compaction.maxActiveTranscriptBytes": "Triggers normal local compaction when the active session transcript reaches this size (bytes or strings like \"20mb\"). Requires truncateAfterCompaction so successful compaction can rotate to a smaller successor transcript; set to 0 or leave unset to disable. This never splits raw transcript bytes.",
+882: 	"agents.defaults.compaction.notifyUser": "When enabled, sends brief context-maintenance notices to the user: when compaction starts and completes (for example, '🧹 Compacting context...' and '🧹 Compaction complete'), and when a pre-compaction memory flush is exhausted so the reply continues in a degraded state (for example, '⚠️ Memory maintenance temporarily failed; continuing your reply.'). Disabled by default to keep context maintenance silent and non-intrusive.",
+883: 	"agents.defaults.compaction.memoryFlush": "Pre-compaction memory flush settings that run an agentic memory write before heavy compaction. Keep enabled for long sessions so salient context is persisted before aggressive trimming.",
+884: 	"agents.defaults.compaction.memoryFlush.enabled": "Enables pre-compaction memory flush before the runtime performs stronger history reduction near token limits. Keep enabled unless you intentionally disable memory side effects in constrained environments.",
+885: 	"agents.defaults.compaction.memoryFlush.model": "Optional provider/model override used only for pre-compaction memory flush turns. Set this to a local model such as ollama/qwen3:8b when durable memory extraction should avoid the active session's paid model. The override is exact and does not inherit the active model fallback chain.",
+886: 	"agents.defaults.compaction.memoryFlush.softThresholdTokens": "Threshold distance to compaction (in tokens) that triggers pre-compaction memory flush execution. Use earlier thresholds for safer persistence, or tighter thresholds for lower flush frequency.",
+887: 	"agents.defaults.compaction.memoryFlush.forceFlushTranscriptBytes": "Forces pre-compaction memory flush when transcript file size reaches this threshold (bytes or strings like \"2mb\"). Use this to prevent long-session hangs even when token counters are stale; set to 0 to disable.",
+888: 	"agents.defaults.compaction.memoryFlush.prompt": "User-prompt template used for the pre-compaction memory flush turn when generating memory candidates. Use this only when you need custom extraction instructions beyond the default memory flush behavior.",
+889: 	"agents.defaults.compaction.memoryFlush.systemPrompt": "System-prompt override for the pre-compaction memory flush turn to control extraction style and safety constraints. Use carefully so custom instructions do not reduce memory quality or leak sensitive context.",
+890: 	"agents.defaults.runRetries": "Outer run loop retry iteration boundaries for the embedded OpenClaw runner to prevent infinite execution loops during failure recovery.",
+891: 	"agents.defaults.runRetries.base": "Base number of run retry iterations for the embedded OpenClaw runner's outer run loop (default: 24).",
+892: 	"agents.defaults.runRetries.perProfile": "Additional run retry iterations granted per fallback profile candidate (default: 8).",
+893: 	"agents.defaults.runRetries.min": "Minimum absolute limit for run retry iterations (default: 32).",
+894: 	"agents.defaults.runRetries.max": "Maximum absolute limit for run retry iterations to prevent runaway execution (default: 160).",
+895: 	"agents.list[].runRetries": "Optional per-agent override for the embedded OpenClaw runner's outer run loop retry iteration boundaries.",
+896: 	"agents.list[].runRetries.base": "Base number of run retry iterations for this agent.",
+897: 	"agents.list[].runRetries.perProfile": "Additional run retry iterations granted per fallback profile candidate for this agent.",
+898: 	"agents.list[].runRetries.min": "Minimum absolute limit for run retry iterations for this agent.",
+899: 	"agents.list[].runRetries.max": "Maximum absolute limit for run retry iterations for this agent.",
+900: 	"agents.defaults.embeddedAgent": "Embedded OpenClaw runner hardening controls for how workspace-local agent settings are trusted and applied in OpenClaw sessions.",
+901: 	"agents.defaults.embeddedAgent.projectSettingsPolicy": "How embedded OpenClaw handles workspace-local `.openclaw/settings.json`: \"sanitize\" (default) strips shellPath/shellCommandPrefix, \"ignore\" disables project settings entirely, and \"trusted\" applies project settings as-is.",
+902: 	"agents.defaults.embeddedAgent.executionContract": "Embedded OpenClaw execution contract: \"default\" keeps the standard runner behavior, while \"strict-agentic\" enables structured plan tracking and non-visible turn recovery for supported OpenAI/OpenAI Codex GPT-5-family runs.",
+903: 	"agents.list[].embeddedAgent": "Optional per-agent embedded OpenClaw overrides. Use this to opt specific agents into stricter GPT-5 execution behavior without changing the global default.",
+904: 	"agents.list[].embeddedAgent.executionContract": "Optional per-agent embedded OpenClaw execution contract override. Set \"strict-agentic\" to enable structured plan tracking and non-visible turn recovery for that agent on supported OpenAI/OpenAI Codex GPT-5-family runs, or \"default\" to inherit the standard runner behavior.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+HIT=1806: 	"agents.defaults.compaction.reserveTokensFloor": "Compaction Reserve Token Floor",
+1788: 	"agents.defaults.voiceModel.fallbacks": "Voice Model Fallbacks",
+1789: 	"agents.defaults.voiceModel.timeoutMs": "Voice Timeout (ms)",
+1790: 	"agents.defaults.mediaGenerationAutoProviderFallback": "Media Generation Auto Provider Fallback",
+1791: 	"agents.defaults.pdfModel.primary": "PDF Model",
+1792: 	"agents.defaults.pdfModel.fallbacks": "PDF Model Fallbacks",
+1793: 	"agents.defaults.pdfMaxBytesMb": "PDF Max Size (MB)",
+1794: 	"agents.defaults.pdfMaxPages": "PDF Max Pages",
+1795: 	"agents.defaults.imageMaxDimensionPx": "Image Max Dimension (px)",
+1796: 	"agents.defaults.imageQuality": "Image Quality",
+1797: 	"agents.defaults.humanDelay.mode": "Human Delay Mode",
+1798: 	"agents.defaults.humanDelay.minMs": "Human Delay Min (ms)",
+1799: 	"agents.defaults.humanDelay.maxMs": "Human Delay Max (ms)",
+1800: 	"agents.defaults.cliBackends": "CLI Backends",
+1801: 	"agents.defaults.compaction": "Compaction",
+1802: 	"agents.defaults.compaction.mode": "Compaction Mode",
+1803: 	"agents.defaults.compaction.provider": "Compaction Provider",
+1804: 	"agents.defaults.compaction.reserveTokens": "Compaction Reserve Tokens",
+1805: 	"agents.defaults.compaction.keepRecentTokens": "Compaction Keep Recent Tokens",
+1806: 	"agents.defaults.compaction.reserveTokensFloor": "Compaction Reserve Token Floor",
+1807: 	"agents.defaults.compaction.maxHistoryShare": "Compaction Max History Share",
+1808: 	"agents.defaults.compaction.identifierPolicy": "Compaction Identifier Policy",
+1809: 	"agents.defaults.compaction.identifierInstructions": "Compaction Identifier Instructions",
+1810: 	"agents.defaults.compaction.recentTurnsPreserve": "Compaction Preserve Recent Turns",
+1811: 	"agents.defaults.compaction.qualityGuard": "Compaction Quality Guard",
+1812: 	"agents.defaults.compaction.qualityGuard.enabled": "Compaction Quality Guard Enabled",
+1813: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Compaction Quality Guard Max Retries",
+1814: 	"agents.defaults.compaction.midTurnPrecheck": "Compaction Mid-turn Precheck",
+1815: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Compaction Mid-turn Precheck Enabled",
+1816: 	"agents.defaults.compaction.postIndexSync": "Compaction Post-Index Sync",
+1817: 	"agents.defaults.compaction.postCompactionSections": "Post-Compaction Context Sections",
+1818: 	"agents.defaults.compaction.timeoutSeconds": "Compaction Timeout (Seconds)",
+1819: 	"agents.defaults.compaction.model": "Compaction Model Override",
+1820: 	"agents.defaults.compaction.truncateAfterCompaction": "Rotate Transcript After Compaction",
+1821: 	"agents.defaults.compaction.maxActiveTranscriptBytes": "Compaction Active Transcript Size Threshold",
+1822: 	"agents.defaults.compaction.notifyUser": "Compaction Notify User",
+1823: 	"agents.defaults.compaction.memoryFlush": "Compaction Memory Flush",
+1824: 	"agents.defaults.compaction.memoryFlush.enabled": "Compaction Memory Flush Enabled",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+HIT=1826: 	"agents.defaults.compaction.memoryFlush.softThresholdTokens": "Compaction Memory Flush Soft Threshold",
+1808: 	"agents.defaults.compaction.identifierPolicy": "Compaction Identifier Policy",
+1809: 	"agents.defaults.compaction.identifierInstructions": "Compaction Identifier Instructions",
+1810: 	"agents.defaults.compaction.recentTurnsPreserve": "Compaction Preserve Recent Turns",
+1811: 	"agents.defaults.compaction.qualityGuard": "Compaction Quality Guard",
+1812: 	"agents.defaults.compaction.qualityGuard.enabled": "Compaction Quality Guard Enabled",
+1813: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Compaction Quality Guard Max Retries",
+1814: 	"agents.defaults.compaction.midTurnPrecheck": "Compaction Mid-turn Precheck",
+1815: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Compaction Mid-turn Precheck Enabled",
+1816: 	"agents.defaults.compaction.postIndexSync": "Compaction Post-Index Sync",
+1817: 	"agents.defaults.compaction.postCompactionSections": "Post-Compaction Context Sections",
+1818: 	"agents.defaults.compaction.timeoutSeconds": "Compaction Timeout (Seconds)",
+1819: 	"agents.defaults.compaction.model": "Compaction Model Override",
+1820: 	"agents.defaults.compaction.truncateAfterCompaction": "Rotate Transcript After Compaction",
+1821: 	"agents.defaults.compaction.maxActiveTranscriptBytes": "Compaction Active Transcript Size Threshold",
+1822: 	"agents.defaults.compaction.notifyUser": "Compaction Notify User",
+1823: 	"agents.defaults.compaction.memoryFlush": "Compaction Memory Flush",
+1824: 	"agents.defaults.compaction.memoryFlush.enabled": "Compaction Memory Flush Enabled",
+1825: 	"agents.defaults.compaction.memoryFlush.model": "Compaction Memory Flush Model Override",
+1826: 	"agents.defaults.compaction.memoryFlush.softThresholdTokens": "Compaction Memory Flush Soft Threshold",
+1827: 	"agents.defaults.compaction.memoryFlush.forceFlushTranscriptBytes": "Compaction Memory Flush Transcript Size Threshold",
+1828: 	"agents.defaults.compaction.memoryFlush.prompt": "Compaction Memory Flush Prompt",
+1829: 	"agents.defaults.compaction.memoryFlush.systemPrompt": "Compaction Memory Flush System Prompt",
+1830: 	"agents.defaults.runRetries": "Run Retries",
+1831: 	"agents.defaults.runRetries.base": "Run Retries Base",
+1832: 	"agents.defaults.runRetries.perProfile": "Run Retries Per Profile",
+1833: 	"agents.defaults.runRetries.min": "Run Retries Minimum",
+1834: 	"agents.defaults.runRetries.max": "Run Retries Maximum",
+1835: 	"agents.list[].runRetries": "Agent Run Retries",
+1836: 	"agents.list[].runRetries.base": "Agent Run Retries Base",
+1837: 	"agents.list[].runRetries.perProfile": "Agent Run Retries Per Profile",
+1838: 	"agents.list[].runRetries.min": "Agent Run Retries Minimum",
+1839: 	"agents.list[].runRetries.max": "Agent Run Retries Maximum",
+1840: 	"agents.defaults.embeddedAgent": "Embedded OpenClaw",
+1841: 	"agents.defaults.embeddedAgent.projectSettingsPolicy": "Embedded OpenClaw Project Settings Policy",
+1842: 	"agents.defaults.embeddedAgent.executionContract": "Embedded OpenClaw Execution Contract",
+1843: 	"agents.defaults.heartbeat.includeSystemPromptSection": "Heartbeat Include System Prompt Section",
+1844: 	"agents.list.*.heartbeat.includeSystemPromptSection": "Heartbeat Include System Prompt Section",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/memory-state-B0GCV1Gi.d.ts
+HIT=226:   softThresholdTokens: number;
+208:     agentSessionKey?: string;
+209:   }): Promise<MemoryCorpusSearchResult[]>;
+210:   get(params: {
+211:     lookup: string;
+212:     fromLine?: number;
+213:     lineCount?: number;
+214:     agentSessionKey?: string;
+215:   }): Promise<MemoryCorpusGetResult | null>;
+216: };
+217: type MemoryCorpusSupplementRegistration = {
+218:   pluginId: string;
+219:   supplement: MemoryCorpusSupplement;
+220: };
+221: type MemoryPromptSupplementRegistration = {
+222:   pluginId: string;
+223:   builder: MemoryPromptSectionBuilder;
+224: };
+225: type MemoryFlushPlan = {
+226:   softThresholdTokens: number;
+227:   forceFlushTranscriptBytes: number;
+228:   reserveTokensFloor: number;
+229:   model?: string;
+230:   prompt: string;
+231:   systemPrompt: string;
+232:   relativePath: string;
+233: };
+234: type MemoryFlushPlanResolver = (params: {
+235:   cfg?: OpenClawConfig;
+236:   nowMs?: number;
+237: }) => MemoryFlushPlan | null;
+238: type RegisteredMemorySearchManager = MemorySearchManager;
+239: type MemoryRuntimeQmdConfig = {
+240:   command?: string;
+241: };
+242: type MemoryRuntimeBackendConfig = {
+243:   backend: "builtin";
+244: } | {
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/memory-state-B0GCV1Gi.d.ts
+HIT=228:   reserveTokensFloor: number;
+210:   get(params: {
+211:     lookup: string;
+212:     fromLine?: number;
+213:     lineCount?: number;
+214:     agentSessionKey?: string;
+215:   }): Promise<MemoryCorpusGetResult | null>;
+216: };
+217: type MemoryCorpusSupplementRegistration = {
+218:   pluginId: string;
+219:   supplement: MemoryCorpusSupplement;
+220: };
+221: type MemoryPromptSupplementRegistration = {
+222:   pluginId: string;
+223:   builder: MemoryPromptSectionBuilder;
+224: };
+225: type MemoryFlushPlan = {
+226:   softThresholdTokens: number;
+227:   forceFlushTranscriptBytes: number;
+228:   reserveTokensFloor: number;
+229:   model?: string;
+230:   prompt: string;
+231:   systemPrompt: string;
+232:   relativePath: string;
+233: };
+234: type MemoryFlushPlanResolver = (params: {
+235:   cfg?: OpenClawConfig;
+236:   nowMs?: number;
+237: }) => MemoryFlushPlan | null;
+238: type RegisteredMemorySearchManager = MemorySearchManager;
+239: type MemoryRuntimeQmdConfig = {
+240:   command?: string;
+241: };
+242: type MemoryRuntimeBackendConfig = {
+243:   backend: "builtin";
+244: } | {
+245:   backend: "qmd";
+246:   qmd?: MemoryRuntimeQmdConfig;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+HIT=1557: To prevent this, increase your compaction buffer by setting \`agents.defaults.compaction.reserveTokensFloor\` to ${computeContextAwareReserveTokensFloor(contextWindowTokens)} or higher in your config.`;
+1539: 			cfg: params.cfg,
+1540: 			provider: params.primaryProvider,
+1541: 			model: params.primaryModel,
+1542: 			allowAsyncLoad: false
+1543: 		});
+1544: 		if (typeof resolved === "number" && resolved > 0) modelWindow = resolved;
+1545: 	}
+1546: 	const contextWindow = modelWindow ?? trustedSessionWindow;
+1547: 	const agentCap = resolveAgentContextTokensForHint({
+1548: 		cfg: params.cfg,
+1549: 		agentId: params.agentId
+1550: 	});
+1551: 	if (agentCap !== void 0 && contextWindow !== void 0) return Math.min(agentCap, contextWindow);
+1552: 	return agentCap ?? contextWindow;
+1553: }
+1554: function buildContextOverflowResetHint(contextWindowTokens) {
+1555: 	return `
+1556: 
+1557: To prevent this, increase your compaction buffer by setting \`agents.defaults.compaction.reserveTokensFloor\` to ${computeContextAwareReserveTokensFloor(contextWindowTokens)} or higher in your config.`;
+1558: }
+1559: function resolveAgentHeartbeatModelRaw(params) {
+1560: 	const defaultModel = normalizeOptionalString(params.cfg.agents?.defaults?.heartbeat?.model);
+1561: 	const agentId = normalizeLowercaseStringOrEmpty(params.agentId);
+1562: 	return (agentId ? normalizeOptionalString(params.cfg.agents?.list?.find((entry) => normalizeLowercaseStringOrEmpty(entry?.id) === agentId)?.heartbeat?.model) : void 0) ?? defaultModel;
+1563: }
+1564: function normalizeModelRefForCompare(ref) {
+1565: 	if (!ref) return;
+1566: 	const provider = normalizeLowercaseStringOrEmpty(ref.provider);
+1567: 	const model = normalizeLowercaseStringOrEmpty(ref.model);
+1568: 	return provider && model ? {
+1569: 		provider,
+1570: 		model
+1571: 	} : void 0;
+1572: }
+1573: function modelRefsEqual(left, right) {
+1574: 	const normalizedLeft = normalizeModelRefForCompare(left);
+1575: 	const normalizedRight = normalizeModelRefForCompare(right);
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+HIT=3109: function resolvePositiveIntegerParam(sources, key) {
+3091: function resolveMaxActiveTranscriptBytes(cfg) {
+3092: 	const compaction = cfg?.agents?.defaults?.compaction;
+3093: 	if (compaction?.truncateAfterCompaction !== true) return;
+3094: 	const parsed = parseNonNegativeByteSize(compaction.maxActiveTranscriptBytes);
+3095: 	return typeof parsed === "number" && parsed > 0 ? parsed : void 0;
+3096: }
+3097: function resolvePositiveTokenCount(value) {
+3098: 	return typeof value === "number" && Number.isFinite(value) && value > 0 ? Math.floor(value) : void 0;
+3099: }
+3100: function asRecord(value) {
+3101: 	return value && typeof value === "object" && !Array.isArray(value) ? value : void 0;
+3102: }
+3103: function resolveBooleanParam(sources, key) {
+3104: 	for (const source of sources.toReversed()) {
+3105: 		const value = source?.[key];
+3106: 		if (typeof value === "boolean") return value;
+3107: 	}
+3108: }
+3109: function resolvePositiveIntegerParam(sources, key) {
+3110: 	for (const source of sources.toReversed()) {
+3111: 		const value = source?.[key];
+3112: 		if (typeof value === "number" && Number.isFinite(value) && value > 0) return Math.floor(value);
+3113: 	}
+3114: }
+3115: function resolveResponsesServerCompactionThreshold(params) {
+3116: 	const provider = params.provider?.trim();
+3117: 	const modelId = params.modelId?.trim();
+3118: 	if (!provider || !modelId) return;
+3119: 	const legacyKey = legacyModelKey(provider, modelId);
+3120: 	const providerConfig = params.cfg?.models?.providers?.[provider];
+3121: 	const modelConfig = params.cfg?.agents?.defaults?.models?.[modelKey(provider, modelId)] ?? (legacyKey ? params.cfg?.agents?.defaults?.models?.[legacyKey] : void 0);
+3122: 	const providerModelConfig = providerConfig?.models?.find((entry) => entry.id === modelId);
+3123: 	const sources = [
+3124: 		asRecord(providerConfig?.params),
+3125: 		asRecord(providerModelConfig?.params),
+3126: 		asRecord(params.cfg?.agents?.defaults?.params),
+3127: 		asRecord(modelConfig?.params)
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+HIT=3131: 	return resolvePositiveIntegerParam(sources, "responsesCompactThreshold");
+3113: 	}
+3114: }
+3115: function resolveResponsesServerCompactionThreshold(params) {
+3116: 	const provider = params.provider?.trim();
+3117: 	const modelId = params.modelId?.trim();
+3118: 	if (!provider || !modelId) return;
+3119: 	const legacyKey = legacyModelKey(provider, modelId);
+3120: 	const providerConfig = params.cfg?.models?.providers?.[provider];
+3121: 	const modelConfig = params.cfg?.agents?.defaults?.models?.[modelKey(provider, modelId)] ?? (legacyKey ? params.cfg?.agents?.defaults?.models?.[legacyKey] : void 0);
+3122: 	const providerModelConfig = providerConfig?.models?.find((entry) => entry.id === modelId);
+3123: 	const sources = [
+3124: 		asRecord(providerConfig?.params),
+3125: 		asRecord(providerModelConfig?.params),
+3126: 		asRecord(params.cfg?.agents?.defaults?.params),
+3127: 		asRecord(modelConfig?.params)
+3128: 	];
+3129: 	const serverCompaction = resolveBooleanParam(sources, "responsesServerCompaction");
+3130: 	if (!(provider === "openai" ? serverCompaction !== false : serverCompaction === true)) return;
+3131: 	return resolvePositiveIntegerParam(sources, "responsesCompactThreshold");
+3132: }
+3133: function resolveMemoryFlushGateState(params) {
+3134: 	if (!params.entry) return null;
+3135: 	const totalTokens = resolvePositiveTokenCount(params.tokenCount) ?? resolveFreshSessionTotalTokens(params.entry);
+3136: 	if (!totalTokens || totalTokens <= 0) return null;
+3137: 	const contextWindow = Math.max(1, Math.floor(params.contextWindowTokens));
+3138: 	const reserveTokens = Math.max(0, Math.floor(params.reserveTokensFloor));
+3139: 	const softThreshold = Math.max(0, Math.floor(params.softThresholdTokens));
+3140: 	const threshold = Math.max(0, contextWindow - reserveTokens - softThreshold, Math.floor(params.minimumThresholdTokens ?? 0));
+3141: 	if (threshold <= 0) return null;
+3142: 	return {
+3143: 		entry: params.entry,
+3144: 		totalTokens,
+3145: 		threshold
+3146: 	};
+3147: }
+3148: function shouldRunMemoryFlush(params) {
+3149: 	const state = resolveMemoryFlushGateState(params);
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+HIT=3138: 	const reserveTokens = Math.max(0, Math.floor(params.reserveTokensFloor));
+3120: 	const providerConfig = params.cfg?.models?.providers?.[provider];
+3121: 	const modelConfig = params.cfg?.agents?.defaults?.models?.[modelKey(provider, modelId)] ?? (legacyKey ? params.cfg?.agents?.defaults?.models?.[legacyKey] : void 0);
+3122: 	const providerModelConfig = providerConfig?.models?.find((entry) => entry.id === modelId);
+3123: 	const sources = [
+3124: 		asRecord(providerConfig?.params),
+3125: 		asRecord(providerModelConfig?.params),
+3126: 		asRecord(params.cfg?.agents?.defaults?.params),
+3127: 		asRecord(modelConfig?.params)
+3128: 	];
+3129: 	const serverCompaction = resolveBooleanParam(sources, "responsesServerCompaction");
+3130: 	if (!(provider === "openai" ? serverCompaction !== false : serverCompaction === true)) return;
+3131: 	return resolvePositiveIntegerParam(sources, "responsesCompactThreshold");
+3132: }
+3133: function resolveMemoryFlushGateState(params) {
+3134: 	if (!params.entry) return null;
+3135: 	const totalTokens = resolvePositiveTokenCount(params.tokenCount) ?? resolveFreshSessionTotalTokens(params.entry);
+3136: 	if (!totalTokens || totalTokens <= 0) return null;
+3137: 	const contextWindow = Math.max(1, Math.floor(params.contextWindowTokens));
+3138: 	const reserveTokens = Math.max(0, Math.floor(params.reserveTokensFloor));
+3139: 	const softThreshold = Math.max(0, Math.floor(params.softThresholdTokens));
+3140: 	const threshold = Math.max(0, contextWindow - reserveTokens - softThreshold, Math.floor(params.minimumThresholdTokens ?? 0));
+3141: 	if (threshold <= 0) return null;
+3142: 	return {
+3143: 		entry: params.entry,
+3144: 		totalTokens,
+3145: 		threshold
+3146: 	};
+3147: }
+3148: function shouldRunMemoryFlush(params) {
+3149: 	const state = resolveMemoryFlushGateState(params);
+3150: 	if (!state || state.totalTokens < state.threshold) return false;
+3151: 	if (hasAlreadyFlushedForCurrentCompaction(state.entry)) return false;
+3152: 	return true;
+3153: }
+3154: function shouldRunPreflightCompaction(params) {
+3155: 	const state = resolveMemoryFlushGateState(params);
+3156: 	return Boolean(state && state.totalTokens >= state.threshold);
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+HIT=3139: 	const softThreshold = Math.max(0, Math.floor(params.softThresholdTokens));
+3121: 	const modelConfig = params.cfg?.agents?.defaults?.models?.[modelKey(provider, modelId)] ?? (legacyKey ? params.cfg?.agents?.defaults?.models?.[legacyKey] : void 0);
+3122: 	const providerModelConfig = providerConfig?.models?.find((entry) => entry.id === modelId);
+3123: 	const sources = [
+3124: 		asRecord(providerConfig?.params),
+3125: 		asRecord(providerModelConfig?.params),
+3126: 		asRecord(params.cfg?.agents?.defaults?.params),
+3127: 		asRecord(modelConfig?.params)
+3128: 	];
+3129: 	const serverCompaction = resolveBooleanParam(sources, "responsesServerCompaction");
+3130: 	if (!(provider === "openai" ? serverCompaction !== false : serverCompaction === true)) return;
+3131: 	return resolvePositiveIntegerParam(sources, "responsesCompactThreshold");
+3132: }
+3133: function resolveMemoryFlushGateState(params) {
+3134: 	if (!params.entry) return null;
+3135: 	const totalTokens = resolvePositiveTokenCount(params.tokenCount) ?? resolveFreshSessionTotalTokens(params.entry);
+3136: 	if (!totalTokens || totalTokens <= 0) return null;
+3137: 	const contextWindow = Math.max(1, Math.floor(params.contextWindowTokens));
+3138: 	const reserveTokens = Math.max(0, Math.floor(params.reserveTokensFloor));
+3139: 	const softThreshold = Math.max(0, Math.floor(params.softThresholdTokens));
+3140: 	const threshold = Math.max(0, contextWindow - reserveTokens - softThreshold, Math.floor(params.minimumThresholdTokens ?? 0));
+3141: 	if (threshold <= 0) return null;
+3142: 	return {
+3143: 		entry: params.entry,
+3144: 		totalTokens,
+3145: 		threshold
+3146: 	};
+3147: }
+3148: function shouldRunMemoryFlush(params) {
+3149: 	const state = resolveMemoryFlushGateState(params);
+3150: 	if (!state || state.totalTokens < state.threshold) return false;
+3151: 	if (hasAlreadyFlushedForCurrentCompaction(state.entry)) return false;
+3152: 	return true;
+3153: }
+3154: function shouldRunPreflightCompaction(params) {
+3155: 	const state = resolveMemoryFlushGateState(params);
+3156: 	return Boolean(state && state.totalTokens >= state.threshold);
+3157: }
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+HIT=3140: 	const threshold = Math.max(0, contextWindow - reserveTokens - softThreshold, Math.floor(params.minimumThresholdTokens ?? 0));
+3122: 	const providerModelConfig = providerConfig?.models?.find((entry) => entry.id === modelId);
+3123: 	const sources = [
+3124: 		asRecord(providerConfig?.params),
+3125: 		asRecord(providerModelConfig?.params),
+3126: 		asRecord(params.cfg?.agents?.defaults?.params),
+3127: 		asRecord(modelConfig?.params)
+3128: 	];
+3129: 	const serverCompaction = resolveBooleanParam(sources, "responsesServerCompaction");
+3130: 	if (!(provider === "openai" ? serverCompaction !== false : serverCompaction === true)) return;
+3131: 	return resolvePositiveIntegerParam(sources, "responsesCompactThreshold");
+3132: }
+3133: function resolveMemoryFlushGateState(params) {
+3134: 	if (!params.entry) return null;
+3135: 	const totalTokens = resolvePositiveTokenCount(params.tokenCount) ?? resolveFreshSessionTotalTokens(params.entry);
+3136: 	if (!totalTokens || totalTokens <= 0) return null;
+3137: 	const contextWindow = Math.max(1, Math.floor(params.contextWindowTokens));
+3138: 	const reserveTokens = Math.max(0, Math.floor(params.reserveTokensFloor));
+3139: 	const softThreshold = Math.max(0, Math.floor(params.softThresholdTokens));
+3140: 	const threshold = Math.max(0, contextWindow - reserveTokens - softThreshold, Math.floor(params.minimumThresholdTokens ?? 0));
+3141: 	if (threshold <= 0) return null;
+3142: 	return {
+3143: 		entry: params.entry,
+3144: 		totalTokens,
+3145: 		threshold
+3146: 	};
+3147: }
+3148: function shouldRunMemoryFlush(params) {
+3149: 	const state = resolveMemoryFlushGateState(params);
+3150: 	if (!state || state.totalTokens < state.threshold) return false;
+3151: 	if (hasAlreadyFlushedForCurrentCompaction(state.entry)) return false;
+3152: 	return true;
+3153: }
+3154: function shouldRunPreflightCompaction(params) {
+3155: 	const state = resolveMemoryFlushGateState(params);
+3156: 	return Boolean(state && state.totalTokens >= state.threshold);
+3157: }
+3158: /**
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+HIT=3540: 	const reserveTokensFloor = memoryFlushPlan?.reserveTokensFloor ?? params.cfg.agents?.defaults?.compaction?.reserveTokensFloor ?? 2e4;
+3522: 		runtimePolicySessionKey: params.runtimePolicySessionKey
+3523: 	})) {
+3524: 		logVerbose(`preflightCompaction skipped: sessionKey=${params.sessionKey} runtime=codex reason=codex_native_auto_compaction`);
+3525: 		return entry ?? params.sessionEntry;
+3526: 	}
+3527: 	const contextWindowTokens = resolveMemoryFlushContextWindowTokens({
+3528: 		cfg: params.cfg,
+3529: 		provider: resolveFollowupContextConfigProvider({
+3530: 			cfg: params.cfg,
+3531: 			followupRun: params.followupRun,
+3532: 			sessionEntry: entry,
+3533: 			sessionKey: params.sessionKey,
+3534: 			runtimePolicySessionKey: params.runtimePolicySessionKey
+3535: 		}),
+3536: 		modelId: params.followupRun.run.model ?? params.defaultModel,
+3537: 		agentCfgContextTokens: params.agentCfgContextTokens
+3538: 	});
+3539: 	const memoryFlushPlan = resolveMemoryFlushPlan({ cfg: params.cfg });
+3540: 	const reserveTokensFloor = memoryFlushPlan?.reserveTokensFloor ?? params.cfg.agents?.defaults?.compaction?.reserveTokensFloor ?? 2e4;
+3541: 	const softThresholdTokens = memoryFlushPlan?.softThresholdTokens ?? 4e3;
+3542: 	const freshPersistedTokens = resolveFreshSessionTotalTokens(entry);
+3543: 	const persistedTotalTokens = entry.totalTokens;
+3544: 	const hasPersistedTotalTokens = typeof persistedTotalTokens === "number" && Number.isFinite(persistedTotalTokens) && persistedTotalTokens > 0;
+3545: 	const promptTokenEstimate = estimatePromptTokensForMemoryFlush(params.promptForEstimate ?? params.followupRun.prompt);
+3546: 	const serverCompactionThreshold = resolveResponsesServerCompactionThreshold({
+3547: 		cfg: params.cfg,
+3548: 		provider: params.followupRun.run.provider,
+3549: 		modelId: params.followupRun.run.model ?? params.defaultModel
+3550: 	});
+3551: 	const threshold = Math.max(contextWindowTokens - reserveTokensFloor - softThresholdTokens, serverCompactionThreshold ?? 0);
+3552: 	const freshNeedsOutputRead = typeof freshPersistedTokens === "number" && typeof promptTokenEstimate === "number" && threshold > 0 && freshPersistedTokens + promptTokenEstimate >= threshold - TRANSCRIPT_OUTPUT_READ_BUFFER_TOKENS;
+3553: 	const maxActiveTranscriptBytes = resolveMaxActiveTranscriptBytes(params.cfg);
+3554: 	const shouldCheckActiveTranscriptBytes = typeof maxActiveTranscriptBytes === "number";
+3555: 	const transcriptUsageTokens = typeof freshPersistedTokens === "number" && !freshNeedsOutputRead ? void 0 : await estimatePromptTokensFromSessionTranscript({
+3556: 		sessionId: entry.sessionId,
+3557: 		sessionEntry: entry,
+3558: 		sessionKey: params.sessionKey ?? params.followupRun.run.sessionKey,
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+HIT=3541: 	const softThresholdTokens = memoryFlushPlan?.softThresholdTokens ?? 4e3;
+3523: 	})) {
+3524: 		logVerbose(`preflightCompaction skipped: sessionKey=${params.sessionKey} runtime=codex reason=codex_native_auto_compaction`);
+3525: 		return entry ?? params.sessionEntry;
+3526: 	}
+3527: 	const contextWindowTokens = resolveMemoryFlushContextWindowTokens({
+3528: 		cfg: params.cfg,
+3529: 		provider: resolveFollowupContextConfigProvider({
+3530: 			cfg: params.cfg,
+3531: 			followupRun: params.followupRun,
+3532: 			sessionEntry: entry,
+3533: 			sessionKey: params.sessionKey,
+3534: 			runtimePolicySessionKey: params.runtimePolicySessionKey
+3535: 		}),
+3536: 		modelId: params.followupRun.run.model ?? params.defaultModel,
+3537: 		agentCfgContextTokens: params.agentCfgContextTokens
+3538: 	});
+3539: 	const memoryFlushPlan = resolveMemoryFlushPlan({ cfg: params.cfg });
+3540: 	const reserveTokensFloor = memoryFlushPlan?.reserveTokensFloor ?? params.cfg.agents?.defaults?.compaction?.reserveTokensFloor ?? 2e4;
+3541: 	const softThresholdTokens = memoryFlushPlan?.softThresholdTokens ?? 4e3;
+3542: 	const freshPersistedTokens = resolveFreshSessionTotalTokens(entry);
+3543: 	const persistedTotalTokens = entry.totalTokens;
+3544: 	const hasPersistedTotalTokens = typeof persistedTotalTokens === "number" && Number.isFinite(persistedTotalTokens) && persistedTotalTokens > 0;
+3545: 	const promptTokenEstimate = estimatePromptTokensForMemoryFlush(params.promptForEstimate ?? params.followupRun.prompt);
+3546: 	const serverCompactionThreshold = resolveResponsesServerCompactionThreshold({
+3547: 		cfg: params.cfg,
+3548: 		provider: params.followupRun.run.provider,
+3549: 		modelId: params.followupRun.run.model ?? params.defaultModel
+3550: 	});
+3551: 	const threshold = Math.max(contextWindowTokens - reserveTokensFloor - softThresholdTokens, serverCompactionThreshold ?? 0);
+3552: 	const freshNeedsOutputRead = typeof freshPersistedTokens === "number" && typeof promptTokenEstimate === "number" && threshold > 0 && freshPersistedTokens + promptTokenEstimate >= threshold - TRANSCRIPT_OUTPUT_READ_BUFFER_TOKENS;
+3553: 	const maxActiveTranscriptBytes = resolveMaxActiveTranscriptBytes(params.cfg);
+3554: 	const shouldCheckActiveTranscriptBytes = typeof maxActiveTranscriptBytes === "number";
+3555: 	const transcriptUsageTokens = typeof freshPersistedTokens === "number" && !freshNeedsOutputRead ? void 0 : await estimatePromptTokensFromSessionTranscript({
+3556: 		sessionId: entry.sessionId,
+3557: 		sessionEntry: entry,
+3558: 		sessionKey: params.sessionKey ?? params.followupRun.run.sessionKey,
+3559: 		sessionFile: entry.sessionFile ?? params.followupRun.run.sessionFile,
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+HIT=3551: 	const threshold = Math.max(contextWindowTokens - reserveTokensFloor - softThresholdTokens, serverCompactionThreshold ?? 0);
+3533: 			sessionKey: params.sessionKey,
+3534: 			runtimePolicySessionKey: params.runtimePolicySessionKey
+3535: 		}),
+3536: 		modelId: params.followupRun.run.model ?? params.defaultModel,
+3537: 		agentCfgContextTokens: params.agentCfgContextTokens
+3538: 	});
+3539: 	const memoryFlushPlan = resolveMemoryFlushPlan({ cfg: params.cfg });
+3540: 	const reserveTokensFloor = memoryFlushPlan?.reserveTokensFloor ?? params.cfg.agents?.defaults?.compaction?.reserveTokensFloor ?? 2e4;
+3541: 	const softThresholdTokens = memoryFlushPlan?.softThresholdTokens ?? 4e3;
+3542: 	const freshPersistedTokens = resolveFreshSessionTotalTokens(entry);
+3543: 	const persistedTotalTokens = entry.totalTokens;
+3544: 	const hasPersistedTotalTokens = typeof persistedTotalTokens === "number" && Number.isFinite(persistedTotalTokens) && persistedTotalTokens > 0;
+3545: 	const promptTokenEstimate = estimatePromptTokensForMemoryFlush(params.promptForEstimate ?? params.followupRun.prompt);
+3546: 	const serverCompactionThreshold = resolveResponsesServerCompactionThreshold({
+3547: 		cfg: params.cfg,
+3548: 		provider: params.followupRun.run.provider,
+3549: 		modelId: params.followupRun.run.model ?? params.defaultModel
+3550: 	});
+3551: 	const threshold = Math.max(contextWindowTokens - reserveTokensFloor - softThresholdTokens, serverCompactionThreshold ?? 0);
+3552: 	const freshNeedsOutputRead = typeof freshPersistedTokens === "number" && typeof promptTokenEstimate === "number" && threshold > 0 && freshPersistedTokens + promptTokenEstimate >= threshold - TRANSCRIPT_OUTPUT_READ_BUFFER_TOKENS;
+3553: 	const maxActiveTranscriptBytes = resolveMaxActiveTranscriptBytes(params.cfg);
+3554: 	const shouldCheckActiveTranscriptBytes = typeof maxActiveTranscriptBytes === "number";
+3555: 	const transcriptUsageTokens = typeof freshPersistedTokens === "number" && !freshNeedsOutputRead ? void 0 : await estimatePromptTokensFromSessionTranscript({
+3556: 		sessionId: entry.sessionId,
+3557: 		sessionEntry: entry,
+3558: 		sessionKey: params.sessionKey ?? params.followupRun.run.sessionKey,
+3559: 		sessionFile: entry.sessionFile ?? params.followupRun.run.sessionFile,
+3560: 		storePath: params.storePath
+3561: 	});
+3562: 	const transcriptSizeSnapshot = shouldCheckActiveTranscriptBytes && transcriptUsageTokens?.transcriptByteSize === void 0 ? await readSessionLogSnapshot({
+3563: 		sessionId: entry.sessionId,
+3564: 		sessionEntry: entry.sessionFile || !params.followupRun.run.sessionFile ? entry : {
+3565: 			...entry,
+3566: 			sessionFile: params.followupRun.run.sessionFile
+3567: 		},
+3568: 		sessionKey: params.sessionKey ?? params.followupRun.run.sessionKey,
+3569: 		opts: { storePath: params.storePath },
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+HIT=3587: 		reserveTokensFloor,
+3569: 		opts: { storePath: params.storePath },
+3570: 		includeByteSize: true,
+3571: 		includeUsage: false
+3572: 	}) : void 0;
+3573: 	const activeTranscriptBytes = transcriptUsageTokens?.transcriptByteSize ?? transcriptSizeSnapshot?.byteSize;
+3574: 	const shouldCompactByTranscriptBytes = typeof activeTranscriptBytes === "number" && typeof maxActiveTranscriptBytes === "number" && activeTranscriptBytes >= maxActiveTranscriptBytes;
+3575: 	const stalePersistedPromptTokens = hasPersistedTotalTokens && entry.totalTokensFresh !== false ? Math.floor(persistedTotalTokens) : void 0;
+3576: 	const transcriptPromptTokens = transcriptUsageTokens?.promptTokens;
+3577: 	const transcriptOutputTokens = transcriptUsageTokens?.outputTokens;
+3578: 	const usageProjectedTokenCount = typeof transcriptPromptTokens === "number" ? resolveEffectivePromptTokens(transcriptPromptTokens, transcriptOutputTokens, promptTokenEstimate) : void 0;
+3579: 	const freshProjectedTokenCount = typeof freshPersistedTokens === "number" ? resolveEffectivePromptTokens(freshPersistedTokens, transcriptOutputTokens, promptTokenEstimate) : void 0;
+3580: 	const projectedTokenCount = Math.max(usageProjectedTokenCount ?? 0, freshProjectedTokenCount ?? 0, stalePersistedPromptTokens ?? 0);
+3581: 	const tokenCountForCompaction = Number.isFinite(projectedTokenCount) && projectedTokenCount > 0 ? projectedTokenCount : void 0;
+3582: 	logVerbose(`preflightCompaction check: sessionKey=${params.sessionKey} tokenCount=${tokenCountForCompaction ?? freshPersistedTokens ?? "undefined"} contextWindow=${contextWindowTokens} threshold=${threshold} serverCompactionThreshold=${serverCompactionThreshold ?? "undefined"} isHeartbeat=${params.isHeartbeat} isCli=${isCli} persistedFresh=${entry?.totalTokensFresh === true} transcriptPromptTokens=${transcriptPromptTokens ?? "undefined"} promptTokensEst=${promptTokenEstimate ?? "undefined"} activeTranscriptBytes=${activeTranscriptBytes ?? "undefined"} maxActiveTranscriptBytes=${maxActiveTranscriptBytes ?? "undefined"} sizeTrigger=${shouldCompactByTranscriptBytes}`);
+3583: 	if (!(shouldRunPreflightCompaction({
+3584: 		entry,
+3585: 		tokenCount: tokenCountForCompaction,
+3586: 		contextWindowTokens,
+3587: 		reserveTokensFloor,
+3588: 		softThresholdTokens,
+3589: 		minimumThresholdTokens: serverCompactionThreshold
+3590: 	}) || shouldCompactByTranscriptBytes)) return entry ?? params.sessionEntry;
+3591: 	const compactionTrigger = shouldCompactByTranscriptBytes ? "transcript_bytes" : "tokens";
+3592: 	logVerbose(`preflightCompaction triggered: sessionKey=${params.sessionKey} tokenCount=${tokenCountForCompaction ?? freshPersistedTokens ?? "undefined"} threshold=${threshold} trigger=${compactionTrigger} activeTranscriptBytes=${activeTranscriptBytes ?? "undefined"} maxActiveTranscriptBytes=${maxActiveTranscriptBytes ?? "undefined"}`);
+3593: 	params.replyOperation.setPhase("preflight_compacting");
+3594: 	const notifyCompaction = async (phase) => {
+3595: 		try {
+3596: 			await params.onCompactionNotice?.(phase);
+3597: 		} catch (err) {
+3598: 			logVerbose(`preflightCompaction notice delivery failed: ${String(err)}`);
+3599: 		}
+3600: 	};
+3601: 	let startedCompactionNotice = false;
+3602: 	let terminalCompactionNoticeSent = false;
+3603: 	const notifyStartCompaction = async () => {
+3604: 		startedCompactionNotice = true;
+3605: 		await notifyCompaction("start");
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+HIT=3588: 		softThresholdTokens,
+3570: 		includeByteSize: true,
+3571: 		includeUsage: false
+3572: 	}) : void 0;
+3573: 	const activeTranscriptBytes = transcriptUsageTokens?.transcriptByteSize ?? transcriptSizeSnapshot?.byteSize;
+3574: 	const shouldCompactByTranscriptBytes = typeof activeTranscriptBytes === "number" && typeof maxActiveTranscriptBytes === "number" && activeTranscriptBytes >= maxActiveTranscriptBytes;
+3575: 	const stalePersistedPromptTokens = hasPersistedTotalTokens && entry.totalTokensFresh !== false ? Math.floor(persistedTotalTokens) : void 0;
+3576: 	const transcriptPromptTokens = transcriptUsageTokens?.promptTokens;
+3577: 	const transcriptOutputTokens = transcriptUsageTokens?.outputTokens;
+3578: 	const usageProjectedTokenCount = typeof transcriptPromptTokens === "number" ? resolveEffectivePromptTokens(transcriptPromptTokens, transcriptOutputTokens, promptTokenEstimate) : void 0;
+3579: 	const freshProjectedTokenCount = typeof freshPersistedTokens === "number" ? resolveEffectivePromptTokens(freshPersistedTokens, transcriptOutputTokens, promptTokenEstimate) : void 0;
+3580: 	const projectedTokenCount = Math.max(usageProjectedTokenCount ?? 0, freshProjectedTokenCount ?? 0, stalePersistedPromptTokens ?? 0);
+3581: 	const tokenCountForCompaction = Number.isFinite(projectedTokenCount) && projectedTokenCount > 0 ? projectedTokenCount : void 0;
+3582: 	logVerbose(`preflightCompaction check: sessionKey=${params.sessionKey} tokenCount=${tokenCountForCompaction ?? freshPersistedTokens ?? "undefined"} contextWindow=${contextWindowTokens} threshold=${threshold} serverCompactionThreshold=${serverCompactionThreshold ?? "undefined"} isHeartbeat=${params.isHeartbeat} isCli=${isCli} persistedFresh=${entry?.totalTokensFresh === true} transcriptPromptTokens=${transcriptPromptTokens ?? "undefined"} promptTokensEst=${promptTokenEstimate ?? "undefined"} activeTranscriptBytes=${activeTranscriptBytes ?? "undefined"} maxActiveTranscriptBytes=${maxActiveTranscriptBytes ?? "undefined"} sizeTrigger=${shouldCompactByTranscriptBytes}`);
+3583: 	if (!(shouldRunPreflightCompaction({
+3584: 		entry,
+3585: 		tokenCount: tokenCountForCompaction,
+3586: 		contextWindowTokens,
+3587: 		reserveTokensFloor,
+3588: 		softThresholdTokens,
+3589: 		minimumThresholdTokens: serverCompactionThreshold
+3590: 	}) || shouldCompactByTranscriptBytes)) return entry ?? params.sessionEntry;
+3591: 	const compactionTrigger = shouldCompactByTranscriptBytes ? "transcript_bytes" : "tokens";
+3592: 	logVerbose(`preflightCompaction triggered: sessionKey=${params.sessionKey} tokenCount=${tokenCountForCompaction ?? freshPersistedTokens ?? "undefined"} threshold=${threshold} trigger=${compactionTrigger} activeTranscriptBytes=${activeTranscriptBytes ?? "undefined"} maxActiveTranscriptBytes=${maxActiveTranscriptBytes ?? "undefined"}`);
+3593: 	params.replyOperation.setPhase("preflight_compacting");
+3594: 	const notifyCompaction = async (phase) => {
+3595: 		try {
+3596: 			await params.onCompactionNotice?.(phase);
+3597: 		} catch (err) {
+3598: 			logVerbose(`preflightCompaction notice delivery failed: ${String(err)}`);
+3599: 		}
+3600: 	};
+3601: 	let startedCompactionNotice = false;
+3602: 	let terminalCompactionNoticeSent = false;
+3603: 	const notifyStartCompaction = async () => {
+3604: 		startedCompactionNotice = true;
+3605: 		await notifyCompaction("start");
+3606: 	};
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+HIT=3589: 		minimumThresholdTokens: serverCompactionThreshold
+3571: 		includeUsage: false
+3572: 	}) : void 0;
+3573: 	const activeTranscriptBytes = transcriptUsageTokens?.transcriptByteSize ?? transcriptSizeSnapshot?.byteSize;
+3574: 	const shouldCompactByTranscriptBytes = typeof activeTranscriptBytes === "number" && typeof maxActiveTranscriptBytes === "number" && activeTranscriptBytes >= maxActiveTranscriptBytes;
+3575: 	const stalePersistedPromptTokens = hasPersistedTotalTokens && entry.totalTokensFresh !== false ? Math.floor(persistedTotalTokens) : void 0;
+3576: 	const transcriptPromptTokens = transcriptUsageTokens?.promptTokens;
+3577: 	const transcriptOutputTokens = transcriptUsageTokens?.outputTokens;
+3578: 	const usageProjectedTokenCount = typeof transcriptPromptTokens === "number" ? resolveEffectivePromptTokens(transcriptPromptTokens, transcriptOutputTokens, promptTokenEstimate) : void 0;
+3579: 	const freshProjectedTokenCount = typeof freshPersistedTokens === "number" ? resolveEffectivePromptTokens(freshPersistedTokens, transcriptOutputTokens, promptTokenEstimate) : void 0;
+3580: 	const projectedTokenCount = Math.max(usageProjectedTokenCount ?? 0, freshProjectedTokenCount ?? 0, stalePersistedPromptTokens ?? 0);
+3581: 	const tokenCountForCompaction = Number.isFinite(projectedTokenCount) && projectedTokenCount > 0 ? projectedTokenCount : void 0;
+3582: 	logVerbose(`preflightCompaction check: sessionKey=${params.sessionKey} tokenCount=${tokenCountForCompaction ?? freshPersistedTokens ?? "undefined"} contextWindow=${contextWindowTokens} threshold=${threshold} serverCompactionThreshold=${serverCompactionThreshold ?? "undefined"} isHeartbeat=${params.isHeartbeat} isCli=${isCli} persistedFresh=${entry?.totalTokensFresh === true} transcriptPromptTokens=${transcriptPromptTokens ?? "undefined"} promptTokensEst=${promptTokenEstimate ?? "undefined"} activeTranscriptBytes=${activeTranscriptBytes ?? "undefined"} maxActiveTranscriptBytes=${maxActiveTranscriptBytes ?? "undefined"} sizeTrigger=${shouldCompactByTranscriptBytes}`);
+3583: 	if (!(shouldRunPreflightCompaction({
+3584: 		entry,
+3585: 		tokenCount: tokenCountForCompaction,
+3586: 		contextWindowTokens,
+3587: 		reserveTokensFloor,
+3588: 		softThresholdTokens,
+3589: 		minimumThresholdTokens: serverCompactionThreshold
+3590: 	}) || shouldCompactByTranscriptBytes)) return entry ?? params.sessionEntry;
+3591: 	const compactionTrigger = shouldCompactByTranscriptBytes ? "transcript_bytes" : "tokens";
+3592: 	logVerbose(`preflightCompaction triggered: sessionKey=${params.sessionKey} tokenCount=${tokenCountForCompaction ?? freshPersistedTokens ?? "undefined"} threshold=${threshold} trigger=${compactionTrigger} activeTranscriptBytes=${activeTranscriptBytes ?? "undefined"} maxActiveTranscriptBytes=${maxActiveTranscriptBytes ?? "undefined"}`);
+3593: 	params.replyOperation.setPhase("preflight_compacting");
+3594: 	const notifyCompaction = async (phase) => {
+3595: 		try {
+3596: 			await params.onCompactionNotice?.(phase);
+3597: 		} catch (err) {
+3598: 			logVerbose(`preflightCompaction notice delivery failed: ${String(err)}`);
+3599: 		}
+3600: 	};
+3601: 	let startedCompactionNotice = false;
+3602: 	let terminalCompactionNoticeSent = false;
+3603: 	const notifyStartCompaction = async () => {
+3604: 		startedCompactionNotice = true;
+3605: 		await notifyCompaction("start");
+3606: 	};
+3607: 	const notifyTerminalCompaction = async (phase) => {
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+HIT=3749: 	const flushThreshold = contextWindowTokens - memoryFlushPlan.reserveTokensFloor - memoryFlushPlan.softThresholdTokens;
+3731: 	});
+3732: 	const canAttemptFlush = memoryFlushWritable && !params.isHeartbeat && !isCli;
+3733: 	const contextWindowTokens = resolveMemoryFlushContextWindowTokens({
+3734: 		cfg: params.cfg,
+3735: 		provider: resolveFollowupContextConfigProvider({
+3736: 			cfg: params.cfg,
+3737: 			followupRun: params.followupRun,
+3738: 			sessionEntry: entry,
+3739: 			sessionKey: params.sessionKey,
+3740: 			runtimePolicySessionKey: params.runtimePolicySessionKey
+3741: 		}),
+3742: 		modelId: params.followupRun.run.model ?? params.defaultModel,
+3743: 		agentCfgContextTokens: params.agentCfgContextTokens
+3744: 	});
+3745: 	const promptTokenEstimate = estimatePromptTokensForMemoryFlush(params.promptForEstimate ?? params.followupRun.prompt);
+3746: 	const persistedPromptTokensRaw = entry?.totalTokens;
+3747: 	const persistedPromptTokens = typeof persistedPromptTokensRaw === "number" && Number.isFinite(persistedPromptTokensRaw) && persistedPromptTokensRaw > 0 ? persistedPromptTokensRaw : void 0;
+3748: 	const hasFreshPersistedPromptTokens = typeof persistedPromptTokens === "number" && entry?.totalTokensFresh === true;
+3749: 	const flushThreshold = contextWindowTokens - memoryFlushPlan.reserveTokensFloor - memoryFlushPlan.softThresholdTokens;
+3750: 	const shouldReadTranscriptForOutput = canAttemptFlush && entry && hasFreshPersistedPromptTokens && typeof promptTokenEstimate === "number" && Number.isFinite(promptTokenEstimate) && flushThreshold > 0 && (persistedPromptTokens ?? 0) + promptTokenEstimate >= flushThreshold - TRANSCRIPT_OUTPUT_READ_BUFFER_TOKENS;
+3751: 	const shouldReadTranscript = Boolean(canAttemptFlush && entry && (!hasFreshPersistedPromptTokens || shouldReadTranscriptForOutput));
+3752: 	const forceFlushTranscriptBytes = memoryFlushPlan.forceFlushTranscriptBytes;
+3753: 	const shouldCheckTranscriptSizeForForcedFlush = Boolean(canAttemptFlush && entry && Number.isFinite(forceFlushTranscriptBytes) && forceFlushTranscriptBytes > 0);
+3754: 	const sessionLogSnapshot = shouldReadTranscript || shouldCheckTranscriptSizeForForcedFlush ? await readSessionLogSnapshot({
+3755: 		sessionId: params.followupRun.run.sessionId,
+3756: 		sessionEntry: entry,
+3757: 		sessionKey: params.sessionKey ?? params.followupRun.run.sessionKey,
+3758: 		opts: { storePath: params.storePath },
+3759: 		includeByteSize: shouldCheckTranscriptSizeForForcedFlush,
+3760: 		includeUsage: shouldReadTranscript
+3761: 	}) : void 0;
+3762: 	const transcriptByteSize = sessionLogSnapshot?.byteSize;
+3763: 	const shouldForceFlushByTranscriptSize = typeof transcriptByteSize === "number" && transcriptByteSize >= forceFlushTranscriptBytes;
+3764: 	const transcriptUsageSnapshot = sessionLogSnapshot?.usage;
+3765: 	const transcriptPromptTokens = transcriptUsageSnapshot?.promptTokens;
+3766: 	const transcriptOutputTokens = transcriptUsageSnapshot?.outputTokens;
+3767: 	const hasReliableTranscriptPromptTokens = typeof transcriptPromptTokens === "number" && Number.isFinite(transcriptPromptTokens) && transcriptPromptTokens > 0;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+HIT=3803: 		reserveTokensFloor: memoryFlushPlan.reserveTokensFloor,
+3785: 				takeCacheOwnership: true
+3786: 			});
+3787: 			if (updatedEntry) {
+3788: 				entry = updatedEntry;
+3789: 				if (params.sessionStore) params.sessionStore[params.sessionKey] = updatedEntry;
+3790: 			}
+3791: 		} catch (err) {
+3792: 			logVerbose(`failed to persist derived prompt totalTokens: ${String(err)}`);
+3793: 		}
+3794: 	}
+3795: 	const promptTokensSnapshot = Math.max(hasFreshPersistedPromptTokens ? persistedPromptTokens ?? 0 : 0, hasReliableTranscriptPromptTokens ? transcriptPromptTokens ?? 0 : 0);
+3796: 	const projectedTokenCount = promptTokensSnapshot > 0 && (hasFreshPersistedPromptTokens || hasReliableTranscriptPromptTokens) ? resolveEffectivePromptTokens(promptTokensSnapshot, transcriptOutputTokens, promptTokenEstimate) : void 0;
+3797: 	const tokenCountForFlush = typeof projectedTokenCount === "number" && Number.isFinite(projectedTokenCount) && projectedTokenCount > 0 ? projectedTokenCount : void 0;
+3798: 	logVerbose(`memoryFlush check: sessionKey=${params.sessionKey} tokenCount=${tokenCountForFlush ?? "undefined"} contextWindow=${contextWindowTokens} threshold=${flushThreshold} isHeartbeat=${params.isHeartbeat} isCli=${isCli} memoryFlushWritable=${memoryFlushWritable} compactionCount=${entry?.compactionCount ?? 0} memoryFlushCompactionCount=${entry?.memoryFlushCompactionCount ?? "undefined"} persistedPromptTokens=${persistedPromptTokens ?? "undefined"} persistedFresh=${entry?.totalTokensFresh === true} promptTokensEst=${promptTokenEstimate ?? "undefined"} transcriptPromptTokens=${transcriptPromptTokens ?? "undefined"} transcriptOutputTokens=${transcriptOutputTokens ?? "undefined"} projectedTokenCount=${projectedTokenCount ?? "undefined"} transcriptBytes=${transcriptByteSize ?? "undefined"} forceFlushTranscriptBytes=${forceFlushTranscriptBytes} forceFlushByTranscriptSize=${shouldForceFlushByTranscriptSize}`);
+3799: 	if (!(memoryFlushWritable && !params.isHeartbeat && !isCli && shouldRunMemoryFlush({
+3800: 		entry,
+3801: 		tokenCount: tokenCountForFlush,
+3802: 		contextWindowTokens,
+3803: 		reserveTokensFloor: memoryFlushPlan.reserveTokensFloor,
+3804: 		softThresholdTokens: memoryFlushPlan.softThresholdTokens
+3805: 	}) || shouldForceFlushByTranscriptSize && entry != null && !hasAlreadyFlushedForCurrentCompaction(entry))) return {
+3806: 		sessionEntry: entry ?? params.sessionEntry,
+3807: 		outcome: "skipped"
+3808: 	};
+3809: 	logVerbose(`memoryFlush triggered: sessionKey=${params.sessionKey} tokenCount=${tokenCountForFlush ?? "undefined"} threshold=${flushThreshold}`);
+3810: 	params.replyOperation.setPhase("memory_flushing");
+3811: 	let activeSessionEntry = entry ?? params.sessionEntry;
+3812: 	const activeSessionStore = params.sessionStore;
+3813: 	let bootstrapPromptWarningSignaturesSeen = resolveBootstrapWarningSignaturesSeen(activeSessionEntry?.systemPromptReport ?? (params.sessionKey ? activeSessionStore?.[params.sessionKey]?.systemPromptReport : void 0));
+3814: 	const flushRunId = memoryDeps.randomUUID();
+3815: 	if (params.sessionKey) memoryDeps.registerAgentRunContext(flushRunId, {
+3816: 		sessionKey: params.sessionKey,
+3817: 		...activeSessionEntry?.sessionId ? { sessionId: activeSessionEntry.sessionId } : {},
+3818: 		verboseLevel: params.resolvedVerboseLevel
+3819: 	});
+3820: 	let memoryCompactionCompleted = false;
+3821: 	let outcome = "completed";
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+HIT=3804: 		softThresholdTokens: memoryFlushPlan.softThresholdTokens
+3786: 			});
+3787: 			if (updatedEntry) {
+3788: 				entry = updatedEntry;
+3789: 				if (params.sessionStore) params.sessionStore[params.sessionKey] = updatedEntry;
+3790: 			}
+3791: 		} catch (err) {
+3792: 			logVerbose(`failed to persist derived prompt totalTokens: ${String(err)}`);
+3793: 		}
+3794: 	}
+3795: 	const promptTokensSnapshot = Math.max(hasFreshPersistedPromptTokens ? persistedPromptTokens ?? 0 : 0, hasReliableTranscriptPromptTokens ? transcriptPromptTokens ?? 0 : 0);
+3796: 	const projectedTokenCount = promptTokensSnapshot > 0 && (hasFreshPersistedPromptTokens || hasReliableTranscriptPromptTokens) ? resolveEffectivePromptTokens(promptTokensSnapshot, transcriptOutputTokens, promptTokenEstimate) : void 0;
+3797: 	const tokenCountForFlush = typeof projectedTokenCount === "number" && Number.isFinite(projectedTokenCount) && projectedTokenCount > 0 ? projectedTokenCount : void 0;
+3798: 	logVerbose(`memoryFlush check: sessionKey=${params.sessionKey} tokenCount=${tokenCountForFlush ?? "undefined"} contextWindow=${contextWindowTokens} threshold=${flushThreshold} isHeartbeat=${params.isHeartbeat} isCli=${isCli} memoryFlushWritable=${memoryFlushWritable} compactionCount=${entry?.compactionCount ?? 0} memoryFlushCompactionCount=${entry?.memoryFlushCompactionCount ?? "undefined"} persistedPromptTokens=${persistedPromptTokens ?? "undefined"} persistedFresh=${entry?.totalTokensFresh === true} promptTokensEst=${promptTokenEstimate ?? "undefined"} transcriptPromptTokens=${transcriptPromptTokens ?? "undefined"} transcriptOutputTokens=${transcriptOutputTokens ?? "undefined"} projectedTokenCount=${projectedTokenCount ?? "undefined"} transcriptBytes=${transcriptByteSize ?? "undefined"} forceFlushTranscriptBytes=${forceFlushTranscriptBytes} forceFlushByTranscriptSize=${shouldForceFlushByTranscriptSize}`);
+3799: 	if (!(memoryFlushWritable && !params.isHeartbeat && !isCli && shouldRunMemoryFlush({
+3800: 		entry,
+3801: 		tokenCount: tokenCountForFlush,
+3802: 		contextWindowTokens,
+3803: 		reserveTokensFloor: memoryFlushPlan.reserveTokensFloor,
+3804: 		softThresholdTokens: memoryFlushPlan.softThresholdTokens
+3805: 	}) || shouldForceFlushByTranscriptSize && entry != null && !hasAlreadyFlushedForCurrentCompaction(entry))) return {
+3806: 		sessionEntry: entry ?? params.sessionEntry,
+3807: 		outcome: "skipped"
+3808: 	};
+3809: 	logVerbose(`memoryFlush triggered: sessionKey=${params.sessionKey} tokenCount=${tokenCountForFlush ?? "undefined"} threshold=${flushThreshold}`);
+3810: 	params.replyOperation.setPhase("memory_flushing");
+3811: 	let activeSessionEntry = entry ?? params.sessionEntry;
+3812: 	const activeSessionStore = params.sessionStore;
+3813: 	let bootstrapPromptWarningSignaturesSeen = resolveBootstrapWarningSignaturesSeen(activeSessionEntry?.systemPromptReport ?? (params.sessionKey ? activeSessionStore?.[params.sessionKey]?.systemPromptReport : void 0));
+3814: 	const flushRunId = memoryDeps.randomUUID();
+3815: 	if (params.sessionKey) memoryDeps.registerAgentRunContext(flushRunId, {
+3816: 		sessionKey: params.sessionKey,
+3817: 		...activeSessionEntry?.sessionId ? { sessionId: activeSessionEntry.sessionId } : {},
+3818: 		verboseLevel: params.resolvedVerboseLevel
+3819: 	});
+3820: 	let memoryCompactionCompleted = false;
+3821: 	let outcome = "completed";
+3822: 	let visibleErrorPayloads = [];
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/thread-lifecycle-DSMv62L1.js
+HIT=1141: 	const configuredReserveTokensFloor = toNonNegativeInt(asRecord(compaction)?.reserveTokensFloor);
+1123: 		...promptContextRange ? { promptContextRange } : {},
+1124: 		assembledMessages: params.assembledMessages,
+1125: 		prePromptMessageCount: params.originalHistoryMessages.length
+1126: 	};
+1127: }
+1128: /** Resolves rendered context size from a token budget and reserve. */
+1129: function resolveCodexContextEngineProjectionMaxChars(params) {
+1130: 	const contextTokenBudget = typeof params.contextTokenBudget === "number" && Number.isFinite(params.contextTokenBudget) ? Math.floor(params.contextTokenBudget) : void 0;
+1131: 	if (!contextTokenBudget || contextTokenBudget <= 0) return DEFAULT_RENDERED_CONTEXT_CHARS;
+1132: 	return normalizeRenderedContextMaxChars(resolveProjectionPromptBudgetTokens({
+1133: 		contextTokenBudget,
+1134: 		reserveTokens: params.reserveTokens
+1135: 	}) * APPROX_RENDERED_CHARS_PER_TOKEN);
+1136: }
+1137: /** Reads Codex projection reserve tokens from compaction config. */
+1138: function resolveCodexContextEngineProjectionReserveTokens(params) {
+1139: 	const compaction = asRecord(asRecord(asRecord(params.config)?.agents)?.defaults)?.compaction;
+1140: 	const configuredReserveTokens = toNonNegativeInt(asRecord(compaction)?.reserveTokens);
+1141: 	const configuredReserveTokensFloor = toNonNegativeInt(asRecord(compaction)?.reserveTokensFloor);
+1142: 	if (configuredReserveTokens !== void 0) return Math.max(configuredReserveTokens, configuredReserveTokensFloor ?? 2e4);
+1143: 	if (configuredReserveTokensFloor !== void 0) return configuredReserveTokensFloor;
+1144: }
+1145: /** Fits projected context prompts under Codex app-server turn/start text limits. */
+1146: function fitCodexProjectedContextForTurnStart(params) {
+1147: 	const maxChars = typeof params.maxChars === "number" && Number.isFinite(params.maxChars) ? Math.max(0, Math.floor(params.maxChars)) : CODEX_TURN_START_TEXT_INPUT_MAX_CHARS;
+1148: 	if (params.promptText.length <= maxChars) return params.promptText;
+1149: 	const range = normalizeProjectedContextRange(params.contextRange, params.promptText.length);
+1150: 	if (!range) {
+1151: 		const preservedRange = normalizeProjectedContextRange(params.preservedRange, params.promptText.length);
+1152: 		if (!preservedRange) return params.promptText;
+1153: 		const preservedText = params.promptText.slice(preservedRange.start, preservedRange.end);
+1154: 		if (!preservedText) return truncateOlderContext(params.promptText, maxChars);
+1155: 		if (preservedText.length >= maxChars) return truncateOlderContext(preservedText, maxChars);
+1156: 		return `${truncateOlderContext(params.promptText.slice(0, preservedRange.start), maxChars - preservedText.length)}${preservedText}`;
+1157: 	}
+1158: 	const beforeContext = params.promptText.slice(0, range.start);
+1159: 	const context = params.promptText.slice(range.start, range.end);
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/zod-schema-O9ml_nmo.js
+HIT=206: 		reserveTokensFloor: number().int().nonnegative().optional(),
+188: 			allow: array(string()).optional(),
+189: 			deny: array(string()).optional()
+190: 		}).strict().optional(),
+191: 		softTrim: object({
+192: 			maxChars: number().int().nonnegative().optional(),
+193: 			headChars: number().int().nonnegative().optional(),
+194: 			tailChars: number().int().nonnegative().optional()
+195: 		}).strict().optional(),
+196: 		hardClear: object({
+197: 			enabled: boolean().optional(),
+198: 			placeholder: string().optional()
+199: 		}).strict().optional()
+200: 	}).strict().optional(),
+201: 	compaction: object({
+202: 		mode: union([literal("default"), literal("safeguard")]).optional(),
+203: 		provider: string().optional(),
+204: 		reserveTokens: number().int().nonnegative().optional(),
+205: 		keepRecentTokens: number().int().positive().optional(),
+206: 		reserveTokensFloor: number().int().nonnegative().optional(),
+207: 		maxHistoryShare: number().min(.1).max(.9).optional(),
+208: 		customInstructions: string().optional(),
+209: 		identifierPolicy: union([
+210: 			literal("strict"),
+211: 			literal("off"),
+212: 			literal("custom")
+213: 		]).optional(),
+214: 		identifierInstructions: string().optional(),
+215: 		recentTurnsPreserve: number().int().min(0).max(12).optional(),
+216: 		qualityGuard: object({
+217: 			enabled: boolean().optional(),
+218: 			maxRetries: number().int().nonnegative().optional()
+219: 		}).strict().optional(),
+220: 		midTurnPrecheck: object({ enabled: boolean().optional() }).strict().optional(),
+221: 		postIndexSync: _enum([
+222: 			"off",
+223: 			"async",
+224: 			"await"
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/zod-schema-O9ml_nmo.js
+HIT=232: 			softThresholdTokens: number().int().nonnegative().optional(),
+214: 		identifierInstructions: string().optional(),
+215: 		recentTurnsPreserve: number().int().min(0).max(12).optional(),
+216: 		qualityGuard: object({
+217: 			enabled: boolean().optional(),
+218: 			maxRetries: number().int().nonnegative().optional()
+219: 		}).strict().optional(),
+220: 		midTurnPrecheck: object({ enabled: boolean().optional() }).strict().optional(),
+221: 		postIndexSync: _enum([
+222: 			"off",
+223: 			"async",
+224: 			"await"
+225: 		]).optional(),
+226: 		postCompactionSections: array(string()).optional(),
+227: 		model: string().optional(),
+228: 		timeoutSeconds: number().int().positive().optional(),
+229: 		memoryFlush: object({
+230: 			enabled: boolean().optional(),
+231: 			model: string().optional(),
+232: 			softThresholdTokens: number().int().nonnegative().optional(),
+233: 			forceFlushTranscriptBytes: NonNegativeByteSizeSchema.optional(),
+234: 			prompt: string().optional(),
+235: 			systemPrompt: string().optional()
+236: 		}).strict().optional(),
+237: 		truncateAfterCompaction: boolean().optional(),
+238: 		maxActiveTranscriptBytes: NonNegativeByteSizeSchema.optional(),
+239: 		notifyUser: boolean().optional()
+240: 	}).strict().optional(),
+241: 	runRetries: AgentRunRetriesConfigSchema.optional(),
+242: 	embeddedAgent: EmbeddedAgentConfigSchema.optional(),
+243: 	thinkingDefault: union([
+244: 		literal("off"),
+245: 		literal("minimal"),
+246: 		literal("low"),
+247: 		literal("medium"),
+248: 		literal("high"),
+249: 		literal("xhigh"),
+250: 		literal("adaptive"),
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/run-attempt-CXZNKJ6y.js
+HIT=4986: 	const reserveTokensFloor = toNonNegativeInt(compaction?.reserveTokensFloor);
+4968: 		const snapshot = {};
+4969: 		if (totalTokens !== void 0) snapshot.totalTokens = totalTokens;
+4970: 		if (modelContextWindow !== void 0) snapshot.modelContextWindow = modelContextWindow;
+4971: 		return snapshot.totalTokens !== void 0 || snapshot.modelContextWindow !== void 0 ? snapshot : void 0;
+4972: 	} catch {
+4973: 		return;
+4974: 	}
+4975: }
+4976: function toNonNegativeInt(value) {
+4977: 	if (typeof value !== "number" || !Number.isFinite(value) || value < 0) return;
+4978: 	return Math.floor(value);
+4979: }
+4980: function readCompactionConfig(config) {
+4981: 	return isJsonObject(config?.agents?.defaults?.compaction) ? config.agents.defaults.compaction : void 0;
+4982: }
+4983: function resolveCodexAppServerNativeThreadReserveTokens(config) {
+4984: 	const compaction = readCompactionConfig(config);
+4985: 	const reserveTokens = toNonNegativeInt(compaction?.reserveTokens);
+4986: 	const reserveTokensFloor = toNonNegativeInt(compaction?.reserveTokensFloor);
+4987: 	if (reserveTokens !== void 0) return Math.max(reserveTokens, reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS);
+4988: 	return reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS;
+4989: }
+4990: function resolveCodexAppServerNativeThreadTokenFuse(params) {
+4991: 	const projectedTurnTokens = typeof params.projectedTurnTokens === "number" && Number.isFinite(params.projectedTurnTokens) && params.projectedTurnTokens > 0 ? Math.floor(params.projectedTurnTokens) : 0;
+4992: 	const contextWindow = params.modelContextWindow ?? CODEX_APP_SERVER_NATIVE_THREAD_FALLBACK_MAX_TOKENS;
+4993: 	const minPromptBudget = Math.min(CODEX_APP_SERVER_NATIVE_THREAD_MIN_PROMPT_BUDGET_TOKENS, Math.max(1, Math.floor(contextWindow * CODEX_APP_SERVER_NATIVE_THREAD_MIN_PROMPT_BUDGET_RATIO)));
+4994: 	const effectiveReserveTokens = Math.min(params.reserveTokens, Math.max(0, contextWindow - minPromptBudget));
+4995: 	return Math.max(1, contextWindow - effectiveReserveTokens - projectedTurnTokens);
+4996: }
+4997: function maxFiniteNumber(values) {
+4998: 	const nums = values.filter((value) => typeof value === "number" && Number.isFinite(value));
+4999: 	if (nums.length === 0) return;
+5000: 	return Math.max(...nums);
+5001: }
+5002: function minFiniteNumber(values) {
+5003: 	const nums = values.filter((value) => typeof value === "number" && Number.isFinite(value));
+5004: 	if (nums.length === 0) return;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/run-attempt-CXZNKJ6y.js
+HIT=4987: 	if (reserveTokens !== void 0) return Math.max(reserveTokens, reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS);
+4969: 		if (totalTokens !== void 0) snapshot.totalTokens = totalTokens;
+4970: 		if (modelContextWindow !== void 0) snapshot.modelContextWindow = modelContextWindow;
+4971: 		return snapshot.totalTokens !== void 0 || snapshot.modelContextWindow !== void 0 ? snapshot : void 0;
+4972: 	} catch {
+4973: 		return;
+4974: 	}
+4975: }
+4976: function toNonNegativeInt(value) {
+4977: 	if (typeof value !== "number" || !Number.isFinite(value) || value < 0) return;
+4978: 	return Math.floor(value);
+4979: }
+4980: function readCompactionConfig(config) {
+4981: 	return isJsonObject(config?.agents?.defaults?.compaction) ? config.agents.defaults.compaction : void 0;
+4982: }
+4983: function resolveCodexAppServerNativeThreadReserveTokens(config) {
+4984: 	const compaction = readCompactionConfig(config);
+4985: 	const reserveTokens = toNonNegativeInt(compaction?.reserveTokens);
+4986: 	const reserveTokensFloor = toNonNegativeInt(compaction?.reserveTokensFloor);
+4987: 	if (reserveTokens !== void 0) return Math.max(reserveTokens, reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS);
+4988: 	return reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS;
+4989: }
+4990: function resolveCodexAppServerNativeThreadTokenFuse(params) {
+4991: 	const projectedTurnTokens = typeof params.projectedTurnTokens === "number" && Number.isFinite(params.projectedTurnTokens) && params.projectedTurnTokens > 0 ? Math.floor(params.projectedTurnTokens) : 0;
+4992: 	const contextWindow = params.modelContextWindow ?? CODEX_APP_SERVER_NATIVE_THREAD_FALLBACK_MAX_TOKENS;
+4993: 	const minPromptBudget = Math.min(CODEX_APP_SERVER_NATIVE_THREAD_MIN_PROMPT_BUDGET_TOKENS, Math.max(1, Math.floor(contextWindow * CODEX_APP_SERVER_NATIVE_THREAD_MIN_PROMPT_BUDGET_RATIO)));
+4994: 	const effectiveReserveTokens = Math.min(params.reserveTokens, Math.max(0, contextWindow - minPromptBudget));
+4995: 	return Math.max(1, contextWindow - effectiveReserveTokens - projectedTurnTokens);
+4996: }
+4997: function maxFiniteNumber(values) {
+4998: 	const nums = values.filter((value) => typeof value === "number" && Number.isFinite(value));
+4999: 	if (nums.length === 0) return;
+5000: 	return Math.max(...nums);
+5001: }
+5002: function minFiniteNumber(values) {
+5003: 	const nums = values.filter((value) => typeof value === "number" && Number.isFinite(value));
+5004: 	if (nums.length === 0) return;
+5005: 	return Math.min(...nums);
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/run-attempt-CXZNKJ6y.js
+HIT=4988: 	return reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS;
+4970: 		if (modelContextWindow !== void 0) snapshot.modelContextWindow = modelContextWindow;
+4971: 		return snapshot.totalTokens !== void 0 || snapshot.modelContextWindow !== void 0 ? snapshot : void 0;
+4972: 	} catch {
+4973: 		return;
+4974: 	}
+4975: }
+4976: function toNonNegativeInt(value) {
+4977: 	if (typeof value !== "number" || !Number.isFinite(value) || value < 0) return;
+4978: 	return Math.floor(value);
+4979: }
+4980: function readCompactionConfig(config) {
+4981: 	return isJsonObject(config?.agents?.defaults?.compaction) ? config.agents.defaults.compaction : void 0;
+4982: }
+4983: function resolveCodexAppServerNativeThreadReserveTokens(config) {
+4984: 	const compaction = readCompactionConfig(config);
+4985: 	const reserveTokens = toNonNegativeInt(compaction?.reserveTokens);
+4986: 	const reserveTokensFloor = toNonNegativeInt(compaction?.reserveTokensFloor);
+4987: 	if (reserveTokens !== void 0) return Math.max(reserveTokens, reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS);
+4988: 	return reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS;
+4989: }
+4990: function resolveCodexAppServerNativeThreadTokenFuse(params) {
+4991: 	const projectedTurnTokens = typeof params.projectedTurnTokens === "number" && Number.isFinite(params.projectedTurnTokens) && params.projectedTurnTokens > 0 ? Math.floor(params.projectedTurnTokens) : 0;
+4992: 	const contextWindow = params.modelContextWindow ?? CODEX_APP_SERVER_NATIVE_THREAD_FALLBACK_MAX_TOKENS;
+4993: 	const minPromptBudget = Math.min(CODEX_APP_SERVER_NATIVE_THREAD_MIN_PROMPT_BUDGET_TOKENS, Math.max(1, Math.floor(contextWindow * CODEX_APP_SERVER_NATIVE_THREAD_MIN_PROMPT_BUDGET_RATIO)));
+4994: 	const effectiveReserveTokens = Math.min(params.reserveTokens, Math.max(0, contextWindow - minPromptBudget));
+4995: 	return Math.max(1, contextWindow - effectiveReserveTokens - projectedTurnTokens);
+4996: }
+4997: function maxFiniteNumber(values) {
+4998: 	const nums = values.filter((value) => typeof value === "number" && Number.isFinite(value));
+4999: 	if (nums.length === 0) return;
+5000: 	return Math.max(...nums);
+5001: }
+5002: function minFiniteNumber(values) {
+5003: 	const nums = values.filter((value) => typeof value === "number" && Number.isFinite(value));
+5004: 	if (nums.length === 0) return;
+5005: 	return Math.min(...nums);
+5006: }
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+HIT=9: 	const raw = cfg?.agents?.defaults?.compaction?.reserveTokensFloor;
+1: import { i as normalizeProviderId } from "./provider-id-Dq06Bcx6.js";
+2: import { n as resolveProviderEndpoint } from "./provider-attribution-ClnBK9_9.js";
+3: import { n as MIN_PROMPT_BUDGET_TOKENS, t as MIN_PROMPT_BUDGET_RATIO } from "./agent-compaction-constants-BHnSZLzH.js";
+4: //#region src/agents/agent-settings.ts
+5: /** Applies agent compaction settings and small-context overflow guards. */
+6: const DEFAULT_AGENT_COMPACTION_RESERVE_TOKENS_FLOOR = 2e4;
+7: /** Resolves the configured reserve-token floor for agent compaction. */
+8: function resolveCompactionReserveTokensFloor(cfg) {
+9: 	const raw = cfg?.agents?.defaults?.compaction?.reserveTokensFloor;
+10: 	if (typeof raw === "number" && Number.isFinite(raw) && raw >= 0) return Math.floor(raw);
+11: 	return DEFAULT_AGENT_COMPACTION_RESERVE_TOKENS_FLOOR;
+12: }
+13: function toNonNegativeInt(value) {
+14: 	if (typeof value !== "number" || !Number.isFinite(value) || value < 0) return;
+15: 	return Math.floor(value);
+16: }
+17: function toPositiveInt(value) {
+18: 	if (typeof value !== "number" || !Number.isFinite(value) || value <= 0) return;
+19: 	return Math.floor(value);
+20: }
+21: /** Applies configured compaction reserve/keep-recent settings to an agent settings manager. */
+22: function applyAgentCompactionSettingsFromConfig(params) {
+23: 	const currentReserveTokens = params.settingsManager.getCompactionReserveTokens();
+24: 	const currentKeepRecentTokens = params.settingsManager.getCompactionKeepRecentTokens();
+25: 	const compactionCfg = params.cfg?.agents?.defaults?.compaction;
+26: 	const configuredReserveTokens = toNonNegativeInt(compactionCfg?.reserveTokens);
+27: 	const configuredKeepRecentTokens = toPositiveInt(compactionCfg?.keepRecentTokens);
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+HIT=28: 	let reserveTokensFloor = resolveCompactionReserveTokensFloor(params.cfg);
+10: 	if (typeof raw === "number" && Number.isFinite(raw) && raw >= 0) return Math.floor(raw);
+11: 	return DEFAULT_AGENT_COMPACTION_RESERVE_TOKENS_FLOOR;
+12: }
+13: function toNonNegativeInt(value) {
+14: 	if (typeof value !== "number" || !Number.isFinite(value) || value < 0) return;
+15: 	return Math.floor(value);
+16: }
+17: function toPositiveInt(value) {
+18: 	if (typeof value !== "number" || !Number.isFinite(value) || value <= 0) return;
+19: 	return Math.floor(value);
+20: }
+21: /** Applies configured compaction reserve/keep-recent settings to an agent settings manager. */
+22: function applyAgentCompactionSettingsFromConfig(params) {
+23: 	const currentReserveTokens = params.settingsManager.getCompactionReserveTokens();
+24: 	const currentKeepRecentTokens = params.settingsManager.getCompactionKeepRecentTokens();
+25: 	const compactionCfg = params.cfg?.agents?.defaults?.compaction;
+26: 	const configuredReserveTokens = toNonNegativeInt(compactionCfg?.reserveTokens);
+27: 	const configuredKeepRecentTokens = toPositiveInt(compactionCfg?.keepRecentTokens);
+28: 	let reserveTokensFloor = resolveCompactionReserveTokensFloor(params.cfg);
+29: 	let maxReserveTokens;
+30: 	const contextTokenBudget = toPositiveInt(params.contextTokenBudget);
+31: 	if (contextTokenBudget !== void 0) {
+32: 		const minPromptBudget = Math.min(MIN_PROMPT_BUDGET_TOKENS, Math.max(1, Math.floor(contextTokenBudget * MIN_PROMPT_BUDGET_RATIO)));
+33: 		maxReserveTokens = Math.max(0, contextTokenBudget - minPromptBudget);
+34: 		reserveTokensFloor = Math.min(reserveTokensFloor, maxReserveTokens);
+35: 	}
+36: 	let targetReserveTokens = Math.max(configuredReserveTokens ?? currentReserveTokens, reserveTokensFloor);
+37: 	if (maxReserveTokens !== void 0) targetReserveTokens = Math.min(targetReserveTokens, maxReserveTokens);
+38: 	const targetKeepRecentTokens = configuredKeepRecentTokens ?? currentKeepRecentTokens;
+39: 	const overrides = {};
+40: 	if (targetReserveTokens !== currentReserveTokens) overrides.reserveTokens = targetReserveTokens;
+41: 	if (targetKeepRecentTokens !== currentKeepRecentTokens) overrides.keepRecentTokens = targetKeepRecentTokens;
+42: 	const didOverride = Object.keys(overrides).length > 0;
+43: 	if (didOverride) params.settingsManager.applyOverrides({ compaction: overrides });
+44: 	return {
+45: 		didOverride,
+46: 		compaction: {
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+HIT=34: 		reserveTokensFloor = Math.min(reserveTokensFloor, maxReserveTokens);
+16: }
+17: function toPositiveInt(value) {
+18: 	if (typeof value !== "number" || !Number.isFinite(value) || value <= 0) return;
+19: 	return Math.floor(value);
+20: }
+21: /** Applies configured compaction reserve/keep-recent settings to an agent settings manager. */
+22: function applyAgentCompactionSettingsFromConfig(params) {
+23: 	const currentReserveTokens = params.settingsManager.getCompactionReserveTokens();
+24: 	const currentKeepRecentTokens = params.settingsManager.getCompactionKeepRecentTokens();
+25: 	const compactionCfg = params.cfg?.agents?.defaults?.compaction;
+26: 	const configuredReserveTokens = toNonNegativeInt(compactionCfg?.reserveTokens);
+27: 	const configuredKeepRecentTokens = toPositiveInt(compactionCfg?.keepRecentTokens);
+28: 	let reserveTokensFloor = resolveCompactionReserveTokensFloor(params.cfg);
+29: 	let maxReserveTokens;
+30: 	const contextTokenBudget = toPositiveInt(params.contextTokenBudget);
+31: 	if (contextTokenBudget !== void 0) {
+32: 		const minPromptBudget = Math.min(MIN_PROMPT_BUDGET_TOKENS, Math.max(1, Math.floor(contextTokenBudget * MIN_PROMPT_BUDGET_RATIO)));
+33: 		maxReserveTokens = Math.max(0, contextTokenBudget - minPromptBudget);
+34: 		reserveTokensFloor = Math.min(reserveTokensFloor, maxReserveTokens);
+35: 	}
+36: 	let targetReserveTokens = Math.max(configuredReserveTokens ?? currentReserveTokens, reserveTokensFloor);
+37: 	if (maxReserveTokens !== void 0) targetReserveTokens = Math.min(targetReserveTokens, maxReserveTokens);
+38: 	const targetKeepRecentTokens = configuredKeepRecentTokens ?? currentKeepRecentTokens;
+39: 	const overrides = {};
+40: 	if (targetReserveTokens !== currentReserveTokens) overrides.reserveTokens = targetReserveTokens;
+41: 	if (targetKeepRecentTokens !== currentKeepRecentTokens) overrides.keepRecentTokens = targetKeepRecentTokens;
+42: 	const didOverride = Object.keys(overrides).length > 0;
+43: 	if (didOverride) params.settingsManager.applyOverrides({ compaction: overrides });
+44: 	return {
+45: 		didOverride,
+46: 		compaction: {
+47: 			reserveTokens: targetReserveTokens,
+48: 			keepRecentTokens: targetKeepRecentTokens
+49: 		}
+50: 	};
+51: }
+52: /** Resolve the compaction mode after provider-backed safeguard promotion. */
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+HIT=36: 	let targetReserveTokens = Math.max(configuredReserveTokens ?? currentReserveTokens, reserveTokensFloor);
+18: 	if (typeof value !== "number" || !Number.isFinite(value) || value <= 0) return;
+19: 	return Math.floor(value);
+20: }
+21: /** Applies configured compaction reserve/keep-recent settings to an agent settings manager. */
+22: function applyAgentCompactionSettingsFromConfig(params) {
+23: 	const currentReserveTokens = params.settingsManager.getCompactionReserveTokens();
+24: 	const currentKeepRecentTokens = params.settingsManager.getCompactionKeepRecentTokens();
+25: 	const compactionCfg = params.cfg?.agents?.defaults?.compaction;
+26: 	const configuredReserveTokens = toNonNegativeInt(compactionCfg?.reserveTokens);
+27: 	const configuredKeepRecentTokens = toPositiveInt(compactionCfg?.keepRecentTokens);
+28: 	let reserveTokensFloor = resolveCompactionReserveTokensFloor(params.cfg);
+29: 	let maxReserveTokens;
+30: 	const contextTokenBudget = toPositiveInt(params.contextTokenBudget);
+31: 	if (contextTokenBudget !== void 0) {
+32: 		const minPromptBudget = Math.min(MIN_PROMPT_BUDGET_TOKENS, Math.max(1, Math.floor(contextTokenBudget * MIN_PROMPT_BUDGET_RATIO)));
+33: 		maxReserveTokens = Math.max(0, contextTokenBudget - minPromptBudget);
+34: 		reserveTokensFloor = Math.min(reserveTokensFloor, maxReserveTokens);
+35: 	}
+36: 	let targetReserveTokens = Math.max(configuredReserveTokens ?? currentReserveTokens, reserveTokensFloor);
+37: 	if (maxReserveTokens !== void 0) targetReserveTokens = Math.min(targetReserveTokens, maxReserveTokens);
+38: 	const targetKeepRecentTokens = configuredKeepRecentTokens ?? currentKeepRecentTokens;
+39: 	const overrides = {};
+40: 	if (targetReserveTokens !== currentReserveTokens) overrides.reserveTokens = targetReserveTokens;
+41: 	if (targetKeepRecentTokens !== currentKeepRecentTokens) overrides.keepRecentTokens = targetKeepRecentTokens;
+42: 	const didOverride = Object.keys(overrides).length > 0;
+43: 	if (didOverride) params.settingsManager.applyOverrides({ compaction: overrides });
+44: 	return {
+45: 		didOverride,
+46: 		compaction: {
+47: 			reserveTokens: targetReserveTokens,
+48: 			keepRecentTokens: targetKeepRecentTokens
+49: 		}
+50: 	};
+51: }
+52: /** Resolve the compaction mode after provider-backed safeguard promotion. */
+53: function resolveEffectiveCompactionMode(cfg) {
+54: 	const compaction = cfg?.agents?.defaults?.compaction;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/types.openclaw-CXjMEWAQ.d.ts
+HIT=432:   reserveTokensFloor?: number; /** Max share of context window for history during safeguard pruning (0.1–0.9, default 0.5). */
+414: type AgentCompactionMode = "default" | "safeguard";
+415: type AgentCompactionPostIndexSyncMode = "off" | "async" | "await";
+416: type AgentCompactionIdentifierPolicy = "strict" | "off" | "custom";
+417: type AgentCompactionQualityGuardConfig = {
+418:   /** Enable compaction summary quality audits and regeneration retries. Default: false. */enabled?: boolean; /** Maximum regeneration retries after a failed quality audit. Default: 1 when enabled. */
+419:   maxRetries?: number;
+420: };
+421: type AgentCompactionMidTurnPrecheckConfig = {
+422:   /**
+423:    * Enable structured context pressure checks after tool results are appended
+424:    * and before the next agent model call. Default: false.
+425:    */
+426:   enabled?: boolean;
+427: };
+428: type AgentCompactionConfig = {
+429:   /** Compaction summarization mode. */mode?: AgentCompactionMode; /** Embedded OpenClaw reserve target before floor and context-window caps. */
+430:   reserveTokens?: number; /** Embedded OpenClaw keepRecentTokens budget used for cut-point selection. */
+431:   keepRecentTokens?: number; /** Minimum reserve tokens enforced for embedded OpenClaw compaction (0 disables the floor). */
+432:   reserveTokensFloor?: number; /** Max share of context window for history during safeguard pruning (0.1–0.9, default 0.5). */
+433:   maxHistoryShare?: number; /** Additional compaction-summary instructions that can preserve language or persona continuity. */
+434:   customInstructions?: string; /** Preserve this many most-recent user/assistant turns verbatim in compaction summary context. */
+435:   recentTurnsPreserve?: number; /** Identifier-preservation instruction policy for compaction summaries. */
+436:   identifierPolicy?: AgentCompactionIdentifierPolicy; /** Custom identifier-preservation instructions used when identifierPolicy is "custom". */
+437:   identifierInstructions?: string; /** Optional quality-audit retries for safeguard compaction summaries. */
+438:   qualityGuard?: AgentCompactionQualityGuardConfig; /** Mid-turn precheck for tool-loop context pressure. Default: disabled. */
+439:   midTurnPrecheck?: AgentCompactionMidTurnPrecheckConfig; /** Post-compaction session memory index sync mode. */
+440:   postIndexSync?: AgentCompactionPostIndexSyncMode; /** Pre-compaction memory flush (agentic turn). Default: enabled. */
+441:   memoryFlush?: AgentCompactionMemoryFlushConfig;
+442:   /**
+443:    * H2/H3 section names from AGENTS.md to inject after compaction.
+444:    * Disabled when unset or [].
+445:    * Explicit ["Session Startup", "Red Lines"] preserves legacy fallback headings.
+446:    */
+447:   postCompactionSections?: string[];
+448:   /** Optional provider/model or configured bare alias for compaction summarization.
+449:    * When set, compaction uses this model instead of the agent's primary model.
+450:    * Falls back to the primary model when unset. */
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/types.openclaw-CXjMEWAQ.d.ts
+HIT=485:   softThresholdTokens?: number;
+467:    * Trigger a normal local compaction when the active session JSONL reaches
+468:    * this size (bytes, or byte-size string like "20mb"). Set to 0/unset to
+469:    * disable. Requires truncateAfterCompaction so successful compaction can
+470:    * rotate to a smaller successor transcript. This does not split raw
+471:    * transcript bytes.
+472:    */
+473:   maxActiveTranscriptBytes?: number | string;
+474:   /**
+475:    * Send brief context-maintenance notices to the user: when compaction starts
+476:    * and completes, and when a pre-compaction memory flush is exhausted so the
+477:    * reply continues in a degraded state.
+478:    * Default: false (silent by default).
+479:    */
+480:   notifyUser?: boolean;
+481: };
+482: type AgentCompactionMemoryFlushConfig = {
+483:   /** Enable the pre-compaction memory flush (default: true). */enabled?: boolean; /** Optional provider/model override used only for pre-compaction memory flush turns. */
+484:   model?: string; /** Run the memory flush when context is within this many tokens of the compaction threshold. */
+485:   softThresholdTokens?: number;
+486:   /**
+487:    * Force a memory flush when transcript size reaches this threshold
+488:    * (bytes, or byte-size string like "2mb"). Set to 0 to disable.
+489:    */
+490:   forceFlushTranscriptBytes?: number | string; /** User prompt used for the memory flush turn (NO_REPLY is enforced if missing). */
+491:   prompt?: string; /** System prompt appended for the memory flush turn. */
+492:   systemPrompt?: string;
+493: };
+494: //#endregion
+495: //#region src/config/types.skills.d.ts
+496: /** Per-skill runtime override keyed by skill name or source-specific skill key. */
+497: type SkillConfig = {
+498:   /** Disable a discovered skill without removing it from disk. */enabled?: boolean; /** Optional secret made available to the skill runtime through skill env handling. */
+499:   apiKey?: SecretInput; /** Plain environment overrides applied when the skill runs. */
+500:   env?: Record<string, string>; /** Skill-specific structured config consumed by the skill runtime. */
+501:   config?: Record<string, unknown>;
+502: };
+503: /** Discovery and watcher settings for skill sources. */
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/plugin-sdk/config-schema.d.ts
+HIT=938:         reserveTokensFloor: ZodOptional<ZodNumber>;
+920:           allow: ZodOptional<ZodArray<ZodString>>;
+921:           deny: ZodOptional<ZodArray<ZodString>>;
+922:         }, $strict>>;
+923:         softTrim: ZodOptional<ZodObject<{
+924:           maxChars: ZodOptional<ZodNumber>;
+925:           headChars: ZodOptional<ZodNumber>;
+926:           tailChars: ZodOptional<ZodNumber>;
+927:         }, $strict>>;
+928:         hardClear: ZodOptional<ZodObject<{
+929:           enabled: ZodOptional<ZodBoolean>;
+930:           placeholder: ZodOptional<ZodString>;
+931:         }, $strict>>;
+932:       }, $strict>>;
+933:       compaction: ZodOptional<ZodObject<{
+934:         mode: ZodOptional<ZodUnion<readonly [ZodLiteral<"default">, ZodLiteral<"safeguard">]>>;
+935:         provider: ZodOptional<ZodString>;
+936:         reserveTokens: ZodOptional<ZodNumber>;
+937:         keepRecentTokens: ZodOptional<ZodNumber>;
+938:         reserveTokensFloor: ZodOptional<ZodNumber>;
+939:         maxHistoryShare: ZodOptional<ZodNumber>;
+940:         customInstructions: ZodOptional<ZodString>;
+941:         identifierPolicy: ZodOptional<ZodUnion<readonly [ZodLiteral<"strict">, ZodLiteral<"off">, ZodLiteral<"custom">]>>;
+942:         identifierInstructions: ZodOptional<ZodString>;
+943:         recentTurnsPreserve: ZodOptional<ZodNumber>;
+944:         qualityGuard: ZodOptional<ZodObject<{
+945:           enabled: ZodOptional<ZodBoolean>;
+946:           maxRetries: ZodOptional<ZodNumber>;
+947:         }, $strict>>;
+948:         midTurnPrecheck: ZodOptional<ZodObject<{
+949:           enabled: ZodOptional<ZodBoolean>;
+950:         }, $strict>>;
+951:         postIndexSync: ZodOptional<ZodEnum<{
+952:           off: "off";
+953:           async: "async";
+954:           await: "await";
+955:         }>>;
+956:         postCompactionSections: ZodOptional<ZodArray<ZodString>>;
+---

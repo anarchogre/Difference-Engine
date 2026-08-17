@@ -1,0 +1,72 @@
+HEAD=b39d2138800c6df9df173321c30fb7ccfe157d71
+BRANCH=master
+TRACKED_CHANGE_COUNT=0
+UNTRACKED_COUNT=1615
+--- BOOTSTRAP CANDIDATES ---
+BOOTSTRAP/BOOTSTRAP - CONTINUE - INGESTER EPOCH v1.0 - 8-4-26-1300.md
+BOOTSTRAP/BOOTSTRAP - Load the Difference Engine project.md
+BOOTSTRAP/BOOTSTRAP — Foundational Reduction Continuation.md
+BOOTSTRAP/Bootstrap - Difference Engine - Architectural Philosophy And Meta Synthsis.md
+BOOTSTRAP/Bootstrap - Difference Engine - Computational Bedrock.md
+BOOTSTRAP/Bootstrap - Difference Engine - Session Continuation Bootstrap - Epoch II - Repository Archaeology - Into - Constitutional Synthesis.md
+BOOTSTRAP/Bootstrap - Epoch II — Post Milestone 002 - Constitutional Kernel - Operational Bootstrap.md
+BOOTSTRAP/Bootstrap vNext — Candidate Constitutional Bootstrap Additions.md
+BOOTSTRAP/Computational Bedrock Bootstrap Ingester Recovery Continuation.md
+ade/kernel/bootstrap_loader/__pycache__/bootstrap.cpython-313.pyc
+ade/kernel/bootstrap_loader/__pycache__/loader.cpython-313.pyc
+ade/kernel/bootstrap_loader/bootstrap.py
+ade/kernel/bootstrap_loader/loader.py
+ade/kernel/tests/__pycache__/test_bootstrap_loader.cpython-313.pyc
+ade/kernel/tests/test_bootstrap_loader.py
+workspace/operational/bootstrap/BOOTSTRAP.md
+workspace/operational/bootstrap/BOOTSTRAP_vNext.md
+workspace/operational/corpus/chatgpt/ADE_ACTIVE_STATE_RESEARCH_BOOTSTRAP_v2.md
+workspace/operational/corpus/chatgpt/BOOTSTRAP-Difference-Engine-Branch-IV-Operations-ADE-Execution.md
+workspace/operational/corpus/chatgpt/BOOTSTRAP_ACTIVE_STATE_SNAPSHOT.md
+workspace/operational/corpus/chatgpt/BOOTSTRAP_CONTEXT_SNAPSHOT_Part_02.md
+workspace/operational/corpus/chatgpt/Bootstrap-RC2.md
+workspace/operational/corpus/chatgpt/Difference Engine Branch IV Operations Bootstrap-RC1.0.0.md
+workspace/operational/ingestion/inbox/Kernel_and_Bootstrap_Load.md(1).txt
+workspace/operational/ingestion/output/DE-CONV-20260804-0001/source/Kernel_and_Bootstrap_Load.md(1).txt
+workspace/operational/ingestion/output/DE-CONV-20260804-0002/source/Kernel_and_Bootstrap_Load.md(1).txt
+workspace/operational/ingestion/output/DE-CONV-20260804-0003/source/Kernel_and_Bootstrap_Load.md(1).txt
+workspace/operational/ingestion/output/ING-20260804-0081/source/Bootstrap_BABBAGE_Initialization.md.txt
+workspace/operational/ingestion/output/ING-20260804-0083/source/Bootstrap_Initialization_and_Rules.md.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/active-state-patch/reports/bootstrap-recovery-report.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/active-state-patch/tests/final-bootstrap-test.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-audit/reports/bootstrap-files.lst
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/extracts/bootstrap-documents.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/extracts/bootstrap-loader-source.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/reports/bootstrap-diagnosis.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/tests/bootstrap-loader-module.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-diagnosis/tests/bootstrap-loader-unittest.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-discovery/extracts/bootstrap-complete-source.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-discovery/reports/bootstrap-discovery-report.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-discovery/reports/bootstrap-reference-map.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-patch/backups/bootstrap.py.before
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-patch/reports/bootstrap-patch-report.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-patch/reports/bootstrap.py.diff
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-patch/reports/bootstrap.py.sha256
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/backups/bootstrap.py.before
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/backups/loader.py.before
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-repair/backups/test_bootstrap_loader.py.before
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/extracts/bootstrap-primary-sources.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/reports/bootstrap-content-files.lst
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/reports/bootstrap-execution-status.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/tests/bootstrap-loader-direct.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-verification/tests/bootstrap-loader-pytest.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-vnext/artifacts/BOOTSTRAP_DIFFERENCE_REPORT.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-vnext/artifacts/BOOTSTRAP_MIGRATION_NOTES.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-vnext/artifacts/BOOTSTRAP_vNext.md
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-vnext/backups/Governance-bootstrap.md.before
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-vnext/backups/bootstrap-BOOTSTRAP.md.before
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/bootstrap-vnext/reports/bootstrap-vnext-sha256.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-audit/extracts/queue-loader-source.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/queue-recovery-implementation/tests/loader-compatibility.txt
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-agnostic-test-repair/backups/test_bootstrap_loader.py.before
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/task-agnostic-test-repair/reports/test_bootstrap_loader.py.diff
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/test-contract-repair/backups/test_bootstrap_loader.py.before
+workspace/operational/recovery/gpt-plus-integration/20260803T043919/test-contract-repair/reports/test_bootstrap_loader.py.diff
+workspace/operational/repository_state/mobile_bridge/MOBILE_BRIDGE_LIVE_BOOTSTRAP_CENSUS_20260806T181634Z.txt
+workspace/operational/repository_state/mobile_bridge/MOBILE_BRIDGE_LIVE_BOOTSTRAP_CENSUS_20260806T181711Z.txt
+workspace/operational/services/specifications/bootstrap/BOOTSTRAP_SERVICE.md

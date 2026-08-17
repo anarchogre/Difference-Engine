@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:54.173193-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Implementation_Milestones_v0.1.md",
+  "original_name": "Implementation_Milestones_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0019",
+  "schema_version": "0.1.0",
+  "sha256": "444d7902f6dbb4762735102ffce17e566778891512fbe733217e40a1a42d6a49",
+  "size_bytes": 4511,
+  "source_class": "manual_batch"
+}

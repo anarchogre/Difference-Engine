@@ -1,0 +1,5 @@
+IMPORT_LOAD_BOOTSTRAP=PASS
+IMPORT_INITIALIZE=PASS
+LOAD_BOOTSTRAP=PASS
+ARTIFACT_TYPE=BootstrapArtifacts
+ARTIFACTS=BootstrapArtifacts(constitution=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/constitution.md'), amendments=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/amendments.md'), bootstrap=PosixPath('/storage/emulated/0/DifferenceEngine/Repository/Governance/bootstrap.md'))

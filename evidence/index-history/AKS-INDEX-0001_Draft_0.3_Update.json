@@ -1,0 +1,18 @@
+{
+  "artifact": {
+    "identifier": "AKS-INDEX-0001",
+    "version": "0.3-draft",
+    "append": [
+      {
+        "id": "AKS-DECISION-0001",
+        "class": "Template",
+        "location": "00_Project_Governance/Decision_Records"
+      },
+      {
+        "id": "AKS-SPECSTATE-0001",
+        "class": "Template",
+        "location": "00_Project_Governance/Specification_State"
+      }
+    ]
+  }
+}

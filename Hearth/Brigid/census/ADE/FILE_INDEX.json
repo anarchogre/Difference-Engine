@@ -1,0 +1,5532 @@
+[
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": ".cg/editor/breakpoints.json",
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "size_bytes": 2
+  },
+  {
+    "empty": false,
+    "extension": ".bak",
+    "path": ".cg/editor/openedFiles.json.bak",
+    "sha256": "3534e93b0139ebfada87fa8fb58919c659181955d19afece37201d2dd8eeb3cf",
+    "size_bytes": 535
+  },
+  {
+    "empty": false,
+    "extension": ".pb",
+    "path": ".cg/gradle-sync/project.pb",
+    "sha256": "ca25afc41c3c88ef8cec9939aeb18bd9e86d3d3b37df5c84be0b78a9663e915a",
+    "size_bytes": 6804
+  },
+  {
+    "empty": true,
+    "extension": ".lock",
+    "path": ".cg/gradle-sync/sync.lock",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": false,
+    "extension": ".pb",
+    "path": ".cg/gradle-sync/sync.pb",
+    "sha256": "aa71f0c8d49be4e34bfefb41db91448c1f9c8a686e65a62de49ce0a3f4c67c6c",
+    "size_bytes": 248
+  },
+  {
+    "empty": false,
+    "extension": "",
+    "path": ".gitignore",
+    "sha256": "233ed47731ab72f43644afd98626a3fe5efcfef48983b835c6e27bb689ee80bc",
+    "size_bytes": 21
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "ACP-0001_Foundation_Gamma_v1.4-1.md",
+    "sha256": "705533b8a98c0939370174a190595d0eae58afa02e642a016e540f06f1f93135",
+    "size_bytes": 895
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "ACP-0001_Foundation_Gamma_v1.4.md",
+    "sha256": "705533b8a98c0939370174a190595d0eae58afa02e642a016e540f06f1f93135",
+    "size_bytes": 895
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "ACTIVE_STATE_SNAPSHOT_v1.4.md",
+    "sha256": "1bb255bec02c8e014e57386473a882066d6ff7191a5eb15dc14a988490e8ab07",
+    "size_bytes": 1394
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "ACTIVE_STATE_SNAPSHOT_v1.4_REVISED.md",
+    "sha256": "d78e6ff0c1a0ac8975e8cf68261eda6e6ab42f20afc5f59be5a690ba0a68092f",
+    "size_bytes": 318
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "ACTIVE_STATE_SNAPSHOT_v1.4_REVISION.md",
+    "sha256": "2520bfc1b142baa0443172f7c2b8143f717cb311923765b6cf3cc32a5b285eb3",
+    "size_bytes": 269
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "ADE Workflow Automation Prompts-1.pdf",
+    "sha256": "285659159ce0005d161dd79248667214274f1c95cf21907bf9a171faf9f26ef5",
+    "size_bytes": 98786
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "ADE Workflow Automation Prompts.pdf",
+    "sha256": "285659159ce0005d161dd79248667214274f1c95cf21907bf9a171faf9f26ef5",
+    "size_bytes": 98786
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "ADE_Constitution_v1.1.md",
+    "sha256": "9373db81298a7255aa7013f524b5fadc9808e4fb4da3e40fabe5b04624ce9591",
+    "size_bytes": 3949
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "ADE_Constitution_v1.2.md",
+    "sha256": "93702ed69683aaa88ef940e07d76ebb2fbf44a930b4ebdd6bbb113bf0902ecae",
+    "size_bytes": 1354
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "ADE_Constitution_v1.4-1.md",
+    "sha256": "3252209105c671f3c980c6294f5c39ac22201b9b5ad592b6167754994adfbff3",
+    "size_bytes": 1249
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "ADE_Constitution_v1.4.md",
+    "sha256": "3252209105c671f3c980c6294f5c39ac22201b9b5ad592b6167754994adfbff3",
+    "size_bytes": 1249
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "ADE_REPO_zips/Archives.zip",
+    "sha256": "2846a4739a104b5f3591c98a713f0f4c16c68bb215729999780ca23a22680444",
+    "size_bytes": 4497888
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "ADE_REPO_zips/Claude.zip",
+    "sha256": "04f3aba5fde72346adef7ac2cc847fc3f7d1f49cb6723cb27f1dceca7281f584",
+    "size_bytes": 4259776
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "ADE_REPO_zips/Docs.zip",
+    "sha256": "5312c76cb81fca5e308b406b2ed5a07cc8a8ca10747a7c9ebad7a0035ab8ad38",
+    "size_bytes": 413
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "ADE_REPO_zips/Governance.zip",
+    "sha256": "2e665cda8b3a3665e32300eb3ad07a1c7873fd150ec592be6c237cb643032bf4",
+    "size_bytes": 1829
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "ADE_REPO_zips/Inbox.zip",
+    "sha256": "b54584679a6dd41d943321b5301480ae93a25063b22fe2427c5095549df66a04",
+    "size_bytes": 149315
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "ADE_REPO_zips/Library.zip",
+    "sha256": "be0b746b4e007831cb22430e297581224d3ebb7abe9ffa8c23c899f5456eb748",
+    "size_bytes": 413
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "ADE_REPO_zips/Loose repo tree files.zip",
+    "sha256": "541ea88b8c51395e6ec4191c6282ac08bc5cac223fee6c0fa42f759a486cf98d",
+    "size_bytes": 287853
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "ADE_REPO_zips/PP.zip",
+    "sha256": "e7146cdacb1ea891c8974c8cf243ea9e25c8e6972edd0e17c9606011592f04fa",
+    "size_bytes": 251
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "ADE_REPO_zips/Parser.zip",
+    "sha256": "0915bc5c7bd2d43ac397a47a9260833a308e6bac6018d60c54c702d315910d4e",
+    "size_bytes": 267
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "ADE_REPO_zips/Pubs.zip",
+    "sha256": "f86f026cc077554a628e1eaeab89ed18f06df62901d9892239565c5398e04a6d",
+    "size_bytes": 291
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "ADE_REPO_zips/RC1.zip",
+    "sha256": "d95bd117afab8aadf849c6ee63f0d706358901005551ee4a2786d1891b7e049a",
+    "size_bytes": 113786
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "ADE_REPO_zips/Reaearch.zip",
+    "sha256": "6d9dd8ad4a6111b902ccfa46da65a40f83707f5cc5aaaa40ae76e166e27e4d09",
+    "size_bytes": 267
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "ADE_REPO_zips/Specs.zip",
+    "sha256": "216c1e948db0cf720c0d1ab20a8d5c11fddf74c1681a5c7218b857dde79dbd10",
+    "size_bytes": 291
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "ADE_REPO_zips/Tools.zip",
+    "sha256": "572bb17036800f473158ad0cd63bd15194a55c6c2398f187c8f91e4cfb8084fe",
+    "size_bytes": 257
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "ADE_Workflow_Automation_Prompts.json",
+    "sha256": "7d3082ac903843a804be700ff7d0cd11c2f9b0a189c8ffe77011d3380ec136b0",
+    "size_bytes": 14211
+  },
+  {
+    "empty": false,
+    "extension": ".txt",
+    "path": "ADE_full_repo_context.txt",
+    "sha256": "3b6a50a28ca3d6282baab01230e487a93fc6eff6e64fb105b2fe89724ea4ac08",
+    "size_bytes": 718395
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "AKS_Companion_Narrative_Working_Draft_v0_2.docx",
+    "sha256": "59b71c9980f00a138e5af1980475c1e5b6c770b693562aefd3c831ce342895a9",
+    "size_bytes": 37791
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "AKS_Companion_Narrative_Working_Draft_v0_2.json",
+    "sha256": "3e2a0ac4824a5fa406ed43ff3e2038989934bf8eeac62267b48b0c818589a7d6",
+    "size_bytes": 894
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "AKS_Covenant_v1.0.json",
+    "sha256": "26b5a13a469d2585ca024135c7c1474967dc378061989d22d269f90c4da99a84",
+    "size_bytes": 82
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "AKS_Gardener_Cultivation_Model_v1.0.json",
+    "sha256": "45f64f7bf3f2acc613bfabe052f751eade78eeb5655f4ece2797ee7bee01a020",
+    "size_bytes": 100
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "AKS_Human_Centered_Repository_Philosophy_v1.0.json",
+    "sha256": "177fc8d9a3a48bb022f49181404b994484a8a6f05c03a6f4ad7ac574a4460df2",
+    "size_bytes": 110
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "AKS_Inference_Linguistic_Preservation_Package.zip",
+    "sha256": "a2ba9ccc24d6bf9085b65c09747efc62369ca49b2c544d08a41238916bb89f06",
+    "size_bytes": 1640
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "AKS_Living_Repository_Architecture_v1.0.json",
+    "sha256": "53ea17ca86d6bc99ccb2dc041344487da3d832eb5502663c4164f6c9903f969c",
+    "size_bytes": 639
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "AKS_Longitudinal_Reasoning_v1.0.json",
+    "sha256": "faf1e90ec02b21437b395126ab222a0977084caaf28ceaadc127bd811ce27d06",
+    "size_bytes": 181
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "AKS_Mission_Statement_v1.0.json",
+    "sha256": "6704b712baf1ca8e016014b984dec293306d2c8d5370a5d7a4317a42a86b0bd4",
+    "size_bytes": 147
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "AKS_Stewards_Compass_v1.0.json",
+    "sha256": "ba2f33a976ba26cf2700c2352ae84fe6d424251800a297648b660f4f27f66be0",
+    "size_bytes": 205
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "Archive/Archive_Evidence.zip",
+    "sha256": "77e6c003decf0626a689594fa1251423ccfca66ab7d87deb972541c972d5a327",
+    "size_bytes": 1435
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "Archive/Archive_Imports.zip",
+    "sha256": "890768a2068f488b0fc4326a7316177b1c4c08f75a8bd2ecf7f45b6292d1139e",
+    "size_bytes": 1582
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "Archive/Archive_Logs.zip",
+    "sha256": "898041a3af836db1263cee3329451cce09e935540eadf70e35a3db53564a3d06",
+    "size_bytes": 243
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "Archive/Archive_Recovery.zip",
+    "sha256": "0bf8e2742484b83649ad11e5a7edf86b252f9ffec420d66189e03aa9dfa9dd60",
+    "size_bytes": 4453860
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "Archive/Archive_Snapshots.zip",
+    "sha256": "c1535ecdf6b34994385cff4502b446ff1f910a608cf34f16ed9afded16508fd6",
+    "size_bytes": 32699
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Evidence/OBS-0001/Derived/f.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Evidence/OBS-0001/Notes/vhy.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Evidence/OBS-0001/Sources/fhu.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Evidence/OBS-0001/dfr.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Evidence/fgh.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Imports/Accepted/ghy.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Imports/Parsing/ghy.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Imports/Pending/ghy.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Imports/Rejected/ghy.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Imports/Review/ghy.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Imports/df.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Logs/Djt.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-ARCH-0007_Domain_Separation.json",
+    "sha256": "c63e94c85ccb12fbcf08f2984948b0a089fcf401482c2370bc7a6f0296e38332",
+    "size_bytes": 539
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-ARCHITECTURAL-PRINCIPLES-0001.json",
+    "sha256": "79f311f9fd7b99a77b9fc72fb8fed7a6e66ba2b8731a4ae6d56dfec243651f5f",
+    "size_bytes": 502
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-AUDIT-0001_Foundation_Audit-2.json",
+    "sha256": "0e8ae1c83385768d8da3fe9ed8765e8051e67e2aef03682005288ea97f270d0d",
+    "size_bytes": 430
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-AUDIT-0001_Foundation_Audit.json",
+    "sha256": "0e8ae1c83385768d8da3fe9ed8765e8051e67e2aef03682005288ea97f270d0d",
+    "size_bytes": 430
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-AXIOM-0001_Identity_Independence.json",
+    "sha256": "2b235eeabc0df3c6bfe52276e6bc50da7678e78aea4bb3c8d7eba2fcfa1e0525",
+    "size_bytes": 576
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-CONSTRAINT-0001_Universal_Constraint_Model.json",
+    "sha256": "f39a035720abc1760fa442de5d505801d3294a06021271fc9363c1ebf5a117d7",
+    "size_bytes": 952
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-CV-0001_Draft_0.2_Canonical.json",
+    "sha256": "43d2c1c5054f5021c11d0a41825580c9afedeaa9acb57c376ca683ce77647b09",
+    "size_bytes": 1756
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-CV-0001_Draft_0.3_Vocabulary_Update.json",
+    "sha256": "d016b440a3f623ed3c3687b74a744e117b14d4ae68a2a5138da71e008fbdebdf",
+    "size_bytes": 882
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-DECISION-0001_Template.json",
+    "sha256": "ca714c7d50a0e98e765bc93b15150a2ec650b027e9deaa564e4fa9ca28938c97",
+    "size_bytes": 482
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-DECISION-0002_Kernel_Validation_Layer.json",
+    "sha256": "6a99c5482557d01a0d259684ed2e4c800634bb1fc56d384aa3ab257e15640a2e",
+    "size_bytes": 339
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-DECISION-0003_Theorem_Workflow.json",
+    "sha256": "bb6e50c1b488cf0d11367ed1b1dba5f958c6e3e6ba0076f29478a624e160c2d3",
+    "size_bytes": 409
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-DECISION-0004_Kernel_Freeze.json",
+    "sha256": "477d349cb2d50e27bc1258e56a5f8933d3a45e575811e0c2ad9fabfff88e016b",
+    "size_bytes": 403
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-EDU-SYN-0001.json",
+    "sha256": "a6f80fc0bbf2e30717136ea9ea0c080268c6f926e914c2182928751e7ef28988",
+    "size_bytes": 740
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-ENDURANCE-B-REPORT-0001.json",
+    "sha256": "d5e15622cde055dbc5786865476aa689fc66eb5f5843f36b0d55ac42d9e0b653",
+    "size_bytes": 430
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-ENDURANCE-C-REPORT-0001.json",
+    "sha256": "9a8954880f44331ecd09d27452faac2154a7d2e7f5357e37a8a744f2387b3d78",
+    "size_bytes": 312
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-ENTITY-0001_Draft_0.1_Universal_Entity_Model.json",
+    "sha256": "251e9179471a5ffae8a53a9b918709cabd32c1fd08baf662588e80afefe0bc2e",
+    "size_bytes": 620
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-ENTITY-0001_Draft_0.2_Update.json",
+    "sha256": "53621c7d98e72c30f24c50217b13e80fa18f093fe7c0d9d44060ef52aa43e3e2",
+    "size_bytes": 330
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-ENTITY-0001_Draft_0.3_Update.json",
+    "sha256": "33d17954c4d06a56bdc890d9d0051ec637457b815bf0ffafb7e56acbdc1e6b81",
+    "size_bytes": 286
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-ENTITY-0001_Repository_Grade_v1.0.json",
+    "sha256": "6dc0755caa42f3ff0598ece2a164856e134f717ab28dc2771d37f59a63b7b45d",
+    "size_bytes": 946
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-EVID-0001_Evidence_Quality_Classification.json",
+    "sha256": "6191e927d8df220b31c27621eb057d2a93eb6aeba95a65780db3435ebf0c3cbe",
+    "size_bytes": 942
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-FOUNDATION-ROADMAP-0002.json",
+    "sha256": "beb8abc498a36a01f3a2627229eef4c0606c47b4cccffbee7748e3cde3be30d5",
+    "size_bytes": 356
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-FOUNDATION-SPRINT-0001.json",
+    "sha256": "818d87759e275c773a71689303f158ef8cff16e92ead06ba6cf7253074996a94",
+    "size_bytes": 539
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-FRENZY-0001_Validation_Backlog.json",
+    "sha256": "5f2e6441936137507e583684ab6a1cfb4fb73c9be95738ef528effd7e16c38ed",
+    "size_bytes": 644
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-GATE-ALPHA-0001_Candidate.json",
+    "sha256": "698cfd12531800cb0bb8e05133973b9c2f8fe6d260f2a118c7d2c5ef8739d8b1",
+    "size_bytes": 504
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-GATE-ALPHA-0002_Declaration.json",
+    "sha256": "85d32c2305ebf2541553a40bf5ed22869a4175902ca1dbbfb919cabf184e7f6c",
+    "size_bytes": 508
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-GATE-BETA-0001_Candidate-1.json",
+    "sha256": "3b2d56236cdab937835a582ab9e4b060d4148a0143e82832734a3e2f35402d1d",
+    "size_bytes": 435
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-GATE-BETA-0001_Candidate.json",
+    "sha256": "3b2d56236cdab937835a582ab9e4b060d4148a0143e82832734a3e2f35402d1d",
+    "size_bytes": 435
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-GOV-0002_Evidence_Driven_Evolution.json",
+    "sha256": "e496e3d1f3b095f08f9a5d205da632e552e8828d869f1a7a475c4682ddf91929",
+    "size_bytes": 366
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-GOV-0003_Preservation_Discipline.json",
+    "sha256": "8dd69b99f34fe582b0928abd31fec248fa4852d76419e09078fcdd446d4e6894",
+    "size_bytes": 390
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-GOV-0004_Dependency_Review_Status.json",
+    "sha256": "0f0534c7623bd80601abbfb7cc7df8072840832a54735ca7330b4d09f9a1e4d3",
+    "size_bytes": 576
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-GOV-0005_Contradiction_Resolution_Status.json",
+    "sha256": "2ab4d272cba16658f1c4f9473dd59a06eaaed533bc567fdf13fb0473590e4f16",
+    "size_bytes": 447
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-GOV-0006_Representation_Revision.json",
+    "sha256": "6959efc99536fc5363408b9b7b45da8adb388353741d6724281f9b87389f6e16",
+    "size_bytes": 399
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-GOV-0007_Lineage_Change_Rationale.json",
+    "sha256": "2615639a1fd4a717f8e453aeb40883a09f46fd924d82766faa91fcfd0e60f890",
+    "size_bytes": 394
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-GOV-0008_RSI_Metric_Separation.json",
+    "sha256": "d60d6112f6b1606d300423a51c668e0530d6546f15d6f5a7f071e8843fda8a04",
+    "size_bytes": 590
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-GOV-0009_Behavior_First_Validation.json",
+    "sha256": "3cfb5a586f0e5e7a1ea2d8e6a1cd75f33ad42bc859cfe296034d69bef64e9e2a",
+    "size_bytes": 380
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-GOV-0011_Preservation_JSON_Rule.json",
+    "sha256": "6cfeef4c1f41caa4ce1ed9d7c51b0915139e4289110807ac40f5bcc438d6bcba",
+    "size_bytes": 322
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-GOV-CP-0001.json",
+    "sha256": "93281620d531fe93cf920184f8242f94280cd1a33b83609cfb29e46be0ad6d22",
+    "size_bytes": 885
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-INDEX-0001_Draft_0.1_Canonical.json",
+    "sha256": "58fa506cf3ef9e5b8c4d0a6e392dd4b33f2358b21594f58d14926fe05560a0cc",
+    "size_bytes": 2259
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-INDEX-0001_Draft_0.2_Update.json",
+    "sha256": "9fbdb667bdfcd5b57398af9dff732e2e6df50917b9fffccd9666f74e88844e39",
+    "size_bytes": 384
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-INVARIANTS-0001_Draft_0.1_Canonical.json",
+    "sha256": "b7b58251610bf898b16dc80bc9772785a537c766d673c66617f9be2eb328857c",
+    "size_bytes": 3576
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-IR-0001_Working_Model.json",
+    "sha256": "c89139aeb828fd0342502d0d4abc674e32b10f40541201f10da170c781752bd2",
+    "size_bytes": 458
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PATTERN-0001_Artifact_Family.json",
+    "sha256": "4b40ce9a66098dbf8900be406d906e971e35c3edd6412e84c56c03c196d9d64e",
+    "size_bytes": 418
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PHASE-0006_Escalated_Verification.json",
+    "sha256": "b2cbd5bba33ac27ca3bdb10a5b50537a2e96752d3ee5129f10409d513cad782f",
+    "size_bytes": 449
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PIPELINE-0001.json",
+    "sha256": "0a5b05bb6a0a15cefc81c7e563ea40bb4f2dba972a7ae58c6e18902c7a6fe2e9",
+    "size_bytes": 469
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0004_Inheritance_Conservation_Checkpoint.json",
+    "sha256": "98a11d8374365645c4738da408ff40fb71e4a8606ca3f459ccc4b9e498fb3f20",
+    "size_bytes": 623
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0005_Foundation_Logic_Checkpoint.json",
+    "sha256": "7aabec8572ec1da29069ba17bc2af0441c6966d35b6edfdf4ef64e643783fd59",
+    "size_bytes": 447
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0006_Kernel_Constraint_Checkpoint.json",
+    "sha256": "b458e8178f0a4f7c16b80bf6ce0b66cd16388679af63dc11e55a2182e944480a",
+    "size_bytes": 417
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0007_Theorem_Queue_Checkpoint.json",
+    "sha256": "729a9ce666bf3d123a281f0507a096893bcec85e5a50b2a5e47c92238e1a586a",
+    "size_bytes": 376
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0008_Foundation_Audit_Checkpoint.json",
+    "sha256": "a11f85c1b5cdb542766eec18b06b34ae57d453f47802ce2d7a5db63e50deecf8",
+    "size_bytes": 532
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0009_Gate_Alpha.json",
+    "sha256": "8d700de52b05b59e4a309068c34849584b8b4eb240711eded86761f050a77593",
+    "size_bytes": 424
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0010_Semantic_Composition_Checkpoint.json",
+    "sha256": "3e5dfada04059c6fd12e3350648aa8695d6da64ca03432bc661d9303a704f46c",
+    "size_bytes": 486
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0011_Engineering_Test_Transition-2.json",
+    "sha256": "feeb8fda48ed25ef71c1c48b48aa37d47c07e2a0574e7d396e20f511e7821ee6",
+    "size_bytes": 320
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0011_Engineering_Test_Transition.json",
+    "sha256": "feeb8fda48ed25ef71c1c48b48aa37d47c07e2a0574e7d396e20f511e7821ee6",
+    "size_bytes": 320
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0012_Behavior_Architecture.json",
+    "sha256": "3d49795e3ea4b34278a21ac265e81d5b8a42b28a56b5b1a3d50b2a0eef8b8fa5",
+    "size_bytes": 383
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0013_Repository_Maturity.json",
+    "sha256": "f6e5f55e2628b531e23162c3eb6ee7c78a748dd0a76a47c6ee464f661dd06d48",
+    "size_bytes": 391
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0014_Proposition_Completion.json",
+    "sha256": "ce3a509c1c70729ffb5722990d0d9d9f63ca437a02cc97b020e61ebdc510181f",
+    "size_bytes": 423
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0016_Relationship_Classification.json",
+    "sha256": "ca5980cee599b654137a833e574e640cbd0b14690a2a748133db7194ec012cda",
+    "size_bytes": 517
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0017_Evidence_Refinement.json",
+    "sha256": "ef5e763488c42fb5b8df164c87a49a563ebb20c4fda1e7f426878a915aa5747d",
+    "size_bytes": 1075
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0018_Governance_Dashboard.json",
+    "sha256": "7b1a63dec74be99b00446c80d874683b5a4a54b5e9160f757bda915c82af2dbc",
+    "size_bytes": 1296
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0019_Dependency_Review_Status.json",
+    "sha256": "a65e4bc332e96acb4a2210aac73ce4f0e1e5f6b0e5641d9aa6f7287cd97474d2",
+    "size_bytes": 699
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0020_Contradiction_Framework.json",
+    "sha256": "ab9af2b9b2552380e500383adb11267c58c15022a0a10f7387263d18569af283",
+    "size_bytes": 822
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0021_Semantic_Conservation.json",
+    "sha256": "80bd2d3403ec4fc7c8c000a61a63bf0f69041925763b34ad66c909d88615968e",
+    "size_bytes": 869
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0022_Replay_Queue.json",
+    "sha256": "101a387291eed431178ec026c0a5c82e88c7c5d9dcc4a3cdb40e729ad3ae6bd9",
+    "size_bytes": 756
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0023_Scale_Simulation.json",
+    "sha256": "07f57750c28e43251a00a33115d2e59b33eb46d03ff336773500fbb24cd7809f",
+    "size_bytes": 763
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0024_Evidence_Sufficiency.json",
+    "sha256": "fcd515dbf755776cc1efe3256b3a963241eb880b148dfc00315fec8de905162c",
+    "size_bytes": 789
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0025_Validation_Program_Transition.json",
+    "sha256": "9bed86ac4330dbe91557f9d2333c0ba0586e9c172a2e52c6cfb349e375ece0fd",
+    "size_bytes": 1630
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0026_Phase_Transition.json",
+    "sha256": "a51f775d1549da420a279eea7b400d3dfceacc3f9bb07f84ccdbab7ce95e396d",
+    "size_bytes": 756
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0027_Methodical_Progression.json",
+    "sha256": "3be1743a270216b4180d4649a113361c7ec60e8b594781cfe30c2b9e4e3a71d6",
+    "size_bytes": 687
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0029_Endurance_Cycle_A.json",
+    "sha256": "0733841d47649119bdfb4a088ec815be67fb17121da1c3ac29747b173e2e0897",
+    "size_bytes": 938
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0030_Endurance_Cycle_B.json",
+    "sha256": "06088924c86afdfa0fb750307c2a2027dd7e1228859345aae41ef7292b5d8079",
+    "size_bytes": 1015
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0031_Gate_Beta_PreAudit.json",
+    "sha256": "3a582f271fdb8df8ebb8e28251b649cf46ed59203f62978aee73d57b5207bf7c",
+    "size_bytes": 951
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0032_Engineering_Reproducibility.json",
+    "sha256": "17c1fd70e75ae4141883bdbc17b61d4294c103fee848fbad992b93577f5908fb",
+    "size_bytes": 964
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0033_Viking_Campaign_I.json",
+    "sha256": "eea975f31bd5df60174128f501129fb5c2c7c393e82e7d72524253332647b94a",
+    "size_bytes": 1140
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0034_Engineering_Maturity_Snapshot.json",
+    "sha256": "5fd12044a185b77007210f0359620d8472ac520fafd8bf76f1df2a4ebe1b065c",
+    "size_bytes": 1591
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0035_Architectural_Invariant_Assault.json",
+    "sha256": "58957ee4dc45a1a3d68d31b64f917d2b06bd0cd7672fb955909444fb4667fb09",
+    "size_bytes": 1505
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0036_Necessary_Complexity_Snapshot.json",
+    "sha256": "780664d1d31a7dcbde72657824008dbb06f3c66f9a0451d40c923a4e534ae953",
+    "size_bytes": 1524
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0037_First_Principles_Extraction_I.json",
+    "sha256": "4227bb94e6b79edb88a440f99fcdb0973eab413519f0cd2104150d01d73f152a",
+    "size_bytes": 824
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0038_First_Principles_Falsification_I.json",
+    "sha256": "7e5d2e918b310d7ee5189eec25cca7f4da7f60943b0774eaf65d7a0af62358ce",
+    "size_bytes": 1060
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0039_First_Principle_Independence_Snapshot.json",
+    "sha256": "d05c1c02710358c05b49d1a7915338aabf9d59e0057f107228aea351b09540cb",
+    "size_bytes": 1150
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0040_Boundary_Conditions_and_Self_Revision.json",
+    "sha256": "e38399c998903b6f9ec10f378ecc685b716a47e12f7568931d0c0e7a5ddf75f7",
+    "size_bytes": 1436
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0041_Emergent_Interaction_and_Dynamic_Equilibrium.json",
+    "sha256": "b7f93e2664f123f99a91896cc4fb42b55be92c29bf22c9a69b5ae5456136be13",
+    "size_bytes": 1288
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRESERVATION-0042_Emergent_Behavior_and_Regulatory_Structures.json",
+    "sha256": "1685f28640e7c4478f46ea5ac266b64cd557558d4330ab257e8b7b1952c4ca5f",
+    "size_bytes": 1161
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRINCIPLE-QUEUE-0001_Knowledge_Composition.json",
+    "sha256": "e4917a22a107c3e5bc33f91f0c990caee825063ddf5901a788437a8df1a6d582",
+    "size_bytes": 756
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRINCIPLE-QUEUE-0002_Pipeline_Determinism.json",
+    "sha256": "79808312cca45bed72af6ec48636ff4260d56f1a6f9c52e123e9103e5fc7a35d",
+    "size_bytes": 421
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PRINCIPLE-QUEUE-0003_Self_Representation.json",
+    "sha256": "2ed66915febd3b4b1e28f38f01d4efef84326658e38bd9ee3aa091b682c13b25",
+    "size_bytes": 505
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PROP-0001_Draft_0.1_Proposition_Model.json",
+    "sha256": "e60cf6511fc16f238c4d3a6727635e9c77504684712ceab8924e6449fe3904ab",
+    "size_bytes": 433
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-PROP-0002_P021_Canonical_Granularity.json",
+    "sha256": "56b1395ba755eec2a2314c16b448b0407f8ef53835ee01a20dfad437c2566450",
+    "size_bytes": 389
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-QUEUE-0003_Semantic_Conservation.json",
+    "sha256": "2f7856beea1bec64f1cad7ea9a22b082f10882c7537d6e3242aa07f69dd393c3",
+    "size_bytes": 689
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-QUEUE-0004_Repository_Replay.json",
+    "sha256": "d1378ce25d1b659dbeffd2c07ee83de8772d61f74af8ccec2cd9f720779f4dba",
+    "size_bytes": 516
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-QUEUE-0005_Evidence_Sufficiency_Check.json",
+    "sha256": "fb6661c31c1758d70bbe12a15ff46f5483c7bb9a71e10b35061e659774d4150e",
+    "size_bytes": 544
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-QUEUE-0006_Architectural_Stability_Principle.json",
+    "sha256": "3e1cc087a5a88c2b3eb714842566086712d71e5fdd5e46508b6a29c51cf7a069",
+    "size_bytes": 503
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-QUEUE-0007_Validation_Outcome_Classification.json",
+    "sha256": "3fdc20ff3804cfbee7a539effb7a56ff473870766a211f4ebc7807c7167d3294",
+    "size_bytes": 423
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-QUEUE-0008_Engineering_Culture_Preservation-1.json",
+    "sha256": "d440b6f1fbb33a6bdec5d8468b57a60b9aa2c454239f5655645e39fae547faf3",
+    "size_bytes": 415
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-QUEUE-0008_Engineering_Culture_Preservation.json",
+    "sha256": "d440b6f1fbb33a6bdec5d8468b57a60b9aa2c454239f5655645e39fae547faf3",
+    "size_bytes": 415
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-REL-0001_Relationship_Classification.json",
+    "sha256": "294b2f0a5d61d013f6a92bec4db6e154445da683367f211404595e5564a4bcf9",
+    "size_bytes": 921
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-RML-0001.json",
+    "sha256": "fe8394d3454ec36c4239c8824b86b9914bd9940f90aba7fc0dfb971b9d334a3a",
+    "size_bytes": 580
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-ROADMAP-0001_Draft_0.1_Semantic_Core_Roadmap.json",
+    "sha256": "ac1aebf2e497a34af9f3542d97451b33ac20da17a9007ada45d8d5927ef6f483",
+    "size_bytes": 436
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-ROADMAP-0003_Post_Gate_Alpha-1.json",
+    "sha256": "204b601464b2cc98683e1c3bec88653eac7bc590aa9d135c5e9eb7604edc31e8",
+    "size_bytes": 430
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-ROADMAP-0003_Post_Gate_Alpha.json",
+    "sha256": "204b601464b2cc98683e1c3bec88653eac7bc590aa9d135c5e9eb7604edc31e8",
+    "size_bytes": 430
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-SIS-0001_Semantic_Integrity_Checklist.json",
+    "sha256": "c41835e2c9cb35f102d139d69d840a2dea967afff44e6c1fc6e4199e9bb73a26",
+    "size_bytes": 469
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-SPEC-0001_Draft_0.4_Canonical.json",
+    "sha256": "9e612930ce25e2c507d98aa49dec8cc79763812a4033225c4ce50a6c3de8ad76",
+    "size_bytes": 7096
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-SPEC-0002_Draft_0.1_Canonical.json",
+    "sha256": "7e83ae60a2bc9fe1cb701aa10d30b0ca1cc10d12209bec66c547078426a6bb28",
+    "size_bytes": 3245
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-SPEC-0004_Draft_0.1_Canonical_Knowledge_Model.json",
+    "sha256": "d879fe3b9238c3fd13654cd8e5ac37ed42a18f5e25c18cdd97da000f96c4cbb6",
+    "size_bytes": 464
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-SPEC-0005_Draft_0.1_Semantic_Kernel_Architecture.json",
+    "sha256": "528a2775b53711d5e931ee2f4f255cc85fa1a216630e928385763c39ab423289",
+    "size_bytes": 502
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-SPECSTATE-0001_Template.json",
+    "sha256": "a05ffa675604e5f04459dbf0e4ce57de11f01d10266e09023f478650d12abf27",
+    "size_bytes": 478
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-TEST-0001_EXECUTION_0002.json",
+    "sha256": "4752cda914d57cd6f395397eedb50e9e9da788567056b034cb2ad1129e12939b",
+    "size_bytes": 516
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-TEST-0003_EXECUTION_0001.json",
+    "sha256": "d6b13f807917cd9fd9b6162691a7ede7214047847b90ea19941d65c6d3f52355",
+    "size_bytes": 537
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-TEST-0004_EXECUTION_0001.json",
+    "sha256": "c48779581d69ad00e6b0a9c63abd5a5d6edb50888202a418f4fbb2caa91f2e98",
+    "size_bytes": 383
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-TEST-0007_EXECUTION_0001.json",
+    "sha256": "dd18f3eed8b8ba6c06a60c914fe584e308b46618bb9afae4747eac2be5a940fe",
+    "size_bytes": 764
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-TEST-FAMILY-0001.json",
+    "sha256": "feb007e3c2cd5c3f5a8e67b032e74404ac52a119f9e65be0423123fd267cd444",
+    "size_bytes": 477
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-THEOREM-0001_Inheritance_Conservation.json",
+    "sha256": "c876bacb4f749e1d21c74b84ca60b9ca2676224a0a7d3534917871b94c70c4e9",
+    "size_bytes": 1614
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-THEOREM-QUEUE-0001_Update-1.json",
+    "sha256": "3da05f81c5c02a91f476e899db96d57ddac423841dd55fb76264023c945938ea",
+    "size_bytes": 621
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-THEOREM-QUEUE-0001_Update.json",
+    "sha256": "3da05f81c5c02a91f476e899db96d57ddac423841dd55fb76264023c945938ea",
+    "size_bytes": 621
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-THEOREMS-0001_Draft_0.1_Canonical.json",
+    "sha256": "51104a192210d74b2c1a83cbeb2b6730ccb265ff8a932c4dc4a896e9aaca5039",
+    "size_bytes": 2440
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS-TRUTH-0001_Draft_0.1_Truth_State_Model.json",
+    "sha256": "677df5ef5689a8c9dc513ae2fc561a543dac4505a70560e73fabdcfa92367b8b",
+    "size_bytes": 1180
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_AOS_1_0__All_Previous_data_and_conv.json",
+    "sha256": "3c84957c28a0ef7508bfc0d8e704fe23ca97330e15843b5f253f95b699048c05",
+    "size_bytes": 150072
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_AOS_Repository.json",
+    "sha256": "50c5cfe4af187286206a73bda6e21aac305f663627b0669673a8fb1e03510682",
+    "size_bytes": 150051
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Architecture_Manifest_v1.json",
+    "sha256": "08e06fead80153709fe5f5052470e26bb994ea9d238eb5dd2e1d6093239169b9",
+    "size_bytes": 726
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Architecture_v0.1_Draft.json",
+    "sha256": "721891d629e95a7e53339a81db40e5db2f1173e6048a91b134245aacae5e4508",
+    "size_bytes": 3339
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Author_Statement_v1.0.json",
+    "sha256": "8240a14674fa2a46609297b3e4e1ef9bd42404d13fa4dc3869eb44ad22a136bd",
+    "size_bytes": 90
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Benediction_v1.0.json",
+    "sha256": "493601e0304ed38d0c323985d4d342e11c764e01069f185c828b5c82ae0615ea",
+    "size_bytes": 85
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_CPA_0001_Foundation_Update.json",
+    "sha256": "0d22e0bfce1af8cb7772a9bd6fadae2faf00851ecd2b2bf8280ddbd20d12a7e3",
+    "size_bytes": 548
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_CPA_0001_Manifest_Draft.json",
+    "sha256": "520eeb599af329348dfcbeb4680d24f3740e0dbfd69bc00538f0d939a9b87c39",
+    "size_bytes": 1599
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Canonical_Knowledge_Object_Schema_v1.1.json",
+    "sha256": "f06e6128d528c5d5ed389d8231150428d12a2817e6402d514bc747228ed0f5e2",
+    "size_bytes": 567
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Communication_Architecture_v1.0.json",
+    "sha256": "7cae1155721f4eb4106e842122fcbbf40bd84ad6d55ae285638c1df260b7c503",
+    "size_bytes": 100
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Communication_Architecture_v1.json",
+    "sha256": "c3777d84243e631022afa1165795d76ab55761b7d02efad1e6319fab13dcde7e",
+    "size_bytes": 845
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Companion_Narrative_Working_Draft_v0_2.json",
+    "sha256": "3e2a0ac4824a5fa406ed43ff3e2038989934bf8eeac62267b48b0c818589a7d6",
+    "size_bytes": 894
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Conformance_Preparation.json",
+    "sha256": "1f93b63b855e6841ac3db8bdc37bc8b486c30ee8ddee4e3695a7db7c7d6e5847",
+    "size_bytes": 448
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Constitution_v0.1_Draft.json",
+    "sha256": "805c92671f821195ce1bd32ad2f6d217b3d1083f79954a2ad948fcdff44bec1d",
+    "size_bytes": 3307
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Contributor_Provenance_v1.0.json",
+    "sha256": "039cd15792b2a210e0a5ced082e2d87e03548c54436acbf76d341037cd5cf09e",
+    "size_bytes": 96
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Covenant_v1.0.json",
+    "sha256": "26b5a13a469d2585ca024135c7c1474967dc378061989d22d269f90c4da99a84",
+    "size_bytes": 82
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Culture_Architecture_v1.0.json",
+    "sha256": "9ab61d845f0341e5a7943baa4f6ffe3729168a3bfac2c67fa90c06be787adee6",
+    "size_bytes": 94
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Dependency_Graph_Specification_v1.1.json",
+    "sha256": "10d3e88175418193e18e7da4a17b201af0d2793890c2e0c93ef9ff91622ebc2b",
+    "size_bytes": 352
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Design_Philosophy_v1.1.json",
+    "sha256": "ac2dab7c0a9cb797392d7ffd51eed739395276b873d57696adc782a0b1f3c831",
+    "size_bytes": 230
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Developmental_Framework_v1.json",
+    "sha256": "00574d4a54a1c41d8f361ee0c8f6d46fea81eeb30b93f1175a932fe05a27e1f3",
+    "size_bytes": 314
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Engineering_Method_Update.json",
+    "sha256": "4ab3ae0d2b0f63c08841d6b8690b5d212dc05f72e7d3b9723e474be0bc56cb57",
+    "size_bytes": 583
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Final_Observation_v1.0.json",
+    "sha256": "9b5a0c6c2a56f83891dc4c8edfab9a1e3768cb2fc206e90cdcca1a3ec9c2a439",
+    "size_bytes": 91
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Forensic_Checkpoint_0001.json",
+    "sha256": "c4b2b3b28d8ebb913e54b2f36f584362ff73866129d3bd29433d11e572d88c73",
+    "size_bytes": 943
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Foundational_Theory_v1.1.json",
+    "sha256": "e1b3d7b0c5c7387bfc850d929477fa27cc1f7023581a6fbf7525ac8f0117094f",
+    "size_bytes": 273
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Gardener_Cultivation_Model_v1.0.json",
+    "sha256": "45f64f7bf3f2acc613bfabe052f751eade78eeb5655f4ece2797ee7bee01a020",
+    "size_bytes": 100
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Gardener_Principle_v1.0.json",
+    "sha256": "bb5e4ea29550af3e5c2dea78624d914bb677fe416190632375e3a8bcde6cf9be",
+    "size_bytes": 92
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Governing_Principles_v1.1.json",
+    "sha256": "319c221040d54273f3fd6e10174d2156bcfb80018619680bf8bae05d9d37fa96",
+    "size_bytes": 576
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Hope_Architecture_v1.0.json",
+    "sha256": "f1d3488e7553198b4080f71f673f5c1b66dc3f5aef63c531e6bbb136ff9135ec",
+    "size_bytes": 91
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Human_Centered_Repository_Philosophy_v1.0.json",
+    "sha256": "177fc8d9a3a48bb022f49181404b994484a8a6f05c03a6f4ad7ac574a4460df2",
+    "size_bytes": 110
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Implementation_Roadmap_v1.0.json",
+    "sha256": "eb628c40aacaca924f142bb1ee77a874652a87958b118956f3e6936c5a8f88d3",
+    "size_bytes": 364
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Integrity_Architecture_v1.1.json",
+    "sha256": "281dddc228b51f761601b249c6939f2a86ac1d701fcade41bb5b73977ad8a3c6",
+    "size_bytes": 744
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Legacy_Architecture_v1.0.json",
+    "sha256": "838d769f54d077f854d60e93780755df71c57c0e08610e8ff50b54e49987e3ac",
+    "size_bytes": 93
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Living_Repository_Architecture_v1.0.json",
+    "sha256": "53ea17ca86d6bc99ccb2dc041344487da3d832eb5502663c4164f6c9903f969c",
+    "size_bytes": 639
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Longitudinal_Reasoning_v1.0.json",
+    "sha256": "faf1e90ec02b21437b395126ab222a0977084caaf28ceaadc127bd811ce27d06",
+    "size_bytes": 181
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_MetaArchitecture_Update.json",
+    "sha256": "dc16923cc6aa938acd9f4cb59d8bcefc83f3a0d6957da2d5aaf8d9c0d250a3df",
+    "size_bytes": 501
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Mission_Statement_v1.0.json",
+    "sha256": "6704b712baf1ca8e016014b984dec293306d2c8d5370a5d7a4317a42a86b0bd4",
+    "size_bytes": 147
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Phylactery_PreFreeze_Baseline_v0.1.json",
+    "sha256": "aa376b3c093068a75df41a17a3ee81c0c08012dbf2fe1fd467870cd8d4331c2b",
+    "size_bytes": 1081
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Preservation_Automation_Constitution_v1.0.json",
+    "sha256": "f6bf0d2ec4e510a809d039fdd8a957f78d36b926231cc8084a4ff3a94e05cf57",
+    "size_bytes": 417
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Publication_Front_Matter_v1.0.json",
+    "sha256": "60204d52ee230632e37648b33345d3c8dd55da3fa55fe8e34321158902b88996",
+    "size_bytes": 98
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Reasoning_Contracts_v1.1-1.json",
+    "sha256": "532dd72192969b3466deb07e7a83cf161d9100b68f11ff6d160bf8fe0d364562",
+    "size_bytes": 283
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Reasoning_Manifest_v1.json",
+    "sha256": "594cfad03fd7a670eb4110d22f750b42ed24b4b17d896bf739fe45b5c4440751",
+    "size_bytes": 394
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Repository_Constitution_v1.1.json",
+    "sha256": "9c08d73f3b541171b73fdb646041bb4374298b196d77d04fd2208eee67047aaa",
+    "size_bytes": 539
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Repository_Invariants_v1.1.json",
+    "sha256": "7f2226f42c5fd2b821b925f2b8ced54b8c123f01ead91af448a46a183556dffb",
+    "size_bytes": 301
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Repository_Voice_v1.0.json",
+    "sha256": "492162cd5f2c4ebdb44890e6aa571945828d67fd31d4964136751222c32f11b4",
+    "size_bytes": 90
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Roadmap_v2.json",
+    "sha256": "0f9e969bb86ad39ae9c67aaba1a56df992ac83d9b7bf5f68e8168198512f32d8",
+    "size_bytes": 385
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Runtime_Specification_v1.0.json",
+    "sha256": "ad487fd7cc38ff9c9d126389b5828eabe82effb0066df8ed091ba0256f6b93da",
+    "size_bytes": 896
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_SPEC_Roadmap_Update.json",
+    "sha256": "f4850fe4a62567c7d64a5fa18eccc6a04d6e2274fa00c6074745efa657b132d7",
+    "size_bytes": 824
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Stewards_Compass_v1.0.json",
+    "sha256": "ba2f33a976ba26cf2700c2352ae84fe6d424251800a297648b660f4f27f66be0",
+    "size_bytes": 205
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Stewards_Oath_v1.0.json",
+    "sha256": "901c40c2c81713ac0da2345df00a547dc2ed0cb00e088d68ce114d5d1518686d",
+    "size_bytes": 87
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Stewardship_Architecture_v1.0.json",
+    "sha256": "58b46d49d5b13106d3af6d1d47079f24624b0791598ab34649b8bdbe2484cfdb",
+    "size_bytes": 98
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Style_Profile_Model_v1.json",
+    "sha256": "29373fbda7fc20ec9a3335f2f46a154221e5cfd7bcf1b0beb5dd92bf22988ba2",
+    "size_bytes": 395
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_Validation_Queue.json",
+    "sha256": "551baa54ae764b5be16d2e64cd7b2f83eef7d97c2cdecd159962ff329f98432b",
+    "size_bytes": 339
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_repository_layers.json",
+    "sha256": "e24b4628f2c3bdd3feb60f1a05ff206c4451373d171c994bccec903620f6e9bd",
+    "size_bytes": 186
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/AKS/AKS_workflow_vNext.json",
+    "sha256": "88eb2337d60e3c78186b2662332f4a1464af3791ab1d161dade4dd187a949b5e",
+    "size_bytes": 366
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/AKS/DOCX/AKS_Archive_Program_Roadmap_v0.1.docx",
+    "sha256": "b8a031da31991578bc702f7f6a9f88d364a1b19fdb5f1bcfaeeb778e4db85a89",
+    "size_bytes": 36916
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/AKS/DOCX/AKS_Archive_Volume_II_Architecture_Blueprint_v0.1.docx",
+    "sha256": "3867cbc5b2435d47ae49c7121833a2f37c6d8b936315f58e21e79da228e9483c",
+    "size_bytes": 37368
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/AKS/DOCX/AKS_Archive_Volume_I_Governance_Methodology_v0.1.docx",
+    "sha256": "2bb5c94960ae40843de6b355f0964a49d2b1b6942206a975170f4b1e5b46f02c",
+    "size_bytes": 37744
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/AKS/DOCX/AKS_Checkpoint_v0.2.docx",
+    "sha256": "5a6581ff581d1d7d159c1e2d3d0a50e8bdbac83a28617f742779678ad3b0ac34",
+    "size_bytes": 37402
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/AKS/DOCX/AKS_Curation_Protocol_v0.1.docx",
+    "sha256": "ad5e94db18889531a51dbd8830ea8a85b1a8c63b3fcd5b0c22032546be3af57a",
+    "size_bytes": 37079
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/AKS/DOCX/AKS_Governing_Constitution_v1.0.docx",
+    "sha256": "306f79746d8464eb48b7226ec75adc231622d1cdfdee942774d27433983390cc",
+    "size_bytes": 36914
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/AKS/DOCX/AKS_Project_Ledger_v0.1.docx",
+    "sha256": "0053a7cb0a37b956c2fc7dbdfee01a7a0658b6b8ec1e87b37ab79afb3f5baf46",
+    "size_bytes": 36797
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/AKS/DOCX/AOS_Operating_Doctrine_v1.0.docx",
+    "sha256": "fd2b1dde2a7f9eb7fab2bd99ee239f20745580c83b1e38ce54d2074a5ba50ecb",
+    "size_bytes": 36774
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/AKS/DOCX/df.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/AKS/add.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Archives/Ju.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Archives/MISC/ghy.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Archives/TAR/ghy.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Archives/ZIP/ghy.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Audio/Sd.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Chatgpt/Exports/Ji.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Chatgpt/Hh.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/AKS_archive_manifest_v1_seed.json",
+    "sha256": "0c810d44c606ca2b03979bb346579c7008ebb8040bf14b0ff1e14abce151c295",
+    "size_bytes": 587
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/AKS_manifest_v0.1.json",
+    "sha256": "4b6b17943579e0333684eda41dd16ca4ebc41007ce46fa9708928d9c73ae906c",
+    "size_bytes": 242
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/ALT_Specification_v1.0.json",
+    "sha256": "02a68dceb72def71d7542ef63e2857d52170401b30b9059422c1cf2b7df72ba4",
+    "size_bytes": 466
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/AUDIT_STATE_PP0001.json",
+    "sha256": "ac930a1b12c55f88907c5b52bbf526d0ad6bfb0549df5e292e2f833002542322",
+    "size_bytes": 344
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/BUR_Specification_v1.0-1.json",
+    "sha256": "5eb24c8a5a989816dd5ee934915e7b26d69b82c71bc8bee707108ccb14f6e867",
+    "size_bytes": 434
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/BUR_Specification_v1.0-2.json",
+    "sha256": "5eb24c8a5a989816dd5ee934915e7b26d69b82c71bc8bee707108ccb14f6e867",
+    "size_bytes": 434
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/BUR_Specification_v1.0.json",
+    "sha256": "5eb24c8a5a989816dd5ee934915e7b26d69b82c71bc8bee707108ccb14f6e867",
+    "size_bytes": 434
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/CA-0003.json",
+    "sha256": "d3539732ba57c2b8d4e06e7ab056b7a3502e7ec04112cac6a831e688bbaa87c0",
+    "size_bytes": 91
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/CA-0004.json",
+    "sha256": "0e20cb780025b8096a606e3495a3ab025f4635be008faa3ae149b077d7c021c4",
+    "size_bytes": 84
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/CNF-0001.json",
+    "sha256": "c7c21deaf8dde4c5ae66c022c2b164de5d9218636679fdf0301d037f4fa8a470",
+    "size_bytes": 366
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/CTX_Specification_v1.0.json",
+    "sha256": "156637b281eca9f43eb1c309e935f08f458eae2d75c209cb1785e2b785104ff4",
+    "size_bytes": 490
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/ENT_Specification_v1.0.json",
+    "sha256": "810f00ef12317b5d87692cc14ad660980beb194b8b2ba43172ab11d56ac5c5af",
+    "size_bytes": 521
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/ENV_Specification_v1.0-1.json",
+    "sha256": "482d69a868b37caf40beceb60d17d87dfd849373611f765b6d03f9664f4e635b",
+    "size_bytes": 416
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/ENV_Specification_v1.0.json",
+    "sha256": "482d69a868b37caf40beceb60d17d87dfd849373611f765b6d03f9664f4e635b",
+    "size_bytes": 416
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/EXECUTION_QUEUE_PP0001.json",
+    "sha256": "913a11394344e4cf7f7c87f2dae8bf9e980871d3ec9e0c576afafaf466968bd0",
+    "size_bytes": 204
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Evidence_Transformation_Specification_v1.0.json",
+    "sha256": "e5c9b0eebeb37726ffda0b130ae0ca99e969e9856fe416e19d42d08adf096e3d",
+    "size_bytes": 401
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Execution_Queue_PP0005.json",
+    "sha256": "0ca76467a1c1d26d66725af0ec1ca028a2f8e74a1278b6f51e7cf2e3021f0170",
+    "size_bytes": 232
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Execution_Queue_PP0006.json",
+    "sha256": "92aebbe66db15a131d77657d4c765a284363dfd76c4de4408d59ca77e3c6cf9f",
+    "size_bytes": 233
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Execution_Sprint_1.json",
+    "sha256": "2a5586f03b5420c25f6a7694f41d29260157b586863ee91abeff48097cc98fc6",
+    "size_bytes": 592
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Execution_Sprint_1_Update.json",
+    "sha256": "08a3a5f9db8a13eebed12f9ee3475ae73f411a224d20e61a7e122c113843466d",
+    "size_bytes": 256
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Execution_State_v0.2.json",
+    "sha256": "f3540563c22f9f1a15e14c2d64af950eac9be95cd58d0237da2d0f5e638de596",
+    "size_bytes": 266
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Forensic_Parser_Workflow.json",
+    "sha256": "6c0e375081321c13c5ebf79103396761a1992e4994dfdcd16b9bd29ec6408987",
+    "size_bytes": 138109
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Forensic_Parser_Workflow_full_chat.json",
+    "sha256": "773a4f2475c5a271bd5ccc7f1e5df1e559d204e7cd0dd53c375b4b0226a70ab2",
+    "size_bytes": 138106
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Forensic_Parser_Workflow_reverse_parse_901pm_7_23_26.json",
+    "sha256": "773a4f2475c5a271bd5ccc7f1e5df1e559d204e7cd0dd53c375b4b0226a70ab2",
+    "size_bytes": 138106
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/GAP_Specification_v1.0.json",
+    "sha256": "286d89bc91759e22015c3ef9274725bd3007a6dadb2b5deec1dff76245a93ee7",
+    "size_bytes": 448
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Handbook_Project_Organization (1).json",
+    "sha256": "b13a2c1574432d34caacdcc9359a50ad5e9e42ab81eb01a105f1417b18e8a1dc",
+    "size_bytes": 150062
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Handbook_Project_Organization.json",
+    "sha256": "b13a2c1574432d34caacdcc9359a50ad5e9e42ab81eb01a105f1417b18e8a1dc",
+    "size_bytes": 150062
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Inference_and_Linguistic_Models.json",
+    "sha256": "3046b3927cbfba704db10596a8bbd7b410528e16ad2d0216a29f377d11f875cf",
+    "size_bytes": 73888
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Kernel_Manifest_v2.1.json",
+    "sha256": "fd51437ed73944cbd8206c73616dd52493f1ebb2aaa71d62ba3a25423c848982",
+    "size_bytes": 391
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Kernel_Manifest_v2.json",
+    "sha256": "c78db926e497ab7fe8bae17ff3999f4385192ca120309a907e8a8dc2bebe5cfc",
+    "size_bytes": 303
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/MAJOR_PP_0001.json",
+    "sha256": "544d236dae0f888ff984166b7f6828fe2d258f5514bd2b37fe14a063716ccfed",
+    "size_bytes": 933
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/MAJOR_PP_0002.json",
+    "sha256": "ed0893a5adaf72d37bf07342724ab33063abdcdd8aa21a6132ee26f728f26148",
+    "size_bytes": 1325
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/MAJOR_PP_0003.json",
+    "sha256": "11bb25d28b57c973bd1277898f514694c492a395e36177dc1da86029514f2237",
+    "size_bytes": 1258
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Master_Conversations_Unparsed_v1.json",
+    "sha256": "cd4d35b29e3e8cc42f0258c333e8abdd5f5c94aa3e142392d4c6022629ca1894",
+    "size_bytes": 493507
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/OBS_Specification_v1.0.json",
+    "sha256": "c37da6c2abc5ec13caff4baea771cc56e5623a3a6ca0fba83df54387f8f232ef",
+    "size_bytes": 802
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/OUT_Specification_v1.0.json",
+    "sha256": "a1a751118f5569d55942931dec5dc9435eaa035811d6cab4efd37e07457a7a1e",
+    "size_bytes": 465
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/PAT_Specification_v1.0.json",
+    "sha256": "c70782cddcea9e5b61cc09b53f5b3682490ac0a8f882c910ec2d395eef0a91f6",
+    "size_bytes": 455
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/PR-0001_Automatic_Transition_Preservation.json",
+    "sha256": "2f1b712adcfb7b67a4087d03827a12a9e540f4cdf2a313fe07f41fd4d9c6ebc0",
+    "size_bytes": 459
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/PR-0002_Incremental_Canonical_Preservation.json",
+    "sha256": "c0eaf338cb2b77ccb3053bce3b8d71de1a4c2f16913d92770a927f1fa9d1e3c0",
+    "size_bytes": 782
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/PR-0003_Continuous_Repository_Indexing.json",
+    "sha256": "542637ec20c0b6f80e240f2e8bbbde1effce2450e653c995636e950ccbfd169b",
+    "size_bytes": 435
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/PR-0004_Conservation_of_Architectural_Work.json",
+    "sha256": "2c8d7fb5f366d588a92942843c97020c760c71f7586aebe274e368caf76a23a8",
+    "size_bytes": 532
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/PR-0005_Architectural_Change_Preservation.json",
+    "sha256": "878b84bcd409a664c4a8edcabfa9f442a670e84dd5d8ecc0dccbd516da9b4f3f",
+    "size_bytes": 1161
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/PR-0006_Canonical_Test_Requirement-1.json",
+    "sha256": "e552980cddab61e2040f58f50fec505a598d99405551bd45f736f862aa5a5fbc",
+    "size_bytes": 232
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/PR-0006_Canonical_Test_Requirement-2.json",
+    "sha256": "e552980cddab61e2040f58f50fec505a598d99405551bd45f736f862aa5a5fbc",
+    "size_bytes": 232
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/PR-INDEX-0001_Draft_0.1_Canonical.json",
+    "sha256": "f532fc5fb191de86d2561615e46edd36982ee08d03ce4c1a7a207b9471cf1cea",
+    "size_bytes": 933
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/PR-INDEX-0001_Draft_0.2_Canonical.json",
+    "sha256": "6bbbe132e7dc0aa73d5761c47c10704bb73256a7a5ccc29619ada6682e69e180",
+    "size_bytes": 599
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/PR-INDEX-0001_Draft_0.3_Update.json",
+    "sha256": "d323f8726813d6423fca6eb89dfea7dce015b14676ad3d3eb1833acbcf7debf1",
+    "size_bytes": 230
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/QST_Specification_v1.0.json",
+    "sha256": "9f13d94cde3c217d84beb964ab78329e3051cfc15546c36313a3e5484f16bd19",
+    "size_bytes": 433
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/REL_Specification_v1.0.json",
+    "sha256": "5afa3bac37a8b147793e6355ff95916942dc01f46bb062cd31b712ac96a32831",
+    "size_bytes": 332
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/REV-0001.json",
+    "sha256": "5f7ef45c10871ae7a1a0695acc72d790cb4ea80d6d23fe2f869d491284777556",
+    "size_bytes": 417
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/REV-0002.json",
+    "sha256": "c9202477ab944f85f72378dc57e70a97751778e8ebc88b0570df8d7dd37d58d1",
+    "size_bytes": 257
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/REV-0005.json",
+    "sha256": "12fd0aed05b34fb0d2f1cd74dc575f5581075a8a11df20c6c861fb2da4d6205c",
+    "size_bytes": 267
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/REV-0006.json",
+    "sha256": "486a1c5fad3071c889536f57bc3546b9a23584bf7300894a3dba130278cd1d3a",
+    "size_bytes": 218
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Repository_State_PP0004.json",
+    "sha256": "10e64661dedec5fa13282295087ae29d3cd1962ca28ab4d07bb75dee73ff642f",
+    "size_bytes": 363
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Repository_State_PP0005.json",
+    "sha256": "a3001d61a07e8b874613d66dba0be6cc395dcee1d0977fd17bcb7aa373ecde6c",
+    "size_bytes": 174
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Repository_State_PP0006.json",
+    "sha256": "aee4fa3b7ca4ab4c4d9b735fafc1de1923c3475c7a141e0ee5adb88aa68bd71b",
+    "size_bytes": 157
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Repository_State_PP0007.json",
+    "sha256": "1f126351197941a1adeccef8fcd33bebac5d687b24564c6fb12c5088d69d2433",
+    "size_bytes": 286
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Repository_State_PP0008.json",
+    "sha256": "47324a06a6566d1be42b2788bc6516bcb63284c90e54650dcd0dc88fc2daba88",
+    "size_bytes": 151
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Runtime_Manifest_v2.2.json",
+    "sha256": "7be46daac70f1dd324b618203f62d10356a46d01e4f7235498bbc8d9305f373a",
+    "size_bytes": 185
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Runtime_Manifest_v3.0.json",
+    "sha256": "94ff93dbb2ae68d80cf33185ba86a162b016dcf89a833405f918cc6ea70e4205",
+    "size_bytes": 165
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Runtime_Manifest_v4.0.json",
+    "sha256": "f92c99c85716bbfa227535bde97e30e096f489fbff26310a476ccaccad358bc6",
+    "size_bytes": 124
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Runtime_Manifest_v5.0.json",
+    "sha256": "0114c907c61cba7df38e6bb8cbf5b40a80aae5da9bee023a496589fd6cf07142",
+    "size_bytes": 429
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Runtime_Manifest_v6.0.json",
+    "sha256": "222df17a80cdd8a947f9d4334efc0ad88bfe2b61cb6b5f5c9f55bdab3c2c49d3",
+    "size_bytes": 438
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-0000_Constitutional_Registry.json",
+    "sha256": "206f2d3d6ac60d7fe4aa7296145402e45b0b9be17850555472fcfc91856cd06d",
+    "size_bytes": 423
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-0001_Machine_State_Model.json",
+    "sha256": "cb8c8a2b13614dae7c988bb45df44e276275ad72e65cd3ec55eeeec5a48cc784",
+    "size_bytes": 649
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-0002_Error_Exception_Framework.json",
+    "sha256": "da8c39536493f19b0ff5bb46bc155bdf776c0a1ca7a3cbcc6fe871c3c0a979d9",
+    "size_bytes": 492
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-0003_v1.0.1.json",
+    "sha256": "9c4720c6b9de417936b431925aafdcd2e9845b38760a78584649379d117b6a85",
+    "size_bytes": 560
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-0004_v1.0.0.json",
+    "sha256": "9c1ed0ae9f074bf1fbe28ee676d7eabe1ec9479ca711cb174c1641064ef7a234",
+    "size_bytes": 395
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-0005_v1.0.0.json",
+    "sha256": "a1d26a7b76a93b7d72dc2363aca22812bdd8323d6a6087e14a292ca9c045b99d",
+    "size_bytes": 540
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-0006_v1.0.0.json",
+    "sha256": "5169618c8a998a23e16f56e3b0ff7cea1ff6be6d57a40ec426dc670f363442e7",
+    "size_bytes": 503
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-1004_v1.0.0.json",
+    "sha256": "908f21a35087771f1337643da52b62d70a16834d55af1706dbbcdcde0099fd59",
+    "size_bytes": 1043
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-1005_v1.0.0.json",
+    "sha256": "af6ab9876da2f43992f1ca0f2cf3e072ad5e570948c1d10bd11a87839e4f2426",
+    "size_bytes": 490
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-2010_v1.0.0-1.json",
+    "sha256": "575a631ac058be0211e7606a1afc0d83a6ab6aa40c728f14cccdd92d17677074",
+    "size_bytes": 320
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-4002_v1.0.0.json",
+    "sha256": "5ba40637c17539176d8584e3030fcc16d50a14993211639d6a1f0bd408a425ff",
+    "size_bytes": 54
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-4003_v1.0.0.json",
+    "sha256": "b61454cc0d33a2dfdddb694eaae68ca37e375247c5777a82ac7297fa6a268d57",
+    "size_bytes": 59
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-4004_v1.0.0.json",
+    "sha256": "c5584caf341134a1623b307f36c191225033375f7d3a55ccc4fbbffa8b629ea2",
+    "size_bytes": 67
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-4005_v1.0.0.json",
+    "sha256": "6586c4bdd55266f639d8e33f38247ece6ac8f0c8487869ba6b54cc6d79370494",
+    "size_bytes": 62
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-4006_v1.0.0.json",
+    "sha256": "6de6d7173bc857734b099c6ad96a1fbbc643dfdeff898f9ac707810b467ae380",
+    "size_bytes": 63
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-5011_v1.0.0.json",
+    "sha256": "e58550ae4b34634cf24e690f78f0729e2f3d6bbc82867e15f74be539d35cf5eb",
+    "size_bytes": 64
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-5012_v1.0.0.json",
+    "sha256": "2c4db74617c7e8b8fc0ff2a84f3941f974a667750014082409946340cc5a8ea7",
+    "size_bytes": 68
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-5013_v1.0.0.json",
+    "sha256": "d5af6665dd09ac0025f85ace8ea802b501a87d8f25738893cc1b1d0c5cec89cc",
+    "size_bytes": 66
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-5014_v1.0.0.json",
+    "sha256": "165053d3f263400cfaaa7bec92feca58b5924ac0713312b2d66812902186118d",
+    "size_bytes": 55
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-5015_v1.0.0.json",
+    "sha256": "090c7094f1456e23d97ad72b155fccd71116c473ca9335f842c4604caeb4f12e",
+    "size_bytes": 73
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-6001_v1.0.0.json",
+    "sha256": "e2ca214f57278462edb1779e64afa3de10c407baeb06427dcedb1a5465df99c0",
+    "size_bytes": 69
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-7001_v1.0.0.json",
+    "sha256": "24581cdbb39b6e927899ac887143cfa492457d586812051f2e2fb56866ea5082",
+    "size_bytes": 58
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/SPEC-GOV-0001.json",
+    "sha256": "f32448502d214e7ced0837b6193e25f254a0e3c05958576c8b4a55620ff4ffc1",
+    "size_bytes": 273
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Chatgpt/JSON/Se.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/TRN_Specification_v1.0.json",
+    "sha256": "171d5274c153fa9817926dd2e38f1ff3f74ac0333754706cfe324fa6706fd5c2",
+    "size_bytes": 455
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/Traversal_Ledger_v0.1.json",
+    "sha256": "91fad2d4d4f79d6e88b6e38a4ef633cc6b8b268370565ebcfa91285c2e3a7eda",
+    "size_bytes": 698
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/VAL-0001.json",
+    "sha256": "08e41aad4667adc7bfc0fc0868fd7ef65f2a6b87afee004a2a8b6c347b827c91",
+    "size_bytes": 286
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/VAL-0004.json",
+    "sha256": "294388c68eb9f7e2cb6c8dc17f431ca5b70af4bc038c6ab424f85741c1cc4b68",
+    "size_bytes": 169
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/VAL-0005.json",
+    "sha256": "e02d95048e13616cad2d0bb7a7312c4b6c72709423e70e0b3c07555a577d8236",
+    "size_bytes": 171
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/census_v0.1.json",
+    "sha256": "9c55c16cd7ad6686f14d59eedd6a020a9f3f5879133361e0df2774e4b9bc20f8",
+    "size_bytes": 1735
+  },
+  {
+    "empty": true,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/chatgpt-conversation (2).json",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size_bytes": 0
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/confidence_framework.json",
+    "sha256": "7eb316b0cc9c832ead0dae40f1e79c420e97912edbf90c7b7e8749948b093a34",
+    "size_bytes": 383
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/cross_reference_index_seed.json",
+    "sha256": "5a4876f18b96d2835ec581289f79e9323e936b7ebdd47004db312946a778370b",
+    "size_bytes": 264
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/decisions_template.json",
+    "sha256": "ef86ccad5a6e6f9e7aaee25d631093c4a7cfbcca7baa640dd0b48981cecadb8b",
+    "size_bytes": 249
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/entities_template.json",
+    "sha256": "3d013cf61bdd6946dc3ba6085214aa0e44e1953f5c3916b1e637c9c40c767b07",
+    "size_bytes": 163
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/forensic_parser_workflow_start.json",
+    "sha256": "57739d401d170ba08463d45abd86161c50c1edb72ec046193cb28a46f086a7f0",
+    "size_bytes": 7633
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/interventions_template.json",
+    "sha256": "0f78cda34fd7483a83a418887223a0667a7a2dc61cc5426a5cd01b3c99432787",
+    "size_bytes": 201
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/master_index_template.json",
+    "sha256": "30d3dcd7f5701579bb746e776b6d1f4f7dcddbdee62463e9c271a81e037a08ea",
+    "size_bytes": 336
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/master_manifest_v0.2.json",
+    "sha256": "2bfdcba7acb908da7e4acd60249d2ea0cd086b1dff5c4d2f63ba04b2c25b6114",
+    "size_bytes": 593
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/migration_manifest_v0.1.json",
+    "sha256": "5f7d4711415e0fc2e1e2f9ce2618aba79bae83d2b1313adbdb63a71f7ce02fca",
+    "size_bytes": 1257
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/negative_evidence_template.json",
+    "sha256": "12565b86c37243f9dcc801765e358ed3d419f64184a689134c297eddd54ea771",
+    "size_bytes": 187
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/observations_schema.json",
+    "sha256": "e92bff1660459f00076c82b5cebe410598c6ef893c5df90fdce194a8b59e061c",
+    "size_bytes": 505
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/observations_seed.json",
+    "sha256": "7a07cb8bd09ffb7e6334aa756fb0aec1301f61e9850f34e2d7e75a46c720d3fb",
+    "size_bytes": 428
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/pattern_schema.json",
+    "sha256": "1a3e6210091f48d7909013297194174a8aa69fe850f3445693f0f7b0e045c3fe",
+    "size_bytes": 246
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/patterns_seed.json",
+    "sha256": "51ff7e346399f0cef88a88d0884b8b5769e66a579fcd039ea2537ec97dab779e",
+    "size_bytes": 712
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/questions_template.json",
+    "sha256": "8442201a183c0925937b3970148e5d283450d7b008d55104ee07da3a3dfdca74",
+    "size_bytes": 198
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/relationship_schema.json",
+    "sha256": "2bb69c04d7a103a7e5c214269a65d5187beb765df2a41018011be8cb895f0912",
+    "size_bytes": 232
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/relationships_seed.json",
+    "sha256": "4d0a9a72023c80f2a1e888cdb918c578b620593526296d70c4bc2c2a4036975e",
+    "size_bytes": 540
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/repository_structure.json",
+    "sha256": "98106a882c0734508ea2a59008b9fb862184a0fe7cc051e334520f6dce35db27",
+    "size_bytes": 504
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/sources_template.json",
+    "sha256": "28674026c0e0c13ef6b0fafc2bd429242dfddb08c7ff4b49516333011783e99e",
+    "size_bytes": 227
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/strengths_template.json",
+    "sha256": "831e6f95557e42089a6a5f1c3724ff5b30f3500b74008ae0a06868062353eaa1",
+    "size_bytes": 179
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Chatgpt/JSON/timeline_template.json",
+    "sha256": "affdf7a154289c1deb493e40dd106ed45c685b3dc84a6eaa1bd64060f93d8d93",
+    "size_bytes": 179
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Chatgpt/Screenshots/aw.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": "",
+    "path": "Archive/Recovery/Chatgpt/Shared Links/tujd",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Clinician Edition/Clinician Edition Volume 1 v0.25.docx",
+    "sha256": "0a7d3b0b7201f8386a00f07fb0d33dc8e2d5d73807f6cc15778d6a2c22996960",
+    "size_bytes": 50111
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Clinician Edition/Clinician_Edition_v0.5_Working_Draft.docx",
+    "sha256": "c25de2d3ccc0bdd3e6fc6c50f7ca80a1c48ae04b05e21c68762e73a8dd0971fa",
+    "size_bytes": 50324
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Clinician Edition/ase.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/AKS Internal Storage.docx",
+    "sha256": "9bd2bbc6ffa590ecd3e7392afd1336641bf742bc7e4725839c86388c97b22b6b",
+    "size_bytes": 7016
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/AKS Repository Synchronization Directive \u2014 Library Normalization.docx",
+    "sha256": "c70a92aa7908815011ea86240dcfa90f605a3aa42d49a38d2588e81596d5f6c1",
+    "size_bytes": 9503
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Canonical_Object_Standard_v1.0.docx",
+    "sha256": "734ef034eb29b86df567e86ee31a0a53fc161e64ab0650459b0140fb2fd7ab42",
+    "size_bytes": 36873
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Clinician_Edition_v0.5_Working_Draft.docx",
+    "sha256": "b59d115a44d8ee5bc722b05ea971df38893fb945ed05b5445a50007587c64396",
+    "size_bytes": 50324
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/DHP_Foundation_Handbook_v0.1.docx",
+    "sha256": "058e4fe2d3e0e9033a3978401ebfd13eecd19903b78bdad3746240031608799f",
+    "size_bytes": 37926
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/DHP_Recovery_Checkpoint_RC-0001.docx",
+    "sha256": "7971a6a39d19c62a6c7bb544f3a32b97061e7679e426de210c80785375d69b38",
+    "size_bytes": 37335
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Eighteenth conversation - final.docx",
+    "sha256": "6bd7f3102a2b67eda42524a8c4e53e7a4d866b6802a422747784dd1396fe46aa",
+    "size_bytes": 124219
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Eighth conversation .docx",
+    "sha256": "ce566a90207c705e33f909346cf459739b6ccacb49add845578f3a68d694a711",
+    "size_bytes": 55305
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Eleventh conversation .docx",
+    "sha256": "64150a866f19218a89f4e6cacf8eab9646bd859591f34910d91803d3ac049b3e",
+    "size_bytes": 10781
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Engineering Methodology.docx",
+    "sha256": "091bbc6b13d0afc7a4c3a6f9a83073e3c620d43adecbb53fca18e3751351ffe6",
+    "size_bytes": 6771
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Evidence_Standard_v1.0.docx",
+    "sha256": "78963a46dfb1a7310fb6970387e61cfe8ca51080bc4075bd8eac0382bc3e5a5f",
+    "size_bytes": 36823
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Fifteenth conversation.docx",
+    "sha256": "058a819df0be92e68bb55932d8c4a812fef50ea3c8fb1c103ae2c76cf52344b7",
+    "size_bytes": 16673
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Fifth Conversation.docx",
+    "sha256": "aa576ca7a90c4cd2ae8424a8feab03cc152c55b5cd909ec8771ee09dbafcce21",
+    "size_bytes": 12030
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/First Conversation .docx",
+    "sha256": "89c1e00bb310b377fa00689363f5f758d5e416fd076f5c30a49e00951bac9044",
+    "size_bytes": 9839
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Fourteenth conversation .docx",
+    "sha256": "003dd4fc4f5607926ebe42558572dcfa0406c485575012be39fa6af59c92f90e",
+    "size_bytes": 12977
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Fourth Conversation .docx",
+    "sha256": "3461c196ad4e6a161ea54eb4dffb9d6bf7755a119810c6fa2bb9da457de69f3e",
+    "size_bytes": 21579
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Governance_Manual_v1.0.docx",
+    "sha256": "0ee1f5c954e4346c45d2f19a725173a1697f6a68547832aee2023949974c8fa6",
+    "size_bytes": 36867
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Handbook_Foundation_Package.docx",
+    "sha256": "fc5c8a07d883b57463cf0d465ab474d3e23e759acac10308317ca10895e4c496",
+    "size_bytes": 37054
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Last chat before starting new project.docx",
+    "sha256": "7460c322121bd29de22813a76c38e98ca911365aa4710449b312d5e81a0ff554",
+    "size_bytes": 18666
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Master Conversations 1-18-part-1.docx",
+    "sha256": "c748da55ab87629d3da3f0df1ea182670210a5c4a65ad0bc09906c8f366711c9",
+    "size_bytes": 214062
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Master Conversations 1-18.docx",
+    "sha256": "9ab3f6bc2aa7f3e83acc0b5fa86afb6e4d78e5025c977412c2ccc4d2814e3b43",
+    "size_bytes": 214027
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Master Conversations 18-20-part-2.docx",
+    "sha256": "7b5c77cf13382ec39be48a16281d1e2c839d74a10f458cff1e3ca2200d5fdc5e",
+    "size_bytes": 112972
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Master_Handbook_v0.2.docx",
+    "sha256": "1a3cff19631407b1e312c99531cd4fc3072a4fbb4fdb648db2b36bceba29102d",
+    "size_bytes": 36735
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Nineteenth conversation  (1).docx",
+    "sha256": "440de28ec61caf2c785693a5694f7cad8bad7ea59a3e5b6ed35fecb95be7f5c9",
+    "size_bytes": 9758
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Ninth Conversation .docx",
+    "sha256": "531c1c67e2cadfd236c7bf0da5b84b00af4cd69020e442c0684ef2cd5ca7d251",
+    "size_bytes": 13446
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Observation_Register_v0.1.docx",
+    "sha256": "8170d3225c1e6085133f592d9af537e180ad8c691aa7e9c275a4c9be3aa9820d",
+    "size_bytes": 36759
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Observation_Standard_v1.0.docx",
+    "sha256": "6c402b1d99a17aac83e215e433d06c99204191d4abb6e4b031e1286b3126d8e4",
+    "size_bytes": 36869
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Preservation_Principles_v1.0.docx",
+    "sha256": "8909a17792d063c85ab873f39aa5c72c6a82ea890cee5fd1031d2c6e4f929bb3",
+    "size_bytes": 36779
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Project_Change_Log_v0.1-1.docx",
+    "sha256": "e7c9d218ddc5e34698489d514f4b0d5ca7ff20909564a622687b3a2de8f2ad89",
+    "size_bytes": 36704
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Project_Change_Log_v0.1.docx",
+    "sha256": "e7c9d218ddc5e34698489d514f4b0d5ca7ff20909564a622687b3a2de8f2ad89",
+    "size_bytes": 36704
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Project_Ledger_Specification_v1.0.docx",
+    "sha256": "50023ef364d7ccf5e0cecc923769ffd6a429625ece4971153a0064e7e90e8a61",
+    "size_bytes": 36870
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Provenance_Standard_v1.0.docx",
+    "sha256": "57c6d08f6901123ee8723c7abb6649d704b21d33f298954d786db1bb71ec8977",
+    "size_bytes": 36879
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Publication_Doctrine_v1.0.docx",
+    "sha256": "b5cf713083a8caeb9f18dfbbca9896d57d28e0b0754abb61ee3bd7b943148781",
+    "size_bytes": 36880
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Reconciliation_Doctrine_v1.0-1.docx",
+    "sha256": "cec9c2bb9183b300270da95551202cc54e377ce646986623394ffa14cbde8a01",
+    "size_bytes": 36915
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Reconciliation_Doctrine_v1.0.docx",
+    "sha256": "cec9c2bb9183b300270da95551202cc54e377ce646986623394ffa14cbde8a01",
+    "size_bytes": 36915
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Recovery_Checkpoint_v1.0.docx",
+    "sha256": "277679ab8650d89f246f56361fe9c57b0695d08a04dda4e1b4ffb47013943b6c",
+    "size_bytes": 37492
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Recovery_Doctrine_v1.0.docx",
+    "sha256": "a9c6a24e42c9199278aafc79f9fab05dad7765a2ac969f8bfedad0ca0c609af1",
+    "size_bytes": 36786
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Second Conversation .docx",
+    "sha256": "f7ca9fefe3707a9e8a8416d90501b433062b5f60d90b2fad48891b217462c19e",
+    "size_bytes": 27796
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Seventeenth conversation .docx",
+    "sha256": "69bc1419cb42b9b149c4b2c0873ecd860623061a057036b9aa3336aa55c1c709",
+    "size_bytes": 39637
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Seventh conversation .docx",
+    "sha256": "3b7df46c642041884cddd726d48a98c51a6c2018e383b081d28228c0f608be8b",
+    "size_bytes": 20428
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Sixteenth conversation .docx",
+    "sha256": "e3ed22e2e63f9b802d353269e442129817cdc3b37d6f9721436af6d82b20c0fa",
+    "size_bytes": 10441
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Sixth Conversation .docx",
+    "sha256": "d8d3f87d4d95ca495b6e9e1157827dfb12e27f992a0b45420f574064e4c474bc",
+    "size_bytes": 12683
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Standing_Orders_v1.0.docx",
+    "sha256": "f2391be87b444cd50d3a7f3f1d90cd9253d28acf98be170da9cd1e9576384e5f",
+    "size_bytes": 36742
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Stewardship_Manual_v1.0.docx",
+    "sha256": "6d5e5716ac73bb5d321d25432ce9498d774a9dbd6c758b8b83012aaac45f4592",
+    "size_bytes": 36853
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/THE ACTIVE STATE SNAPSHOT.docx",
+    "sha256": "3d0be865e340475dea09ce11d79d4126ca12e5097d0637db7f68e6d9043f0bcc",
+    "size_bytes": 8345
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Tenth conversation .docx",
+    "sha256": "410326bec4543699cc01e2684e59c06ab25f594b865b45d91285fd1d52d5ce32",
+    "size_bytes": 9793
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Third Conversation .docx",
+    "sha256": "622768b6602cb189fb2c9d380702a1995774feb752e800626fcab482f06c6588",
+    "size_bytes": 12309
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Thirteenth conversation .docx",
+    "sha256": "72a2018d243ce273ed0897b7e49d8bd488024d03f3619586800460a62e2ccb8f",
+    "size_bytes": 8522
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Twelfth conversation .docx",
+    "sha256": "284943f5f6c7589961f2f9f9c0563c806c0a1a825b66a23b91493f81c5ce039f",
+    "size_bytes": 11899
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Twenty conversation .docx",
+    "sha256": "f10c587e5247e85b81205baf6e03cbc02b5ceecaac1fd17076166191b8a68ab3",
+    "size_bytes": 7700
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/Versioning_Standard_v1.0.docx",
+    "sha256": "78b854bc64ab5e136736debda0a7d0f4afbd894f5f129a52820b81889acb4c6f",
+    "size_bytes": 36837
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "Archive/Recovery/Documents/DOCX/forensic parser workflow start.docx",
+    "sha256": "394ea127de1a298512befce002f37dea84ba4373b9bc0ede879fe67d129afeb6",
+    "size_bytes": 10054
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Documents/DOCX/ghy.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Documents/Fg.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "Archive/Recovery/Documents/PDF/ADE Workflow Automation Prompts.pdf",
+    "sha256": "285659159ce0005d161dd79248667214274f1c95cf21907bf9a171faf9f26ef5",
+    "size_bytes": 98786
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "Archive/Recovery/Documents/PDF/AOS Repository.pdf",
+    "sha256": "e99954813095869090e43917843baa973a97eeff034a4e756027cad196f6c478",
+    "size_bytes": 528681
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "Archive/Recovery/Documents/PDF/Bootstrap Preparation Checklist.pdf",
+    "sha256": "bcebefca19551b273b299efe01d1137c27a06de33d7337d5b48be630020a2658",
+    "size_bytes": 526180
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "Archive/Recovery/Documents/PDF/Forensic Parser Workflow.pdf",
+    "sha256": "b64733e5bf732c5b96e867bb91147169d66623a2be3eca20151bfbf0698ac61a",
+    "size_bytes": 773046
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "Archive/Recovery/Documents/PDF/Free ChatGPT Plugins for ADE.pdf",
+    "sha256": "21521c5b2b118eb9ae2694b9b7d3dad09070b00fa848c724b0e17b192c639feb",
+    "size_bytes": 90410
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "Archive/Recovery/Documents/PDF/GitHub Access Limitations.pdf",
+    "sha256": "13bbc8c0618cfcefb5757466facb2047021e2e0ae8374ecac7d0d8072a4ac64c",
+    "size_bytes": 116916
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "Archive/Recovery/Documents/PDF/GitHub PR Inspection.pdf",
+    "sha256": "4e66fdb075e524406f0bf01cf43791bb258a90545cb61f34a34c52d99e6b33f5",
+    "size_bytes": 48803
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "Archive/Recovery/Documents/PDF/Inference and Linguistic Models.pdf",
+    "sha256": "cbd10d195fb1136acf664904257654d2e0762785c8dda88298f75f3e9848d4d1",
+    "size_bytes": 99278
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "Archive/Recovery/Documents/PDF/Moving files in GitHub.pdf",
+    "sha256": "e7a99c30f0988d6f400abd5572dbada23577c75fe181e0663d6b36bfe2816d89",
+    "size_bytes": 73257
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "Archive/Recovery/Documents/PDF/OAuth Error Investigation.pdf",
+    "sha256": "6e4cae16db371e7aa71c59cad9b681a709a42a81d816736bbd070ef729495047",
+    "size_bytes": 214874
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "Archive/Recovery/Documents/PDF/Project Organization Strategy.pdf",
+    "sha256": "df2b12e074e867612eb9626e63c4068d2f70ab6cd0dec24dd771747e732aeeb3",
+    "size_bytes": 83972
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "Archive/Recovery/Documents/PDF/Repo Not Found.pdf",
+    "sha256": "699d6b8f2598983cb9de3dabe3dfb7a4a484d7df66275a28c956d844e7445bbb",
+    "size_bytes": 79257
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "Archive/Recovery/Documents/PDF/Rowan_Learns_Words_v0.1.pdf",
+    "sha256": "cafd9ce7f1d9ce383c429ecec35321391a6bcc8e9cda5290cec7e218f673d55c",
+    "size_bytes": 3996
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "Archive/Recovery/Documents/PDF/Rowan_Today_Field_Guide_Mom_v3.0.pdf",
+    "sha256": "6ab0f3c2d02f7f9377f8bfb9b1d7a8291d8f5eaa14e9960d850b9874ee556cba",
+    "size_bytes": 6218
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "Archive/Recovery/Documents/PDF/Rowan_Today_Mom_Edition_v1.0.pdf",
+    "sha256": "341c32a8c0d48565560e2986dd100c14e2b91e6af34a87db44908e4409d78428",
+    "size_bytes": 6098
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Documents/PDF/ghy.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Documents/PDT/ghy.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Documents/TXT/ghy.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Foundation Package Alpha/FPA-0000-Manifest.json",
+    "sha256": "11a595879a26259631ef33b509564b58969f26bdf82c8fec44d42ed356861429",
+    "size_bytes": 729
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Foundation Package Alpha/FPA-0001-CanonicalVocabulary.json",
+    "sha256": "3993eeb0f18e39448e0d6842d4ad63e24a6b9046e46f1cb5f2123e0210703bc6",
+    "size_bytes": 901
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Foundation Package Alpha/FPA-0002-SpecificationFramework.json",
+    "sha256": "225aa2ed28bc264513ac3cfebc522166a6f31880d257a563835ae7dbe282be9a",
+    "size_bytes": 848
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Foundation Package Alpha/FPA-0003-CanonicalArtifactOntology.json",
+    "sha256": "c79a273debf1fdcd62a2075e31a58a063e2c545d8acfc7dcaedbfd206bc8e27c",
+    "size_bytes": 768
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Recovery/Foundation Package Alpha/FPA-0004-ProductionState.json",
+    "sha256": "f9717bcff7ed60abce6ea5bd986a6f5c6ab5f08ff2136b3d77cc8c7406819af9",
+    "size_bytes": 948
+  },
+  {
+    "empty": false,
+    "extension": ".zip",
+    "path": "Archive/Recovery/Foundation Package Alpha/Foundation_Package_Alpha_JSONs.zip",
+    "sha256": "522a11b370783748f128e8c6045d37b8203626645f914219859eaabaf67f0f97",
+    "size_bytes": 2695
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Foundation Package Alpha/ap.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Images/JPG/ghy.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Images/PNG/ghy.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Images/U.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Images/WEBP/ghy.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Misc/Gh.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Presentations/Th.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Spreadsheets/Er.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/Video/vd.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Recovery/plh.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Snapshots/Dfg.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/MAJOR_PP_0001.json",
+    "sha256": "544d236dae0f888ff984166b7f6828fe2d258f5514bd2b37fe14a063716ccfed",
+    "size_bytes": 933
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/MAJOR_PP_0002.json",
+    "sha256": "ed0893a5adaf72d37bf07342724ab33063abdcdd8aa21a6132ee26f728f26148",
+    "size_bytes": 1325
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/MAJOR_PP_0003.json",
+    "sha256": "11bb25d28b57c973bd1277898f514694c492a395e36177dc1da86029514f2237",
+    "size_bytes": 1258
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0004.json",
+    "sha256": "e5baecc04ee8f4482e514ef718ae77ffff2e7f933550f3c606c7baa11471d4ee",
+    "size_bytes": 814
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0005.json",
+    "sha256": "2baa11b24cd97b9c59cb39abd4084f741006d6f4554bbc4aaa099f32f4880f94",
+    "size_bytes": 512
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0005_Bundle_Manifest.json",
+    "sha256": "80c7e9bc4752356ddf102043aab5580f6413eba93b45c4c7233da354236170d1",
+    "size_bytes": 238
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0006.json",
+    "sha256": "30911ef82ccbbb7ee51be0eb49d15680c4f1ba655a0a208b94f976de625c516e",
+    "size_bytes": 521
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0006_Bundle_Manifest.json",
+    "sha256": "c378dd71fe0ca3507144807208ab73aa876108a80762f8ce53b5c2ef9d4e8f04",
+    "size_bytes": 258
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0007.json",
+    "sha256": "b49179342442912938d95b7f52b6d71ad1dae8b331a7afa4d4ec296ddb2eef83",
+    "size_bytes": 867
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0007_Bundle_Manifest.json",
+    "sha256": "0114c907c61cba7df38e6bb8cbf5b40a80aae5da9bee023a496589fd6cf07142",
+    "size_bytes": 429
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0008.json",
+    "sha256": "df893df3f33f7509b6cd267eab09548224ed57ab27a7058fbc3638a027051b71",
+    "size_bytes": 1024
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0008_Bundle_Manifest.json",
+    "sha256": "222df17a80cdd8a947f9d4334efc0ad88bfe2b61cb6b5f5c9f55bdab3c2c49d3",
+    "size_bytes": 438
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0044_Provenance_Before_Path.json",
+    "sha256": "b03529bec17f6bd405def9f6653e2a53080ba3462b15d75d7835340e4434b2ca",
+    "size_bytes": 1453
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0045_Fingerprints_Endure.json",
+    "sha256": "8dc90cb5f1f4d9a0096d1ff654f999c4a427bd2a6c4ba5e61c1a8583bb73e048",
+    "size_bytes": 1081
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0046_Repository_Architecture.json",
+    "sha256": "605686ff5854907e2af5b913db1eeeb0e74fbb8c14841318a626641539dfa8b2",
+    "size_bytes": 1031
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0047_Epistemic_Engineering.json",
+    "sha256": "69004cd428014393d979fa3330d1a03e86cdfb2314cd7f6f222b1dcb7838e3e7",
+    "size_bytes": 781
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0048_Conservative_Synthesis.json",
+    "sha256": "2f8c938ef27af5ee4752da6c7515cf3558a65ef8ffb8c3b3898409a83d6c61a4",
+    "size_bytes": 767
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0049_Developmental_Framework_Foundation.json",
+    "sha256": "d4efbd9a7498725267eacd7d650d57b9699c1945a2cc40fbbef80d3b80f96852",
+    "size_bytes": 635
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0050_Communication_Architecture.json",
+    "sha256": "fc2cd43f2ebae0ae619fbfa17b9a7f2b91b1e81fea7822176e41b52c898d1ac9",
+    "size_bytes": 763
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0051_Constitutional_Epistemics_v1.1.json",
+    "sha256": "c0706e0882c0b220de4f73bae2a4a8eba866efbd13b4700c5131a3b8db26f12a",
+    "size_bytes": 872
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0052_Human_Centered_Stewardship_v1.0.json",
+    "sha256": "07effbafb13d63c7226b30cf527370c2b812d646d2f6030f5ce4b69bb0362da2",
+    "size_bytes": 440
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0052_Minor.json",
+    "sha256": "e7bd6e6e29ee2cbe1cf310ce853d7cc8bb46418e81b9742fb69d069b14692856",
+    "size_bytes": 439
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0052_Recovery_Manifest.json",
+    "sha256": "66d94f9b4416af5601f5a137e9f27b0be916f6d4851e5e54a05e67884797f4e4",
+    "size_bytes": 279
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0053_Minor.json",
+    "sha256": "e189e2dd09e405ddcd4e753b04da0f687fcee2b89905fef4b16e41a582101bc9",
+    "size_bytes": 758
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0053_Policy_Manifest.json",
+    "sha256": "faa35e62ad5a7326b8c0499c05654c80e53754de6c7bb2d950eccc0ab47eb4b8",
+    "size_bytes": 492
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0053_Repository_Voice_and_Stewardship_v1.0.json",
+    "sha256": "1a4376ddeb472b13867fda86fb302e0320d00ae3c672698d9a311faef5bd070d",
+    "size_bytes": 411
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0054A_manifest.json",
+    "sha256": "04ce4c92d986b0827a015d96c067b94650de5db5b0432d852f01177dcef675bd",
+    "size_bytes": 605
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0054_Governance_Manifest.json",
+    "sha256": "81809534a096cc9187e10a48f1a03b816900ddd66d9127627d5c794a22731413",
+    "size_bytes": 452
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0054_Minor.json",
+    "sha256": "157bdb6b46d71e193e760cdce7dd643b9e7c701ea023e707357db7390f92c646",
+    "size_bytes": 646
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0054_Phase_Shift_Living_Repository_v1.0.json",
+    "sha256": "8f8cb33ba711a1d9bb9cb445586cafbfbf3461d9ebdd0b26a609c0eb85d682c5",
+    "size_bytes": 329
+  },
+  {
+    "empty": false,
+    "extension": ".xlsx",
+    "path": "Archive/Snapshots/PP/PP-0054_Summary.xlsx",
+    "sha256": "fb89879077289507760aba01b2587a37f7c9cdf7ee2ab5c912d6cc489aa49602",
+    "size_bytes": 5427
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0054_Synthesis.json",
+    "sha256": "5441e713a475f0a4e8bc87d77f592ad9f8604e64102b6cd4357375d677d215f2",
+    "size_bytes": 1042
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0055_Intervention_Failures.json",
+    "sha256": "a2b96adb26f87be1d3bc396560cc267df85df76ed051efc784c176b82161f551",
+    "size_bytes": 1351
+  },
+  {
+    "empty": false,
+    "extension": ".xlsx",
+    "path": "Archive/Snapshots/PP/PP-0055_Intervention_Failures.xlsx",
+    "sha256": "cf5b82b7c8a0ac6ce7b3b4f64e82d2f0d4117eb46481d04a9f0b8ef92c37e795",
+    "size_bytes": 5177
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0055_Interventions.json",
+    "sha256": "cc4ff2ab7bb26ee215a103d66051598ad2c20a6de76ba91c7c6d62da26ef24f5",
+    "size_bytes": 874
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0055_Knowledge_Model.json",
+    "sha256": "335cafe8c6784e0d8bc65be5e0228a85bf99c116fb282c2f254bcd59d2e4d7da",
+    "size_bytes": 330
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0055_Manifest.json",
+    "sha256": "807f7cfb31d15ad90905bfc564044e060ce7f7e0a90204df77b9868bcffa3ac3",
+    "size_bytes": 1409
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0055_Repository_Corpus_Ingestion.json",
+    "sha256": "740d0c99df052479af704009f58813395e88fa9dd0c9c05d3619957a86f7a44e",
+    "size_bytes": 481
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0056_Minor.json",
+    "sha256": "940576e81fc40ce9a490d6ebd4e94769c9e7a4c57b73a4d204a590c9880532a6",
+    "size_bytes": 748
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0056_Minor_Execution_Transition.json",
+    "sha256": "b29bdc7950e3492a5368a857e67cb9673819b49242088eae36c37626ed2076f7",
+    "size_bytes": 551
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0057_Major.json",
+    "sha256": "7f50253b6275e264a0e658c1c41499321e781806b96713830b6d0405f2a05932",
+    "size_bytes": 1201
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0058-MAJOR.json",
+    "sha256": "fc4d8cd0604c57d6d781c90f816ca833541f6b97288ba439c80df8cfcb2a0072",
+    "size_bytes": 879
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0058-Manifest.json",
+    "sha256": "7ceac0fd2062fee02d8df5c7d2882e0e2335ea0bd18a9070f8935e278ab4a8b9",
+    "size_bytes": 157
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP-0058-Principles.json",
+    "sha256": "79db27459cf1e2c1c1fa8eb7eaa2a9ba53c76eb93550e1d6d8c8613b69f35352",
+    "size_bytes": 490
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "Archive/Snapshots/PP/PP0001_MANIFEST.json",
+    "sha256": "704d6f71ea8ccacf1bb3da3a9f9a17449c64b389ef225b7840affe02cf27837a",
+    "size_bytes": 115
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/Snapshots/PP/ghy.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive/dusty.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive_INDEX.md",
+    "sha256": "4eaa2545b740d82229618bc6f209d6aa18981ce29d1d7c29107d589d905370ae",
+    "size_bytes": 243
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Archive_README.md",
+    "sha256": "0044d7dabe92a64264247f10498e322c1b8751dea4ba248b6a7a974209743538",
+    "size_bytes": 428
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CATALOG.md",
+    "sha256": "899ea36530bc4c6aa26bede01111e05a11e55fd8773a99b995c5a44fe8659590",
+    "size_bytes": 342
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CHANGELOG.md",
+    "sha256": "f201555f0ec595a6d25af7c3f1a97943fa00d45d65050b1bac7ed1270fed31cd",
+    "size_bytes": 285
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/ACP-0001_Foundation_Gamma_v1.4.md",
+    "sha256": "705533b8a98c0939370174a190595d0eae58afa02e642a016e540f06f1f93135",
+    "size_bytes": 895
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/ACTIVE_STATE_SNAPSHOT_v1.4.md",
+    "sha256": "1bb255bec02c8e014e57386473a882066d6ff7191a5eb15dc14a988490e8ab07",
+    "size_bytes": 1394
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/ADE Workflow Automation Prompts.pdf",
+    "sha256": "285659159ce0005d161dd79248667214274f1c95cf21907bf9a171faf9f26ef5",
+    "size_bytes": 98786
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/ADE_Constitution_v1.4.md",
+    "sha256": "3252209105c671f3c980c6294f5c39ac22201b9b5ad592b6167754994adfbff3",
+    "size_bytes": 1249
+  },
+  {
+    "empty": false,
+    "extension": ".txt",
+    "path": "CLAUDE START HERE/ADE_full_repo_context.txt",
+    "sha256": "3b6a50a28ca3d6282baab01230e487a93fc6eff6e64fb105b2fe89724ea4ac08",
+    "size_bytes": 718395
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/AKS-INVARIANTS-0001_Draft_0.1.json",
+    "sha256": "12c3b916978f7700a6fc5a28a66bde8e2f77cf460e3948608d03cf43a3cf0cf4",
+    "size_bytes": 978
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/AKS-PRESERVATION-0042_Emergent_Behavior_and_Regulatory_Structures.json",
+    "sha256": "1685f28640e7c4478f46ea5ac266b64cd557558d4330ab257e8b7b1952c4ca5f",
+    "size_bytes": 1161
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/AKS_Companion_Narrative_Working_Draft_v0_2.docx",
+    "sha256": "59b71c9980f00a138e5af1980475c1e5b6c770b693562aefd3c831ce342895a9",
+    "size_bytes": 37791
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/AKS_Companion_Narrative_Working_Draft_v0_2.json",
+    "sha256": "3e2a0ac4824a5fa406ed43ff3e2038989934bf8eeac62267b48b0c818589a7d6",
+    "size_bytes": 894
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/AKS_Covenant_v1.0.json",
+    "sha256": "26b5a13a469d2585ca024135c7c1474967dc378061989d22d269f90c4da99a84",
+    "size_bytes": 82
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/AKS_Gardener_Cultivation_Model_v1.0.json",
+    "sha256": "45f64f7bf3f2acc613bfabe052f751eade78eeb5655f4ece2797ee7bee01a020",
+    "size_bytes": 100
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/AKS_Human_Centered_Repository_Philosophy_v1.0.json",
+    "sha256": "177fc8d9a3a48bb022f49181404b994484a8a6f05c03a6f4ad7ac574a4460df2",
+    "size_bytes": 110
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/AKS_Living_Repository_Architecture_v1.0.json",
+    "sha256": "53ea17ca86d6bc99ccb2dc041344487da3d832eb5502663c4164f6c9903f969c",
+    "size_bytes": 639
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/AKS_Longitudinal_Reasoning_v1.0.json",
+    "sha256": "faf1e90ec02b21437b395126ab222a0977084caaf28ceaadc127bd811ce27d06",
+    "size_bytes": 181
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/AKS_Mission_Statement_v1.0.json",
+    "sha256": "6704b712baf1ca8e016014b984dec293306d2c8d5370a5d7a4317a42a86b0bd4",
+    "size_bytes": 147
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/AKS_Stewards_Compass_v1.0.json",
+    "sha256": "ba2f33a976ba26cf2700c2352ae84fe6d424251800a297648b660f4f27f66be0",
+    "size_bytes": 205
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/AOS Repository.pdf",
+    "sha256": "e99954813095869090e43917843baa973a97eeff034a4e756027cad196f6c478",
+    "size_bytes": 528681
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/ARTIFACT_POLICY.md",
+    "sha256": "33f328ae5da428b748a1f413df629e3284c7148e123f8aae48f5c48235e9401a",
+    "size_bytes": 275
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/AUTOMATION_POLICY.md",
+    "sha256": "1b1920bc1157c01bb60673ed61971933c19ea314f3f7de6479a66bd64790a55a",
+    "size_bytes": 370
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/BLUEPRINT_v2.0_RESTORATION.md",
+    "sha256": "8037e96aa2088d5144bb824070f231c7efed4a9e3c5e3f1d462ba4f6ff31b520",
+    "size_bytes": 775
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/BOOTSTRAP_v1.4.md",
+    "sha256": "9e4b323a7618f641e2338b261516d83083e07fdb0fded7160ff8ec2a305e761f",
+    "size_bytes": 263
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/Bootstrap Preparation Checklist(1).pdf",
+    "sha256": "21b68f7a586f8e9031c7f21e359bc0b0b0377b3c60a847a55e560c9e54444436",
+    "size_bytes": 552427
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/Bootstrap Preparation Checklist.pdf",
+    "sha256": "bcebefca19551b273b299efe01d1137c27a06de33d7337d5b48be630020a2658",
+    "size_bytes": 526180
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/CHANGELOG.md",
+    "sha256": "f201555f0ec595a6d25af7c3f1a97943fa00d45d65050b1bac7ed1270fed31cd",
+    "size_bytes": 285
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/CHANGELOG_v1.4.md",
+    "sha256": "a553e14dbf239a32975680d1ebed3c77cfed5c69620d1c31a191e50711be3936",
+    "size_bytes": 243
+  },
+  {
+    "empty": false,
+    "extension": ".txt",
+    "path": "CLAUDE START HERE/CLAUDE_FOUNDATIONAL_ROADMAP.txt",
+    "sha256": "61b224b7961dc7102e9e3a6cceda0a201de2ff2723a8814160382e589bba4838",
+    "size_bytes": 9587
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/CODE_OF_CONDUCT.md",
+    "sha256": "fe738f138364b53a08b48250e223140d026d30c5f1c961a8e14066dce8e22597",
+    "size_bytes": 232
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/CONSTITUTIONAL_AMENDMENT_FULL_ARTIFACTS.md",
+    "sha256": "a9ea576ff34bbacf171431a45e5eee0ac05b7ea5b2e173f4d20210c62ca6e32e",
+    "size_bytes": 1829
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/CONTRIBUTING.md",
+    "sha256": "30a4e472639fd72e031bd27ff1b0d95048176c1c726b164a4b4f41e20d4cf2b3",
+    "size_bytes": 350
+  },
+  {
+    "empty": false,
+    "extension": ".txt",
+    "path": "CLAUDE START HERE/Claude Network Drop Protocol .txt",
+    "sha256": "01d72103b87e2f91dda0496e3f71de39312118702fab255d13563279ed02eabb",
+    "size_bytes": 208
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/Clinician Edition Volume 1 v0.25.docx",
+    "sha256": "0a7d3b0b7201f8386a00f07fb0d33dc8e2d5d73807f6cc15778d6a2c22996960",
+    "size_bytes": 50111
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/Clinician_Edition_v0.5_Working_Draft.docx",
+    "sha256": "a6dd38f005f961a0643302c004499a6a1e14269fe1d0eda9ec9e79cca423c81f",
+    "size_bytes": 50122
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/Clinician_Edition_v1.0_Master_Assembly_Manuscript.docx",
+    "sha256": "0bf87f8a2254020186a9bed3231672343cada87dbc9210768443875bdd84d8f9",
+    "size_bytes": 37395
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/DECISION_POLICY.md",
+    "sha256": "75ac0dfa3848d5460d24a81798f50ef6d179218678e0e01a35c3b87257d9fd06",
+    "size_bytes": 304
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/DHP_Foundation_Handbook_v0.1(1).docx",
+    "sha256": "058e4fe2d3e0e9033a3978401ebfd13eecd19903b78bdad3746240031608799f",
+    "size_bytes": 37926
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/EVIDENCE_STANDARD.md",
+    "sha256": "e2878edfafe691ef94f5a8c361e79971a18dc5fd028180c9044bfdef92896ab2",
+    "size_bytes": 272
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/Execution_Sprint_1.json",
+    "sha256": "2a5586f03b5420c25f6a7694f41d29260157b586863ee91abeff48097cc98fc6",
+    "size_bytes": 592
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/FOUNDATION_GAMMA_PACKAGE_v1.3.pdf",
+    "sha256": "5a580e142baa9212b27eb44b7e6f3b744e04401bab1f0192c117f340bbce1bf2",
+    "size_bytes": 69486
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/Fifth Conversation.docx",
+    "sha256": "aa576ca7a90c4cd2ae8424a8feab03cc152c55b5cd909ec8771ee09dbafcce21",
+    "size_bytes": 12030
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/First Conversation .docx",
+    "sha256": "89c1e00bb310b377fa00689363f5f758d5e416fd076f5c30a49e00951bac9044",
+    "size_bytes": 9839
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/Forensic Parser Workflow-1.pdf",
+    "sha256": "b64733e5bf732c5b96e867bb91147169d66623a2be3eca20151bfbf0698ac61a",
+    "size_bytes": 773046
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/Forensic Parser Workflow.pdf",
+    "sha256": "b64733e5bf732c5b96e867bb91147169d66623a2be3eca20151bfbf0698ac61a",
+    "size_bytes": 773046
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/Forensic_Parser_Workflow_full_chat.json",
+    "sha256": "773a4f2475c5a271bd5ccc7f1e5df1e559d204e7cd0dd53c375b4b0226a70ab2",
+    "size_bytes": 138106
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/Foundation_Gamma_Revision_Package_v1.4.pdf",
+    "sha256": "a9e23ae6ca1b97d766fa9839cdccbb7c6a418511a7d4f2a996e5e4ad386d3710",
+    "size_bytes": 74823
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/Foundation_Gamma_v1.4_Final_Revision_Notes.docx",
+    "sha256": "6cdfa96baba4f7173dfc6b42ec31d679a9956360d93bded3bb4d53c6e627b22f",
+    "size_bytes": 37358
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/Foundation_Gamma_v1.4_Revised_Package.docx",
+    "sha256": "3867340aacaa5d54a99aca8d1101d2f2612a7c385ff4d3b60351534f5bebceb3",
+    "size_bytes": 37434
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/Fourth Conversation .docx",
+    "sha256": "3461c196ad4e6a161ea54eb4dffb9d6bf7755a119810c6fa2bb9da457de69f3e",
+    "size_bytes": 21579
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/Free ChatGPT Plugins for ADE-1.pdf",
+    "sha256": "21521c5b2b118eb9ae2694b9b7d3dad09070b00fa848c724b0e17b192c639feb",
+    "size_bytes": 90410
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/Free ChatGPT Plugins for ADE.pdf",
+    "sha256": "21521c5b2b118eb9ae2694b9b7d3dad09070b00fa848c724b0e17b192c639feb",
+    "size_bytes": 90410
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/GLOSSARY.md",
+    "sha256": "90dc12651a7d27e24a068e5146f01866ada6ee24745c52d04582df5332691d64",
+    "size_bytes": 488
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/GitHub Access Limitations.pdf",
+    "sha256": "13bbc8c0618cfcefb5757466facb2047021e2e0ae8374ecac7d0d8072a4ac64c",
+    "size_bytes": 116916
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/GitHub PR Inspection.pdf",
+    "sha256": "4e66fdb075e524406f0bf01cf43791bb258a90545cb61f34a34c52d99e6b33f5",
+    "size_bytes": 48803
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/Handbook_Foundation_Package(1).docx",
+    "sha256": "fc5c8a07d883b57463cf0d465ab474d3e23e759acac10308317ca10895e4c496",
+    "size_bytes": 37054
+  },
+  {
+    "empty": false,
+    "extension": ".txt",
+    "path": "CLAUDE START HERE/Handbook_Project_Organization(1).txt",
+    "sha256": "cef88692bf17e556bc1ab5f819a90c450de91234e6e054d4eb8a67f5bc94d2cc",
+    "size_bytes": 138388
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/IMPORT_POLICY(1).md",
+    "sha256": "e886cd6f8784c75c0971535b6ebe6fb4da1c1c915cce2e85d44525f4cab90069",
+    "size_bytes": 113
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/INDEX.md",
+    "sha256": "0f10ab7067dd3e48d578369dc70bce0da737a24cfac21f68897e5403b04f084f",
+    "size_bytes": 573
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/INDEX_v1.3.md",
+    "sha256": "a452ecc97cb0caccbe74d910046385b907706c3405aa16dc82bdb30c7dcb891e",
+    "size_bytes": 278
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/INDEX_v1.4.md",
+    "sha256": "2d8acd73c51f6c602d85d12b850fd60eb56099b56754a8b3eae41464c688cf82",
+    "size_bytes": 135
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/INDEX_v1.4_REVISED.md",
+    "sha256": "3e43573c59704e2a3ab55fac1031271a14958758eb9b341f9458f14f826f8f67",
+    "size_bytes": 255
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/INDEX_v1.4_REVISION.md",
+    "sha256": "3e3b990d7825ccdd520462a8d5099454417dfc8f84f2d149fd6609ae35636142",
+    "size_bytes": 279
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/Inference and Linguistic Models(1).pdf",
+    "sha256": "cbd10d195fb1136acf664904257654d2e0762785c8dda88298f75f3e9848d4d1",
+    "size_bytes": 99278
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/Inference and Linguistic Models.pdf",
+    "sha256": "cbd10d195fb1136acf664904257654d2e0762785c8dda88298f75f3e9848d4d1",
+    "size_bytes": 99278
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/Inference_and_Linguistic_Models.json",
+    "sha256": "3046b3927cbfba704db10596a8bbd7b410528e16ad2d0216a29f377d11f875cf",
+    "size_bytes": 73888
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/KNOWLEDGE_MANAGEMENT.md",
+    "sha256": "6cfa6ee077af4e7ac490977adffc1147b36868a542c8ff7e6da11d4a9f2d2d4e",
+    "size_bytes": 215
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/Kernel_Manifest_v2.1.json",
+    "sha256": "fd51437ed73944cbd8206c73616dd52493f1ebb2aaa71d62ba3a25423c848982",
+    "size_bytes": 391
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/LICENSE.md",
+    "sha256": "d92008e9524939967754476aad971ceee26e71f9c5d0d3155b63438817bbf615",
+    "size_bytes": 126
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/Last_chat_before_starting_new_project.docx.md",
+    "sha256": "ab64432fc5b43dd7429479178b87a96f47d37fa4f27e6a5838beb268881c9fc6",
+    "size_bytes": 22166
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/MAJOR_PP_0003.json",
+    "sha256": "11bb25d28b57c973bd1277898f514694c492a395e36177dc1da86029514f2237",
+    "size_bytes": 1258
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/MANIFEST.md",
+    "sha256": "8aa1aaf44396abb29bda2a9b44fba9e25bf8c42b6a15c23797bb5b3ac1ae15cb",
+    "size_bytes": 351
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/Master Conversations 1-18-part-1.docx",
+    "sha256": "c748da55ab87629d3da3f0df1ea182670210a5c4a65ad0bc09906c8f366711c9",
+    "size_bytes": 214062
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/Master Conversations 1-18.docx",
+    "sha256": "053ba9b3908deb30998e6c21068ccef3c84e58aff624be08226155787c176a7a",
+    "size_bytes": 134344
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/Master Conversations 18-20-part-2.docx",
+    "sha256": "7b5c77cf13382ec39be48a16281d1e2c839d74a10f458cff1e3ca2200d5fdc5e",
+    "size_bytes": 112972
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/Master_Conversations_1-18-part-1.docx.md",
+    "sha256": "36d32597864053a212dee6d467b8c9bb5f7112df4b6f457f408847aa3590607c",
+    "size_bytes": 315103
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/Master_Conversations_18-20-part-2.docx.md",
+    "sha256": "2ad0a6e9db4c5448c48bc94266a641c385b75df463a418ebb5ea0aded991d3d3",
+    "size_bytes": 160992
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/Master_Conversations_Unparsed_v1.json",
+    "sha256": "cd4d35b29e3e8cc42f0258c333e8abdd5f5c94aa3e142392d4c6022629ca1894",
+    "size_bytes": 493507
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/Moving files in GitHub-1.pdf",
+    "sha256": "e7a99c30f0988d6f400abd5572dbada23577c75fe181e0663d6b36bfe2816d89",
+    "size_bytes": 73257
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/Moving files in GitHub.pdf",
+    "sha256": "e7a99c30f0988d6f400abd5572dbada23577c75fe181e0663d6b36bfe2816d89",
+    "size_bytes": 73257
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/NAMING_CONVENTIONS.md",
+    "sha256": "544e0370d0fd43ec4021942100f1f1c30f807ba448dd300450bc03fc92e7edd5",
+    "size_bytes": 330
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/OAuth Error Investigation.pdf",
+    "sha256": "6e4cae16db371e7aa71c59cad9b681a709a42a81d816736bbd070ef729495047",
+    "size_bytes": 214874
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/PLUGIN_POLICY.md",
+    "sha256": "dfcf436c45dc48aba87d53ed1711ef83718b2494eda1d1252dcbce854b7a9900",
+    "size_bytes": 2938
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/PP-0004.json",
+    "sha256": "e5baecc04ee8f4482e514ef718ae77ffff2e7f933550f3c606c7baa11471d4ee",
+    "size_bytes": 814
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/PP-0008.json",
+    "sha256": "df893df3f33f7509b6cd267eab09548224ed57ab27a7058fbc3638a027051b71",
+    "size_bytes": 1024
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/PP-0008_Bundle_Manifest.json",
+    "sha256": "222df17a80cdd8a947f9d4334efc0ad88bfe2b61cb6b5f5c9f55bdab3c2c49d3",
+    "size_bytes": 438
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/PP-0054_Phase_Shift_Living_Repository_v1.0.json",
+    "sha256": "8f8cb33ba711a1d9bb9cb445586cafbfbf3461d9ebdd0b26a609c0eb85d682c5",
+    "size_bytes": 329
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/PP-0058-MAJOR.json",
+    "sha256": "fc4d8cd0604c57d6d781c90f816ca833541f6b97288ba439c80df8cfcb2a0072",
+    "size_bytes": 879
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/PP-0058-Manifest.json",
+    "sha256": "7ceac0fd2062fee02d8df5c7d2882e0e2335ea0bd18a9070f8935e278ab4a8b9",
+    "size_bytes": 157
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/PP-0058-Principles.json",
+    "sha256": "79db27459cf1e2c1c1fa8eb7eaa2a9ba53c76eb93550e1d6d8c8613b69f35352",
+    "size_bytes": 490
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/PRINCIPLES.md",
+    "sha256": "7e50b2e9448ec6c05224c98de06f20c57dfb16d33a4ddb5f3297d0eb1d52b840",
+    "size_bytes": 395
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/PROJECT_LIFECYCLE.md",
+    "sha256": "55e9c068f49729e9ac42b346a8097310ca67c7ca646300dfbe7241b36c587ab3",
+    "size_bytes": 259
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/Project Organization Strategy-1.pdf",
+    "sha256": "df2b12e074e867612eb9626e63c4068d2f70ab6cd0dec24dd771747e732aeeb3",
+    "size_bytes": 83972
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/Project Organization Strategy.pdf",
+    "sha256": "df2b12e074e867612eb9626e63c4068d2f70ab6cd0dec24dd771747e732aeeb3",
+    "size_bytes": 83972
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/QUALITY_STANDARD.md",
+    "sha256": "1876540878e768014bf8119ddf26e1aaa9a7e28505c1a00f8e75c62dff2420bd",
+    "size_bytes": 246
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/RC1-0000_Master_Manifest_GOLD_MASTER_v1.2.0_FROZEN.json",
+    "sha256": "8f2cd1c855f3111f4f94b5323de7914bb0d0ff431a04fca54600731855b85ab1",
+    "size_bytes": 2113
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/RC1-0001_Repository_Constitution_GOLD_v1.2.0.json",
+    "sha256": "3ffb5d31931ef55ad79d7523a591541e74c404bafc3e6fe733d949d8bd317d8d",
+    "size_bytes": 2983
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/RC1-0002_Constitutional_Amendments_Ledger_GOLD_v1.2.0.json",
+    "sha256": "f6d356ccb94ef0fcfe0a2a599247d2e1aa8fdaa78ca3d5a83d9c01adb38653cb",
+    "size_bytes": 2151
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/RC1-0003_Governance_Framework_GOLD_v1.2.0.json",
+    "sha256": "64cbb804a6624f56fa4bafc27431733f048c92a348d336a1f35271f13235bac3",
+    "size_bytes": 2172
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/RC1-0004_Constitutional_Registry_GOLD_v1.2.0.json",
+    "sha256": "f634977863cf3f95c91a4e9e1fcc8c30e9d90910cc1860b70e672a87ef386b93",
+    "size_bytes": 2184
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/RC1-0005_Validation_Framework_GOLD_v1.2.0.json",
+    "sha256": "2b65fc8a3fced28e06034df0b9727cc6d5fc848bccd0ae8ca7ab3c6832f45f26",
+    "size_bytes": 2271
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/README.md",
+    "sha256": "def9231359b86dfedb9f2d4b2c583b87f2f51ef1562c54b28df3783f1677c2ee",
+    "size_bytes": 538
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/RECOVERY_MANIFEST(1).md",
+    "sha256": "c9f1355ad243238dd08a34a3b86917a6341c4997f38b4da0c9f5c1013f9b5980",
+    "size_bytes": 116
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/RECOVERY_POLICY.md",
+    "sha256": "b1fe29c421e7897be1048e0dd8f043e626638f457c6de98d4c2d31322e620eea",
+    "size_bytes": 201
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/REPOSITORY_CHARTER.md",
+    "sha256": "b0ff8673f4750d95941c9ab5cf5999d629ae47a8b898c36331a7bb09c47f93f9",
+    "size_bytes": 640
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/REPOSITORY_GOVERNANCE.md",
+    "sha256": "c3a758597e69de84917f9f62ef01b7a66769f3111abd39b4395c2b568fe717df",
+    "size_bytes": 461
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/REPOSITORY_STRUCTURE.md",
+    "sha256": "c598896a77ee9023a0eeaabd9facb07df66883973b303a73e674d11a3d42b614",
+    "size_bytes": 674
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/ROADMAP.md",
+    "sha256": "d8aff4f86d77611b3089f7b323aa801cea7a43486769e8ffe5a7cb8c6f353f8c",
+    "size_bytes": 495
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/ROADMAP_v1.3.md",
+    "sha256": "d14de71be14311c7c50864b4d0f28bf7b279e1de39d6e1a47202b13ad7310e01",
+    "size_bytes": 347
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/ROADMAP_v1.4.md",
+    "sha256": "13b5d2072ea28bf2a3a9e7717d22f3d91431cbf7bac20a0c967434b0ce9bd508",
+    "size_bytes": 162
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/ROADMAP_v1.4_REVISED.md",
+    "sha256": "4c227a49de39c486bcf5f32387d1c7ba4c2a19b2457428e4169337c59ae2179b",
+    "size_bytes": 229
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/ROADMAP_v1.4_REVISION.md",
+    "sha256": "922b510c5ceaa74843bde7a3e14c5f6cdabec728f4dc8cde03e14a6d625b1d06",
+    "size_bytes": 148
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/ROADMAP_v2.0_RESTORATION.md",
+    "sha256": "7cb54b6e686ee22921f382b212c9ec1b0727666ef4f037572b618ba1f43c4cda",
+    "size_bytes": 475
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/Reconciliation_Doctrine_v1.0-1.docx",
+    "sha256": "cec9c2bb9183b300270da95551202cc54e377ce646986623394ffa14cbde8a01",
+    "size_bytes": 36915
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/Repo Not Found.pdf",
+    "sha256": "699d6b8f2598983cb9de3dabe3dfb7a4a484d7df66275a28c956d844e7445bbb",
+    "size_bytes": 79257
+  },
+  {
+    "empty": false,
+    "extension": "",
+    "path": "CLAUDE START HERE/Repository documentation.",
+    "sha256": "46c858ca0797ac18dd38e474e1248c4b7810c9b748028ccb2fa1b8a5f1801918",
+    "size_bytes": 10
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/SECURITY.md",
+    "sha256": "5801ed6cb73fa0240eb051ca432f5a479cc59f2545d1ae78eb58e9916d5a9bb5",
+    "size_bytes": 244
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/STARTUP_PROCEDURE_v1.0.docx",
+    "sha256": "037272cedcd32e98fafac1c242552927fa00ad1155d29a219c140d92e3905322",
+    "size_bytes": 37485
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/STARTUP_PROCEDURE_v1.0.md",
+    "sha256": "d9730bd6ae7c5c1d54c19f68578cffe120c21421f8bb0b979c132bd50a1a33bf",
+    "size_bytes": 1342
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "CLAUDE START HERE/STATE_SNAPSHOT_PACKAGE.pdf",
+    "sha256": "18d0ecf30d096b19e0121e41320d56e40e4929ab8344c282d72008738c4a3bd2",
+    "size_bytes": 3027
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/SYSTEM_BOOTSTRAP_v2.0_CHATGPT.md",
+    "sha256": "b426cb626bad898ee2c8fabc06a0e7047554146450f9f2316b6140aebf5bf984",
+    "size_bytes": 2260
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/Second Conversation .docx",
+    "sha256": "f7ca9fefe3707a9e8a8416d90501b433062b5f60d90b2fad48891b217462c19e",
+    "size_bytes": 27796
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/Seventh conversation .docx",
+    "sha256": "3b7df46c642041884cddd726d48a98c51a6c2018e383b081d28228c0f608be8b",
+    "size_bytes": 20428
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/Sixth Conversation .docx",
+    "sha256": "d8d3f87d4d95ca495b6e9e1157827dfb12e27f992a0b45420f574064e4c474bc",
+    "size_bytes": 12683
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/THE ACTIVE STATE SNAPSHOT.docx",
+    "sha256": "3d0be865e340475dea09ce11d79d4126ca12e5097d0637db7f68e6d9043f0bcc",
+    "size_bytes": 8345
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/THE DIFFERENCE ENGINE- SYSTEM SPECIFICATION & REVISED BOOTSTRAP PROTOCOL (1).docx",
+    "sha256": "86f9d672ce44b9d118a88bcdb20ee8dbb7471594c1550e6026884d7acba670b6",
+    "size_bytes": 12236
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/THE DIFFERENCE ENGINE- SYSTEM SPECIFICATION & REVISED BOOTSTRAP PROTOCOL.docx",
+    "sha256": "9406888ea69d06584f3aaa86b6f437112e6d963b083f84a853d5714ab81f5e48",
+    "size_bytes": 7618
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "CLAUDE START HERE/Third Conversation .docx",
+    "sha256": "622768b6602cb189fb2c9d380702a1995774feb752e800626fcab482f06c6588",
+    "size_bytes": 12309
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/Traversal_Ledger_v0.1.json",
+    "sha256": "91fad2d4d4f79d6e88b6e38a4ef633cc6b8b268370565ebcfa91285c2e3a7eda",
+    "size_bytes": 698
+  },
+  {
+    "empty": false,
+    "extension": ".txt",
+    "path": "CLAUDE START HERE/UPDATE FIRST PJT INSTRCT CONS  LAWS FOR CLAUDE.txt",
+    "sha256": "6009ac64c240e6a6ef212412726febf160139b4ee398be515fc1808b55241491",
+    "size_bytes": 1448
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/VERSIONING_POLICY.md",
+    "sha256": "706ccb81387af354ef0ab0624571e5b9e5ec45e038dd14ca3a28670498f0814a",
+    "size_bytes": 278
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "CLAUDE START HERE/forensic_parser_workflow_start.json",
+    "sha256": "57739d401d170ba08463d45abd86161c50c1edb72ec046193cb28a46f086a7f0",
+    "size_bytes": 7633
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CLAUDE START HERE/oh.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CODE_OF_CONDUCT.md",
+    "sha256": "fe738f138364b53a08b48250e223140d026d30c5f1c961a8e14066dce8e22597",
+    "size_bytes": 232
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CONSTITUTIONAL_AMENDMENT_FULL_ARTIFACTS.md",
+    "sha256": "a9ea576ff34bbacf171431a45e5eee0ac05b7ea5b2e173f4d20210c62ca6e32e",
+    "size_bytes": 1829
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "CONTRIBUTING.md",
+    "sha256": "30a4e472639fd72e031bd27ff1b0d95048176c1c726b164a4b4f41e20d4cf2b3",
+    "size_bytes": 350
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "EVIDENCE_STANDARD.md",
+    "sha256": "e2878edfafe691ef94f5a8c361e79971a18dc5fd028180c9044bfdef92896ab2",
+    "size_bytes": 272
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "GLOSSARY.md",
+    "sha256": "90dc12651a7d27e24a068e5146f01866ada6ee24745c52d04582df5332691d64",
+    "size_bytes": 488
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Governance/PLUGIN_POLICY.md",
+    "sha256": "dfcf436c45dc48aba87d53ed1711ef83718b2494eda1d1252dcbce854b7a9900",
+    "size_bytes": 2938
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Governance/placeholder.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "IMPORT_POLICY(1).md",
+    "sha256": "e886cd6f8784c75c0971535b6ebe6fb4da1c1c915cce2e85d44525f4cab90069",
+    "size_bytes": 113
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "INDEX.md",
+    "sha256": "0f10ab7067dd3e48d578369dc70bce0da737a24cfac21f68897e5403b04f084f",
+    "size_bytes": 573
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "In ox/ACP-0001_Foundation_Gamma_v1.4.md",
+    "sha256": "705533b8a98c0939370174a190595d0eae58afa02e642a016e540f06f1f93135",
+    "size_bytes": 895
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "In ox/ADE_Constitution_v1.4.md",
+    "sha256": "3252209105c671f3c980c6294f5c39ac22201b9b5ad592b6167754994adfbff3",
+    "size_bytes": 1249
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "In ox/BOOTSTRAP_v1.3.md",
+    "sha256": "942fce67b87ebbe6fc28b2ce083034606619b037f4ecda6be74ebbc10510e0dd",
+    "size_bytes": 786
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "In ox/BOOTSTRAP_v1.4.md",
+    "sha256": "9e4b323a7618f641e2338b261516d83083e07fdb0fded7160ff8ec2a305e761f",
+    "size_bytes": 263
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "In ox/CHANGELOG_v1.3.md",
+    "sha256": "151adeb3e27cffcc6749bf7ad883a29f331b050927e55e632a3da91097807d8f",
+    "size_bytes": 236
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "In ox/CHANGELOG_v1.4.md",
+    "sha256": "a553e14dbf239a32975680d1ebed3c77cfed5c69620d1c31a191e50711be3936",
+    "size_bytes": 243
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "In ox/FOUNDATION_GAMMA_PACKAGE_v1.3.pdf",
+    "sha256": "5a580e142baa9212b27eb44b7e6f3b744e04401bab1f0192c117f340bbce1bf2",
+    "size_bytes": 69486
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "In ox/Foundation_Gamma_Revision_Package_v1.4.pdf",
+    "sha256": "a9e23ae6ca1b97d766fa9839cdccbb7c6a418511a7d4f2a996e5e4ad386d3710",
+    "size_bytes": 74823
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "In ox/INDEX_v1.3.md",
+    "sha256": "a452ecc97cb0caccbe74d910046385b907706c3405aa16dc82bdb30c7dcb891e",
+    "size_bytes": 278
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "In ox/INDEX_v1.4.md",
+    "sha256": "2d8acd73c51f6c602d85d12b850fd60eb56099b56754a8b3eae41464c688cf82",
+    "size_bytes": 135
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "In ox/ROADMAP_v1.3.md",
+    "sha256": "d14de71be14311c7c50864b4d0f28bf7b279e1de39d6e1a47202b13ad7310e01",
+    "size_bytes": 347
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "In ox/ROADMAP_v1.4.md",
+    "sha256": "13b5d2072ea28bf2a3a9e7717d22f3d91431cbf7bac20a0c967434b0ce9bd508",
+    "size_bytes": 162
+  },
+  {
+    "empty": false,
+    "extension": ".pdf",
+    "path": "In ox/STATE_SNAPSHOT_PACKAGE.pdf",
+    "sha256": "18d0ecf30d096b19e0121e41320d56e40e4929ab8344c282d72008738c4a3bd2",
+    "size_bytes": 3027
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "In ox/sd.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "LICENSE.md",
+    "sha256": "d92008e9524939967754476aad971ceee26e71f9c5d0d3155b63438817bbf615",
+    "size_bytes": 126
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Library/placeholder.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "MANIFEST.md",
+    "sha256": "8aa1aaf44396abb29bda2a9b44fba9e25bf8c42b6a15c23797bb5b3ac1ae15cb",
+    "size_bytes": 351
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "NAMING_CONVENTIONS.md",
+    "sha256": "544e0370d0fd43ec4021942100f1f1c30f807ba448dd300450bc03fc92e7edd5",
+    "size_bytes": 330
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "PP/placeholder.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "PRINCIPLES.md",
+    "sha256": "7e50b2e9448ec6c05224c98de06f20c57dfb16d33a4ddb5f3297d0eb1d52b840",
+    "size_bytes": 395
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Parser/placeholder.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Publications/placeholder.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": "",
+    "path": "RC/.gitkeep",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0000_Master_Manifest_GOLD_MASTER_v1.2.0_FROZEN.json",
+    "sha256": "8f2cd1c855f3111f4f94b5323de7914bb0d0ff431a04fca54600731855b85ab1",
+    "size_bytes": 2113
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0001_Repository_Constitution_GOLD_v1.2.0.json",
+    "sha256": "3ffb5d31931ef55ad79d7523a591541e74c404bafc3e6fe733d949d8bd317d8d",
+    "size_bytes": 2983
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0002_Constitutional_Amendments_Ledger_GOLD_v1.2.0.json",
+    "sha256": "f6d356ccb94ef0fcfe0a2a599247d2e1aa8fdaa78ca3d5a83d9c01adb38653cb",
+    "size_bytes": 2151
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0003_Governance_Framework_GOLD_v1.2.0.json",
+    "sha256": "64cbb804a6624f56fa4bafc27431733f048c92a348d336a1f35271f13235bac3",
+    "size_bytes": 2172
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0004_Constitutional_Registry_GOLD_v1.2.0.json",
+    "sha256": "f634977863cf3f95c91a4e9e1fcc8c30e9d90910cc1860b70e672a87ef386b93",
+    "size_bytes": 2184
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0005_Validation_Framework_GOLD_v1.2.0.json",
+    "sha256": "2b65fc8a3fced28e06034df0b9727cc6d5fc848bccd0ae8ca7ab3c6832f45f26",
+    "size_bytes": 2271
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0006_Specification_Framework_GOLD_v1.2.0.json",
+    "sha256": "8570e16792a5efcaaea50216b2b05b0d94b6cfaae4c454ef7bef532a318e4f24",
+    "size_bytes": 2257
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0007_Specification_Volume_I_GOLD_v1.2.0.json",
+    "sha256": "a9b00884da204d950946219c354ed7f821c4f4bb342cc707f64e768c29623e69",
+    "size_bytes": 1960
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0008_Specification_Volume_II_GOLD_v1.2.0.json",
+    "sha256": "2cdd0e210b5513160a774b50e3feb2dcf7e806fe3e6aa54ed25d03c59cba02d0",
+    "size_bytes": 2045
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0009_Specification_Volume_III_GOLD_v1.2.0.json",
+    "sha256": "13f3d9b9ccc47460cbf2315d7269398fc187bf29ec9f0aaa93b9e0ebee22e157",
+    "size_bytes": 2044
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0010_Specification_Volume_IV_GOLD_v1.2.0.json",
+    "sha256": "fbdf6af39f30c0bc2d7dd92aaf23111037fcd10181705b151ec2b87f5c023d93",
+    "size_bytes": 2038
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0011_Specification_Volume_V_GOLD_v1.2.0.json",
+    "sha256": "72f890711a6a42748040659fc9598109f46e919f79a1c1341beeb546f4c4490c",
+    "size_bytes": 2044
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0012_Specification_Volume_VI_GOLD_v1.2.0.json",
+    "sha256": "ae08c254a24d3895feb244cb574e9d2b875bdfac74cabd9a276bc590aafa6691",
+    "size_bytes": 2062
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0013_Specification_Volume_VII_GOLD_v1.2.0.json",
+    "sha256": "6a9d7710d109b2e1a9f4af9f7371cdfe7d6d93487e19ae658088962af149e68d",
+    "size_bytes": 2066
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0014_Specification_Volume_VIII_GOLD_v1.2.0.json",
+    "sha256": "76a7cd7492ca51ec7c89c426e45df22ac40890e571026fd669d15f9c97e7cc24",
+    "size_bytes": 2067
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0015_Specification_Volume_IX_GOLD_v1.2.0.json",
+    "sha256": "655b0f5de80234d2073ff3990772cc7585de2ce4507167c81285774cbabe0f10",
+    "size_bytes": 2062
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0016_Specification_Volume_X_GOLD_v1.2.0.json",
+    "sha256": "460bd26e3a5cc01d072ba0e59b27e0a18952d106b06b14bc40d43771d5e9fa79",
+    "size_bytes": 2061
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0017_Specification_Volume_XI_GOLD_v1.2.0.json",
+    "sha256": "851ef2686b9283ff3fd4d135bd6f71721b0146ef35980df5fa4b496e0613dc76",
+    "size_bytes": 2066
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0018_Specification_Volume_XII_GOLD_v1.2.0.json",
+    "sha256": "faf1b0e62550296317654f0f4df9e24f43f179708d4d590c86401ecf9f05872b",
+    "size_bytes": 2067
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0019_Publication_Manifest_GOLD_v1.2.0.json",
+    "sha256": "c3ec072e4b9cd85c25f73a79f1863e26583af6b5a4b0aa113f6d0469ef1f456e",
+    "size_bytes": 2042
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0020_Repository_Certification_Record_GOLD_v1.2.0.json",
+    "sha256": "76b922fbe481af161abadaa59596046332795d14fbf9f0b0505efc1af9d87278",
+    "size_bytes": 2104
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0021_Repository_Release_Record_GOLD_v1.2.0.json",
+    "sha256": "d50ad2d62a7906dc0f79d565f492b465599d25025f2443b42b1d68b1d1b5ddfe",
+    "size_bytes": 2086
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0022_Repository_Preservation_Record_GOLD_v1.2.0.json",
+    "sha256": "7d91967e044815de94059e9c24c97c583ff86be338b4e9ee74a3fd0b79d432fb",
+    "size_bytes": 2115
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0023_Repository_Freeze_Record_GOLD_v1.2.0.json",
+    "sha256": "5a2f69c5cfaa45b0d25de2deca5fa1000269dc29b2c11f1dcd5ab706f3b3d371",
+    "size_bytes": 2117
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0024_Repository_Archive_Record_GOLD_v1.2.0.json",
+    "sha256": "040b38b801426c83f1a69c3f1ec1502762b6bf89d4db590a2000ae012e32d967",
+    "size_bytes": 2093
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0025_Repository_Final_Certification_GOLD_v1.2.0.json",
+    "sha256": "76bd60d8782e61782d606799ca8a6316de66a50ef05a5041319bb34637529db6",
+    "size_bytes": 2077
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0026_Repository_Release_Closure_GOLD_v1.2.0.json",
+    "sha256": "670e87acd7f3b2f8de353048961c7b379c39f2749f42d246cb83340379af2323",
+    "size_bytes": 2068
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0027_Repository_Completion_Record_GOLD_v1.2.0.json",
+    "sha256": "a2b3a047e5ed18760c8ebe8658cd8e42e6bc04a647c6eb70565b18d4beec9cee",
+    "size_bytes": 2076
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0028_Repository_Ratification_Record_GOLD_v1.2.0.json",
+    "sha256": "df5c7a768339ccd96dac10c2a13149aad451134701cb0feda8faf40188e9c5a2",
+    "size_bytes": 2094
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0029_Repository_Canonical_Release_Record_GOLD_v1.2.0.json",
+    "sha256": "7a0f33c47070d896f7f49a1393a4752de2d78a1b635d156c6a5749a6d35a7005",
+    "size_bytes": 2096
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0030_Repository_Publication_Completion_GOLD_v1.2.0.json",
+    "sha256": "00aa69078ed717a57909fdb1ae8eae57bb4f43bc5000ccddd3121d3edb6172ed",
+    "size_bytes": 2115
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0031_Repository_RC1_Closure_Record_GOLD_v1.2.0.json",
+    "sha256": "fa3b06665229102f82a9b5fb20f5d65c74893e9b2b77a0bc17b3a07b6c6ed43d",
+    "size_bytes": 2066
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0032_Repository_Preservation_Point_Index_GOLD_v1.2.0.json",
+    "sha256": "be3012262da536dc6f7d1931962b691d36e0f06a0ec74834cb1b19cd04604f2f",
+    "size_bytes": 2073
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0033_Repository_Publication_Ledger_GOLD_v1.2.0.json",
+    "sha256": "382f8aec613e365f7a794ce68e18722cefa7fe7c164cb9b9a9195f7b37db5319",
+    "size_bytes": 2087
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0034_Repository_Final_Preservation_Point_GOLD_v1.2.0.json",
+    "sha256": "5fac9fb0acf3276094fab034140761bdd7c20135cc7fea36d1205ae6b142917f",
+    "size_bytes": 2149
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0035_Repository_Canonical_Archive_Index_GOLD_v1.2.0.json",
+    "sha256": "2a271acb6a984b482984012c929edc65c5336a289a3e71da0432de79c15638c0",
+    "size_bytes": 2072
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0036_Repository_Certification_Evidence_Register_GOLD_v1.2.0.json",
+    "sha256": "a8b08a9a4722f48e2235a65cda7f922519223605a47e01c0983875b1234d7e7b",
+    "size_bytes": 2150
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0037_Repository_Immutable_Release_Record_GOLD_v1.2.0.json",
+    "sha256": "54215546e7465a253d284c6d811eb3c96d3f1b0351a3022786ac5f2f24b96923",
+    "size_bytes": 2118
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0038_Repository_Release_Seal_Record_GOLD_v1.2.0.json",
+    "sha256": "58d3ed17eacc4623f19bcb9d9f0b3b08d3c04d056b778aa44a2cd73388c4f724",
+    "size_bytes": 2106
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0039_Repository_Golden_Archive_Record_GOLD_v1.2.0.json",
+    "sha256": "d27b8c536b4b82080b66c33e4ea2d3f298a5b296204c2b4fd831e4790f1b1169",
+    "size_bytes": 2112
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0040_Repository_RC1_Completion_Certificate_GOLD_v1.2.0.json",
+    "sha256": "60d10970daea04f8e9620179fbb2eba1cfa4bb3c6cb32f5eea0700dd9f5602c3",
+    "size_bytes": 2146
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0041_Repository_RC1_Transition_Record_GOLD_v1.2.0.json",
+    "sha256": "55d0861a4780fd72dfbf4fc5d2bc48534d688ea45f4befcaa88bd76bb6599adf",
+    "size_bytes": 2142
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0042_Repository_RC1_Governance_Handoff_GOLD_v1.2.0.json",
+    "sha256": "204cabd36243ccbe831ca8b6d7ef937b164989c447ffa8cbb7cdbd10b557a5e0",
+    "size_bytes": 2123
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0043_Repository_RC1_Successor_Initialization_GOLD_v1.2.0.json",
+    "sha256": "9e3c3c7a40f4fbcffd2b7a47c797cf7d3d448058168c9aacf6bb2efc7dfd5246",
+    "size_bytes": 2183
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0044_Repository_RC1_Legacy_Record_GOLD_v1.2.0.json",
+    "sha256": "1a1c1ca7939c9a2b1e119a14d704260ae951c62696cd0a91ad106a48e8c5e6c6",
+    "size_bytes": 2125
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0045_Repository_RC1_Canonical_Closure_GOLD_v1.2.0.json",
+    "sha256": "5d84f9f765f75db0211af86ba24b009eb3248c3be9068f1769590166eaed1c5f",
+    "size_bytes": 2108
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0046_Repository_RC1_Final_Ratification_Record_GOLD_v1.2.0.json",
+    "sha256": "c13186249962e10d28ba82cce1ebac423dc5b58e08977d3bff702831d52a8900",
+    "size_bytes": 2163
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0047_Repository_RC1_Canonical_Baseline_Record_GOLD_v1.2.0.json",
+    "sha256": "a3e31c2f38b70e0f781a6c6395d7a8bef141543cb3905dd2d1f6138d4abf50d8",
+    "size_bytes": 2132
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0048_Repository_RC1_Release_Continuity_Record_GOLD_v1.2.0.json",
+    "sha256": "2639a870e4e49d9ac9fe5dacfdb71acb55cffd69f7e0bc3539cad076e67d21f9",
+    "size_bytes": 2152
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0049_Repository_RC1_Successor_Baseline_Certificate_GOLD_v1.2.0.json",
+    "sha256": "1bfa7d446c7d6f694aaef746cd9fd90538f884cc1b7c7b0d7b7fd47f230238eb",
+    "size_bytes": 2208
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0050_Repository_RC1_Continuity_Charter_GOLD_v1.2.0.json",
+    "sha256": "9ac620e0362c2797b8857e44012129933325b3cc407b423927254223b60202f1",
+    "size_bytes": 2163
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0051_Repository_RC1_Governance_Continuation_Record_GOLD_v1.2.0.json",
+    "sha256": "089eee02a73d5cfd6d88a3e1e9b2584beda34e23da223abd4e724f7240a5decd",
+    "size_bytes": 2212
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0052_Repository_RC1_Stewardship_Record_GOLD_v1.2.0.json",
+    "sha256": "05b4ff588bc322aa30d00c6402e9b1f9765f606f84210c7e3dc97d5b2a7f9258",
+    "size_bytes": 2168
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0053_Repository_RC1_Successor_Governance_Charter_GOLD_v1.2.0.json",
+    "sha256": "62a65571bd36be4f40f037f60032ae08fdd1ade8aa824e8d82a9122c442e5c5b",
+    "size_bytes": 2221
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0054_Repository_RC1_Perpetual_Governance_Record_GOLD_v1.2.0.json",
+    "sha256": "5e039b54c23e0e7d309fc0da1e64ff195900526d5dddcb43597b66fad5fda9ac",
+    "size_bytes": 2192
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0055_Repository_RC1_Legacy_Continuity_Register_GOLD_v1.2.0.json",
+    "sha256": "df846caafeba7af99d2aa357dd38b3c26cff5488b96ff504172abc939b2831d3",
+    "size_bytes": 2195
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0056_Repository_RC1_Repository_Continuity_Ledger_GOLD_v1.2.0.json",
+    "sha256": "b45567d0f8452c43ec3dec48bd0e3950268b713a22b629428b7dc4b10c96cace",
+    "size_bytes": 2183
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0057_Repository_RC1_Canonical_Continuity_Index_GOLD_v1.2.0.json",
+    "sha256": "f59e52ebef75a8a7f5830ec39c28c1e0e81e8a22f697576361eafc6d31458d6f",
+    "size_bytes": 2171
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0058_Repository_RC1_Canonical_Preservation_Register_GOLD_v1.2.0.json",
+    "sha256": "cbd02777158873504518fd87880bc9a76187b9a76150bc07beb8171128a77003",
+    "size_bytes": 2233
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0059_Repository_RC1_Constitutional_Archive_Register_GOLD_v1.2.0.json",
+    "sha256": "81f0bc5cc4a153c0248fbb9f082d7698271bd3a615e90060698cbe1382049ac0",
+    "size_bytes": 2210
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0060_Repository_RC1_Constitutional_Preservation_Ledger_GOLD_v1.2.0.json",
+    "sha256": "29587cc01e43a4807f93b89320df12eec1fbff4189f85629a5e562321885a6dc",
+    "size_bytes": 2223
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0061_Repository_RC1_Constitutional_Integrity_Register_GOLD_v1.2.0.json",
+    "sha256": "c376569982a80178fb2a88c590fc442d305e150033dbf8d7baf1f07379ae6051",
+    "size_bytes": 2223
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0062_Repository_RC1_Constitutional_Certification_Register_GOLD_v1.2.0.json",
+    "sha256": "43a450c3bc668d7248c5036ef840026972ed9325e65048eeb7ae774bc4cdef48",
+    "size_bytes": 2248
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0063_Repository_RC1_Constitutional_Ratification_Register_GOLD_v1.2.0.json",
+    "sha256": "efef20d7dfd3a25936aab8061b769da5be697dd74aa256565a94093cfddcf9db",
+    "size_bytes": 2242
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0064_Repository_RC1_Constitutional_Finalization_Register_GOLD_v1.2.0.json",
+    "sha256": "bb9d6b2e6d13881f0c1a359dc925af1b5a4d3f843fcfd126963cacf3d5c55b7d",
+    "size_bytes": 2242
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0065_Repository_RC1_Constitutional_Closure_Register_GOLD_v1.2.0.json",
+    "sha256": "0c9208a99e6d5a1c7fec5e2b3e4b2c585cf4b91b104cea715aa2771ddbc0dcd4",
+    "size_bytes": 2212
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0066_Repository_RC1_Constitutional_Archive_Closure_Certificate_GOLD_v1.2.0.json",
+    "sha256": "846cad63d2f67d19be6e34d4b6c9df26753873d4b983a417c856ab33e4d7bb3b",
+    "size_bytes": 2260
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0067_Repository_RC1_Canonical_Repository_Freeze_Certificate_GOLD_v1.2.0.json",
+    "sha256": "e4db8875e2e1b667f15812e9b0f9a2e03fa8d244f831991c6fa30a1e9e7c052f",
+    "size_bytes": 2203
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0068_Repository_RC1_Canonical_Repository_Seal_Certificate_GOLD_v1.2.0.json",
+    "sha256": "59527198dea66f11d4b42e0c8e1d1e5ba7dd40ce727b80bc46f5c64cc21e69ae",
+    "size_bytes": 2168
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0069_Repository_RC1_Canonical_Repository_Completion_Certificate_GOLD_v1.2.0.json",
+    "sha256": "a61c48df1cbecfa43675a0a6d2e9583e5c4497bf4147f492413aa7da18391a7d",
+    "size_bytes": 2215
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0070_Repository_RC1_Canonical_Publication_Completion_Ledger_GOLD_v1.2.0.json",
+    "sha256": "8437fa9e5516e3da447010fa5c100243d3a617ed1db6b2af82a8d6e689213683",
+    "size_bytes": 2201
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0071_Repository_RC1_Canonical_Repository_Acceptance_Certificate_GOLD_v1.2.0.json",
+    "sha256": "534568a825de7a92569de0c78d1de4e4c76ab6bbdbb9928ce0f95e6878d3f9ea",
+    "size_bytes": 2218
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0072_Repository_RC1_Canonical_Repository_Release_Certificate_GOLD_v1.2.0.json",
+    "sha256": "cf3826cc0b757c0a319caccfab76f7c8fba56eacc2eb2805f51b52807a372884",
+    "size_bytes": 2200
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0073_Repository_RC1_Canonical_Repository_Distribution_Certificate_GOLD_v1.2.0.json",
+    "sha256": "9e962f009520bbe049f87c5439b4350cb6b19ea2f9c2428e2f33a3df4ef6d3a1",
+    "size_bytes": 2230
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0074_Repository_RC1_Canonical_Repository_Delivery_Certificate_GOLD_v1.2.0.json",
+    "sha256": "bf6b71fb67ff0d8b20bc3636fd8095f6a0455e97c0bfe5950d8556592a9cf999",
+    "size_bytes": 2206
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0075_Repository_RC1_Canonical_Repository_Receipt_Certificate_GOLD_v1.2.0.json",
+    "sha256": "1266e3e17c490f45b66058926e16a4ec4ae44bf1fbdf341f8f91db297717f612",
+    "size_bytes": 2200
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0076_Repository_RC1_Canonical_Repository_Verification_Certificate_GOLD_v1.2.0.json",
+    "sha256": "edebd4947c71e5db773d2586c1925748ba4c98784dd820d0173afc764e287e0d",
+    "size_bytes": 2230
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0077_Repository_RC1_Canonical_Repository_Validation_Certificate_GOLD_v1.2.0.json",
+    "sha256": "a17f2146f2219bf3897cfa20d6fdd6ba619dde3b6c035a30666bf01ebd21b703",
+    "size_bytes": 2218
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0078_Repository_RC1_Canonical_Repository_Compliance_Certificate_GOLD_v1.2.0.json",
+    "sha256": "7425cf132374ada2312778caf137794651085e9bdf53d0fc841cbf5b205d4575",
+    "size_bytes": 2218
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0079_Repository_RC1_Canonical_Repository_Conformance_Certificate_GOLD_v1.2.0.json",
+    "sha256": "17091708084bce5967383a1f66627b60e44179017f1541539fbcda451e17b8c8",
+    "size_bytes": 2224
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0080_Repository_RC1_Canonical_Repository_Certification_Ledger_GOLD_v1.2.0.json",
+    "sha256": "f0140de25191987811b2da2d0cef7da44a89ae5daf59d9a3a85cf6eb67fd38e9",
+    "size_bytes": 2220
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0081_Repository_RC1_Canonical_Repository_Certification_Archive_GOLD_v1.2.0.json",
+    "sha256": "307fb5e746ba781f53c8c3b4161a1e2353c47fcb56022c6c76bf180d379fd875",
+    "size_bytes": 2213
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0082_Repository_RC1_Canonical_Repository_Certification_Index_GOLD_v1.2.0.json",
+    "sha256": "2c036f889db68a1e7b168d1f075d4b717bfc1965b430ae682cbc9c98c662a42d",
+    "size_bytes": 2199
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0083_Repository_RC1_Canonical_Repository_Certification_Manifest_GOLD_v1.2.0.json",
+    "sha256": "0dde595ec87717a0fe01bef35747dc196aaa368aef8a179f8392ac22cc59a446",
+    "size_bytes": 2223
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0084_Repository_RC1_Canonical_Repository_Certification_Register_GOLD_v1.2.0.json",
+    "sha256": "77bdcf802d686f289f2a3abeda588d11f5153dfe01c85c7cb1f9dd58aca159d6",
+    "size_bytes": 2223
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0085_Repository_RC1_Canonical_Repository_Certification_Summary_GOLD_v1.2.0.json",
+    "sha256": "253801942174370d91bbd239adfa870a7d0c8868d46432789ec228b89eae4e2c",
+    "size_bytes": 2199
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0086_Repository_RC1_Canonical_Repository_Certification_Digest_GOLD_v1.2.0.json",
+    "sha256": "d07e4aa26d883e3359f441b7d82b80d5a8871b69534b2c3f874db85aed4c7472",
+    "size_bytes": 2190
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0087_Repository_RC1_Canonical_Repository_Certification_Seal_GOLD_v1.2.0.json",
+    "sha256": "066fcc426786807ed715e3c2fd6cb1607d57fc98dee2823e7f54f91cfd6daf31",
+    "size_bytes": 2169
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0088_Repository_RC1_Canonical_Repository_Certification_Attestation_GOLD_v1.2.0.json",
+    "sha256": "920ee1bbb17302132b25853685b9a18047756954523bbcdb0cf7a8a6ffc8023d",
+    "size_bytes": 2211
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0089_Repository_RC1_Canonical_Repository_Certification_Record_GOLD_v1.2.0.json",
+    "sha256": "6388e61877f1cda247d90f20217092c66ac0d57b1ab40c46b2c07d59cd1e8481",
+    "size_bytes": 2185
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0090_Repository_RC1_Canonical_Repository_Certification_Dossier_GOLD_v1.2.0.json",
+    "sha256": "93977b53d3b8353ea4aef063e601547b8a467bc4151482b886811c867c7a712d",
+    "size_bytes": 2205
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0091_Repository_RC1_Canonical_Repository_Certification_Portfolio_GOLD_v1.2.0.json",
+    "sha256": "e1e7f6a7a1feced997efcbbbb5971fe0555567947da8105751216ceff2257118",
+    "size_bytes": 2221
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0092_Repository_RC1_Canonical_Repository_Certification_Compendium_GOLD_v1.2.0.json",
+    "sha256": "c77235cdac0bbee76889099c66e3f93b75a0c4a97088401299b44c58d9f4dffe",
+    "size_bytes": 2229
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0093_Repository_RC1_Canonical_Repository_Certification_Archive_Register_GOLD_v1.2.0.json",
+    "sha256": "bfc80100a8559f04d5d38b44d3da8e0dad81a8351385c5b4997ab95eeb5e08a1",
+    "size_bytes": 2225
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0094_Repository_RC1_Canonical_Repository_Certification_Master_Register_GOLD_v1.2.0.json",
+    "sha256": "b19906a417386f22ffceeb1b3f439944f4fee1653964f1c11fa0bcc11bfde301",
+    "size_bytes": 2220
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0095_Repository_RC1_Canonical_Repository_Certification_Master_Archive_GOLD_v1.2.0.json",
+    "sha256": "08b72940260f16b6a52c9324579affa20a7f6a89cdc66811806956f0db95a0b7",
+    "size_bytes": 2212
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0096_Repository_RC1_Canonical_Repository_Certification_Master_Compendium_GOLD_v1.2.0.json",
+    "sha256": "e82a6141097dbf714cfd2750ef6bdda3ee71e2058d8d7084e3d02caa387e8cbc",
+    "size_bytes": 2236
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0097_Repository_RC1_Canonical_Repository_Certification_Master_Ledger_GOLD_v1.2.0.json",
+    "sha256": "ece6147ebcd7321b94c71e47787603a92f17e205774fa69f46be220477840c9b",
+    "size_bytes": 2204
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0098_Repository_RC1_Canonical_Repository_Certification_Master_Index_GOLD_v1.2.0.json",
+    "sha256": "c434983187b5cd63f5507d5c3dafc850ab118b18da525cf9f607ccf699715cf2",
+    "size_bytes": 2196
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0099_Repository_RC1_Canonical_Repository_Certification_Master_Catalog_GOLD_v1.2.0.json",
+    "sha256": "f095d7805828d225a930d1f2ec66a9eeab3837101ac86c4dd56ffae78fd0ddc9",
+    "size_bytes": 2212
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0100_Repository_RC1_Canonical_Repository_Centennial_Preservation_Record_GOLD_v1.2.0.json",
+    "sha256": "8ba937a84b7321752288b16d53a0e2665347278e83d1fcfe6759b07fe5898812",
+    "size_bytes": 2228
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0101_Repository_RC1_Canonical_Repository_Centennial_Continuity_Register_GOLD_v1.2.0.json",
+    "sha256": "176c405a7b56ab5d8cc3d82a3fc1862cc7560b33c477091a8d029766b6473777",
+    "size_bytes": 2204
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "RC/RC1-0102_Repository_RC1_Canonical_Repository_Centennial_Preservation_Ledger_GOLD_v1.2.0.json",
+    "sha256": "a54e59ffd567396c4c057dfbed2c14d3cf67c345f9f1147017805ee5d599d81c",
+    "size_bytes": 2217
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "README.md",
+    "sha256": "def9231359b86dfedb9f2d4b2c583b87f2f51ef1562c54b28df3783f1677c2ee",
+    "size_bytes": 538
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "RECOVERY_MANIFEST(1).md",
+    "sha256": "c9f1355ad243238dd08a34a3b86917a6341c4997f38b4da0c9f5c1013f9b5980",
+    "size_bytes": 116
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "REPOSITORY_CHARTER.md",
+    "sha256": "b0ff8673f4750d95941c9ab5cf5999d629ae47a8b898c36331a7bb09c47f93f9",
+    "size_bytes": 640
+  },
+  {
+    "empty": false,
+    "extension": ".txt",
+    "path": "REPOSITORY_FILES.txt",
+    "sha256": "8b00591143b756e87f0d4bd938c1cea0a03b59d7362e848c0b632e0daa212f19",
+    "size_bytes": 44952
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "REPOSITORY_STRUCTURE.md",
+    "sha256": "c598896a77ee9023a0eeaabd9facb07df66883973b303a73e674d11a3d42b614",
+    "size_bytes": 674
+  },
+  {
+    "empty": false,
+    "extension": ".json",
+    "path": "REPOSITORY_TREE.json",
+    "sha256": "7c0101a41ebed40b46704e3220db478e98dd701002a5b49325b6affaeca914e6",
+    "size_bytes": 66234
+  },
+  {
+    "empty": false,
+    "extension": ".txt",
+    "path": "REPOSITORY_TREE.txt",
+    "sha256": "268153a9d18cced4a22108ec2101e9cfe85a1056f71ede65f1141b8039a232b5",
+    "size_bytes": 2269
+  },
+  {
+    "empty": false,
+    "extension": ".txt",
+    "path": "REPOSITORY_TREE_FULL.txt",
+    "sha256": "ac147f313f1ac4a9465fc835e02f8d87f12a74516ba30d2a2ab0078c20e905c1",
+    "size_bytes": 53681
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "ROADMAP.md",
+    "sha256": "d8aff4f86d77611b3089f7b323aa801cea7a43486769e8ffe5a7cb8c6f353f8c",
+    "size_bytes": 495
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Research/science.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "SECURITY.md",
+    "sha256": "5801ed6cb73fa0240eb051ca432f5a479cc59f2545d1ae78eb58e9916d5a9bb5",
+    "size_bytes": 244
+  },
+  {
+    "empty": false,
+    "extension": ".docx",
+    "path": "STARTUP_PROCEDURE_v1.0.docx",
+    "sha256": "037272cedcd32e98fafac1c242552927fa00ad1155d29a219c140d92e3905322",
+    "size_bytes": 37485
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "STARTUP_PROCEDURE_v1.0.md",
+    "sha256": "d9730bd6ae7c5c1d54c19f68578cffe120c21421f8bb0b979c132bd50a1a33bf",
+    "size_bytes": 1342
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Specifications/scrooge.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "Tools/timesink.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "VERSIONING_POLICY.md",
+    "sha256": "706ccb81387af354ef0ab0624571e5b9e5ec45e038dd14ca3a28670498f0814a",
+    "size_bytes": 278
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "bootstrap_download.md",
+    "sha256": "f37dcd34f3d8d8f5e7458891323bff2d48df8b2165bf0b2d945f9140f44dd6a6",
+    "size_bytes": 884
+  },
+  {
+    "empty": false,
+    "extension": ".md",
+    "path": "docs/README.md",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "size_bytes": 1
+  },
+  {
+    "empty": false,
+    "extension": "",
+    "path": "docs/Repository documentation.",
+    "sha256": "46c858ca0797ac18dd38e474e1248c4b7810c9b748028ccb2fa1b8a5f1801918",
+    "size_bytes": 10
+  }
+]

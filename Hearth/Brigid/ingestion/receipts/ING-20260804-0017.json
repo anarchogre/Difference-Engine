@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:53.603535-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Implementation_Backlog_v0.1.md",
+  "original_name": "Implementation_Backlog_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0017",
+  "schema_version": "0.1.0",
+  "sha256": "5283908988da39356bb1a5e4d639f4997ab0c0db813a25a15462c570756e440c",
+  "size_bytes": 3300,
+  "source_class": "manual_batch"
+}

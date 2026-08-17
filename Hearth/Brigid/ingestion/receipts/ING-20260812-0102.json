@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:08.364095-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-QUEUE-0007_Validation_Outcome_Classification.json",
+  "original_name": "AKS-QUEUE-0007_Validation_Outcome_Classification.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0102",
+  "schema_version": "0.1.0",
+  "sha256": "3fdc20ff3804cfbee7a539effb7a56ff473870766a211f4ebc7807c7167d3294",
+  "size_bytes": 423,
+  "source_class": "manual_batch"
+}

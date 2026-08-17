@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260811-0033",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/plain",
+    "observed_at": "2026-08-11T22:18:48.952146-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Integration_Status_Update.md.txt",
+    "original_name": "Integration_Status_Update.md.txt",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260811-0033",
+    "schema_version": "0.1.0",
+    "sha256": "34026bfc2954e1d2fbc2cace6cd41f6090811135b93d78d273d43476752350dd",
+    "size_bytes": 5769,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

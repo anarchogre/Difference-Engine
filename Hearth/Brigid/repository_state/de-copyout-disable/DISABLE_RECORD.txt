@@ -1,0 +1,6 @@
+DE-COPYOUT DISABLE RECORD
+utc=2026-08-08T15:03:21Z
+source=/home/reckless-ideator/.local/bin/de-copyout
+sha256=9906aca91860c544a4e05fedc2ae8e8857066b363a3eed42ac56e6f1029cd3a3
+head=977fcbb5cf8403d0e9e0e3c8cc50a705478c1974
+action=RENAME_DISABLE

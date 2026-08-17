@@ -1,0 +1,80 @@
+=== ACTIVE STATE FILES ===
+--- MISSION ---
+# Active Mission
+
+GPT Plus Integration
+
+## Objective
+
+Integrate GPT Plus capabilities into the Difference Engine without changing repository-first architecture.
+
+## Governing Constraints
+
+- Repository remains canonical.
+- Bootstrap is executable state.
+- Recovery is evidence-based.
+- ChatGPT Projects are execution workspaces.
+- File Library is recovery infrastructure.
+- GPT Plus is an execution engine, not persistent memory.
+- Repository operations remain interface-independent.
+- Deterministic tooling replaces conversational reconstruction.
+
+## Current Phase
+
+Phase 1 — Foundation
+
+## Status
+
+Active
+
+--- TASK ---
+# Active Task
+
+Repository Service Formalization
+
+## Task Block
+
+1. Inventory existing operational functions.
+2. Recover surviving service primitives.
+3. Separate operations from interfaces.
+4. Define the canonical service contract.
+5. Build the service catalog.
+6. Map existing implementations to services.
+7. Identify missing implementations.
+8. Preserve experimental components as candidates.
+
+## Current Phase
+
+Phase 5 — Repository Services
+
+## Status
+
+Active
+
+=== RECOVERY CODE BINDINGS ===
+/home/reckless-ideator/DifferenceEngine/ade/kernel/bootstrap_loader/mission.py:10:    Path("workspace/operational/current/ACTIVE_MISSION.md"),
+/home/reckless-ideator/DifferenceEngine/ade/kernel/bootstrap_loader/mission.py:11:    Path("workspace/operational/current/COMPLETED_TASK_BLOCK.md"),
+/home/reckless-ideator/DifferenceEngine/ade/kernel/bootstrap_loader/mission.py:19:        r"(?im)^current mission\s*:?\s*(.+)$",
+/home/reckless-ideator/DifferenceEngine/ade/kernel/bootstrap_loader/mission.py:22:        r"(?im)^#+\s*current mission\s*$\s*(.+)$",
+/home/reckless-ideator/DifferenceEngine/ade/kernel/bootstrap_loader/mission.py:38:def recover_mission() -> str | None:
+/home/reckless-ideator/DifferenceEngine/ade/kernel/bootstrap_loader/mission.py:43:        text = path.read_text(
+/home/reckless-ideator/DifferenceEngine/ade/kernel/bootstrap_loader/mission.py:54:        "workspace/operational/current/"
+/home/reckless-ideator/DifferenceEngine/ade/kernel/bootstrap_loader/mission.py:59:        text = fallback.read_text(
+/home/reckless-ideator/DifferenceEngine/ade/kernel/bootstrap_loader/task.py:10:    Path("workspace/operational/current/ACTIVE_TASK.md"),
+/home/reckless-ideator/DifferenceEngine/ade/kernel/bootstrap_loader/task.py:11:    Path("workspace/operational/current/COMPLETED_TASK_BLOCK.md"),
+/home/reckless-ideator/DifferenceEngine/ade/kernel/bootstrap_loader/task.py:19:        r"(?im)^current task\s*:?\s*(.+)$",
+/home/reckless-ideator/DifferenceEngine/ade/kernel/bootstrap_loader/task.py:23:        r"(?im)^#+\s*current task\s*$\s*(.+)$",
+/home/reckless-ideator/DifferenceEngine/ade/kernel/bootstrap_loader/task.py:40:def recover_task() -> str | None:
+/home/reckless-ideator/DifferenceEngine/ade/kernel/bootstrap_loader/task.py:45:        text = path.read_text(
+/home/reckless-ideator/DifferenceEngine/ade/kernel/bootstrap_loader/loader.py:9:from .mission import recover_mission
+/home/reckless-ideator/DifferenceEngine/ade/kernel/bootstrap_loader/loader.py:17:from .task import recover_task
+/home/reckless-ideator/DifferenceEngine/ade/kernel/bootstrap_loader/loader.py:37:        mission=recover_mission(),
+/home/reckless-ideator/DifferenceEngine/ade/kernel/bootstrap_loader/loader.py:38:        task=recover_task(),
+
+=== WORKTREE VS HEAD ===
+workspace/operational/current/ACTIVE_MISSION.md
+WORKTREE=90efd71ba026d3f26f7eedb049026ab4068ead89
+HEAD=90efd71ba026d3f26f7eedb049026ab4068ead89
+workspace/operational/current/ACTIVE_TASK.md
+WORKTREE=766b7c53e2bb4515f3f2f63da82c1d710dd520d8
+HEAD=766b7c53e2bb4515f3f2f63da82c1d710dd520d8

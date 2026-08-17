@@ -1,0 +1,173 @@
+=== MEMORY FLUSH PLAN ===
+27:import { v as resolveMemoryFlushPlan } from "./memory-state-DefveORB.js";
+3539:	const memoryFlushPlan = resolveMemoryFlushPlan({ cfg: params.cfg });
+3712:	const memoryFlushPlan = resolveMemoryFlushPlan({ cfg: params.cfg });
+3824:	const activeMemoryFlushPlan = resolveMemoryFlushPlan({
+
+=== RESPONSES SERVER THRESHOLD ===
+3115:function resolveResponsesServerCompactionThreshold(params) {
+3115:function resolveResponsesServerCompactionThreshold(params) {
+3546:	const serverCompactionThreshold = resolveResponsesServerCompactionThreshold({
+
+=== SOURCE WINDOWS ===
+//#endregion
+//#region src/auto-reply/reply/memory-flush.ts
+function resolveMemoryFlushContextWindowTokens(params) {
+	return resolveContextTokensForModel({
+		cfg: params.cfg,
+		provider: params.provider,
+		model: params.modelId,
+		contextTokensOverride: params.agentCfgContextTokens,
+		allowAsyncLoad: false
+	}) ?? 2e5;
+}
+function resolveMaxActiveTranscriptBytes(cfg) {
+	const compaction = cfg?.agents?.defaults?.compaction;
+	if (compaction?.truncateAfterCompaction !== true) return;
+	const parsed = parseNonNegativeByteSize(compaction.maxActiveTranscriptBytes);
+	return typeof parsed === "number" && parsed > 0 ? parsed : void 0;
+}
+function resolvePositiveTokenCount(value) {
+	return typeof value === "number" && Number.isFinite(value) && value > 0 ? Math.floor(value) : void 0;
+}
+function asRecord(value) {
+	return value && typeof value === "object" && !Array.isArray(value) ? value : void 0;
+}
+function resolveBooleanParam(sources, key) {
+	for (const source of sources.toReversed()) {
+		const value = source?.[key];
+		if (typeof value === "boolean") return value;
+	}
+}
+function resolvePositiveIntegerParam(sources, key) {
+	for (const source of sources.toReversed()) {
+		const value = source?.[key];
+		if (typeof value === "number" && Number.isFinite(value) && value > 0) return Math.floor(value);
+	}
+}
+function resolveResponsesServerCompactionThreshold(params) {
+	const provider = params.provider?.trim();
+	const modelId = params.modelId?.trim();
+	if (!provider || !modelId) return;
+	const legacyKey = legacyModelKey(provider, modelId);
+	const providerConfig = params.cfg?.models?.providers?.[provider];
+	const modelConfig = params.cfg?.agents?.defaults?.models?.[modelKey(provider, modelId)] ?? (legacyKey ? params.cfg?.agents?.defaults?.models?.[legacyKey] : void 0);
+	const providerModelConfig = providerConfig?.models?.find((entry) => entry.id === modelId);
+	const sources = [
+		asRecord(providerConfig?.params),
+		asRecord(providerModelConfig?.params),
+		asRecord(params.cfg?.agents?.defaults?.params),
+		asRecord(modelConfig?.params)
+	];
+	const serverCompaction = resolveBooleanParam(sources, "responsesServerCompaction");
+	if (!(provider === "openai" ? serverCompaction !== false : serverCompaction === true)) return;
+	return resolvePositiveIntegerParam(sources, "responsesCompactThreshold");
+}
+function resolveMemoryFlushGateState(params) {
+	if (!params.entry) return null;
+	const totalTokens = resolvePositiveTokenCount(params.tokenCount) ?? resolveFreshSessionTotalTokens(params.entry);
+	if (!totalTokens || totalTokens <= 0) return null;
+	const contextWindow = Math.max(1, Math.floor(params.contextWindowTokens));
+	const reserveTokens = Math.max(0, Math.floor(params.reserveTokensFloor));
+	const softThreshold = Math.max(0, Math.floor(params.softThresholdTokens));
+	const threshold = Math.max(0, contextWindow - reserveTokens - softThreshold, Math.floor(params.minimumThresholdTokens ?? 0));
+	if (threshold <= 0) return null;
+	return {
+		entry: params.entry,
+		totalTokens,
+		threshold
+	};
+}
+function shouldRunMemoryFlush(params) {
+	const state = resolveMemoryFlushGateState(params);
+	if (!state || state.totalTokens < state.threshold) return false;
+	if (hasAlreadyFlushedForCurrentCompaction(state.entry)) return false;
+	return true;
+}
+function shouldRunPreflightCompaction(params) {
+	const state = resolveMemoryFlushGateState(params);
+	return Boolean(state && state.totalTokens >= state.threshold);
+}
+/**
+* Returns true when a memory flush has already been performed for the current
+* compaction cycle. This prevents repeated flush runs within the same cycle —
+* important for both the token-based and transcript-size–based trigger paths.
+*/
+function hasAlreadyFlushedForCurrentCompaction(entry) {
+	const compactionCount = entry.compactionCount ?? 0;
+	const lastFlushAt = entry.memoryFlushCompactionCount;
+}
+/** Runs preflight compaction when session state exceeds configured thresholds. */
+async function runPreflightCompactionIfNeeded(params) {
+	const deps = {
+		compactEmbeddedAgentSession: memoryDeps.compactEmbeddedAgentSession,
+		incrementCompactionCount: memoryDeps.incrementCompactionCount,
+		refreshQueuedFollowupSession: memoryDeps.refreshQueuedFollowupSession
+	};
+	if (!params.sessionKey) return params.sessionEntry;
+	let entry = params.sessionEntry ?? (params.sessionKey ? params.sessionStore?.[params.sessionKey] : void 0);
+	if (!entry?.sessionId) return entry ?? params.sessionEntry;
+	const isCli = followupUsesCliRuntime({
+		cfg: params.cfg,
+		followupRun: params.followupRun,
+		sessionEntry: entry
+	});
+	if (params.isHeartbeat || isCli) return entry ?? params.sessionEntry;
+	if (followupUsesCodexRuntime({
+		cfg: params.cfg,
+		followupRun: params.followupRun,
+		sessionEntry: entry,
+		sessionKey: params.sessionKey,
+		runtimePolicySessionKey: params.runtimePolicySessionKey
+	})) {
+		logVerbose(`preflightCompaction skipped: sessionKey=${params.sessionKey} runtime=codex reason=codex_native_auto_compaction`);
+		return entry ?? params.sessionEntry;
+	}
+	const contextWindowTokens = resolveMemoryFlushContextWindowTokens({
+		cfg: params.cfg,
+		provider: resolveFollowupContextConfigProvider({
+			cfg: params.cfg,
+			followupRun: params.followupRun,
+			sessionEntry: entry,
+			sessionKey: params.sessionKey,
+			runtimePolicySessionKey: params.runtimePolicySessionKey
+		}),
+		modelId: params.followupRun.run.model ?? params.defaultModel,
+		agentCfgContextTokens: params.agentCfgContextTokens
+	});
+	const memoryFlushPlan = resolveMemoryFlushPlan({ cfg: params.cfg });
+	const reserveTokensFloor = memoryFlushPlan?.reserveTokensFloor ?? params.cfg.agents?.defaults?.compaction?.reserveTokensFloor ?? 2e4;
+	const softThresholdTokens = memoryFlushPlan?.softThresholdTokens ?? 4e3;
+	const freshPersistedTokens = resolveFreshSessionTotalTokens(entry);
+	const persistedTotalTokens = entry.totalTokens;
+	const hasPersistedTotalTokens = typeof persistedTotalTokens === "number" && Number.isFinite(persistedTotalTokens) && persistedTotalTokens > 0;
+	const promptTokenEstimate = estimatePromptTokensForMemoryFlush(params.promptForEstimate ?? params.followupRun.prompt);
+	const serverCompactionThreshold = resolveResponsesServerCompactionThreshold({
+		cfg: params.cfg,
+		provider: params.followupRun.run.provider,
+		modelId: params.followupRun.run.model ?? params.defaultModel
+	});
+	const threshold = Math.max(contextWindowTokens - reserveTokensFloor - softThresholdTokens, serverCompactionThreshold ?? 0);
+	const freshNeedsOutputRead = typeof freshPersistedTokens === "number" && typeof promptTokenEstimate === "number" && threshold > 0 && freshPersistedTokens + promptTokenEstimate >= threshold - TRANSCRIPT_OUTPUT_READ_BUFFER_TOKENS;
+	const maxActiveTranscriptBytes = resolveMaxActiveTranscriptBytes(params.cfg);
+	const shouldCheckActiveTranscriptBytes = typeof maxActiveTranscriptBytes === "number";
+	const transcriptUsageTokens = typeof freshPersistedTokens === "number" && !freshNeedsOutputRead ? void 0 : await estimatePromptTokensFromSessionTranscript({
+		sessionId: entry.sessionId,
+		sessionEntry: entry,
+		sessionKey: params.sessionKey ?? params.followupRun.run.sessionKey,
+		sessionFile: entry.sessionFile ?? params.followupRun.run.sessionFile,
+		storePath: params.storePath
+	});
+	const transcriptSizeSnapshot = shouldCheckActiveTranscriptBytes && transcriptUsageTokens?.transcriptByteSize === void 0 ? await readSessionLogSnapshot({
+		sessionId: entry.sessionId,
+		sessionEntry: entry.sessionFile || !params.followupRun.run.sessionFile ? entry : {
+			...entry,
+			sessionFile: params.followupRun.run.sessionFile
+		},
+		sessionKey: params.sessionKey ?? params.followupRun.run.sessionKey,
+		opts: { storePath: params.storePath },
+		includeByteSize: true,
+
+=== V4 PREFLIGHT LOGS ===
+{"0":"{\"subsystem\":\"agent/embedded\"}","1":{"event":"embedded_run_compaction_start","runId":"aecfcd67-3109-4209-8c44-98dd50d88627","reason":"threshold"},"2":"embedded run auto-compaction start","_meta":{"runtime":"node","runtimeVersion":"24.15.0","hostname":"The-Forge","name":"{\"subsystem\":\"agent/embedded\"}","parentNames":["openclaw"],"date":"2026-08-13T16:23:26.357Z","logLevelId":3,"logLevelName":"INFO","path":{"fullFilePath":"file:///home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js:179:51","fileName":"subsystem-C3fiUGN1.js","fileNameWithLine":"subsystem-C3fiUGN1.js:179","fileColumn":"51","fileLine":"179","filePath":".openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js","filePathWithLine":".openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js:179","method":"logToFile"}},"time":"2026-08-13T11:23:26.357-05:00","hostname":"The-Forge","message":"embedded run auto-compaction start","traceId":"3fb69e74e14d1a06cf2d7d4af0921aa3","spanId":"5217a9df4079c299","parentSpanId":"1ef828f13d4a6063","traceFlags":"01"}
+{"0":"{\"subsystem\":\"agent/embedded\"}","1":{"event":"embedded_run_compaction_end","runId":"aecfcd67-3109-4209-8c44-98dd50d88627","reason":"threshold","completed":false,"willRetry":false,"aborted":false},"2":"embedded run auto-compaction incomplete","_meta":{"runtime":"node","runtimeVersion":"24.15.0","hostname":"The-Forge","name":"{\"subsystem\":\"agent/embedded\"}","parentNames":["openclaw"],"date":"2026-08-13T16:24:56.286Z","logLevelId":3,"logLevelName":"INFO","path":{"fullFilePath":"file:///home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js:179:51","fileName":"subsystem-C3fiUGN1.js","fileNameWithLine":"subsystem-C3fiUGN1.js:179","fileColumn":"51","fileLine":"179","filePath":".openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js","filePathWithLine":".openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js:179","method":"logToFile"}},"time":"2026-08-13T11:24:56.287-05:00","hostname":"The-Forge","message":"embedded run auto-compaction incomplete","traceId":"3fb69e74e14d1a06cf2d7d4af0921aa3","spanId":"5217a9df4079c299","parentSpanId":"1ef828f13d4a6063","traceFlags":"01"}

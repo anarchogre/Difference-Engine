@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/plain",
+  "observed_at": "2026-08-04T18:01:38.626560-05:00",
+  "observed_path": "/storage/emulated/0/Download/Migration_Map_Creation.md.txt",
+  "original_name": "Migration_Map_Creation.md.txt",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260804-0087",
+  "schema_version": "0.1.0",
+  "sha256": "e54a100d601a877e0f96cd1ba14677bc123f8a6bd4b1b30ccc6f9810ca0f68ac",
+  "size_bytes": 85282,
+  "source_class": "conversation"
+}

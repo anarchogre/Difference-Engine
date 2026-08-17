@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:59.565019-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Repository_Relationship_Schema_v0.1.md",
+  "original_name": "Repository_Relationship_Schema_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0039",
+  "schema_version": "0.1.0",
+  "sha256": "de7ee654d04a27abc6506ddbd0c13998159fe10dba76119fd6b3813f4ba6f3b4",
+  "size_bytes": 2355,
+  "source_class": "manual_batch"
+}

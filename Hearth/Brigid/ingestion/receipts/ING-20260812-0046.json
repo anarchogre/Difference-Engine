@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:05.819506-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-INDEX-0001_Draft_0.1_Canonical.json",
+  "original_name": "AKS-INDEX-0001_Draft_0.1_Canonical.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0046",
+  "schema_version": "0.1.0",
+  "sha256": "58fa506cf3ef9e5b8c4d0a6e392dd4b33f2358b21594f58d14926fe05560a0cc",
+  "size_bytes": 2259,
+  "source_class": "manual_batch"
+}

@@ -1,0 +1,16 @@
+CONVERSATION INGESTION QUALIFICATION
+
+Package: workspace/operational/ingestion/output/DE-CONV-20260804-0003
+Source: Kernel_and_Bootstrap_Load.md(1).txt
+Recovered turns: 138
+Recovered commands: 1111
+Receipt parser status: complete
+Validation errors: []
+
+hash_match: PASS
+conversation_kind: PASS
+turns_recovered: PASS
+validation_passed: PASS
+parser_complete: PASS
+
+QUALIFIED: YES

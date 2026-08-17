@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260811-0045",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-11T22:18:50.192254-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Research_Branch_Workflow.json",
+    "original_name": "Research_Branch_Workflow.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260811-0045",
+    "schema_version": "0.1.0",
+    "sha256": "8526f7a2573eccb394e70111edc6381366c1cf513ee41da64b786b50c815ec62",
+    "size_bytes": 25376,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

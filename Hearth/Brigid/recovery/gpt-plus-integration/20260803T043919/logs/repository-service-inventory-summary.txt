@@ -1,0 +1,27 @@
+RUN=workspace/operational/recovery/gpt-plus-integration/20260803T043919
+SOURCE_FILES=110
+REFERENCE_HITS=4296
+SHELL_FILES=1
+
+PYTHON SERVICE SYMBOLS
+FILE=ade/kernel/bootstrap_loader/artifacts.py
+  ClassDef:BootstrapArtifacts
+FILE=ade/kernel/bootstrap_loader/bootstrap.py
+  FunctionDef:load_bootstrap
+FILE=ade/kernel/bootstrap_loader/context.py
+  ClassDef:BootstrapContext
+FILE=ade/kernel/bootstrap_loader/drift.py
+  FunctionDef:_check_queue
+FILE=ade/kernel/bootstrap_loader/errors.py
+  ClassDef:BootstrapError
+FILE=ade/kernel/bootstrap_loader/queue.py
+  ClassDef:QueueEntry
+  ClassDef:QueueState
+  FunctionDef:recover_queues
+FILE=ade/kernel/bootstrap_loader/result.py
+  ClassDef:BootstrapResult
+FILE=ade/kernel/bootstrap_loader/validators.py
+  FunctionDef:validate
+
+SHELL SERVICE FILES
+scripts/reconciliation/reconcile.sh

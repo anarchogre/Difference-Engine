@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:57.501519-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Quality_Assurance_Specification_v0.1.md",
+  "original_name": "Quality_Assurance_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0031",
+  "schema_version": "0.1.0",
+  "sha256": "7294359a6f15a5d7470601abb9c66731ea65d778ed90b8e1a122154b59356741",
+  "size_bytes": 4078,
+  "source_class": "manual_batch"
+}

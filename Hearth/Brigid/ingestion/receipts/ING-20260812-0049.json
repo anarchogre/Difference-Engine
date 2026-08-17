@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:05.940217-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-INVARIANTS-0001_Draft_0.1.json",
+  "original_name": "AKS-INVARIANTS-0001_Draft_0.1.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0049",
+  "schema_version": "0.1.0",
+  "sha256": "12c3b916978f7700a6fc5a28a66bde8e2f77cf460e3948608d03cf43a3cf0cf4",
+  "size_bytes": 978,
+  "source_class": "manual_batch"
+}

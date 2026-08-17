@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:11.683564-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_Human_Centered_Repository_Philosophy_v1.0.json",
+  "original_name": "AKS_Human_Centered_Repository_Philosophy_v1.0.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0158",
+  "schema_version": "0.1.0",
+  "sha256": "177fc8d9a3a48bb022f49181404b994484a8a6f05c03a6f4ad7ac574a4460df2",
+  "size_bytes": 110,
+  "source_class": "manual_batch"
+}

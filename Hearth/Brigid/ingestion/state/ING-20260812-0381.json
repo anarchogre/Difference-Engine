@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0381",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:33.143514-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Provenance_Specification_v0.1.md",
+    "original_name": "Provenance_Specification_v0.1.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0381",
+    "schema_version": "0.1.0",
+    "sha256": "8268bdc1d2af37eb271ffe9afcbcb4d865e02b8880d323bf7ddf77ff342b332a",
+    "size_bytes": 2222,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

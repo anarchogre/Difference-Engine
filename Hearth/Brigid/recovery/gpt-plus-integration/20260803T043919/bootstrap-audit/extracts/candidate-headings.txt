@@ -1,0 +1,160 @@
+
+===== ./.gitinfo/branches.txt =====
+
+===== ./.gitinfo/history/branches.txt =====
+
+===== ./Repository/Governance/bootstrap.md =====
+1:# Bootstrap Loader Specification
+3:Status: Draft
+5:Purpose
+
+===== ./Repository/Governance/constitution.md =====
+1:# Constitution
+3:Status: Placeholder
+
+===== ./ade/kernel/bootstrap_loader/__pycache__/bootstrap.cpython-313.pyc =====
+
+===== ./ade/kernel/bootstrap_loader/__pycache__/queue.cpython-313.pyc =====
+
+===== ./ade/kernel/bootstrap_loader/bootstrap.py =====
+2:Bootstrap loading.
+
+===== ./ade/kernel/bootstrap_loader/queue.py =====
+2:Queue recovery.
+
+===== ./ade/kernel/tests/__pycache__/test_bootstrap_loader.cpython-313.pyc =====
+
+===== ./ade/kernel/tests/test_bootstrap_loader.py =====
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_API_v1.md =====
+1:# Bootstrap Loader API
+3:Status: Draft
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONFIGURATION_v1.md =====
+1:# Bootstrap Loader Configuration
+3:Status: Draft
+5:RepositoryRoot
+9:BootstrapLocation
+13:QueueRoot
+15:RepositoryRootIndex
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_CONTRACT_v1.md =====
+1:# Bootstrap Loader Contract
+3:Status: Draft
+7:Repository exists.
+19:Repository context established.
+21:Mission recovered.
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_DEPENDENCIES_v1.md =====
+1:# Bootstrap Loader Dependencies
+3:Status: Draft
+9:Bootstrap
+17:Repository Index
+19:Queue System
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_DISCOVERY_v1.md =====
+1:# Bootstrap Loader Discovery
+3:Status: Draft
+7:Repository Root
+13:Bootstrap
+17:Repository Index
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_ERRORS_v1.md =====
+1:# Bootstrap Loader Errors
+3:Status: Draft
+5:REPOSITORY_NOT_FOUND
+9:BOOTSTRAP_NOT_FOUND
+15:MISSION_NOT_FOUND
+17:QUEUE_NOT_FOUND
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_FILE_LAYOUT_v1.md =====
+1:# Bootstrap Loader File Layout
+3:Status: Draft
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_GLOSSARY_v1.md =====
+1:# Bootstrap Loader Glossary
+3:Bootstrap
+7:Repository
+17:Mission
+21:Queue
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_IMPLEMENTATION_PLAN_v1.md =====
+1:# Bootstrap Loader Implementation Plan
+3:Status: Draft
+7:Repository Discovery
+27:Bootstrap Loader ready for implementation.
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_INTERFACE_v1.md =====
+1:# Bootstrap Loader Interface
+3:Status: Draft
+7:Repository
+11:Bootstrap
+23:Mission
+27:Queues
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_LIFECYCLE_v1.md =====
+1:# Bootstrap Loader Lifecycle
+3:Status: Draft
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_MODULES_v1.md =====
+1:# Bootstrap Loader Modules
+3:Status: Draft
+9:bootstrap.py
+19:mission.py
+23:queue.py
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_OUTPUT_v1.md =====
+1:# Bootstrap Loader Output
+3:Status: Draft
+21:Repository Context
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_PSEUDOCODE_v1.md =====
+1:# Bootstrap Loader Pseudocode
+3:Status: Draft
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_PYTHON_MAPPING_v1.md =====
+1:# Bootstrap Loader Python Mapping
+3:Status: Draft
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_SEQUENCE_v1.md =====
+1:# Bootstrap Loader Sequence
+3:Status: Draft
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_SPECIFICATION_v1.md =====
+1:# Bootstrap Loader Specification
+3:Status: Draft
+5:Purpose
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_STATE_MACHINE_v1.md =====
+1:# Bootstrap Loader State Machine
+3:Status: Draft
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_TEST_PLAN_v1.md =====
+1:# Bootstrap Loader Test Plan
+3:Status: Draft
+7:Repository discovery
+15:Mission recovery
+19:Queue recovery
+
+===== ./architecture/bootstrap_loader/BOOTSTRAP_LOADER_WORKFLOW_v1.md =====
+1:# Bootstrap Loader Workflow
+3:Status: Draft
+27:Repository operational.
+
+===== ./standards/v1/QUEUE_STANDARD_v1.0.md =====
+
+===== ./workspace/operational/bootstrap/BOOTSTRAP.md =====
+1:Bootstrap v1.0
+7:Purpose
+13:Bootstrap Loader
+15:Initialization Contract
+
+===== ./workspace/operational/current/QUEUE.md =====
+1:# Queue
+3:## Immediate
+15:## High
+24:## Deferred
+31:Repository Reconciliation
+42:Constraints
+
+===== ./workspace/operational/recovery/gpt-plus-integration/20260803T043919/reports/git-branches.txt =====

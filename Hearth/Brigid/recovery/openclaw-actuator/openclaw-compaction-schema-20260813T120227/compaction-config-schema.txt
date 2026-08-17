@@ -1,0 +1,1337 @@
+=== CURRENT CONFIG VALUE ===
+Config path not found: agents.defaults.compaction. Run openclaw config validate to inspect config shape.
+
+=== INSTALLED SCHEMA HITS ===
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/proxy-BzhBz8iM.js
+2109: /** Default compaction settings used by the harness. */
+2110: const DEFAULT_COMPACTION_SETTINGS = {
+2111: 	enabled: true,
+2112: 	reserveTokens: 16384,
+2113: 	keepRecentTokens: 2e4
+2114: };
+2115: /** Calculate total context tokens from provider usage. */
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/proxy-BzhBz8iM.js
+2110: const DEFAULT_COMPACTION_SETTINGS = {
+2111: 	enabled: true,
+2112: 	reserveTokens: 16384,
+2113: 	keepRecentTokens: 2e4
+2114: };
+2115: /** Calculate total context tokens from provider usage. */
+2116: function calculateContextTokens(usage) {
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/proxy-BzhBz8iM.js
+2254: 	}
+2255: 	return -1;
+2256: }
+2257: /** Find the compaction cut point that keeps approximately the requested recent-token budget. */
+2258: function findCutPoint(entries, startIndex, endIndex, keepRecentTokens) {
+2259: 	const cutPoints = findValidCutPoints(entries, startIndex, endIndex);
+2260: 	if (cutPoints.length === 0) return {
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/proxy-BzhBz8iM.js
+2255: 	return -1;
+2256: }
+2257: /** Find the compaction cut point that keeps approximately the requested recent-token budget. */
+2258: function findCutPoint(entries, startIndex, endIndex, keepRecentTokens) {
+2259: 	const cutPoints = findValidCutPoints(entries, startIndex, endIndex);
+2260: 	if (cutPoints.length === 0) return {
+2261: 		firstKeptEntryIndex: startIndex,
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/proxy-BzhBz8iM.js
+2269: 		if (entry.type !== "message") continue;
+2270: 		const messageTokens = estimateTokens(entry.message);
+2271: 		accumulatedTokens += messageTokens;
+2272: 		if (accumulatedTokens >= keepRecentTokens) {
+2273: 			cutIndex = cutPoints[cutPoints.length - 1];
+2274: 			for (const cutPoint of cutPoints) if (cutPoint >= i) {
+2275: 				cutIndex = cutPoint;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/proxy-BzhBz8iM.js
+2438: 	}
+2439: 	const boundaryEnd = pathEntries.length;
+2440: 	const tokensBefore = estimateContextTokens(buildSessionContext(pathEntries).messages).tokens;
+2441: 	const cutPoint = findCutPoint(pathEntries, boundaryStart, boundaryEnd, settings.keepRecentTokens);
+2442: 	const firstKeptEntry = pathEntries[cutPoint.firstKeptEntryIndex];
+2443: 	if (!firstKeptEntry?.id) return err(new CompactionError("invalid_session", "First kept entry has no UUID - session may need migration"));
+2444: 	const firstKeptEntryId = firstKeptEntry.id;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js
+3482: 		this.save();
+3483: 	}
+3484: 	getCompactionReserveTokens() {
+3485: 		return this.settings.compaction?.reserveTokens ?? 16384;
+3486: 	}
+3487: 	getCompactionKeepRecentTokens() {
+3488: 		return this.settings.compaction?.keepRecentTokens ?? 2e4;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js
+3485: 		return this.settings.compaction?.reserveTokens ?? 16384;
+3486: 	}
+3487: 	getCompactionKeepRecentTokens() {
+3488: 		return this.settings.compaction?.keepRecentTokens ?? 2e4;
+3489: 	}
+3490: 	getCompactionSettings() {
+3491: 		return {
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js
+3490: 	getCompactionSettings() {
+3491: 		return {
+3492: 			enabled: this.getCompactionEnabled(),
+3493: 			reserveTokens: this.getCompactionReserveTokens(),
+3494: 			keepRecentTokens: this.getCompactionKeepRecentTokens()
+3495: 		};
+3496: 	}
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sessions-D8qGY7uC.js
+3491: 		return {
+3492: 			enabled: this.getCompactionEnabled(),
+3493: 			reserveTokens: this.getCompactionReserveTokens(),
+3494: 			keepRecentTokens: this.getCompactionKeepRecentTokens()
+3495: 		};
+3496: 	}
+3497: 	getBranchSummarySettings() {
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+234: 	"agents.defaults.contextLimits.memoryGetMaxChars": "Default max characters returned by memory_get before truncation metadata and continuation notice are added. Increase to approximate older larger excerpts, but keep it bounded.",
+235: 	"agents.defaults.contextLimits.memoryGetDefaultLines": "Default memory_get line window used when requests omit lines. This controls how many source lines are selected before the max-char cap is applied.",
+236: 	"agents.defaults.contextLimits.toolResultMaxChars": "Advanced ceiling for a single live tool result before truncation. Leave unset to use the model-context auto cap; explicit values affect both persisted live tool-result writes and overflow-recovery truncation heuristics.",
+237: 	"agents.defaults.contextLimits.postCompactionMaxChars": "Default max characters retained from AGENTS.md during post-compaction context refresh injection. Lower this to make compaction recovery cheaper, or raise it for agents that depend on longer startup guidance.",
+238: 	"agents.list": "Explicit list of configured agents with IDs and optional overrides for model, tools, identity, and workspace. Keep IDs stable over time so bindings, approvals, and session routing remain deterministic.",
+239: 	"agents.list[].skillsLimits": "Optional per-agent overrides for skills subsystem budgets. Use this when an agent needs a different skills prompt budget without introducing a second generic context-limits path.",
+240: 	"agents.list[].skillsLimits.maxSkillsPromptChars": "Per-agent override for the skills prompt character budget. This extends the existing skills.limits.maxSkillsPromptChars path instead of routing the same budget through contextLimits.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+242: 	"agents.list[].contextLimits.memoryGetMaxChars": "Per-agent override for the default memory_get max character budget.",
+243: 	"agents.list[].contextLimits.memoryGetDefaultLines": "Per-agent override for the default memory_get line window when lines is omitted.",
+244: 	"agents.list[].contextLimits.toolResultMaxChars": "Per-agent advanced ceiling for the live tool-result max character budget. Omit to inherit defaults or the model-context auto cap.",
+245: 	"agents.list[].contextLimits.postCompactionMaxChars": "Per-agent override for the post-compaction AGENTS.md excerpt budget.",
+246: 	"agents.list[].thinkingDefault": "Optional per-agent default thinking level. Overrides agents.defaults.thinkingDefault for this agent when no per-message or session override is set.",
+247: 	"agents.list[].reasoningDefault": "Optional per-agent default reasoning visibility (on|off|stream). Applies when no per-message or session reasoning override is set.",
+248: 	"agents.list[].fastModeDefault": "Optional per-agent default for fast mode (\"auto\", true, or false). Applies when no per-message or session fast-mode override is set.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+794: 	"agents.defaults.memorySearch.sync.embeddingBatchTimeoutSeconds": "Overrides the timeout for inline embedding batches during memory indexing. Leave unset to use provider defaults: 600 seconds for local/self-hosted providers such as local, Ollama, and LM Studio, and 120 seconds for hosted providers.",
+795: 	"agents.defaults.memorySearch.sync.sessions.deltaBytes": "Requires at least this many newly appended bytes before session transcript changes trigger reindex (default: 100000). Increase to reduce frequent small reindexes, or lower for faster transcript freshness.",
+796: 	"agents.defaults.memorySearch.sync.sessions.deltaMessages": "Requires at least this many appended transcript messages before reindex is triggered (default: 50). Lower this for near-real-time transcript recall, or raise it to reduce indexing churn.",
+797: 	"agents.defaults.memorySearch.sync.sessions.postCompactionForce": "Forces a session memory-search reindex after compaction-triggered transcript updates (default: true). Keep enabled when compacted summaries must be immediately searchable, or disable to reduce write-time indexing pressure.",
+798: 	ui: "UI presentation settings for accenting and assistant identity shown in control surfaces. Use this for branding and readability customization without changing runtime behavior.",
+799: 	"ui.seamColor": "Primary accent color used by UI surfaces for emphasis, badges, and visual identity cues. Use high-contrast values that remain readable across light/dark themes.",
+800: 	"ui.assistant": "Assistant display identity settings for name and avatar shown in UI surfaces. Keep these values aligned with your operator-facing persona and support expectations.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+858: 	"agents.defaults.imageMaxDimensionPx": "Max image side length in pixels when sanitizing transcript/tool-result image payloads (default: 1200).",
+859: 	"agents.defaults.imageQuality": "Image-tool media compression preference: \"auto\" adapts to provider/model limits and image count, \"efficient\" saves tokens and bytes, \"balanced\" keeps the current middle ground, and \"high\" preserves more detail for screenshots and document images.",
+860: 	"agents.defaults.cliBackends": "Optional CLI backends for text-only fallback (claude-cli, etc.).",
+861: 	"agents.defaults.compaction": "Compaction tuning for when context nears token limits, including history share, reserve headroom, and pre-compaction memory flush behavior. Use this when long-running sessions need stable continuity under tight context windows.",
+862: 	"agents.defaults.compaction.mode": "Compaction strategy mode: \"default\" uses baseline behavior, while \"safeguard\" applies stricter guardrails to preserve recent context. Keep \"default\" unless you observe aggressive history loss near limit boundaries.",
+863: 	"agents.defaults.compaction.provider": "Id of a registered compaction provider plugin used for summarization. When set and the provider is registered, its summarize() method is called instead of the built-in summarizeInStages pipeline. Falls back to built-in on provider failure. Leave unset to use the default built-in summarization.",
+864: 	"agents.defaults.compaction.reserveTokens": "Token headroom reserved for reply generation and tool output after compaction runs. Use higher reserves for verbose/tool-heavy sessions, and lower reserves when maximizing retained history matters more. When the active model context window is known, the effective reserve is capped to preserve usable prompt space.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+859: 	"agents.defaults.imageQuality": "Image-tool media compression preference: \"auto\" adapts to provider/model limits and image count, \"efficient\" saves tokens and bytes, \"balanced\" keeps the current middle ground, and \"high\" preserves more detail for screenshots and document images.",
+860: 	"agents.defaults.cliBackends": "Optional CLI backends for text-only fallback (claude-cli, etc.).",
+861: 	"agents.defaults.compaction": "Compaction tuning for when context nears token limits, including history share, reserve headroom, and pre-compaction memory flush behavior. Use this when long-running sessions need stable continuity under tight context windows.",
+862: 	"agents.defaults.compaction.mode": "Compaction strategy mode: \"default\" uses baseline behavior, while \"safeguard\" applies stricter guardrails to preserve recent context. Keep \"default\" unless you observe aggressive history loss near limit boundaries.",
+863: 	"agents.defaults.compaction.provider": "Id of a registered compaction provider plugin used for summarization. When set and the provider is registered, its summarize() method is called instead of the built-in summarizeInStages pipeline. Falls back to built-in on provider failure. Leave unset to use the default built-in summarization.",
+864: 	"agents.defaults.compaction.reserveTokens": "Token headroom reserved for reply generation and tool output after compaction runs. Use higher reserves for verbose/tool-heavy sessions, and lower reserves when maximizing retained history matters more. When the active model context window is known, the effective reserve is capped to preserve usable prompt space.",
+865: 	"agents.defaults.compaction.keepRecentTokens": "Minimum token budget preserved from the most recent conversation window during compaction. Use higher values to protect immediate context continuity and lower values to keep more long-tail history.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+860: 	"agents.defaults.cliBackends": "Optional CLI backends for text-only fallback (claude-cli, etc.).",
+861: 	"agents.defaults.compaction": "Compaction tuning for when context nears token limits, including history share, reserve headroom, and pre-compaction memory flush behavior. Use this when long-running sessions need stable continuity under tight context windows.",
+862: 	"agents.defaults.compaction.mode": "Compaction strategy mode: \"default\" uses baseline behavior, while \"safeguard\" applies stricter guardrails to preserve recent context. Keep \"default\" unless you observe aggressive history loss near limit boundaries.",
+863: 	"agents.defaults.compaction.provider": "Id of a registered compaction provider plugin used for summarization. When set and the provider is registered, its summarize() method is called instead of the built-in summarizeInStages pipeline. Falls back to built-in on provider failure. Leave unset to use the default built-in summarization.",
+864: 	"agents.defaults.compaction.reserveTokens": "Token headroom reserved for reply generation and tool output after compaction runs. Use higher reserves for verbose/tool-heavy sessions, and lower reserves when maximizing retained history matters more. When the active model context window is known, the effective reserve is capped to preserve usable prompt space.",
+865: 	"agents.defaults.compaction.keepRecentTokens": "Minimum token budget preserved from the most recent conversation window during compaction. Use higher values to protect immediate context continuity and lower values to keep more long-tail history.",
+866: 	"agents.defaults.compaction.reserveTokensFloor": "Minimum floor enforced for reserveTokens in embedded OpenClaw compaction paths (0 disables the floor guard). Use a non-zero floor to avoid over-aggressive compression under fluctuating token estimates.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+861: 	"agents.defaults.compaction": "Compaction tuning for when context nears token limits, including history share, reserve headroom, and pre-compaction memory flush behavior. Use this when long-running sessions need stable continuity under tight context windows.",
+862: 	"agents.defaults.compaction.mode": "Compaction strategy mode: \"default\" uses baseline behavior, while \"safeguard\" applies stricter guardrails to preserve recent context. Keep \"default\" unless you observe aggressive history loss near limit boundaries.",
+863: 	"agents.defaults.compaction.provider": "Id of a registered compaction provider plugin used for summarization. When set and the provider is registered, its summarize() method is called instead of the built-in summarizeInStages pipeline. Falls back to built-in on provider failure. Leave unset to use the default built-in summarization.",
+864: 	"agents.defaults.compaction.reserveTokens": "Token headroom reserved for reply generation and tool output after compaction runs. Use higher reserves for verbose/tool-heavy sessions, and lower reserves when maximizing retained history matters more. When the active model context window is known, the effective reserve is capped to preserve usable prompt space.",
+865: 	"agents.defaults.compaction.keepRecentTokens": "Minimum token budget preserved from the most recent conversation window during compaction. Use higher values to protect immediate context continuity and lower values to keep more long-tail history.",
+866: 	"agents.defaults.compaction.reserveTokensFloor": "Minimum floor enforced for reserveTokens in embedded OpenClaw compaction paths (0 disables the floor guard). Use a non-zero floor to avoid over-aggressive compression under fluctuating token estimates.",
+867: 	"agents.defaults.compaction.maxHistoryShare": "Maximum fraction of total context budget allowed for retained history after compaction (range 0.1-0.9). Use lower shares for more generation headroom or higher shares for deeper historical continuity.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+862: 	"agents.defaults.compaction.mode": "Compaction strategy mode: \"default\" uses baseline behavior, while \"safeguard\" applies stricter guardrails to preserve recent context. Keep \"default\" unless you observe aggressive history loss near limit boundaries.",
+863: 	"agents.defaults.compaction.provider": "Id of a registered compaction provider plugin used for summarization. When set and the provider is registered, its summarize() method is called instead of the built-in summarizeInStages pipeline. Falls back to built-in on provider failure. Leave unset to use the default built-in summarization.",
+864: 	"agents.defaults.compaction.reserveTokens": "Token headroom reserved for reply generation and tool output after compaction runs. Use higher reserves for verbose/tool-heavy sessions, and lower reserves when maximizing retained history matters more. When the active model context window is known, the effective reserve is capped to preserve usable prompt space.",
+865: 	"agents.defaults.compaction.keepRecentTokens": "Minimum token budget preserved from the most recent conversation window during compaction. Use higher values to protect immediate context continuity and lower values to keep more long-tail history.",
+866: 	"agents.defaults.compaction.reserveTokensFloor": "Minimum floor enforced for reserveTokens in embedded OpenClaw compaction paths (0 disables the floor guard). Use a non-zero floor to avoid over-aggressive compression under fluctuating token estimates.",
+867: 	"agents.defaults.compaction.maxHistoryShare": "Maximum fraction of total context budget allowed for retained history after compaction (range 0.1-0.9). Use lower shares for more generation headroom or higher shares for deeper historical continuity.",
+868: 	"agents.defaults.compaction.identifierPolicy": "Identifier-preservation policy for compaction summaries: \"strict\" prepends built-in opaque-identifier retention guidance (default), \"off\" disables this prefix, and \"custom\" uses identifierInstructions. Keep \"strict\" unless you have a specific compatibility need.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+863: 	"agents.defaults.compaction.provider": "Id of a registered compaction provider plugin used for summarization. When set and the provider is registered, its summarize() method is called instead of the built-in summarizeInStages pipeline. Falls back to built-in on provider failure. Leave unset to use the default built-in summarization.",
+864: 	"agents.defaults.compaction.reserveTokens": "Token headroom reserved for reply generation and tool output after compaction runs. Use higher reserves for verbose/tool-heavy sessions, and lower reserves when maximizing retained history matters more. When the active model context window is known, the effective reserve is capped to preserve usable prompt space.",
+865: 	"agents.defaults.compaction.keepRecentTokens": "Minimum token budget preserved from the most recent conversation window during compaction. Use higher values to protect immediate context continuity and lower values to keep more long-tail history.",
+866: 	"agents.defaults.compaction.reserveTokensFloor": "Minimum floor enforced for reserveTokens in embedded OpenClaw compaction paths (0 disables the floor guard). Use a non-zero floor to avoid over-aggressive compression under fluctuating token estimates.",
+867: 	"agents.defaults.compaction.maxHistoryShare": "Maximum fraction of total context budget allowed for retained history after compaction (range 0.1-0.9). Use lower shares for more generation headroom or higher shares for deeper historical continuity.",
+868: 	"agents.defaults.compaction.identifierPolicy": "Identifier-preservation policy for compaction summaries: \"strict\" prepends built-in opaque-identifier retention guidance (default), \"off\" disables this prefix, and \"custom\" uses identifierInstructions. Keep \"strict\" unless you have a specific compatibility need.",
+869: 	"agents.defaults.compaction.identifierInstructions": "Custom identifier-preservation instruction text used when identifierPolicy=\"custom\". Keep this explicit and safety-focused so compaction summaries do not rewrite opaque IDs, URLs, hosts, or ports.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+864: 	"agents.defaults.compaction.reserveTokens": "Token headroom reserved for reply generation and tool output after compaction runs. Use higher reserves for verbose/tool-heavy sessions, and lower reserves when maximizing retained history matters more. When the active model context window is known, the effective reserve is capped to preserve usable prompt space.",
+865: 	"agents.defaults.compaction.keepRecentTokens": "Minimum token budget preserved from the most recent conversation window during compaction. Use higher values to protect immediate context continuity and lower values to keep more long-tail history.",
+866: 	"agents.defaults.compaction.reserveTokensFloor": "Minimum floor enforced for reserveTokens in embedded OpenClaw compaction paths (0 disables the floor guard). Use a non-zero floor to avoid over-aggressive compression under fluctuating token estimates.",
+867: 	"agents.defaults.compaction.maxHistoryShare": "Maximum fraction of total context budget allowed for retained history after compaction (range 0.1-0.9). Use lower shares for more generation headroom or higher shares for deeper historical continuity.",
+868: 	"agents.defaults.compaction.identifierPolicy": "Identifier-preservation policy for compaction summaries: \"strict\" prepends built-in opaque-identifier retention guidance (default), \"off\" disables this prefix, and \"custom\" uses identifierInstructions. Keep \"strict\" unless you have a specific compatibility need.",
+869: 	"agents.defaults.compaction.identifierInstructions": "Custom identifier-preservation instruction text used when identifierPolicy=\"custom\". Keep this explicit and safety-focused so compaction summaries do not rewrite opaque IDs, URLs, hosts, or ports.",
+870: 	"agents.defaults.compaction.recentTurnsPreserve": "Number of most recent user/assistant turns kept verbatim outside safeguard summarization (default: 3). Raise this to preserve exact recent dialogue context, or lower it to maximize compaction savings.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+865: 	"agents.defaults.compaction.keepRecentTokens": "Minimum token budget preserved from the most recent conversation window during compaction. Use higher values to protect immediate context continuity and lower values to keep more long-tail history.",
+866: 	"agents.defaults.compaction.reserveTokensFloor": "Minimum floor enforced for reserveTokens in embedded OpenClaw compaction paths (0 disables the floor guard). Use a non-zero floor to avoid over-aggressive compression under fluctuating token estimates.",
+867: 	"agents.defaults.compaction.maxHistoryShare": "Maximum fraction of total context budget allowed for retained history after compaction (range 0.1-0.9). Use lower shares for more generation headroom or higher shares for deeper historical continuity.",
+868: 	"agents.defaults.compaction.identifierPolicy": "Identifier-preservation policy for compaction summaries: \"strict\" prepends built-in opaque-identifier retention guidance (default), \"off\" disables this prefix, and \"custom\" uses identifierInstructions. Keep \"strict\" unless you have a specific compatibility need.",
+869: 	"agents.defaults.compaction.identifierInstructions": "Custom identifier-preservation instruction text used when identifierPolicy=\"custom\". Keep this explicit and safety-focused so compaction summaries do not rewrite opaque IDs, URLs, hosts, or ports.",
+870: 	"agents.defaults.compaction.recentTurnsPreserve": "Number of most recent user/assistant turns kept verbatim outside safeguard summarization (default: 3). Raise this to preserve exact recent dialogue context, or lower it to maximize compaction savings.",
+871: 	"agents.defaults.compaction.qualityGuard": "Quality-audit retry settings for safeguard compaction summaries. Safeguard mode enables this by default; set enabled: false to skip summary audits and regeneration.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+866: 	"agents.defaults.compaction.reserveTokensFloor": "Minimum floor enforced for reserveTokens in embedded OpenClaw compaction paths (0 disables the floor guard). Use a non-zero floor to avoid over-aggressive compression under fluctuating token estimates.",
+867: 	"agents.defaults.compaction.maxHistoryShare": "Maximum fraction of total context budget allowed for retained history after compaction (range 0.1-0.9). Use lower shares for more generation headroom or higher shares for deeper historical continuity.",
+868: 	"agents.defaults.compaction.identifierPolicy": "Identifier-preservation policy for compaction summaries: \"strict\" prepends built-in opaque-identifier retention guidance (default), \"off\" disables this prefix, and \"custom\" uses identifierInstructions. Keep \"strict\" unless you have a specific compatibility need.",
+869: 	"agents.defaults.compaction.identifierInstructions": "Custom identifier-preservation instruction text used when identifierPolicy=\"custom\". Keep this explicit and safety-focused so compaction summaries do not rewrite opaque IDs, URLs, hosts, or ports.",
+870: 	"agents.defaults.compaction.recentTurnsPreserve": "Number of most recent user/assistant turns kept verbatim outside safeguard summarization (default: 3). Raise this to preserve exact recent dialogue context, or lower it to maximize compaction savings.",
+871: 	"agents.defaults.compaction.qualityGuard": "Quality-audit retry settings for safeguard compaction summaries. Safeguard mode enables this by default; set enabled: false to skip summary audits and regeneration.",
+872: 	"agents.defaults.compaction.qualityGuard.enabled": "Enables summary quality audits and regeneration retries for safeguard compaction. Default: true in safeguard mode.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+867: 	"agents.defaults.compaction.maxHistoryShare": "Maximum fraction of total context budget allowed for retained history after compaction (range 0.1-0.9). Use lower shares for more generation headroom or higher shares for deeper historical continuity.",
+868: 	"agents.defaults.compaction.identifierPolicy": "Identifier-preservation policy for compaction summaries: \"strict\" prepends built-in opaque-identifier retention guidance (default), \"off\" disables this prefix, and \"custom\" uses identifierInstructions. Keep \"strict\" unless you have a specific compatibility need.",
+869: 	"agents.defaults.compaction.identifierInstructions": "Custom identifier-preservation instruction text used when identifierPolicy=\"custom\". Keep this explicit and safety-focused so compaction summaries do not rewrite opaque IDs, URLs, hosts, or ports.",
+870: 	"agents.defaults.compaction.recentTurnsPreserve": "Number of most recent user/assistant turns kept verbatim outside safeguard summarization (default: 3). Raise this to preserve exact recent dialogue context, or lower it to maximize compaction savings.",
+871: 	"agents.defaults.compaction.qualityGuard": "Quality-audit retry settings for safeguard compaction summaries. Safeguard mode enables this by default; set enabled: false to skip summary audits and regeneration.",
+872: 	"agents.defaults.compaction.qualityGuard.enabled": "Enables summary quality audits and regeneration retries for safeguard compaction. Default: true in safeguard mode.",
+873: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Maximum number of regeneration retries after a failed safeguard summary quality audit. Use small values to bound extra latency and token cost.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+868: 	"agents.defaults.compaction.identifierPolicy": "Identifier-preservation policy for compaction summaries: \"strict\" prepends built-in opaque-identifier retention guidance (default), \"off\" disables this prefix, and \"custom\" uses identifierInstructions. Keep \"strict\" unless you have a specific compatibility need.",
+869: 	"agents.defaults.compaction.identifierInstructions": "Custom identifier-preservation instruction text used when identifierPolicy=\"custom\". Keep this explicit and safety-focused so compaction summaries do not rewrite opaque IDs, URLs, hosts, or ports.",
+870: 	"agents.defaults.compaction.recentTurnsPreserve": "Number of most recent user/assistant turns kept verbatim outside safeguard summarization (default: 3). Raise this to preserve exact recent dialogue context, or lower it to maximize compaction savings.",
+871: 	"agents.defaults.compaction.qualityGuard": "Quality-audit retry settings for safeguard compaction summaries. Safeguard mode enables this by default; set enabled: false to skip summary audits and regeneration.",
+872: 	"agents.defaults.compaction.qualityGuard.enabled": "Enables summary quality audits and regeneration retries for safeguard compaction. Default: true in safeguard mode.",
+873: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Maximum number of regeneration retries after a failed safeguard summary quality audit. Use small values to bound extra latency and token cost.",
+874: 	"agents.defaults.compaction.midTurnPrecheck": "Optional embedded OpenClaw tool-loop precheck that detects context pressure after a tool result is appended and before the next model call. When enabled, OpenClaw reuses existing precheck recovery to truncate tool results or compact before retrying.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+869: 	"agents.defaults.compaction.identifierInstructions": "Custom identifier-preservation instruction text used when identifierPolicy=\"custom\". Keep this explicit and safety-focused so compaction summaries do not rewrite opaque IDs, URLs, hosts, or ports.",
+870: 	"agents.defaults.compaction.recentTurnsPreserve": "Number of most recent user/assistant turns kept verbatim outside safeguard summarization (default: 3). Raise this to preserve exact recent dialogue context, or lower it to maximize compaction savings.",
+871: 	"agents.defaults.compaction.qualityGuard": "Quality-audit retry settings for safeguard compaction summaries. Safeguard mode enables this by default; set enabled: false to skip summary audits and regeneration.",
+872: 	"agents.defaults.compaction.qualityGuard.enabled": "Enables summary quality audits and regeneration retries for safeguard compaction. Default: true in safeguard mode.",
+873: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Maximum number of regeneration retries after a failed safeguard summary quality audit. Use small values to bound extra latency and token cost.",
+874: 	"agents.defaults.compaction.midTurnPrecheck": "Optional embedded OpenClaw tool-loop precheck that detects context pressure after a tool result is appended and before the next model call. When enabled, OpenClaw reuses existing precheck recovery to truncate tool results or compact before retrying.",
+875: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Enable structured mid-turn context pressure checks for embedded OpenClaw tool loops. Default: false. Keep disabled unless long tool-heavy sessions hit context overflow before normal turn-end compaction can run.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+870: 	"agents.defaults.compaction.recentTurnsPreserve": "Number of most recent user/assistant turns kept verbatim outside safeguard summarization (default: 3). Raise this to preserve exact recent dialogue context, or lower it to maximize compaction savings.",
+871: 	"agents.defaults.compaction.qualityGuard": "Quality-audit retry settings for safeguard compaction summaries. Safeguard mode enables this by default; set enabled: false to skip summary audits and regeneration.",
+872: 	"agents.defaults.compaction.qualityGuard.enabled": "Enables summary quality audits and regeneration retries for safeguard compaction. Default: true in safeguard mode.",
+873: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Maximum number of regeneration retries after a failed safeguard summary quality audit. Use small values to bound extra latency and token cost.",
+874: 	"agents.defaults.compaction.midTurnPrecheck": "Optional embedded OpenClaw tool-loop precheck that detects context pressure after a tool result is appended and before the next model call. When enabled, OpenClaw reuses existing precheck recovery to truncate tool results or compact before retrying.",
+875: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Enable structured mid-turn context pressure checks for embedded OpenClaw tool loops. Default: false. Keep disabled unless long tool-heavy sessions hit context overflow before normal turn-end compaction can run.",
+876: 	"agents.defaults.compaction.postIndexSync": "Controls post-compaction session memory reindex mode: \"off\", \"async\", or \"await\" (default: \"async\"). Use \"await\" for strongest freshness, \"async\" for lower compaction latency, and \"off\" only when session-memory sync is handled elsewhere.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+871: 	"agents.defaults.compaction.qualityGuard": "Quality-audit retry settings for safeguard compaction summaries. Safeguard mode enables this by default; set enabled: false to skip summary audits and regeneration.",
+872: 	"agents.defaults.compaction.qualityGuard.enabled": "Enables summary quality audits and regeneration retries for safeguard compaction. Default: true in safeguard mode.",
+873: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Maximum number of regeneration retries after a failed safeguard summary quality audit. Use small values to bound extra latency and token cost.",
+874: 	"agents.defaults.compaction.midTurnPrecheck": "Optional embedded OpenClaw tool-loop precheck that detects context pressure after a tool result is appended and before the next model call. When enabled, OpenClaw reuses existing precheck recovery to truncate tool results or compact before retrying.",
+875: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Enable structured mid-turn context pressure checks for embedded OpenClaw tool loops. Default: false. Keep disabled unless long tool-heavy sessions hit context overflow before normal turn-end compaction can run.",
+876: 	"agents.defaults.compaction.postIndexSync": "Controls post-compaction session memory reindex mode: \"off\", \"async\", or \"await\" (default: \"async\"). Use \"await\" for strongest freshness, \"async\" for lower compaction latency, and \"off\" only when session-memory sync is handled elsewhere.",
+877: 	"agents.defaults.compaction.postCompactionSections": "Opt-in AGENTS.md H2/H3 section names re-injected after compaction so the agent reruns critical startup guidance. Leave unset or set [] to disable reinjection. Explicitly set [\"Session Startup\", \"Red Lines\"] to enable the legacy default pair with fallback to older \"Every Session\"/\"Safety\" headings. Enabling this can duplicate project context already present in the compaction summary.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+872: 	"agents.defaults.compaction.qualityGuard.enabled": "Enables summary quality audits and regeneration retries for safeguard compaction. Default: true in safeguard mode.",
+873: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Maximum number of regeneration retries after a failed safeguard summary quality audit. Use small values to bound extra latency and token cost.",
+874: 	"agents.defaults.compaction.midTurnPrecheck": "Optional embedded OpenClaw tool-loop precheck that detects context pressure after a tool result is appended and before the next model call. When enabled, OpenClaw reuses existing precheck recovery to truncate tool results or compact before retrying.",
+875: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Enable structured mid-turn context pressure checks for embedded OpenClaw tool loops. Default: false. Keep disabled unless long tool-heavy sessions hit context overflow before normal turn-end compaction can run.",
+876: 	"agents.defaults.compaction.postIndexSync": "Controls post-compaction session memory reindex mode: \"off\", \"async\", or \"await\" (default: \"async\"). Use \"await\" for strongest freshness, \"async\" for lower compaction latency, and \"off\" only when session-memory sync is handled elsewhere.",
+877: 	"agents.defaults.compaction.postCompactionSections": "Opt-in AGENTS.md H2/H3 section names re-injected after compaction so the agent reruns critical startup guidance. Leave unset or set [] to disable reinjection. Explicitly set [\"Session Startup\", \"Red Lines\"] to enable the legacy default pair with fallback to older \"Every Session\"/\"Safety\" headings. Enabling this can duplicate project context already present in the compaction summary.",
+878: 	"agents.defaults.compaction.timeoutSeconds": "Maximum time in seconds allowed for a single compaction operation before it is aborted (default: 180). Increase this for very large sessions that need more time to summarize, or decrease it to fail faster on unresponsive models.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+873: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Maximum number of regeneration retries after a failed safeguard summary quality audit. Use small values to bound extra latency and token cost.",
+874: 	"agents.defaults.compaction.midTurnPrecheck": "Optional embedded OpenClaw tool-loop precheck that detects context pressure after a tool result is appended and before the next model call. When enabled, OpenClaw reuses existing precheck recovery to truncate tool results or compact before retrying.",
+875: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Enable structured mid-turn context pressure checks for embedded OpenClaw tool loops. Default: false. Keep disabled unless long tool-heavy sessions hit context overflow before normal turn-end compaction can run.",
+876: 	"agents.defaults.compaction.postIndexSync": "Controls post-compaction session memory reindex mode: \"off\", \"async\", or \"await\" (default: \"async\"). Use \"await\" for strongest freshness, \"async\" for lower compaction latency, and \"off\" only when session-memory sync is handled elsewhere.",
+877: 	"agents.defaults.compaction.postCompactionSections": "Opt-in AGENTS.md H2/H3 section names re-injected after compaction so the agent reruns critical startup guidance. Leave unset or set [] to disable reinjection. Explicitly set [\"Session Startup\", \"Red Lines\"] to enable the legacy default pair with fallback to older \"Every Session\"/\"Safety\" headings. Enabling this can duplicate project context already present in the compaction summary.",
+878: 	"agents.defaults.compaction.timeoutSeconds": "Maximum time in seconds allowed for a single compaction operation before it is aborted (default: 180). Increase this for very large sessions that need more time to summarize, or decrease it to fail faster on unresponsive models.",
+879: 	"agents.defaults.compaction.model": "Optional provider/model or configured bare alias used only for compaction summarization. Bare aliases resolve before dispatch; a configured literal model ID wins if it collides with an alias. Leave unset to keep using the primary agent model.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+874: 	"agents.defaults.compaction.midTurnPrecheck": "Optional embedded OpenClaw tool-loop precheck that detects context pressure after a tool result is appended and before the next model call. When enabled, OpenClaw reuses existing precheck recovery to truncate tool results or compact before retrying.",
+875: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Enable structured mid-turn context pressure checks for embedded OpenClaw tool loops. Default: false. Keep disabled unless long tool-heavy sessions hit context overflow before normal turn-end compaction can run.",
+876: 	"agents.defaults.compaction.postIndexSync": "Controls post-compaction session memory reindex mode: \"off\", \"async\", or \"await\" (default: \"async\"). Use \"await\" for strongest freshness, \"async\" for lower compaction latency, and \"off\" only when session-memory sync is handled elsewhere.",
+877: 	"agents.defaults.compaction.postCompactionSections": "Opt-in AGENTS.md H2/H3 section names re-injected after compaction so the agent reruns critical startup guidance. Leave unset or set [] to disable reinjection. Explicitly set [\"Session Startup\", \"Red Lines\"] to enable the legacy default pair with fallback to older \"Every Session\"/\"Safety\" headings. Enabling this can duplicate project context already present in the compaction summary.",
+878: 	"agents.defaults.compaction.timeoutSeconds": "Maximum time in seconds allowed for a single compaction operation before it is aborted (default: 180). Increase this for very large sessions that need more time to summarize, or decrease it to fail faster on unresponsive models.",
+879: 	"agents.defaults.compaction.model": "Optional provider/model or configured bare alias used only for compaction summarization. Bare aliases resolve before dispatch; a configured literal model ID wins if it collides with an alias. Leave unset to keep using the primary agent model.",
+880: 	"agents.defaults.compaction.truncateAfterCompaction": "When enabled, rotates the active session JSONL file after compaction so future turns load only the summary and unsummarized tail while the previous full transcript remains archived. Prevents unbounded active transcript growth in long-running sessions. Default: false.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+875: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Enable structured mid-turn context pressure checks for embedded OpenClaw tool loops. Default: false. Keep disabled unless long tool-heavy sessions hit context overflow before normal turn-end compaction can run.",
+876: 	"agents.defaults.compaction.postIndexSync": "Controls post-compaction session memory reindex mode: \"off\", \"async\", or \"await\" (default: \"async\"). Use \"await\" for strongest freshness, \"async\" for lower compaction latency, and \"off\" only when session-memory sync is handled elsewhere.",
+877: 	"agents.defaults.compaction.postCompactionSections": "Opt-in AGENTS.md H2/H3 section names re-injected after compaction so the agent reruns critical startup guidance. Leave unset or set [] to disable reinjection. Explicitly set [\"Session Startup\", \"Red Lines\"] to enable the legacy default pair with fallback to older \"Every Session\"/\"Safety\" headings. Enabling this can duplicate project context already present in the compaction summary.",
+878: 	"agents.defaults.compaction.timeoutSeconds": "Maximum time in seconds allowed for a single compaction operation before it is aborted (default: 180). Increase this for very large sessions that need more time to summarize, or decrease it to fail faster on unresponsive models.",
+879: 	"agents.defaults.compaction.model": "Optional provider/model or configured bare alias used only for compaction summarization. Bare aliases resolve before dispatch; a configured literal model ID wins if it collides with an alias. Leave unset to keep using the primary agent model.",
+880: 	"agents.defaults.compaction.truncateAfterCompaction": "When enabled, rotates the active session JSONL file after compaction so future turns load only the summary and unsummarized tail while the previous full transcript remains archived. Prevents unbounded active transcript growth in long-running sessions. Default: false.",
+881: 	"agents.defaults.compaction.maxActiveTranscriptBytes": "Triggers normal local compaction when the active session transcript reaches this size (bytes or strings like \"20mb\"). Requires truncateAfterCompaction so successful compaction can rotate to a smaller successor transcript; set to 0 or leave unset to disable. This never splits raw transcript bytes.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+876: 	"agents.defaults.compaction.postIndexSync": "Controls post-compaction session memory reindex mode: \"off\", \"async\", or \"await\" (default: \"async\"). Use \"await\" for strongest freshness, \"async\" for lower compaction latency, and \"off\" only when session-memory sync is handled elsewhere.",
+877: 	"agents.defaults.compaction.postCompactionSections": "Opt-in AGENTS.md H2/H3 section names re-injected after compaction so the agent reruns critical startup guidance. Leave unset or set [] to disable reinjection. Explicitly set [\"Session Startup\", \"Red Lines\"] to enable the legacy default pair with fallback to older \"Every Session\"/\"Safety\" headings. Enabling this can duplicate project context already present in the compaction summary.",
+878: 	"agents.defaults.compaction.timeoutSeconds": "Maximum time in seconds allowed for a single compaction operation before it is aborted (default: 180). Increase this for very large sessions that need more time to summarize, or decrease it to fail faster on unresponsive models.",
+879: 	"agents.defaults.compaction.model": "Optional provider/model or configured bare alias used only for compaction summarization. Bare aliases resolve before dispatch; a configured literal model ID wins if it collides with an alias. Leave unset to keep using the primary agent model.",
+880: 	"agents.defaults.compaction.truncateAfterCompaction": "When enabled, rotates the active session JSONL file after compaction so future turns load only the summary and unsummarized tail while the previous full transcript remains archived. Prevents unbounded active transcript growth in long-running sessions. Default: false.",
+881: 	"agents.defaults.compaction.maxActiveTranscriptBytes": "Triggers normal local compaction when the active session transcript reaches this size (bytes or strings like \"20mb\"). Requires truncateAfterCompaction so successful compaction can rotate to a smaller successor transcript; set to 0 or leave unset to disable. This never splits raw transcript bytes.",
+882: 	"agents.defaults.compaction.notifyUser": "When enabled, sends brief context-maintenance notices to the user: when compaction starts and completes (for example, '🧹 Compacting context...' and '🧹 Compaction complete'), and when a pre-compaction memory flush is exhausted so the reply continues in a degraded state (for example, '⚠️ Memory maintenance temporarily failed; continuing your reply.'). Disabled by default to keep context maintenance silent and non-intrusive.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+877: 	"agents.defaults.compaction.postCompactionSections": "Opt-in AGENTS.md H2/H3 section names re-injected after compaction so the agent reruns critical startup guidance. Leave unset or set [] to disable reinjection. Explicitly set [\"Session Startup\", \"Red Lines\"] to enable the legacy default pair with fallback to older \"Every Session\"/\"Safety\" headings. Enabling this can duplicate project context already present in the compaction summary.",
+878: 	"agents.defaults.compaction.timeoutSeconds": "Maximum time in seconds allowed for a single compaction operation before it is aborted (default: 180). Increase this for very large sessions that need more time to summarize, or decrease it to fail faster on unresponsive models.",
+879: 	"agents.defaults.compaction.model": "Optional provider/model or configured bare alias used only for compaction summarization. Bare aliases resolve before dispatch; a configured literal model ID wins if it collides with an alias. Leave unset to keep using the primary agent model.",
+880: 	"agents.defaults.compaction.truncateAfterCompaction": "When enabled, rotates the active session JSONL file after compaction so future turns load only the summary and unsummarized tail while the previous full transcript remains archived. Prevents unbounded active transcript growth in long-running sessions. Default: false.",
+881: 	"agents.defaults.compaction.maxActiveTranscriptBytes": "Triggers normal local compaction when the active session transcript reaches this size (bytes or strings like \"20mb\"). Requires truncateAfterCompaction so successful compaction can rotate to a smaller successor transcript; set to 0 or leave unset to disable. This never splits raw transcript bytes.",
+882: 	"agents.defaults.compaction.notifyUser": "When enabled, sends brief context-maintenance notices to the user: when compaction starts and completes (for example, '🧹 Compacting context...' and '🧹 Compaction complete'), and when a pre-compaction memory flush is exhausted so the reply continues in a degraded state (for example, '⚠️ Memory maintenance temporarily failed; continuing your reply.'). Disabled by default to keep context maintenance silent and non-intrusive.",
+883: 	"agents.defaults.compaction.memoryFlush": "Pre-compaction memory flush settings that run an agentic memory write before heavy compaction. Keep enabled for long sessions so salient context is persisted before aggressive trimming.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+878: 	"agents.defaults.compaction.timeoutSeconds": "Maximum time in seconds allowed for a single compaction operation before it is aborted (default: 180). Increase this for very large sessions that need more time to summarize, or decrease it to fail faster on unresponsive models.",
+879: 	"agents.defaults.compaction.model": "Optional provider/model or configured bare alias used only for compaction summarization. Bare aliases resolve before dispatch; a configured literal model ID wins if it collides with an alias. Leave unset to keep using the primary agent model.",
+880: 	"agents.defaults.compaction.truncateAfterCompaction": "When enabled, rotates the active session JSONL file after compaction so future turns load only the summary and unsummarized tail while the previous full transcript remains archived. Prevents unbounded active transcript growth in long-running sessions. Default: false.",
+881: 	"agents.defaults.compaction.maxActiveTranscriptBytes": "Triggers normal local compaction when the active session transcript reaches this size (bytes or strings like \"20mb\"). Requires truncateAfterCompaction so successful compaction can rotate to a smaller successor transcript; set to 0 or leave unset to disable. This never splits raw transcript bytes.",
+882: 	"agents.defaults.compaction.notifyUser": "When enabled, sends brief context-maintenance notices to the user: when compaction starts and completes (for example, '🧹 Compacting context...' and '🧹 Compaction complete'), and when a pre-compaction memory flush is exhausted so the reply continues in a degraded state (for example, '⚠️ Memory maintenance temporarily failed; continuing your reply.'). Disabled by default to keep context maintenance silent and non-intrusive.",
+883: 	"agents.defaults.compaction.memoryFlush": "Pre-compaction memory flush settings that run an agentic memory write before heavy compaction. Keep enabled for long sessions so salient context is persisted before aggressive trimming.",
+884: 	"agents.defaults.compaction.memoryFlush.enabled": "Enables pre-compaction memory flush before the runtime performs stronger history reduction near token limits. Keep enabled unless you intentionally disable memory side effects in constrained environments.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+879: 	"agents.defaults.compaction.model": "Optional provider/model or configured bare alias used only for compaction summarization. Bare aliases resolve before dispatch; a configured literal model ID wins if it collides with an alias. Leave unset to keep using the primary agent model.",
+880: 	"agents.defaults.compaction.truncateAfterCompaction": "When enabled, rotates the active session JSONL file after compaction so future turns load only the summary and unsummarized tail while the previous full transcript remains archived. Prevents unbounded active transcript growth in long-running sessions. Default: false.",
+881: 	"agents.defaults.compaction.maxActiveTranscriptBytes": "Triggers normal local compaction when the active session transcript reaches this size (bytes or strings like \"20mb\"). Requires truncateAfterCompaction so successful compaction can rotate to a smaller successor transcript; set to 0 or leave unset to disable. This never splits raw transcript bytes.",
+882: 	"agents.defaults.compaction.notifyUser": "When enabled, sends brief context-maintenance notices to the user: when compaction starts and completes (for example, '🧹 Compacting context...' and '🧹 Compaction complete'), and when a pre-compaction memory flush is exhausted so the reply continues in a degraded state (for example, '⚠️ Memory maintenance temporarily failed; continuing your reply.'). Disabled by default to keep context maintenance silent and non-intrusive.",
+883: 	"agents.defaults.compaction.memoryFlush": "Pre-compaction memory flush settings that run an agentic memory write before heavy compaction. Keep enabled for long sessions so salient context is persisted before aggressive trimming.",
+884: 	"agents.defaults.compaction.memoryFlush.enabled": "Enables pre-compaction memory flush before the runtime performs stronger history reduction near token limits. Keep enabled unless you intentionally disable memory side effects in constrained environments.",
+885: 	"agents.defaults.compaction.memoryFlush.model": "Optional provider/model override used only for pre-compaction memory flush turns. Set this to a local model such as ollama/qwen3:8b when durable memory extraction should avoid the active session's paid model. The override is exact and does not inherit the active model fallback chain.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+880: 	"agents.defaults.compaction.truncateAfterCompaction": "When enabled, rotates the active session JSONL file after compaction so future turns load only the summary and unsummarized tail while the previous full transcript remains archived. Prevents unbounded active transcript growth in long-running sessions. Default: false.",
+881: 	"agents.defaults.compaction.maxActiveTranscriptBytes": "Triggers normal local compaction when the active session transcript reaches this size (bytes or strings like \"20mb\"). Requires truncateAfterCompaction so successful compaction can rotate to a smaller successor transcript; set to 0 or leave unset to disable. This never splits raw transcript bytes.",
+882: 	"agents.defaults.compaction.notifyUser": "When enabled, sends brief context-maintenance notices to the user: when compaction starts and completes (for example, '🧹 Compacting context...' and '🧹 Compaction complete'), and when a pre-compaction memory flush is exhausted so the reply continues in a degraded state (for example, '⚠️ Memory maintenance temporarily failed; continuing your reply.'). Disabled by default to keep context maintenance silent and non-intrusive.",
+883: 	"agents.defaults.compaction.memoryFlush": "Pre-compaction memory flush settings that run an agentic memory write before heavy compaction. Keep enabled for long sessions so salient context is persisted before aggressive trimming.",
+884: 	"agents.defaults.compaction.memoryFlush.enabled": "Enables pre-compaction memory flush before the runtime performs stronger history reduction near token limits. Keep enabled unless you intentionally disable memory side effects in constrained environments.",
+885: 	"agents.defaults.compaction.memoryFlush.model": "Optional provider/model override used only for pre-compaction memory flush turns. Set this to a local model such as ollama/qwen3:8b when durable memory extraction should avoid the active session's paid model. The override is exact and does not inherit the active model fallback chain.",
+886: 	"agents.defaults.compaction.memoryFlush.softThresholdTokens": "Threshold distance to compaction (in tokens) that triggers pre-compaction memory flush execution. Use earlier thresholds for safer persistence, or tighter thresholds for lower flush frequency.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+881: 	"agents.defaults.compaction.maxActiveTranscriptBytes": "Triggers normal local compaction when the active session transcript reaches this size (bytes or strings like \"20mb\"). Requires truncateAfterCompaction so successful compaction can rotate to a smaller successor transcript; set to 0 or leave unset to disable. This never splits raw transcript bytes.",
+882: 	"agents.defaults.compaction.notifyUser": "When enabled, sends brief context-maintenance notices to the user: when compaction starts and completes (for example, '🧹 Compacting context...' and '🧹 Compaction complete'), and when a pre-compaction memory flush is exhausted so the reply continues in a degraded state (for example, '⚠️ Memory maintenance temporarily failed; continuing your reply.'). Disabled by default to keep context maintenance silent and non-intrusive.",
+883: 	"agents.defaults.compaction.memoryFlush": "Pre-compaction memory flush settings that run an agentic memory write before heavy compaction. Keep enabled for long sessions so salient context is persisted before aggressive trimming.",
+884: 	"agents.defaults.compaction.memoryFlush.enabled": "Enables pre-compaction memory flush before the runtime performs stronger history reduction near token limits. Keep enabled unless you intentionally disable memory side effects in constrained environments.",
+885: 	"agents.defaults.compaction.memoryFlush.model": "Optional provider/model override used only for pre-compaction memory flush turns. Set this to a local model such as ollama/qwen3:8b when durable memory extraction should avoid the active session's paid model. The override is exact and does not inherit the active model fallback chain.",
+886: 	"agents.defaults.compaction.memoryFlush.softThresholdTokens": "Threshold distance to compaction (in tokens) that triggers pre-compaction memory flush execution. Use earlier thresholds for safer persistence, or tighter thresholds for lower flush frequency.",
+887: 	"agents.defaults.compaction.memoryFlush.forceFlushTranscriptBytes": "Forces pre-compaction memory flush when transcript file size reaches this threshold (bytes or strings like \"2mb\"). Use this to prevent long-session hangs even when token counters are stale; set to 0 to disable.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+882: 	"agents.defaults.compaction.notifyUser": "When enabled, sends brief context-maintenance notices to the user: when compaction starts and completes (for example, '🧹 Compacting context...' and '🧹 Compaction complete'), and when a pre-compaction memory flush is exhausted so the reply continues in a degraded state (for example, '⚠️ Memory maintenance temporarily failed; continuing your reply.'). Disabled by default to keep context maintenance silent and non-intrusive.",
+883: 	"agents.defaults.compaction.memoryFlush": "Pre-compaction memory flush settings that run an agentic memory write before heavy compaction. Keep enabled for long sessions so salient context is persisted before aggressive trimming.",
+884: 	"agents.defaults.compaction.memoryFlush.enabled": "Enables pre-compaction memory flush before the runtime performs stronger history reduction near token limits. Keep enabled unless you intentionally disable memory side effects in constrained environments.",
+885: 	"agents.defaults.compaction.memoryFlush.model": "Optional provider/model override used only for pre-compaction memory flush turns. Set this to a local model such as ollama/qwen3:8b when durable memory extraction should avoid the active session's paid model. The override is exact and does not inherit the active model fallback chain.",
+886: 	"agents.defaults.compaction.memoryFlush.softThresholdTokens": "Threshold distance to compaction (in tokens) that triggers pre-compaction memory flush execution. Use earlier thresholds for safer persistence, or tighter thresholds for lower flush frequency.",
+887: 	"agents.defaults.compaction.memoryFlush.forceFlushTranscriptBytes": "Forces pre-compaction memory flush when transcript file size reaches this threshold (bytes or strings like \"2mb\"). Use this to prevent long-session hangs even when token counters are stale; set to 0 to disable.",
+888: 	"agents.defaults.compaction.memoryFlush.prompt": "User-prompt template used for the pre-compaction memory flush turn when generating memory candidates. Use this only when you need custom extraction instructions beyond the default memory flush behavior.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+883: 	"agents.defaults.compaction.memoryFlush": "Pre-compaction memory flush settings that run an agentic memory write before heavy compaction. Keep enabled for long sessions so salient context is persisted before aggressive trimming.",
+884: 	"agents.defaults.compaction.memoryFlush.enabled": "Enables pre-compaction memory flush before the runtime performs stronger history reduction near token limits. Keep enabled unless you intentionally disable memory side effects in constrained environments.",
+885: 	"agents.defaults.compaction.memoryFlush.model": "Optional provider/model override used only for pre-compaction memory flush turns. Set this to a local model such as ollama/qwen3:8b when durable memory extraction should avoid the active session's paid model. The override is exact and does not inherit the active model fallback chain.",
+886: 	"agents.defaults.compaction.memoryFlush.softThresholdTokens": "Threshold distance to compaction (in tokens) that triggers pre-compaction memory flush execution. Use earlier thresholds for safer persistence, or tighter thresholds for lower flush frequency.",
+887: 	"agents.defaults.compaction.memoryFlush.forceFlushTranscriptBytes": "Forces pre-compaction memory flush when transcript file size reaches this threshold (bytes or strings like \"2mb\"). Use this to prevent long-session hangs even when token counters are stale; set to 0 to disable.",
+888: 	"agents.defaults.compaction.memoryFlush.prompt": "User-prompt template used for the pre-compaction memory flush turn when generating memory candidates. Use this only when you need custom extraction instructions beyond the default memory flush behavior.",
+889: 	"agents.defaults.compaction.memoryFlush.systemPrompt": "System-prompt override for the pre-compaction memory flush turn to control extraction style and safety constraints. Use carefully so custom instructions do not reduce memory quality or leak sensitive context.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+884: 	"agents.defaults.compaction.memoryFlush.enabled": "Enables pre-compaction memory flush before the runtime performs stronger history reduction near token limits. Keep enabled unless you intentionally disable memory side effects in constrained environments.",
+885: 	"agents.defaults.compaction.memoryFlush.model": "Optional provider/model override used only for pre-compaction memory flush turns. Set this to a local model such as ollama/qwen3:8b when durable memory extraction should avoid the active session's paid model. The override is exact and does not inherit the active model fallback chain.",
+886: 	"agents.defaults.compaction.memoryFlush.softThresholdTokens": "Threshold distance to compaction (in tokens) that triggers pre-compaction memory flush execution. Use earlier thresholds for safer persistence, or tighter thresholds for lower flush frequency.",
+887: 	"agents.defaults.compaction.memoryFlush.forceFlushTranscriptBytes": "Forces pre-compaction memory flush when transcript file size reaches this threshold (bytes or strings like \"2mb\"). Use this to prevent long-session hangs even when token counters are stale; set to 0 to disable.",
+888: 	"agents.defaults.compaction.memoryFlush.prompt": "User-prompt template used for the pre-compaction memory flush turn when generating memory candidates. Use this only when you need custom extraction instructions beyond the default memory flush behavior.",
+889: 	"agents.defaults.compaction.memoryFlush.systemPrompt": "System-prompt override for the pre-compaction memory flush turn to control extraction style and safety constraints. Use carefully so custom instructions do not reduce memory quality or leak sensitive context.",
+890: 	"agents.defaults.runRetries": "Outer run loop retry iteration boundaries for the embedded OpenClaw runner to prevent infinite execution loops during failure recovery.",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+885: 	"agents.defaults.compaction.memoryFlush.model": "Optional provider/model override used only for pre-compaction memory flush turns. Set this to a local model such as ollama/qwen3:8b when durable memory extraction should avoid the active session's paid model. The override is exact and does not inherit the active model fallback chain.",
+886: 	"agents.defaults.compaction.memoryFlush.softThresholdTokens": "Threshold distance to compaction (in tokens) that triggers pre-compaction memory flush execution. Use earlier thresholds for safer persistence, or tighter thresholds for lower flush frequency.",
+887: 	"agents.defaults.compaction.memoryFlush.forceFlushTranscriptBytes": "Forces pre-compaction memory flush when transcript file size reaches this threshold (bytes or strings like \"2mb\"). Use this to prevent long-session hangs even when token counters are stale; set to 0 to disable.",
+888: 	"agents.defaults.compaction.memoryFlush.prompt": "User-prompt template used for the pre-compaction memory flush turn when generating memory candidates. Use this only when you need custom extraction instructions beyond the default memory flush behavior.",
+889: 	"agents.defaults.compaction.memoryFlush.systemPrompt": "System-prompt override for the pre-compaction memory flush turn to control extraction style and safety constraints. Use carefully so custom instructions do not reduce memory quality or leak sensitive context.",
+890: 	"agents.defaults.runRetries": "Outer run loop retry iteration boundaries for the embedded OpenClaw runner to prevent infinite execution loops during failure recovery.",
+891: 	"agents.defaults.runRetries.base": "Base number of run retry iterations for the embedded OpenClaw runner's outer run loop (default: 24).",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+886: 	"agents.defaults.compaction.memoryFlush.softThresholdTokens": "Threshold distance to compaction (in tokens) that triggers pre-compaction memory flush execution. Use earlier thresholds for safer persistence, or tighter thresholds for lower flush frequency.",
+887: 	"agents.defaults.compaction.memoryFlush.forceFlushTranscriptBytes": "Forces pre-compaction memory flush when transcript file size reaches this threshold (bytes or strings like \"2mb\"). Use this to prevent long-session hangs even when token counters are stale; set to 0 to disable.",
+888: 	"agents.defaults.compaction.memoryFlush.prompt": "User-prompt template used for the pre-compaction memory flush turn when generating memory candidates. Use this only when you need custom extraction instructions beyond the default memory flush behavior.",
+889: 	"agents.defaults.compaction.memoryFlush.systemPrompt": "System-prompt override for the pre-compaction memory flush turn to control extraction style and safety constraints. Use carefully so custom instructions do not reduce memory quality or leak sensitive context.",
+890: 	"agents.defaults.runRetries": "Outer run loop retry iteration boundaries for the embedded OpenClaw runner to prevent infinite execution loops during failure recovery.",
+891: 	"agents.defaults.runRetries.base": "Base number of run retry iterations for the embedded OpenClaw runner's outer run loop (default: 24).",
+892: 	"agents.defaults.runRetries.perProfile": "Additional run retry iterations granted per fallback profile candidate (default: 8).",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1228: 	"agents.defaults.contextLimits.memoryGetMaxChars": "Default memory_get Max Chars",
+1229: 	"agents.defaults.contextLimits.memoryGetDefaultLines": "Default memory_get Line Window",
+1230: 	"agents.defaults.contextLimits.toolResultMaxChars": "Default Tool Result Max Chars",
+1231: 	"agents.defaults.contextLimits.postCompactionMaxChars": "Default Post-compaction Max Chars",
+1232: 	"agents.list": "Agent List",
+1233: 	"agents.list[].skillsLimits": "Agent Skills Limits",
+1234: 	"agents.list[].skillsLimits.maxSkillsPromptChars": "Agent Skills Prompt Max Chars",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1798: 	"agents.defaults.humanDelay.minMs": "Human Delay Min (ms)",
+1799: 	"agents.defaults.humanDelay.maxMs": "Human Delay Max (ms)",
+1800: 	"agents.defaults.cliBackends": "CLI Backends",
+1801: 	"agents.defaults.compaction": "Compaction",
+1802: 	"agents.defaults.compaction.mode": "Compaction Mode",
+1803: 	"agents.defaults.compaction.provider": "Compaction Provider",
+1804: 	"agents.defaults.compaction.reserveTokens": "Compaction Reserve Tokens",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1799: 	"agents.defaults.humanDelay.maxMs": "Human Delay Max (ms)",
+1800: 	"agents.defaults.cliBackends": "CLI Backends",
+1801: 	"agents.defaults.compaction": "Compaction",
+1802: 	"agents.defaults.compaction.mode": "Compaction Mode",
+1803: 	"agents.defaults.compaction.provider": "Compaction Provider",
+1804: 	"agents.defaults.compaction.reserveTokens": "Compaction Reserve Tokens",
+1805: 	"agents.defaults.compaction.keepRecentTokens": "Compaction Keep Recent Tokens",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1800: 	"agents.defaults.cliBackends": "CLI Backends",
+1801: 	"agents.defaults.compaction": "Compaction",
+1802: 	"agents.defaults.compaction.mode": "Compaction Mode",
+1803: 	"agents.defaults.compaction.provider": "Compaction Provider",
+1804: 	"agents.defaults.compaction.reserveTokens": "Compaction Reserve Tokens",
+1805: 	"agents.defaults.compaction.keepRecentTokens": "Compaction Keep Recent Tokens",
+1806: 	"agents.defaults.compaction.reserveTokensFloor": "Compaction Reserve Token Floor",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1801: 	"agents.defaults.compaction": "Compaction",
+1802: 	"agents.defaults.compaction.mode": "Compaction Mode",
+1803: 	"agents.defaults.compaction.provider": "Compaction Provider",
+1804: 	"agents.defaults.compaction.reserveTokens": "Compaction Reserve Tokens",
+1805: 	"agents.defaults.compaction.keepRecentTokens": "Compaction Keep Recent Tokens",
+1806: 	"agents.defaults.compaction.reserveTokensFloor": "Compaction Reserve Token Floor",
+1807: 	"agents.defaults.compaction.maxHistoryShare": "Compaction Max History Share",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1802: 	"agents.defaults.compaction.mode": "Compaction Mode",
+1803: 	"agents.defaults.compaction.provider": "Compaction Provider",
+1804: 	"agents.defaults.compaction.reserveTokens": "Compaction Reserve Tokens",
+1805: 	"agents.defaults.compaction.keepRecentTokens": "Compaction Keep Recent Tokens",
+1806: 	"agents.defaults.compaction.reserveTokensFloor": "Compaction Reserve Token Floor",
+1807: 	"agents.defaults.compaction.maxHistoryShare": "Compaction Max History Share",
+1808: 	"agents.defaults.compaction.identifierPolicy": "Compaction Identifier Policy",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1803: 	"agents.defaults.compaction.provider": "Compaction Provider",
+1804: 	"agents.defaults.compaction.reserveTokens": "Compaction Reserve Tokens",
+1805: 	"agents.defaults.compaction.keepRecentTokens": "Compaction Keep Recent Tokens",
+1806: 	"agents.defaults.compaction.reserveTokensFloor": "Compaction Reserve Token Floor",
+1807: 	"agents.defaults.compaction.maxHistoryShare": "Compaction Max History Share",
+1808: 	"agents.defaults.compaction.identifierPolicy": "Compaction Identifier Policy",
+1809: 	"agents.defaults.compaction.identifierInstructions": "Compaction Identifier Instructions",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1804: 	"agents.defaults.compaction.reserveTokens": "Compaction Reserve Tokens",
+1805: 	"agents.defaults.compaction.keepRecentTokens": "Compaction Keep Recent Tokens",
+1806: 	"agents.defaults.compaction.reserveTokensFloor": "Compaction Reserve Token Floor",
+1807: 	"agents.defaults.compaction.maxHistoryShare": "Compaction Max History Share",
+1808: 	"agents.defaults.compaction.identifierPolicy": "Compaction Identifier Policy",
+1809: 	"agents.defaults.compaction.identifierInstructions": "Compaction Identifier Instructions",
+1810: 	"agents.defaults.compaction.recentTurnsPreserve": "Compaction Preserve Recent Turns",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1805: 	"agents.defaults.compaction.keepRecentTokens": "Compaction Keep Recent Tokens",
+1806: 	"agents.defaults.compaction.reserveTokensFloor": "Compaction Reserve Token Floor",
+1807: 	"agents.defaults.compaction.maxHistoryShare": "Compaction Max History Share",
+1808: 	"agents.defaults.compaction.identifierPolicy": "Compaction Identifier Policy",
+1809: 	"agents.defaults.compaction.identifierInstructions": "Compaction Identifier Instructions",
+1810: 	"agents.defaults.compaction.recentTurnsPreserve": "Compaction Preserve Recent Turns",
+1811: 	"agents.defaults.compaction.qualityGuard": "Compaction Quality Guard",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1806: 	"agents.defaults.compaction.reserveTokensFloor": "Compaction Reserve Token Floor",
+1807: 	"agents.defaults.compaction.maxHistoryShare": "Compaction Max History Share",
+1808: 	"agents.defaults.compaction.identifierPolicy": "Compaction Identifier Policy",
+1809: 	"agents.defaults.compaction.identifierInstructions": "Compaction Identifier Instructions",
+1810: 	"agents.defaults.compaction.recentTurnsPreserve": "Compaction Preserve Recent Turns",
+1811: 	"agents.defaults.compaction.qualityGuard": "Compaction Quality Guard",
+1812: 	"agents.defaults.compaction.qualityGuard.enabled": "Compaction Quality Guard Enabled",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1807: 	"agents.defaults.compaction.maxHistoryShare": "Compaction Max History Share",
+1808: 	"agents.defaults.compaction.identifierPolicy": "Compaction Identifier Policy",
+1809: 	"agents.defaults.compaction.identifierInstructions": "Compaction Identifier Instructions",
+1810: 	"agents.defaults.compaction.recentTurnsPreserve": "Compaction Preserve Recent Turns",
+1811: 	"agents.defaults.compaction.qualityGuard": "Compaction Quality Guard",
+1812: 	"agents.defaults.compaction.qualityGuard.enabled": "Compaction Quality Guard Enabled",
+1813: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Compaction Quality Guard Max Retries",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1808: 	"agents.defaults.compaction.identifierPolicy": "Compaction Identifier Policy",
+1809: 	"agents.defaults.compaction.identifierInstructions": "Compaction Identifier Instructions",
+1810: 	"agents.defaults.compaction.recentTurnsPreserve": "Compaction Preserve Recent Turns",
+1811: 	"agents.defaults.compaction.qualityGuard": "Compaction Quality Guard",
+1812: 	"agents.defaults.compaction.qualityGuard.enabled": "Compaction Quality Guard Enabled",
+1813: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Compaction Quality Guard Max Retries",
+1814: 	"agents.defaults.compaction.midTurnPrecheck": "Compaction Mid-turn Precheck",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1809: 	"agents.defaults.compaction.identifierInstructions": "Compaction Identifier Instructions",
+1810: 	"agents.defaults.compaction.recentTurnsPreserve": "Compaction Preserve Recent Turns",
+1811: 	"agents.defaults.compaction.qualityGuard": "Compaction Quality Guard",
+1812: 	"agents.defaults.compaction.qualityGuard.enabled": "Compaction Quality Guard Enabled",
+1813: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Compaction Quality Guard Max Retries",
+1814: 	"agents.defaults.compaction.midTurnPrecheck": "Compaction Mid-turn Precheck",
+1815: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Compaction Mid-turn Precheck Enabled",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1810: 	"agents.defaults.compaction.recentTurnsPreserve": "Compaction Preserve Recent Turns",
+1811: 	"agents.defaults.compaction.qualityGuard": "Compaction Quality Guard",
+1812: 	"agents.defaults.compaction.qualityGuard.enabled": "Compaction Quality Guard Enabled",
+1813: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Compaction Quality Guard Max Retries",
+1814: 	"agents.defaults.compaction.midTurnPrecheck": "Compaction Mid-turn Precheck",
+1815: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Compaction Mid-turn Precheck Enabled",
+1816: 	"agents.defaults.compaction.postIndexSync": "Compaction Post-Index Sync",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1811: 	"agents.defaults.compaction.qualityGuard": "Compaction Quality Guard",
+1812: 	"agents.defaults.compaction.qualityGuard.enabled": "Compaction Quality Guard Enabled",
+1813: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Compaction Quality Guard Max Retries",
+1814: 	"agents.defaults.compaction.midTurnPrecheck": "Compaction Mid-turn Precheck",
+1815: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Compaction Mid-turn Precheck Enabled",
+1816: 	"agents.defaults.compaction.postIndexSync": "Compaction Post-Index Sync",
+1817: 	"agents.defaults.compaction.postCompactionSections": "Post-Compaction Context Sections",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1812: 	"agents.defaults.compaction.qualityGuard.enabled": "Compaction Quality Guard Enabled",
+1813: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Compaction Quality Guard Max Retries",
+1814: 	"agents.defaults.compaction.midTurnPrecheck": "Compaction Mid-turn Precheck",
+1815: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Compaction Mid-turn Precheck Enabled",
+1816: 	"agents.defaults.compaction.postIndexSync": "Compaction Post-Index Sync",
+1817: 	"agents.defaults.compaction.postCompactionSections": "Post-Compaction Context Sections",
+1818: 	"agents.defaults.compaction.timeoutSeconds": "Compaction Timeout (Seconds)",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1813: 	"agents.defaults.compaction.qualityGuard.maxRetries": "Compaction Quality Guard Max Retries",
+1814: 	"agents.defaults.compaction.midTurnPrecheck": "Compaction Mid-turn Precheck",
+1815: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Compaction Mid-turn Precheck Enabled",
+1816: 	"agents.defaults.compaction.postIndexSync": "Compaction Post-Index Sync",
+1817: 	"agents.defaults.compaction.postCompactionSections": "Post-Compaction Context Sections",
+1818: 	"agents.defaults.compaction.timeoutSeconds": "Compaction Timeout (Seconds)",
+1819: 	"agents.defaults.compaction.model": "Compaction Model Override",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1814: 	"agents.defaults.compaction.midTurnPrecheck": "Compaction Mid-turn Precheck",
+1815: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Compaction Mid-turn Precheck Enabled",
+1816: 	"agents.defaults.compaction.postIndexSync": "Compaction Post-Index Sync",
+1817: 	"agents.defaults.compaction.postCompactionSections": "Post-Compaction Context Sections",
+1818: 	"agents.defaults.compaction.timeoutSeconds": "Compaction Timeout (Seconds)",
+1819: 	"agents.defaults.compaction.model": "Compaction Model Override",
+1820: 	"agents.defaults.compaction.truncateAfterCompaction": "Rotate Transcript After Compaction",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1815: 	"agents.defaults.compaction.midTurnPrecheck.enabled": "Compaction Mid-turn Precheck Enabled",
+1816: 	"agents.defaults.compaction.postIndexSync": "Compaction Post-Index Sync",
+1817: 	"agents.defaults.compaction.postCompactionSections": "Post-Compaction Context Sections",
+1818: 	"agents.defaults.compaction.timeoutSeconds": "Compaction Timeout (Seconds)",
+1819: 	"agents.defaults.compaction.model": "Compaction Model Override",
+1820: 	"agents.defaults.compaction.truncateAfterCompaction": "Rotate Transcript After Compaction",
+1821: 	"agents.defaults.compaction.maxActiveTranscriptBytes": "Compaction Active Transcript Size Threshold",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1816: 	"agents.defaults.compaction.postIndexSync": "Compaction Post-Index Sync",
+1817: 	"agents.defaults.compaction.postCompactionSections": "Post-Compaction Context Sections",
+1818: 	"agents.defaults.compaction.timeoutSeconds": "Compaction Timeout (Seconds)",
+1819: 	"agents.defaults.compaction.model": "Compaction Model Override",
+1820: 	"agents.defaults.compaction.truncateAfterCompaction": "Rotate Transcript After Compaction",
+1821: 	"agents.defaults.compaction.maxActiveTranscriptBytes": "Compaction Active Transcript Size Threshold",
+1822: 	"agents.defaults.compaction.notifyUser": "Compaction Notify User",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1817: 	"agents.defaults.compaction.postCompactionSections": "Post-Compaction Context Sections",
+1818: 	"agents.defaults.compaction.timeoutSeconds": "Compaction Timeout (Seconds)",
+1819: 	"agents.defaults.compaction.model": "Compaction Model Override",
+1820: 	"agents.defaults.compaction.truncateAfterCompaction": "Rotate Transcript After Compaction",
+1821: 	"agents.defaults.compaction.maxActiveTranscriptBytes": "Compaction Active Transcript Size Threshold",
+1822: 	"agents.defaults.compaction.notifyUser": "Compaction Notify User",
+1823: 	"agents.defaults.compaction.memoryFlush": "Compaction Memory Flush",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1818: 	"agents.defaults.compaction.timeoutSeconds": "Compaction Timeout (Seconds)",
+1819: 	"agents.defaults.compaction.model": "Compaction Model Override",
+1820: 	"agents.defaults.compaction.truncateAfterCompaction": "Rotate Transcript After Compaction",
+1821: 	"agents.defaults.compaction.maxActiveTranscriptBytes": "Compaction Active Transcript Size Threshold",
+1822: 	"agents.defaults.compaction.notifyUser": "Compaction Notify User",
+1823: 	"agents.defaults.compaction.memoryFlush": "Compaction Memory Flush",
+1824: 	"agents.defaults.compaction.memoryFlush.enabled": "Compaction Memory Flush Enabled",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1819: 	"agents.defaults.compaction.model": "Compaction Model Override",
+1820: 	"agents.defaults.compaction.truncateAfterCompaction": "Rotate Transcript After Compaction",
+1821: 	"agents.defaults.compaction.maxActiveTranscriptBytes": "Compaction Active Transcript Size Threshold",
+1822: 	"agents.defaults.compaction.notifyUser": "Compaction Notify User",
+1823: 	"agents.defaults.compaction.memoryFlush": "Compaction Memory Flush",
+1824: 	"agents.defaults.compaction.memoryFlush.enabled": "Compaction Memory Flush Enabled",
+1825: 	"agents.defaults.compaction.memoryFlush.model": "Compaction Memory Flush Model Override",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1820: 	"agents.defaults.compaction.truncateAfterCompaction": "Rotate Transcript After Compaction",
+1821: 	"agents.defaults.compaction.maxActiveTranscriptBytes": "Compaction Active Transcript Size Threshold",
+1822: 	"agents.defaults.compaction.notifyUser": "Compaction Notify User",
+1823: 	"agents.defaults.compaction.memoryFlush": "Compaction Memory Flush",
+1824: 	"agents.defaults.compaction.memoryFlush.enabled": "Compaction Memory Flush Enabled",
+1825: 	"agents.defaults.compaction.memoryFlush.model": "Compaction Memory Flush Model Override",
+1826: 	"agents.defaults.compaction.memoryFlush.softThresholdTokens": "Compaction Memory Flush Soft Threshold",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1821: 	"agents.defaults.compaction.maxActiveTranscriptBytes": "Compaction Active Transcript Size Threshold",
+1822: 	"agents.defaults.compaction.notifyUser": "Compaction Notify User",
+1823: 	"agents.defaults.compaction.memoryFlush": "Compaction Memory Flush",
+1824: 	"agents.defaults.compaction.memoryFlush.enabled": "Compaction Memory Flush Enabled",
+1825: 	"agents.defaults.compaction.memoryFlush.model": "Compaction Memory Flush Model Override",
+1826: 	"agents.defaults.compaction.memoryFlush.softThresholdTokens": "Compaction Memory Flush Soft Threshold",
+1827: 	"agents.defaults.compaction.memoryFlush.forceFlushTranscriptBytes": "Compaction Memory Flush Transcript Size Threshold",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1822: 	"agents.defaults.compaction.notifyUser": "Compaction Notify User",
+1823: 	"agents.defaults.compaction.memoryFlush": "Compaction Memory Flush",
+1824: 	"agents.defaults.compaction.memoryFlush.enabled": "Compaction Memory Flush Enabled",
+1825: 	"agents.defaults.compaction.memoryFlush.model": "Compaction Memory Flush Model Override",
+1826: 	"agents.defaults.compaction.memoryFlush.softThresholdTokens": "Compaction Memory Flush Soft Threshold",
+1827: 	"agents.defaults.compaction.memoryFlush.forceFlushTranscriptBytes": "Compaction Memory Flush Transcript Size Threshold",
+1828: 	"agents.defaults.compaction.memoryFlush.prompt": "Compaction Memory Flush Prompt",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1823: 	"agents.defaults.compaction.memoryFlush": "Compaction Memory Flush",
+1824: 	"agents.defaults.compaction.memoryFlush.enabled": "Compaction Memory Flush Enabled",
+1825: 	"agents.defaults.compaction.memoryFlush.model": "Compaction Memory Flush Model Override",
+1826: 	"agents.defaults.compaction.memoryFlush.softThresholdTokens": "Compaction Memory Flush Soft Threshold",
+1827: 	"agents.defaults.compaction.memoryFlush.forceFlushTranscriptBytes": "Compaction Memory Flush Transcript Size Threshold",
+1828: 	"agents.defaults.compaction.memoryFlush.prompt": "Compaction Memory Flush Prompt",
+1829: 	"agents.defaults.compaction.memoryFlush.systemPrompt": "Compaction Memory Flush System Prompt",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1824: 	"agents.defaults.compaction.memoryFlush.enabled": "Compaction Memory Flush Enabled",
+1825: 	"agents.defaults.compaction.memoryFlush.model": "Compaction Memory Flush Model Override",
+1826: 	"agents.defaults.compaction.memoryFlush.softThresholdTokens": "Compaction Memory Flush Soft Threshold",
+1827: 	"agents.defaults.compaction.memoryFlush.forceFlushTranscriptBytes": "Compaction Memory Flush Transcript Size Threshold",
+1828: 	"agents.defaults.compaction.memoryFlush.prompt": "Compaction Memory Flush Prompt",
+1829: 	"agents.defaults.compaction.memoryFlush.systemPrompt": "Compaction Memory Flush System Prompt",
+1830: 	"agents.defaults.runRetries": "Run Retries",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1825: 	"agents.defaults.compaction.memoryFlush.model": "Compaction Memory Flush Model Override",
+1826: 	"agents.defaults.compaction.memoryFlush.softThresholdTokens": "Compaction Memory Flush Soft Threshold",
+1827: 	"agents.defaults.compaction.memoryFlush.forceFlushTranscriptBytes": "Compaction Memory Flush Transcript Size Threshold",
+1828: 	"agents.defaults.compaction.memoryFlush.prompt": "Compaction Memory Flush Prompt",
+1829: 	"agents.defaults.compaction.memoryFlush.systemPrompt": "Compaction Memory Flush System Prompt",
+1830: 	"agents.defaults.runRetries": "Run Retries",
+1831: 	"agents.defaults.runRetries.base": "Run Retries Base",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-DRyO1XBt.js
+1826: 	"agents.defaults.compaction.memoryFlush.softThresholdTokens": "Compaction Memory Flush Soft Threshold",
+1827: 	"agents.defaults.compaction.memoryFlush.forceFlushTranscriptBytes": "Compaction Memory Flush Transcript Size Threshold",
+1828: 	"agents.defaults.compaction.memoryFlush.prompt": "Compaction Memory Flush Prompt",
+1829: 	"agents.defaults.compaction.memoryFlush.systemPrompt": "Compaction Memory Flush System Prompt",
+1830: 	"agents.defaults.runRetries": "Run Retries",
+1831: 	"agents.defaults.runRetries.base": "Run Retries Base",
+1832: 	"agents.defaults.runRetries.perProfile": "Run Retries Per Profile",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+1554: function buildContextOverflowResetHint(contextWindowTokens) {
+1555: 	return `
+1556: 
+1557: To prevent this, increase your compaction buffer by setting \`agents.defaults.compaction.reserveTokensFloor\` to ${computeContextAwareReserveTokensFloor(contextWindowTokens)} or higher in your config.`;
+1558: }
+1559: function resolveAgentHeartbeatModelRaw(params) {
+1560: 	const defaultModel = normalizeOptionalString(params.cfg.agents?.defaults?.heartbeat?.model);
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+3135: 	const totalTokens = resolvePositiveTokenCount(params.tokenCount) ?? resolveFreshSessionTotalTokens(params.entry);
+3136: 	if (!totalTokens || totalTokens <= 0) return null;
+3137: 	const contextWindow = Math.max(1, Math.floor(params.contextWindowTokens));
+3138: 	const reserveTokens = Math.max(0, Math.floor(params.reserveTokensFloor));
+3139: 	const softThreshold = Math.max(0, Math.floor(params.softThresholdTokens));
+3140: 	const threshold = Math.max(0, contextWindow - reserveTokens - softThreshold, Math.floor(params.minimumThresholdTokens ?? 0));
+3141: 	if (threshold <= 0) return null;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+3137: 	const contextWindow = Math.max(1, Math.floor(params.contextWindowTokens));
+3138: 	const reserveTokens = Math.max(0, Math.floor(params.reserveTokensFloor));
+3139: 	const softThreshold = Math.max(0, Math.floor(params.softThresholdTokens));
+3140: 	const threshold = Math.max(0, contextWindow - reserveTokens - softThreshold, Math.floor(params.minimumThresholdTokens ?? 0));
+3141: 	if (threshold <= 0) return null;
+3142: 	return {
+3143: 		entry: params.entry,
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+3537: 		agentCfgContextTokens: params.agentCfgContextTokens
+3538: 	});
+3539: 	const memoryFlushPlan = resolveMemoryFlushPlan({ cfg: params.cfg });
+3540: 	const reserveTokensFloor = memoryFlushPlan?.reserveTokensFloor ?? params.cfg.agents?.defaults?.compaction?.reserveTokensFloor ?? 2e4;
+3541: 	const softThresholdTokens = memoryFlushPlan?.softThresholdTokens ?? 4e3;
+3542: 	const freshPersistedTokens = resolveFreshSessionTotalTokens(entry);
+3543: 	const persistedTotalTokens = entry.totalTokens;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+3548: 		provider: params.followupRun.run.provider,
+3549: 		modelId: params.followupRun.run.model ?? params.defaultModel
+3550: 	});
+3551: 	const threshold = Math.max(contextWindowTokens - reserveTokensFloor - softThresholdTokens, serverCompactionThreshold ?? 0);
+3552: 	const freshNeedsOutputRead = typeof freshPersistedTokens === "number" && typeof promptTokenEstimate === "number" && threshold > 0 && freshPersistedTokens + promptTokenEstimate >= threshold - TRANSCRIPT_OUTPUT_READ_BUFFER_TOKENS;
+3553: 	const maxActiveTranscriptBytes = resolveMaxActiveTranscriptBytes(params.cfg);
+3554: 	const shouldCheckActiveTranscriptBytes = typeof maxActiveTranscriptBytes === "number";
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+3584: 		entry,
+3585: 		tokenCount: tokenCountForCompaction,
+3586: 		contextWindowTokens,
+3587: 		reserveTokensFloor,
+3588: 		softThresholdTokens,
+3589: 		minimumThresholdTokens: serverCompactionThreshold
+3590: 	}) || shouldCompactByTranscriptBytes)) return entry ?? params.sessionEntry;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+3746: 	const persistedPromptTokensRaw = entry?.totalTokens;
+3747: 	const persistedPromptTokens = typeof persistedPromptTokensRaw === "number" && Number.isFinite(persistedPromptTokensRaw) && persistedPromptTokensRaw > 0 ? persistedPromptTokensRaw : void 0;
+3748: 	const hasFreshPersistedPromptTokens = typeof persistedPromptTokens === "number" && entry?.totalTokensFresh === true;
+3749: 	const flushThreshold = contextWindowTokens - memoryFlushPlan.reserveTokensFloor - memoryFlushPlan.softThresholdTokens;
+3750: 	const shouldReadTranscriptForOutput = canAttemptFlush && entry && hasFreshPersistedPromptTokens && typeof promptTokenEstimate === "number" && Number.isFinite(promptTokenEstimate) && flushThreshold > 0 && (persistedPromptTokens ?? 0) + promptTokenEstimate >= flushThreshold - TRANSCRIPT_OUTPUT_READ_BUFFER_TOKENS;
+3751: 	const shouldReadTranscript = Boolean(canAttemptFlush && entry && (!hasFreshPersistedPromptTokens || shouldReadTranscriptForOutput));
+3752: 	const forceFlushTranscriptBytes = memoryFlushPlan.forceFlushTranscriptBytes;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-runner.runtime-DtdxZiBX.js
+3800: 		entry,
+3801: 		tokenCount: tokenCountForFlush,
+3802: 		contextWindowTokens,
+3803: 		reserveTokensFloor: memoryFlushPlan.reserveTokensFloor,
+3804: 		softThresholdTokens: memoryFlushPlan.softThresholdTokens
+3805: 	}) || shouldForceFlushByTranscriptSize && entry != null && !hasAlreadyFlushedForCurrentCompaction(entry))) return {
+3806: 		sessionEntry: entry ?? params.sessionEntry,
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/compact-D6IIZpVq.js
+270: }
+271: function readCompactionOverrideEntries(params) {
+272: 	const entries = [];
+273: 	const defaultCompaction = readRecord(readRecord(params.config?.agents)?.defaults)?.compaction;
+274: 	const defaultRecord = readRecord(defaultCompaction);
+275: 	if (defaultRecord) entries.push({
+276: 		path: "agents.defaults",
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/sql-DQmPy5AS.js
+1: var sql_default = [Object.freeze(JSON.parse("{\"displayName\":\"SQL\",\"name\":\"sql\",\"patterns\":[{\"match\":\"((?<!@)@)\\\\b(\\\\w+)\\\\b\",\"name\":\"text.variable\"},{\"match\":\"(\\\\[)[^]]*(])\",\"name\":\"text.bracketed\"},{\"include\":\"#comments\"},{\"captures\":{\"1\":{\"name\":\"keyword.other.create.sql\"},\"2\":{\"name\":\"keyword.other.sql\"},\"5\":{\"name\":\"entity.name.function.sql\"}},\"match\":\"(?i:^\\\\s*(create(?:\\\\s+or\\\\s+replace)?)\\\\s+(aggregate|conversion|database|domain|function|group|(unique\\\\s+)?index|language|operator class|operator|rule|schema|sequence|table|tablespace|trigger|type|user|view)\\\\s+)([\\\"'`]?)(\\\\w+)\\\\4\",\"name\":\"meta.create.sql\"},{\"captures\":{\"1\":{\"name\":\"keyword.other.create.sql\"},\"2\":{\"name\":\"keyword.other.sql\"}},\"match\":\"(?i:^\\\\s*(drop)\\\\s+(aggregate|conversion|database|domain|function|group|index|language|operator class|operator|rule|schema|sequence|table|tablespace|trigger|type|user|view))\",\"name\":\"meta.drop.sql\"},{\"captures\":{\"1\":{\"name\":\"keyword.other.create.sql\"},\"2\":{\"name\":\"keyword.other.table.sql\"},\"3\":{\"name\":\"entity.name.function.sql\"},\"4\":{\"name\":\"keyword.other.cascade.sql\"}},\"match\":\"(?i:\\\\s*(drop)\\\\s+(table)\\\\s+(\\\\w+)(\\\\s+cascade)?\\\\b)\",\"name\":\"meta.drop.sql\"},{\"captures\":{\"1\":{\"name\":\"keyword.other.create.sql\"},\"2\":{\
+2: //#endregion
+3: export { sql_default as t };
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/thread-lifecycle-DSMv62L1.js
+1136: }
+1137: /** Reads Codex projection reserve tokens from compaction config. */
+1138: function resolveCodexContextEngineProjectionReserveTokens(params) {
+1139: 	const compaction = asRecord(asRecord(asRecord(params.config)?.agents)?.defaults)?.compaction;
+1140: 	const configuredReserveTokens = toNonNegativeInt(asRecord(compaction)?.reserveTokens);
+1141: 	const configuredReserveTokensFloor = toNonNegativeInt(asRecord(compaction)?.reserveTokensFloor);
+1142: 	if (configuredReserveTokens !== void 0) return Math.max(configuredReserveTokens, configuredReserveTokensFloor ?? 2e4);
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/thread-lifecycle-DSMv62L1.js
+1137: /** Reads Codex projection reserve tokens from compaction config. */
+1138: function resolveCodexContextEngineProjectionReserveTokens(params) {
+1139: 	const compaction = asRecord(asRecord(asRecord(params.config)?.agents)?.defaults)?.compaction;
+1140: 	const configuredReserveTokens = toNonNegativeInt(asRecord(compaction)?.reserveTokens);
+1141: 	const configuredReserveTokensFloor = toNonNegativeInt(asRecord(compaction)?.reserveTokensFloor);
+1142: 	if (configuredReserveTokens !== void 0) return Math.max(configuredReserveTokens, configuredReserveTokensFloor ?? 2e4);
+1143: 	if (configuredReserveTokensFloor !== void 0) return configuredReserveTokensFloor;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/thread-lifecycle-DSMv62L1.js
+1138: function resolveCodexContextEngineProjectionReserveTokens(params) {
+1139: 	const compaction = asRecord(asRecord(asRecord(params.config)?.agents)?.defaults)?.compaction;
+1140: 	const configuredReserveTokens = toNonNegativeInt(asRecord(compaction)?.reserveTokens);
+1141: 	const configuredReserveTokensFloor = toNonNegativeInt(asRecord(compaction)?.reserveTokensFloor);
+1142: 	if (configuredReserveTokens !== void 0) return Math.max(configuredReserveTokens, configuredReserveTokensFloor ?? 2e4);
+1143: 	if (configuredReserveTokensFloor !== void 0) return configuredReserveTokensFloor;
+1144: }
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/codex-route-warnings-Dhx0h1PR.js
+323: 			}),
+324: 			inheritedModelRef: defaultModelRef,
+325: 			inheritedCompaction: defaultCompaction,
+326: 			inheritedCompactionPath: "agents.defaults.compaction"
+327: 		}));
+328: 	}
+329: 	return dedupeLegacyLosslessCompactionConfigs(hits);
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/codex-route-warnings-Dhx0h1PR.js
+364: 			}),
+365: 			inheritedModelRef: defaultModelRef,
+366: 			inheritedCompaction: defaultCompaction,
+367: 			inheritedCompactionPath: "agents.defaults.compaction"
+368: 		}));
+369: 	}
+370: 	return dedupeUnsupportedCompactionOverrides(hits);
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/codex-route-warnings-Dhx0h1PR.js
+1508: 				defaultsRuntime
+1509: 			}),
+1510: 			inheritedModelRef,
+1511: 			inheritedCompaction: nextConfig.agents?.defaults?.compaction,
+1512: 			inheritedCompactionPath: "agents.defaults.compaction",
+1513: 			rewriteModelsMap: true,
+1514: 			preserveUnsupportedCompactionPaths: preservedLegacyLosslessCompactionPaths,
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/codex-route-warnings-Dhx0h1PR.js
+1509: 			}),
+1510: 			inheritedModelRef,
+1511: 			inheritedCompaction: nextConfig.agents?.defaults?.compaction,
+1512: 			inheritedCompactionPath: "agents.defaults.compaction",
+1513: 			rewriteModelsMap: true,
+1514: 			preserveUnsupportedCompactionPaths: preservedLegacyLosslessCompactionPaths,
+1515: 			rewrittenInheritedCompactionModels,
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/codex-route-warnings-Dhx0h1PR.js
+1677: 		hits: disabledCodexPluginHits,
+1678: 		blockedOutsideEntry: codexPluginIsBlockedOutsideEntry(params.cfg)
+1679: 	}));
+1680: 	const preservedSharedDefaultHits = unsupportedCompactionOverrides.filter((hit) => hit.path.startsWith("agents.defaults.compaction.") && sharedDefaultCompactionConsumers[hit.key]);
+1681: 	const fixableHits = unsupportedCompactionOverrides.filter((hit) => !hit.path.startsWith("agents.defaults.compaction.") || !sharedDefaultCompactionConsumers[hit.key]);
+1682: 	if (preservedSharedDefaultHits.length > 0) warnings.push(formatUnsupportedCompactionWarning({
+1683: 		hits: preservedSharedDefaultHits,
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/codex-route-warnings-Dhx0h1PR.js
+1678: 		blockedOutsideEntry: codexPluginIsBlockedOutsideEntry(params.cfg)
+1679: 	}));
+1680: 	const preservedSharedDefaultHits = unsupportedCompactionOverrides.filter((hit) => hit.path.startsWith("agents.defaults.compaction.") && sharedDefaultCompactionConsumers[hit.key]);
+1681: 	const fixableHits = unsupportedCompactionOverrides.filter((hit) => !hit.path.startsWith("agents.defaults.compaction.") || !sharedDefaultCompactionConsumers[hit.key]);
+1682: 	if (preservedSharedDefaultHits.length > 0) warnings.push(formatUnsupportedCompactionWarning({
+1683: 		hits: preservedSharedDefaultHits,
+1684: 		fixHint: "- Move or remove shared `agents.defaults.compaction.model/provider` settings manually; doctor keeps shared defaults while non-Codex agents can inherit them."
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/codex-route-warnings-Dhx0h1PR.js
+1681: 	const fixableHits = unsupportedCompactionOverrides.filter((hit) => !hit.path.startsWith("agents.defaults.compaction.") || !sharedDefaultCompactionConsumers[hit.key]);
+1682: 	if (preservedSharedDefaultHits.length > 0) warnings.push(formatUnsupportedCompactionWarning({
+1683: 		hits: preservedSharedDefaultHits,
+1684: 		fixHint: "- Move or remove shared `agents.defaults.compaction.model/provider` settings manually; doctor keeps shared defaults while non-Codex agents can inherit them."
+1685: 	}));
+1686: 	if (fixableHits.length > 0) warnings.push(formatUnsupportedCompactionWarning({
+1687: 		hits: fixableHits,
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/zod-schema-O9ml_nmo.js
+201: 	compaction: object({
+202: 		mode: union([literal("default"), literal("safeguard")]).optional(),
+203: 		provider: string().optional(),
+204: 		reserveTokens: number().int().nonnegative().optional(),
+205: 		keepRecentTokens: number().int().positive().optional(),
+206: 		reserveTokensFloor: number().int().nonnegative().optional(),
+207: 		maxHistoryShare: number().min(.1).max(.9).optional(),
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/zod-schema-O9ml_nmo.js
+202: 		mode: union([literal("default"), literal("safeguard")]).optional(),
+203: 		provider: string().optional(),
+204: 		reserveTokens: number().int().nonnegative().optional(),
+205: 		keepRecentTokens: number().int().positive().optional(),
+206: 		reserveTokensFloor: number().int().nonnegative().optional(),
+207: 		maxHistoryShare: number().min(.1).max(.9).optional(),
+208: 		customInstructions: string().optional(),
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/zod-schema-O9ml_nmo.js
+203: 		provider: string().optional(),
+204: 		reserveTokens: number().int().nonnegative().optional(),
+205: 		keepRecentTokens: number().int().positive().optional(),
+206: 		reserveTokensFloor: number().int().nonnegative().optional(),
+207: 		maxHistoryShare: number().min(.1).max(.9).optional(),
+208: 		customInstructions: string().optional(),
+209: 		identifierPolicy: union([
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/compact-DLB4d8IL.js
+1156: 					if (params.trigger === "manual") try {
+1157: 						const hardenedBoundary = await hardenManualCompactionBoundary({
+1158: 							sessionFile: params.sessionFile,
+1159: 							preserveRecentTail: typeof params.config?.agents?.defaults?.compaction?.keepRecentTokens === "number"
+1160: 						});
+1161: 						if (hardenedBoundary.applied) {
+1162: 							effectiveFirstKeptEntryId = hardenedBoundary.firstKeptEntryId ?? effectiveFirstKeptEntryId;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/context-window-guard-CWGwpEXd.js
+78: 	if (!resolveContextWindowGuardHint({ runtimeBaseUrl: params.runtimeBaseUrl }).likelySelfHosted) return base;
+79: 	if (params.guard.source === "agentContextTokens") return `${base}; OpenClaw is capped by agents.defaults.contextTokens, so raise that cap if you want to use more of the model context window`;
+80: 	if (params.guard.source === "modelsConfig") return `${base}; OpenClaw is using the configured model context limit for this model, so raise contextWindow/contextTokens if it is set too low`;
+81: 	return `${base}; local/self-hosted runs work best at ${params.guard.warnBelowTokens}+ tokens and may show weaker tool use or more compaction until the server/model context limit is raised`;
+82: }
+83: /** Format a blocking context-window guard message. */
+84: function formatContextWindowBlockMessage(params) {
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/run-attempt-CXZNKJ6y.js
+4978: 	return Math.floor(value);
+4979: }
+4980: function readCompactionConfig(config) {
+4981: 	return isJsonObject(config?.agents?.defaults?.compaction) ? config.agents.defaults.compaction : void 0;
+4982: }
+4983: function resolveCodexAppServerNativeThreadReserveTokens(config) {
+4984: 	const compaction = readCompactionConfig(config);
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/run-attempt-CXZNKJ6y.js
+4981: 	return isJsonObject(config?.agents?.defaults?.compaction) ? config.agents.defaults.compaction : void 0;
+4982: }
+4983: function resolveCodexAppServerNativeThreadReserveTokens(config) {
+4984: 	const compaction = readCompactionConfig(config);
+4985: 	const reserveTokens = toNonNegativeInt(compaction?.reserveTokens);
+4986: 	const reserveTokensFloor = toNonNegativeInt(compaction?.reserveTokensFloor);
+4987: 	if (reserveTokens !== void 0) return Math.max(reserveTokens, reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS);
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/run-attempt-CXZNKJ6y.js
+4982: }
+4983: function resolveCodexAppServerNativeThreadReserveTokens(config) {
+4984: 	const compaction = readCompactionConfig(config);
+4985: 	const reserveTokens = toNonNegativeInt(compaction?.reserveTokens);
+4986: 	const reserveTokensFloor = toNonNegativeInt(compaction?.reserveTokensFloor);
+4987: 	if (reserveTokens !== void 0) return Math.max(reserveTokens, reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS);
+4988: 	return reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/run-attempt-CXZNKJ6y.js
+4983: function resolveCodexAppServerNativeThreadReserveTokens(config) {
+4984: 	const compaction = readCompactionConfig(config);
+4985: 	const reserveTokens = toNonNegativeInt(compaction?.reserveTokens);
+4986: 	const reserveTokensFloor = toNonNegativeInt(compaction?.reserveTokensFloor);
+4987: 	if (reserveTokens !== void 0) return Math.max(reserveTokens, reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS);
+4988: 	return reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS;
+4989: }
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/run-attempt-CXZNKJ6y.js
+4984: 	const compaction = readCompactionConfig(config);
+4985: 	const reserveTokens = toNonNegativeInt(compaction?.reserveTokens);
+4986: 	const reserveTokensFloor = toNonNegativeInt(compaction?.reserveTokensFloor);
+4987: 	if (reserveTokens !== void 0) return Math.max(reserveTokens, reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS);
+4988: 	return reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS;
+4989: }
+4990: function resolveCodexAppServerNativeThreadTokenFuse(params) {
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/run-attempt-CXZNKJ6y.js
+4985: 	const reserveTokens = toNonNegativeInt(compaction?.reserveTokens);
+4986: 	const reserveTokensFloor = toNonNegativeInt(compaction?.reserveTokensFloor);
+4987: 	if (reserveTokens !== void 0) return Math.max(reserveTokens, reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS);
+4988: 	return reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS;
+4989: }
+4990: function resolveCodexAppServerNativeThreadTokenFuse(params) {
+4991: 	const projectedTurnTokens = typeof params.projectedTurnTokens === "number" && Number.isFinite(params.projectedTurnTokens) && params.projectedTurnTokens > 0 ? Math.floor(params.projectedTurnTokens) : 0;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+2: import { n as resolveProviderEndpoint } from "./provider-attribution-ClnBK9_9.js";
+3: import { n as MIN_PROMPT_BUDGET_TOKENS, t as MIN_PROMPT_BUDGET_RATIO } from "./agent-compaction-constants-BHnSZLzH.js";
+4: //#region src/agents/agent-settings.ts
+5: /** Applies agent compaction settings and small-context overflow guards. */
+6: const DEFAULT_AGENT_COMPACTION_RESERVE_TOKENS_FLOOR = 2e4;
+7: /** Resolves the configured reserve-token floor for agent compaction. */
+8: function resolveCompactionReserveTokensFloor(cfg) {
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+4: //#region src/agents/agent-settings.ts
+5: /** Applies agent compaction settings and small-context overflow guards. */
+6: const DEFAULT_AGENT_COMPACTION_RESERVE_TOKENS_FLOOR = 2e4;
+7: /** Resolves the configured reserve-token floor for agent compaction. */
+8: function resolveCompactionReserveTokensFloor(cfg) {
+9: 	const raw = cfg?.agents?.defaults?.compaction?.reserveTokensFloor;
+10: 	if (typeof raw === "number" && Number.isFinite(raw) && raw >= 0) return Math.floor(raw);
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+6: const DEFAULT_AGENT_COMPACTION_RESERVE_TOKENS_FLOOR = 2e4;
+7: /** Resolves the configured reserve-token floor for agent compaction. */
+8: function resolveCompactionReserveTokensFloor(cfg) {
+9: 	const raw = cfg?.agents?.defaults?.compaction?.reserveTokensFloor;
+10: 	if (typeof raw === "number" && Number.isFinite(raw) && raw >= 0) return Math.floor(raw);
+11: 	return DEFAULT_AGENT_COMPACTION_RESERVE_TOKENS_FLOOR;
+12: }
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+18: 	if (typeof value !== "number" || !Number.isFinite(value) || value <= 0) return;
+19: 	return Math.floor(value);
+20: }
+21: /** Applies configured compaction reserve/keep-recent settings to an agent settings manager. */
+22: function applyAgentCompactionSettingsFromConfig(params) {
+23: 	const currentReserveTokens = params.settingsManager.getCompactionReserveTokens();
+24: 	const currentKeepRecentTokens = params.settingsManager.getCompactionKeepRecentTokens();
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+22: function applyAgentCompactionSettingsFromConfig(params) {
+23: 	const currentReserveTokens = params.settingsManager.getCompactionReserveTokens();
+24: 	const currentKeepRecentTokens = params.settingsManager.getCompactionKeepRecentTokens();
+25: 	const compactionCfg = params.cfg?.agents?.defaults?.compaction;
+26: 	const configuredReserveTokens = toNonNegativeInt(compactionCfg?.reserveTokens);
+27: 	const configuredKeepRecentTokens = toPositiveInt(compactionCfg?.keepRecentTokens);
+28: 	let reserveTokensFloor = resolveCompactionReserveTokensFloor(params.cfg);
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+23: 	const currentReserveTokens = params.settingsManager.getCompactionReserveTokens();
+24: 	const currentKeepRecentTokens = params.settingsManager.getCompactionKeepRecentTokens();
+25: 	const compactionCfg = params.cfg?.agents?.defaults?.compaction;
+26: 	const configuredReserveTokens = toNonNegativeInt(compactionCfg?.reserveTokens);
+27: 	const configuredKeepRecentTokens = toPositiveInt(compactionCfg?.keepRecentTokens);
+28: 	let reserveTokensFloor = resolveCompactionReserveTokensFloor(params.cfg);
+29: 	let maxReserveTokens;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+24: 	const currentKeepRecentTokens = params.settingsManager.getCompactionKeepRecentTokens();
+25: 	const compactionCfg = params.cfg?.agents?.defaults?.compaction;
+26: 	const configuredReserveTokens = toNonNegativeInt(compactionCfg?.reserveTokens);
+27: 	const configuredKeepRecentTokens = toPositiveInt(compactionCfg?.keepRecentTokens);
+28: 	let reserveTokensFloor = resolveCompactionReserveTokensFloor(params.cfg);
+29: 	let maxReserveTokens;
+30: 	const contextTokenBudget = toPositiveInt(params.contextTokenBudget);
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+25: 	const compactionCfg = params.cfg?.agents?.defaults?.compaction;
+26: 	const configuredReserveTokens = toNonNegativeInt(compactionCfg?.reserveTokens);
+27: 	const configuredKeepRecentTokens = toPositiveInt(compactionCfg?.keepRecentTokens);
+28: 	let reserveTokensFloor = resolveCompactionReserveTokensFloor(params.cfg);
+29: 	let maxReserveTokens;
+30: 	const contextTokenBudget = toPositiveInt(params.contextTokenBudget);
+31: 	if (contextTokenBudget !== void 0) {
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+31: 	if (contextTokenBudget !== void 0) {
+32: 		const minPromptBudget = Math.min(MIN_PROMPT_BUDGET_TOKENS, Math.max(1, Math.floor(contextTokenBudget * MIN_PROMPT_BUDGET_RATIO)));
+33: 		maxReserveTokens = Math.max(0, contextTokenBudget - minPromptBudget);
+34: 		reserveTokensFloor = Math.min(reserveTokensFloor, maxReserveTokens);
+35: 	}
+36: 	let targetReserveTokens = Math.max(configuredReserveTokens ?? currentReserveTokens, reserveTokensFloor);
+37: 	if (maxReserveTokens !== void 0) targetReserveTokens = Math.min(targetReserveTokens, maxReserveTokens);
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+33: 		maxReserveTokens = Math.max(0, contextTokenBudget - minPromptBudget);
+34: 		reserveTokensFloor = Math.min(reserveTokensFloor, maxReserveTokens);
+35: 	}
+36: 	let targetReserveTokens = Math.max(configuredReserveTokens ?? currentReserveTokens, reserveTokensFloor);
+37: 	if (maxReserveTokens !== void 0) targetReserveTokens = Math.min(targetReserveTokens, maxReserveTokens);
+38: 	const targetKeepRecentTokens = configuredKeepRecentTokens ?? currentKeepRecentTokens;
+39: 	const overrides = {};
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+37: 	if (maxReserveTokens !== void 0) targetReserveTokens = Math.min(targetReserveTokens, maxReserveTokens);
+38: 	const targetKeepRecentTokens = configuredKeepRecentTokens ?? currentKeepRecentTokens;
+39: 	const overrides = {};
+40: 	if (targetReserveTokens !== currentReserveTokens) overrides.reserveTokens = targetReserveTokens;
+41: 	if (targetKeepRecentTokens !== currentKeepRecentTokens) overrides.keepRecentTokens = targetKeepRecentTokens;
+42: 	const didOverride = Object.keys(overrides).length > 0;
+43: 	if (didOverride) params.settingsManager.applyOverrides({ compaction: overrides });
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+38: 	const targetKeepRecentTokens = configuredKeepRecentTokens ?? currentKeepRecentTokens;
+39: 	const overrides = {};
+40: 	if (targetReserveTokens !== currentReserveTokens) overrides.reserveTokens = targetReserveTokens;
+41: 	if (targetKeepRecentTokens !== currentKeepRecentTokens) overrides.keepRecentTokens = targetKeepRecentTokens;
+42: 	const didOverride = Object.keys(overrides).length > 0;
+43: 	if (didOverride) params.settingsManager.applyOverrides({ compaction: overrides });
+44: 	return {
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+40: 	if (targetReserveTokens !== currentReserveTokens) overrides.reserveTokens = targetReserveTokens;
+41: 	if (targetKeepRecentTokens !== currentKeepRecentTokens) overrides.keepRecentTokens = targetKeepRecentTokens;
+42: 	const didOverride = Object.keys(overrides).length > 0;
+43: 	if (didOverride) params.settingsManager.applyOverrides({ compaction: overrides });
+44: 	return {
+45: 		didOverride,
+46: 		compaction: {
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+43: 	if (didOverride) params.settingsManager.applyOverrides({ compaction: overrides });
+44: 	return {
+45: 		didOverride,
+46: 		compaction: {
+47: 			reserveTokens: targetReserveTokens,
+48: 			keepRecentTokens: targetKeepRecentTokens
+49: 		}
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+44: 	return {
+45: 		didOverride,
+46: 		compaction: {
+47: 			reserveTokens: targetReserveTokens,
+48: 			keepRecentTokens: targetKeepRecentTokens
+49: 		}
+50: 	};
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/agent-settings-axYuScuh.js
+45: 		didOverride,
+46: 		compaction: {
+47: 			reserveTokens: targetReserveTokens,
+48: 			keepRecentTokens: targetKeepRecentTokens
+49: 		}
+50: 	};
+51: }
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-BuOFpc7K.js
+3711: * Session protocol schemas.
+3712: *
+3713: * These requests and results cover transcript discovery, lifecycle control,
+3714: * compaction checkpoints, per-session plugin state, and usage reporting. The
+3715: * schemas are shared by dashboard, CLI, ACP, and gateway RPC callers.
+3716: */
+3717: /** Reason a compaction checkpoint was created. */
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-BuOFpc7K.js
+3714: * compaction checkpoints, per-session plugin state, and usage reporting. The
+3715: * schemas are shared by dashboard, CLI, ACP, and gateway RPC callers.
+3716: */
+3717: /** Reason a compaction checkpoint was created. */
+3718: const SessionCompactionCheckpointReasonSchema = Type.Union([
+3719: 	Type.Literal("manual"),
+3720: 	Type.Literal("auto-threshold"),
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-BuOFpc7K.js
+3721: 	Type.Literal("overflow-retry"),
+3722: 	Type.Literal("timeout-retry")
+3723: ]);
+3724: /** Start/end event emitted while a session compaction operation runs. */
+3725: const SessionOperationEventSchema = Type.Object({
+3726: 	operationId: NonEmptyString,
+3727: 	operation: Type.Literal("compact"),
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-BuOFpc7K.js
+3732: 	completed: Type.Optional(Type.Boolean()),
+3733: 	reason: Type.Optional(Type.String())
+3734: }, { additionalProperties: false });
+3735: /** Reference to the transcript location before or after compaction. */
+3736: const SessionCompactionTranscriptReferenceSchema = Type.Object({
+3737: 	sessionId: NonEmptyString,
+3738: 	sessionFile: Type.Optional(NonEmptyString),
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-BuOFpc7K.js
+3739: 	leafId: Type.Optional(NonEmptyString),
+3740: 	entryId: Type.Optional(NonEmptyString)
+3741: }, { additionalProperties: false });
+3742: /** Stored compaction checkpoint metadata for branching or restoring a session. */
+3743: const SessionCompactionCheckpointSchema = Type.Object({
+3744: 	checkpointId: NonEmptyString,
+3745: 	sessionKey: NonEmptyString,
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-BuOFpc7K.js
+4029: 	*/
+4030: 	archivedOnly: Type.Optional(Type.Boolean())
+4031: }, { additionalProperties: false });
+4032: /** Requests manual compaction for a session transcript. */
+4033: const SessionsCompactParamsSchema = Type.Object({
+4034: 	key: NonEmptyString,
+4035: 	agentId: Type.Optional(NonEmptyString),
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-BuOFpc7K.js
+4035: 	agentId: Type.Optional(NonEmptyString),
+4036: 	maxLines: Type.Optional(Type.Integer({ minimum: 1 }))
+4037: }, { additionalProperties: false });
+4038: /** Lists compaction checkpoints for one session. */
+4039: const SessionsCompactionListParamsSchema = Type.Object({
+4040: 	key: NonEmptyString,
+4041: 	agentId: Type.Optional(NonEmptyString)
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-BuOFpc7K.js
+4040: 	key: NonEmptyString,
+4041: 	agentId: Type.Optional(NonEmptyString)
+4042: }, { additionalProperties: false });
+4043: /** Reads one compaction checkpoint by id. */
+4044: const SessionsCompactionGetParamsSchema = Type.Object({
+4045: 	key: NonEmptyString,
+4046: 	agentId: Type.Optional(NonEmptyString),
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-BuOFpc7K.js
+4046: 	agentId: Type.Optional(NonEmptyString),
+4047: 	checkpointId: NonEmptyString
+4048: }, { additionalProperties: false });
+4049: /** Creates a new branch from a compaction checkpoint. */
+4050: const SessionsCompactionBranchParamsSchema = Type.Object({
+4051: 	key: NonEmptyString,
+4052: 	agentId: Type.Optional(NonEmptyString),
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-BuOFpc7K.js
+4052: 	agentId: Type.Optional(NonEmptyString),
+4053: 	checkpointId: NonEmptyString
+4054: }, { additionalProperties: false });
+4055: /** Restores an existing session to a compaction checkpoint. */
+4056: const SessionsCompactionRestoreParamsSchema = Type.Object({
+4057: 	key: NonEmptyString,
+4058: 	agentId: Type.Optional(NonEmptyString),
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-BuOFpc7K.js
+4058: 	agentId: Type.Optional(NonEmptyString),
+4059: 	checkpointId: NonEmptyString
+4060: }, { additionalProperties: false });
+4061: /** List response for session compaction checkpoints. */
+4062: const SessionsCompactionListResultSchema = Type.Object({
+4063: 	ok: Type.Literal(true),
+4064: 	key: NonEmptyString,
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/schema-BuOFpc7K.js
+4064: 	key: NonEmptyString,
+4065: 	checkpoints: Type.Array(SessionCompactionCheckpointSchema)
+4066: }, { additionalProperties: false });
+4067: /** Get response for a single compaction checkpoint. */
+4068: const SessionsCompactionGetResultSchema = Type.Object({
+4069: 	ok: Type.Literal(true),
+4070: 	key: NonEmptyString,
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/extensions/memory-core/index.js
+78: 	if (defaults?.enabled === false) return null;
+79: 	const softThresholdTokens = normalizeNonNegativeInt(defaults?.softThresholdTokens) ?? 4e3;
+80: 	const forceFlushTranscriptBytes = parseNonNegativeByteSize(defaults?.forceFlushTranscriptBytes) ?? 2097152;
+81: 	const reserveTokensFloor = normalizeNonNegativeInt(cfg?.agents?.defaults?.compaction?.reserveTokensFloor) ?? 2e4;
+82: 	const { timeLine, userTimezone } = resolveCronStyleNow(cfg ?? {}, nowMs);
+83: 	const dateStamp = formatDateStampInTimezone(nowMs, userTimezone);
+84: 	const relativePath = `memory/${dateStamp}.md`;
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/extensions/memory-core/index.js
+87: 	return {
+88: 		softThresholdTokens,
+89: 		forceFlushTranscriptBytes,
+90: 		reserveTokensFloor,
+91: 		model: defaults?.model?.trim() || void 0,
+92: 		prompt: appendCurrentTimeLine(promptBase.replaceAll("YYYY-MM-DD", dateStamp), timeLine),
+93: 		systemPrompt: systemPrompt.replaceAll("YYYY-MM-DD", dateStamp),
+---
+
+FILE=/home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/control-ui/assets/nl-CkPvDzr_.js
+1: var e={common:{health:`Status`,ok:`OK`,yes:`Ja`,no:`Nee`,active:`Actief`,loading:`Laden…`,refreshing:`Vernieuwen…`,online:`Online`,offline:`Offline`,connect:`Verbinden`,connected:`Verbonden`,refresh:`Vernieuwen`,reload:`Opnieuw laden`,reset:`Opnieuw instellen`,probe:`Testen`,call:`Aanroepen`,confirm:`Bevestigen`,cancel:`Annuleren`,next:`Volgende`,back:`Terug`,create:`Maken`,copy:`Kopiëren`,copied:`Gekopieerd!`,copyCode:`Code kopiëren`,delete:`Verwijderen`,dismiss:`Sluiten`,unselect:`Deselecteren`,enabled:`Ingeschakeld`,disabled:`Uitgeschakeld`,none:`geen`,na:`n.v.t.`,never:`nooit`,configured:`Geconfigureerd`,running:`Actief`,linked:`Gekoppeld`,mode:`Modus`,system:`Systeem`,light:`Licht`,dark:`Donker`,baseUrl:`Basis-URL`,lastStart:`Laatste start`,lastProbe:`Laatste probe`,lastInbound:`Laatste inkomend`,lastConnect:`Laatste verbinding`,lastMessage:`Laatste bericht`,authAge:`Auth-leeftijd`,credential:`Referentie`,audience:`Doelgroep`,publicKey:`Openbare sleutel`,probeOk:`Probe ok`,probeFailed:`Probe mislukt`,reloadConfig:`Config opnieuw laden`,loadConfig:`Config laden`,loadApprovals:`Goedkeuringen laden`,settingsSections:`Instellingensecties`,version:`Versie`,docs:`Docs`,theme:`Thema`,colorMode:`Kleurmodus`,colorModeOption:`Kleurmodus: {mode}`,resources:`Bronnen`,search:`Zoeken`,save:`Opslaan`,saving:`Opslaan…`,saveAndPublish:`Opslaan en publiceren`,importing:`Importeren…`,importF
+2: 
+3: Verwijderen zonder snapshot?`},sessionsView:{title:`Sessies`,subtitle:`Actieve sessiesleutels en overrides per sessie.`,store:`Opslag: {path}`,active:`Actief`,limit:`Limiet`,filters:`Filters`,sourceFilters:`Filters voor sessiebron`,global:`Globaal`,unknown:`Onbekend`,archivedOnly:`Alleen gearchiveerd`,activeTooltip:`Bijgewerkt in de afgelopen {count} minuten.`,limitTooltip:`Maximaal aantal te laden sessies.`,globalTooltip:`Globale sessies opnemen.`,unknownTooltip:`Onbekende sessies opnemen.`,archivedOnlyTooltip:`Toon alleen gearchiveerde sessies.`,liveCount:`{count} live`,minutesPlaceholder:`min`,searchPlaceholder:`Filter op sleutel, agent, label, type…`,selected:`{count} geselecteerd`,deleteSelected:`Verwijderen`,selectAllOnPage:`Alles op pagina selecteren`,selectSession:`Sessie selecteren`,optionalPlaceholder:`(optioneel)`,key:`Sleutel`,label:`Label`,kind:`Type`,updated:`Bijgewerkt`,tokens:`Tokens`,compaction:`Compactie`,goal:`Doel`,goalNote:`Doelnotitie`,thinking:`Denken`,fast:`Snel`,verbose:`Uitgebreid`,reasoning:`Redenering`,actions:`Acties`,addToWorkboard:`Toevoegen aan Workboard`,openWorkboardCard:`Workboard-kaart openen`,noSessions:`Geen sessies gevonden.`,noSessionsMatchFilters:`Geen sessies komen overeen met je filters.`,showAll:`Alles weergeven`,inherit:`overnemen`,defaultOption:`Standaard ({value})`,offExplicit:`uit (expliciet)`,auto:`auto`,on:`aan`,off:`uit`,full:`
+4: //# sourceMappingURL=nl-CkPvDzr_.js.map
+---

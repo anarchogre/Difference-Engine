@@ -1,0 +1,33 @@
+DIFFERENCE ENGINE INGESTER CLASSIFICATION
+Generated: 2026-08-04T07:51:17-05:00
+Root: /data/data/com.termux/files/home/storage/shared/DifferenceEngine
+
+=== DRIFT ===
+Stray top-level '{' present: yes
+Git changed paths: 15
+Current remote: git@github.com:anarchogre/DifferenceEmgine.git
+
+=== INGESTION FILE COUNTS BY LOCATION ===
+ade                2
+Repository         0
+specifications     0
+scripts            0
+tools              0
+BOOTSTRAP          1
+DOCTRINE           0
+QUEUES             0
+SESSION            0
+
+=== ADE PYTHON PACKAGE COUNTS ===
+     32 ade/kernel/bootstrap_loader
+      2 ade/kernel/tests
+
+=== TEST FILES ===
+kernel/tests/test_bootstrap_loader.py
+
+=== QUEUE AND MISSION COUNTS ===
+QUEUES             0
+queue              2
+MISSIONS           0
+SESSION            0
+BOOTSTRAP          14

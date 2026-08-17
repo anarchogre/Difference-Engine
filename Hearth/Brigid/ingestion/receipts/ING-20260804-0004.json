@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:50.190229-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Architecture_Decision_Record_Specification_v0.1.md",
+  "original_name": "Architecture_Decision_Record_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0004",
+  "schema_version": "0.1.0",
+  "sha256": "a2c15e6a6366749255b174ad7bdc4c5564c852d13a4254b44b3f9af7d9f19e78",
+  "size_bytes": 3575,
+  "source_class": "manual_batch"
+}

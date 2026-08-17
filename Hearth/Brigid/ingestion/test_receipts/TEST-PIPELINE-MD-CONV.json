@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-14T00:24:18.937478-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine/workspace/operational/ingestion/markdown_conversation_test.md",
+  "original_name": "markdown_conversation_test.md",
+  "parser_status": "complete",
+  "receipt_id": "TEST-PIPELINE-MD-CONV",
+  "schema_version": "0.1.0",
+  "sha256": "8f26574c74310ef3fa9d6b0324f15472d73b9157043b9eb94d472b20b9c1667d",
+  "size_bytes": 27,
+  "source_class": "conversation"
+}

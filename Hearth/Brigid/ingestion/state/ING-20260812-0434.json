@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0434",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:40.016801-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Templates/ARC.template.md",
+    "original_name": "ARC.template.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0434",
+    "schema_version": "0.1.0",
+    "sha256": "9a11ef4b081b3259529927dae64ee85e0f1a22e7ca13664381e195a4a7426d20",
+    "size_bytes": 730,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

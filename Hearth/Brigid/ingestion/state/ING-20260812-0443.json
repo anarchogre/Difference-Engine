@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0443",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "text/markdown",
+    "observed_at": "2026-08-12T01:48:41.226908-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/BOOTSTRAP-Difference-Engine-Branch-IV-Operations-ADE-Execution.md",
+    "original_name": "BOOTSTRAP-Difference-Engine-Branch-IV-Operations-ADE-Execution.md",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0443",
+    "schema_version": "0.1.0",
+    "sha256": "9cea14f31bb33aa398afea98d6c9c5eaa704b5144c7d0329954f35b4e2b1c3ae",
+    "size_bytes": 13263,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

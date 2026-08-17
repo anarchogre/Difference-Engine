@@ -1,0 +1,10 @@
+status=CONVERSATION_BEARING_CANDIDATE
+file=Moving files in GitHub.pdf
+chat_id=6a647a8e-5558-83ea-a723-a2ae78eefa95
+chars=2598
+simple_dialogue_markers=0
+qualification_method=INDIVIDUAL_STRUCTURAL_INSPECTION
+human_turns=CONFIRMED
+assistant_turns=CONFIRMED
+evidence=explicit human question survives at line 12 followed immediately by substantive assistant response
+promotion=NONE

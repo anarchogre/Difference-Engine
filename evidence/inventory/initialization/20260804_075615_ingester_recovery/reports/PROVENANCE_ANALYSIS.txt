@@ -1,0 +1,51 @@
+===== TITLE =====
+# Provenance Specification
+
+===== HEADINGS =====
+# Provenance Specification
+# Purpose
+# Core Principles
+## Preserve Lineage
+## Immutable Origins
+## Complete Traceability
+## Transparent Derivation
+# Provenance Record
+# Lineage Relationships
+# Transformation Events
+# Asset Provenance
+# Queue Provenance
+# Canonical Promotion
+# Design Principles
+
+===== KEYWORDS =====
+1:# Provenance Specification
+9:# Purpose
+11:The Provenance Specification defines how lineage, traceability, and evidence relationships are preserved throughout the ingestion lifecycle.
+13:Every derived object SHALL retain a verifiable chain of custody to its originating artifact.
+19:## Preserve Lineage
+21:No derived object exists without a parent artifact.
+25:## Immutable Origins
+27:Original source material SHALL remain unchanged.
+31:## Complete Traceability
+35:- Source
+43:## Transparent Derivation
+45:Derived artifacts SHALL document how they were produced.
+49:# Provenance Record
+51:Each provenance record SHALL contain:
+53:- Provenance ID
+54:- Artifact ID
+55:- Parent Artifact ID
+56:- Source Location
+65:# Lineage Relationships
+67:Supported relationships include:
+70:- Derived From
+75:- References
+78:Relationships SHALL be directional.
+99:# Asset Provenance
+101:Assets inherit provenance from their parent artifact.
+106:- Parent Artifact ID
+112:# Queue Provenance
+116:- Originating Artifact
+128:- Source Artifact
+138:Evidence is permanent.
+140:Knowledge is derived.

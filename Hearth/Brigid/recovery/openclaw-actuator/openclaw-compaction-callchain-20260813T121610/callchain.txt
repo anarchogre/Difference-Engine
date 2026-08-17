@@ -1,0 +1,228 @@
+=== CONFIG ===
+Config path not found: agents.defaults.compaction. Run openclaw config validate to inspect config shape.
+{
+  "baseUrl": "http://127.0.0.1:18080/v1",
+  "apiKey": "__OPENCLAW_REDACTED__",
+  "api": "openai-completions",
+  "timeoutSeconds": 600,
+  "models": [
+    {
+      "id": "pan-qwen",
+      "name": "Pan Qwen 3.5 4B",
+      "reasoning": false,
+      "input": [
+        "text"
+      ],
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0
+      },
+      "contextWindow": 16384,
+      "maxTokens": 2048,
+      "compat": {
+        "supportsTools": true
+      },
+      "api": "openai-completions"
+    }
+  ]
+}
+
+=== RESPONSES TRANSPORT ===
+function stripInputItemStatuses(input) {
+	if (!Array.isArray(input)) return;
+	for (const item of input) if (item && typeof item === "object" && !Array.isArray(item)) delete item.status;
+}
+/** Resolve payload mutation policy for one OpenAI Responses-style model endpoint. */
+function resolveOpenAIResponsesPayloadPolicy(model, options = {}) {
+	const capabilities = resolveOpenAIResponsesPayloadCapabilities(model);
+	const storeMode = options.storeMode ?? "provider-policy";
+	const explicitStore = storeMode === "preserve" ? void 0 : storeMode === "disable" ? capabilities.supportsResponsesStoreField ? false : void 0 : capabilities.allowsResponsesStore ? true : void 0;
+	const isResponsesApi = isOpenAIResponsesApi(normalizeLowercaseString(model.api));
+	const shouldStripDisabledReasoningPayload = isResponsesApi && (!capabilities.usesKnownNativeOpenAIRoute || !supportsOpenAIReasoningEffort(model, "none"));
+	const shouldStripInputStatus = isResponsesApi && !capabilities.usesKnownNativeOpenAIRoute;
+	return {
+		allowsServiceTier: capabilities.allowsOpenAIServiceTier,
+		compactThreshold: parsePositiveInteger(options.extraParams?.responsesCompactThreshold) ?? resolveOpenAIResponsesCompactThreshold(model),
+		explicitStore,
+		shouldStripDisabledReasoningPayload,
+		shouldStripInputStatus,
+		shouldStripPromptCache: options.enablePromptCacheStripping === true && capabilities.shouldStripResponsesPromptCache,
+		shouldStripStore: explicitStore !== true && readCompatPayloadBoolean(model.compat, "supportsStore") === false && isResponsesApi,
+		useServerCompaction: options.enableServerCompaction === true && shouldEnableOpenAIResponsesServerCompaction(explicitStore, model.provider, options.extraParams)
+	};
+}
+/** Mutate a Responses request payload according to the resolved endpoint policy. */
+function applyOpenAIResponsesPayloadPolicy(payloadObj, policy) {
+	if (policy.explicitStore !== void 0) payloadObj.store = policy.explicitStore;
+
+=== THRESHOLD RESOLUTION ===
+function resolveResponsesServerCompactionThreshold(params) {
+	const provider = params.provider?.trim();
+	const modelId = params.modelId?.trim();
+	if (!provider || !modelId) return;
+	const legacyKey = legacyModelKey(provider, modelId);
+	const providerConfig = params.cfg?.models?.providers?.[provider];
+	const modelConfig = params.cfg?.agents?.defaults?.models?.[modelKey(provider, modelId)] ?? (legacyKey ? params.cfg?.agents?.defaults?.models?.[legacyKey] : void 0);
+	const providerModelConfig = providerConfig?.models?.find((entry) => entry.id === modelId);
+	const sources = [
+		asRecord(providerConfig?.params),
+		asRecord(providerModelConfig?.params),
+		asRecord(params.cfg?.agents?.defaults?.params),
+		asRecord(modelConfig?.params)
+	];
+	const serverCompaction = resolveBooleanParam(sources, "responsesServerCompaction");
+	if (!(provider === "openai" ? serverCompaction !== false : serverCompaction === true)) return;
+	return resolvePositiveIntegerParam(sources, "responsesCompactThreshold");
+}
+function resolveMemoryFlushGateState(params) {
+	if (!params.entry) return null;
+	const totalTokens = resolvePositiveTokenCount(params.tokenCount) ?? resolveFreshSessionTotalTokens(params.entry);
+	if (!totalTokens || totalTokens <= 0) return null;
+	const contextWindow = Math.max(1, Math.floor(params.contextWindowTokens));
+	const reserveTokens = Math.max(0, Math.floor(params.reserveTokensFloor));
+	const softThreshold = Math.max(0, Math.floor(params.softThresholdTokens));
+	const threshold = Math.max(0, contextWindow - reserveTokens - softThreshold, Math.floor(params.minimumThresholdTokens ?? 0));
+	if (threshold <= 0) return null;
+	return {
+		entry: params.entry,
+		totalTokens,
+		threshold
+	};
+}
+function shouldRunMemoryFlush(params) {
+	const state = resolveMemoryFlushGateState(params);
+	if (!state || state.totalTokens < state.threshold) return false;
+	if (hasAlreadyFlushedForCurrentCompaction(state.entry)) return false;
+	return true;
+}
+function shouldRunPreflightCompaction(params) {
+	const state = resolveMemoryFlushGateState(params);
+	return Boolean(state && state.totalTokens >= state.threshold);
+}
+/**
+* Returns true when a memory flush has already been performed for the current
+* compaction cycle. This prevents repeated flush runs within the same cycle —
+
+=== SERVER THRESHOLD CALLSITE ===
+	const transcriptUsageTokens = typeof freshPersistedTokens === "number" && !freshNeedsOutputRead ? void 0 : await estimatePromptTokensFromSessionTranscript({
+		sessionId: entry.sessionId,
+		sessionEntry: entry,
+		sessionKey: params.sessionKey ?? params.followupRun.run.sessionKey,
+		sessionFile: entry.sessionFile ?? params.followupRun.run.sessionFile,
+		storePath: params.storePath
+	});
+	const transcriptSizeSnapshot = shouldCheckActiveTranscriptBytes && transcriptUsageTokens?.transcriptByteSize === void 0 ? await readSessionLogSnapshot({
+		sessionId: entry.sessionId,
+		sessionEntry: entry.sessionFile || !params.followupRun.run.sessionFile ? entry : {
+			...entry,
+			sessionFile: params.followupRun.run.sessionFile
+		},
+		sessionKey: params.sessionKey ?? params.followupRun.run.sessionKey,
+		opts: { storePath: params.storePath },
+		includeByteSize: true,
+		includeUsage: false
+	}) : void 0;
+	const activeTranscriptBytes = transcriptUsageTokens?.transcriptByteSize ?? transcriptSizeSnapshot?.byteSize;
+	const shouldCompactByTranscriptBytes = typeof activeTranscriptBytes === "number" && typeof maxActiveTranscriptBytes === "number" && activeTranscriptBytes >= maxActiveTranscriptBytes;
+	const stalePersistedPromptTokens = hasPersistedTotalTokens && entry.totalTokensFresh !== false ? Math.floor(persistedTotalTokens) : void 0;
+	const transcriptPromptTokens = transcriptUsageTokens?.promptTokens;
+	const transcriptOutputTokens = transcriptUsageTokens?.outputTokens;
+	const usageProjectedTokenCount = typeof transcriptPromptTokens === "number" ? resolveEffectivePromptTokens(transcriptPromptTokens, transcriptOutputTokens, promptTokenEstimate) : void 0;
+	const freshProjectedTokenCount = typeof freshPersistedTokens === "number" ? resolveEffectivePromptTokens(freshPersistedTokens, transcriptOutputTokens, promptTokenEstimate) : void 0;
+	const projectedTokenCount = Math.max(usageProjectedTokenCount ?? 0, freshProjectedTokenCount ?? 0, stalePersistedPromptTokens ?? 0);
+	const tokenCountForCompaction = Number.isFinite(projectedTokenCount) && projectedTokenCount > 0 ? projectedTokenCount : void 0;
+	logVerbose(`preflightCompaction check: sessionKey=${params.sessionKey} tokenCount=${tokenCountForCompaction ?? freshPersistedTokens ?? "undefined"} contextWindow=${contextWindowTokens} threshold=${threshold} serverCompactionThreshold=${serverCompactionThreshold ?? "undefined"} isHeartbeat=${params.isHeartbeat} isCli=${isCli} persistedFresh=${entry?.totalTokensFresh === true} transcriptPromptTokens=${transcriptPromptTokens ?? "undefined"} promptTokensEst=${promptTokenEstimate ?? "undefined"} activeTranscriptBytes=${activeTranscriptBytes ?? "undefined"} maxActiveTranscriptBytes=${maxActiveTranscriptBytes ?? "undefined"} sizeTrigger=${shouldCompactByTranscriptBytes}`);
+	if (!(shouldRunPreflightCompaction({
+		entry,
+		tokenCount: tokenCountForCompaction,
+		contextWindowTokens,
+		reserveTokensFloor,
+		softThresholdTokens,
+		minimumThresholdTokens: serverCompactionThreshold
+	}) || shouldCompactByTranscriptBytes)) return entry ?? params.sessionEntry;
+	const compactionTrigger = shouldCompactByTranscriptBytes ? "transcript_bytes" : "tokens";
+	logVerbose(`preflightCompaction triggered: sessionKey=${params.sessionKey} tokenCount=${tokenCountForCompaction ?? freshPersistedTokens ?? "undefined"} threshold=${threshold} trigger=${compactionTrigger} activeTranscriptBytes=${activeTranscriptBytes ?? "undefined"} maxActiveTranscriptBytes=${maxActiveTranscriptBytes ?? "undefined"}`);
+	params.replyOperation.setPhase("preflight_compacting");
+	const notifyCompaction = async (phase) => {
+		try {
+			await params.onCompactionNotice?.(phase);
+		} catch (err) {
+			logVerbose(`preflightCompaction notice delivery failed: ${String(err)}`);
+		}
+	};
+	let startedCompactionNotice = false;
+	let terminalCompactionNoticeSent = false;
+	const notifyStartCompaction = async () => {
+		startedCompactionNotice = true;
+		await notifyCompaction("start");
+	};
+	const notifyTerminalCompaction = async (phase) => {
+		terminalCompactionNoticeSent = true;
+		await notifyCompaction(phase);
+	};
+
+=== SERVER THRESHOLD REFERENCES ===
+3546:	const serverCompactionThreshold = resolveResponsesServerCompactionThreshold({
+3551:	const threshold = Math.max(contextWindowTokens - reserveTokensFloor - softThresholdTokens, serverCompactionThreshold ?? 0);
+3582:	logVerbose(`preflightCompaction check: sessionKey=${params.sessionKey} tokenCount=${tokenCountForCompaction ?? freshPersistedTokens ?? "undefined"} contextWindow=${contextWindowTokens} threshold=${threshold} serverCompactionThreshold=${serverCompactionThreshold ?? "undefined"} isHeartbeat=${params.isHeartbeat} isCli=${isCli} persistedFresh=${entry?.totalTokensFresh === true} transcriptPromptTokens=${transcriptPromptTokens ?? "undefined"} promptTokensEst=${promptTokenEstimate ?? "undefined"} activeTranscriptBytes=${activeTranscriptBytes ?? "undefined"} maxActiveTranscriptBytes=${maxActiveTranscriptBytes ?? "undefined"} sizeTrigger=${shouldCompactByTranscriptBytes}`);
+3589:		minimumThresholdTokens: serverCompactionThreshold
+
+=== NATIVE THREAD ARITHMETIC ===
+	if (typeof timer === "object" && timer && "unref" in timer) timer.unref();
+}
+//#endregion
+//#region extensions/codex/src/app-server/startup-binding.ts
+const CODEX_APP_SERVER_NATIVE_THREAD_FALLBACK_MAX_TOKENS = 3e5;
+const CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS = 2e4;
+const CODEX_APP_SERVER_NATIVE_THREAD_MIN_PROMPT_BUDGET_TOKENS = 8e3;
+const CODEX_APP_SERVER_NATIVE_THREAD_MIN_PROMPT_BUDGET_RATIO = .5;
+const CODEX_APP_SERVER_BYTE_UNITS = {
+	b: 1,
+	k: 1024,
+	kb: 1024,
+	kib: 1024,
+	m: 1024 * 1024,
+	mb: 1024 * 1024,
+	mib: 1024 * 1024,
+}
+function toNonNegativeInt(value) {
+	if (typeof value !== "number" || !Number.isFinite(value) || value < 0) return;
+	return Math.floor(value);
+}
+function readCompactionConfig(config) {
+	return isJsonObject(config?.agents?.defaults?.compaction) ? config.agents.defaults.compaction : void 0;
+}
+function resolveCodexAppServerNativeThreadReserveTokens(config) {
+	const compaction = readCompactionConfig(config);
+	const reserveTokens = toNonNegativeInt(compaction?.reserveTokens);
+	const reserveTokensFloor = toNonNegativeInt(compaction?.reserveTokensFloor);
+	if (reserveTokens !== void 0) return Math.max(reserveTokens, reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS);
+	return reserveTokensFloor ?? CODEX_APP_SERVER_NATIVE_THREAD_DEFAULT_RESERVE_TOKENS;
+}
+function resolveCodexAppServerNativeThreadTokenFuse(params) {
+	const projectedTurnTokens = typeof params.projectedTurnTokens === "number" && Number.isFinite(params.projectedTurnTokens) && params.projectedTurnTokens > 0 ? Math.floor(params.projectedTurnTokens) : 0;
+	const contextWindow = params.modelContextWindow ?? CODEX_APP_SERVER_NATIVE_THREAD_FALLBACK_MAX_TOKENS;
+	const minPromptBudget = Math.min(CODEX_APP_SERVER_NATIVE_THREAD_MIN_PROMPT_BUDGET_TOKENS, Math.max(1, Math.floor(contextWindow * CODEX_APP_SERVER_NATIVE_THREAD_MIN_PROMPT_BUDGET_RATIO)));
+	const effectiveReserveTokens = Math.min(params.reserveTokens, Math.max(0, contextWindow - minPromptBudget));
+	return Math.max(1, contextWindow - effectiveReserveTokens - projectedTurnTokens);
+}
+function maxFiniteNumber(values) {
+	const nums = values.filter((value) => typeof value === "number" && Number.isFinite(value));
+	if (nums.length === 0) return;
+	return Math.max(...nums);
+}
+function minFiniteNumber(values) {
+	const nums = values.filter((value) => typeof value === "number" && Number.isFinite(value));
+	if (nums.length === 0) return;
+	return Math.min(...nums);
+
+=== V4 TOKEN STATE ===
+{"0":"{\"subsystem\":\"agent/embedded\"}","1":{"event":"embedded_run_compaction_start","runId":"aecfcd67-3109-4209-8c44-98dd50d88627","reason":"threshold"},"2":"embedded run auto-compaction start","_meta":{"runtime":"node","runtimeVersion":"24.15.0","hostname":"The-Forge","name":"{\"subsystem\":\"agent/embedded\"}","parentNames":["openclaw"],"date":"2026-08-13T16:23:26.357Z","logLevelId":3,"logLevelName":"INFO","path":{"fullFilePath":"file:///home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js:179:51","fileName":"subsystem-C3fiUGN1.js","fileNameWithLine":"subsystem-C3fiUGN1.js:179","fileColumn":"51","fileLine":"179","filePath":".openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js","filePathWithLine":".openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js:179","method":"logToFile"}},"time":"2026-08-13T11:23:26.357-05:00","hostname":"The-Forge","message":"embedded run auto-compaction start","traceId":"3fb69e74e14d1a06cf2d7d4af0921aa3","spanId":"5217a9df4079c299","parentSpanId":"1ef828f13d4a6063","traceFlags":"01"}
+{"0":"{\"subsystem\":\"agent/embedded\"}","1":"embedded run timeout reached during compaction; extending deadline: runId=aecfcd67-3109-4209-8c44-98dd50d88627 sessionId=2e7e99b8-d5b4-4df8-a42e-417f994096af extraMs=180000","_meta":{"runtime":"node","runtimeVersion":"24.15.0","hostname":"The-Forge","name":"{\"subsystem\":\"agent/embedded\"}","parentNames":["openclaw"],"date":"2026-08-13T16:23:56.377Z","logLevelId":4,"logLevelName":"WARN","path":{"fullFilePath":"file:///home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js:180:14","fileName":"subsystem-C3fiUGN1.js","fileNameWithLine":"subsystem-C3fiUGN1.js:180","fileColumn":"14","fileLine":"180","filePath":".openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js","filePathWithLine":".openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js:180","method":"logToFile"}},"time":"2026-08-13T11:23:56.381-05:00","hostname":"The-Forge","message":"embedded run timeout reached during compaction; extending deadline: runId=aecfcd67-3109-4209-8c44-98dd50d88627 sessionId=2e7e99b8-d5b4-4df8-a42e-417f994096af extraMs=180000","traceId":"3fb69e74e14d1a06cf2d7d4af0921aa3","spanId":"5217a9df4079c299","parentSpanId":"1ef828f13d4a6063","traceFlags":"01"}
+{"0":"{\"subsystem\":\"agent/embedded\"}","1":{"event":"embedded_run_compaction_end","runId":"aecfcd67-3109-4209-8c44-98dd50d88627","reason":"threshold","completed":false,"willRetry":false,"aborted":false},"2":"embedded run auto-compaction incomplete","_meta":{"runtime":"node","runtimeVersion":"24.15.0","hostname":"The-Forge","name":"{\"subsystem\":\"agent/embedded\"}","parentNames":["openclaw"],"date":"2026-08-13T16:24:56.286Z","logLevelId":3,"logLevelName":"INFO","path":{"fullFilePath":"file:///home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js:179:51","fileName":"subsystem-C3fiUGN1.js","fileNameWithLine":"subsystem-C3fiUGN1.js:179","fileColumn":"51","fileLine":"179","filePath":".openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js","filePathWithLine":".openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js:179","method":"logToFile"}},"time":"2026-08-13T11:24:56.287-05:00","hostname":"The-Forge","message":"embedded run auto-compaction incomplete","traceId":"3fb69e74e14d1a06cf2d7d4af0921aa3","spanId":"5217a9df4079c299","parentSpanId":"1ef828f13d4a6063","traceFlags":"01"}
+{"0":"{\"subsystem\":\"agent/embedded\"}","1":"normalized compaction timeout transcript tail: removedEntries=1 runId=aecfcd67-3109-4209-8c44-98dd50d88627 sessionId=2e7e99b8-d5b4-4df8-a42e-417f994096af","_meta":{"runtime":"node","runtimeVersion":"24.15.0","hostname":"The-Forge","name":"{\"subsystem\":\"agent/embedded\"}","parentNames":["openclaw"],"date":"2026-08-13T16:24:56.327Z","logLevelId":4,"logLevelName":"WARN","path":{"fullFilePath":"file:///home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js:180:14","fileName":"subsystem-C3fiUGN1.js","fileNameWithLine":"subsystem-C3fiUGN1.js:180","fileColumn":"14","fileLine":"180","filePath":".openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js","filePathWithLine":".openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js:180","method":"logToFile"}},"time":"2026-08-13T11:24:56.328-05:00","hostname":"The-Forge","message":"normalized compaction timeout transcript tail: removedEntries=1 runId=aecfcd67-3109-4209-8c44-98dd50d88627 sessionId=2e7e99b8-d5b4-4df8-a42e-417f994096af","traceId":"3fb69e74e14d1a06cf2d7d4af0921aa3","spanId":"5217a9df4079c299","parentSpanId":"1ef828f13d4a6063","traceFlags":"01"}
+{"0":"{\"subsystem\":\"agent/embedded\"}","1":"using pre-compaction snapshot: timed out during compaction runId=aecfcd67-3109-4209-8c44-98dd50d88627 sessionId=2e7e99b8-d5b4-4df8-a42e-417f994096af","_meta":{"runtime":"node","runtimeVersion":"24.15.0","hostname":"The-Forge","name":"{\"subsystem\":\"agent/embedded\"}","parentNames":["openclaw"],"date":"2026-08-13T16:24:56.334Z","logLevelId":4,"logLevelName":"WARN","path":{"fullFilePath":"file:///home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js:180:14","fileName":"subsystem-C3fiUGN1.js","fileNameWithLine":"subsystem-C3fiUGN1.js:180","fileColumn":"14","fileLine":"180","filePath":".openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js","filePathWithLine":".openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js:180","method":"logToFile"}},"time":"2026-08-13T11:24:56.334-05:00","hostname":"The-Forge","message":"using pre-compaction snapshot: timed out during compaction runId=aecfcd67-3109-4209-8c44-98dd50d88627 sessionId=2e7e99b8-d5b4-4df8-a42e-417f994096af","traceId":"3fb69e74e14d1a06cf2d7d4af0921aa3","spanId":"5217a9df4079c299","parentSpanId":"1ef828f13d4a6063","traceFlags":"01"}
+{"0":"{\"subsystem\":\"agents/cli-compaction\"}","1":"CLI transcript compaction failed for pan-local/pan-qwen: Compaction timed out","_meta":{"runtime":"node","runtimeVersion":"24.15.0","hostname":"The-Forge","name":"{\"subsystem\":\"agents/cli-compaction\"}","parentNames":["openclaw"],"date":"2026-08-13T16:27:56.576Z","logLevelId":4,"logLevelName":"WARN","path":{"fullFilePath":"file:///home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js:180:14","fileName":"subsystem-C3fiUGN1.js","fileNameWithLine":"subsystem-C3fiUGN1.js:180","fileColumn":"14","fileLine":"180","filePath":".openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js","filePathWithLine":".openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js:180","method":"logToFile"}},"time":"2026-08-13T11:27:56.576-05:00","hostname":"The-Forge","message":"CLI transcript compaction failed for pan-local/pan-qwen: Compaction timed out","traceId":"3fb69e74e14d1a06cf2d7d4af0921aa3","spanId":"1ef828f13d4a6063","traceFlags":"01"}
+{"0":"{\"subsystem\":\"agent/embedded\"}","1":"[compaction-diag] end runId=2e7e99b8-d5b4-4df8-a42e-417f994096af sessionKey=agent:main:pan-actuator-v4 diagId=cmp-msrqb8me-gR5jrw trigger=cli_budget provider=pan-local/pan-qwen attempt=1 maxAttempts=1 outcome=failed reason=timeout durationMs=179961","_meta":{"runtime":"node","runtimeVersion":"24.15.0","hostname":"The-Forge","name":"{\"subsystem\":\"agent/embedded\"}","parentNames":["openclaw"],"date":"2026-08-13T16:27:56.639Z","logLevelId":4,"logLevelName":"WARN","path":{"fullFilePath":"file:///home/reckless-ideator/.openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js:180:14","fileName":"subsystem-C3fiUGN1.js","fileNameWithLine":"subsystem-C3fiUGN1.js:180","fileColumn":"14","fileLine":"180","filePath":".openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js","filePathWithLine":".openclaw/tools/node-v24.15.0/lib/node_modules/openclaw/dist/subsystem-C3fiUGN1.js:180","method":"logToFile"}},"time":"2026-08-13T11:27:56.640-05:00","hostname":"The-Forge","message":"[compaction-diag] end runId=2e7e99b8-d5b4-4df8-a42e-417f994096af sessionKey=agent:main:pan-actuator-v4 diagId=cmp-msrqb8me-gR5jrw trigger=cli_budget provider=pan-local/pan-qwen attempt=1 maxAttempts=1 outcome=failed reason=timeout durationMs=179961","traceId":"3fb69e74e14d1a06cf2d7d4af0921aa3","spanId":"1ef828f13d4a6063","traceFlags":"01"}

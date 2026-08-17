@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:02:00.299378-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Security_and_Integrity_Specification_v0.1.md",
+  "original_name": "Security_and_Integrity_Specification_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0042",
+  "schema_version": "0.1.0",
+  "sha256": "1aa662e2e55364f23b2867e28f32ff1d5f1af701bab53540ebc3f75e54d564a8",
+  "size_bytes": 3814,
+  "source_class": "manual_batch"
+}

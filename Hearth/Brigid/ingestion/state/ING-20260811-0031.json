@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260811-0031",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-11T22:18:48.773848-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/Handbook_Project_Organization.json",
+    "original_name": "Handbook_Project_Organization.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260811-0031",
+    "schema_version": "0.1.0",
+    "sha256": "b13a2c1574432d34caacdcc9359a50ad5e9e42ab81eb01a105f1417b18e8a1dc",
+    "size_bytes": 150062,
+    "source_class": "conversation"
+  },
+  "stage": "manifest"
+}

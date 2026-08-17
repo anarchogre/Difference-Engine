@@ -1,0 +1,29 @@
+{
+  "title": "AirBook progress and LTCK",
+  "messages": [
+    {
+      "role": "user",
+      "content": "get the instructions from the beginning of chat. Load the LTCK. Do what it says. Do what I told you to do at the start, persona wise. THEN. We're working on the airbook. Let's get back on track.\n\nYou MUST NOT skim or summarize. Full ingestion. Full synthesis."
+    },
+    {
+      "role": "assistant",
+      "content": "I’m recovering the exact startup state first: LTCK, the beginning-of-chat operating instructions/persona, and the Airbook thread. I will not promote anything from memory or from the truncated preview; the full Brandon file is being ingested end-to-end, then I’ll report initialization/drift/blockers before touching Airbook."
+    },
+    {
+      "role": "assistant",
+      "content": "I have the governing LTCK artifact and the current Brandon lineage. One important recovery point is already clear: the stale `QWEN_SMOKE_HANG` handoff is superseded by later live evidence; I’m not letting old bootstrap state overwrite the newer session. AirBook remains preservation-first, and the unresolved edge is verification of what already survived on Forge before we alter the Mac."
+    },
+    {
+      "role": "assistant",
+      "content": "The Brandon export is **695,744 bytes / 23,827 lines / 678 turns**. I’m treating that as the source, not the truncated chat preview. I’ve also recovered the split instruction: this channel is to stay **strictly AirBook/fleet execution**; OP_PROF/OP_REAL/glossary work was explicitly moved elsewhere so it would stop consuming the hardware workstream."
+    },
+    {
+      "role": "assistant",
+      "content": "I’ve got the exact AirBook handoff now. The last live hardware operation was **not** partitioning: Forge was still copying the remaining personal data (`Desktop` excluding `manwithgun`, `Music`, `Splice`, REAPER config). That transfer had **no recorded completion result** before the chat split. So the next move is verification, not deletion and not APFS surgery."
+    },
+    {
+      "role": "assistant",
+      "content": "Yep. **We’re back in the AirBook lane.**\n\nI ingested the full `Brandon(1).md` export end-to-end: **23,827 lines / 678 turns**. I did **not** use the truncated preview as authority, and I’m not going to waste context summarizing the whole goddamn thing back at you. \n\nStart-of-chat mode is restored too: casual, conversational, joke/swear when natural, brother/partner energy, **useful first**. No corporate-assistant voice.\n\n## LTCK INITIALIZATION\n\n**LOADED**\n- LTCK v1.0.0, ratified law, effective 2026-08-09. \n- KRN-0001 constitutional invariants and ratified-law correction. The old `Status: Candidate` header is stale metadata under the August 9 ratification. \n- Pan / Branch Ω operating boundary.\n- Operator/Operational-Reality constraints applicable here.\n- Full Brandon/AirBook branch history.\n- AirBook preservation, migration, Linux-node, and fleet intent.\n- Explicit branch split: **OP_PROF / OP_REAL / glossary / Pan architecture moved elsewhere; this channel stays AirBook/fleet execution.**\n\n**MISSING / INACCESSIBLE**\n- I cannot presently inspect **live Forge process/filesystem state** from this interface.\n- Therefore I cannot verify whether the last AirBook `rsync` finished after the final observation that it was **still transferring**.\n\n**DRIFT**\n- Old `QWEN_SMOKE_HANG` bootstrap state is obsolete.\n- Old “AirBook already completely backed up” assumption is obsolete.\n- Old rough 50/50 macOS/Linux notion is obsolete.\n- Current migration policy is: **preserve all personal/non-native data → inventory apps/config → keep a temporary Forge recovery copy → shrink macOS to bare-bones Phylactery → Linux gets the useful remainder and becomes the primary node.** \n- Custom kernel remains later. **Stock kernel first; establish reality and baseline.**\n\n**CONFLICTS**\n- None blocking AirBook execution.\n\n**BLOCKER**\n- One fucking thing: **we do not yet possess completion evidence for the last transfer.**\n\n**ACTIVE MISSION**\nPreserve Brandon's machine completely enough that we can safely reduce macOS, reproduce or improve its useful application environment under Linux, then turn the AirBook into a real DE compute/node bird.\n\n**INITIALIZATION STATUS: `DEGRADED`**\nContinuity is recovered, but LTCK does not permit me to call initialization fully verified without current machine evidence. It explicitly allows continuing when the active operation is nevertheless recoverable. \n\n## EXACT NEXT OPERATION\n\nLast known transfer was copying:\n\n- Desktop **excluding `manwithgun`**\n- Music\n- Splice\n- REAPER configuration\n\nDocuments and Pictures had already crossed; the `manwithgun` tree already existed on Forge. The conversation later explicitly says **“still transferring.”** \n\nSo **no partitioning, no deletion, no more migration theory.** First we see what reality says.\n\n**Forge only. Read-only. One block:**\n\n```bash\necho \"=== AIRBOOK TRANSFER CHECKPOINT ===\"\n\necho \"--- RSYNC PROCESS ---\"\npgrep -af 'rsync.*(AIRBOOK_HOME|trashcultureinstitute|192\\.168\\.0\\.6)' \\\n  || echo \"RSYNC_PROCESS=NONE\"\n\nDST=\"$HOME/STUDIO_MAC_BACKUP/AIRBOOK_HOME\"\n\necho \"--- BACKUP STATE ---\"\nfor d in Desktop Documents Music Pictures Splice REAPER_CONFIG; do\n    if [ -e \"$DST/$d\" ]; then\n        printf '%-14s ' \"$d\"\n        du -sh \"$DST/$d\" 2>/dev/null | awk '{print $1}'\n    else\n        echo \"$d MISSING\"\n    fi\ndone\n\necho \"--- RECENT WRITES ---\"\nfind \"$DST\" -type f -mmin -30 \\\n  -printf '%TY-%Tm-%Td %TH:%TM:%TS  %p\\n' 2>/dev/null | tail -20\n\necho \"=== END ===\"\n```\n\nGive me that output. **Then we continue exactly where we left off.** No goddamn archaeology reboot."
+    }
+  ]
+}

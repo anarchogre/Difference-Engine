@@ -1,0 +1,70 @@
+[
+  {
+    "asset_type": "document_title",
+    "value": "Artifact Ingestion Specification (AIS)"
+  },
+  {
+    "asset_type": "heading",
+    "value": "Artifact Ingestion Specification (AIS)"
+  },
+  {
+    "asset_type": "heading",
+    "value": "Mission"
+  },
+  {
+    "asset_type": "heading",
+    "value": "Objectives"
+  },
+  {
+    "asset_type": "heading",
+    "value": "Core Principles"
+  },
+  {
+    "asset_type": "heading",
+    "value": "1. Preserve Before Interpreting"
+  },
+  {
+    "asset_type": "heading",
+    "value": "2. Observation Before Inference"
+  },
+  {
+    "asset_type": "heading",
+    "value": "3. Provenance Is Mandatory"
+  },
+  {
+    "asset_type": "heading",
+    "value": "4. Deterministic Processing"
+  },
+  {
+    "asset_type": "heading",
+    "value": "5. Queue-Based Processing"
+  },
+  {
+    "asset_type": "heading",
+    "value": "6. Human-Governed Promotion"
+  },
+  {
+    "asset_type": "heading",
+    "value": "7. Service-Oriented Architecture"
+  },
+  {
+    "asset_type": "heading",
+    "value": "8. Technology Independence"
+  },
+  {
+    "asset_type": "heading",
+    "value": "Pipeline"
+  },
+  {
+    "asset_type": "heading",
+    "value": "Scope"
+  },
+  {
+    "asset_type": "heading",
+    "value": "Out of Scope"
+  },
+  {
+    "asset_type": "heading",
+    "value": "Related Specifications"
+  }
+]

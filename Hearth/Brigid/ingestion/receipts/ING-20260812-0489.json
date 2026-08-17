@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "application/json",
+  "observed_at": "2026-08-12T01:48:47.530307-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/CLAUDE START HERE/RC1-0000_Master_Manifest_GOLD_MASTER_v1.2.0_FROZEN.json",
+  "original_name": "RC1-0000_Master_Manifest_GOLD_MASTER_v1.2.0_FROZEN.json",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0489",
+  "schema_version": "0.1.0",
+  "sha256": "8f2cd1c855f3111f4f94b5323de7914bb0d0ff431a04fca54600731855b85ab1",
+  "size_bytes": 2113,
+  "source_class": "manual_batch"
+}

@@ -1,0 +1,74 @@
+--- workspace/operational/recovery/gpt-plus-integration/20260803T043919/verifier-integration/backups/verifier.py.before	2026-08-03 05:13:45.003221762 -0500
++++ ade/kernel/bootstrap_loader/verifier.py	2026-08-03 05:13:45.109888440 -0500
+@@ -10,7 +10,10 @@
+ from pathlib import Path
+ from typing import Any
+ 
++from .drift import detect as detect_drift
++from .drift import summarize as summarize_drift
+ from .loader import initialize
++from .queue import recover_queues
+ 
+ 
+ READY = "READY"
+@@ -162,13 +165,30 @@
+         else:
+             has_commit = bool(head_value)
+ 
++    queue_state = recover_queues(
++        repository_root
++    )
++
++    queue_recovery_ok = (
++        len(queue_state.unknown) == 0
++    )
++
++    drift_summary = summarize_drift(
++        detect_drift(repository_root)
++    )
++
++    drift_detection_ok = (
++        drift_summary["blocking"] == 0
++        and drift_summary["warnings"] == 0
++    )
++
+     degraded = {
+         "file_library_verification": False,
+         "project_configuration_verification": False,
+-        "queue_recovery": False,
++        "queue_recovery": queue_recovery_ok,
+         "git_baseline": has_commit,
+         "formal_test_runner": False,
+-        "drift_detection": False,
++        "drift_detection": drift_detection_ok,
+     }
+ 
+     for check in DEGRADED_CHECKS:
+@@ -217,6 +237,27 @@
+         },
+         "verified_artifacts": verified_artifacts,
+         "missing_artifacts": missing_artifacts,
++        "queue_state": {
++            "suggested": len(
++                queue_state.suggested
++            ),
++            "implementation": len(
++                queue_state.implementation
++            ),
++            "active": len(
++                queue_state.active
++            ),
++            "completed": len(
++                queue_state.completed
++            ),
++            "deferred": len(
++                queue_state.deferred
++            ),
++            "unknown": len(
++                queue_state.unknown
++            ),
++        },
++        "drift_summary": drift_summary,
+         "degraded_checks": degraded,
+         "blockers": blockers,
+         "warnings": warnings,

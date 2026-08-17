@@ -1,0 +1,98 @@
+=== BUILD MEMORY FLUSH PLAN ===
+73:function buildMemoryFlushPlan(params = {}) {
+58-function ensureNoReplyHint(text) {
+59-	if (text.includes("NO_REPLY")) return text;
+60-	return `${text}\n\nIf no user-visible reply is needed, start with ${SILENT_REPLY_TOKEN}.`;
+61-}
+62-function ensureMemoryFlushSafetyHints(text) {
+63-	let next = text.trim();
+64-	for (const hint of MEMORY_FLUSH_REQUIRED_HINTS) if (!next.includes(hint)) next = next ? `${next}\n\n${hint}` : hint;
+65-	return next;
+66-}
+67-function appendCurrentTimeLine(text, timeLine) {
+68-	const trimmed = text.trimEnd();
+69-	if (!trimmed) return timeLine;
+70-	if (trimmed.includes("Current time:")) return trimmed;
+71-	return `${trimmed}\n${timeLine}`;
+72-}
+73:function buildMemoryFlushPlan(params = {}) {
+74-	const resolved = params;
+75-	const nowMs = resolveMemoryCoreNowMs(resolved.nowMs);
+76-	const cfg = resolved.cfg;
+77-	const defaults = cfg?.agents?.defaults?.compaction?.memoryFlush;
+78-	if (defaults?.enabled === false) return null;
+79-	const softThresholdTokens = normalizeNonNegativeInt(defaults?.softThresholdTokens) ?? 4e3;
+80-	const forceFlushTranscriptBytes = parseNonNegativeByteSize(defaults?.forceFlushTranscriptBytes) ?? 2097152;
+81-	const reserveTokensFloor = normalizeNonNegativeInt(cfg?.agents?.defaults?.compaction?.reserveTokensFloor) ?? 2e4;
+82-	const { timeLine, userTimezone } = resolveCronStyleNow(cfg ?? {}, nowMs);
+83-	const dateStamp = formatDateStampInTimezone(nowMs, userTimezone);
+84-	const relativePath = `memory/${dateStamp}.md`;
+85-	const promptBase = ensureNoReplyHint(ensureMemoryFlushSafetyHints(defaults?.prompt?.trim() || DEFAULT_MEMORY_FLUSH_PROMPT));
+86-	const systemPrompt = ensureNoReplyHint(ensureMemoryFlushSafetyHints(defaults?.systemPrompt?.trim() || DEFAULT_MEMORY_FLUSH_SYSTEM_PROMPT));
+87-	return {
+88-		softThresholdTokens,
+89-		forceFlushTranscriptBytes,
+90-		reserveTokensFloor,
+91-		model: defaults?.model?.trim() || void 0,
+92-		prompt: appendCurrentTimeLine(promptBase.replaceAll("YYYY-MM-DD", dateStamp), timeLine),
+93-		systemPrompt: systemPrompt.replaceAll("YYYY-MM-DD", dateStamp),
+94-		relativePath
+95-	};
+96-}
+97-//#endregion
+98-//#region extensions/memory-core/src/prompt-section.ts
+99-const buildPromptSection = ({ availableTools, citationsMode }) => {
+100-	const hasMemorySearch = availableTools.has("memory_search");
+101-	const hasMemoryGet = availableTools.has("memory_get");
+102-	if (!hasMemorySearch && !hasMemoryGet) return [];
+103-	let toolGuidance;
+104-	if (hasMemorySearch && hasMemoryGet) toolGuidance = "Before answering anything about prior work, decisions, dates, people, preferences, or todos: run memory_search on MEMORY.md + memory/*.md + indexed session transcripts; then use memory_get to pull only the needed lines. If low confidence after search, say you checked.";
+105-	else if (hasMemorySearch) toolGuidance = "Before answering anything about prior work, decisions, dates, people, preferences, or todos: run memory_search on MEMORY.md + memory/*.md + indexed session transcripts and answer from the matching results. If low confidence after search, say you checked.";
+106-	else toolGuidance = "Before answering anything about prior work, decisions, dates, people, preferences, or todos that already point to a specific memory file or note: run memory_get to pull only the needed lines. If low confidence after reading them, say you checked.";
+107-	const lines = ["## Memory Recall", toolGuidance];
+108-	if (citationsMode === "off") lines.push("Citations are disabled: do not mention file paths or line numbers in replies unless the user explicitly asks.");
+109-	else lines.push("Citations: include Source: <path#line> when it helps the user verify memory snippets.");
+110-	lines.push("");
+111-	return lines;
+112-};
+113-//#endregion
+114-//#region extensions/memory-core/index.ts
+115-const loadMemoryToolsModule = createLazyRuntimeModule(() => import("../../tools-DXHLX8MK.js"));
+116-const loadRuntimeProviderModule = createLazyRuntimeModule(() => import("../../runtime-provider-B79xX7e1.js"));
+117-function getToolConfig(options) {
+118-	return options.getConfig?.() ?? options.config;
+119-}
+120-function hasMemoryToolContext(options) {
+121-	const cfg = getToolConfig(options);
+122-	if (!cfg) return false;
+123-	const { sessionAgentId: agentId } = resolveSessionAgentIds({
+124-		sessionKey: options.agentSessionKey,
+125-		config: cfg,
+126-		agentId: options.agentId
+127-	});
+128-	return Boolean(resolveMemorySearchConfig(cfg, agentId));
+129-}
+130-const MemorySearchSchema = {
+131-	type: "object",
+132-	properties: {
+133-		query: { type: "string" },
+134-		maxResults: {
+135-			type: "integer",
+136-			minimum: 1
+137-		},
+138-		minScore: { type: "number" },
+139-		corpus: {
+140-			type: "string",
+141-			enum: [
+142-				"memory",
+143-				"wiki",
+144-				"all",
+145-				"sessions"
+146-			]
+147-		}
+148-	},
+149-	required: ["query"],
+150-	additionalProperties: false
+151-};
+152-const MemoryGetSchema = {
+153-	type: "object",

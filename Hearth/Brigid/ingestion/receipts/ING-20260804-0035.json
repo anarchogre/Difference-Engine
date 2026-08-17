@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-04T12:01:58.540925-05:00",
+  "observed_path": "/storage/emulated/0/FILE_LIBRARY_UPLOADS/99_UTILITIES/Ingestion/Repository_Constitution_v0.1.md",
+  "original_name": "Repository_Constitution_v0.1.md",
+  "parser_status": "not_started",
+  "receipt_id": "ING-20260804-0035",
+  "schema_version": "0.1.0",
+  "sha256": "04453fbbb420f106a3452361398d6b064b4dc23962e4fe455ea0cab3641fab01",
+  "size_bytes": 4523,
+  "source_class": "manual_batch"
+}

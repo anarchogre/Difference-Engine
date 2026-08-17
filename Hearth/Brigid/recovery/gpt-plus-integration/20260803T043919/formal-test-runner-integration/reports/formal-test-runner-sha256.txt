@@ -1,0 +1,5 @@
+8ab42e5867c47483a4e7ab01d1f0c8ed6f9b934332b07a401f0e8f4e5029d684  workspace/operational/recovery/gpt-plus-integration/20260803T043919/formal-test-runner-integration/backups/verifier.py.before
+6eb9e985b742c8c3ac89b1cd4b884352d567347469a2263e7e11581bf4b068b8  ade/kernel/bootstrap_loader/verifier.py
+5421d39c664b755d4ed0f22f6baab198c7be9b7895a4a55e43a2185681f588c4  ade/kernel/tests/run_tests.py
+d411be76d99a97df8f15cfd302e00f8ea84c587e2742f947d0332f5d2ae90851  ade/kernel/tests/test_bootstrap_loader.py
+92778229e97f3d5f3c2b917e14cf88731405210cb5a00f3b0b82a4fe5d2e01f8  workspace/operational/recovery/gpt-plus-integration/20260803T043919/formal-test-runner-integration/tests/formal-test-runner.txt

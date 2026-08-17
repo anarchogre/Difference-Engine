@@ -1,0 +1,157 @@
+ade/kernel/bootstrap_loader/main.py:7:def main():
+ade/kernel/bootstrap_loader/main.py:11:if __name__ == "__main__":
+ade/kernel/bootstrap_loader/verifier.py:550:def main() -> int:
+ade/kernel/bootstrap_loader/verifier.py:589:if __name__ == "__main__":
+ade/kernel/bootstrap_loader/drift.py:906:def main() -> int:
+ade/kernel/bootstrap_loader/drift.py:945:if __name__ == "__main__":
+ade/kernel/tests/run_tests.py:96:if __name__ == "__main__":
+ade/services/ingestion/INGESTER_CONTRACT_v0.1.md:13:Every observed source receives an immutable ingestion receipt before parsing, relocation, or transformation.
+ade/services/ingestion/INGESTER_CONTRACT_v0.1.md:71:Ingest one modern Linux-heavy project conversation.
+ade/services/ingestion/INGESTER_CONTRACT_v0.1.md:75:- receipt exists;
+ade/services/ingestion/receipt.py:13:    receipt_id: str
+ade/services/ingestion/receipt.py:36:def generate_receipt(
+ade/services/ingestion/receipt.py:38:    receipt_id: str,
+ade/services/ingestion/receipt.py:52:        receipt_id=receipt_id,
+ade/services/ingestion/receipt.py:64:def write_receipt(
+ade/services/ingestion/receipt.py:65:    receipt: IngestionReceipt,
+ade/services/ingestion/receipt.py:72:            asdict(receipt),
+ade/services/ingestion/__init__.py:2:from .receipt import (
+ade/services/ingestion/__init__.py:4:    generate_receipt,
+ade/services/ingestion/__init__.py:6:    write_receipt,
+ade/services/ingestion/__init__.py:11:    "generate_receipt",
+ade/services/ingestion/__init__.py:14:    "write_receipt",
+ade/services/ingestion/intake.py:3:from .receipt import (
+ade/services/ingestion/intake.py:5:    generate_receipt,
+ade/services/ingestion/intake.py:6:    write_receipt,
+ade/services/ingestion/intake.py:12:    receipt_id: str,
+ade/services/ingestion/intake.py:14:    receipt_root: Path,
+ade/services/ingestion/intake.py:16:    receipt = generate_receipt(
+ade/services/ingestion/intake.py:18:        receipt_id=receipt_id,
+ade/services/ingestion/intake.py:22:    write_receipt(
+ade/services/ingestion/intake.py:23:        receipt,
+ade/services/ingestion/intake.py:24:        receipt_root / f"{receipt.receipt_id}.json",
+ade/services/ingestion/intake.py:27:    return receipt
+ade/services/ingestion/tests/test_intake.py:3:from ade.services.ingestion import intake
+ade/services/ingestion/tests/test_intake.py:6:def main():
+ade/services/ingestion/tests/test_intake.py:7:    receipt = intake(
+ade/services/ingestion/tests/test_intake.py:14:        receipt_id="TEST-0001",
+ade/services/ingestion/tests/test_intake.py:16:        receipt_root=Path("workspace/operational/ingestion/test_receipts"),
+ade/services/ingestion/tests/test_intake.py:19:    assert receipt.receipt_id == "TEST-0001"
+ade/services/ingestion/tests/test_intake.py:24:if __name__ == "__main__":
+ade/services/ingestion/tests/test_markdown_parser.py:3:from ade.services.ingestion.parsers import parse_markdown
+ade/services/ingestion/tests/test_markdown_parser.py:6:def main():
+ade/services/ingestion/tests/test_markdown_parser.py:23:if __name__ == "__main__":
+ade/services/ingestion/tests/test_pipeline.py:3:from ade.services.ingestion.pipeline import run
+ade/services/ingestion/tests/test_pipeline.py:6:def main():
+ade/services/ingestion/tests/test_pipeline.py:16:        receipt_id="TEST-PIPELINE-0003",
+ade/services/ingestion/tests/test_pipeline.py:18:        receipt_root=Path(
+ade/services/ingestion/tests/test_pipeline.py:19:            "workspace/operational/ingestion/test_receipts"
+ade/services/ingestion/tests/test_pipeline.py:22:            "workspace/operational/ingestion/test_output"
+ade/services/ingestion/tests/test_pipeline.py:26:    assert (output / "metadata/receipt.json").is_file()
+ade/services/ingestion/tests/test_pipeline.py:34:if __name__ == "__main__":
+ade/services/ingestion/tests/test_conversation_parser.py:3:from ade.services.ingestion.parsers.chatgpt import parse_chatgpt
+ade/services/ingestion/tests/test_conversation_parser.py:6:def main():
+ade/services/ingestion/tests/test_conversation_parser.py:8:        "workspace/operational/ingestion/chat_test.txt"
+ade/services/ingestion/tests/test_conversation_parser.py:21:                "User: build the ingester",
+ade/services/ingestion/tests/test_conversation_parser.py:29:    assert parsed["kind"] == "conversation"
+ade/services/ingestion/tests/test_conversation_parser.py:37:if __name__ == "__main__":
+ade/services/ingestion/tests/test_chat_pipeline.py:4:from ade.services.ingestion.pipeline import run
+ade/services/ingestion/tests/test_chat_pipeline.py:7:def main():
+ade/services/ingestion/tests/test_chat_pipeline.py:9:        "workspace/operational/ingestion/chat_pipeline_test.txt"
+ade/services/ingestion/tests/test_chat_pipeline.py:26:        receipt_id="TEST-CHAT-0002",
+ade/services/ingestion/tests/test_chat_pipeline.py:27:        source_class="conversation",
+ade/services/ingestion/tests/test_chat_pipeline.py:28:        receipt_root=Path(
+ade/services/ingestion/tests/test_chat_pipeline.py:29:            "workspace/operational/ingestion/test_receipts"
+ade/services/ingestion/tests/test_chat_pipeline.py:32:            "workspace/operational/ingestion/test_output"
+ade/services/ingestion/tests/test_chat_pipeline.py:40:    assert manifest["kind"] == "conversation"
+ade/services/ingestion/tests/test_chat_pipeline.py:50:if __name__ == "__main__":
+ade/services/ingestion/tests/run_all.py:4:    "ade.services.ingestion.tests.test_intake",
+ade/services/ingestion/tests/run_all.py:5:    "ade.services.ingestion.tests.test_markdown_parser",
+ade/services/ingestion/tests/run_all.py:6:    "ade.services.ingestion.tests.test_pipeline",
+ade/services/ingestion/tests/run_all.py:7:    "ade.services.ingestion.tests.test_conversation_parser",
+ade/services/ingestion/tests/run_all.py:8:    "ade.services.ingestion.tests.test_chat_pipeline",
+ade/services/ingestion/tests/run_all.py:12:def main():
+ade/services/ingestion/tests/run_all.py:20:if __name__ == "__main__":
+ade/services/ingestion/parsers/__init__.py:9:from .conversation import Turn, parse_conversation
+ade/services/ingestion/parsers/conversation.py:22:def parse_conversation(source: Path):
+ade/services/ingestion/parsers/chatgpt.py:3:from .conversation import parse_conversation
+ade/services/ingestion/parsers/chatgpt.py:22:        parsed = parse_conversation(source)
+ade/services/ingestion/parsers/chatgpt.py:25:            "kind": "conversation",
+ade/services/ingestion/pipeline.py:18:    receipt_id: str,
+ade/services/ingestion/pipeline.py:20:    receipt_root: Path,
+ade/services/ingestion/pipeline.py:24:        'workspace/operational/ingestion/state'
+ade/services/ingestion/pipeline.py:27:    receipt = intake(
+ade/services/ingestion/pipeline.py:29:        receipt_id=receipt_id,
+ade/services/ingestion/pipeline.py:31:        receipt_root=receipt_root,
+ade/services/ingestion/pipeline.py:34:    save(receipt, Stage.INTAKE, state_root)
+ade/services/ingestion/pipeline.py:36:    save(receipt, Stage.PARSE, state_root)
+ade/services/ingestion/pipeline.py:38:    save(receipt, Stage.ASSETS, state_root)
+ade/services/ingestion/pipeline.py:40:    save(receipt, Stage.REFERENCES, state_root)
+ade/services/ingestion/pipeline.py:42:    save(receipt, Stage.QUEUES, state_root)
+ade/services/ingestion/pipeline.py:44:        receipt,
+ade/services/ingestion/pipeline.py:51:    save(receipt, Stage.VALIDATION, state_root)
+ade/services/ingestion/pipeline.py:53:    provenance = build_provenance(receipt)
+ade/services/ingestion/pipeline.py:54:    save(receipt, Stage.PROVENANCE, state_root)
+ade/services/ingestion/pipeline.py:58:        receipt,
+ade/services/ingestion/pipeline.py:68:    save(receipt, Stage.OUTPUT, state_root)
+ade/services/ingestion/pipeline.py:72:        receipt,
+ade/services/ingestion/pipeline.py:81:    save(receipt, Stage.MANIFEST, state_root)
+ade/services/ingestion/assets.py:17:                    asset_type="conversation_turn",
+ade/services/ingestion/validation.py:11:    receipt,
+ade/services/ingestion/validation.py:19:    if not receipt.receipt_id:
+ade/services/ingestion/validation.py:20:        errors.append("missing_receipt_id")
+ade/services/ingestion/validation.py:23:        if parsed.get("kind") != "conversation":
+ade/services/ingestion/validation.py:24:            errors.append("invalid_conversation_kind")
+ade/services/ingestion/validation.py:27:            errors.append("no_conversation_turns")
+ade/services/ingestion/output.py:20:    receipt,
+ade/services/ingestion/output.py:29:    root = output_root / receipt.receipt_id
+ade/services/ingestion/output.py:50:        root / "metadata/receipt.json",
+ade/services/ingestion/output.py:51:        asdict(receipt),
+ade/services/ingestion/provenance.py:13:def build(receipt):
+ade/services/ingestion/provenance.py:15:        provenance_id=f"PROV-{receipt.receipt_id}",
+ade/services/ingestion/provenance.py:16:        artifact_id=receipt.receipt_id,
+ade/services/ingestion/provenance.py:17:        source_path=receipt.observed_path,
+ade/services/ingestion/provenance.py:18:        source_sha256=receipt.sha256,
+ade/services/ingestion/manifest.py:10:    receipt,
+ade/services/ingestion/manifest.py:30:        "receipt": receipt.receipt_id,
+ade/services/ingestion/report.py:11:        f"Receipt: {manifest['receipt']}",
+ade/services/ingestion/report.py:26:    (root / "reports" / "ingestion_report.md").write_text(
+ade/services/ingestion/cli.py:4:from .batch import ingest_directory
+ade/services/ingestion/cli.py:5:from .ids import next_receipt_id
+ade/services/ingestion/cli.py:10:def main():
+ade/services/ingestion/cli.py:13:            "usage: python -m ade.services.ingestion.cli <file|directory>"
+ade/services/ingestion/cli.py:18:    receipt_root = Path(
+ade/services/ingestion/cli.py:19:        "workspace/operational/ingestion/receipts"
+ade/services/ingestion/cli.py:23:        "workspace/operational/ingestion/output"
+ade/services/ingestion/cli.py:27:        outputs = ingest_directory(
+ade/services/ingestion/cli.py:29:            receipt_root=receipt_root,
+ade/services/ingestion/cli.py:41:        receipt_id=next_receipt_id(receipt_root),
+ade/services/ingestion/cli.py:43:        receipt_root=receipt_root,
+ade/services/ingestion/cli.py:52:if __name__ == "__main__":
+ade/services/ingestion/ids.py:5:def next_receipt_id(
+ade/services/ingestion/ids.py:6:    receipt_root: Path,
+ade/services/ingestion/ids.py:13:        for path in receipt_root.glob(f"{prefix}*.json")
+ade/services/ingestion/batch.py:4:from .ids import next_receipt_id
+ade/services/ingestion/batch.py:9:def ingest_directory(
+ade/services/ingestion/batch.py:11:    receipt_root: Path,
+ade/services/ingestion/batch.py:27:            receipt_id=next_receipt_id(receipt_root),
+ade/services/ingestion/batch.py:29:            receipt_root=receipt_root,
+ade/services/ingestion/index.py:9:        receipt = (
+ade/services/ingestion/index.py:12:            / "receipt.json"
+ade/services/ingestion/index.py:22:            receipt.is_file()
+ade/services/ingestion/index.py:30:                "receipt": json.loads(
+ade/services/ingestion/index.py:31:                    receipt.read_text(
+ade/services/ingestion/resume.py:9:        receipt = (
+ade/services/ingestion/resume.py:12:            / "receipt.json"
+ade/services/ingestion/resume.py:15:        if not receipt.is_file():
+ade/services/ingestion/resume.py:19:            receipt.read_text(
+ade/services/ingestion/stages.py:5:    RECEIPT = "receipt"
+ade/services/ingestion/state.py:9:    receipt,
+ade/services/ingestion/state.py:20:        / f"{receipt.receipt_id}.json"
+ade/services/ingestion/state.py:24:        "receipt": receipt.receipt_id,
+ade/services/ingestion/state.py:26:        "receipt_data": asdict(receipt),
+ade/services/ingestion/recover.py:15:        latest[data["receipt"]] = data
+ade/services/ingestion/recover.py:20:if __name__ == "__main__":
+ade/services/ingestion/recover.py:23:            "workspace/operational/ingestion/state"
+ade/services/ingestion/recover.py:27:    for receipt, data in sorted(state.items()):
+ade/services/ingestion/recover.py:29:            receipt,

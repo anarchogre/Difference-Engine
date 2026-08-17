@@ -1,0 +1,4 @@
+Root: /storage/emulated/0/DifferenceEngine
+Directories: 1155
+Files: 2153
+Output: workspace/operational/census/DE

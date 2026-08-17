@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0165",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:12.163188-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS_MetaArchitecture_Update.json",
+    "original_name": "AKS_MetaArchitecture_Update.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0165",
+    "schema_version": "0.1.0",
+    "sha256": "dc16923cc6aa938acd9f4cb59d8bcefc83f3a0d6957da2d5aaf8d9c0d250a3df",
+    "size_bytes": 501,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}

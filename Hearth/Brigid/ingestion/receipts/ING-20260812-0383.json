@@ -1,0 +1,13 @@
+{
+  "canonical_status": "unreviewed",
+  "media_type": "text/markdown",
+  "observed_at": "2026-08-12T01:48:33.388060-05:00",
+  "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-Unsorted/99_UTILITIES/Ingestion/Quality_Assurance_Specification_v0.1.md",
+  "original_name": "Quality_Assurance_Specification_v0.1.md",
+  "parser_status": "complete",
+  "receipt_id": "ING-20260812-0383",
+  "schema_version": "0.1.0",
+  "sha256": "7294359a6f15a5d7470601abb9c66731ea65d778ed90b8e1a122154b59356741",
+  "size_bytes": 4078,
+  "source_class": "manual_batch"
+}

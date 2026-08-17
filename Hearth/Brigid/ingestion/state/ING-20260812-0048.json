@@ -1,0 +1,17 @@
+{
+  "receipt": "ING-20260812-0048",
+  "receipt_data": {
+    "canonical_status": "unreviewed",
+    "media_type": "application/json",
+    "observed_at": "2026-08-12T01:48:05.899001-05:00",
+    "observed_path": "/home/reckless-ideator/Difference-Engine-LEGACY-STALE-DECOMPOSED/LEGACY-AKS/AKS-INDEX-0001_Draft_0.3_Update.json",
+    "original_name": "AKS-INDEX-0001_Draft_0.3_Update.json",
+    "parser_status": "complete",
+    "receipt_id": "ING-20260812-0048",
+    "schema_version": "0.1.0",
+    "sha256": "3602a49f93cc4067c7bb17bd67bc71a4fcbdca849cea4cff19a1be0e08590e56",
+    "size_bytes": 396,
+    "source_class": "manual_batch"
+  },
+  "stage": "manifest"
+}
